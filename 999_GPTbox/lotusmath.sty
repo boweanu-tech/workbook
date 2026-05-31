@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v6]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v7]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -14,6 +14,8 @@
 \LMAnswerModefalse
 \newif\ifLMInAnswerBlock
 \LMInAnswerBlockfalse
+\newif\ifLMInstructionUsed
+\LMInstructionUsedfalse
 
 \newcounter{LMmajor}
 \newcounter{LMsubq}
@@ -46,6 +48,7 @@
   \LMAnswerModefalse
   \setcounter{LMmajor}{0}%
   \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
 }
 
 \newcommand{\BeginAnswers}{%
@@ -53,6 +56,7 @@
   \LMAnswerModetrue
   \setcounter{LMmajor}{0}%
   \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
   \begin{center}{\Large 解答}\end{center}
   \vspace{3mm}
   \begin{multicols}{2}
@@ -75,6 +79,7 @@
 \newcommand{\MajorQuestion}[1]{%
   \stepcounter{LMmajor}%
   \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
   \ifLMAnswerMode
     \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
     \noindent\begin{minipage}{\linewidth}
@@ -88,12 +93,16 @@
 }
 
 % 大問内で追加の指示文を表示する。改ページせず、小問番号だけをリセットする。
+% 1回目の指示文には上余白を入れず、2回目以降の指示文の前だけ余白を入れる。
 \newcommand{\Instruction}[1]{%
   \setcounter{LMsubq}{0}%
+  \ifLMInstructionUsed
+    \par\vspace{5mm}%
+  \fi
+  \LMInstructionUsedtrue
   \ifLMAnswerMode
-    \par\vspace{1mm}%
+    \par
   \else
-    \par\vspace{2mm}%
     \noindent #1\par
     \vspace{1mm}%
   \fi
