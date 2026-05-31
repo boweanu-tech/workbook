@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v8]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v9]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -123,9 +123,16 @@
   \fi
 }
 
-% 旧2列配置用。multicolsは縦方向に流れるため、横方向の番号順には使わない。
+% 旧2列配置用。単一列の互換命令として残す。
 \newcommand{\BeginTwoCols}{\par\vspace{1mm}}
 \newcommand{\EndTwoCols}{\par}
+\newcommand{\QQ}[2]{%
+  \stepcounter{LMsubq}%
+  \noindent
+  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+  \ifLMAnswerMode #2\else #1\fi
+  \par\vspace{4mm}%
+}
 
 % 2問を横並びで出力する。番号は左から右へ進む。
 % \QQRow{左問題}{左解答}{右問題}{右解答}
