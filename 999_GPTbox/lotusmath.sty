@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v9]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v10]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -92,10 +92,9 @@
   \fi
 }
 
-% 大問内で追加の指示文を表示する。改ページせず、小問番号だけをリセットする。
+% 大問内で追加の指示文を表示する。改ページせず、小問番号も維持する。
 % 1回目の指示文には上余白を入れず、2回目以降の指示文の前だけ余白を入れる。
 \newcommand{\Instruction}[1]{%
-  \setcounter{LMsubq}{0}%
   \ifLMInstructionUsed
     \par\vspace{5mm}%
   \fi
