@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v5]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v6]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -84,6 +84,18 @@
     \clearpage
     \noindent\LMBoxedMajor\quad #1\par
     \vspace{2mm}\hrule\vspace{4mm}%
+  \fi
+}
+
+% 大問内で追加の指示文を表示する。改ページせず、小問番号だけをリセットする。
+\newcommand{\Instruction}[1]{%
+  \setcounter{LMsubq}{0}%
+  \ifLMAnswerMode
+    \par\vspace{1mm}%
+  \else
+    \par\vspace{2mm}%
+    \noindent #1\par
+    \vspace{1mm}%
   \fi
 }
 
