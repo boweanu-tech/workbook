@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/14 minimal math test package v4]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v5]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -18,7 +18,7 @@
 \newcounter{LMmajor}
 \newcounter{LMsubq}
 
-% 問題ファイル一覧を蓄積する。出力用texでは \UseProblem{...} を1行書くだけでよい。
+% 問題ファイル一覧を蓄積する。出力用texでは \Use{...} を1行書くだけでよい。
 \newcommand{\LMProblemList}{}
 \newcommand{\Use}[1]{%
   \input{#1}%
@@ -100,6 +100,25 @@
     \par
     \vspace{#3}%
   \fi
+}
+
+% 2列配置用。各小問は \QQ{問題}{解答} と書く。
+% 問題・解答のどちらでも同じ2列レイアウトになる。
+\newcommand{\BeginTwoCols}{%
+  \par\vspace{1mm}%
+  \begin{multicols}{2}%
+  \setlength{\columnsep}{8mm}%
+}
+\newcommand{\EndTwoCols}{%
+  \end{multicols}%
+  \par
+}
+\newcommand{\QQ}[2]{%
+  \stepcounter{LMsubq}%
+  \noindent
+  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+  \ifLMAnswerMode #2\else #1\fi
+  \par\vspace{4mm}%
 }
 
 \newcommand{\MakeEvenPage}{%
