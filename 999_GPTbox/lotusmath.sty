@@ -20,7 +20,7 @@
 
 % 問題ファイル一覧を蓄積する。出力用texでは \UseProblem{...} を1行書くだけでよい。
 \newcommand{\LMProblemList}{}
-\newcommand{\UseProblem}[1]{%
+\newcommand{\Use}[1]{%
   \input{#1}%
   \g@addto@macro\LMProblemList{\LMAnswerInput{#1}}%
 }
