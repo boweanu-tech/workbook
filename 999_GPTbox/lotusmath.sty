@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v10]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v11]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -100,10 +100,10 @@
   \fi
   \LMInstructionUsedtrue
   \ifLMAnswerMode
-    \par
+    \par\vspace{1mm}%
   \else
     \noindent #1\par
-    \vspace{1mm}%
+    \vspace{3mm}%
   \fi
 }
 
@@ -112,7 +112,7 @@
   \ifLMAnswerMode
     \noindent
     \makebox[11mm][l]{(\theLMsubq)}#2\par
-    \vspace{2.8ex}%
+    \vspace{3.4ex}%
   \else
     \noindent
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
@@ -123,14 +123,14 @@
 }
 
 % 旧2列配置用。単一列の互換命令として残す。
-\newcommand{\BeginTwoCols}{\par\vspace{1mm}}
+\newcommand{\BeginTwoCols}{\par\vspace{2mm}}
 \newcommand{\EndTwoCols}{\par}
 \newcommand{\QQ}[2]{%
   \stepcounter{LMsubq}%
   \noindent
   \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \ifLMAnswerMode #2\else #1\fi
-  \par\vspace{4mm}%
+  \par\vspace{7mm}%
 }
 
 % 2問を横並びで出力する。番号は左から右へ進む。
@@ -148,7 +148,7 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode #4\else #3\fi
   \end{minipage}%
-  \par\vspace{4mm}%
+  \par\vspace{7mm}%
 }
 
 % 1問だけ残る場合に使う。
@@ -159,7 +159,7 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode #2\else #1\fi
   \end{minipage}%
-  \par\vspace{4mm}%
+  \par\vspace{7mm}%
 }
 
 \newcommand{\MakeEvenPage}{%
