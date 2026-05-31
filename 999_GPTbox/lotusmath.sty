@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v7]
+\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v8]
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -123,22 +123,36 @@
   \fi
 }
 
-% 2列配置用。各小問は \QQ{問題}{解答} と書く。
-% 問題・解答のどちらでも同じ2列レイアウトになる。
-\newcommand{\BeginTwoCols}{%
-  \par\vspace{1mm}%
-  \begin{multicols}{2}%
-  \setlength{\columnsep}{8mm}%
-}
-\newcommand{\EndTwoCols}{%
-  \end{multicols}%
-  \par
-}
-\newcommand{\QQ}[2]{%
-  \stepcounter{LMsubq}%
+% 旧2列配置用。multicolsは縦方向に流れるため、横方向の番号順には使わない。
+\newcommand{\BeginTwoCols}{\par\vspace{1mm}}
+\newcommand{\EndTwoCols}{\par}
+
+% 2問を横並びで出力する。番号は左から右へ進む。
+% \QQRow{左問題}{左解答}{右問題}{右解答}
+\newcommand{\QQRow}[4]{%
   \noindent
-  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-  \ifLMAnswerMode #2\else #1\fi
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \ifLMAnswerMode #2\else #1\fi
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \ifLMAnswerMode #4\else #3\fi
+  \end{minipage}%
+  \par\vspace{4mm}%
+}
+
+% 1問だけ残る場合に使う。
+\newcommand{\QQSingle}[2]{%
+  \noindent
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \ifLMAnswerMode #2\else #1\fi
+  \end{minipage}%
   \par\vspace{4mm}%
 }
 
