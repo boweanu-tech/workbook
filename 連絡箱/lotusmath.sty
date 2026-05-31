@@ -1,0 +1,111 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath}[2026/05/14 minimal math test package v4]
+
+\RequirePackage{geometry}
+\RequirePackage{multicol}
+\geometry{b5paper,top=16mm,bottom=16mm,left=16mm,right=16mm}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxrule}{1pt}
+
+\makeatletter
+\newif\ifLMAnswerMode
+\LMAnswerModefalse
+\newif\ifLMInAnswerBlock
+\LMInAnswerBlockfalse
+
+\newcounter{LMmajor}
+\newcounter{LMsubq}
+
+% 問題ファイル一覧を蓄積する。出力用texでは \UseProblem{...} を1行書くだけでよい。
+\newcommand{\LMProblemList}{}
+\newcommand{\UseProblem}[1]{%
+  \input{#1}%
+  \g@addto@macro\LMProblemList{\LMAnswerInput{#1}}%
+}
+\newcommand{\LMAnswerInput}[1]{\input{#1}}
+
+\newcommand{\CoverPage}[2]{%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{20mm}
+  {\large 名前\quad\underline{\hspace{80mm}}}\par
+  \vspace{35mm}
+  \begin{center}
+    {\Huge 総まとめテスト}\par
+    \vspace{12mm}
+    {\LARGE #1}\par
+    \vspace{18mm}
+    {\large #2}\par
+  \end{center}
+  \end{titlepage}
+}
+
+\newcommand{\BeginQuestions}{%
+  \LMAnswerModefalse
+  \setcounter{LMmajor}{0}%
+  \setcounter{LMsubq}{0}%
+}
+
+\newcommand{\BeginAnswers}{%
+  \clearpage
+  \LMAnswerModetrue
+  \setcounter{LMmajor}{0}%
+  \setcounter{LMsubq}{0}%
+  \begin{center}{\Large 解答}\end{center}
+  \vspace{3mm}
+  \begin{multicols}{2}
+  \raggedcolumns
+  \LMInAnswerBlockfalse
+}
+
+\newcommand{\PrintAnswers}{%
+  \BeginAnswers
+  \LMProblemList
+  \ifLMInAnswerBlock\end{minipage}\par\LMInAnswerBlockfalse\fi
+  \end{multicols}
+}
+
+\newcommand{\LMBoxedMajor}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][7.5mm][c]{7.5mm}{\centering\large\bfseries\theLMmajor}}}%
+}
+
+\newcommand{\MajorQuestion}[1]{%
+  \stepcounter{LMmajor}%
+  \setcounter{LMsubq}{0}%
+  \ifLMAnswerMode
+    \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
+    \noindent\begin{minipage}{\linewidth}
+    \LMInAnswerBlocktrue
+    \noindent\LMBoxedMajor\par\vspace{1.5mm}%
+  \else
+    \clearpage
+    \noindent\LMBoxedMajor\quad #1\par
+    \vspace{2mm}\hrule\vspace{4mm}%
+  \fi
+}
+
+\newcommand{\Q}[3]{%
+  \stepcounter{LMsubq}%
+  \ifLMAnswerMode
+    \noindent
+    \makebox[11mm][l]{(\theLMsubq)}#2\par
+    \vspace{2.8ex}%
+  \else
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \par
+    \vspace{#3}%
+  \fi
+}
+
+\newcommand{\MakeEvenPage}{%
+  \clearpage
+  \ifodd\value{page}%
+    \null\thispagestyle{empty}\clearpage
+  \fi
+}
+\makeatother
