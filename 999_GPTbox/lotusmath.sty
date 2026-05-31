@@ -96,14 +96,14 @@
 % 1回目の指示文には上余白を入れず、2回目以降の指示文の前だけ余白を入れる。
 \newcommand{\Instruction}[1]{%
   \ifLMInstructionUsed
-    \par\vspace{5mm}%
+    \par\vspace{7mm}%
   \fi
   \LMInstructionUsedtrue
   \ifLMAnswerMode
     \par\vspace{1mm}%
   \else
     \noindent #1\par
-    \vspace{3mm}%
+    \vspace{6mm}%
   \fi
 }
 
@@ -130,7 +130,7 @@
   \noindent
   \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \ifLMAnswerMode #2\else #1\fi
-  \par\vspace{7mm}%
+  \par\vspace{10mm}%
 }
 
 % 2問を横並びで出力する。番号は左から右へ進む。
@@ -148,7 +148,7 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode #4\else #3\fi
   \end{minipage}%
-  \par\vspace{7mm}%
+  \par\vspace{10mm}%
 }
 
 % 1問だけ残る場合に使う。
@@ -159,7 +159,7 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode #2\else #1\fi
   \end{minipage}%
-  \par\vspace{7mm}%
+  \par\vspace{10mm}%
 }
 
 \newcommand{\MakeEvenPage}{%
