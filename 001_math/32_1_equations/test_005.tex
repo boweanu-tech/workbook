@@ -1,10 +1,20 @@
 % theme: proofs_of_equalities
-\MajorQuestion{次の等式を証明しなさい。}
+\MajorQuestion{次の問いに答えなさい。}
+
+\Instruction{次の等式を証明しなさい。}
 \BeginTwoCols
-\QQ{$(a+b)^2-(a-b)^2=4ab$}{左辺 $=a^2+2ab+b^2-(a^2-2ab+b^2)=4ab$}
-\QQ{$(x+y+z)^2-(x-y-z)^2=4x(y+z)$}{左辺 $=\{(x+y+z)+(x-y-z)\}\{(x+y+z)-(x-y-z)\}=4x(y+z)$}
-\QQ{$a^3+b^3=(a+b)(a^2-ab+b^2)$}{右辺 $=a^3-a^2b+ab^2+a^2b-ab^2+b^3=a^3+b^3$}
-\QQ{$\dfrac{1}{a} - \dfrac{1}{b}=\dfrac{b-a}{ab}$}{左辺 $=\dfrac{b-a}{ab}$}
-\QQ{$\dfrac{x}{x+1}+\dfrac{1}{x+1}=1$}{左辺 $=\dfrac{x+1}{x+1}=1$}
 \QQ{$\dfrac{a}{b}+\dfrac{b}{a}-2=\dfrac{(a-b)^2}{ab}$}{左辺 $=\dfrac{a^2+b^2-2ab}{ab}=\dfrac{(a-b)^2}{ab}$}
+\QQ{$\dfrac{x}{y}+\dfrac{y}{x}-\dfrac{x-y}{x}+\dfrac{x-y}{y}=2$}{左辺 $=\dfrac{x}{y}+\dfrac{y}{x}-1+\dfrac{y}{x}+\dfrac{x}{y}-1=2\left(\dfrac{x}{y}+\dfrac{y}{x}\right)-2$}
+\EndTwoCols
+
+\Instruction{$a+b+c=0$ のとき、次の等式を証明しなさい。}
+\BeginTwoCols
+\QQ{$a^3+b^3+c^3=3abc$}{$a+b=-c$ より、$a^3+b^3+c^3=(a+b)^3-3ab(a+b)+c^3=-c^3+3abc+c^3=3abc$}
+\QQ{$a^2+b^2+c^2=-2(ab+bc+ca)$}{$(a+b+c)^2=0$ より、$a^2+b^2+c^2+2ab+2bc+2ca=0$}
+\EndTwoCols
+
+\Instruction{次の条件のもとで、式の値を求めなさい。}
+\BeginTwoCols
+\QQ{$x:y=2:3$ のとき、$\dfrac{x^2+xy+y^2}{x^2-xy+y^2}$}{$\dfrac{19}{7}$}
+\QQ{$a+b+c=0,\quad ab+bc+ca=-6$ のとき、$a^2+b^2+c^2$}{$12$}
 \EndTwoCols
