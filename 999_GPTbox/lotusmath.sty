@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v16]
+\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v17]
 
 \usepackage{amssymb}
 
@@ -27,9 +27,8 @@
 \newcommand{\LMCurrentTheme}{}
 
 \newsavebox{\LMMeasureBox}
-\newlength{\LMRowExtraSpace}
-\newlength{\LMLeftExtraSpace}
-\newlength{\LMRightExtraSpace}
+\newlength{\LMAnswerHeight}
+\newif\ifLMTallAnswer
 
 % 問題ファイル一覧を蓄積する。
 % 使用例: \Use{../001_math/23_2_roots/test}{01}
@@ -126,15 +125,28 @@
   \fi
 }
 
-% 解答欄の高さを測り、分数・根号・複数行など背の高い解答にだけ余白を追加する。
-\newcommand{\LMSetExtraSpaceForWidth}[2]{%
+% 解答内容の高さを計測する。分数・根号・折り返しなどで高い場合は true。
+\newcommand{\LMMeasureAnswer}[2]{%
   \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
-  \setlength{\LMRowExtraSpace}{10mm}%
-  \ifdim\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax>15pt
-    \addtolength{\LMRowExtraSpace}{3mm}%
+  \setlength{\LMAnswerHeight}{\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax}%
+  \LMTallAnswerfalse
+  \ifdim\LMAnswerHeight>15pt
+    \LMTallAnswertrue
   \fi
-  \ifdim\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax>27pt
-    \addtolength{\LMRowExtraSpace}{3mm}%
+}
+
+% 解答を出力する。高い解答は番号の次の独立段落に回し、行送りも広げる。
+\newcommand{\LMPrintAnswer}[3]{%
+  \LMMeasureAnswer{#1}{#3}%
+  \ifLMTallAnswer
+    \makebox[#2][l]{}%
+    \parbox[t]{\dimexpr\linewidth-#2\relax}{%
+      \setlength{\baselineskip}{1.45\baselineskip}%
+      #3}%
+    \par\vspace{4mm}%
+  \else
+    \parbox[t]{\dimexpr\linewidth-#2\relax}{#3}%
+    \par\vspace{1mm}%
   \fi
 }
 
@@ -142,13 +154,11 @@
   \stepcounter{LMsubq}%
   \noindent
   \makebox[11mm][l]{(\theLMsubq)}%
-  \parbox[t]{\dimexpr\linewidth-11mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
-  \par
   \ifLMAnswerMode
-    \LMSetExtraSpaceForWidth{\dimexpr\linewidth-11mm\relax}{#2}%
-    \vspace{\LMRowExtraSpace}%
+    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#2}%
   \else
-    \vspace{#3}%
+    \parbox[t]{\dimexpr\linewidth-11mm\relax}{#1}%
+    \par\vspace{#3}%
   \fi
 }
 
@@ -159,13 +169,11 @@
   \stepcounter{LMsubq}%
   \noindent
   \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-  \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
-  \par
   \ifLMAnswerMode
-    \LMSetExtraSpaceForWidth{\dimexpr\linewidth-9mm\relax}{#2}%
-    \vspace{\LMRowExtraSpace}%
+    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
-    \vspace{10mm}%
+    \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \par\vspace{10mm}%
   \fi
 }
 
@@ -176,28 +184,33 @@
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
+    \ifLMAnswerMode
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
+      \fi
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \fi
   \end{minipage}%
   \hfill
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #4\else #3\fi}%
-  \end{minipage}%
-  \par
-  \ifLMAnswerMode
-    \LMSetExtraSpaceForWidth{\dimexpr0.48\linewidth-9mm\relax}{#2}%
-    \setlength{\LMLeftExtraSpace}{\LMRowExtraSpace}%
-    \LMSetExtraSpaceForWidth{\dimexpr0.48\linewidth-9mm\relax}{#4}%
-    \setlength{\LMRightExtraSpace}{\LMRowExtraSpace}%
-    \ifdim\LMLeftExtraSpace>\LMRightExtraSpace
-      \vspace{\LMLeftExtraSpace}%
+    \ifLMAnswerMode
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
+      \fi
     \else
-      \vspace{\LMRightExtraSpace}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
     \fi
-  \else
-    \vspace{10mm}%
-  \fi
+  \end{minipage}%
+  \par\vspace{4mm}%
 }
 
 % 1問だけ残る場合に使う。
@@ -206,15 +219,18 @@
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
+    \ifLMAnswerMode
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
+      \fi
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \fi
   \end{minipage}%
-  \par
-  \ifLMAnswerMode
-    \LMSetExtraSpaceForWidth{\dimexpr0.48\linewidth-9mm\relax}{#2}%
-    \vspace{\LMRowExtraSpace}%
-  \else
-    \vspace{10mm}%
-  \fi
+  \par\vspace{4mm}%
 }
 
 \newcommand{\MakeEvenPage}{%
