@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/05/31 minimal math test package v12]
+\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v13]
 
 \usepackage{amssymb}
 
@@ -21,14 +21,35 @@
 
 \newcounter{LMmajor}
 \newcounter{LMsubq}
+\newcommand{\LMCurrentTheme}{}
 
-% 問題ファイル一覧を蓄積する。出力用texでは \Use{...} を1行書くだけでよい。
+% 問題ファイル一覧を蓄積する。
+% 新形式: \Use{../001_math/23_2_roots/test}{001}
+%          -> ../001_math/23_2_roots/test_001.tex を読み込み、テーマ番号 001 を表示する。
+% 旧形式: \Use{../001_math/23_2_roots/test_001.tex}
+%          -> 後方互換性のため、そのまま読み込む。
 \newcommand{\LMProblemList}{}
 \newcommand{\Use}[1]{%
-  \input{#1}%
-  \g@addto@macro\LMProblemList{\LMAnswerInput{#1}}%
+  \@ifnextchar\bgroup{\LMUseTheme{#1}}{\LMUseLegacy{#1}}%
 }
-\newcommand{\LMAnswerInput}[1]{\input{#1}}
+\newcommand{\LMUseTheme}[2]{%
+  \gdef\LMCurrentTheme{#2}%
+  \input{#1_#2.tex}%
+  \g@addto@macro\LMProblemList{\LMAnswerThemeInput{#1}{#2}}%
+}
+\newcommand{\LMUseLegacy}[1]{%
+  \gdef\LMCurrentTheme{}%
+  \input{#1}%
+  \g@addto@macro\LMProblemList{\LMAnswerLegacyInput{#1}}%
+}
+\newcommand{\LMAnswerThemeInput}[2]{%
+  \gdef\LMCurrentTheme{#2}%
+  \input{#1_#2.tex}%
+}
+\newcommand{\LMAnswerLegacyInput}[1]{%
+  \gdef\LMCurrentTheme{}%
+  \input{#1}%
+}
 
 \newcommand{\CoverPage}[2]{%
   \begin{titlepage}
@@ -73,9 +94,17 @@
   \end{multicols}
 }
 
+\newcommand{\LMPrintedMajor}{%
+  \ifx\LMCurrentTheme\@empty
+    \theLMmajor
+  \else
+    \LMCurrentTheme
+  \fi
+}
+
 \newcommand{\LMBoxedMajor}{%
   {\setlength{\fboxsep}{0pt}%
-   \fbox{\parbox[c][7.5mm][c]{7.5mm}{\centering\large\bfseries\theLMmajor}}}%
+   \fbox{\parbox[c][7.5mm][c]{11mm}{\centering\large\bfseries\LMPrintedMajor}}}%
 }
 
 \newcommand{\MajorQuestion}[1]{%
