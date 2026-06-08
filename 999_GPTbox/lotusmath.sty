@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v15]
+\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v16]
 
 \usepackage{amssymb}
 
@@ -25,6 +25,11 @@
 \newcounter{LMmajor}
 \newcounter{LMsubq}
 \newcommand{\LMCurrentTheme}{}
+
+\newsavebox{\LMMeasureBox}
+\newlength{\LMRowExtraSpace}
+\newlength{\LMLeftExtraSpace}
+\newlength{\LMRightExtraSpace}
 
 % 問題ファイル一覧を蓄積する。
 % 使用例: \Use{../001_math/23_2_roots/test}{01}
@@ -121,8 +126,17 @@
   \fi
 }
 
-% 解答欄のうち、分数や長い式を含むものだけ上下幅を広げる。
-\newcommand{\TallAns}[1]{\rule[-1.2ex]{0pt}{5.2ex}#1}
+% 解答欄の高さを測り、分数・根号・複数行など背の高い解答にだけ余白を追加する。
+\newcommand{\LMSetExtraSpaceForWidth}[2]{%
+  \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
+  \setlength{\LMRowExtraSpace}{10mm}%
+  \ifdim\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax>15pt
+    \addtolength{\LMRowExtraSpace}{3mm}%
+  \fi
+  \ifdim\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax>27pt
+    \addtolength{\LMRowExtraSpace}{3mm}%
+  \fi
+}
 
 \newcommand{\Q}[3]{%
   \stepcounter{LMsubq}%
@@ -130,7 +144,12 @@
   \makebox[11mm][l]{(\theLMsubq)}%
   \parbox[t]{\dimexpr\linewidth-11mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
   \par
-  \ifLMAnswerMode\vspace{3.4ex}\else\vspace{#3}\fi
+  \ifLMAnswerMode
+    \LMSetExtraSpaceForWidth{\dimexpr\linewidth-11mm\relax}{#2}%
+    \vspace{\LMRowExtraSpace}%
+  \else
+    \vspace{#3}%
+  \fi
 }
 
 % 旧2列配置用。単一列の互換命令として残す。
@@ -141,7 +160,13 @@
   \noindent
   \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
-  \par\vspace{10mm}%
+  \par
+  \ifLMAnswerMode
+    \LMSetExtraSpaceForWidth{\dimexpr\linewidth-9mm\relax}{#2}%
+    \vspace{\LMRowExtraSpace}%
+  \else
+    \vspace{10mm}%
+  \fi
 }
 
 % 2問を横並びで出力する。番号は左から右へ進む。
@@ -159,7 +184,20 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #4\else #3\fi}%
   \end{minipage}%
-  \par\vspace{10mm}%
+  \par
+  \ifLMAnswerMode
+    \LMSetExtraSpaceForWidth{\dimexpr0.48\linewidth-9mm\relax}{#2}%
+    \setlength{\LMLeftExtraSpace}{\LMRowExtraSpace}%
+    \LMSetExtraSpaceForWidth{\dimexpr0.48\linewidth-9mm\relax}{#4}%
+    \setlength{\LMRightExtraSpace}{\LMRowExtraSpace}%
+    \ifdim\LMLeftExtraSpace>\LMRightExtraSpace
+      \vspace{\LMLeftExtraSpace}%
+    \else
+      \vspace{\LMRightExtraSpace}%
+    \fi
+  \else
+    \vspace{10mm}%
+  \fi
 }
 
 % 1問だけ残る場合に使う。
@@ -170,7 +208,13 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \parbox[t]{\dimexpr\linewidth-9mm\relax}{\ifLMAnswerMode #2\else #1\fi}%
   \end{minipage}%
-  \par\vspace{10mm}%
+  \par
+  \ifLMAnswerMode
+    \LMSetExtraSpaceForWidth{\dimexpr0.48\linewidth-9mm\relax}{#2}%
+    \vspace{\LMRowExtraSpace}%
+  \else
+    \vspace{10mm}%
+  \fi
 }
 
 \newcommand{\MakeEvenPage}{%
