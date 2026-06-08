@@ -139,14 +139,14 @@
 \newcommand{\LMPrintAnswer}[3]{%
   \LMMeasureAnswer{#1}{#3}%
   \ifLMTallAnswer
-    \makebox[#2][l]{}%
     \parbox[t]{\dimexpr\linewidth-#2\relax}{%
       \setlength{\baselineskip}{1.45\baselineskip}%
-      #3}%
-    \par\vspace{4mm}%
+      #3%
+    }%
+    \par\vspace{3mm}%
   \else
     \parbox[t]{\dimexpr\linewidth-#2\relax}{#3}%
-    \par\vspace{1mm}%
+    \par\vspace{3mm}%
   \fi
 }
 
