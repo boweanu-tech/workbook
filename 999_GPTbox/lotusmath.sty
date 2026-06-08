@@ -3,13 +3,16 @@
 
 \usepackage{amssymb}
 
+\newlength{\LMRuleWidth}
+\setlength{\LMRuleWidth}{0.8pt}
+
 \RequirePackage{geometry}
 \RequirePackage{multicol}
 \geometry{b5paper,top=16mm,bottom=16mm,left=16mm,right=16mm}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlength{\fboxrule}{1pt}
+\setlength{\fboxrule}{\LMRuleWidth}
 
 \makeatletter
 \newif\ifLMAnswerMode
@@ -99,7 +102,7 @@
   \else
     \clearpage
     \noindent\LMBoxedMajor\quad \raisebox{-0.4mm}{#1}\par
-    \vspace{2mm}\hrule\vspace{4mm}%
+    \vspace{2mm}\hrule height \LMRuleWidth\vspace{4mm}%
   \fi
 }
 
