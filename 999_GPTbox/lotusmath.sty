@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v14]
+\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v15]
 
 \usepackage{amssymb}
 
@@ -120,6 +120,9 @@
     \vspace{6mm}%
   \fi
 }
+
+% 解答欄のうち、分数や長い式を含むものだけ上下幅を広げる。
+\newcommand{\TallAns}[1]{\rule[-1.2ex]{0pt}{5.2ex}#1}
 
 \newcommand{\Q}[3]{%
   \stepcounter{LMsubq}%
