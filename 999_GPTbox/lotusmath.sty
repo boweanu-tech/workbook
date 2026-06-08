@@ -84,7 +84,7 @@
 
 \newcommand{\LMBoxedMajor}{%
   {\setlength{\fboxsep}{0pt}%
-   \fbox{\parbox[c][9mm][c]{9mm}{\centering\large\LMPrintedMajor}}}%
+   \fbox{\parbox[c][7mm][c]{7mm}{\centering\large\LMPrintedMajor}}}%
 }
 
 \newcommand{\MajorQuestion}[1]{%
@@ -98,7 +98,7 @@
     \noindent\LMBoxedMajor\par\vspace{1.5mm}%
   \else
     \clearpage
-    \noindent\LMBoxedMajor\quad #1\par
+    \noindent\LMBoxedMajor\quad \raisebox{-0.4mm}{#1}\par
     \vspace{2mm}\hrule\vspace{4mm}%
   \fi
 }
