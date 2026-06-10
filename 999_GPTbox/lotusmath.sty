@@ -1,10 +1,14 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/08 minimal math test package v17]
+\ProvidesPackage{lotusmath}[2026/06/10 minimal math test package v18]
 
 \usepackage{amssymb}
 
 \newlength{\LMRuleWidth}
 \setlength{\LMRuleWidth}{0.8pt}
+\newlength{\LMDefaultRowSpace}
+\setlength{\LMDefaultRowSpace}{4mm}
+\newlength{\LMRowSpace}
+\setlength{\LMRowSpace}{\LMDefaultRowSpace}
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -94,7 +98,18 @@
    \fbox{\parbox[c][7mm][c]{7mm}{\centering\large\LMPrintedMajor}}}%
 }
 
+% ページ内の横並び小問の行間を指定する。
+% 例: \SetRowSpace{7mm}
+% 各 \MajorQuestion の開始時に標準値へ戻る。
+\newcommand{\SetRowSpace}[1]{%
+  \setlength{\LMRowSpace}{#1}%
+}
+\newcommand{\ResetRowSpace}{%
+  \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
+}
+
 \newcommand{\MajorQuestion}[1]{%
+  \ResetRowSpace
   \stepcounter{LMmajor}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
@@ -210,7 +225,7 @@
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
     \fi
   \end{minipage}%
-  \par\vspace{4mm}%
+  \par\vspace{\LMRowSpace}%
 }
 
 % 1問だけ残る場合に使う。
@@ -230,7 +245,7 @@
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
     \fi
   \end{minipage}%
-  \par\vspace{4mm}%
+  \par\vspace{\LMRowSpace}%
 }
 
 \newcommand{\MakeEvenPage}{%
