@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/10 minimal math test package v18]
+\ProvidesPackage{lotusmath}[2026/06/10 minimal math test package v19]
 
 \usepackage{amssymb}
 
@@ -9,6 +9,8 @@
 \setlength{\LMDefaultRowSpace}{4mm}
 \newlength{\LMCalcRowSpace}
 \setlength{\LMCalcRowSpace}{16mm}
+\newlength{\LMAnswerRowSpace}
+\setlength{\LMAnswerRowSpace}{3mm}
 \newlength{\LMRowSpace}
 \setlength{\LMRowSpace}{\LMDefaultRowSpace}
 
@@ -100,14 +102,14 @@
    \fbox{\parbox[c][7mm][c]{7mm}{\centering\large\LMPrintedMajor}}}%
 }
 
-% ページ内の横並び小問の行間を指定する。
+% ページ内の横並び小問の問題用行間を指定する。
 % 例: \SetRowSpace{7mm}
 % 各 \MajorQuestion の開始時に標準値へ戻る。
 \newcommand{\SetRowSpace}[1]{%
   \setlength{\LMRowSpace}{#1}%
 }
 
-%計算連打用
+% 計算連打ページ用。問題ページだけを広げる。
 \newcommand{\SetRowSpaceCalc}{%
   \setlength{\LMRowSpace}{\LMCalcRowSpace}%
 }
@@ -233,7 +235,11 @@
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
     \fi
   \end{minipage}%
-  \par\vspace{\LMRowSpace}%
+  \ifLMAnswerMode
+    \par\vspace{\LMAnswerRowSpace}%
+  \else
+    \par\vspace{\LMRowSpace}%
+  \fi
 }
 
 % 1問だけ残る場合に使う。
@@ -253,7 +259,11 @@
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
     \fi
   \end{minipage}%
-  \par\vspace{\LMRowSpace}%
+  \ifLMAnswerMode
+    \par\vspace{\LMAnswerRowSpace}%
+  \else
+    \par\vspace{\LMRowSpace}%
+  \fi
 }
 
 \newcommand{\MakeEvenPage}{%
