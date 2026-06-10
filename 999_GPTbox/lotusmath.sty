@@ -7,6 +7,8 @@
 \setlength{\LMRuleWidth}{0.8pt}
 \newlength{\LMDefaultRowSpace}
 \setlength{\LMDefaultRowSpace}{4mm}
+\newlength{\LMCalcRowSpace}
+\setlength{\LMCalcRowSpace}{16mm}
 \newlength{\LMRowSpace}
 \setlength{\LMRowSpace}{\LMDefaultRowSpace}
 
@@ -104,6 +106,12 @@
 \newcommand{\SetRowSpace}[1]{%
   \setlength{\LMRowSpace}{#1}%
 }
+
+%計算連打用
+\newcommand{\SetRowSpaceCalc}{%
+  \setlength{\LMRowSpace}{\LMCalcRowSpace}%
+}
+
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
 }
@@ -188,7 +196,7 @@
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
-    \par\vspace{10mm}%
+    \par\vspace{\LMRowSpace}%
   \fi
 }
 
