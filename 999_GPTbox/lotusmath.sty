@@ -130,8 +130,25 @@
 }
 
 % 一問一答用の空欄番号。
-% 例: \Blank{11} -> 【11】
+% 例: \Blank{11} -> 【 11 】
 \newcommand{\Blank}[1]{【\quad #1\quad 】}
+
+% 現在の小問番号をキーに登録し、空欄として表示する。
+% 例: \NamedBlank{cell} -> 小問番号が 11 の場合は 【 11 】
+\newcommand{\NamedBlank}[1]{%
+  \expandafter\xdef\csname LMBlankNumber:#1\endcsname{\theLMsubq}%
+  \Blank{\theLMsubq}%
+}
+
+% 前に登録した空欄を、現在の番号で参照する。
+% 例: \RefBlank{cell} -> cell が小問 11 で登録済みなら 【 11 】
+\newcommand{\RefBlank}[1]{%
+  \expandafter\ifx\csname LMBlankNumber:#1\endcsname\relax
+    \Blank{??}%
+  \else
+    \Blank{\csname LMBlankNumber:#1\endcsname}%
+  \fi
+}
 
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
@@ -197,7 +214,7 @@
 \newcommand{\Q}[3]{%
   \stepcounter{LMsubq}%
   \noindent
-  \makebox[11mm][l]{(\theLMsubq)}%全部穴抜き問題にしなくても・・・穴抜きと「〜〜を何と言いますか。」問題を混ぜることって出来ますか？
+  \makebox[11mm][l]{(\theLMsubq)}%
   \ifLMAnswerMode
     \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#2}%
   \else
