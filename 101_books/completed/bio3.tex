@@ -1,0 +1,22 @@
+\documentclass[b5j,fleqn]{jarticle}
+\usepackage{amsmath}
+\usepackage{lotusmath}
+
+\begin{document}
+
+\CoverPage{中３生物}{一問一答}
+
+\BeginQuestions
+\Use{../004_science/23_1_bio/qandaOrd}{01}
+\Use{../004_science/23_1_bio/qandaRnd}{01}
+\Use{../004_science/23_1_bio/qandaOrd}{02}
+\Use{../004_science/23_1_bio/qandaRnd}{02}
+\Use{../004_science/23_1_bio/qandaOrd}{03}
+\Use{../004_science/23_1_bio/qandaRnd}{03}
+
+% 両面印刷用：問題ページ数を偶数にそろえてから解答へ進む
+\MakeEvenPage
+
+\PrintAnswers
+
+\end{document}
