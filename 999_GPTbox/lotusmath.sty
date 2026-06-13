@@ -131,7 +131,7 @@
 
 % 一問一答用の空欄番号。
 % 例: \Blank{11} -> 【11】
-\newcommand{\Blank}[1]{【#1】}
+\newcommand{\Blank}[1]{【\quad #1\quad 】}
 
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
@@ -197,7 +197,7 @@
 \newcommand{\Q}[3]{%
   \stepcounter{LMsubq}%
   \noindent
-  \makebox[11mm][l]{(\theLMsubq)}%
+  \makebox[11mm][l]{(\theLMsubq)}%全部穴抜き問題にしなくても・・・穴抜きと「〜〜を何と言いますか。」問題を混ぜることって出来ますか？
   \ifLMAnswerMode
     \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#2}%
   \else
