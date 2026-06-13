@@ -9,6 +9,8 @@
 \setlength{\LMDefaultRowSpace}{4mm}
 \newlength{\LMCalcRowSpace}
 \setlength{\LMCalcRowSpace}{16mm}
+\newlength{\LMQandaRowSpace}
+\setlength{\LMQandaRowSpace}{1mm}
 \newlength{\LMAnswerRowSpace}
 \setlength{\LMAnswerRowSpace}{3mm}
 \newlength{\LMRowSpace}
@@ -122,6 +124,10 @@
   \setlength{\LMRowSpace}{\LMCalcRowSpace}%
 }
 
+% 一問一答用。問題ページだけを広げる。
+\newcommand{\SetRowSpaceQanda}{%
+  \setlength{\LMRowSpace}{\LMQandaRowSpace}%
+}
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
 }
