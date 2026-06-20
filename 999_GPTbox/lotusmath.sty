@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v21]
+\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v22]
 
 \usepackage{amssymb}
 
@@ -39,10 +39,24 @@
 \newcommand{\LMCurrentTheme}{}
 \newcommand{\LMCoverTitle}{}
 \newcommand{\LMCoverSubtitle}{}
+\newcommand{\LMCurrentProblemDir}{./}
 
 \newsavebox{\LMMeasureBox}
 \newlength{\LMAnswerHeight}
 \newif\ifLMTallAnswer
+
+% \Useで読み込む問題ファイルのディレクトリを図版探索パスに追加する。
+% これにより、101_books等から \Use{../unit/test}{01} した場合でも、
+% 問題ファイル内では \LMFig{fig/sample} のように単元フォルダ基準で図版を指定できる。
+\newcommand{\LMSetProblemDir}[1]{%
+  \filename@parse{#1}%
+  \xdef\LMCurrentProblemDir{\filename@area}%
+  \ifx\LMCurrentProblemDir\@empty
+    \graphicspath{{./}}%
+  \else
+    \graphicspath{{\LMCurrentProblemDir}{./}}%
+  \fi
+}
 
 % 問題ファイル一覧を蓄積する。
 % 使用例: \Use{../001_math/23_2_roots/test}{01}
@@ -50,11 +64,13 @@
 \newcommand{\LMProblemList}{}
 \newcommand{\Use}[2]{%
   \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2.tex}%
   \input{#1_#2.tex}%
   \g@addto@macro\LMProblemList{\LMAnswerInput{#1}{#2}}%
 }
 \newcommand{\LMAnswerInput}[2]{%
   \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2.tex}%
   \input{#1_#2.tex}%
 }
 
