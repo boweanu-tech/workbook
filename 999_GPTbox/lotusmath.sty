@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v25]
+\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v26]
 
 \usepackage{amssymb}
 
@@ -229,6 +229,15 @@
   \fi
 }
 
+% 地の文。小問番号は振らず、解答ページでは表示しない。
+% 例: \Text{次の図を見て、問いに答えなさい。}
+\newcommand{\Text}[1]{%
+  \ifLMAnswerMode
+  \else
+    \noindent #1\par\vspace{1mm}%
+  \fi
+}
+
 % 解答内容の高さを計測する。分数・根号・折り返しなどで高い場合は true。
 \newcommand{\LMMeasureAnswer}[2]{%
   \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
@@ -267,8 +276,8 @@
 }
 
 % wrapfigによる回り込み図版領域。
-% 小問番号は振らず、この中に \QQ などの小問を入れる。
-% 例: \WrapFig{r}{50mm}{fig/sample}{\QQ{問題}{答え}\QQ{問題}{答え}}
+% 小問番号は振らず、この中に \Text や \QQ などを入れる。
+% 例: \WrapFig{r}{50mm}{fig/sample}{\Text{本文}\QQ{問題}{答え}}
 % #1: r または l, #2: 図幅, #3: 図パス, #4: 本文・小問群
 \newcommand{\WrapFig}[4]{%
   \ifLMAnswerMode
