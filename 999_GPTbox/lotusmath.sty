@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/10 minimal math test package v20]
+\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v21]
 
 \usepackage{amssymb}
 
@@ -18,6 +18,8 @@
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
+\RequirePackage[dvipdfmx]{graphicx}
+\RequirePackage{wrapfig}
 \geometry{b5paper,top=16mm,bottom=16mm,left=16mm,right=16mm}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
@@ -150,6 +152,26 @@
   \fi
 }
 
+% 図版を中央配置で出力する。
+% SVGは事前にPDF化し、TeX側ではPDF化済み図版を読む。
+% 例: \LMFig[0.55\linewidth]{fig/test_01_01}
+\newcommand{\LMFig}[2][0.7\linewidth]{%
+  \begin{center}%
+    \includegraphics[width=#1]{#2}%
+  \end{center}%
+}
+
+% 図版をその場に出力する。minipageやparbox内で使う。
+% 例: \LMFigInline[0.9\linewidth]{fig/test_01_01}
+\newcommand{\LMFigInline}[2][0.7\linewidth]{%
+  \includegraphics[width=#1]{#2}%
+}
+
+% 図版をブロックとして中央配置する。parbox内で使う。
+\newcommand{\LMFigBlock}[2][0.7\linewidth]{%
+  {\centering\includegraphics[width=#1]{#2}\par}%
+}
+
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
 }
@@ -223,6 +245,50 @@
   \fi
 }
 
+% 図つき本文問題。右側に図、左側に本文を置く。
+% 利用問題や理科の「図のような〜」に使う。
+% 例: \QRightFig[0.34\linewidth]{fig/sample}{本文}{答え}{12mm}
+\newcommand{\QRightFig}[5][0.34\linewidth]{%
+  \stepcounter{LMsubq}%
+  \noindent
+  \makebox[11mm][l]{(\theLMsubq)}%
+  \ifLMAnswerMode
+    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#4}%
+  \else
+    \begin{minipage}[t]{\dimexpr\linewidth-11mm-#1-4mm\relax}
+      #3%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}
+      \centering\includegraphics[width=\linewidth]{#2}%
+    \end{minipage}%
+    \par\vspace{#5}%
+  \fi
+}
+
+% wrapfigによる回り込み図版つき問題。
+% 例: \QWrapFig[8]{r}{0.32\linewidth}{fig/sample}{本文}{答え}{12mm}
+% #1: 回り込み行数, #2: r または l, #3: 図幅, #4: 図パス, #5: 本文, #6: 解答, #7: 問題後余白
+\newcommand{\QWrapFig}[7][8]{%
+  \stepcounter{LMsubq}%
+  \noindent
+  \makebox[11mm][l]{(\theLMsubq)}%
+  \ifLMAnswerMode
+    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#6}%
+  \else
+    \begin{minipage}[t]{\dimexpr\linewidth-11mm\relax}
+      \begin{wrapfigure}[#1]{#2}{#3}
+        \vspace{-\baselineskip}%
+        \centering
+        \includegraphics[width=\linewidth]{#4}%
+        \vspace{-\baselineskip}%
+      \end{wrapfigure}%
+      #5\par
+    \end{minipage}%
+    \par\vspace{#7}%
+  \fi
+}
+
 % 旧2列配置用。単一列の互換命令として残す。
 \newcommand{\BeginTwoCols}{\par\vspace{2mm}}
 \newcommand{\EndTwoCols}{\par}
@@ -269,6 +335,55 @@
       \fi
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
+    \fi
+  \end{minipage}%
+  \ifLMAnswerMode
+    \par\vspace{\LMAnswerRowSpace}%
+  \else
+    \par\vspace{\LMRowSpace}%
+  \fi
+}
+
+% 図つき小問を2問横並びで出力する。角度・面積などの図形連打用。
+% 答えページでは図を省略し、解答だけを出力する。
+% 例: \QQFigRow[0.9\linewidth]{fig/a}{問題}{答え}{fig/b}{問題}{答え}
+\newcommand{\QQFigRow}[7][0.9\linewidth]{%
+  \noindent
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \ifLMAnswerMode
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
+      \fi
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+        \LMFigBlock[#1]{#2}%
+        \vspace{1mm}%
+        #3%
+      }%
+    \fi
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \ifLMAnswerMode
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#7}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#7}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#7}%
+      \fi
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+        \LMFigBlock[#1]{#5}%
+        \vspace{1mm}%
+        #6%
+      }%
     \fi
   \end{minipage}%
   \ifLMAnswerMode
