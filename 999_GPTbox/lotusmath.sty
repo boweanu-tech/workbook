@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v26]
+\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v27]
 
 \usepackage{amssymb}
 
@@ -281,8 +281,10 @@
 % wrapfigによる回り込み図版領域。
 % 小問番号は振らず、この中に \Text や \QQ などを入れる。
 % 例: \WrapFig{r}{50mm}{fig/sample}{\Text{本文}\QQ{問題}{答え}}
-% #1: r または l, #2: 図幅, #3: 図パス, #4: 本文・小問群
-\newcommand{\WrapFig}[4]{%
+%      \WrapFig[6]{r}{50mm}{fig/sample}{\Text{本文}\QQ{問題}{答え}}
+% #1: 省略可の回り込み行数, #2: r または l, #3: 図幅, #4: 図パス, #5: 本文・小問群
+\newcommand{\WrapFig}{\@ifnextchar[{\LMWrapFigRows}{\LMWrapFigAuto}}
+\newcommand{\LMWrapFigAuto}[4]{%
   \ifLMAnswerMode
     #4%
   \else
@@ -295,6 +297,23 @@
     \end{wrapfigure}%
     \LMWrapModetrue
     #4\par
+    \LMWrapModefalse
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+\newcommand{\LMWrapFigRows}[5][]{%
+  \ifLMAnswerMode
+    #5%
+  \else
+    \par\noindent
+    \begin{wrapfigure}[#1]{#2}{#3}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#4}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    \LMWrapModetrue
+    #5\par
     \LMWrapModefalse
     \vspace{\LMFigureRowSpace}%
   \fi
