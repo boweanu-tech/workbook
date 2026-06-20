@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v24]
+\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v25]
 
 \usepackage{amssymb}
 
@@ -33,6 +33,8 @@
 \LMInAnswerBlockfalse
 \newif\ifLMInstructionUsed
 \LMInstructionUsedfalse
+\newif\ifLMWrapMode
+\LMWrapModefalse
 
 \newcounter{LMmajor}
 \newcounter{LMsubq}
@@ -97,6 +99,7 @@
   \setcounter{LMmajor}{0}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
+  \LMWrapModefalse
 }
 
 \newcommand{\BeginAnswers}{%
@@ -105,6 +108,7 @@
   \setcounter{LMmajor}{0}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
+  \LMWrapModefalse
   \begin{center}
     {\Large \LMCoverTitle}\par
     \vspace{1mm}
@@ -197,6 +201,7 @@
   \stepcounter{LMmajor}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
+  \LMWrapModefalse
   \ifLMAnswerMode
     \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
     \noindent\begin{minipage}{\linewidth}
@@ -261,30 +266,25 @@
   \fi
 }
 
-% wrapfigによる回り込み図版つき問題。
-% wrapfigの回り込み行数はTeX側に任せる。
-% 例: \QWrapFig{r}{50mm}{fig/sample}{本文}{答え}
-% #1: r または l, #2: 図幅, #3: 図パス, #4: 本文, #5: 解答
-\newcommand{\QWrapFig}[5]{%
-  \stepcounter{LMsubq}%
+% wrapfigによる回り込み図版領域。
+% 小問番号は振らず、この中に \QQ などの小問を入れる。
+% 例: \QWrapFig{r}{50mm}{fig/sample}{\QQ{問題}{答え}\QQ{問題}{答え}}
+% #1: r または l, #2: 図幅, #3: 図パス, #4: 本文・小問群
+\newcommand{\QWrapFig}[4]{%
   \ifLMAnswerMode
-    \noindent
-    \makebox[11mm][l]{(\theLMsubq)}%
-    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#5}%
+    #4%
   \else
-    \noindent
-    \makebox[11mm][l]{(\theLMsubq)}%
-    \begin{minipage}[t]{\dimexpr\linewidth-11mm\relax}
-      \vspace{0pt}%
-      \begin{wrapfigure}{#1}{#2}
-        \vspace{-\baselineskip}%
-        \centering
-        \includegraphics[width=\linewidth]{#3}%
-        \vspace{-\baselineskip}%
-      \end{wrapfigure}%
-      #4\par
-    \end{minipage}%
-    \par\vspace{\LMRowSpace}%
+    \par\noindent
+    \begin{wrapfigure}{#1}{#2}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#3}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    \LMWrapModetrue
+    #4\par
+    \LMWrapModefalse
+    \vspace{\LMRowSpace}%
   \fi
 }
 
@@ -298,8 +298,12 @@
   \ifLMAnswerMode
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
-    \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
-    \par\vspace{\LMRowSpace}%
+    \ifLMWrapMode
+      #1\par\vspace{\LMRowSpace}%
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+      \par\vspace{\LMRowSpace}%
+    \fi
   \fi
 }
 
