@@ -6,6 +6,7 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.pdf
 
 # editor/system
 .DS_Store
