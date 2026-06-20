@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v22]
+\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v23]
 
 \usepackage{amssymb}
 
@@ -261,47 +261,27 @@
   \fi
 }
 
-% 図つき本文問題。右側に図、左側に本文を置く。
-% 利用問題や理科の「図のような〜」に使う。
-% 例: \QRightFig[0.34\linewidth]{fig/sample}{本文}{答え}{12mm}
-\newcommand{\QRightFig}[5][0.34\linewidth]{%
-  \stepcounter{LMsubq}%
-  \noindent
-  \makebox[11mm][l]{(\theLMsubq)}%
-  \ifLMAnswerMode
-    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#4}%
-  \else
-    \begin{minipage}[t]{\dimexpr\linewidth-11mm-#1-4mm\relax}
-      #3%
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{#1}
-      \centering\includegraphics[width=\linewidth]{#2}%
-    \end{minipage}%
-    \par\vspace{#5}%
-  \fi
-}
-
 % wrapfigによる回り込み図版つき問題。
-% 例: \QWrapFig[8]{r}{0.32\linewidth}{fig/sample}{本文}{答え}{12mm}
-% #1: 回り込み行数, #2: r または l, #3: 図幅, #4: 図パス, #5: 本文, #6: 解答, #7: 問題後余白
-\newcommand{\QWrapFig}[7][8]{%
+% wrapfigの回り込み行数はTeX側に任せる。
+% 例: \QWrapFig{r}{35mm}{fig/sample}{本文}{答え}
+% #1: r または l, #2: 図幅, #3: 図パス, #4: 本文, #5: 解答
+\newcommand{\QWrapFig}[5]{%
   \stepcounter{LMsubq}%
   \noindent
   \makebox[11mm][l]{(\theLMsubq)}%
   \ifLMAnswerMode
-    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#6}%
+    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#5}%
   \else
     \begin{minipage}[t]{\dimexpr\linewidth-11mm\relax}
-      \begin{wrapfigure}[#1]{#2}{#3}
+      \begin{wrapfigure}{#1}{#2}
         \vspace{-\baselineskip}%
         \centering
-        \includegraphics[width=\linewidth]{#4}%
+        \includegraphics[width=\linewidth]{#3}%
         \vspace{-\baselineskip}%
       \end{wrapfigure}%
-      #5\par
+      #4\par
     \end{minipage}%
-    \par\vspace{#7}%
+    \par\vspace{\LMRowSpace}%
   \fi
 }
 
@@ -361,14 +341,15 @@
 }
 
 % 図つき小問を2問横並びで出力する。角度・面積などの図形連打用。
+% 問題ページでは問題番号・問題文を図の上に出力する。
 % 答えページでは図を省略し、解答だけを出力する。
 % 例: \QQFigRow[0.9\linewidth]{fig/a}{問題}{答え}{fig/b}{問題}{答え}
 \newcommand{\QQFigRow}[7][0.9\linewidth]{%
   \noindent
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
-    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
       \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
       \ifLMTallAnswer
         \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
@@ -376,18 +357,17 @@
         \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
       \fi
     \else
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
-        \LMFigBlock[#1]{#2}%
-        \vspace{1mm}%
-        #3%
-      }%
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
+      \par\vspace{1mm}%
+      \LMFigBlock[#1]{#2}%
     \fi
   \end{minipage}%
   \hfill
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
-    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
       \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#7}%
       \ifLMTallAnswer
         \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#7}%
@@ -395,11 +375,10 @@
         \parbox[t]{\dimexpr\linewidth-9mm\relax}{#7}%
       \fi
     \else
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
-        \LMFigBlock[#1]{#5}%
-        \vspace{1mm}%
-        #6%
-      }%
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#6}%
+      \par\vspace{1mm}%
+      \LMFigBlock[#1]{#5}%
     \fi
   \end{minipage}%
   \ifLMAnswerMode
