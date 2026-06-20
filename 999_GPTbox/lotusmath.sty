@@ -268,9 +268,9 @@
 
 % wrapfigによる回り込み図版領域。
 % 小問番号は振らず、この中に \QQ などの小問を入れる。
-% 例: \QWrapFig{r}{50mm}{fig/sample}{\QQ{問題}{答え}\QQ{問題}{答え}}
+% 例: \WrapFig{r}{50mm}{fig/sample}{\QQ{問題}{答え}\QQ{問題}{答え}}
 % #1: r または l, #2: 図幅, #3: 図パス, #4: 本文・小問群
-\newcommand{\QWrapFig}[4]{%
+\newcommand{\WrapFig}[4]{%
   \ifLMAnswerMode
     #4%
   \else
