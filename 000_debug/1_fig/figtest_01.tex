@@ -1,0 +1,47 @@
+\documentclass[b5j,fleqn]{jarticle}
+\usepackage{amsmath}
+\usepackage{../../999_GPTbox/lotusmath}
+
+\begin{document}
+
+\CoverPage{図版テスト}{SVGからPDFへ変換した図版の埋め込み確認}
+
+\BeginQuestions
+
+\MajorQuestion{図版の表示確認}
+
+\Instruction{次の図を見て、問いに答えなさい。}
+
+\LMFig[45mm]{fig/figtest_rect}
+
+\Q{上の図に描かれている図形を答えなさい。}{四角形}{8mm}
+
+\Instruction{次の各問いに答えなさい。}
+
+\QQFigRow[0.8\linewidth]
+  {fig/figtest_rect}
+  {図の白い部分の形を答えなさい。}
+  {四角形}
+  {fig/figtest_rect}
+  {図の外枠の色を答えなさい。}
+  {黒}
+
+\QRightFig[35mm]
+  {fig/figtest_rect}
+  {図のような白い四角形がある。この図について、線の色を答えなさい。}
+  {黒}
+  {12mm}
+
+\QWrapFig[6]
+  {r}
+  {35mm}
+  {fig/figtest_rect}
+  {図のような四角形がある。この四角形の内部の色を答えなさい。}
+  {白}
+  {12mm}
+
+\MakeEvenPage
+
+\PrintAnswers
+
+\end{document}
