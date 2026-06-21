@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="55mm" viewBox="0 0 80 55">
+  <defs>
+    <style><![CDATA[
+      .main { stroke:black; stroke-width:0.45; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:black; stroke-width:0.25; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:black; stroke-width:0.25; fill:none; stroke-dasharray:1 1.2; stroke-linecap:round; stroke-linejoin:round; }
+      .point { fill:black; stroke:none; }
+      .label { font-family:serif; font-size:4px; fill:black; }
+      .small-label { font-family:serif; font-size:3.4px; fill:black; }
+      .axis-label { font-family:"Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif; font-size:4px; font-style:normal; fill:black; }
+      .math-label { font-family:"Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif; font-size:4px; font-style:italic; fill:black; }
+      .light-fill { fill:#eeeeee; stroke:none; }
+      .hatch-fill { fill:url(#hatch); stroke:none; }
+    ]]></style>
+    <marker id="arrow" markerWidth="7" markerHeight="4" refX="5.8" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="2.2" height="2.2">
+      <path d="M 0 2.2 L 2.2 0" class="thin"/>
+    </pattern>
+  </defs>
+
+  <!-- 座標軸 -->
+  <line class="main" x1="10" y1="45" x2="72" y2="45" marker-end="url(#arrow)"/>
+  <line class="main" x1="10" y1="45" x2="10" y2="7" marker-end="url(#arrow)"/>
+  <text class="axis-label" x="74" y="46">x</text>
+  <text class="axis-label" x="7" y="6">y</text>
+  <text class="label" x="6" y="49">O</text>
+
+  <!-- 網掛け領域 -->
+  <path class="hatch-fill" d="M 22 45 C 31 26, 48 26, 60 45 Z"/>
+  <path class="thin" d="M 16 42 C 25 18, 50 16, 66 37"/>
+  <line class="dash" x1="22" y1="45" x2="22" y2="36"/>
+  <line class="dash" x1="60" y1="45" x2="60" y2="35"/>
+  <circle class="point" cx="22" cy="36" r="0.4"/>
+  <circle class="point" cx="60" cy="35" r="0.4"/>
+  <text class="label" x="19" y="34">A</text>
+  <text class="label" x="61" y="34">B</text>
+  <text class="math-label" x="40" y="23">y=f(x)</text>
+  <text class="small-label" x="29" y="51">斜線部の面積</text>
+</svg>
