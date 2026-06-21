@@ -129,8 +129,8 @@
       }
     ]]></style>
 
-    <!-- 細めの矢印。三角形の幅を抑える。 -->
-    <marker id="arrow" markerWidth="7" markerHeight="4" refX="6.5" refY="2"
+    <!-- 細めの矢印。軸線の先端が三角形から出ないよう refX を少し小さくする。 -->
+    <marker id="arrow" markerWidth="7" markerHeight="4" refX="5.8" refY="2"
             orient="auto" markerUnits="strokeWidth">
       <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
     </marker>
@@ -162,7 +162,7 @@
   <text class="label" x="14" y="58">A</text>
   <circle class="point" cx="38" cy="62" r="0.4"/>
   <text class="label" x="40" y="64">B</text>
-  <line class="main" x1="18" y1="62" x2="38" y2="62"/>
+  <line class="thin" x1="18" y1="62" x2="38" y2="62"/>
   <text class="math-label" x="25" y="69">x</text>
   <text class="small-label" x="48" y="62">座標点などは r=0.4</text>
   <text class="small-label" x="48" y="67">多角形の頂点は黒点なし</text>
