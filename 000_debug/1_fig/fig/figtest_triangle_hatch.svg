@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="55mm" viewBox="0 0 80 55">
+  <defs>
+    <style><![CDATA[
+      .main { stroke:black; stroke-width:0.45; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:black; stroke-width:0.25; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:black; stroke-width:0.25; fill:none; stroke-dasharray:1 1.2; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:serif; font-size:4px; fill:black; }
+      .small-label { font-family:serif; font-size:3.4px; fill:black; }
+      .angle-label { font-family:"Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif; font-size:3.2px; fill:black; }
+      .light-fill { fill:#eeeeee; stroke:none; }
+      .hatch-fill { fill:url(#hatch); stroke:black; stroke-width:0.45; }
+    ]]></style>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="2.2" height="2.2">
+      <path d="M 0 2.2 L 2.2 0" class="thin"/>
+    </pattern>
+  </defs>
+
+  <!-- 三角形の面積・角度の見本。多角形頂点に黒点は打たない。 -->
+  <path class="light-fill" d="M 12 44 L 36 12 L 68 44 Z"/>
+  <path class="hatch-fill" d="M 12 44 L 36 12 L 36 44 Z"/>
+  <path class="main" d="M 12 44 L 36 12 L 68 44 Z"/>
+  <line class="dash" x1="36" y1="12" x2="36" y2="44"/>
+  <path class="thin" d="M 18 44 A 6 6 0 0 1 15.6 39.2"/>
+  <path class="thin" d="M 36 39 L 41 39 L 41 44"/>
+
+  <!-- 等辺印 -->
+  <path class="thin" d="M 24.0 29.0 L 25.2 31.0"/>
+  <path class="thin" d="M 51.7 30.9 L 52.9 28.9"/>
+
+  <text class="label" x="8" y="49">A</text>
+  <text class="label" x="34" y="9">B</text>
+  <text class="label" x="70" y="49">C</text>
+  <text class="label" x="38" y="49">D</text>
+  <text class="angle-label" x="18" y="40">45°</text>
+  <text class="small-label" x="20" y="51">網掛け部分</text>
+</svg>
