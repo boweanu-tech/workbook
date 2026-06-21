@@ -9,7 +9,9 @@
   - viewBox の 1 単位を 1mm として扱う。
   - TeX 側では原則として等倍または小さな倍率変更で使う。
   - 図形本体は .main、補助線は .thin、点線は .dash を使う。
-  - 点は r=0.8、通常ラベルは .label を標準にする。
+  - 点は r=0.8 を標準とする。ただし、多角形の頂点には原則として黒点を打たない。
+  - 黒点は座標平面上の点・実験装置の明示点など、点そのものを強調したい場合だけ使う。
+  - 通常ラベルは .label、数式・軸ラベルは .math-label または .axis-label を使う。
   - このファイルは Inkscape で見て部品の雰囲気を確認し、
     テキストエディタでは主に下の <style> を調整する。
   -->
@@ -87,13 +89,19 @@
         fill: black;
       }
       .math-label {
-        font-family: serif;
+        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
+        font-size: 4px;
+        font-style: italic;
+        fill: black;
+      }
+      .axis-label {
+        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
         font-size: 4px;
         font-style: italic;
         fill: black;
       }
       .angle-label {
-        font-family: serif;
+        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
         font-size: 3.5px;
         fill: black;
       }
@@ -121,13 +129,15 @@
       }
     ]]></style>
 
-    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5"
+    <!-- 細めの矢印。三角形の幅を抑える。 -->
+    <marker id="arrow" markerWidth="7" markerHeight="4" refX="6.5" refY="2"
             orient="auto" markerUnits="strokeWidth">
-      <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="black"/>
+      <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
     </marker>
 
-    <pattern id="hatch" patternUnits="userSpaceOnUse" width="4" height="4">
-      <path d="M 0 4 L 4 0" class="thin"/>
+    <!-- 斜線。間隔は狭め。 -->
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="2.2" height="2.2">
+      <path d="M 0 2.2 L 2.2 0" class="thin"/>
     </pattern>
   </defs>
 
@@ -154,72 +164,82 @@
   <text class="label" x="40" y="64">B</text>
   <line class="main" x1="18" y1="62" x2="38" y2="62"/>
   <text class="math-label" x="25" y="69">x</text>
-  <text class="small-label" x="48" y="64">点 r=0.8 / label 4px</text>
+  <text class="small-label" x="48" y="62">座標点などは r=0.8</text>
+  <text class="small-label" x="48" y="67">多角形の頂点は黒点なし</text>
 
   <!-- ========= 3. 角度・直角・等辺・平行記号 ========= -->
   <text class="section-title" x="88" y="10">3. 記号の見本</text>
 
-  <!-- 三角形と角度弧 -->
+  <!-- 三角形と角度弧。多角形の頂点には黒点を打たない。 -->
   <path class="main" d="M 95 38 L 120 18 L 142 38 Z"/>
-  <circle class="point" cx="95" cy="38" r="0.8"/>
-  <circle class="point" cx="120" cy="18" r="0.8"/>
-  <circle class="point" cx="142" cy="38" r="0.8"/>
   <text class="label" x="91" y="43">A</text>
   <text class="label" x="118" y="15">B</text>
   <text class="label" x="144" y="43">C</text>
-  <path class="thin" d="M 103 38 A 8 8 0 0 1 101.3 33.1"/>
-  <text class="angle-label" x="104" y="35">60°</text>
+  <path class="thin" d="M 101.25 33.00 A 8 8 0 0 1 103 38"/>
+  <text class="angle-label" x="104" y="36">60°</text>
 
-  <!-- 直角記号 -->
-  <path class="main" d="M 96 70 L 96 52 L 118 70 Z"/>
-  <path class="thin" d="M 96 64 L 102 64 L 102 70"/>
-  <text class="note" x="122" y="66">直角記号</text>
+  <!-- 直角記号。小さめにする。 -->
+  <path class="main" d="M 123 47 L 123 30 L 146 47 Z"/>
+  <path class="thin" d="M 123 42 L 128 42 L 128 47"/>
+  <text class="note" x="126" y="52">直角記号</text>
 
-  <!-- 等辺記号 -->
+  <!-- 等辺記号。 / や // は長さが等しいことを表す。 -->
   <line class="main" x1="95" y1="86" x2="125" y2="86"/>
   <path class="thin" d="M 109 84 L 111 88"/>
   <line class="main" x1="95" y1="94" x2="125" y2="94"/>
   <path class="thin" d="M 109 92 L 111 96"/>
-  <path class="thin" d="M 113 92 L 115 96"/>
-  <text class="note" x="130" y="88">等辺印</text>
-  <text class="note" x="130" y="96">2本印</text>
+  <path class="thin" d="M 112 92 L 114 96"/>
+  <text class="note" x="130" y="88">/ は等辺印</text>
+  <text class="note" x="130" y="96">// は2本印</text>
 
-  <!-- 平行記号 -->
+  <!-- 平行記号。くの字 > を線の中央に置く。 -->
   <line class="main" x1="12" y1="86" x2="52" y2="78"/>
   <line class="main" x1="14" y1="100" x2="54" y2="92"/>
-  <path class="thin" d="M 29 81 L 31 85"/>
-  <path class="thin" d="M 32 80.4 L 34 84.4"/>
-  <path class="thin" d="M 31 95.4 L 33 99.4"/>
-  <path class="thin" d="M 34 94.8 L 36 98.8"/>
-  <text class="note" x="58" y="92">平行記号</text>
+  <g class="thin" transform="translate(32,82) rotate(-11.3)">
+    <path d="M -2.2 -1.8 L -0.2 0 L -2.2 1.8"/>
+    <path d="M 0.6 -1.8 L 2.6 0 L 0.6 1.8"/>
+  </g>
+  <g class="thin" transform="translate(34,96) rotate(-11.3)">
+    <path d="M -2.2 -1.8 L -0.2 0 L -2.2 1.8"/>
+    <path d="M 0.6 -1.8 L 2.6 0 L 0.6 1.8"/>
+  </g>
+  <text class="note" x="58" y="90">平行記号は くの字</text>
+  <text class="note" x="58" y="95">複数組は個数で区別</text>
+  <g class="thin" transform="translate(66,100)">
+    <path d="M 0 -1.5 L 1.8 0 L 0 1.5"/>
+    <path d="M 5 -1.5 L 6.8 0 L 5 1.5"/>
+    <path d="M 7.3 -1.5 L 9.1 0 L 7.3 1.5"/>
+    <path d="M 12.8 -1.5 L 14.6 0 L 12.8 1.5"/>
+    <path d="M 15.1 -1.5 L 16.9 0 L 15.1 1.5"/>
+    <path d="M 17.4 -1.5 L 19.2 0 L 17.4 1.5"/>
+  </g>
 
   <!-- ========= 4. 座標軸・矢印 ========= -->
   <text class="section-title" x="8" y="77">4. 座標軸・矢印</text>
   <line class="main" x1="12" y1="72" x2="70" y2="72" marker-end="url(#arrow)"/>
   <line class="main" x1="12" y1="72" x2="12" y2="48" marker-end="url(#arrow)"/>
-  <text class="math-label" x="72" y="73">x</text>
-  <text class="math-label" x="9" y="47">y</text>
+  <text class="axis-label" x="72" y="73">x</text>
+  <text class="axis-label" x="9" y="47">y</text>
   <path class="main" d="M 18 70 C 30 50, 48 50, 64 66"/>
+  <circle class="point" cx="42" cy="55" r="0.8"/>
+  <text class="label" x="44" y="56">P</text>
 
   <!-- ========= 5. 塗り・斜線 ========= -->
-  <text class="section-title" x="88" y="52">5. 塗り</text>
-  <rect class="white-shape" x="90" y="58" width="18" height="12"/>
-  <text class="note" x="90" y="75">white-shape</text>
-  <rect class="light-fill" x="115" y="58" width="18" height="12"/>
-  <rect class="main" x="115" y="58" width="18" height="12"/>
-  <text class="note" x="115" y="75">light-fill</text>
-  <rect class="hatch-fill" x="140" y="58" width="14" height="12"/>
-  <text class="note" x="139" y="75">hatch</text>
+  <text class="section-title" x="88" y="55">5. 塗り</text>
+  <rect class="white-shape" x="90" y="61" width="18" height="12"/>
+  <text class="note" x="90" y="78">white-shape</text>
+  <rect class="light-fill" x="115" y="61" width="18" height="12"/>
+  <rect class="main" x="115" y="61" width="18" height="12"/>
+  <text class="note" x="115" y="78">light-fill</text>
+  <rect class="hatch-fill" x="140" y="61" width="14" height="12"/>
+  <text class="note" x="139" y="78">hatch</text>
 
   <!-- ========= 6. 小さな完成例 ========= -->
   <text class="section-title" x="88" y="84">6. 完成例</text>
   <path class="light-fill" d="M 92 102 L 116 84 L 148 102 Z"/>
   <path class="main" d="M 92 102 L 116 84 L 148 102 Z"/>
   <line class="dash" x1="116" y1="84" x2="116" y2="102"/>
-  <path class="thin" d="M 108 102 A 8 8 0 0 1 109.6 97.2"/>
-  <circle class="point" cx="92" cy="102" r="0.8"/>
-  <circle class="point" cx="116" cy="84" r="0.8"/>
-  <circle class="point" cx="148" cy="102" r="0.8"/>
+  <path class="thin" d="M 98.4 97.2 A 8 8 0 0 1 100 102"/>
   <text class="label" x="88" y="107">A</text>
   <text class="label" x="114" y="81">B</text>
   <text class="label" x="150" y="107">C</text>
