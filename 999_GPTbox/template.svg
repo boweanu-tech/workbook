@@ -1,53 +1,226 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="48mm"
-   height="36mm"
-   viewBox="0 0 48 36"
-   version="1.1"
-   id="svg1"
-   sodipodi:docname="template.svg"
-   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="4.492625"
-     inkscape:cx="85.028241"
-     inkscape:cy="49.748198"
-     inkscape:window-width="1920"
-     inkscape:window-height="996"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1"
-     showgrid="true">
-    <inkscape:grid
-       id="grid1"
-       units="mm"
-       originx="0"
-       originy="0"
-       spacingx="3"
-       spacingy="3"
-       empcolor="#3f3fff"
-       empopacity="0.25098039"
-       color="#3f3fff"
-       opacity="0.1254902"
-       empspacing="4"
-       dotted="false"
-       gridanglex="30"
-       gridanglez="30"
-       visible="true" />
-  </sodipodi:namedview>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="160mm" height="110mm" viewBox="0 0 160 110">
+
+  <!--
+  教材SVGテンプレート。
+
+  基本方針:
+  - viewBox の 1 単位を 1mm として扱う。
+  - TeX 側では原則として等倍または小さな倍率変更で使う。
+  - 図形本体は .main、補助線は .thin、点線は .dash を使う。
+  - 点は r=0.8、通常ラベルは .label を標準にする。
+  - このファイルは Inkscape で見て部品の雰囲気を確認し、
+    テキストエディタでは主に下の <style> を調整する。
+  -->
+
+  <defs>
+    <style><![CDATA[
+      /* ========= 全体・ガイド ========= */
+      .page-border {
+        stroke: #bbbbbb;
+        stroke-width: 0.2;
+        fill: none;
+      }
+      .guide {
+        stroke: #cccccc;
+        stroke-width: 0.15;
+        fill: none;
+        stroke-dasharray: 1 1;
+      }
+      .section-title {
+        font-family: serif;
+        font-size: 4px;
+        font-weight: bold;
+        fill: black;
+      }
+      .note {
+        font-family: serif;
+        font-size: 3px;
+        fill: #555555;
+      }
+
+      /* ========= 線 ========= */
+      .main {
+        stroke: black;
+        stroke-width: 0.45;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .thin {
+        stroke: black;
+        stroke-width: 0.25;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .dash {
+        stroke: black;
+        stroke-width: 0.25;
+        fill: none;
+        stroke-dasharray: 2 1.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .bold {
+        stroke: black;
+        stroke-width: 0.70;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* ========= 点・文字 ========= */
+      .point {
+        fill: black;
+        stroke: none;
+      }
+      .label {
+        font-family: serif;
+        font-size: 4px;
+        fill: black;
+      }
+      .small-label {
+        font-family: serif;
+        font-size: 3.4px;
+        fill: black;
+      }
+      .math-label {
+        font-family: serif;
+        font-size: 4px;
+        font-style: italic;
+        fill: black;
+      }
+      .angle-label {
+        font-family: serif;
+        font-size: 3.5px;
+        fill: black;
+      }
+
+      /* ========= 塗り ========= */
+      .white-shape {
+        fill: white;
+        stroke: black;
+        stroke-width: 0.45;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .light-fill {
+        fill: #eeeeee;
+        stroke: none;
+      }
+      .mid-fill {
+        fill: #dddddd;
+        stroke: none;
+      }
+      .hatch-fill {
+        fill: url(#hatch);
+        stroke: black;
+        stroke-width: 0.45;
+      }
+    ]]></style>
+
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="black"/>
+    </marker>
+
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="4" height="4">
+      <path d="M 0 4 L 4 0" class="thin"/>
+    </pattern>
+  </defs>
+
+  <!-- 描画可能範囲の目安。実際の図では削除してもよい。 -->
+  <rect class="page-border" x="1" y="1" width="158" height="108"/>
+  <rect class="guide" x="5" y="5" width="150" height="100"/>
+
+  <!-- ========= 1. 線の見本 ========= -->
+  <text class="section-title" x="8" y="10">1. 線の見本</text>
+  <line class="main" x1="10" y1="18" x2="55" y2="18"/>
+  <text class="note" x="58" y="19">.main 通常線</text>
+  <line class="thin" x1="10" y1="25" x2="55" y2="25"/>
+  <text class="note" x="58" y="26">.thin 補助線・角度弧</text>
+  <line class="dash" x1="10" y1="32" x2="55" y2="32"/>
+  <text class="note" x="58" y="33">.dash 点線</text>
+  <line class="bold" x1="10" y1="39" x2="55" y2="39"/>
+  <text class="note" x="58" y="40">.bold 強調線</text>
+
+  <!-- ========= 2. 点・ラベルの見本 ========= -->
+  <text class="section-title" x="8" y="52">2. 点・ラベル</text>
+  <circle class="point" cx="18" cy="62" r="0.8"/>
+  <text class="label" x="14" y="58">A</text>
+  <circle class="point" cx="38" cy="62" r="0.8"/>
+  <text class="label" x="40" y="64">B</text>
+  <line class="main" x1="18" y1="62" x2="38" y2="62"/>
+  <text class="math-label" x="25" y="69">x</text>
+  <text class="small-label" x="48" y="64">点 r=0.8 / label 4px</text>
+
+  <!-- ========= 3. 角度・直角・等辺・平行記号 ========= -->
+  <text class="section-title" x="88" y="10">3. 記号の見本</text>
+
+  <!-- 三角形と角度弧 -->
+  <path class="main" d="M 95 38 L 120 18 L 142 38 Z"/>
+  <circle class="point" cx="95" cy="38" r="0.8"/>
+  <circle class="point" cx="120" cy="18" r="0.8"/>
+  <circle class="point" cx="142" cy="38" r="0.8"/>
+  <text class="label" x="91" y="43">A</text>
+  <text class="label" x="118" y="15">B</text>
+  <text class="label" x="144" y="43">C</text>
+  <path class="thin" d="M 103 38 A 8 8 0 0 1 101.3 33.1"/>
+  <text class="angle-label" x="104" y="35">60°</text>
+
+  <!-- 直角記号 -->
+  <path class="main" d="M 96 70 L 96 52 L 118 70 Z"/>
+  <path class="thin" d="M 96 64 L 102 64 L 102 70"/>
+  <text class="note" x="122" y="66">直角記号</text>
+
+  <!-- 等辺記号 -->
+  <line class="main" x1="95" y1="86" x2="125" y2="86"/>
+  <path class="thin" d="M 109 84 L 111 88"/>
+  <line class="main" x1="95" y1="94" x2="125" y2="94"/>
+  <path class="thin" d="M 109 92 L 111 96"/>
+  <path class="thin" d="M 113 92 L 115 96"/>
+  <text class="note" x="130" y="88">等辺印</text>
+  <text class="note" x="130" y="96">2本印</text>
+
+  <!-- 平行記号 -->
+  <line class="main" x1="12" y1="86" x2="52" y2="78"/>
+  <line class="main" x1="14" y1="100" x2="54" y2="92"/>
+  <path class="thin" d="M 29 81 L 31 85"/>
+  <path class="thin" d="M 32 80.4 L 34 84.4"/>
+  <path class="thin" d="M 31 95.4 L 33 99.4"/>
+  <path class="thin" d="M 34 94.8 L 36 98.8"/>
+  <text class="note" x="58" y="92">平行記号</text>
+
+  <!-- ========= 4. 座標軸・矢印 ========= -->
+  <text class="section-title" x="8" y="77">4. 座標軸・矢印</text>
+  <line class="main" x1="12" y1="72" x2="70" y2="72" marker-end="url(#arrow)"/>
+  <line class="main" x1="12" y1="72" x2="12" y2="48" marker-end="url(#arrow)"/>
+  <text class="math-label" x="72" y="73">x</text>
+  <text class="math-label" x="9" y="47">y</text>
+  <path class="main" d="M 18 70 C 30 50, 48 50, 64 66"/>
+
+  <!-- ========= 5. 塗り・斜線 ========= -->
+  <text class="section-title" x="88" y="52">5. 塗り</text>
+  <rect class="white-shape" x="90" y="58" width="18" height="12"/>
+  <text class="note" x="90" y="75">white-shape</text>
+  <rect class="light-fill" x="115" y="58" width="18" height="12"/>
+  <rect class="main" x="115" y="58" width="18" height="12"/>
+  <text class="note" x="115" y="75">light-fill</text>
+  <rect class="hatch-fill" x="140" y="58" width="14" height="12"/>
+  <text class="note" x="139" y="75">hatch</text>
+
+  <!-- ========= 6. 小さな完成例 ========= -->
+  <text class="section-title" x="88" y="84">6. 完成例</text>
+  <path class="light-fill" d="M 92 102 L 116 84 L 148 102 Z"/>
+  <path class="main" d="M 92 102 L 116 84 L 148 102 Z"/>
+  <line class="dash" x1="116" y1="84" x2="116" y2="102"/>
+  <path class="thin" d="M 108 102 A 8 8 0 0 1 109.6 97.2"/>
+  <circle class="point" cx="92" cy="102" r="0.8"/>
+  <circle class="point" cx="116" cy="84" r="0.8"/>
+  <circle class="point" cx="148" cy="102" r="0.8"/>
+  <text class="label" x="88" y="107">A</text>
+  <text class="label" x="114" y="81">B</text>
+  <text class="label" x="150" y="107">C</text>
 </svg>
