@@ -9,9 +9,9 @@
   - viewBox の 1 単位を 1mm として扱う。
   - TeX 側では原則として等倍または小さな倍率変更で使う。
   - 図形本体は .main、補助線は .thin、点線は .dash を使う。
-  - 点は r=0.8 を標準とする。ただし、多角形の頂点には原則として黒点を打たない。
+  - 点は r=0.4 を標準とする。ただし、多角形の頂点には原則として黒点を打たない。
   - 黒点は座標平面上の点・実験装置の明示点など、点そのものを強調したい場合だけ使う。
-  - 通常ラベルは .label、数式・軸ラベルは .math-label または .axis-label を使う。
+  - 通常ラベルは .label、数式ラベルは .math-label、軸ラベルは .axis-label を使う。
   - このファイルは Inkscape で見て部品の雰囲気を確認し、
     テキストエディタでは主に下の <style> を調整する。
   -->
@@ -61,7 +61,7 @@
         stroke: black;
         stroke-width: 0.25;
         fill: none;
-        stroke-dasharray: 2 1.4;
+        stroke-dasharray: 1 1.2;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
@@ -97,12 +97,12 @@
       .axis-label {
         font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
         font-size: 4px;
-        font-style: italic;
+        font-style: normal;
         fill: black;
       }
       .angle-label {
         font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
-        font-size: 3.5px;
+        font-size: 3.2px;
         fill: black;
       }
 
@@ -150,21 +150,21 @@
   <line class="main" x1="10" y1="18" x2="55" y2="18"/>
   <text class="note" x="58" y="19">.main 通常線</text>
   <line class="thin" x1="10" y1="25" x2="55" y2="25"/>
-  <text class="note" x="58" y="26">.thin 補助線・角度弧</text>
+  <text class="note" x="58" y="26">.thin 補助線・角度弧・曲線</text>
   <line class="dash" x1="10" y1="32" x2="55" y2="32"/>
-  <text class="note" x="58" y="33">.dash 点線</text>
+  <text class="note" x="58" y="33">.dash 点線 短め</text>
   <line class="bold" x1="10" y1="39" x2="55" y2="39"/>
   <text class="note" x="58" y="40">.bold 強調線</text>
 
   <!-- ========= 2. 点・ラベルの見本 ========= -->
   <text class="section-title" x="8" y="52">2. 点・ラベル</text>
-  <circle class="point" cx="18" cy="62" r="0.8"/>
+  <circle class="point" cx="18" cy="62" r="0.4"/>
   <text class="label" x="14" y="58">A</text>
-  <circle class="point" cx="38" cy="62" r="0.8"/>
+  <circle class="point" cx="38" cy="62" r="0.4"/>
   <text class="label" x="40" y="64">B</text>
   <line class="main" x1="18" y1="62" x2="38" y2="62"/>
   <text class="math-label" x="25" y="69">x</text>
-  <text class="small-label" x="48" y="62">座標点などは r=0.8</text>
+  <text class="small-label" x="48" y="62">座標点などは r=0.4</text>
   <text class="small-label" x="48" y="67">多角形の頂点は黒点なし</text>
 
   <!-- ========= 3. 角度・直角・等辺・平行記号 ========= -->
@@ -175,20 +175,20 @@
   <text class="label" x="91" y="43">A</text>
   <text class="label" x="118" y="15">B</text>
   <text class="label" x="144" y="43">C</text>
-  <path class="thin" d="M 101.25 33.00 A 8 8 0 0 1 103 38"/>
-  <text class="angle-label" x="104" y="36">60°</text>
+  <path class="thin" d="M 98.12 35.50 A 4 4 0 0 1 99 38"/>
+  <text class="angle-label" x="100" y="37">60°</text>
 
   <!-- 直角記号。小さめにする。 -->
   <path class="main" d="M 123 47 L 123 30 L 146 47 Z"/>
-  <path class="thin" d="M 123 42 L 128 42 L 128 47"/>
+  <path class="thin" d="M 123 44.5 L 125.5 44.5 L 125.5 47"/>
   <text class="note" x="126" y="52">直角記号</text>
 
   <!-- 等辺記号。 / や // は長さが等しいことを表す。 -->
   <line class="main" x1="95" y1="86" x2="125" y2="86"/>
-  <path class="thin" d="M 109 84 L 111 88"/>
+  <path class="thin" d="M 109.4 85 L 110.6 87"/>
   <line class="main" x1="95" y1="94" x2="125" y2="94"/>
-  <path class="thin" d="M 109 92 L 111 96"/>
-  <path class="thin" d="M 112 92 L 114 96"/>
+  <path class="thin" d="M 108.8 93 L 110.0 95"/>
+  <path class="thin" d="M 110.1 93 L 111.3 95"/>
   <text class="note" x="130" y="88">/ は等辺印</text>
   <text class="note" x="130" y="96">// は2本印</text>
 
@@ -196,22 +196,22 @@
   <line class="main" x1="12" y1="86" x2="52" y2="78"/>
   <line class="main" x1="14" y1="100" x2="54" y2="92"/>
   <g class="thin" transform="translate(32,82) rotate(-11.3)">
-    <path d="M -2.2 -1.8 L -0.2 0 L -2.2 1.8"/>
-    <path d="M 0.6 -1.8 L 2.6 0 L 0.6 1.8"/>
+    <path d="M -1.1 -0.9 L -0.1 0 L -1.1 0.9"/>
+    <path d="M 0.2 -0.9 L 1.2 0 L 0.2 0.9"/>
   </g>
   <g class="thin" transform="translate(34,96) rotate(-11.3)">
-    <path d="M -2.2 -1.8 L -0.2 0 L -2.2 1.8"/>
-    <path d="M 0.6 -1.8 L 2.6 0 L 0.6 1.8"/>
+    <path d="M -1.1 -0.9 L -0.1 0 L -1.1 0.9"/>
+    <path d="M 0.2 -0.9 L 1.2 0 L 0.2 0.9"/>
   </g>
   <text class="note" x="58" y="90">平行記号は くの字</text>
   <text class="note" x="58" y="95">複数組は個数で区別</text>
   <g class="thin" transform="translate(66,100)">
-    <path d="M 0 -1.5 L 1.8 0 L 0 1.5"/>
-    <path d="M 5 -1.5 L 6.8 0 L 5 1.5"/>
-    <path d="M 7.3 -1.5 L 9.1 0 L 7.3 1.5"/>
-    <path d="M 12.8 -1.5 L 14.6 0 L 12.8 1.5"/>
-    <path d="M 15.1 -1.5 L 16.9 0 L 15.1 1.5"/>
-    <path d="M 17.4 -1.5 L 19.2 0 L 17.4 1.5"/>
+    <path d="M 0 -0.8 L 0.9 0 L 0 0.8"/>
+    <path d="M 4.0 -0.8 L 4.9 0 L 4.0 0.8"/>
+    <path d="M 5.3 -0.8 L 6.2 0 L 5.3 0.8"/>
+    <path d="M 9.0 -0.8 L 9.9 0 L 9.0 0.8"/>
+    <path d="M 10.3 -0.8 L 11.2 0 L 10.3 0.8"/>
+    <path d="M 11.6 -0.8 L 12.5 0 L 11.6 0.8"/>
   </g>
 
   <!-- ========= 4. 座標軸・矢印 ========= -->
@@ -220,8 +220,8 @@
   <line class="main" x1="12" y1="72" x2="12" y2="48" marker-end="url(#arrow)"/>
   <text class="axis-label" x="72" y="73">x</text>
   <text class="axis-label" x="9" y="47">y</text>
-  <path class="main" d="M 18 70 C 30 50, 48 50, 64 66"/>
-  <circle class="point" cx="42" cy="55" r="0.8"/>
+  <path class="thin" d="M 18 70 C 30 50, 48 50, 64 66"/>
+  <circle class="point" cx="42" cy="55" r="0.4"/>
   <text class="label" x="44" y="56">P</text>
 
   <!-- ========= 5. 塗り・斜線 ========= -->
@@ -239,7 +239,7 @@
   <path class="light-fill" d="M 92 102 L 116 84 L 148 102 Z"/>
   <path class="main" d="M 92 102 L 116 84 L 148 102 Z"/>
   <line class="dash" x1="116" y1="84" x2="116" y2="102"/>
-  <path class="thin" d="M 98.4 97.2 A 8 8 0 0 1 100 102"/>
+  <path class="thin" d="M 95.2 99.6 A 4 4 0 0 1 96 102"/>
   <text class="label" x="88" y="107">A</text>
   <text class="label" x="114" y="81">B</text>
   <text class="label" x="150" y="107">C</text>
