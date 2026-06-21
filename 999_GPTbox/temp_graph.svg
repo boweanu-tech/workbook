@@ -18,6 +18,7 @@
   - 正方向だけ矢印を付ける。
   - 軸の矢印は marker-end を使わず、軸線と三角形を分けて描く。
   - 軸線の終点は、矢印三角形の重心よりやや底辺側で止め、三角形の先から線がはみ出ないようにする。
+  - 原点 O は、原則として第3象限側、つまり原点の左下に置く。
   - 軸ラベルや目盛り数字は原則入れない。必要な場合だけ問題ごとに追加する。
 
   グラフを書かせる問題での注意:
@@ -109,12 +110,13 @@
   <line class="grid" x1="5" y1="50" x2="65" y2="50"/>
 
   <!-- x軸・y軸。原点は (35,30)。 -->
-  <line class="axis" x1="5" y1="30" x2="62.8" y2="30"/>
-  <polygon class="axis-arrow" points="65,30 62,28.8 62,31.2"/>
-  <line class="axis" x1="35" y1="50" x2="35" y2="7.3"/>
-  <polygon class="axis-arrow" points="35,5 33.8,8 36.2,8"/>
+  <line class="axis" x1="5" y1="30" x2="63.0" y2="30"/>
+  <polygon class="axis-arrow" points="65,30 62.3,29.05 62.3,30.95"/>
+  <line class="axis" x1="35" y1="50" x2="35" y2="7.0"/>
+  <polygon class="axis-arrow" points="35,5 34.05,7.7 35.95,7.7"/>
 
-  <!-- 軸ラベルは必要なら使う。不要なら削除してよい。 -->
+  <!-- 原点・軸ラベル。不要なら削除してよい。 -->
+  <text class="axis-label" x="32.0" y="33.8">O</text>
   <text class="axis-label" x="66.5" y="31.2">x</text>
   <text class="axis-label" x="32.6" y="4.2">y</text>
 </svg>
