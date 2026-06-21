@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="90mm" height="60mm" viewBox="0 0 90 60">
+  <defs>
+    <style><![CDATA[
+      .main { stroke:black; stroke-width:0.45; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:black; stroke-width:0.25; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:black; stroke-width:0.25; fill:none; stroke-dasharray:1 1.2; stroke-linecap:round; stroke-linejoin:round; }
+      .label { font-family:serif; font-size:4px; fill:black; }
+      .small-label { font-family:serif; font-size:3.4px; fill:black; }
+      .angle-label { font-family:"Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif; font-size:3.2px; fill:black; }
+    ]]></style>
+  </defs>
+
+  <!--
+    座標設計:
+    上の平行線 l : y=16
+    下の平行線 m : y=44
+    A=(27.1,44), B=(42,16), C=(68.1,44)
+    ∠A ≒ 62°, ∠C ≒ 47°, ∠B ≒ 71°
+  -->
+
+  <!-- 平行線 -->
+  <line class="main" x1="8" y1="16" x2="82" y2="16"/>
+  <line class="main" x1="8" y1="44" x2="82" y2="44"/>
+  <text class="label" x="83.5" y="17.2">l</text>
+  <text class="label" x="83.5" y="45.2">m</text>
+
+  <!-- 平行記号。くの字を2個ずつ。 -->
+  <g class="thin" transform="translate(18,16)">
+    <path d="M -1.1 -0.9 L -0.1 0 L -1.1 0.9"/>
+    <path d="M 0.2 -0.9 L 1.2 0 L 0.2 0.9"/>
+  </g>
+  <g class="thin" transform="translate(18,44)">
+    <path d="M -1.1 -0.9 L -0.1 0 L -1.1 0.9"/>
+    <path d="M 0.2 -0.9 L 1.2 0 L 0.2 0.9"/>
+  </g>
+
+  <!-- 三角形ABC。多角形の頂点には黒点を打たない。 -->
+  <path class="main" d="M 27.1 44 L 42 16 L 68.1 44 Z"/>
+  <text class="label" x="24.1" y="49.2">A</text>
+  <text class="label" x="40.4" y="12.8">B</text>
+  <text class="label" x="69.6" y="49.2">C</text>
+
+  <!-- 62°: l と AB の錯角として使う角。Bを中心に左向き水平線とBAの間を示す。 -->
+  <path class="thin" d="M 37.0 16.0 L 37.2 17.4 L 37.8 18.6 L 38.6 19.7 L 39.65 20.41"/>
+  <text class="angle-label" x="32.5" y="21.0">62°</text>
+
+  <!-- C の内角 47° -->
+  <path class="thin" d="M 63.1 44.0 L 63.2 43.0 L 63.6 42.0 L 64.1 41.1 L 64.69 40.34"/>
+  <text class="angle-label" x="57.5" y="42.1">47°</text>
+
+  <!-- 求める角 x = ∠ABC -->
+  <path class="thin" d="M 46.77 21.12 L 45.0 22.2 L 43.0 22.8 L 40.7 22.7 L 38.71 22.18"/>
+  <text class="angle-label" x="41.9" y="25.0">x</text>
+
+  <!-- 補助的に、Aの角が移ることを示す薄い弧。 -->
+  <path class="dash" d="M 33.1 44.0 L 33.4 42.3 L 34.1 40.9 L 35.0 39.7"/>
+</svg>
