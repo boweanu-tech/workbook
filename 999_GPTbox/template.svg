@@ -27,6 +27,12 @@
   - グラフの軸は .main、曲線・補助線・角度弧は原則 .thin を使う。
   - 図形問題の多角形は、頂点ドットを打たず、線とラベルだけで示す。
   - 見た目だけで線・弧・記号を配置しない。必要な交点・角度・中点は先に計算する。
+
+  網掛け・斜線に関するルール:
+  - 斜線は黒ではなく、補助線の灰色版として薄い灰色を使う。
+  - 斜線パターンはタイル境界で不自然に途切れないよう、タイルをまたぐ長めの直線で描く。
+  - 斜線内に数字・文字・式が入る場合、読みやすさを優先して斜線は極力灰色にする。
+  - 斜線は領域を示すための補助表現なので、主線・文字・角度表示より目立たせない。
   -->
 
   <defs>
@@ -83,6 +89,13 @@
         stroke-width: 0.70;
         fill: none;
         stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .hatch-line {
+        stroke: #999999;
+        stroke-width: 0.25;
+        fill: none;
+        stroke-linecap: butt;
         stroke-linejoin: round;
       }
 
@@ -148,9 +161,10 @@
       <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
     </marker>
 
-    <!-- 斜線。間隔は狭め。 -->
-    <pattern id="hatch" patternUnits="userSpaceOnUse" width="2.2" height="2.2">
-      <path d="M 0 2.2 L 2.2 0" class="thin"/>
+    <!-- 斜線。灰色の補助線風。タイル境界で途切れにくいよう長めに描く。 -->
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="3" height="3">
+      <path class="hatch-line" d="M -3 3 L 3 -3"/>
+      <path class="hatch-line" d="M 0 6 L 6 0"/>
     </pattern>
   </defs>
 
