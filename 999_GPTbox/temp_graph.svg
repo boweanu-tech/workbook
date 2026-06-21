@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="70mm" height="55mm" viewBox="0 0 70 55">
+
+  <!--
+  グラフを書かせる問題用の座標平面テンプレート。
+
+  用途:
+  - 生徒が自分でグラフを書き込むための罫線つき座標平面。
+  - TeXでは、問題ファイル側の fig/ にコピーしてから \LMFig[70mm]{fig/...} 等で使う。
+  - 罫線の雰囲気は、アップロードされた「グラフ用紙.pdf」2ページ目の小グラフを基準にする。
+
+  基本方針:
+  - hatch は使わない。
+  - 背景は白。
+  - 罫線は薄い灰色。
+  - x軸・y軸は黒の .axis を使う。
+  - 正方向だけ矢印を付ける。
+  - 軸ラベルや目盛り数字は原則入れない。必要な場合だけ問題ごとに追加する。
+
+  原点位置の変更:
+  - このSVGは静的ファイルなので、原点を変える場合は下の座標を直接変更する。
+  - デフォルトは中央付近: origin = (35, 30)
+  - 例: y=2x^2 などで y軸正側を大きく取りたい場合、originY を 48 付近へ下げる。
+  - 第1・第2象限中心なら、x軸を下寄りにして y正方向を広く取る。
+  - 第1象限中心なら、originX を 10〜15、originY を 45〜48 付近にする。
+
+  作図時の注意:
+  - 罫線・軸・点・グラフ曲線を描く場合は、同じ数学座標→SVG座標変換を使う。
+  - 生徒が書き込む用紙なので、補助線や塗りは入れすぎない。
+  - 問題で印刷して使う場合、線が濃すぎると書き込みにくいので、grid は薄めにする。
+  -->
+
+  <defs>
+    <style><![CDATA[
+      .grid {
+        stroke: #b7b7b7;
+        stroke-width: 0.22;
+        fill: none;
+        stroke-linecap: butt;
+      }
+      .axis {
+        stroke: black;
+        stroke-width: 0.42;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .frame-guide {
+        stroke: #dddddd;
+        stroke-width: 0.15;
+        fill: none;
+      }
+      .axis-label {
+        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
+        font-size: 4px;
+        font-style: normal;
+        fill: black;
+      }
+      .note {
+        font-family: serif;
+        font-size: 3px;
+        fill: #666666;
+      }
+    ]]></style>
+
+    <marker id="arrow" markerWidth="7" markerHeight="4" refX="5.8" refY="2"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
+    </marker>
+  </defs>
+
+  <!--
+  デフォルト設定:
+  graph box : x=5..65, y=5..50
+  grid step : 10mm
+  origin    : (35,30)
+
+  罫線の本数は、教材上の必要に応じて増減してよい。
+  -->
+
+  <!-- 外側の薄いガイド枠。不要なら削除してよい。 -->
+  <rect class="frame-guide" x="5" y="5" width="60" height="45"/>
+
+  <!-- 縦罫線 -->
+  <line class="grid" x1="5"  y1="5" x2="5"  y2="50"/>
+  <line class="grid" x1="15" y1="5" x2="15" y2="50"/>
+  <line class="grid" x1="25" y1="5" x2="25" y2="50"/>
+  <line class="grid" x1="35" y1="5" x2="35" y2="50"/>
+  <line class="grid" x1="45" y1="5" x2="45" y2="50"/>
+  <line class="grid" x1="55" y1="5" x2="55" y2="50"/>
+  <line class="grid" x1="65" y1="5" x2="65" y2="50"/>
+
+  <!-- 横罫線 -->
+  <line class="grid" x1="5" y1="10" x2="65" y2="10"/>
+  <line class="grid" x1="5" y1="20" x2="65" y2="20"/>
+  <line class="grid" x1="5" y1="30" x2="65" y2="30"/>
+  <line class="grid" x1="5" y1="40" x2="65" y2="40"/>
+  <line class="grid" x1="5" y1="50" x2="65" y2="50"/>
+
+  <!-- x軸・y軸。原点は (35,30)。 -->
+  <line class="axis" x1="5" y1="30" x2="65" y2="30" marker-end="url(#arrow)"/>
+  <line class="axis" x1="35" y1="50" x2="35" y2="5" marker-end="url(#arrow)"/>
+
+  <!-- 軸ラベルは必要なら使う。不要なら削除してよい。 -->
+  <text class="axis-label" x="66.5" y="31.2">x</text>
+  <text class="axis-label" x="32.6" y="4.2">y</text>
+</svg>
