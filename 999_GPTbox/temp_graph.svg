@@ -16,7 +16,18 @@
   - 罫線は薄い灰色。
   - x軸・y軸は黒の .axis を使う。
   - 正方向だけ矢印を付ける。
+  - 軸の矢印は marker-end を使わず、軸線と三角形を分けて描く。
+  - 軸線の終点は、矢印三角形の重心よりやや底辺側で止め、三角形の先から線がはみ出ないようにする。
   - 軸ラベルや目盛り数字は原則入れない。必要な場合だけ問題ごとに追加する。
+
+  グラフを書かせる問題での注意:
+  - temp_graph.svg をそのまま使わず、問題ごとに必要な目盛り数・表示範囲・原点位置を先に決める。
+  - 一次関数では、少なくとも x切片・y切片がグラフ内に十分収まるようにする。
+  - 比例・反比例・一次関数では、代表点を2〜3個以上取りやすい範囲を確保する。
+  - 二次関数では、頂点と左右の代表点が無理なく入るようにする。
+  - y=2x^2 などでは、x軸を下寄りにして y軸正側を広く取る。
+  - 目盛りは、生徒が点を正確に取れるように、必要に応じて 1, 2, 5 など扱いやすい単位にする。
+  - 切片や交点が枠ギリギリにならないよう、最低でも1目盛り程度の余白を取る。
 
   原点位置の変更:
   - このSVGは静的ファイルなので、原点を変える場合は下の座標を直接変更する。
@@ -46,6 +57,10 @@
         stroke-linecap: round;
         stroke-linejoin: round;
       }
+      .axis-arrow {
+        fill: black;
+        stroke: none;
+      }
       .frame-guide {
         stroke: #dddddd;
         stroke-width: 0.15;
@@ -63,11 +78,6 @@
         fill: #666666;
       }
     ]]></style>
-
-    <marker id="arrow" markerWidth="7" markerHeight="4" refX="5.8" refY="2"
-            orient="auto" markerUnits="strokeWidth">
-      <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
-    </marker>
   </defs>
 
   <!--
@@ -99,8 +109,10 @@
   <line class="grid" x1="5" y1="50" x2="65" y2="50"/>
 
   <!-- x軸・y軸。原点は (35,30)。 -->
-  <line class="axis" x1="5" y1="30" x2="65" y2="30" marker-end="url(#arrow)"/>
-  <line class="axis" x1="35" y1="50" x2="35" y2="5" marker-end="url(#arrow)"/>
+  <line class="axis" x1="5" y1="30" x2="62.8" y2="30"/>
+  <polygon class="axis-arrow" points="65,30 62,28.8 62,31.2"/>
+  <line class="axis" x1="35" y1="50" x2="35" y2="7.3"/>
+  <polygon class="axis-arrow" points="35,5 33.8,8 36.2,8"/>
 
   <!-- 軸ラベルは必要なら使う。不要なら削除してよい。 -->
   <text class="axis-label" x="66.5" y="31.2">x</text>
