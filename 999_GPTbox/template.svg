@@ -12,6 +12,7 @@
   - 点は r=0.4 を標準とする。ただし、多角形の頂点には原則として黒点を打たない。
   - 黒点は座標平面上の点・実験装置の明示点など、点そのものを強調したい場合だけ使う。
   - 通常ラベルは .label、数式ラベルは .math-label、軸ラベルは .axis-label を使う。
+  - 領域を示すときは斜線パターンを使わず、必要なら .light-fill や .mid-fill で薄く塗る。
   - このファイルは Inkscape で見て部品の雰囲気を確認し、
     テキストエディタでは主に下の <style> を調整する。
 
@@ -23,16 +24,10 @@
   - 直角記号は、頂点から2辺方向へ同じ距離だけ進み、辺方向ベクトルから計算して置く。
   - 等辺印は、辺の中点・辺方向ベクトル・法線ベクトルから計算して置く。
   - 平行記号は、対象線分の中点と方向ベクトルから計算し、主線が記号の中央を貫くように置く。
-  - 関数グラフでは、曲線・点・補助線・網掛け領域を同じ数学座標から同じSVG座標変換で描く。
+  - 関数グラフでは、曲線・点・補助線・塗り領域を同じ数学座標から同じSVG座標変換で描く。
   - グラフの軸は .main、曲線・補助線・角度弧は原則 .thin を使う。
   - 図形問題の多角形は、頂点ドットを打たず、線とラベルだけで示す。
   - 見た目だけで線・弧・記号を配置しない。必要な交点・角度・中点は先に計算する。
-
-  網掛け・斜線に関するルール:
-  - 斜線は黒ではなく、補助線の灰色版として薄い灰色を使う。
-  - 斜線パターンはタイル境界で不自然に途切れないよう、タイルをまたぐ長めの直線で描く。
-  - 斜線内に数字・文字・式が入る場合、読みやすさを優先して斜線は極力灰色にする。
-  - 斜線は領域を示すための補助表現なので、主線・文字・角度表示より目立たせない。
   -->
 
   <defs>
@@ -91,13 +86,6 @@
         stroke-linecap: round;
         stroke-linejoin: round;
       }
-      .hatch-line {
-        stroke: #999999;
-        stroke-width: 0.25;
-        fill: none;
-        stroke-linecap: butt;
-        stroke-linejoin: round;
-      }
 
       /* ========= 点・文字 ========= */
       .point {
@@ -148,11 +136,6 @@
         fill: #dddddd;
         stroke: none;
       }
-      .hatch-fill {
-        fill: url(#hatch);
-        stroke: black;
-        stroke-width: 0.45;
-      }
     ]]></style>
 
     <!-- 細めの矢印。軸線の先端が三角形から出ないよう refX を少し小さくする。 -->
@@ -160,12 +143,6 @@
             orient="auto" markerUnits="strokeWidth">
       <path d="M 0 0 L 7 2 L 0 4 Z" fill="black"/>
     </marker>
-
-    <!-- 斜線。灰色の補助線風。タイル境界で途切れにくいよう長めに描く。 -->
-    <pattern id="hatch" patternUnits="userSpaceOnUse" width="3" height="3">
-      <path class="hatch-line" d="M -3 3 L 3 -3"/>
-      <path class="hatch-line" d="M 0 6 L 6 0"/>
-    </pattern>
   </defs>
 
   <!-- 描画可能範囲の目安。実際の図では削除してもよい。 -->
@@ -251,15 +228,16 @@
   <circle class="point" cx="42" cy="55" r="0.4"/>
   <text class="label" x="44" y="56">P</text>
 
-  <!-- ========= 5. 塗り・斜線 ========= -->
+  <!-- ========= 5. 塗り ========= -->
   <text class="section-title" x="88" y="55">5. 塗り</text>
   <rect class="white-shape" x="90" y="61" width="18" height="12"/>
   <text class="note" x="90" y="78">white-shape</text>
   <rect class="light-fill" x="115" y="61" width="18" height="12"/>
   <rect class="main" x="115" y="61" width="18" height="12"/>
   <text class="note" x="115" y="78">light-fill</text>
-  <rect class="hatch-fill" x="140" y="61" width="14" height="12"/>
-  <text class="note" x="139" y="78">hatch</text>
+  <rect class="mid-fill" x="140" y="61" width="14" height="12"/>
+  <rect class="main" x="140" y="61" width="14" height="12"/>
+  <text class="note" x="139" y="78">mid-fill</text>
 
   <!-- ========= 6. 小さな完成例 ========= -->
   <text class="section-title" x="88" y="84">6. 完成例</text>
