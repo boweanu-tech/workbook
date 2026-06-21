@@ -225,7 +225,7 @@
   <polygon class="axis-arrow" points="70,72 67.3,71.05 67.3,72.95"/>
   <line class="main" x1="12" y1="72" x2="12" y2="50.0"/>
   <polygon class="axis-arrow" points="12,48 11.05,50.7 12.95,50.7"/>
-  <text class="axis-label" x="9.2" y="75.8">O</text>
+  <text class="axis-label" x="8.4" y="75.8">O</text>
   <text class="axis-label" x="72" y="73">x</text>
   <text class="axis-label" x="9" y="47">y</text>
   <path class="thin" d="M 18 70 C 30 50, 48 50, 64 66"/>
