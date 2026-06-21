@@ -15,6 +15,7 @@
   - 領域を示すときは斜線パターンを使わず、必要なら .light-fill や .mid-fill で薄く塗る。
   - 軸の矢印は marker-end を使わず、軸線と三角形を分けて描く。
   - 軸線の終点は、矢印三角形の重心よりやや底辺側で止め、三角形の先から線がはみ出ないようにする。
+  - 原点 O は、原則として第3象限側、つまり原点の左下に置く。
   - このファイルは Inkscape で見て部品の雰囲気を確認し、
     テキストエディタでは主に下の <style> を調整する。
 
@@ -220,10 +221,11 @@
 
   <!-- ========= 4. 座標軸・矢印 ========= -->
   <text class="section-title" x="8" y="77">4. 座標軸・矢印</text>
-  <line class="main" x1="12" y1="72" x2="67.8" y2="72"/>
-  <polygon class="axis-arrow" points="70,72 67,70.8 67,73.2"/>
-  <line class="main" x1="12" y1="72" x2="12" y2="50.3"/>
-  <polygon class="axis-arrow" points="12,48 10.8,51 13.2,51"/>
+  <line class="main" x1="12" y1="72" x2="68.0" y2="72"/>
+  <polygon class="axis-arrow" points="70,72 67.3,71.05 67.3,72.95"/>
+  <line class="main" x1="12" y1="72" x2="12" y2="50.0"/>
+  <polygon class="axis-arrow" points="12,48 11.05,50.7 12.95,50.7"/>
+  <text class="axis-label" x="9.2" y="75.8">O</text>
   <text class="axis-label" x="72" y="73">x</text>
   <text class="axis-label" x="9" y="47">y</text>
   <path class="thin" d="M 18 70 C 30 50, 48 50, 64 66"/>
