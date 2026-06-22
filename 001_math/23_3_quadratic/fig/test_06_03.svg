@@ -1,16 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="70mm" height="50mm" viewBox="0 0 70 50">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70mm"
+   height="50mm"
+   viewBox="0 0 70 50"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="test_06_03.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.2090179"
+     inkscape:cx="151.91564"
+     inkscape:cy="111.4048"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19" />
   <!--
-  図形教材SVG。
-  - viewBox の 1 単位を 1mm として扱う。
-  - 図形本体は .main、補助線は .thin、点線は .dash を使う。
-  - 領域は斜線ではなく薄い塗りで示す。
-  - この図は、縦12m・横16mの長方形の土地に、縦方向と横方向に同じ幅の道を1本ずつ通す問題用。
-  - 図の縦横比は 12:16 とし、道幅は模式的に同じ幅で描く。
+  &#22259;&#24418;&#25945;&#26448;SVG&#12290;
+  - viewBox &#12398; 1 &#21336;&#20301;&#12434; 1mm &#12392;&#12375;&#12390;&#25201;&#12358;&#12290;
+  - &#22259;&#24418;&#26412;&#20307;&#12399; .main&#12289;&#35036;&#21161;&#32218;&#12399; .thin&#12289;&#28857;&#32218;&#12399; .dash &#12434;&#20351;&#12358;&#12290;
+  - &#38936;&#22495;&#12399;&#26012;&#32218;&#12391;&#12399;&#12394;&#12367;&#34180;&#12356;&#22615;&#12426;&#12391;&#31034;&#12377;&#12290;
+  - &#12371;&#12398;&#22259;&#12399;&#12289;&#32294;12m&#12539;&#27178;16m&#12398;&#38263;&#26041;&#24418;&#12398;&#22303;&#22320;&#12395;&#12289;&#32294;&#26041;&#21521;&#12392;&#27178;&#26041;&#21521;&#12395;&#21516;&#12376;&#24133;&#12398;&#36947;&#12434;1&#26412;&#12378;&#12388;&#36890;&#12377;&#21839;&#38988;&#29992;&#12290;
+  - &#22259;&#12398;&#32294;&#27178;&#27604;&#12399; 12:16 &#12392;&#12375;&#12289;&#36947;&#24133;&#12399;&#27169;&#24335;&#30340;&#12395;&#21516;&#12376;&#24133;&#12391;&#25551;&#12367;&#12290;
   -->
-  <defs>
-    <style><![CDATA[
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .main {
         stroke: black;
         stroke-width: 0.45;
@@ -55,43 +86,47 @@
       }
     ]]></style>
   </defs>
-
-  <!-- 外枠：横16m, 縦12m -->
-  <rect class="main" x="11" y="9" width="48" height="36"/>
-
-  <!-- 道：縦方向・横方向とも同じ幅 x。位置は模式図。 -->
-  <rect class="light-fill" x="29" y="9" width="6" height="36"/>
-  <rect class="light-fill" x="11" y="24" width="48" height="6"/>
-
-  <!-- 道の境界線 -->
-  <line class="thin" x1="29" y1="9" x2="29" y2="45"/>
-  <line class="thin" x1="35" y1="9" x2="35" y2="45"/>
-  <line class="thin" x1="11" y1="24" x2="59" y2="24"/>
-  <line class="thin" x1="11" y1="30" x2="59" y2="30"/>
-
-  <!-- 花だん部分のラベル -->
-  <text class="small-label" x="17" y="19">花だん</text>
-  <text class="small-label" x="42" y="19">花だん</text>
-  <text class="small-label" x="17" y="40">花だん</text>
-  <text class="small-label" x="42" y="40">花だん</text>
-  <text class="small-label" x="29.8" y="22">道</text>
-  <text class="small-label" x="50" y="28">道</text>
-
-  <!-- 寸法補助線：横16m -->
-  <line class="thin" x1="11" y1="6" x2="59" y2="6"/>
-  <line class="thin" x1="11" y1="6" x2="11" y2="8"/>
-  <line class="thin" x1="59" y1="6" x2="59" y2="8"/>
-  <text class="small-label" x="31.5" y="4.8">16m</text>
-
-  <!-- 寸法補助線：縦12m -->
-  <line class="thin" x1="7" y1="9" x2="7" y2="45"/>
-  <line class="thin" x1="7" y1="9" x2="10" y2="9"/>
-  <line class="thin" x1="7" y1="45" x2="10" y2="45"/>
-  <text class="small-label" x="1.8" y="28.5">12m</text>
-
-  <!-- 道幅 x の表示 -->
-  <line class="thin" x1="29" y1="48" x2="35" y2="48"/>
-  <line class="thin" x1="29" y1="46" x2="29" y2="49"/>
-  <line class="thin" x1="35" y1="46" x2="35" y2="49"/>
-  <text class="math-label" x="31" y="47.1">x</text>
+  <!-- &#22806;&#26528;&#65306;&#27178;16m, &#32294;12m -->
+  <!-- &#36947;&#65306;&#32294;&#26041;&#21521;&#12539;&#27178;&#26041;&#21521;&#12392;&#12418;&#21516;&#12376;&#24133; x&#12290;&#20301;&#32622;&#12399;&#27169;&#24335;&#22259;&#12290; -->
+  <!-- &#36947;&#12398;&#22659;&#30028;&#32218; -->
+  <!-- &#33457;&#12384;&#12435;&#37096;&#20998;&#12398;&#12521;&#12505;&#12523; -->
+  <text
+     class="small-label"
+     x="11.64019"
+     y="11.677733"
+     id="text6">花だん</text>
+  <text
+     class="small-label"
+     x="47.266529"
+     y="11.677733"
+     id="text7">花だん</text>
+  <text
+     class="small-label"
+     x="11.64019"
+     y="39.496033"
+     id="text8">花だん</text>
+  <text
+     class="small-label"
+     x="47.266529"
+     y="39.496033"
+     id="text9">花だん</text>
+  <!-- &#23544;&#27861;&#35036;&#21161;&#32218;&#65306;&#27178;16m -->
+  <!-- &#23544;&#27861;&#35036;&#21161;&#32218;&#65306;&#32294;12m -->
+  <!-- &#36947;&#24133; x &#12398;&#34920;&#31034; -->
+  <path
+     id="rect19"
+     style="fill:#ededed;stroke:#000000;stroke-width:0.250001;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:2.69999"
+     d="M 29.231086,1.1920918 V 20.715891 H 4.4948502 v 8.112597 H 29.231086 V 48.173293 H 37.33909 V 28.828488 H 66.759771 V 20.715891 H 37.33909 V 1.1920918 Z" />
+  <text
+     class="small-label"
+     x="7.5076342"
+     y="26.066565"
+     id="text10">道</text>
+  <rect
+     class="main"
+     x="4.34026"
+     y="1.2956692"
+     width="62.463078"
+     height="46.877743"
+     id="rect1" />
 </svg>
