@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="70mm" height="50mm" viewBox="0 0 70 50">
+  <!--
+  図形教材SVG。
+  - viewBox の 1 単位を 1mm として扱う。
+  - 図形本体は .main、補助線は .thin、点線は .dash を使う。
+  - 領域は斜線ではなく薄い塗りで示す。
+  - この図は、縦12m・横16mの長方形の土地に、縦方向と横方向に同じ幅の道を1本ずつ通す問題用。
+  - 図の縦横比は 12:16 とし、道幅は模式的に同じ幅で描く。
+  -->
+  <defs>
+    <style><![CDATA[
+      .main {
+        stroke: black;
+        stroke-width: 0.45;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .thin {
+        stroke: black;
+        stroke-width: 0.25;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .dash {
+        stroke: black;
+        stroke-width: 0.25;
+        fill: none;
+        stroke-dasharray: 1 1.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .light-fill {
+        fill: #eeeeee;
+        stroke: none;
+      }
+      .label {
+        font-family: serif;
+        font-size: 4px;
+        fill: black;
+      }
+      .small-label {
+        font-family: serif;
+        font-size: 3.4px;
+        fill: black;
+      }
+      .math-label {
+        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
+        font-size: 4px;
+        font-style: italic;
+        fill: black;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- 外枠：横16m, 縦12m -->
+  <rect class="main" x="11" y="9" width="48" height="36"/>
+
+  <!-- 道：縦方向・横方向とも同じ幅 x。位置は模式図。 -->
+  <rect class="light-fill" x="29" y="9" width="6" height="36"/>
+  <rect class="light-fill" x="11" y="24" width="48" height="6"/>
+
+  <!-- 道の境界線 -->
+  <line class="thin" x1="29" y1="9" x2="29" y2="45"/>
+  <line class="thin" x1="35" y1="9" x2="35" y2="45"/>
+  <line class="thin" x1="11" y1="24" x2="59" y2="24"/>
+  <line class="thin" x1="11" y1="30" x2="59" y2="30"/>
+
+  <!-- 花だん部分のラベル -->
+  <text class="small-label" x="17" y="19">花だん</text>
+  <text class="small-label" x="42" y="19">花だん</text>
+  <text class="small-label" x="17" y="40">花だん</text>
+  <text class="small-label" x="42" y="40">花だん</text>
+  <text class="small-label" x="29.8" y="22">道</text>
+  <text class="small-label" x="50" y="28">道</text>
+
+  <!-- 寸法補助線：横16m -->
+  <line class="thin" x1="11" y1="6" x2="59" y2="6"/>
+  <line class="thin" x1="11" y1="6" x2="11" y2="8"/>
+  <line class="thin" x1="59" y1="6" x2="59" y2="8"/>
+  <text class="small-label" x="31.5" y="4.8">16m</text>
+
+  <!-- 寸法補助線：縦12m -->
+  <line class="thin" x1="7" y1="9" x2="7" y2="45"/>
+  <line class="thin" x1="7" y1="9" x2="10" y2="9"/>
+  <line class="thin" x1="7" y1="45" x2="10" y2="45"/>
+  <text class="small-label" x="1.8" y="28.5">12m</text>
+
+  <!-- 道幅 x の表示 -->
+  <line class="thin" x1="29" y1="48" x2="35" y2="48"/>
+  <line class="thin" x1="29" y1="46" x2="29" y2="49"/>
+  <line class="thin" x1="35" y1="46" x2="35" y2="49"/>
+  <text class="math-label" x="31" y="47.1">x</text>
+</svg>
