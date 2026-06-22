@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/20 minimal math test package v27]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v29]
 
 \usepackage{amssymb}
 
@@ -49,9 +49,6 @@
 \newlength{\LMAnswerHeight}
 \newif\ifLMTallAnswer
 
-% \Useで読み込む問題ファイルのディレクトリを図版探索パスに追加する。
-% これにより、101_books等から \Use{../unit/test}{01} した場合でも、
-% 問題ファイル内では \LMFig{fig/sample} のように単元フォルダ基準で図版を指定できる。
 \newcommand{\LMSetProblemDir}[1]{%
   \filename@parse{#1}%
   \xdef\LMCurrentProblemDir{\filename@area}%
@@ -62,9 +59,6 @@
   \fi
 }
 
-% 問題ファイル一覧を蓄積する。
-% 使用例: \Use{../001_math/23_2_roots/test}{01}
-%         -> ../001_math/23_2_roots/test_01.tex を読み込み、テーマ番号 01 を表示する。
 \newcommand{\LMProblemList}{}
 \newcommand{\Use}[2]{%
   \gdef\LMCurrentTheme{#2}%
@@ -130,42 +124,26 @@
 }
 
 \newcommand{\LMPrintedMajor}{\LMCurrentTheme}
-
 \newcommand{\LMBoxedMajor}{%
   {\setlength{\fboxsep}{0pt}%
    \fbox{\parbox[c][7mm][c]{7mm}{\centering\large\LMPrintedMajor}}}%
 }
 
-% ページ内の横並び小問の問題用行間を指定する。
-% 例: \SetRowSpace{7mm}
-% 各 \MajorQuestion の開始時に標準値へ戻る。
 \newcommand{\SetRowSpace}[1]{%
   \setlength{\LMRowSpace}{#1}%
 }
-
-% 計算連打ページ用。問題ページだけを広げる。
 \newcommand{\SetRowSpaceCalc}{%
   \setlength{\LMRowSpace}{\LMCalcRowSpace}%
 }
-
-% 一問一答用。問題ページだけを広げる。
 \newcommand{\SetRowSpaceQanda}{%
   \setlength{\LMRowSpace}{\LMQandaRowSpace}%
 }
 
-% 一問一答用の空欄番号。
-% 例: \Blank{11} -> 【 11 】
 \newcommand{\Blank}[1]{【\quad #1\quad 】}
-
-% 現在の小問番号をキーに登録し、空欄として表示する。
-% 例: \NamedBlank{cell} -> 小問番号が 11 の場合は 【 11 】
 \newcommand{\NamedBlank}[1]{%
   \expandafter\xdef\csname LMBlankNumber:#1\endcsname{\theLMsubq}%
   \Blank{\theLMsubq}%
 }
-
-% 前に登録した空欄を、現在の番号で参照する。
-% 例: \RefBlank{cell} -> cell が小問 11 で登録済みなら 【 11 】
 \newcommand{\RefBlank}[1]{%
   \expandafter\ifx\csname LMBlankNumber:#1\endcsname\relax
     \Blank{??}%
@@ -174,22 +152,14 @@
   \fi
 }
 
-% 図版を中央配置で出力する。
-% SVGは事前にPDF化し、TeX側ではPDF化済み図版を読む。
-% 例: \LMFig[0.55\linewidth]{fig/test_01_01}
 \newcommand{\LMFig}[2][0.7\linewidth]{%
   \begin{center}%
     \includegraphics[width=#1]{#2}%
   \end{center}%
 }
-
-% 図版をその場に出力する。minipageやparbox内で使う。
-% 例: \LMFigInline[0.9\linewidth]{fig/test_01_01}
 \newcommand{\LMFigInline}[2][0.7\linewidth]{%
   \includegraphics[width=#1]{#2}%
 }
-
-% 図版をブロックとして中央配置する。parbox内で使う。
 \newcommand{\LMFigBlock}[2][0.7\linewidth]{%
   {\centering\includegraphics[width=#1]{#2}\par}%
 }
@@ -216,8 +186,6 @@
   \fi
 }
 
-% 大問内で追加の指示文を表示する。改ページせず、小問番号も維持する。
-% 1回目の指示文には上余白を入れず、2回目以降の指示文の前だけ余白を入れる。
 \newcommand{\Instruction}[1]{%
   \ifLMInstructionUsed
     \par\vspace{7mm}%
@@ -231,8 +199,6 @@
   \fi
 }
 
-% 地の文。小問番号は振らず、解答ページでは表示しない。
-% 例: \Text{次の図を見て、問いに答えなさい。}
 \newcommand{\Text}[1]{%
   \ifLMAnswerMode
   \else
@@ -241,9 +207,6 @@
   \fi
 }
 
-
-
-% 解答内容の高さを計測する。分数・根号・折り返しなどで高い場合は true。
 \newcommand{\LMMeasureAnswer}[2]{%
   \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
   \setlength{\LMAnswerHeight}{\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax}%
@@ -253,7 +216,6 @@
   \fi
 }
 
-% 解答を出力する。高い解答は番号の次の独立段落に回し、行送りも広げる。
 \newcommand{\LMPrintAnswer}[3]{%
   \LMMeasureAnswer{#1}{#3}%
   \ifLMTallAnswer
@@ -280,11 +242,6 @@
   \fi
 }
 
-% wrapfigによる回り込み図版領域。
-% 小問番号は振らず、この中に \Text や \QQ などを入れる。
-% 例: \WrapFig{r}{50mm}{fig/sample}{\Text{本文}\QQ{問題}{答え}}
-%      \WrapFig[6]{r}{50mm}{fig/sample}{\Text{本文}\QQ{問題}{答え}}
-% #1: 省略可の回り込み行数, #2: r または l, #3: 図幅, #4: 図パス, #5: 本文・小問群
 \newcommand{\WrapFig}{\@ifnextchar[{\LMWrapFigRows}{\LMWrapFigAuto}}
 \newcommand{\LMWrapFigAuto}[4]{%
   \ifLMAnswerMode
@@ -321,37 +278,46 @@
   \fi
 }
 
-% 旧2列配置用。単一列の互換命令として残す。
 \newcommand{\BeginTwoCols}{\par\vspace{2mm}}
 \newcommand{\EndTwoCols}{\par}
+
 \newcommand{\QQ}[2]{%
   \stepcounter{LMsubq}%
-  \noindent
-  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \ifLMWrapMode
-      #1\par\vspace{\LMRowSpace}%
+      {\leftskip=9mm\parindent=0pt\noindent
+       \llap{\makebox[9mm][l]{\textbf{(\theLMsubq)}}}%
+       #1\par}%
+      \vspace{\LMRowSpace}%
     \else
+      \noindent
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
       \par\vspace{\LMRowSpace}%
     \fi
   \fi
 }
 
-% 分数などを含む問題文で、本文中の行送りだけを少し広げる。
 \newcommand{\QQTall}[2]{%
   \stepcounter{LMsubq}%
-  \noindent
-  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \ifLMWrapMode
-      {\setlength{\baselineskip}{1.25\baselineskip}#1\par}%
+      {\leftskip=9mm\parindent=0pt\setlength{\baselineskip}{1.25\baselineskip}%
+       \noindent
+       \llap{\makebox[9mm][l]{\textbf{(\theLMsubq)}}}%
+       #1\par}%
       \vspace{\LMRowSpace}%
     \else
+      \noindent
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
         \setlength{\baselineskip}{1.25\baselineskip}%
         #1\par
@@ -361,8 +327,6 @@
   \fi
 }
 
-% 2問を横並びで出力する。番号は左から右へ進む。
-% \QQRow{左問題}{左解答}{右問題}{右解答}
 \newcommand{\QQRow}[4]{%
   \noindent
   \begin{minipage}[t]{0.48\linewidth}
@@ -401,10 +365,6 @@
   \fi
 }
 
-% 図つき小問を2問横並びで出力する。角度・面積などの図形連打用。
-% 問題ページでは問題番号・問題文を図の上に出力する。
-% 答えページでは図を省略し、解答だけを出力する。
-% 例: \QQFigRow[0.9\linewidth]{fig/a}{問題}{答え}{fig/b}{問題}{答え}
 \newcommand{\QQFigRow}[7][0.9\linewidth]{%
   \noindent
   \begin{minipage}[t]{0.48\linewidth}
@@ -449,7 +409,6 @@
   \fi
 }
 
-% 1問だけ残る場合に使う。
 \newcommand{\QQSingle}[2]{%
   \noindent
   \begin{minipage}[t]{0.48\linewidth}
