@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v29]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v30]
 
 \usepackage{amssymb}
 
@@ -289,8 +289,8 @@
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \ifLMWrapMode
-      {\leftskip=9mm\parindent=0pt\noindent
-       \llap{\makebox[9mm][l]{\textbf{(\theLMsubq)}}}%
+      {\hangindent=9mm\hangafter=1\noindent
+       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
        #1\par}%
       \vspace{\LMRowSpace}%
     \else
@@ -310,9 +310,9 @@
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \ifLMWrapMode
-      {\leftskip=9mm\parindent=0pt\setlength{\baselineskip}{1.25\baselineskip}%
-       \noindent
-       \llap{\makebox[9mm][l]{\textbf{(\theLMsubq)}}}%
+      {\setlength{\baselineskip}{1.25\baselineskip}%
+       \hangindent=9mm\hangafter=1\noindent
+       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
        #1\par}%
       \vspace{\LMRowSpace}%
     \else
