@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v31]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v32]
 
 \usepackage{amssymb}
 
@@ -374,7 +374,9 @@
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#4}%
   \else
     \noindent
-    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \begin{minipage}[t]{9mm}%
+      \vspace{0pt}\textbf{(\theLMsubq)}%
+    \end{minipage}%
     \begin{minipage}[t]{\dimexpr\linewidth-9mm-#1-\LMFigSideGap\relax}%
       \vspace{0pt}#3%
     \end{minipage}%
