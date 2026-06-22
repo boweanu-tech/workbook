@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v30]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v31]
 
 \usepackage{amssymb}
 
@@ -17,6 +17,8 @@
 \setlength{\LMRowSpace}{\LMDefaultRowSpace}
 \newlength{\LMFigureRowSpace}
 \setlength{\LMFigureRowSpace}{12mm}
+\newlength{\LMFigSideGap}
+\setlength{\LMFigSideGap}{4mm}
 
 \RequirePackage{geometry}
 \RequirePackage{multicol}
@@ -242,6 +244,41 @@
   \fi
 }
 
+% wrapfig は、説明文だけを図に回り込ませたいときに使う。
+% 小問番号つきの \QQ は入れず、\Text などの地の文だけを入れる。
+\newcommand{\WrapTextFig}{\@ifnextchar[{\LMWrapTextFigRows}{\LMWrapTextFigAuto}}
+\newcommand{\LMWrapTextFigAuto}[4]{%
+  \ifLMAnswerMode
+    #4%
+  \else
+    \par\noindent
+    \begin{wrapfigure}{#1}{#2}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#3}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    #4\par
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+\newcommand{\LMWrapTextFigRows}[5][]{%
+  \ifLMAnswerMode
+    #5%
+  \else
+    \par\noindent
+    \begin{wrapfigure}[#1]{#2}{#3}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#4}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    #5\par
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+
+% 互換用。今後は説明文だけの回り込みには \WrapTextFig を使う。
 \newcommand{\WrapFig}{\@ifnextchar[{\LMWrapFigRows}{\LMWrapFigAuto}}
 \newcommand{\LMWrapFigAuto}[4]{%
   \ifLMAnswerMode
@@ -324,6 +361,48 @@
       }%
       \par\vspace{\LMRowSpace}%
     \fi
+  \fi
+}
+
+% 1つの小問と図を横並びにする。小問番号つき図版問題はこちらを標準にする。
+% #1: 図幅, #2: 図パス, #3: 問題文, #4: 解答
+\newcommand{\QQSideFig}[4]{%
+  \stepcounter{LMsubq}%
+  \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#4}%
+  \else
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \begin{minipage}[t]{\dimexpr\linewidth-9mm-#1-\LMFigSideGap\relax}%
+      \vspace{0pt}#3%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}%
+      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \end{minipage}%
+    \par\vspace{\LMRowSpace}%
+  \fi
+}
+
+% 図つき大問ブロック。左に導入文、右に図、その下に全幅の小問群を置く。
+% #1: 図幅, #2: 図パス, #3: 図横の本文, #4: 図下の本文・小問群
+\newcommand{\FigProblemBlock}[4]{%
+  \ifLMAnswerMode
+    #3%
+    #4%
+  \else
+    \par\noindent
+    \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
+      \vspace{0pt}#3%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}%
+      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \end{minipage}%
+    \par\vspace{\LMFigureRowSpace}%
+    #4%
   \fi
 }
 
