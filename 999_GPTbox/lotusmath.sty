@@ -241,10 +241,7 @@
   \fi
 }
 
-% 分数などを含む問題文で、本文中の行送りだけを少し広げる。
-\newcommand{\TallText}[1]{%
-  {\linespread{1.15}\selectfont #1}%
-}
+
 
 % 解答内容の高さを計測する。分数・根号・折り返しなどで高い場合は true。
 \newcommand{\LMMeasureAnswer}[2]{%
@@ -338,6 +335,27 @@
       #1\par\vspace{\LMRowSpace}%
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+      \par\vspace{\LMRowSpace}%
+    \fi
+  \fi
+}
+
+% 分数などを含む問題文で、本文中の行送りだけを少し広げる。
+\newcommand{\QQTall}[2]{%
+  \stepcounter{LMsubq}%
+  \noindent
+  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+  \ifLMAnswerMode
+    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
+  \else
+    \ifLMWrapMode
+      {\setlength{\baselineskip}{1.25\baselineskip}#1\par}%
+      \vspace{\LMRowSpace}%
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+        \setlength{\baselineskip}{1.25\baselineskip}%
+        #1\par
+      }%
       \par\vspace{\LMRowSpace}%
     \fi
   \fi
