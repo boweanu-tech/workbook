@@ -241,6 +241,11 @@
   \fi
 }
 
+% 分数などを含む問題文で、本文中の行送りだけを少し広げる。
+\newcommand{\TallText}[1]{%
+  {\linespread{1.15}\selectfont #1}%
+}
+
 % 解答内容の高さを計測する。分数・根号・折り返しなどで高い場合は true。
 \newcommand{\LMMeasureAnswer}[2]{%
   \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
