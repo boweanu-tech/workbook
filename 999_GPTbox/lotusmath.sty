@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v28]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v29]
 
 \usepackage{amssymb}
 
@@ -283,15 +283,19 @@
 
 \newcommand{\QQ}[2]{%
   \stepcounter{LMsubq}%
-  \noindent
-  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \ifLMWrapMode
-      {\hangindent=9mm\hangafter=1 #1\par}%
+      {\leftskip=9mm\parindent=0pt\noindent
+       \llap{\makebox[9mm][l]{\textbf{(\theLMsubq)}}}%
+       #1\par}%
       \vspace{\LMRowSpace}%
     \else
+      \noindent
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
       \par\vspace{\LMRowSpace}%
     \fi
@@ -300,16 +304,20 @@
 
 \newcommand{\QQTall}[2]{%
   \stepcounter{LMsubq}%
-  \noindent
-  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
   \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
     \ifLMWrapMode
-      {\setlength{\baselineskip}{1.25\baselineskip}%
-       \hangindent=9mm\hangafter=1 #1\par}%
+      {\leftskip=9mm\parindent=0pt\setlength{\baselineskip}{1.25\baselineskip}%
+       \noindent
+       \llap{\makebox[9mm][l]{\textbf{(\theLMsubq)}}}%
+       #1\par}%
       \vspace{\LMRowSpace}%
     \else
+      \noindent
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
         \setlength{\baselineskip}{1.25\baselineskip}%
         #1\par
