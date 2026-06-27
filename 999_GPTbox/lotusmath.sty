@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v34]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v35]
 
 
 \DeclareRobustCommand{\percent}{{\fontfamily{jkp}\selectfont\%}}
@@ -44,6 +44,7 @@
 \LMWrapModefalse
 
 \newcounter{LMmajor}
+\newcounter{LMtype}
 \newcounter{LMsubq}
 \newcommand{\LMCurrentTheme}{}
 \newcommand{\LMCoverTitle}{}
@@ -98,6 +99,7 @@
 \newcommand{\BeginQuestions}{%
   \LMAnswerModefalse
   \setcounter{LMmajor}{0}%
+  \setcounter{LMtype}{0}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
   \LMWrapModefalse
@@ -107,6 +109,7 @@
   \clearpage
   \LMAnswerModetrue
   \setcounter{LMmajor}{0}%
+  \setcounter{LMtype}{0}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
   \LMWrapModefalse
@@ -137,6 +140,11 @@
 \newcommand{\LMBoxedMajorLesson}{%
   {\setlength{\fboxsep}{0pt}%
    \fbox{\parbox[c][10mm][c]{10mm}{\centering\Large\LMPrintedMajor}}}%
+}
+
+\newcommand{\LMBoxedTypeQuestion}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][6mm][c]{6mm}{\centering\normalsize\theLMtype}}}%
 }
 
 \newcommand{\SetRowSpace}[1]{%
@@ -181,6 +189,7 @@
 \newcommand{\MajorQuestionLesson}[1]{%
   \ResetRowSpace
   \stepcounter{LMmajor}%
+  \setcounter{LMtype}{0}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
   \LMWrapModefalse
@@ -199,6 +208,7 @@
 \newcommand{\MajorQuestion}[1]{%
   \ResetRowSpace
   \stepcounter{LMmajor}%
+  \setcounter{LMtype}{0}%
   \setcounter{LMsubq}{0}%
   \LMInstructionUsedfalse
   \LMWrapModefalse
@@ -211,6 +221,24 @@
     \clearpage
     \noindent\LMBoxedMajor\quad \raisebox{-0.4mm}{#1}\par
     \vspace{2mm}\hrule height \LMRuleWidth\vspace{4mm}%
+  \fi
+}
+
+% lesson_用の大問見出し。呼び出すたびに大問番号を進め、小問番号を(1)からに戻す。
+% 例: \TypeQuestion{平方根の形にする}
+\newcommand{\TypeQuestion}[1]{%
+  \ifnum\value{LMtype}>0
+    \par\vspace{4mm}%
+  \fi
+  \stepcounter{LMtype}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+  \ifLMAnswerMode
+    \noindent\textbf{\theLMtype.\ #1}\par\vspace{1mm}%
+  \else
+    \noindent\LMBoxedTypeQuestion\quad \raisebox{-0.3mm}{#1}\par
+    \vspace{2mm}%
   \fi
 }
 
