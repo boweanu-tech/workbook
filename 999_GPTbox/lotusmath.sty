@@ -227,9 +227,6 @@
 % lesson_用の大問見出し。呼び出すたびに大問番号を進め、小問番号を(1)からに戻す。
 % 例: \TypeQuestion{平方根の形にする}
 \newcommand{\TypeQuestion}[1]{%
-  \ifnum\value{LMtype}>0
-    \par\vspace{4mm}%
-  \fi
   \stepcounter{LMtype}%
   \setcounter{LMsubq}{0}%
   \ifLMInstructionUsed
@@ -239,7 +236,15 @@
   \ifLMAnswerMode
     \par\vspace{1mm}%
   \else
-    \noindent\LMBoxedTypeQuestion\quad \raisebox{-0.3mm}{#1}\par
+    \noindent
+    \begin{minipage}[t]{6mm}%
+      \vspace{0pt}\LMBoxedTypeQuestion%
+    \end{minipage}%
+    \hspace{2mm}%
+    \begin{minipage}[t]{\dimexpr\linewidth-8mm\relax}%
+      \vspace{0pt}#1%
+    \end{minipage}%
+    \par
     \vspace{6mm}%
   \fi
 }
