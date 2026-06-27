@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="78mm" height="50mm" viewBox="0 0 360 230" version="1.1">
+  <defs>
+    <style><![CDATA[
+      .cell1 { fill: #f5f5f5; stroke: none; }
+      .cell2 { fill: #ededed; stroke: none; }
+      .cell3 { fill: #e5e5e5; stroke: none; }
+      .cell4 { fill: #dddddd; stroke: none; }
+      .cell5 { fill: #d5d5d5; stroke: none; }
+      .grid { fill: none; stroke: #bbbbbb; stroke-width: 1.0; }
+      .boundary { fill: none; stroke: #111111; stroke-width: 2.0; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #111111; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+      .coin { fill: #ffffff; stroke: #111111; stroke-width: 1.5; }
+      .num { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 15px; fill: #111111; text-anchor: middle; dominant-baseline: middle; }
+      .label { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 14px; fill: #111111; text-anchor: middle; }
+      .jp { font-family: sans-serif; font-size: 12px; fill: #111111; text-anchor: middle; }
+    ]]></style>
+  </defs>
+
+  <!-- A 5 by 5 square of coins, divided from the upper-right corner into L-shaped parts.
+       The k-th L-shaped part has 2k-1 coins. -->
+
+  <!-- L-shaped background cells. Cell size is 26, top-left of the 5 by 5 block is (70, 26). -->
+  <!-- 5th part -->
+  <rect class="cell5" x="70" y="26" width="26" height="26"/>
+  <rect class="cell5" x="70" y="52" width="26" height="26"/>
+  <rect class="cell5" x="70" y="78" width="26" height="26"/>
+  <rect class="cell5" x="70" y="104" width="26" height="26"/>
+  <rect class="cell5" x="70" y="130" width="26" height="26"/>
+  <rect class="cell5" x="96" y="130" width="26" height="26"/>
+  <rect class="cell5" x="122" y="130" width="26" height="26"/>
+  <rect class="cell5" x="148" y="130" width="26" height="26"/>
+  <rect class="cell5" x="174" y="130" width="26" height="26"/>
+  <!-- 4th part -->
+  <rect class="cell4" x="96" y="26" width="26" height="26"/>
+  <rect class="cell4" x="96" y="52" width="26" height="26"/>
+  <rect class="cell4" x="96" y="78" width="26" height="26"/>
+  <rect class="cell4" x="96" y="104" width="26" height="26"/>
+  <rect class="cell4" x="122" y="104" width="26" height="26"/>
+  <rect class="cell4" x="148" y="104" width="26" height="26"/>
+  <rect class="cell4" x="174" y="104" width="26" height="26"/>
+  <!-- 3rd part -->
+  <rect class="cell3" x="122" y="26" width="26" height="26"/>
+  <rect class="cell3" x="122" y="52" width="26" height="26"/>
+  <rect class="cell3" x="122" y="78" width="26" height="26"/>
+  <rect class="cell3" x="148" y="78" width="26" height="26"/>
+  <rect class="cell3" x="174" y="78" width="26" height="26"/>
+  <!-- 2nd part -->
+  <rect class="cell2" x="148" y="26" width="26" height="26"/>
+  <rect class="cell2" x="148" y="52" width="26" height="26"/>
+  <rect class="cell2" x="174" y="52" width="26" height="26"/>
+  <!-- 1st part -->
+  <rect class="cell1" x="174" y="26" width="26" height="26"/>
+
+  <!-- Grid and outer boundary. -->
+  <rect class="boundary" x="70" y="26" width="130" height="130"/>
+  <path class="grid" d="M 96 26 V 156 M 122 26 V 156 M 148 26 V 156 M 174 26 V 156"/>
+  <path class="grid" d="M 70 52 H 200 M 70 78 H 200 M 70 104 H 200 M 70 130 H 200"/>
+
+  <!-- Thick step boundaries between the L-shaped parts. -->
+  <path class="boundary" d="M 174 26 V 52 H 200"/>
+  <path class="boundary" d="M 148 26 V 78 H 200"/>
+  <path class="boundary" d="M 122 26 V 104 H 200"/>
+  <path class="boundary" d="M 96 26 V 130 H 200"/>
+
+  <!-- Coins. -->
+  <g>
+    <circle class="coin" cx="83" cy="39" r="7"/><circle class="coin" cx="109" cy="39" r="7"/><circle class="coin" cx="135" cy="39" r="7"/><circle class="coin" cx="161" cy="39" r="7"/><circle class="coin" cx="187" cy="39" r="7"/>
+    <circle class="coin" cx="83" cy="65" r="7"/><circle class="coin" cx="109" cy="65" r="7"/><circle class="coin" cx="135" cy="65" r="7"/><circle class="coin" cx="161" cy="65" r="7"/><circle class="coin" cx="187" cy="65" r="7"/>
+    <circle class="coin" cx="83" cy="91" r="7"/><circle class="coin" cx="109" cy="91" r="7"/><circle class="coin" cx="135" cy="91" r="7"/><circle class="coin" cx="161" cy="91" r="7"/><circle class="coin" cx="187" cy="91" r="7"/>
+    <circle class="coin" cx="83" cy="117" r="7"/><circle class="coin" cx="109" cy="117" r="7"/><circle class="coin" cx="135" cy="117" r="7"/><circle class="coin" cx="161" cy="117" r="7"/><circle class="coin" cx="187" cy="117" r="7"/>
+    <circle class="coin" cx="83" cy="143" r="7"/><circle class="coin" cx="109" cy="143" r="7"/><circle class="coin" cx="135" cy="143" r="7"/><circle class="coin" cx="161" cy="143" r="7"/><circle class="coin" cx="187" cy="143" r="7"/>
+  </g>
+
+  <!-- Part labels. -->
+  <text class="num" x="187" y="39">1</text>
+  <text class="num" x="161" y="65">2</text>
+  <text class="num" x="135" y="91">3</text>
+  <text class="num" x="109" y="117">4</text>
+  <text class="num" x="83" y="143">5</text>
+
+  <!-- Small guide showing the order. -->
+  <text class="jp" x="135" y="184">数字は L 字型の番号</text>
+  <path class="thin" d="M 215 40 H 244 V 69"/>
+  <text class="label" x="265" y="61">L字型</text>
+</svg>
