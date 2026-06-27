@@ -172,24 +172,6 @@
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
 }
-\newcommand{\MajorQuestionTTL}[2]{%
-  \ResetRowSpace
-  \stepcounter{LMmajor}%
-  \setcounter{LMsubq}{0}%
-  \LMInstructionUsedfalse
-  \LMWrapModefalse
-  \ifLMAnswerMode
-    \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
-    \noindent\begin{minipage}{\linewidth}
-    \LMInAnswerBlocktrue
-    \noindent\LMBoxedMajor\par\vspace{1.5mm}%
-  \else
-    \clearpage
-    \noindent\LMBoxedMajor\quad \raisebox{-0.4mm}{#1}\par
-    \lessonTTL{#2}
-    \vspace{2mm}\hrule height \LMRuleWidth\vspace{4mm}%
-  \fi
-}
 
 \newcommand{\MajorQuestion}[1]{%
   \ResetRowSpace
