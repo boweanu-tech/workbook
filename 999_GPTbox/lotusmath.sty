@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v32]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v33]
 
 \usepackage{amssymb}
 
@@ -197,6 +197,20 @@
     \par\vspace{1mm}%
   \else
     \noindent #1\par
+    \vspace{6mm}%
+  \fi
+}
+
+\newcommand{\InstructionTall}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
+  \fi
+  \LMInstructionUsedtrue
+  \ifLMAnswerMode
+    \par\vspace{1mm}%
+  \else
+    {\setlength{\baselineskip}{1.25\baselineskip}%
+     \noindent #1\par}%
     \vspace{6mm}%
   \fi
 }
