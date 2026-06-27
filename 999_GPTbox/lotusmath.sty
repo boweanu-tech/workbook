@@ -226,7 +226,7 @@
 
 % lesson_用の大問見出し。呼び出すたびに大問番号を進め、小問番号を(1)からに戻す。
 % 例: \TypeQuestion{平方根の形にする}
-\newcommand{\TypeQuestion}[1]{%
+\newcommand{\TypeQuestion}[2]{%
   \stepcounter{LMtype}%
   \setcounter{LMsubq}{0}%
   \ifLMInstructionUsed
@@ -242,12 +242,26 @@
     \end{minipage}%
     \hspace{2mm}%
     \begin{minipage}[t]{\dimexpr\linewidth-8mm\relax}%
-      \vspace{1mm}#1%
+      \vspace{#2}#1%
     \end{minipage}%
     \par
     \vspace{6mm}%
   \fi
 }
+
+%1行用
+\newcommand{\TypeQuestionSingle}[1]{
+\TypeQuestion{#1}{1mm}
+}
+
+%2行用
+\newcommand{\TypeQuestionDouble}[1]{
+\TypeQuestion{#1}{0mm}
+}
+
+
+
+
 
 \newcommand{\Instruction}[1]{%
   \ifLMInstructionUsed
