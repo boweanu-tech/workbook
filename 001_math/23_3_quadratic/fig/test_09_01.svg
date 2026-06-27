@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="72mm" height="54mm" viewBox="0 0 320 240" version="1.1">
+  <defs>
+    <style><![CDATA[
+      .axis { fill: none; stroke: #111111; stroke-width: 1.7; stroke-linecap: round; }
+      .thin { fill: none; stroke: #111111; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+      .line { fill: none; stroke: #111111; stroke-width: 2.1; stroke-linecap: round; }
+      .dash { fill: none; stroke: #555555; stroke-width: 1.3; stroke-dasharray: 5 4; stroke-linecap: round; }
+      .shade { fill: #e6e6e6; stroke: none; opacity: 0.55; }
+      .point { fill: #111111; stroke: none; }
+      .label { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 18px; fill: #111111; }
+      .small { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 15px; fill: #111111; }
+      .math { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 16px; fill: #111111; }
+    ]]></style>
+  </defs>
+
+  <!-- Coordinate plane for y = 1/2 x + 3.
+       The point P is placed at a positive x-coordinate t; Q is the foot on the x-axis. -->
+
+  <!-- Axes. Axis lines stop at the bases of the arrowheads. -->
+  <path class="axis" d="M 42 196 L 276 196"/>
+  <path d="M 286 196 L 276 191 L 276 201 Z" fill="#111111"/>
+  <path class="axis" d="M 62 210 L 62 36"/>
+  <path d="M 62 26 L 57 36 L 67 36 Z" fill="#111111"/>
+
+  <!-- Light tick marks. -->
+  <path class="thin" d="M 102 192 L 102 200"/>
+  <path class="thin" d="M 142 192 L 142 200"/>
+  <path class="thin" d="M 182 192 L 182 200"/>
+  <path class="thin" d="M 58 136 L 66 136"/>
+
+  <!-- Triangle OPQ and graph. -->
+  <polygon class="shade" points="62,196 172,196 172,81"/>
+  <path class="line" d="M 42 146 L 226 54"/>
+  <path class="thin" d="M 62 196 L 172 81"/>
+  <path class="dash" d="M 172 81 L 172 196"/>
+
+  <!-- Points. -->
+  <circle class="point" cx="62" cy="196" r="2.5"/>
+  <circle class="point" cx="172" cy="81" r="2.8"/>
+  <circle class="point" cx="172" cy="196" r="2.8"/>
+
+  <!-- Labels. -->
+  <text class="label" x="291" y="201">x</text>
+  <text class="label" x="51" y="23">y</text>
+  <text class="label" x="45" y="213">O</text>
+  <text class="label" x="179" y="79">P</text>
+  <text class="label" x="178" y="215">Q</text>
+  <text class="small" x="167" y="212">t</text>
+  <text class="math" x="174" y="49">y=1/2x+3</text>
+</svg>
