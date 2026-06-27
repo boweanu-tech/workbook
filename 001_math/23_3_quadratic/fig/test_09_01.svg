@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="72mm" height="54mm" viewBox="0 0 320 240" version="1.1">
-  <defs>
-    <style><![CDATA[
+<svg
+   width="72mm"
+   height="54mm"
+   viewBox="0 0 320 240"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="test_09_01.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.2154225"
+     inkscape:cx="102.47487"
+     inkscape:cy="108.07289"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19" />
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .axis { fill: none; stroke: #111111; stroke-width: 1.7; stroke-linecap: round; }
       .thin { fill: none; stroke: #111111; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
       .line { fill: none; stroke: #111111; stroke-width: 2.1; stroke-linecap: round; }
@@ -13,39 +45,95 @@
       .math { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 16px; fill: #111111; }
     ]]></style>
   </defs>
-
+  <polygon
+     class="shade"
+     points="62,196 172,196 172,81"
+     id="polygon8" />
   <!-- Coordinate plane for y = 1/2 x + 3.
        The point P is placed at a positive x-coordinate t; Q is the foot on the x-axis. -->
-
   <!-- Axes. Axis lines stop at the bases of the arrowheads. -->
-  <path class="axis" d="M 42 196 L 276 196"/>
-  <path d="M 286 196 L 276 191 L 276 201 Z" fill="#111111"/>
-  <path class="axis" d="M 62 210 L 62 36"/>
-  <path d="M 62 26 L 57 36 L 67 36 Z" fill="#111111"/>
-
+  <path
+     class="axis"
+     d="M 42 196 L 276 196"
+     id="path1" />
+  <path
+     d="M 286 196 L 276 191 L 276 201 Z"
+     fill="#111111"
+     id="path2" />
+  <path
+     class="axis"
+     d="M 62 210 L 62 36"
+     id="path3" />
+  <path
+     d="M 62 26 L 57 36 L 67 36 Z"
+     fill="#111111"
+     id="path4" />
   <!-- Light tick marks. -->
-  <path class="thin" d="M 102 192 L 102 200"/>
-  <path class="thin" d="M 142 192 L 142 200"/>
-  <path class="thin" d="M 182 192 L 182 200"/>
-  <path class="thin" d="M 58 136 L 66 136"/>
-
   <!-- Triangle OPQ and graph. -->
-  <polygon class="shade" points="62,196 172,196 172,81"/>
-  <path class="line" d="M 42 146 L 226 54"/>
-  <path class="thin" d="M 62 196 L 172 81"/>
-  <path class="dash" d="M 172 81 L 172 196"/>
-
+  <path
+     class="line"
+     d="M 42 146 L 226 54"
+     id="path9" />
+  <path
+     class="thin"
+     d="M 62 196 L 172 81"
+     id="path10" />
+  <path
+     class="dash"
+     d="M 172 81 L 172 196"
+     id="path11" />
   <!-- Points. -->
-  <circle class="point" cx="62" cy="196" r="2.5"/>
-  <circle class="point" cx="172" cy="81" r="2.8"/>
-  <circle class="point" cx="172" cy="196" r="2.8"/>
-
+  <circle
+     class="point"
+     cx="62"
+     cy="196"
+     r="2.5"
+     id="circle11" />
+  <circle
+     class="point"
+     cx="172"
+     cy="81"
+     r="2.8"
+     id="circle12" />
   <!-- Labels. -->
-  <text class="label" x="291" y="201">x</text>
-  <text class="label" x="51" y="23">y</text>
-  <text class="label" x="45" y="213">O</text>
-  <text class="label" x="179" y="79">P</text>
-  <text class="label" x="178" y="215">Q</text>
-  <text class="small" x="167" y="212">t</text>
-  <text class="math" x="174" y="49">y=1/2x+3</text>
+  <text
+     class="label"
+     x="291"
+     y="201"
+     id="text13">x</text>
+  <text
+     class="label"
+     x="51"
+     y="23"
+     id="text14">y</text>
+  <text
+     class="label"
+     x="45"
+     y="213"
+     id="text15">O</text>
+  <text
+     class="label"
+     x="169.27902"
+     y="73.080246"
+     id="text16">P</text>
+  <text
+     class="label"
+     x="178"
+     y="215"
+     id="text17">Q</text>
+  <path
+     class="thin"
+     d="m 172.22594,182.56584 h 12.31999 v 12.31999"
+     id="path3-6"
+     style="fill:none;stroke:#111111;stroke-width:1.45455;stroke-linecap:round;stroke-linejoin:round" />
+  <text
+     class="label"
+     x="46.173721"
+     y="130.30888"
+     id="text17-5"
+     style="font-size:18px;font-family:'Latin Modern Roman', 'Times New Roman', serif;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan20"
+       x="46.173721"
+       y="130.30888">R</tspan></text>
 </svg>
