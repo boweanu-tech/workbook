@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v33]
+\ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v34]
 
 \DeclareRobustCommand{\percent}{{\fontfamily{jkp}\selectfont\%}}
 
@@ -414,6 +414,27 @@
     \par\noindent
     \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
       \vspace{0pt}#3%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}%
+      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \end{minipage}%
+    \par\vspace{\LMFigureRowSpace}%
+    #4%
+  \fi
+}
+
+% 図つき大問ブロックの行送り広め版。図横の本文だけを広めにする。
+% 図下の小問群は、必要なら \QQTall などを個別に使う。
+\newcommand{\FigProblemBlockTall}[4]{%
+  \ifLMAnswerMode
+    {\setlength{\baselineskip}{1.25\baselineskip}#3\par}%
+    #4%
+  \else
+    \par\noindent
+    \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
+      \vspace{0pt}%
+      {\setlength{\baselineskip}{1.25\baselineskip}#3\par}%
     \end{minipage}%
     \hfill
     \begin{minipage}[t]{#1}%
