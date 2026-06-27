@@ -232,12 +232,14 @@
   \fi
   \stepcounter{LMtype}%
   \setcounter{LMsubq}{0}%
-  \LMInstructionUsedfalse
-  \LMWrapModefalse
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
+  \fi
+  \LMInstructionUsedtrue
   \ifLMAnswerMode
-    \noindent\textbf{\theLMtype.\ #1}\par\vspace{1mm}%
+    \par\vspace{1mm}%
   \else
-    \noindent\LMBoxedTypeQuestion\quad \raisebox{-0.3mm}{#1}\par
+    \noindent\LMBoxedTypeQuestion\quad  #1\par
     \vspace{6mm}%
   \fi
 }
