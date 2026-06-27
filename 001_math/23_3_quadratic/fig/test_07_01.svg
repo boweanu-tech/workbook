@@ -65,76 +65,75 @@
   <!-- Highlight the triangular face DPQ of the tetrahedron B-DPQ. -->
   <path
      id="polygon1"
-     style="opacity:0.55;fill:#e6e6e6;stroke-width:0.842897"
+     style="opacity:0.55;fill:#e6e6e6;stroke-width:1"
      class="face"
-     transform="matrix(1.1859992,0,0,1.1867715,-42.243455,12.715455)"
-     d="M 250.13523,140 150,20 l 0,89.91941 z"
+     d="M 249.47953,165.0335 130.71923,22.620923 V 129.33472 Z"
      sodipodi:nodetypes="cccc" />
   <!-- Right triangular prism ABC-DEF. -->
   <path
      class="edge"
-     d="M 64.496472,77.987887 V 220.40046 H 254.25634 Z"
+     d="M 59.559276,64.157925 V 206.5705 H 249.31914 Z"
      id="path2" />
   <path
      class="edge"
-     d="m 135.65643,36.450885 -1e-5,142.412575 h 189.75987"
+     d="m 130.71923,22.620923 -1e-5,142.412577 h 189.75987"
      id="path3"
      style="stroke-width:2.2005;stroke-dasharray:2.2005, 4.401;stroke-dashoffset:0"
      sodipodi:nodetypes="ccc" />
   <path
      class="edge"
-     d="M 64.496472,77.987887 135.65642,36.450884"
+     d="M 59.559276,64.157925 130.71922,22.620922"
      id="path4" />
   <path
      class="edge"
-     d="m 64.496472,220.40046 71.159948,-41.537"
+     d="m 59.559276,206.5705 71.159944,-41.537"
      id="path5"
-     style="stroke-dasharray:2.20000005,4.40000009;stroke-dashoffset:0" />
+     style="stroke-dasharray:2.2, 4.4;stroke-dashoffset:0" />
   <path
      class="edge"
-     d="M 135.65643,36.450885 325.41629,178.86346"
+     d="M 130.71923,22.620923 320.47909,165.0335"
      id="path5-6"
      style="fill:none;stroke:#111111;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
      sodipodi:nodetypes="cc" />
   <path
      class="edge"
-     d="m 254.25634,220.40046 71.15995,-41.537"
+     d="m 249.31914,206.5705 71.15995,-41.537"
      id="path6" />
   <!-- Edges of the tetrahedron B-DPQ. -->
   <path
      class="thin"
-     d="M 64.496472,77.987887 135.65643,143.16468"
+     d="M 59.559276,64.157925 130.71923,129.33472"
      id="path8"
      sodipodi:nodetypes="cc" />
   <path
      class="thin"
-     d="M 64.496472,77.987887 254.41673,178.86347"
+     d="M 59.559276,64.157925 249.47953,165.03351"
      id="path9"
      sodipodi:nodetypes="cc" />
   <path
      class="thin"
-     d="M 135.65642,36.450884 V 143.16468 l 118.76031,35.69878 z"
+     d="M 130.71922,22.620922 V 129.33472 l 118.76031,35.69878 z"
      id="path10"
      sodipodi:nodetypes="cccc" />
   <!-- Right angle mark at B. -->
   <path
      class="thin"
-     d="m 64.496471,206.32812 h 14.063188 v 14.07234"
+     d="M 59.559275,192.49816 H 73.622463 V 206.5705"
      id="path11" />
   <path
      class="thin"
-     d="m 136.09099,164.4149 h 14.06319 v 14.07234"
+     d="m 131.15379,150.58494 h 14.06319 v 14.07234"
      id="path11-1"
      style="fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" />
   <path
      class="thin"
-     d="m 149.98384,178.9176 -8.21897,6.29052 -16.57916,-0.0576"
+     d="m 145.04664,165.08764 -8.21897,6.29052 -16.57916,-0.0576"
      id="path11-5"
      style="fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
      sodipodi:nodetypes="ccc" />
   <path
      class="thin"
-     d="m 125.07536,184.69382 -0.007,-14.13555 9.89287,-5.7878"
+     d="m 120.13816,170.86386 -0.007,-14.13555 9.89287,-5.7878"
      id="path11-5-5"
      style="fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
      sodipodi:nodetypes="ccc" />
@@ -143,42 +142,42 @@
   <!-- Vertex labels. -->
   <text
      class="label"
-     x="54.11689"
-     y="71.987984"
+     x="49.179695"
+     y="58.15802"
      id="text17">A</text>
   <text
      class="label"
-     x="49.142452"
-     y="231.74806"
+     x="44.205257"
+     y="217.91811"
      id="text18">B</text>
   <text
      class="label"
-     x="252.53629"
-     y="237.29678"
+     x="247.59909"
+     y="223.46683"
      id="text19">C</text>
   <text
      class="label"
-     x="130.57271"
-     y="27.882175"
+     x="125.63551"
+     y="14.052213"
      id="text20">D</text>
   <text
      class="label"
-     x="130.7683"
-     y="198.70778"
+     x="125.8311"
+     y="184.87782"
      id="text21">E</text>
   <text
      class="label"
-     x="326.52713"
-     y="172.23848"
+     x="321.58994"
+     y="158.40852"
      id="text22">F</text>
   <text
      class="label"
-     x="121.37136"
-     y="154.96933"
+     x="116.43417"
+     y="141.13937"
      id="text23">P</text>
   <text
      class="label"
-     x="252.97652"
-     y="171.81862"
+     x="248.03932"
+     y="157.98866"
      id="text24">Q</text>
 </svg>
