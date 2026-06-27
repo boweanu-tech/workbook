@@ -134,6 +134,11 @@
    \fbox{\parbox[c][7mm][c]{7mm}{\centering\large\LMPrintedMajor}}}%
 }
 
+\newcommand{\LMBoxedMajorLesson}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][15mm][c]{15mm}{\centering\large\LMPrintedMajor}}}%
+}
+
 \newcommand{\SetRowSpace}[1]{%
   \setlength{\LMRowSpace}{#1}%
 }
@@ -171,6 +176,24 @@
 
 \newcommand{\ResetRowSpace}{%
   \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
+}
+
+\newcommand{\MajorQuestionLesson}[1]{%
+  \ResetRowSpace
+  \stepcounter{LMmajor}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+  \ifLMAnswerMode
+    \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
+    \noindent\begin{minipage}{\linewidth}
+    \LMInAnswerBlocktrue
+    \noindent\LMBoxedMajor\par\vspace{1.5mm}%
+  \else
+    \clearpage
+    \noindent\LMBoxedMajorLesson\quad \raisebox{-0.4mm}{#1}\par
+    \vspace{2mm}\hrule height \LMRuleWidth\vspace{4mm}%
+  \fi
 }
 
 \newcommand{\MajorQuestion}[1]{%
@@ -556,10 +579,6 @@
   \ifodd\value{page}%
     \null\thispagestyle{empty}\clearpage
   \fi
-}
-
-\newcommand{\lessonTTL}[1]{
-\ifLMAnswerMode\else\hfill{\small #1}\par\vspace{2mm}\fi
 }
 
 
