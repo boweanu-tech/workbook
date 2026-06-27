@@ -23,7 +23,7 @@
      inkscape:document-units="mm"
      inkscape:zoom="2.9680823"
      inkscape:cx="147.40157"
-     inkscape:cy="94.505467"
+     inkscape:cy="94.505466"
      inkscape:window-width="1920"
      inkscape:window-height="996"
      inkscape:window-x="1920"
@@ -61,8 +61,8 @@
   <!-- Coins. -->
   <g
      id="g61"
-     transform="matrix(1.650573,0,0,1.650573,-107.98896,-33.802891)"
-     style="stroke-width:0.60585">
+     transform="matrix(1.4401176,0,0,1.4401176,-79.577487,-14.651454)"
+     style="stroke-width:0.694387">
     <rect
        class="boundary"
        x="70"
@@ -97,7 +97,7 @@
     <g
        id="g55"
        transform="translate(-0.16955433,-0.20794873)"
-       style="stroke-width:0.60585">
+       style="stroke-width:0.694387">
       <circle
          class="coin"
          cx="83"
