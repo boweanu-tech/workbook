@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{lotusmath}[2026/06/22 minimal math test package v34]
 
+
 \DeclareRobustCommand{\percent}{{\fontfamily{jkp}\selectfont\%}}
 
 \usepackage{amssymb}
@@ -556,4 +557,11 @@
     \null\thispagestyle{empty}\clearpage
   \fi
 }
+
+
+%数学関連マクロ
+\newcommand{\Tri}[1]{
+{\triangle \rm #1}
+}
+
 \makeatother
