@@ -631,6 +631,22 @@
   \fi
 }
 
+\newcommand{\LessonPageBreak}{%
+  \ifLMAnswerMode
+    \ifLMInAnswerBlock
+      \end{minipage}\par
+      \LMInAnswerBlockfalse
+      \columnbreak
+      \noindent\begin{minipage}{\linewidth}
+      \LMInAnswerBlocktrue
+    \else
+      \columnbreak
+    \fi
+  \else
+    \clearpage
+  \fi
+}
+
 \newcommand{\MakeEvenPage}{%
   \clearpage
   \ifodd\value{page}%
