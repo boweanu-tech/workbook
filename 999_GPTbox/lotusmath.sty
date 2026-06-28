@@ -242,7 +242,11 @@
   \fi
   \LMInstructionUsedtrue
   \ifLMAnswerMode
-    \par\vspace{1mm}%
+    \noindent
+    \begin{minipage}[t]{10mm}%
+      \vspace{0pt}\LMBoxedTypeQuestion%
+    \end{minipage}%
+    \hspace{2mm}%
   \else
     \noindent
     \begin{minipage}[t]{10mm}%
