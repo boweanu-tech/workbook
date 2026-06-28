@@ -155,6 +155,11 @@
    \fbox{\parbox[c][8mm][c]{8mm}{\centering\Large\theLMtype}}}%
 }
 
+\newcommand{\LMBoxedTypeQuestionAns}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][5mm][c]{5mm}{\centering\small\theLMtype}}}%
+}
+
 \newcommand{\SetRowSpace}[1]{%
   \setlength{\LMRowSpace}{#1}%
 }
@@ -244,7 +249,7 @@
   \ifLMAnswerMode
     \noindent
     \begin{minipage}[t]{10mm}%
-      \vspace{0pt}\LMBoxedTypeQuestion%
+      \vspace{0pt}\LMBoxedTypeQuestionAns%
     \end{minipage}%
     \par\vspace{4mm}%
   \else
