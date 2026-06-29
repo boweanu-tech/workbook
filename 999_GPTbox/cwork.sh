@@ -67,7 +67,7 @@ for file in $(find ./ -maxdepth 1 -name '*.tex' | sort); do
   status=$?
   set -e
 
-  warnings="$(grep -E '(^!|^l\.[0-9]+|:[0-9]+:|LaTeX Warning|Package .* Warning|Class .* Warning|Overfull|Underfull|Emergency stop|Fatal error|No pages of output)' "$buildlog" || true)"
+  warnings="$(grep -E '(^!|^l\.[0-9]+|:[0-9]+:|LaTeX Warning|Package .* Warning|Class .* Warning|Overfull|Underfull|Undefined|Emergency|Fatal|Emergency stop|Fatal error|No pages of output)' "$buildlog" || true)"
 
   if [ -n "$warnings" ]; then
     echo "$warnings"
@@ -88,3 +88,7 @@ done
 rm -f *.dvi
 rm -f *.aux
 rm -f *.log
+
+
+
+
