@@ -575,9 +575,14 @@
     \ifLMAnswerMode
       \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
       \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+          \raggedright
+          \setlength{\baselineskip}{1.45\baselineskip}%
+          \LMFitAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
+          \par
+        }%
       \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
+        \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#2}%
       \fi
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
@@ -590,9 +595,14 @@
     \ifLMAnswerMode
       \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
       \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+          \raggedright
+          \setlength{\baselineskip}{1.45\baselineskip}%
+          \LMFitAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
+          \par
+        }%
       \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
+        \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#4}%
       \fi
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
