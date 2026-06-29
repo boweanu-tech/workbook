@@ -57,12 +57,32 @@ fi
 
 cd "$ORIG_DIR"
 
-for file in $(find ./ -maxdepth 1 -name '*.tex'); do
-  texfot platex -kanji=utf8 -interaction=nonstopmode -halt-on-error -file-line-error "$file"
+for file in $(find ./ -maxdepth 1 -name '*.tex' | sort); do
+  buildlog="${file%.tex}.compile.log"
+
+  echo "platex: $file"
+
+  set +e
+  platex -kanji=utf8 -interaction=nonstopmode -halt-on-error -file-line-error "$file" > "$buildlog" 2>&1
+  status=$?
+  set -e
+
+  warnings="$(grep -E '(^!|^l\.[0-9]+|:[0-9]+:|LaTeX Warning|Package .* Warning|Class .* Warning|Overfull|Underfull|Emergency stop|Fatal error|No pages of output)' "$buildlog" || true)"
+
+  if [ -n "$warnings" ]; then
+    echo "$warnings"
+  fi
+
+  if [ "$status" -ne 0 ]; then
+    echo "platex failed: $file"
+    echo "---- last 80 lines of $buildlog ----"
+    tail -n 80 "$buildlog"
+    exit "$status"
+  fi
 done
 
 for file in $(find ./ -maxdepth 1 -name '*.dvi'); do
-  dvipdfmx -q "$file"
+  dvipdfmx -q "$file" >/dev/null
 done
 
 rm -f *.dvi
