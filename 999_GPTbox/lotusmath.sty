@@ -81,7 +81,7 @@
 \newsavebox{\LMAnsFitBox}
 \newlength{\LMAnsFitWidth}
 \newlength{\LMAnsLabelWidth}
-\setlength{\LMAnsLabelWidth}{6.5mm}
+\setlength{\LMAnsLabelWidth}{9mm}
 
 \newcommand{\LMFitInlineAnswer}[2]{%
   \begingroup
@@ -613,13 +613,13 @@
 \newcommand{\QQRow}[4]{%
   \ifLMAnswerMode
     \noindent
-    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.9mm\relax}
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
       \stepcounter{LMsubq}%
       \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
       \LMFitInlineAnswer{\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#2}%
     \end{minipage}%
     \hspace{1mm}%
-    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.9mm\relax}
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
       \stepcounter{LMsubq}%
       \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
       \LMFitInlineAnswer{\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#4}%
