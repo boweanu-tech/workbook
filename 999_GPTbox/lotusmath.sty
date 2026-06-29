@@ -172,11 +172,21 @@
 }
 
 \newcommand{\CoverPageLesson}[2]{%
-\CoverPage{#1}{#2}
-  \clearpage
-  \null
-  \thispagestyle{empty}%
-  \clearpage
+  \gdef\LMCoverTitle{#1}%
+  \gdef\LMCoverSubtitle{#2}%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{20mm}
+  {\large 名前\quad\underline{\hspace{80mm}}}\par
+  \vspace{35mm}
+  \begin{center}
+    {\Huge #1}\par
+    \vspace{12mm}
+    {\LARGE #2}\par
+    \vspace{18mm}
+    {\large #3}\par
+  \end{center}
+  \end{titlepage}
 }
 
 \newcommand{\BeginQuestions}{%
