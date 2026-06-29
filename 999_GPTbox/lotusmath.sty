@@ -137,13 +137,19 @@
   \gdef\LMCurrentTheme{#2}%
   \LMSetProblemDir{#1_#2#3.tex}%
   \input{#1_#2#3.tex}%
-  \g@addto@macro\LMProblemList{\LMAnswerInput{#1}{#2#3}}%
+  \g@addto@macro\LMProblemList{\LMAnswerInputREF{#1}{#2}{#3}}%
 }
 
 \newcommand{\LMAnswerInput}[2]{%
   \gdef\LMCurrentTheme{#2}%
   \LMSetProblemDir{#1_#2.tex}%
   \input{#1_#2.tex}%
+}
+
+\newcommand{\LMAnswerInputREF}[3]{%
+  \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2#3.tex}%
+  \input{#1_#2#3.tex}%
 }
 
 \newcommand{\CoverPage}[2]{%
@@ -220,35 +226,51 @@
 
 \newcommand{\LMBoxedTypeQuestion}{%
   {\setlength{\fboxsep}{0pt}%
-   \fbox{\parbox[c][8mm][c]{8mm}{\centering\Large\theLMtype}}}%
+   \fbox{\parbox[c][6mm][c]{6mm}{\centering\small\alph{LMtype}}}}%
 }
 
 \newcommand{\LMBoxedTypeQuestionAns}{%
   {\setlength{\fboxsep}{0pt}%
-   \fbox{\parbox[c][5mm][c]{5mm}{\centering\small\theLMtype}}}%
+   \fbox{\parbox[c][5mm][c]{5mm}{\centering\scriptsize\alph{LMtype}}}}%
 }
 
-\newcommand{\SetRowSpace}[1]{%
-  \setlength{\LMRowSpace}{#1}%
-}
-\newcommand{\SetRowSpaceCalc}{%
-  \setlength{\LMRowSpace}{\LMCalcRowSpace}%
-}
-\newcommand{\SetRowSpaceQanda}{%
-  \setlength{\LMRowSpace}{\LMQandaRowSpace}%
+\newcommand{\InstructionBox}[1]{%
+  \par\vspace{1mm}%
+  \noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{#1}}%
+  \par\vspace{3mm}%
 }
 
-\newcommand{\Blank}[1]{【\quad #1\quad 】}
-\newcommand{\NamedBlank}[1]{%
-  \expandafter\xdef\csname LMBlankNumber:#1\endcsname{\theLMsubq}%
-  \Blank{\theLMsubq}%
+\newcommand{\LMQandaInstructionBox}[1]{%
+  \par\vspace{1mm}%
+  \noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{#1}}%
+  \par\vspace{2mm}%
 }
-\newcommand{\RefBlank}[1]{%
-  \expandafter\ifx\csname LMBlankNumber:#1\endcsname\relax
-    \Blank{??}%
+
+\newcommand{\SetRowSpace}[1]{\setlength{\LMRowSpace}{#1}}
+\newcommand{\SetRowSpaceCalc}[1]{\setlength{\LMCalcRowSpace}{#1}}
+\newcommand{\SetRowSpaceQanda}[1]{\setlength{\LMQandaRowSpace}{#1}}
+\newcommand{\SetFigureRowSpace}[1]{\setlength{\LMFigureRowSpace}{#1}}
+
+\newcommand{\LessonPageBreak}{%
+  \ifLMAnswerMode
+    \par\vspace{2mm}%
   \else
-    \Blank{\csname LMBlankNumber:#1\endcsname}%
+    \newpage
   \fi
+}
+
+\newcommand{\AddBlankRef}[2]{%
+  \expandafter\gdef\csname LMBlankNumber:#1\endcsname{#2}%
+}
+
+\newcommand{\Blank}[1]{\underline{\hspace{#1\zw}}}
+
+\newcommand{\B}[1]{%
+  \@ifundefined{LMBlankNumber:#1}{%
+    \Blank{??}%
+  }{%
+    \Blank{\csname LMBlankNumber:#1\endcsname}%
+  }%
 }
 
 \newcommand{\LMFig}[2][0.7\linewidth]{%
@@ -347,7 +369,6 @@
 
 
 
-
 \newcommand{\Instruction}[1]{%
   \ifLMInstructionUsed
     \par\vspace{7mm}%
@@ -369,237 +390,82 @@
   \ifLMAnswerMode
     \par\vspace{1mm}%
   \else
-    {\setlength{\baselineskip}{1.25\baselineskip}%
-     \noindent #1\par}%
-    \vspace{6mm}%
+    \noindent #1\par
+    \vspace{14mm}%
   \fi
 }
 
-\newcommand{\Text}[1]{%
+\newcommand{\InstructionQanda}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{4mm}%
+  \fi
+  \LMInstructionUsedtrue
   \ifLMAnswerMode
+    \par\vspace{0.5mm}%
   \else
-    \noindent #1\par\vspace{1mm}%
-    \vspace{\LMDefaultRowSpace}%
+    \noindent #1\par
+    \vspace{4mm}%
   \fi
 }
 
-\newcommand{\LMMeasureAnswer}[2]{%
-  \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
-  \setlength{\LMAnswerHeight}{\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax}%
-  \LMTallAnswerfalse
-  \ifdim\LMAnswerHeight>15pt
-    \LMTallAnswertrue
+\newcommand{\InstructionQandaBox}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{4mm}%
   \fi
-}
-
-\newcommand{\LMPrintAnswer}[3]{%
-  \LMMeasureAnswer{#1}{#3}%
-  \ifLMTallAnswer
-    \parbox[t]{\dimexpr\linewidth-#2\relax}{%
-      \setlength{\baselineskip}{1.45\baselineskip}%
-      #3%
-    }%
-    \par\vspace{3mm}%
-  \else
-    \parbox[t]{\dimexpr\linewidth-#2\relax}{#3}%
-    \par\vspace{3mm}%
-  \fi
-}
-
-\newcommand{\Q}[3]{%
-  \stepcounter{LMsubq}%
-  \noindent
-  \makebox[11mm][l]{(\theLMsubq)}%
+  \LMInstructionUsedtrue
   \ifLMAnswerMode
-    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#2}%
+    \par\vspace{0.5mm}%
   \else
-    \parbox[t]{\dimexpr\linewidth-11mm\relax}{#1}%
-    \par\vspace{#3}%
+    \LMQandaInstructionBox{#1}%
   \fi
 }
 
-% wrapfig は、説明文だけを図に回り込ませたいときに使う。
-% 小問番号つきの \QQ は入れず、\Text などの地の文だけを入れる。
-\newcommand{\WrapTextFig}{\@ifnextchar[{\LMWrapTextFigRows}{\LMWrapTextFigAuto}}
-\newcommand{\LMWrapTextFigAuto}[4]{%
-  \ifLMAnswerMode
-    #4%
-  \else
-    \par\noindent
-    \begin{wrapfigure}{#1}{#2}
-      \vspace{-\baselineskip}%
-      \centering
-      \includegraphics[width=\linewidth]{#3}%
-      \vspace{-\baselineskip}%
-    \end{wrapfigure}%
-    #4\par
-    \vspace{\LMFigureRowSpace}%
+\newcommand{\InstructionBoxed}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
   \fi
-}
-\newcommand{\LMWrapTextFigRows}[5][]{%
+  \LMInstructionUsedtrue
   \ifLMAnswerMode
-    #5%
+    \par\vspace{1mm}%
   \else
-    \par\noindent
-    \begin{wrapfigure}[#1]{#2}{#3}
-      \vspace{-\baselineskip}%
-      \centering
-      \includegraphics[width=\linewidth]{#4}%
-      \vspace{-\baselineskip}%
-    \end{wrapfigure}%
-    #5\par
-    \vspace{\LMFigureRowSpace}%
+    \InstructionBox{#1}%
   \fi
 }
 
-% 互換用。今後は説明文だけの回り込みには \WrapTextFig を使う。
-\newcommand{\WrapFig}{\@ifnextchar[{\LMWrapFigRows}{\LMWrapFigAuto}}
-\newcommand{\LMWrapFigAuto}[4]{%
+\newcommand{\InstructionBoxedTall}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
+  \fi
+  \LMInstructionUsedtrue
   \ifLMAnswerMode
-    #4%
+    \par\vspace{1mm}%
   \else
-    \par\noindent
-    \begin{wrapfigure}{#1}{#2}
-      \vspace{-\baselineskip}%
-      \centering
-      \includegraphics[width=\linewidth]{#3}%
-      \vspace{-\baselineskip}%
-    \end{wrapfigure}%
-    \LMWrapModetrue
-    #4\par
-    \LMWrapModefalse
-    \vspace{\LMFigureRowSpace}%
+    \InstructionBox{#1}%
+    \vspace{8mm}%
   \fi
 }
-\newcommand{\LMWrapFigRows}[5][]{%
-  \ifLMAnswerMode
-    #5%
-  \else
-    \par\noindent
-    \begin{wrapfigure}[#1]{#2}{#3}
-      \vspace{-\baselineskip}%
-      \centering
-      \includegraphics[width=\linewidth]{#4}%
-      \vspace{-\baselineskip}%
-    \end{wrapfigure}%
-    \LMWrapModetrue
-    #5\par
-    \LMWrapModefalse
-    \vspace{\LMFigureRowSpace}%
-  \fi
-}
-
-\newcommand{\BeginTwoCols}{\par\vspace{2mm}}
-\newcommand{\EndTwoCols}{\par}
 
 \newcommand{\QQ}[2]{%
-  \stepcounter{LMsubq}%
-  \ifLMAnswerMode
-    \noindent
-    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
+  \ifLMWrapMode
+    \LMQQWrap{#1}{#2}%
   \else
-    \ifLMWrapMode
-      {\hangindent=9mm\hangafter=1\noindent
-       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-       #1\par}%
-      \vspace{\LMRowSpace}%
-    \else
-      \noindent
-      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
-      \par\vspace{\LMRowSpace}%
-    \fi
+    \LMQQNormal{#1}{#2}%
   \fi
 }
 
-\newcommand{\QQTall}[2]{%
+\newcommand{\LMQQNormal}[2]{%
+  \noindent
   \stepcounter{LMsubq}%
   \ifLMAnswerMode
-    \noindent
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
+    \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#2}%
+    \par\vspace{\LMAnswerRowSpace}%
   \else
-    \ifLMWrapMode
-      {\setlength{\baselineskip}{1.25\baselineskip}%
-       \hangindent=9mm\hangafter=1\noindent
-       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-       #1\par}%
-      \vspace{\LMRowSpace}%
-    \else
-      \noindent
-      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
-        \setlength{\baselineskip}{1.25\baselineskip}%
-        #1\par
-      }%
-      \par\vspace{\LMRowSpace}%
-    \fi
-  \fi
-}
-
-% 1つの小問と図を横並びにする。小問番号つき図版問題はこちらを標準にする。
-% #1: 図幅, #2: 図パス, #3: 問題文, #4: 解答
-\newcommand{\QQSideFig}[4]{%
-  \stepcounter{LMsubq}%
-  \ifLMAnswerMode
-    \noindent
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#4}%
-  \else
-    \noindent
-    \begin{minipage}[t]{9mm}%
-      \vspace{0pt}\textbf{(\theLMsubq)}%
-    \end{minipage}%
-    \begin{minipage}[t]{\dimexpr\linewidth-9mm-#1-\LMFigSideGap\relax}%
-      \vspace{0pt}#3%
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{#1}%
-      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \begin{minipage}[t]{\dimexpr\linewidth-9mm\relax}%
+      \vspace{0pt}#1%
     \end{minipage}%
     \par\vspace{\LMRowSpace}%
-  \fi
-}
-
-% 図つき大問ブロック。左に導入文、右に図、その下に全幅の小問群を置く。
-% #1: 図幅, #2: 図パス, #3: 図横の本文, #4: 図下の本文・小問群
-\newcommand{\FigProblemBlock}[4]{%
-  \ifLMAnswerMode
-    #3%
-    #4%
-  \else
-    \par\noindent
-    \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
-      \vspace{0pt}#3%
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{#1}%
-      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
-    \end{minipage}%
-    %\par\vspace{\LMFigureRowSpace}%
-    #4%
-  \fi
-}
-
-% 図つき大問ブロックの行送り広め版。図横の本文だけを広めにする。
-% 図下の小問群は、必要なら \QQTall などを個別に使う。
-\newcommand{\FigProblemBlockTall}[4]{%
-  \ifLMAnswerMode
-    {\setlength{\baselineskip}{1.25\baselineskip}#3\par}%
-    #4%
-  \else
-    \par\noindent
-    \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
-      \vspace{0pt}%
-      {\setlength{\baselineskip}{1.25\baselineskip}#3\par}%
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{#1}%
-      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
-    \end{minipage}%
-    %\par\vspace{\LMFigureRowSpace}%
-    #4%
   \fi
 }
 
@@ -635,107 +501,73 @@
   \fi
 }
 
-\newcommand{\QQFigRow}[7][0.9\linewidth]{%
-  \noindent
-  \begin{minipage}[t]{0.48\linewidth}
-    \stepcounter{LMsubq}%
-    \ifLMAnswerMode
-      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
-      \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
-      \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
-      \fi
-    \else
-      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
-      \par\vspace{1mm}%
-      \LMFigBlock[#1]{#2}%
-    \fi
-  \end{minipage}%
-  \hfill
-  \begin{minipage}[t]{0.48\linewidth}
-    \stepcounter{LMsubq}%
-    \ifLMAnswerMode
-      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#7}%
-      \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#7}%
-      \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#7}%
-      \fi
-    \else
-      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#6}%
-      \par\vspace{1mm}%
-      \LMFigBlock[#1]{#5}%
-    \fi
-  \end{minipage}%
-  \ifLMAnswerMode
-    \par\vspace{\LMAnswerRowSpace}%
-  \else
-    \par\vspace{\LMFigureRowSpace}%
-  \fi
-}
-
-\newcommand{\QQSingle}[2]{%
+\newcommand{\QQRowFig}[6]{%
   \noindent
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \ifLMAnswerMode
-      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
-      \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
-      \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
-      \fi
-    \else
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
-    \fi
+    \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+      #1\par\vspace{1mm}%
+      \LMFigInline[#3]{#2}%
+    }%
   \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+      #4\par\vspace{1mm}%
+      \LMFigInline[#6]{#5}%
+    }%
+  \end{minipage}%
+  \par\vspace{\LMFigureRowSpace}%
+}
+
+\newcommand{\QQRowFigSingle}[3]{%
+  \noindent
+  \stepcounter{LMsubq}%
+  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+  \begin{minipage}[t]{\dimexpr\linewidth-9mm\relax}%
+    \vspace{0pt}#1\par\vspace{1mm}%
+    \LMFig[#3]{#2}%
+  \end{minipage}%
+  \par\vspace{\LMFigureRowSpace}%
+}
+
+\newcommand{\QQFigSideBySide}[6]{%
+  \noindent
+  \stepcounter{LMsubq}%
+  \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+  \begin{minipage}[t]{\dimexpr\linewidth-9mm\relax}%
+    \vspace{0pt}#1\par\vspace{1mm}%
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5\LMFigSideGap\relax}
+      \centering\includegraphics[width=#3]{#2}
+    \end{minipage}%
+    \hspace{\LMFigSideGap}%
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5\LMFigSideGap\relax}
+      \centering\includegraphics[width=#6]{#5}
+    \end{minipage}%
+  \end{minipage}%
+  \par\vspace{\LMFigureRowSpace}%
+}
+
+\newcommand{\LMQQWrap}[2]{%
+  \noindent
+  \stepcounter{LMsubq}%
   \ifLMAnswerMode
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#2}%
     \par\vspace{\LMAnswerRowSpace}%
   \else
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \begin{minipage}[t]{\dimexpr\linewidth-9mm\relax}%
+      \vspace{0pt}#1%
+    \end{minipage}%
     \par\vspace{\LMRowSpace}%
   \fi
 }
 
-\newcommand{\LessonPageBreak}{%
-  \ifLMAnswerMode
-    \ifLMInAnswerBlock
-      \end{minipage}\par
-      \LMInAnswerBlockfalse
-      \columnbreak
-      \noindent\begin{minipage}{\linewidth}
-      \LMInAnswerBlocktrue
-    \else
-      \columnbreak
-    \fi
-  \else
-    \clearpage
-  \fi
-}
-
-\newcommand{\MakeEvenPage}{%
-  \clearpage
-  \ifodd\value{page}%
-    \null\thispagestyle{empty}\clearpage
-  \fi
-}
-
-
-%数学関連マクロ
-
-%%三角形
-\newcommand{\Tri}[1]{
-{\triangle \rm #1}
-}
-
-%線分
-\newcommand{\Lseg}[1]{
-{\rm #1}
-}
+\newcommand{\WrapStart}{\LMWrapModetrue}
+\newcommand{\WrapEnd}{\LMWrapModefalse}
 
 \makeatother
