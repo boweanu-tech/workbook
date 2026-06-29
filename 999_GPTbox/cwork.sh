@@ -57,11 +57,6 @@ fi
 
 cd "$ORIG_DIR"
 
-for file in $(find ./ -maxdepth 1 -name '*.tex'); do
-  cp "$file" "/home/keisuke/LOTUS/005_backup/tex/$(basename "$file")"
-  platex "$file"
-done
-
 for file in $(find ./ -maxdepth 1 -name '*.dvi'); do
   dvipdfmx "$file"
 done
