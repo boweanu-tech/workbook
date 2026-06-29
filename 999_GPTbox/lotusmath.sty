@@ -259,6 +259,13 @@
   \fi
 }
 
+\newcommand{\MakeEvenPage}{%
+  \clearpage
+  \ifodd\value{page}%
+    \null\thispagestyle{empty}\clearpage
+  \fi
+}
+
 \newcommand{\AddBlankRef}[2]{%
   \expandafter\gdef\csname LMBlankNumber:#1\endcsname{#2}%
 }
@@ -569,5 +576,14 @@
 
 \newcommand{\WrapStart}{\LMWrapModetrue}
 \newcommand{\WrapEnd}{\LMWrapModefalse}
+
+%数学関連マクロ
+\newcommand{\Tri}[1]{%
+{\triangle \rm #1}%
+}
+
+\newcommand{\Lseg}[1]{%
+{\rm #1}%
+}
 
 \makeatother
