@@ -55,6 +55,38 @@
 \newlength{\LMAnswerHeight}
 \newif\ifLMTallAnswer
 
+\newlength{\LMFitAnswerWidth}
+
+\newcommand{\LMFitAnswer}[2]{%
+  \begingroup
+  \setlength{\LMFitAnswerWidth}{#1}%
+  \sbox{\LMMeasureBox}{#2}%
+  \ifdim\wd\LMMeasureBox<\LMFitAnswerWidth
+    #2%
+  \else
+    \sbox{\LMMeasureBox}{{\small #2}}%
+    \ifdim\wd\LMMeasureBox<\LMFitAnswerWidth
+      {\small #2}%
+    \else
+      \sbox{\LMMeasureBox}{{\scriptsize #2}}%
+      \ifdim\wd\LMMeasureBox<\LMFitAnswerWidth
+        {\scriptsize #2}%
+      \else
+        \resizebox{\LMFitAnswerWidth}{!}{{\scriptsize #2}}%
+      \fi
+    \fi
+  \fi
+  \endgroup
+}
+
+\newcommand{\LMAnswerParbox}[2]{%
+  \parbox[t]{#1}{%
+    \raggedright
+    \LMFitAnswer{#1}{#2}%
+    \par
+  }%
+}
+
 \newcommand{\LMSetProblemDir}[1]{%
   \filename@parse{#1}%
   \xdef\LMCurrentProblemDir{\filename@area}%
@@ -543,9 +575,14 @@
     \ifLMAnswerMode
       \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
       \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+          \raggedright
+          \setlength{\baselineskip}{1.45\baselineskip}%
+          \LMFitAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
+          \par
+        }%
       \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
+        \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#2}%
       \fi
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
@@ -558,9 +595,14 @@
     \ifLMAnswerMode
       \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
       \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+          \raggedright
+          \setlength{\baselineskip}{1.45\baselineskip}%
+          \LMFitAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
+          \par
+        }%
       \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
+        \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#4}%
       \fi
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
