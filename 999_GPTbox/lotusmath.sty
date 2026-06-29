@@ -135,9 +135,9 @@
 
 \newcommand{\UseREF}[3]{%
   \gdef\LMCurrentTheme{#2}%
-  \LMSetProblemDir{#1_#2.tex}%
+  \LMSetProblemDir{#1_#2#3.tex}%
   \input{#1_#2#3.tex}%
-  \g@addto@macro\LMProblemList{\LMAnswerInput{#1}{#2}}%
+  \g@addto@macro\LMProblemList{\LMAnswerInput{#1}{#2#3}}%
 }
 
 \newcommand{\LMAnswerInput}[2]{%
