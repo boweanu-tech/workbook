@@ -78,6 +78,34 @@
   \fi
   \endgroup
 }
+\newsavebox{\LMAnsFitBox}
+\newlength{\LMAnsFitWidth}
+\newlength{\LMAnsLabelWidth}
+\setlength{\LMAnsLabelWidth}{6.5mm}
+
+\newcommand{\LMFitInlineAnswer}[2]{%
+  \begingroup
+  \setlength{\LMAnsFitWidth}{#1}%
+  \sbox{\LMAnsFitBox}{#2}%
+  \ifdim\wd\LMAnsFitBox>\LMAnsFitWidth
+    \sbox{\LMAnsFitBox}{{\small #2}}%
+    \ifdim\wd\LMAnsFitBox>\LMAnsFitWidth
+      \sbox{\LMAnsFitBox}{{\scriptsize #2}}%
+      \ifdim\wd\LMAnsFitBox>\LMAnsFitWidth
+        \makebox[\LMAnsFitWidth][l]{%
+          \resizebox{\LMAnsFitWidth}{!}{\usebox{\LMAnsFitBox}}%
+        }%
+      \else
+        \makebox[\LMAnsFitWidth][l]{\usebox{\LMAnsFitBox}}%
+      \fi
+    \else
+      \makebox[\LMAnsFitWidth][l]{\usebox{\LMAnsFitBox}}%
+    \fi
+  \else
+    \makebox[\LMAnsFitWidth][l]{\usebox{\LMAnsFitBox}}%
+  \fi
+  \endgroup
+}
 
 \newcommand{\LMAnswerParbox}[2]{%
   \parbox[t]{#1}{%
@@ -568,49 +596,33 @@
 }
 
 \newcommand{\QQRow}[4]{%
-  \noindent
-  \begin{minipage}[t]{0.48\linewidth}
-    \stepcounter{LMsubq}%
-    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \ifLMAnswerMode
-      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
-      \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
-          \raggedright
-          \setlength{\baselineskip}{1.45\baselineskip}%
-          \LMFitAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
-          \par
-        }%
-      \else
-        \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#2}%
-      \fi
-    \else
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
-    \fi
-  \end{minipage}%
-  \hfill
-  \begin{minipage}[t]{0.48\linewidth}
-    \stepcounter{LMsubq}%
-    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-    \ifLMAnswerMode
-      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
-      \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
-          \raggedright
-          \setlength{\baselineskip}{1.45\baselineskip}%
-          \LMFitAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
-          \par
-        }%
-      \else
-        \LMAnswerParbox{\dimexpr\linewidth-9mm\relax}{#4}%
-      \fi
-    \else
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
-    \fi
-  \end{minipage}%
   \ifLMAnswerMode
+    \noindent
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
+      \stepcounter{LMsubq}%
+      \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
+      \LMFitInlineAnswer{\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#2}%
+    \end{minipage}%
+    \hspace{1mm}%
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
+      \stepcounter{LMsubq}%
+      \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
+      \LMFitInlineAnswer{\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#4}%
+    \end{minipage}%
     \par\vspace{\LMAnswerRowSpace}%
   \else
+    \noindent
+    \begin{minipage}[t]{0.48\linewidth}
+      \stepcounter{LMsubq}%
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.48\linewidth}
+      \stepcounter{LMsubq}%
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
+    \end{minipage}%
     \par\vspace{\LMRowSpace}%
   \fi
 }
