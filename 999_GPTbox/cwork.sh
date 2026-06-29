@@ -57,6 +57,10 @@ fi
 
 cd "$ORIG_DIR"
 
+for file in $(find ./ -maxdepth 1 -name '*.tex'); do
+  platex "$file"
+done
+
 for file in $(find ./ -maxdepth 1 -name '*.dvi'); do
   dvipdfmx "$file"
 done
