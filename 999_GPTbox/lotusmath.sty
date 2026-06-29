@@ -171,6 +171,7 @@
   \end{titlepage}
 }
 
+\newcommand{\CoverPageLesson}[2]{%
 \newcommand{\CoverPageLesson}[3]{%
   \gdef\LMCoverTitle{#1}%
   \gdef\LMCoverSubtitle{#2}%
@@ -187,6 +188,10 @@
     {\large #3}\par
   \end{center}
   \end{titlepage}
+  \clearpage
+  \null
+  \thispagestyle{empty}%
+  \clearpage
 }
 
 \newcommand{\BeginQuestions}{%
