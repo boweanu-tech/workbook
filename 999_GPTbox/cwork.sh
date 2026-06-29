@@ -58,7 +58,7 @@ fi
 cd "$ORIG_DIR"
 
 for file in $(find ./ -maxdepth 1 -name '*.tex'); do
-  platex -kanji=utf8 -interaction=nonstopmode -halt-on-error -file-line-error "$file"
+  texfot platex -kanji=utf8 -interaction=nonstopmode -halt-on-error -file-line-error "$file"
 done
 
 for file in $(find ./ -maxdepth 1 -name '*.dvi'); do
