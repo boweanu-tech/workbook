@@ -315,6 +315,10 @@
   \LMInstructionUsedfalse
   \LMWrapModefalse
   \ifLMAnswerMode
+    \ifLMInAnswerBlock\end{minipage}\par\vspace{1mm}\fi
+    \noindent\begin{minipage}{\linewidth}
+    \LMInAnswerBlocktrue
+    \noindent\LMBoxedMajor\par\vspace{1.5mm}%
   \else
     \clearpage
     \noindent\LMBoxedMajor\quad \raisebox{-0.4mm}{#1}\par
