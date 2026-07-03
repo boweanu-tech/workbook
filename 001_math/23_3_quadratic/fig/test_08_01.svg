@@ -52,9 +52,9 @@
       .dash { fill: none; stroke: #555555; stroke-width: 1.4; stroke-dasharray: 5 4; stroke-linecap: round; stroke-linejoin: round; }
       .move { fill: none; stroke: #111111; stroke-width: 1.6; marker-end: url(#arrow); stroke-linecap: round; stroke-linejoin: round; }
       .point { fill: #111111; stroke: none; }
-      .label { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 18px; fill: #111111; }
-      .small { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 15px; fill: #111111; }
-      .dim { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 16px; fill: #111111; }
+      .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 18px; font-style: normal; fill: #111111; }
+      .small { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 15px; font-style: normal; fill: #111111; }
+      .dim { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 16px; font-style: normal; fill: #111111; }
     ]]></style>
   </defs>
   <!-- A right triangle ABC with P moving from A to B and Q moving from B to C. -->
