@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70mm" height="50mm" viewBox="0 0 70 50" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs>
+    <style><![CDATA[
+      .main { stroke:black; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:black; stroke-width:0.3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:black; stroke-width:0.3; fill:none; stroke-dasharray:1.2 1.2; stroke-linecap:round; stroke-linejoin:round; }
+      .point { fill:black; stroke:none; }
+      .label { font-family:serif; font-size:4px; font-style:italic; fill:black; }
+      .dim { font-family:serif; font-size:3.5px; fill:black; }
+    ]]></style>
+  </defs>
+
+  <!-- Right triangle ABC: B is right angle. P moves A to B, Q moves C to B. -->
+  <path class="main" d="M 12 8 L 12 40 L 56 40 Z" />
+  <path class="thin" d="M 12 35 H 17 V 40" />
+
+  <!-- sample points -->
+  <circle class="point" cx="12" cy="27" r="1.0" />
+  <circle class="point" cx="45" cy="40" r="1.0" />
+  <line class="thin" x1="12" y1="27" x2="45" y2="40" />
+  <line class="thin" x1="12" y1="40" x2="12" y2="27" />
+  <line class="thin" x1="12" y1="40" x2="45" y2="40" />
+
+  <!-- arrows showing directions -->
+  <path class="thin" d="M 8 14 V 28" />
+  <path class="thin" d="M 8 28 l -1.5 -2.2 M 8 28 l 1.5 -2.2" />
+  <path class="thin" d="M 52 45 H 36" />
+  <path class="thin" d="M 36 45 l 2.2 -1.5 M 36 45 l 2.2 1.5" />
+
+  <!-- labels -->
+  <text class="label" x="8" y="8">A</text>
+  <text class="label" x="8" y="44">B</text>
+  <text class="label" x="57" y="44">C</text>
+  <text class="label" x="14" y="27">P</text>
+  <text class="label" x="45" y="37">Q</text>
+
+  <!-- dimensions -->
+  <text class="dim" x="2.5" y="25">12cm</text>
+  <text class="dim" x="32" y="47">16cm</text>
+</svg>
