@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70mm" height="50mm" viewBox="0 0 70 50" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs>
+    <style><![CDATA[
+      .main { stroke:black; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:black; stroke-width:0.3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:black; stroke-width:0.3; fill:none; stroke-dasharray:1.2 1.2; stroke-linecap:round; stroke-linejoin:round; }
+      .point { fill:black; stroke:none; }
+      .label { font-family:serif; font-size:4px; font-style:italic; fill:black; }
+      .dim { font-family:serif; font-size:3.5px; fill:black; }
+    ]]></style>
+  </defs>
+
+  <!-- Square ABCD. P moves A-B-C, Q moves D-C. -->
+  <rect class="main" x="15" y="8" width="36" height="36" />
+  <path class="thin" d="M 15 40 H 31" />
+  <path class="thin" d="M 31 40 l -2.2 -1.5 M 31 40 l -2.2 1.5" />
+  <path class="thin" d="M 51 40 V 24" />
+  <path class="thin" d="M 51 24 l -1.5 2.2 M 51 24 l 1.5 2.2" />
+  <path class="thin" d="M 15 8 H 31" />
+  <path class="thin" d="M 31 8 l -2.2 -1.5 M 31 8 l -2.2 1.5" />
+
+  <!-- sample positions in second case -->
+  <circle class="point" cx="51" cy="24" r="1.0" />
+  <circle class="point" cx="36" cy="8" r="1.0" />
+  <line class="thin" x1="15" y1="8" x2="36" y2="8" />
+  <line class="thin" x1="15" y1="8" x2="51" y2="24" />
+  <line class="thin" x1="36" y1="8" x2="51" y2="24" />
+
+  <!-- labels -->
+  <text class="label" x="11" y="47">A</text>
+  <text class="label" x="52" y="47">B</text>
+  <text class="label" x="52" y="7">C</text>
+  <text class="label" x="11" y="7">D</text>
+  <text class="label" x="53" y="26">P</text>
+  <text class="label" x="36" y="6">Q</text>
+  <text class="dim" x="29" y="48">10cm</text>
+</svg>
