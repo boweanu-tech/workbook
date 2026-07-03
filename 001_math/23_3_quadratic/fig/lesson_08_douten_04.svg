@@ -1,39 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="70mm"
-   height="50mm"
-   viewBox="0 0 70 50"
-   version="1.1"
-   id="svg34"
-   sodipodi:docname="lesson_08_douten_04.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview36"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="3.9899167"
-     inkscape:cx="132.33359"
-     inkscape:cy="114.41342"
-     inkscape:window-width="1920"
-     inkscape:window-height="935"
-     inkscape:window-x="1920"
-     inkscape:window-y="32"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg34" />
-  <defs
-     id="defs4">
-    <style
-       id="style2"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="70mm" height="50mm" viewBox="0 0 70 50">
+  <defs>
+    <style><![CDATA[
       .main {
         stroke: black;
         stroke-width: 0.45;
@@ -68,77 +37,30 @@
       }
     ]]></style>
   </defs>
-  <!-- 長方形。PはAからBへ、QはCからDへ動く。 -->
-  <path
-     class="main"
-     d="M 10 38 L 60 38 L 60 14 L 10 14 Z"
-     id="path6" />
-  <!-- 移動方向 -->
-  <path
-     class="thin"
-     d="m 15.324004,39.73617 h 17"
-     id="path8" />
-  <path
-     class="thin"
-     d="m 32.324004,39.73617 -1.4,-0.8 m 1.4,0.8 -1.4,0.8"
-     id="path10" />
-  <path
-     class="thin"
-     d="m 54.933687,12.187208 h -19"
-     id="path12" />
-  <path
-     class="thin"
-     d="m 35.933687,12.187208 1.4,-0.8 m -1.4,0.8 1.4,0.8"
-     id="path14" />
-  <!-- 動く点の例示 -->
-  <circle
-     class="point"
-     cx="27"
-     cy="38"
-     r="0.4"
-     id="circle16" />
-  <circle
-     class="point"
-     cx="42"
-     cy="14"
-     r="0.4"
-     id="circle18" />
-  <line
-     class="thin"
-     x1="27"
-     y1="38"
-     x2="42"
-     y2="14"
-     id="line20" />
+
+  <!-- 長方形。PはAB上を往復し、QはCからDへ動く。 -->
+  <path class="main" d="M 10 38 L 60 38 L 60 14 L 10 14 Z"/>
+
+  <!-- Pの移動方向：AからBへ、BからAへ -->
+  <path class="thin" d="M 15 42 L 32 42"/>
+  <path class="thin" d="M 32 42 L 30.6 41.2 M 32 42 L 30.6 42.8"/>
+  <path class="thin" d="M 55 44 L 38 44"/>
+  <path class="thin" d="M 38 44 L 39.4 43.2 M 38 44 L 39.4 44.8"/>
+
+  <!-- Qの移動方向：CからDへ -->
+  <path class="thin" d="M 55 10 L 36 10"/>
+  <path class="thin" d="M 36 10 L 37.4 9.2 M 36 10 L 37.4 10.8"/>
+
+  <!-- 動く点の例示と分割線 -->
+  <circle class="point" cx="27" cy="38" r="0.4"/>
+  <circle class="point" cx="42" cy="14" r="0.4"/>
+  <line class="thin" x1="27" y1="38" x2="42" y2="14"/>
+
   <!-- ラベル -->
-  <text
-     class="label"
-     x="6"
-     y="42"
-     id="text22">A</text>
-  <text
-     class="label"
-     x="61"
-     y="42"
-     id="text24">B</text>
-  <text
-     class="label"
-     x="61"
-     y="13"
-     id="text26">C</text>
-  <text
-     class="label"
-     x="6"
-     y="13"
-     id="text28">D</text>
-  <text
-     class="label"
-     x="25.568577"
-     y="43.976772"
-     id="text30">P</text>
-  <text
-     class="label"
-     x="40.408779"
-     y="10.697417"
-     id="text32">Q</text>
+  <text class="label" x="6" y="42">A</text>
+  <text class="label" x="61" y="42">B</text>
+  <text class="label" x="61" y="13">C</text>
+  <text class="label" x="6" y="13">D</text>
+  <text class="label" x="26" y="45">P</text>
+  <text class="label" x="42" y="12">Q</text>
 </svg>
