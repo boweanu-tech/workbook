@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="70mm" height="50mm" viewBox="0 0 70 50" version="1.1"
-     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs>
-    <style><![CDATA[
+<svg
+   width="70mm"
+   height="50mm"
+   viewBox="0 0 70 50"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="lesson_08_douten_02.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.9949583"
+     inkscape:cx="157.39677"
+     inkscape:cy="108.02231"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg42"
+     inkscape:snap-global="true" />
+  <defs
+     id="defs4">
+    <style
+       id="style2"><![CDATA[
       .main { stroke:black; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .thin { stroke:black; stroke-width:0.3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .dash { stroke:black; stroke-width:0.3; fill:none; stroke-dasharray:1.2 1.2; stroke-linecap:round; stroke-linejoin:round; }
@@ -11,32 +43,98 @@
       .dim { font-family:"CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size:3.5px; font-style:normal; fill:black; }
     ]]></style>
   </defs>
-
   <!-- Right triangle ABC: B is right angle. P moves A to B, Q moves C to B. -->
-  <path class="main" d="M 12 8 L 12 40 L 56 40 Z" />
-  <path class="thin" d="M 12 35 H 17 V 40" />
-
+  <path
+     class="main"
+     d="M 12 8 L 12 40 L 56 40 Z"
+     id="path6" />
+  <path
+     class="thin"
+     d="M 12 35 H 17 V 40"
+     id="path8" />
   <!-- sample points -->
-  <circle class="point" cx="12" cy="27" r="1.0" />
-  <circle class="point" cx="45" cy="40" r="1.0" />
-  <line class="thin" x1="12" y1="27" x2="45" y2="40" />
-  <line class="thin" x1="12" y1="40" x2="12" y2="27" />
-  <line class="thin" x1="12" y1="40" x2="45" y2="40" />
-
+  <line
+     class="thin"
+     x1="12"
+     y1="27"
+     x2="45"
+     y2="40"
+     id="line14" />
+  <line
+     class="thin"
+     x1="12"
+     y1="40"
+     x2="12"
+     y2="27"
+     id="line16" />
+  <line
+     class="thin"
+     x1="12"
+     y1="40"
+     x2="45"
+     y2="40"
+     id="line18" />
   <!-- arrows showing directions -->
-  <path class="thin" d="M 8 14 V 28" />
-  <path class="thin" d="M 8 28 l -1.5 -2.2 M 8 28 l 1.5 -2.2" />
-  <path class="thin" d="M 52 45 H 36" />
-  <path class="thin" d="M 36 45 l 2.2 -1.5 M 36 45 l 2.2 1.5" />
-
+  <path
+     class="thin"
+     d="M 8 14 V 28"
+     id="path20" />
+  <path
+     class="thin"
+     d="M 8 28 l -1.5 -2.2 M 8 28 l 1.5 -2.2"
+     id="path22" />
+  <path
+     class="thin"
+     d="M 52 45 H 36"
+     id="path24" />
+  <path
+     class="thin"
+     d="M 36 45 l 2.2 -1.5 M 36 45 l 2.2 1.5"
+     id="path26" />
   <!-- labels -->
-  <text class="label" x="8" y="8">A</text>
-  <text class="label" x="8" y="44">B</text>
-  <text class="label" x="57" y="44">C</text>
-  <text class="label" x="14" y="27">P</text>
-  <text class="label" x="45" y="37">Q</text>
-
+  <text
+     class="label"
+     x="8"
+     y="8"
+     id="text28">A</text>
+  <text
+     class="label"
+     x="8"
+     y="44"
+     id="text30">B</text>
+  <text
+     class="label"
+     x="57"
+     y="44"
+     id="text32">C</text>
+  <text
+     class="label"
+     x="14"
+     y="27"
+     id="text34">P</text>
+  <text
+     class="label"
+     x="45"
+     y="37"
+     id="text36">Q</text>
   <!-- dimensions -->
-  <text class="dim" x="2.5" y="25">12cm</text>
-  <text class="dim" x="32" y="47">16cm</text>
+  <text
+     class="dim"
+     x="32"
+     y="47"
+     id="text40">16cm</text>
+  <circle
+     class="point"
+     cx="11.982859"
+     cy="26.990917"
+     r="0.58909094"
+     id="circle3"
+     style="fill:#111111;stroke:none;stroke-width:0.218182" />
+  <circle
+     class="point"
+     cx="43.103447"
+     cy="37.798409"
+     r="0.58909094"
+     id="circle3-3"
+     style="fill:#111111;stroke:none;stroke-width:0.218182" />
 </svg>
