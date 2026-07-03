@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70mm" height="50mm" viewBox="0 0 70 50" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs>
+    <style><![CDATA[
+      .main { stroke:black; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:black; stroke-width:0.3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:black; stroke-width:0.3; fill:none; stroke-dasharray:1.2 1.2; stroke-linecap:round; stroke-linejoin:round; }
+      .point { fill:black; stroke:none; }
+      .label { font-family:serif; font-size:4px; font-style:italic; fill:black; }
+      .dim { font-family:serif; font-size:3.5px; fill:black; }
+    ]]></style>
+  </defs>
+
+  <!-- Rectangle ABCD: AB=16cm, BC=8cm. P moves A to B, Q moves C to D. -->
+  <rect class="main" x="10" y="12" width="50" height="25" />
+
+  <!-- directions -->
+  <path class="thin" d="M 10 37 H 27" />
+  <path class="thin" d="M 27 37 l -2.2 -1.5 M 27 37 l -2.2 1.5" />
+  <path class="thin" d="M 60 12 H 38" />
+  <path class="thin" d="M 38 12 l 2.2 -1.5 M 38 12 l 2.2 1.5" />
+
+  <!-- sample points and PQ -->
+  <circle class="point" cx="26" cy="37" r="1.0" />
+  <circle class="point" cx="40" cy="12" r="1.0" />
+  <line class="thin" x1="26" y1="37" x2="40" y2="12" />
+
+  <!-- labels -->
+  <text class="label" x="6" y="41">A</text>
+  <text class="label" x="61" y="41">B</text>
+  <text class="label" x="61" y="11">C</text>
+  <text class="label" x="6" y="11">D</text>
+  <text class="label" x="25" y="44">P</text>
+  <text class="label" x="40" y="9">Q</text>
+
+  <!-- dimensions -->
+  <text class="dim" x="32" y="45">16cm</text>
+  <text class="dim" x="62" y="26">8cm</text>
+</svg>
