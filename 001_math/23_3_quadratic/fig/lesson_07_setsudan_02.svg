@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="90mm" height="65mm" viewBox="0 0 180 130" version="1.1"
-     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<svg
+   width="90mm"
+   height="65mm"
+   viewBox="0 0 180 130"
+   version="1.1"
+   id="svg68"
+   sodipodi:docname="lesson_07_setsudan_01.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview70"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1702286"
+     inkscape:cx="174.1752"
+     inkscape:cy="150.44498"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg68" />
   <!--
   図形教材SVG。
   - viewBox の 1 単位を 1mm として扱う。
-  - 1辺10cmの立方体 ABCD-EFGH。
-  - P は AB 上、Q は AD 上、AP:AQ=2:3。
-  - 3点 E, P, Q を通る平面で切断し、三角錐 E-APQ を切り取る問題用。
+  - 1つの頂点Aから出る3辺 AB, AD, AE が互いに垂直な直方体 ABCD-EFGH。
+  - AB=8cm, AD=8cm, AE=6cm。
+  - P は AB 上、Q は AD 上。
+  - 3点 E, P, Q を通る平面で切断し、三角錐 A-EPQ を切り取る問題用。
   -->
-  <defs>
-    <style><![CDATA[
+  <defs
+     id="defs4">
+    <style
+       id="style2"><![CDATA[
       .main {
         stroke: black;
         stroke-width: 1.1;
@@ -51,65 +83,168 @@
         font-size: 7px;
         fill: black;
       }
-      .ratio {
-        font-family: serif;
-        font-size: 7px;
-        fill: black;
-      }
     ]]></style>
   </defs>
-
   <!-- 頂点座標 -->
   <!-- A(28,100), B(112,100), C(150,72), D(66,72) -->
   <!-- E(28,42), F(112,42), G(150,14), H(66,14) -->
-
   <!-- 切断面 EPQ -->
-  <polygon class="cut-fill" points="28,42 61.6,100 50.8,83.2" />
-
   <!-- 底面 ABCD -->
-  <line class="main" x1="28" y1="100" x2="112" y2="100" />
-  <line class="main" x1="112" y1="100" x2="150" y2="72" />
-  <line class="dash" x1="150" y1="72" x2="66" y2="72" />
-  <line class="main" x1="66" y1="72" x2="28" y2="100" />
-
+  <line
+     class="main"
+     x1="18.820435"
+     y1="115.10993"
+     x2="120.79642"
+     y2="115.10993"
+     id="line8" />
+  <line
+     class="main"
+     x1="120.79642"
+     y1="115.10993"
+     x2="166.92844"
+     y2="81.117928"
+     id="line10" />
+  <line
+     class="dash"
+     x1="166.92844"
+     y1="81.117928"
+     x2="64.952431"
+     y2="81.117928"
+     id="line12" />
+  <path
+     id="line12-3"
+     style="fill:none;stroke:#000000;stroke-width:0.9712;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4.856, 4.856"
+     class="dash"
+     d="M 64.952432,81.117926 18.820434,115.10993"
+     sodipodi:nodetypes="cc" />
   <!-- 縦の辺 -->
-  <line class="main" x1="28" y1="100" x2="28" y2="42" />
-  <line class="main" x1="112" y1="100" x2="112" y2="42" />
-  <line class="main" x1="150" y1="72" x2="150" y2="14" />
-  <line class="dash" x1="66" y1="72" x2="66" y2="14" />
-
+  <line
+     class="main"
+     x1="18.820435"
+     y1="115.10993"
+     x2="18.820435"
+     y2="44.697929"
+     id="line16" />
+  <line
+     class="main"
+     x1="120.79642"
+     y1="115.10993"
+     x2="120.79642"
+     y2="44.697929"
+     id="line18" />
+  <line
+     class="main"
+     x1="166.92844"
+     y1="81.117928"
+     x2="166.92844"
+     y2="10.705929"
+     id="line20" />
+  <line
+     class="dash"
+     x1="64.952431"
+     y1="81.117928"
+     x2="64.952431"
+     y2="10.705929"
+     id="line22" />
   <!-- 上面 EFGH -->
-  <line class="main" x1="28" y1="42" x2="112" y2="42" />
-  <line class="main" x1="112" y1="42" x2="150" y2="14" />
-  <line class="main" x1="150" y1="14" x2="66" y2="14" />
-  <line class="main" x1="66" y1="14" x2="28" y2="42" />
-
-  <!-- 三角錐 E-APQ の辺 -->
-  <line class="thin" x1="28" y1="42" x2="61.6" y2="100" />
-  <line class="thin" x1="28" y1="42" x2="50.8" y2="83.2" />
-  <line class="thin" x1="61.6" y1="100" x2="50.8" y2="83.2" />
-
+  <line
+     class="main"
+     x1="18.820435"
+     y1="44.697929"
+     x2="120.79642"
+     y2="44.697929"
+     id="line24" />
+  <line
+     class="main"
+     x1="120.79642"
+     y1="44.697929"
+     x2="166.92844"
+     y2="10.705929"
+     id="line26" />
+  <line
+     class="main"
+     x1="166.92844"
+     y1="10.705929"
+     x2="64.952431"
+     y2="10.705929"
+     id="line28" />
+  <line
+     class="main"
+     x1="64.952431"
+     y1="10.705929"
+     x2="18.820435"
+     y2="44.697929"
+     id="line30" />
+  <!-- 三角錐 A-EPQ の切断面の辺 -->
+  <path
+     id="line32"
+     class="thin"
+     style="fill:none;stroke:#000000;stroke-width:0.8498;stroke-linecap:round;stroke-linejoin:round"
+     d="M 18.820434,44.697928 51.703757,115.25793"
+     sodipodi:nodetypes="cc" />
+  <path
+     id="line34"
+     class="thin"
+     style="fill:none;stroke:#000000;stroke-width:0.8498;stroke-linecap:round;stroke-linejoin:round"
+     d="M 18.820434,44.697928 59.930847,85.684369"
+     sodipodi:nodetypes="cc" />
+  <path
+     id="line36"
+     class="thin"
+     style="fill:none;stroke:#000000;stroke-width:0.8498;stroke-linecap:round;stroke-linejoin:round"
+     d="m 51.703757,115.25793 8.22709,-29.573561"
+     sodipodi:nodetypes="cc" />
   <!-- P, Q -->
-  <circle class="point" cx="61.6" cy="100" r="2.0" />
-  <circle class="point" cx="50.8" cy="83.2" r="2.0" />
-
-  <!-- 比の補助表示 -->
-  <text class="ratio" x="39" y="108">2</text>
-  <text class="ratio" x="42" y="91">3</text>
-
   <!-- 頂点ラベル -->
-  <text class="label" x="20" y="105">A</text>
-  <text class="label" x="114" y="105">B</text>
-  <text class="label" x="152" y="76">C</text>
-  <text class="label" x="58" y="72">D</text>
-  <text class="label" x="20" y="40">E</text>
-  <text class="label" x="114" y="40">F</text>
-  <text class="label" x="152" y="14">G</text>
-  <text class="label" x="58" y="12">H</text>
-  <text class="label" x="62" y="109">P</text>
-  <text class="label" x="52" y="90">Q</text>
-
+  <text
+     class="label"
+     x="11.672695"
+     y="120.86845"
+     id="text42">A</text>
+  <text
+     class="label"
+     x="121.17637"
+     y="120.76493"
+     id="text44">B</text>
+  <text
+     class="label"
+     x="167.44926"
+     y="87.284737"
+     id="text46">C</text>
+  <text
+     class="label"
+     x="67.247108"
+     y="78.764458"
+     id="text48">D</text>
+  <text
+     class="label"
+     x="10.217335"
+     y="43.793217"
+     id="text50">E</text>
+  <text
+     class="label"
+     x="123.84082"
+     y="50.033978"
+     id="text52">F</text>
+  <text
+     class="label"
+     x="167.30431"
+     y="12.099732"
+     id="text54">G</text>
+  <text
+     class="label"
+     x="66.121033"
+     y="8.5018158"
+     id="text56">H</text>
+  <text
+     class="label"
+     x="49.658176"
+     y="122.95245"
+     id="text58">P</text>
+  <text
+     class="label"
+     x="61.361141"
+     y="90.022263"
+     id="text60">Q</text>
   <!-- 寸法 -->
-  <text class="dim" x="66" y="115">10cm</text>
-  <text class="dim" x="5" y="73">10cm</text>
 </svg>
