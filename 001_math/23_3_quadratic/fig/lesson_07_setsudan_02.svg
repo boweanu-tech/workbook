@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="90mm"
+   width="80mm"
    height="65mm"
-   viewBox="0 0 180 130"
+   viewBox="0 0 160 130"
    version="1.1"
    id="svg68"
-   sodipodi:docname="lesson_07_setsudan_01.svg"
+   sodipodi:docname="lesson_07_setsudan_02.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -22,12 +22,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.1702286"
-     inkscape:cx="174.1752"
-     inkscape:cy="150.44498"
+     inkscape:cx="91.234628"
+     inkscape:cy="163.34685"
      inkscape:window-width="1920"
-     inkscape:window-height="935"
-     inkscape:window-x="1920"
-     inkscape:window-y="32"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg68" />
   <!--
@@ -90,27 +90,18 @@
   <!-- E(28,42), F(112,42), G(150,14), H(66,14) -->
   <!-- 切断面 EPQ -->
   <!-- 底面 ABCD -->
-  <line
+  <path
+     id="line8"
      class="main"
-     x1="18.820435"
-     y1="115.10993"
-     x2="120.79642"
-     y2="115.10993"
-     id="line8" />
-  <line
-     class="main"
-     x1="120.79642"
-     y1="115.10993"
-     x2="166.92844"
-     y2="81.117928"
-     id="line10" />
-  <line
+     style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round"
+     d="M 18.820435,115.10993 H 93.52293"
+     sodipodi:nodetypes="cc" />
+  <path
+     id="line12"
      class="dash"
-     x1="166.92844"
-     y1="81.117928"
-     x2="64.952431"
-     y2="81.117928"
-     id="line12" />
+     style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4, 4"
+     d="M 139.65495,81.117928 H 64.952431"
+     sodipodi:nodetypes="cc" />
   <path
      id="line12-3"
      style="fill:none;stroke:#000000;stroke-width:0.9712;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4.856, 4.856"
@@ -126,20 +117,6 @@
      y2="44.697929"
      id="line16" />
   <line
-     class="main"
-     x1="120.79642"
-     y1="115.10993"
-     x2="120.79642"
-     y2="44.697929"
-     id="line18" />
-  <line
-     class="main"
-     x1="166.92844"
-     y1="81.117928"
-     x2="166.92844"
-     y2="10.705929"
-     id="line20" />
-  <line
      class="dash"
      x1="64.952431"
      y1="81.117928"
@@ -147,27 +124,50 @@
      y2="10.705929"
      id="line22" />
   <!-- 上面 EFGH -->
-  <line
+  <path
+     id="line24"
      class="main"
-     x1="18.820435"
-     y1="44.697929"
-     x2="120.79642"
-     y2="44.697929"
-     id="line24" />
-  <line
+     style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round"
+     d="M 18.820435,44.697929 H 93.52293"
+     sodipodi:nodetypes="cc" />
+  <g
+     id="g850"
+     transform="translate(-27.273487)">
+    <line
+       class="main"
+       x1="120.79642"
+       y1="115.10993"
+       x2="166.92844"
+       y2="81.117928"
+       id="line10" />
+    <line
+       class="main"
+       x1="120.79642"
+       y1="115.10993"
+       x2="120.79642"
+       y2="44.697929"
+       id="line18" />
+    <line
+       class="main"
+       x1="166.92844"
+       y1="81.117928"
+       x2="166.92844"
+       y2="10.705929"
+       id="line20" />
+    <line
+       class="main"
+       x1="120.79642"
+       y1="44.697929"
+       x2="166.92844"
+       y2="10.705929"
+       id="line26" />
+  </g>
+  <path
+     id="line28"
      class="main"
-     x1="120.79642"
-     y1="44.697929"
-     x2="166.92844"
-     y2="10.705929"
-     id="line26" />
-  <line
-     class="main"
-     x1="166.92844"
-     y1="10.705929"
-     x2="64.952431"
-     y2="10.705929"
-     id="line28" />
+     style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round"
+     d="M 139.65495,10.705929 H 64.952431"
+     sodipodi:nodetypes="cc" />
   <line
      class="main"
      x1="64.952431"
@@ -203,12 +203,12 @@
      id="text42">A</text>
   <text
      class="label"
-     x="121.17637"
+     x="95.979843"
      y="120.76493"
      id="text44">B</text>
   <text
      class="label"
-     x="167.44926"
+     x="142.25273"
      y="87.284737"
      id="text46">C</text>
   <text
@@ -223,12 +223,12 @@
      id="text50">E</text>
   <text
      class="label"
-     x="123.84082"
+     x="98.644295"
      y="50.033978"
      id="text52">F</text>
   <text
      class="label"
-     x="167.30431"
+     x="142.10777"
      y="12.099732"
      id="text54">G</text>
   <text
