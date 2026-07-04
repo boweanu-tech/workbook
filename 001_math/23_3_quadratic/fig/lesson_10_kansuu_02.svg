@@ -16,6 +16,8 @@
   <path class="main" d="M 8.6 4.0 L 59.8 42.3"/>
   <path class="thin" d="M 8.6 42.3 H 34.0 V 23.0 H 8.6 Z"/>
   <path class="dash" d="M 34.0 23.0 V 42.3 M 34.0 23.0 H 8.6"/>
+  <path class="thin" d="M 31.6 40.0 H 34.0 V 42.3"/>
+  <path class="thin" d="M 10.9 23.0 V 25.4 H 8.6"/>
   <circle class="point" cx="34.0" cy="23.0" r="0.4"/>
   <circle class="point" cx="34.0" cy="42.3" r="0.4"/>
   <circle class="point" cx="8.6" cy="23.0" r="0.4"/>
