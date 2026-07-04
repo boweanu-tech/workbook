@@ -13,15 +13,17 @@
   <path class="main" d="M 8.6 48 V 2.6"/>
   <path class="main" d="M 67.5 42.3 L 65.9 41.4 M 67.5 42.3 L 65.9 43.2"/>
   <path class="main" d="M 8.6 2.6 L 7.7 4.2 M 8.6 2.6 L 9.5 4.2"/>
-  <path class="main" d="M 8.6 37.5 L 34.0 6.0"/>
-  <path class="main" d="M 8.6 2.8 L 61.0 42.3"/>
-  <path class="thin" d="M 8.6 42.3 L 34.0 26.5 L 34.0 14.0 Z"/>
-  <path class="dash" d="M 34.0 14.0 V 26.5"/>
-  <circle class="point" cx="34.0" cy="26.5" r="0.4"/>
-  <circle class="point" cx="34.0" cy="14.0" r="0.4"/>
+  <path class="main" d="M 8.6 38.0 L 56.0 6.0"/>
+  <path class="main" d="M 8.6 5.5 L 62.0 42.3"/>
+  <path class="thin" d="M 32.0 22.2 L 50.0 10.0 L 50.0 33.4 Z"/>
+  <path class="dash" d="M 50.0 10.0 V 33.4"/>
+  <circle class="point" cx="32.0" cy="22.2" r="0.4"/>
+  <circle class="point" cx="50.0" cy="10.0" r="0.4"/>
+  <circle class="point" cx="50.0" cy="33.4" r="0.4"/>
   <text class="label" x="4.9" y="45.8">O</text>
   <text class="label" x="64.8" y="46.9">x</text>
   <text class="label" x="4.1" y="5.1">y</text>
-  <text class="label" x="35.0" y="28.0">P</text>
-  <text class="label" x="35.0" y="13.0">Q</text>
+  <text class="label" x="28.7" y="21.1">R</text>
+  <text class="label" x="51.0" y="9.0">P</text>
+  <text class="label" x="51.0" y="34.8">Q</text>
 </svg>
