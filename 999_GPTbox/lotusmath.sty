@@ -403,6 +403,16 @@
   \fi
 }
 
+\newcommand{\TextTall}[1]{%
+  \ifLMAnswerMode
+  \else
+    {\setlength{\baselineskip}{1.25\baselineskip}%
+     \noindent #1\par}%
+    \vspace{1mm}%
+    \vspace{\LMDefaultRowSpace}%
+  \fi
+}
+
 \newcommand{\LMMeasureAnswer}[2]{%
   \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
   \setlength{\LMAnswerHeight}{\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax}%
