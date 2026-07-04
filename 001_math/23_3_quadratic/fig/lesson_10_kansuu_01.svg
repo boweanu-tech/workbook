@@ -1,7 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="55mm" viewBox="0 0 70 55">
-  <defs>
-    <style><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70mm"
+   height="50mm"
+   viewBox="0 0 70 50"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="lesson_10_kansuu_01.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.3072917"
+     inkscape:cx="118.3748"
+     inkscape:cy="101.74488"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .thin { stroke: black; stroke-width: 0.25; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .dash { stroke: black; stroke-width: 0.25; fill: none; stroke-dasharray: 1 1.2; stroke-linecap: round; stroke-linejoin: round; }
@@ -9,18 +41,79 @@
       .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4px; font-style: normal; fill: black; }
     ]]></style>
   </defs>
-  <path class="main" d="M 8 43 L 64 43"/>
-  <path class="main" d="M 12 48 L 12 8"/>
-  <path class="main" d="M 64 43 L 62.6 42.2 M 64 43 L 62.6 43.8"/>
-  <path class="main" d="M 12 8 L 11.2 9.4 M 12 8 L 12.8 9.4"/>
-  <path class="main" d="M 12 33 L 60 9"/>
-  <path class="thin" d="M 12 43 L 44 43 L 44 17 Z"/>
-  <path class="dash" d="M 44 17 L 44 43"/>
-  <circle class="point" cx="44" cy="17" r="0.4"/>
-  <circle class="point" cx="44" cy="43" r="0.4"/>
-  <text class="label" x="8.5" y="47">O</text>
-  <text class="label" x="64" y="47">x</text>
-  <text class="label" x="8" y="10">y</text>
-  <text class="label" x="45" y="16">P</text>
-  <text class="label" x="44" y="48">Q</text>
+  <path
+     class="main"
+     d="M 4.0563922,42.287667 H 67.487245"
+     id="path1" />
+  <path
+     class="main"
+     d="M 8.5871674,47.953287 V 2.628323"
+     id="path2" />
+  <path
+     class="main"
+     d="m 67.487245,42.287667 -1.585771,-0.906499 m 1.585771,0.906499 -1.585771,0.906499"
+     id="path3" />
+  <path
+     class="main"
+     d="M 8.5871674,2.628323 7.6810124,4.2146967 M 8.5871674,2.628323 9.4933224,4.2146967"
+     id="path4" />
+  <path
+     class="main"
+     d="M 3.6235351,33.56182 62.95647,3.7614471"
+     id="path5"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="thin"
+     d="M 8.5871674,42.287667 H 44.833369 V 12.82644 Z"
+     id="path6" />
+  <path
+     class="dash"
+     d="M 44.833369,12.82644 V 42.287667"
+     id="path7" />
+  <ellipse
+     class="point"
+     cx="44.833366"
+     cy="12.82644"
+     id="circle7"
+     style="stroke-width:0.999999"
+     rx="0.45307752"
+     ry="0.45324963" />
+  <ellipse
+     class="point"
+     cx="44.833366"
+     cy="42.287666"
+     id="circle8"
+     style="stroke-width:0.999999"
+     rx="0.45307752"
+     ry="0.45324963" />
+  <text
+     class="label"
+     x="4.9056053"
+     y="45.773155"
+     id="text8">O</text>
+  <text
+     class="label"
+     x="64.822578"
+     y="46.908424"
+     id="text9">x</text>
+  <text
+     class="label"
+     x="4.1481247"
+     y="5.0846462"
+     id="text10">y</text>
+  <text
+     class="label"
+     x="42.246914"
+     y="11.455876"
+     id="text11">P</text>
+  <text
+     class="label"
+     x="43.324276"
+     y="46.543327"
+     id="text12">Q</text>
+  <path
+     class="thin"
+     d="m 44.974774,39.333254 h 2.831734 v 2.83281"
+     id="path18"
+     style="fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round" />
 </svg>
