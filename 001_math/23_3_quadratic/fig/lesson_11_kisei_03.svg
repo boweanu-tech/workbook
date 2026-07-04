@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="46mm" viewBox="0 0 64 46">
+  <defs>
+    <style><![CDATA[
+      .coin { fill: white; stroke: black; stroke-width: 0.3; }
+      .small { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 3px; font-style: normal; fill: black; }
+    ]]></style>
+    <circle id="coin" class="coin" r="1.15"/>
+  </defs>
+  <use href="#coin" x="8" y="12"/>
+  <text class="small" x="7" y="17">1</text>
+
+  <use href="#coin" x="20" y="16"/><use href="#coin" x="20" y="12.4"/><use href="#coin" x="23.6" y="12.4"/>
+  <text class="small" x="19" y="21">2</text>
+
+  <use href="#coin" x="34" y="20"/><use href="#coin" x="34" y="16.4"/><use href="#coin" x="37.6" y="16.4"/><use href="#coin" x="34" y="12.8"/><use href="#coin" x="37.6" y="12.8"/><use href="#coin" x="41.2" y="12.8"/>
+  <text class="small" x="33" y="25">3</text>
+
+  <use href="#coin" x="48" y="24"/><use href="#coin" x="48" y="20.4"/><use href="#coin" x="51.6" y="20.4"/><use href="#coin" x="48" y="16.8"/><use href="#coin" x="51.6" y="16.8"/><use href="#coin" x="55.2" y="16.8"/><use href="#coin" x="48" y="13.2"/><use href="#coin" x="51.6" y="13.2"/><use href="#coin" x="55.2" y="13.2"/><use href="#coin" x="58.8" y="13.2"/>
+  <text class="small" x="47" y="29">4</text>
+</svg>
