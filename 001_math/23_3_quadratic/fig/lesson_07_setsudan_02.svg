@@ -73,9 +73,9 @@
         stroke: none;
       }
       .label {
-        font-family: "Latin Modern Roman", "Times New Roman", serif;
+        font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
         font-size: 8px;
-        font-style: italic;
+        font-style: normal;
         fill: black;
       }
       .dim {
