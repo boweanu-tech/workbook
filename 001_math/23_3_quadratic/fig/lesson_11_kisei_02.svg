@@ -22,8 +22,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.9957795"
-     inkscape:cx="35.825602"
-     inkscape:cy="65.387986"
+     inkscape:cx="35.825601"
+     inkscape:cy="65.387985"
      inkscape:window-width="1920"
      inkscape:window-height="996"
      inkscape:window-x="1920"
@@ -40,22 +40,18 @@
       .small { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 3px; font-style: normal; fill: black; }
     ]]></style>
   </defs>
-  <g
-     id="g4"
-     transform="matrix(1.4614364,0,0,1.4590541,-3.2021429,-3.3688291)"
-     style="stroke-width:0.684817">
-    <rect
-       class="main"
-       x="5.7044764"
-       y="3.7889016"
-       width="15"
-       height="3"
-       id="rect1" />
-    <path
-       class="thin"
-       d="m 8.7044762,3.7889016 v 3 m 2.9999998,-3 v 3 m 3,-3 v 3 m 3,-3 v 3"
-       id="path1" />
-  </g>
+  <rect
+     class="main"
+     x="5.1345863"
+     y="2.1593833"
+     width="21.921547"
+     height="4.3771625"
+     id="rect1"
+     style="stroke-width:0.45;stroke-dasharray:none" />
+  <path
+     class="thin"
+     d="M 9.5188955,2.1593833 V 6.5365456 M 13.903204,2.1593833 v 4.3771623 m 4.38431,-4.3771623 v 4.3771623 m 4.384309,-4.3771623 v 4.3771623"
+     id="path1" />
   <rect
      class="main"
      x="5.1345863"
