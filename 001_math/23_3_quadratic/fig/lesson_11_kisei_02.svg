@@ -1,23 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="46mm" viewBox="0 0 58 46">
-  <defs>
-    <style><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="40mm"
+   height="46mm"
+   viewBox="0 0 40 46"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="lesson_11_kisei_02.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.9957795"
+     inkscape:cx="35.825602"
+     inkscape:cy="65.387986"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .thin { stroke: black; stroke-width: 0.25; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4px; font-style: normal; fill: black; }
       .small { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 3px; font-style: normal; fill: black; }
     ]]></style>
   </defs>
-  <text class="small" x="4" y="8">1</text>
-  <rect class="main" x="10" y="5" width="15" height="3"/>
-  <path class="thin" d="M 13 5 V 8 M 16 5 V 8 M 19 5 V 8 M 22 5 V 8"/>
-
-  <text class="small" x="4" y="21">2</text>
-  <rect class="main" x="10" y="15" width="18" height="6"/>
-  <path class="thin" d="M 13 15 V 21 M 16 15 V 21 M 19 15 V 21 M 22 15 V 21 M 25 15 V 21 M 10 18 H 28"/>
-
-  <text class="small" x="4" y="38">3</text>
-  <rect class="main" x="10" y="29" width="21" height="9"/>
-  <path class="thin" d="M 13 29 V 38 M 16 29 V 38 M 19 29 V 38 M 22 29 V 38 M 25 29 V 38 M 28 29 V 38 M 10 32 H 31 M 10 35 H 31"/>
-  <text class="label" x="36" y="37">...</text>
+  <g
+     id="g4"
+     transform="matrix(1.4614364,0,0,1.4590541,-3.2021429,-3.3688291)"
+     style="stroke-width:0.684817">
+    <rect
+       class="main"
+       x="5.7044764"
+       y="3.7889016"
+       width="15"
+       height="3"
+       id="rect1" />
+    <path
+       class="thin"
+       d="m 8.7044762,3.7889016 v 3 m 2.9999998,-3 v 3 m 3,-3 v 3 m 3,-3 v 3"
+       id="path1" />
+  </g>
+  <rect
+     class="main"
+     x="5.1345863"
+     y="14.000654"
+     width="26.305855"
+     height="8.7543249"
+     id="rect2" />
+  <path
+     class="thin"
+     d="m 9.5188955,14.000654 v 8.754325 m 4.3843105,-8.754325 v 8.754325 m 4.384309,-8.754325 v 8.754325 m 4.384309,-8.754325 v 8.754325 m 4.384309,-8.754325 v 8.754325 M 5.1345864,18.377817 H 31.440442"
+     id="path2" />
+  <rect
+     class="main"
+     x="5.1345863"
+     y="29.66993"
+     width="30.690165"
+     height="13.131487"
+     id="rect3" />
+  <path
+     class="thin"
+     d="M 9.5188955,29.669934 V 42.801421 M 13.903206,29.669934 V 42.801421 M 18.287515,29.669934 V 42.801421 M 22.671824,29.669934 V 42.801421 M 27.056133,29.669934 V 42.801421 M 31.440442,29.669934 V 42.801421 M 5.1345864,34.047096 H 35.824752 M 5.1345864,38.424258 H 35.824752"
+     id="path3" />
 </svg>
