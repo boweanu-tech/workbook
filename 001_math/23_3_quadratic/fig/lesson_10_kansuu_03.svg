@@ -1,7 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="50mm" viewBox="0 0 70 50">
-  <defs>
-    <style><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70mm"
+   height="50mm"
+   viewBox="0 0 70 50"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="lesson_10_kansuu_03.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.7208038"
+     inkscape:cx="85.820227"
+     inkscape:cy="73.32392"
+     inkscape:window-width="1920"
+     inkscape:window-height="1044"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15" />
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .thin { stroke: black; stroke-width: 0.25; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .dash { stroke: black; stroke-width: 0.25; fill: none; stroke-dasharray: 1 1.2; stroke-linecap: round; stroke-linejoin: round; }
@@ -9,21 +41,83 @@
       .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4px; font-style: normal; fill: black; }
     ]]></style>
   </defs>
-  <path class="main" d="M 4.1 42.3 H 67.5"/>
-  <path class="main" d="M 8.6 48 V 2.6"/>
-  <path class="main" d="M 67.5 42.3 L 65.9 41.4 M 67.5 42.3 L 65.9 43.2"/>
-  <path class="main" d="M 8.6 2.6 L 7.7 4.2 M 8.6 2.6 L 9.5 4.2"/>
-  <path class="main" d="M 8.6 38.0 L 56.0 6.0"/>
-  <path class="main" d="M 8.6 5.5 L 62.0 42.3"/>
-  <path class="thin" d="M 32.0 22.2 L 50.0 10.0 L 50.0 33.4 Z"/>
-  <path class="dash" d="M 50.0 10.0 V 33.4"/>
-  <circle class="point" cx="32.0" cy="22.2" r="0.4"/>
-  <circle class="point" cx="50.0" cy="10.0" r="0.4"/>
-  <circle class="point" cx="50.0" cy="33.4" r="0.4"/>
-  <text class="label" x="4.9" y="45.8">O</text>
-  <text class="label" x="64.8" y="46.9">x</text>
-  <text class="label" x="4.1" y="5.1">y</text>
-  <text class="label" x="28.7" y="21.1">R</text>
-  <text class="label" x="51.0" y="9.0">P</text>
-  <text class="label" x="51.0" y="34.8">Q</text>
+  <path
+     class="main"
+     d="M 4.1 42.3 H 67.5"
+     id="path1" />
+  <path
+     class="main"
+     d="M 8.6 48 V 2.6"
+     id="path2" />
+  <path
+     class="main"
+     d="M 67.5 42.3 L 65.9 41.4 M 67.5 42.3 L 65.9 43.2"
+     id="path3" />
+  <path
+     class="main"
+     d="M 8.6 2.6 L 7.7 4.2 M 8.6 2.6 L 9.5 4.2"
+     id="path4" />
+  <path
+     class="main"
+     d="M 3.9915171,40.731305 56,6"
+     id="path5"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="main"
+     d="M 6.0421164,3.7036112 65.666352,44.85886"
+     id="path6"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="dash"
+     d="M 49.948408,10.366076 V 34.118785"
+     id="path8"
+     sodipodi:nodetypes="cc" />
+  <circle
+     class="point"
+     cx="32.347401"
+     cy="21.841614"
+     r="0.40000001"
+     id="circle8" />
+  <circle
+     class="point"
+     cx="49.927814"
+     cy="10.057823"
+     r="0.40000001"
+     id="circle9" />
+  <circle
+     class="point"
+     cx="49.933987"
+     cy="33.918072"
+     r="0.40000001"
+     id="circle10" />
+  <text
+     class="label"
+     x="4.9"
+     y="45.8"
+     id="text10">O</text>
+  <text
+     class="label"
+     x="61.205219"
+     y="46.789745"
+     id="text11">x</text>
+  <text
+     class="label"
+     x="5.1696901"
+     y="8.0110512"
+     id="text12">y</text>
+  <text
+     class="label"
+     x="31.104176"
+     y="19.826223"
+     id="text13">R</text>
+  <text
+     class="label"
+     x="46.678085"
+     y="9.5233984"
+     id="text14">P</text>
+  <text
+     class="label"
+     x="46.184952"
+     y="37.372005"
+     id="text15">Q</text>
 </svg>

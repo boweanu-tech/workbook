@@ -21,9 +21,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="3.3072917"
-     inkscape:cx="118.3748"
-     inkscape:cy="101.74488"
+     inkscape:zoom="2.3386084"
+     inkscape:cx="72.692803"
+     inkscape:cy="107.54259"
      inkscape:window-width="1920"
      inkscape:window-height="996"
      inkscape:window-x="1920"
@@ -64,11 +64,12 @@
      sodipodi:nodetypes="cc" />
   <path
      class="thin"
-     d="M 8.5871674,42.287667 H 44.833369 V 12.82644 Z"
-     id="path6" />
+     d="M 8.5871674,42.287667 44.833369,12.82644 Z"
+     id="path6"
+     sodipodi:nodetypes="ccc" />
   <path
      class="dash"
-     d="M 44.833369,12.82644 V 42.287667"
+     d="M 44.805914,12.927728 V 42.388955"
      id="path7" />
   <ellipse
      class="point"
