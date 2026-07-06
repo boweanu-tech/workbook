@@ -1,21 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="46mm" viewBox="0 0 64 46">
-  <defs>
-    <style><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64mm"
+   height="25mm"
+   viewBox="0 0 64 25"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="lesson_11_kisei_03.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.5578529"
+     inkscape:cx="92.655836"
+     inkscape:cy="58.838411"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .coin { fill: white; stroke: black; stroke-width: 0.3; }
       .small { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 3px; font-style: normal; fill: black; }
     ]]></style>
-    <circle id="coin" class="coin" r="1.15"/>
+    <circle
+       id="coin"
+       class="coin"
+       r="1.15"
+       cx="0"
+       cy="0" />
   </defs>
-  <use href="#coin" x="8" y="12"/>
-  <text class="small" x="7" y="17">1</text>
-
-  <use href="#coin" x="20" y="16"/><use href="#coin" x="20" y="12.4"/><use href="#coin" x="23.6" y="12.4"/>
-  <text class="small" x="19" y="21">2</text>
-
-  <use href="#coin" x="34" y="20"/><use href="#coin" x="34" y="16.4"/><use href="#coin" x="37.6" y="16.4"/><use href="#coin" x="34" y="12.8"/><use href="#coin" x="37.6" y="12.8"/><use href="#coin" x="41.2" y="12.8"/>
-  <text class="small" x="33" y="25">3</text>
-
-  <use href="#coin" x="48" y="24"/><use href="#coin" x="48" y="20.4"/><use href="#coin" x="51.6" y="20.4"/><use href="#coin" x="48" y="16.8"/><use href="#coin" x="51.6" y="16.8"/><use href="#coin" x="55.2" y="16.8"/><use href="#coin" x="48" y="13.2"/><use href="#coin" x="51.6" y="13.2"/><use href="#coin" x="55.2" y="13.2"/><use href="#coin" x="58.8" y="13.2"/>
-  <text class="small" x="47" y="29">4</text>
+  <use
+     href="#coin"
+     x="8"
+     y="12"
+     id="use1"
+     transform="matrix(1.8990137,0,0,1.917691,-8.4080767,-17.728312)"
+     style="stroke-width:0.524019" />
+  <g
+     id="g20"
+     transform="matrix(1.8990137,0,0,1.917691,-17.047191,-18.495387)"
+     style="stroke-width:0.524019">
+    <use
+       href="#coin"
+       x="20"
+       y="16"
+       id="use2"
+       style="stroke-width:0.524019" />
+    <use
+       href="#coin"
+       x="20"
+       y="12.4"
+       id="use3"
+       style="stroke-width:0.524019" />
+    <use
+       href="#coin"
+       x="23.6"
+       y="12.4"
+       id="use4"
+       style="stroke-width:0.524019" />
+  </g>
+  <g
+     id="g22"
+     transform="matrix(1.8990137,0,0,1.917691,-21.994519,-19.262465)"
+     style="stroke-width:0.524019">
+    <g
+       id="g21"
+       style="stroke-width:0.524019">
+      <use
+         href="#coin"
+         x="34"
+         y="20"
+         id="use5"
+         style="stroke-width:0.524019" />
+      <use
+         href="#coin"
+         x="34"
+         y="16.4"
+         id="use6"
+         style="stroke-width:0.524019" />
+      <use
+         href="#coin"
+         x="37.599998"
+         y="16.4"
+         id="use7"
+         style="stroke-width:0.524019" />
+      <use
+         href="#coin"
+         x="34"
+         y="12.8"
+         id="use8"
+         style="stroke-width:0.524019" />
+      <use
+         href="#coin"
+         x="37.599998"
+         y="12.8"
+         id="use9"
+         style="stroke-width:0.524019" />
+      <use
+         href="#coin"
+         x="41.200001"
+         y="12.8"
+         id="use10"
+         style="stroke-width:0.524019" />
+    </g>
+  </g>
 </svg>
