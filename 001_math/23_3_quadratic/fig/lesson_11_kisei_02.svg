@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="40mm"
-   height="46mm"
-   viewBox="0 0 40 46"
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
    version="1.1"
-   id="svg4"
-   sodipodi:docname="lesson_11_kisei_02.svg"
+   id="svg34"
+   sodipodi:docname="lesson_11_kisei_01.svg"
    inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview4"
+     id="namedview34"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -21,57 +21,232 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.9957795"
-     inkscape:cx="35.825601"
-     inkscape:cy="65.387985"
+     inkscape:zoom="3.282186"
+     inkscape:cx="116.9952"
+     inkscape:cy="93.078211"
      inkscape:window-width="1920"
      inkscape:window-height="996"
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg34" />
   <defs
      id="defs1">
     <style
        id="style1"><![CDATA[
-      .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .thin { stroke: black; stroke-width: 0.25; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4px; font-style: normal; fill: black; }
+      .dash { stroke: black; stroke-width: 0.25; fill: none; stroke-dasharray: 1 1.2; stroke-linecap: round; stroke-linejoin: round; }
+      .coin { fill: white; stroke: black; stroke-width: 0.3; }
       .small { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 3px; font-style: normal; fill: black; }
     ]]></style>
+    <circle
+       id="coin"
+       class="coin"
+       r="1.25"
+       cx="0"
+       cy="0" />
   </defs>
+  <use
+     href="#coin"
+     x="14"
+     y="7"
+     id="use5"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="19.5"
+     y="7"
+     id="use6"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="25"
+     y="7"
+     id="use7"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="30.5"
+     y="7"
+     id="use8"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="36"
+     y="7"
+     id="use9"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="14"
+     y="12.5"
+     id="use10"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="19.5"
+     y="12.5"
+     id="use11"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="25"
+     y="12.5"
+     id="use12"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="30.5"
+     y="12.5"
+     id="use13"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="36"
+     y="12.5"
+     id="use14"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="14"
+     y="18"
+     id="use15"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="19.5"
+     y="18"
+     id="use16"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="25"
+     y="18"
+     id="use17"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="30.5"
+     y="18"
+     id="use18"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="36"
+     y="18"
+     id="use19"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="14"
+     y="23.5"
+     id="use20"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="19.5"
+     y="23.5"
+     id="use21"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="25"
+     y="23.5"
+     id="use22"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="30.5"
+     y="23.5"
+     id="use23"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="36"
+     y="23.5"
+     id="use24"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="14"
+     y="29"
+     id="use25"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="19.5"
+     y="29"
+     id="use26"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="25"
+     y="29"
+     id="use27"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="30.5"
+     y="29"
+     id="use28"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
+  <use
+     href="#coin"
+     x="36"
+     y="29"
+     id="use29"
+     transform="matrix(1.5621222,0,0,1.5621222,-13.963684,-3.5250624)"
+     style="stroke-width:0.640155" />
   <rect
-     class="main"
-     x="5.1345863"
-     y="2.1593833"
-     width="21.921547"
-     height="4.3771625"
-     id="rect1"
-     style="stroke-width:0.45;stroke-dasharray:none" />
-  <path
      class="thin"
-     d="M 9.5188955,2.1593833 V 6.5365456 M 13.903204,2.1593833 v 4.3771623 m 4.38431,-4.3771623 v 4.3771623 m 4.384309,-4.3771623 v 4.3771623"
-     id="path1" />
+     x="3.6101899"
+     y="3.1139567"
+     width="42.958363"
+     height="42.958363"
+     id="rect29" />
   <rect
-     class="main"
-     x="5.1345863"
-     y="14.000654"
-     width="26.305855"
-     height="8.7543249"
-     id="rect2" />
-  <path
-     class="thin"
-     d="m 9.5188955,14.000654 v 8.754325 m 4.3843105,-8.754325 v 8.754325 m 4.384309,-8.754325 v 8.754325 m 4.384309,-8.754325 v 8.754325 m 4.384309,-8.754325 v 8.754325 M 5.1345864,18.377817 H 31.440442"
-     id="path2" />
+     class="dash"
+     x="37.976879"
+     y="3.1139567"
+     width="8.5916719"
+     height="8.5916719"
+     id="rect30" />
   <rect
-     class="main"
-     x="5.1345863"
-     y="29.66993"
-     width="30.690165"
-     height="13.131487"
-     id="rect3" />
-  <path
-     class="thin"
-     d="M 9.5188955,29.669934 V 42.801421 M 13.903206,29.669934 V 42.801421 M 18.287515,29.669934 V 42.801421 M 22.671824,29.669934 V 42.801421 M 27.056133,29.669934 V 42.801421 M 31.440442,29.669934 V 42.801421 M 5.1345864,34.047096 H 35.824752 M 5.1345864,38.424258 H 35.824752"
-     id="path3" />
+     class="dash"
+     x="29.385204"
+     y="3.1139567"
+     width="17.183344"
+     height="17.183344"
+     id="rect31" />
+  <rect
+     class="dash"
+     x="20.793531"
+     y="3.1139567"
+     width="25.775017"
+     height="25.775017"
+     id="rect32" />
 </svg>
