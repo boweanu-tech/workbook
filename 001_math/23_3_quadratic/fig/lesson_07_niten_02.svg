@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="80mm"
+   height="58mm"
+   viewBox="0 0 360 260"
+   version="1.1"
+   id="svg24"
+   sodipodi:docname="lesson_07_niten_02.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview24"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4039453"
+     inkscape:cx="180.20645"
+     inkscape:cy="90.103225"
+     inkscape:window-width="1920"
+     inkscape:window-height="935"
+     inkscape:window-x="1920"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24"
+     inkscape:pageshadow="2"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <marker
+       id="arrow"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="5"
+       markerHeight="5"
+       orient="auto-start-reverse">
+      <path
+         d="M 0 0 L 10 5 L 0 10 z"
+         fill="#222222"
+         id="path1" />
+    </marker>
+    <style
+       id="style1"><![CDATA[
+      .edge { fill: none; stroke: #111111; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #111111; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+      .dash { fill: none; stroke: #111111; stroke-width: 1.7; stroke-dasharray: 5 4; stroke-linecap: round; stroke-linejoin: round; }
+      .aux { fill: none; stroke: #555555; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+      .face { fill: #e6e6e6; stroke: none; opacity: 0.55; }
+      .point { fill: #111111; stroke: none; }
+      .label { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 17px; fill: #111111; }
+      .small { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 15px; fill: #111111; }
+      .dim { font-family: "Latin Modern Roman", "Times New Roman", serif; font-size: 16px; fill: #111111; }
+    ]]></style>
+  </defs>
+  <!-- Points used in the drawing:
+       A(90,55), B(90,175), C(250,175)
+       D(150,20), E(150,140), F(310,140)
+       P is on DE, Q is on EF, and DP=EQ is shown by matching tick marks. -->
+  <!-- Highlight the triangular face DPQ of the tetrahedron B-DPQ. -->
+  <path
+     id="polygon1"
+     style="opacity:0.55;fill:#e6e6e6;stroke-width:1"
+     class="face"
+     d="M 249.47952,165.0335 130.71922,22.620922 130.70232,81.398757 Z"
+     sodipodi:nodetypes="cccc" />
+  <!-- Right triangular prism ABC-DEF. -->
+  <path
+     class="edge"
+     d="M 59.559276,64.157925 V 206.5705 H 249.31914 Z"
+     id="path2" />
+  <path
+     class="edge"
+     d="m 130.71923,22.620923 -1e-5,142.412577 h 189.75987"
+     id="path3"
+     style="stroke-width:2.2005;stroke-dasharray:2.2005, 4.401;stroke-dashoffset:0"
+     sodipodi:nodetypes="ccc" />
+  <path
+     class="edge"
+     d="M 59.559276,64.157925 130.71922,22.620922"
+     id="path4" />
+  <path
+     class="edge"
+     d="m 59.559276,206.5705 71.159944,-41.537"
+     id="path5"
+     style="stroke-dasharray:2.2, 4.4;stroke-dashoffset:0" />
+  <path
+     class="edge"
+     d="M 130.71923,22.620923 320.47909,165.0335"
+     id="path5-6"
+     style="fill:none;stroke:#111111;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="edge"
+     d="m 249.31914,206.5705 71.15995,-41.537"
+     id="path6" />
+  <!-- Edges of the tetrahedron B-DPQ. -->
+  <path
+     class="thin"
+     d="M 59.559276,64.157925 130.70232,81.398757"
+     id="path8"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="thin"
+     d="M 59.559276,64.157925 249.47953,165.03351"
+     id="path9"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="thin"
+     d="m 130.71922,22.620922 -0.0169,58.777835 118.77718,83.634743 z"
+     id="path10"
+     sodipodi:nodetypes="cccc" />
+  <!-- Right angle mark at B. -->
+  <path
+     class="thin"
+     d="M 59.559275,192.49816 H 73.622463 V 206.5705"
+     id="path11" />
+  <path
+     class="thin"
+     d="m 131.15379,150.58494 h 14.06319 v 14.07234"
+     id="path11-1"
+     style="fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     class="thin"
+     d="m 145.04664,165.08764 -8.21897,6.29052 -16.57916,-0.0576"
+     id="path11-5"
+     style="fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
+     sodipodi:nodetypes="ccc" />
+  <path
+     class="thin"
+     d="m 120.13816,170.86386 -0.007,-14.13555 9.89287,-5.7878"
+     id="path11-5-5"
+     style="fill:none;stroke:#111111;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
+     sodipodi:nodetypes="ccc" />
+  <!-- Tick marks showing DP=EQ. -->
+  <!-- Dimension labels. -->
+  <!-- Vertex labels. -->
+  <text
+     class="label"
+     x="49.179695"
+     y="58.15802"
+     id="text17">A</text>
+  <text
+     class="label"
+     x="44.205257"
+     y="217.91811"
+     id="text18">B</text>
+  <text
+     class="label"
+     x="247.59909"
+     y="223.46683"
+     id="text19">C</text>
+  <text
+     class="label"
+     x="125.63551"
+     y="14.052213"
+     id="text20">D</text>
+  <text
+     class="label"
+     x="125.8311"
+     y="184.87782"
+     id="text21">E</text>
+  <text
+     class="label"
+     x="321.58994"
+     y="158.40852"
+     id="text22">F</text>
+  <text
+     class="label"
+     x="116.43417"
+     y="141.13937"
+     id="text23">P</text>
+  <text
+     class="label"
+     x="248.03932"
+     y="157.98866"
+     id="text24">Q</text>
+</svg>
