@@ -1,0 +1,169 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath-layout}[2026/07/08 lotusmath layout]
+
+\makeatletter
+\newcommand{\CoverPage}[2]{%
+  \gdef\LMCoverTitle{#1}%
+  \gdef\LMCoverSubtitle{#2}%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{20mm}
+  {\large 名前\quad\underline{\hspace{80mm}}}\par
+  \vspace{35mm}
+  \begin{center}
+    {\Huge 総まとめテスト}\par
+    \vspace{12mm}
+    {\LARGE #1}\par
+    \vspace{18mm}
+    {\large #2}\par
+  \end{center}
+  \end{titlepage}
+}
+
+\newcommand{\CoverPageLesson}[3]{%
+  \gdef\LMCoverTitle{#1}%
+  \gdef\LMCoverSubtitle{#2}%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{20mm}
+  {\large 名前\quad\underline{\hspace{80mm}}}\par
+  \vspace{35mm}
+  \begin{center}
+    {\Huge #1}\par
+    \vspace{12mm}
+    {\LARGE #2}\par
+    \vspace{18mm}
+    {\large #3}\par
+  \end{center}
+  \end{titlepage}
+  \clearpage
+  \null
+  \thispagestyle{empty}%
+  \clearpage
+}
+
+\newcommand{\LMPrintedMajor}{\LMCurrentTheme}
+\newcommand{\LMBoxedMajor}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][8mm][c]{8mm}{\centering\large\LMPrintedMajor}}}%
+}
+
+\newcommand{\LMBoxedMajorLesson}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][10mm][c]{10mm}{\centering\Large\LMPrintedMajor}}}%
+}
+
+\newcommand{\LMBoxedTypeQuestion}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][8mm][c]{8mm}{\centering\Large\theLMtype}}}%
+}
+
+\newcommand{\LMBoxedTypeQuestionAns}{%
+  {\setlength{\fboxsep}{0pt}%
+   \fbox{\parbox[c][5mm][c]{5mm}{\centering\small\theLMtype}}}%
+}
+
+\newcommand{\ResetRowSpace}{%
+  \setlength{\LMRowSpace}{\LMDefaultRowSpace}%
+}
+
+\newcommand{\MajorQuestionLesson}[1]{%
+  \ResetRowSpace
+  \stepcounter{LMmajor}%
+  \setcounter{LMtype}{0}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+  \ifLMAnswerMode
+    \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
+    \noindent\begin{minipage}{\linewidth}
+    \LMInAnswerBlocktrue
+    \noindent\LMBoxedMajor\par\vspace{1.5mm}%
+  \else
+    \clearpage
+    \noindent\LMBoxedMajorLesson\quad \raisebox{-1mm}{\Large #1}\par
+    \vspace{2mm}\hrule height \LMRuleWidth\vspace{4mm}%
+  \fi
+}
+
+\newcommand{\MajorQuestion}[1]{%
+  \ResetRowSpace
+  \stepcounter{LMmajor}%
+  \setcounter{LMtype}{0}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+  \ifLMAnswerMode
+    \ifLMInAnswerBlock\end{minipage}\par\vspace{2mm}\fi
+    \noindent\begin{minipage}{\linewidth}
+    \LMInAnswerBlocktrue
+    \noindent\LMBoxedMajor\par\vspace{1.5mm}%
+  \else
+    \clearpage
+    \noindent\LMBoxedMajor\quad \raisebox{-0.4mm}{#1}\par
+    \vspace{2mm}\hrule height \LMRuleWidth\vspace{4mm}%
+  \fi
+}
+
+% lesson_用の大問見出し。呼び出すたびに大問番号を進め、小問番号を(1)からに戻す。
+% 例: \TypeQuestion{平方根の形にする}
+\newcommand{\TypeQuestion}[2]{%
+  \stepcounter{LMtype}%
+  \setcounter{LMsubq}{0}%
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
+  \fi
+  \LMInstructionUsedtrue
+  \ifLMAnswerMode
+    \noindent
+    \begin{minipage}[t]{10mm}%
+      \vspace{0pt}\LMBoxedTypeQuestionAns%
+    \end{minipage}%
+    \par\vspace{4mm}%
+  \else
+    \noindent
+    \begin{minipage}[t]{10mm}%
+      \vspace{0pt}\LMBoxedTypeQuestion%
+    \end{minipage}%
+    \hspace{2mm}%
+    \begin{minipage}[t]{\dimexpr\linewidth-12mm\relax}%
+      \vspace{#2}#1%
+    \end{minipage}%
+    \par
+    \vspace{6mm}%
+  \fi
+}
+
+%1行用
+\newcommand{\TypeQuestionSingle}[2]{
+\TypeQuestion{#1}{2.8mm}
+}
+
+%2行用
+\newcommand{\TypeQuestionDouble}[2]{
+\TypeQuestion{#1}{0.2mm}
+}
+
+\newcommand{\LessonPageBreak}{%
+  \ifLMAnswerMode
+    \ifLMInAnswerBlock
+      \end{minipage}\par
+      \LMInAnswerBlockfalse
+      \columnbreak
+      \noindent\begin{minipage}{\linewidth}
+      \LMInAnswerBlocktrue
+    \else
+      \columnbreak
+    \fi
+  \else
+    \clearpage
+  \fi
+}
+
+\newcommand{\MakeEvenPage}{%
+  \clearpage
+  \ifodd\value{page}%
+    \null\thispagestyle{empty}\clearpage
+  \fi
+}
+\makeatother
