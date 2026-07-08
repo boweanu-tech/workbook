@@ -1,0 +1,196 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath-figure}[2026/07/08 lotusmath figure]
+
+\makeatletter
+\newcommand{\LMFig}[2][0.7\linewidth]{%
+  \begin{center}%
+    \includegraphics[width=#1]{#2}%
+  \end{center}%
+}
+\newcommand{\LMFigInline}[2][0.7\linewidth]{%
+  \includegraphics[width=#1]{#2}%
+}
+\newcommand{\LMFigBlock}[2][0.7\linewidth]{%
+  {\centering\includegraphics[width=#1]{#2}\par}%
+}
+
+% wrapfig は、説明文だけを図に回り込ませたいときに使う。
+% 小問番号つきの \QQ は入れず、\Text などの地の文だけを入れる。
+\newcommand{\WrapTextFig}{\@ifnextchar[{\LMWrapTextFigRows}{\LMWrapTextFigAuto}}
+\newcommand{\LMWrapTextFigAuto}[4]{%
+  \ifLMAnswerMode
+    #4%
+  \else
+    \par\noindent
+    \begin{wrapfigure}{#1}{#2}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#3}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    #4\par
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+\newcommand{\LMWrapTextFigRows}[5][]{%
+  \ifLMAnswerMode
+    #5%
+  \else
+    \par\noindent
+    \begin{wrapfigure}[#1]{#2}{#3}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#4}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    #5\par
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+
+% 互換用。今後は説明文だけの回り込みには \WrapTextFig を使う。
+\newcommand{\WrapFig}{\@ifnextchar[{\LMWrapFigRows}{\LMWrapFigAuto}}
+\newcommand{\LMWrapFigAuto}[4]{%
+  \ifLMAnswerMode
+    #4%
+  \else
+    \par\noindent
+    \begin{wrapfigure}{#1}{#2}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#3}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    \LMWrapModetrue
+    #4\par
+    \LMWrapModefalse
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+\newcommand{\LMWrapFigRows}[5][]{%
+  \ifLMAnswerMode
+    #5%
+  \else
+    \par\noindent
+    \begin{wrapfigure}[#1]{#2}{#3}
+      \vspace{-\baselineskip}%
+      \centering
+      \includegraphics[width=\linewidth]{#4}%
+      \vspace{-\baselineskip}%
+    \end{wrapfigure}%
+    \LMWrapModetrue
+    #5\par
+    \LMWrapModefalse
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+
+% 1つの小問と図を横並びにする。小問番号つき図版問題はこちらを標準にする。
+% #1: 図幅, #2: 図パス, #3: 問題文, #4: 解答
+\newcommand{\QQSideFig}[4]{%
+  \stepcounter{LMsubq}%
+  \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#4}%
+  \else
+    \noindent
+    \begin{minipage}[t]{9mm}%
+      \vspace{0pt}\textbf{(\theLMsubq)}%
+    \end{minipage}%
+    \begin{minipage}[t]{\dimexpr\linewidth-9mm-#1-\LMFigSideGap\relax}%
+      \vspace{0pt}\raggedright #3%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}%
+      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \end{minipage}%
+    \par\vspace{\LMRowSpace}%
+  \fi
+}
+
+% 図つき大問ブロック。左に導入文、右に図、その下に全幅の小問群を置く。
+% #1: 図幅, #2: 図パス, #3: 図横の本文, #4: 図下の本文・小問群
+\newcommand{\FigProblemBlock}[4]{%
+  \ifLMAnswerMode
+    #3%
+    #4%
+  \else
+    \par\noindent
+    \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
+      \vspace{0pt}#3%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}%
+      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \end{minipage}%
+    %\par\vspace{\LMFigureRowSpace}%
+    #4%
+  \fi
+}
+
+% 図つき大問ブロックの行送り広め版。図横の本文だけを広めにする。
+% 図下の小問群は、必要なら \QQTall などを個別に使う。
+\newcommand{\FigProblemBlockTall}[4]{%
+  \ifLMAnswerMode
+    {\setlength{\baselineskip}{1.25\baselineskip}#3\par}%
+    #4%
+  \else
+    \par\noindent
+    \begin{minipage}[t]{\dimexpr\linewidth-#1-\LMFigSideGap\relax}%
+      \vspace{0pt}%
+      {\setlength{\baselineskip}{1.25\baselineskip}#3\par}%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{#1}%
+      \vspace{0pt}\LMFigInline[\linewidth]{#2}%
+    \end{minipage}%
+    %\par\vspace{\LMFigureRowSpace}%
+    #4%
+  \fi
+}
+
+\newcommand{\QQFigRow}[7][0.9\linewidth]{%
+  \noindent
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \ifLMAnswerMode
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#4}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#4}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#4}%
+      \fi
+    \else
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
+      \par\vspace{1mm}%
+      \LMFigBlock[#1]{#2}%
+    \fi
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \ifLMAnswerMode
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#7}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#7}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#7}%
+      \fi
+    \else
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#6}%
+      \par\vspace{1mm}%
+      \LMFigBlock[#1]{#5}%
+    \fi
+  \end{minipage}%
+  \ifLMAnswerMode
+    \par\vspace{\LMAnswerRowSpace}%
+  \else
+    \par\vspace{\LMFigureRowSpace}%
+  \fi
+}
+\makeatother
