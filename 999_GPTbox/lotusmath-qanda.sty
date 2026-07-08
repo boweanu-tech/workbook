@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath-qanda}[2026/07/08 lotusmath qanda]
+
+\makeatletter
+\newcommand{\Blank}[1]{【\quad #1\quad 】}
+\newcommand{\NamedBlank}[1]{%
+  \expandafter\xdef\csname LMBlankNumber:#1\endcsname{\theLMsubq}%
+  \Blank{\theLMsubq}%
+}
+\newcommand{\RefBlank}[1]{%
+  \expandafter\ifx\csname LMBlankNumber:#1\endcsname\relax
+    \Blank{??}%
+  \else
+    \Blank{\csname LMBlankNumber:#1\endcsname}%
+  \fi
+}
+\makeatother
