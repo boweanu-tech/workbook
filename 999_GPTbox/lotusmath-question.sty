@@ -1,0 +1,175 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath-question}[2026/07/08 lotusmath question]
+
+\makeatletter
+\newcommand{\SetRowSpace}[1]{%
+  \setlength{\LMRowSpace}{#1}%
+}
+\newcommand{\SetRowSpaceCalc}{%
+  \setlength{\LMRowSpace}{\LMCalcRowSpace}%
+}
+\newcommand{\SetRowSpaceQanda}{%
+  \setlength{\LMRowSpace}{\LMQandaRowSpace}%
+}
+
+\newcommand{\Instruction}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
+  \fi
+  \LMInstructionUsedtrue
+  \ifLMAnswerMode
+    \par\vspace{1mm}%
+  \else
+    \noindent #1\par
+    \vspace{6mm}%
+  \fi
+}
+
+\newcommand{\InstructionTall}[1]{%
+  \ifLMInstructionUsed
+    \par\vspace{7mm}%
+  \fi
+  \LMInstructionUsedtrue
+  \ifLMAnswerMode
+    \par\vspace{1mm}%
+  \else
+    {\setlength{\baselineskip}{1.25\baselineskip}%
+     \noindent #1\par}%
+    \vspace{6mm}%
+  \fi
+}
+
+\newcommand{\Text}[1]{%
+  \ifLMAnswerMode
+  \else
+    \noindent #1\par\vspace{1mm}%
+    \vspace{\LMDefaultRowSpace}%
+  \fi
+}
+
+\newcommand{\TextTall}[1]{%
+  \ifLMAnswerMode
+  \else
+    {\setlength{\baselineskip}{1.25\baselineskip}%
+     \noindent #1\par}%
+    \vspace{1mm}%
+    \vspace{\LMDefaultRowSpace}%
+  \fi
+}
+
+\newcommand{\Q}[3]{%
+  \stepcounter{LMsubq}%
+  \noindent
+  \makebox[11mm][l]{(\theLMsubq)}%
+  \ifLMAnswerMode
+    \LMPrintAnswer{\dimexpr\linewidth-11mm\relax}{11mm}{#2}%
+  \else
+    \parbox[t]{\dimexpr\linewidth-11mm\relax}{#1}%
+    \par\vspace{#3}%
+  \fi
+}
+
+\newcommand{\BeginTwoCols}{\par\vspace{2mm}}
+\newcommand{\EndTwoCols}{\par}
+
+\newcommand{\QQ}[2]{%
+  \stepcounter{LMsubq}%
+  \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
+  \else
+    \ifLMWrapMode
+      {\hangindent=9mm\hangafter=1\noindent
+       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+       #1\par}%
+      \vspace{\LMRowSpace}%
+    \else
+      \noindent
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+      \par\vspace{\LMRowSpace}%
+    \fi
+  \fi
+}
+
+\newcommand{\QQTall}[2]{%
+  \stepcounter{LMsubq}%
+  \ifLMAnswerMode
+    \noindent
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
+  \else
+    \ifLMWrapMode
+      {\setlength{\baselineskip}{1.25\baselineskip}%
+       \hangindent=9mm\hangafter=1\noindent
+       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+       #1\par}%
+      \vspace{\LMRowSpace}%
+    \else
+      \noindent
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+        \setlength{\baselineskip}{1.25\baselineskip}%
+        #1\par
+      }%
+      \par\vspace{\LMRowSpace}%
+    \fi
+  \fi
+}
+
+\newcommand{\QQRow}[4]{%
+  \ifLMAnswerMode
+    \noindent
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
+      \stepcounter{LMsubq}%
+      \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
+      \LMFitInlineAnswer{\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#2}%
+    \end{minipage}%
+    \hspace{1mm}%
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
+      \stepcounter{LMsubq}%
+      \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
+      \LMFitInlineAnswer{\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#4}%
+    \end{minipage}%
+    \par\vspace{\LMAnswerRowSpace}%
+  \else
+    \noindent
+    \begin{minipage}[t]{0.48\linewidth}
+      \stepcounter{LMsubq}%
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.48\linewidth}
+      \stepcounter{LMsubq}%
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
+    \end{minipage}%
+    \par\vspace{\LMRowSpace}%
+  \fi
+}
+
+\newcommand{\QQSingle}[2]{%
+  \noindent
+  \begin{minipage}[t]{0.48\linewidth}
+    \stepcounter{LMsubq}%
+    \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+    \ifLMAnswerMode
+      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
+      \ifLMTallAnswer
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
+      \else
+        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
+      \fi
+    \else
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \fi
+  \end{minipage}%
+  \ifLMAnswerMode
+    \par\vspace{\LMAnswerRowSpace}%
+  \else
+    \par\vspace{\LMRowSpace}%
+  \fi
+}
+\makeatother
