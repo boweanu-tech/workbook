@@ -160,15 +160,10 @@
 }
 
 \newcommand{\LMPrintAnswer}[3]{%
-  \LMMeasureAnswer{#1}{#3}%
+  \LMPrintAnswerBox{\dimexpr\linewidth-#2\relax}{#3}%
   \ifLMTallAnswer
-    \parbox[t]{\dimexpr\linewidth-#2\relax}{%
-      \setlength{\baselineskip}{1.45\baselineskip}%
-      #3%
-    }%
     \par\vspace{3mm}%
   \else
-    \parbox[t]{\dimexpr\linewidth-#2\relax}{#3}%
     \par\vspace{\LMAnswerRowSpace}%
   \fi
 }
