@@ -157,12 +157,7 @@
     \stepcounter{LMsubq}%
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \ifLMAnswerMode
-      \LMMeasureAnswer{\dimexpr\linewidth-9mm\relax}{#2}%
-      \ifLMTallAnswer
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{\setlength{\baselineskip}{1.45\baselineskip}#2}%
-      \else
-        \parbox[t]{\dimexpr\linewidth-9mm\relax}{#2}%
-      \fi
+      \LMPrintAnswerBox{\dimexpr\linewidth-9mm\relax}{#2}%
     \else
       \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
     \fi
