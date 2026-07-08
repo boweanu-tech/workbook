@@ -1,0 +1,163 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath-answer}[2026/07/08 lotusmath answer]
+
+\makeatletter
+\newsavebox{\LMMeasureBox}
+\newlength{\LMAnswerHeight}
+\newif\ifLMTallAnswer
+
+\newlength{\LMFitAnswerWidth}
+
+\newcommand{\LMFitAnswer}[2]{%
+  \begingroup
+  \setlength{\LMFitAnswerWidth}{#1}%
+  \sbox{\LMMeasureBox}{#2}%
+  \ifdim\wd\LMMeasureBox<\LMFitAnswerWidth
+    #2%
+  \else
+    \sbox{\LMMeasureBox}{{\small #2}}%
+    \ifdim\wd\LMMeasureBox<\LMFitAnswerWidth
+      {\small #2}%
+    \else
+      \sbox{\LMMeasureBox}{{\scriptsize #2}}%
+      \ifdim\wd\LMMeasureBox<\LMFitAnswerWidth
+        {\scriptsize #2}%
+      \else
+        \resizebox{\LMFitAnswerWidth}{!}{{\scriptsize #2}}%
+      \fi
+    \fi
+  \fi
+  \endgroup
+}
+\newsavebox{\LMAnsFitBox}
+\newlength{\LMAnsFitWidth}
+\newlength{\LMAnsLabelWidth}
+\setlength{\LMAnsLabelWidth}{8mm}
+
+\newcommand{\LMFitInlineAnswer}[2]{%
+  \begingroup
+  \setlength{\LMAnsFitWidth}{#1}%
+  \sbox{\LMAnsFitBox}{#2}%
+  \ifdim\wd\LMAnsFitBox>\LMAnsFitWidth
+    \sbox{\LMAnsFitBox}{{\small #2}}%
+    \ifdim\wd\LMAnsFitBox>\LMAnsFitWidth
+      \sbox{\LMAnsFitBox}{{\scriptsize #2}}%
+      \ifdim\wd\LMAnsFitBox>\LMAnsFitWidth
+        \makebox[\LMAnsFitWidth][l]{%
+          \resizebox{\LMAnsFitWidth}{!}{\usebox{\LMAnsFitBox}}%
+        }%
+      \else
+        \makebox[\LMAnsFitWidth][l]{\usebox{\LMAnsFitBox}}%
+      \fi
+    \else
+      \makebox[\LMAnsFitWidth][l]{\usebox{\LMAnsFitBox}}%
+    \fi
+  \else
+    \makebox[\LMAnsFitWidth][l]{\usebox{\LMAnsFitBox}}%
+  \fi
+  \endgroup
+}
+
+\newcommand{\LMAnswerParbox}[2]{%
+  \parbox[t]{#1}{%
+    \raggedright
+    \LMFitAnswer{#1}{#2}%
+    \par
+  }%
+}
+
+\newcommand{\LMSetProblemDir}[1]{%
+  \filename@parse{#1}%
+  \xdef\LMCurrentProblemDir{\filename@area}%
+  \ifx\LMCurrentProblemDir\@empty
+    \graphicspath{{./}}%
+  \else
+    \graphicspath{{\LMCurrentProblemDir}{./}}%
+  \fi
+}
+
+\newcommand{\LMProblemList}{}
+\newcommand{\Use}[2]{%
+  \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2.tex}%
+  \input{#1_#2.tex}%
+  \g@addto@macro\LMProblemList{\LMAnswerInput{#1}{#2}}%
+}
+
+\newcommand{\UseREF}[3]{%
+  \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2#3.tex}%
+  \input{#1_#2#3.tex}%
+  \g@addto@macro\LMProblemList{\LMAnswerInputRef{#1}{#2}{#3}}%
+}
+
+\newcommand{\LMAnswerInput}[2]{%
+  \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2.tex}%
+  \input{#1_#2.tex}%
+}
+
+\newcommand{\LMAnswerInputRef}[3]{%
+  \gdef\LMCurrentTheme{#2}%
+  \LMSetProblemDir{#1_#2#3.tex}%
+  \input{#1_#2#3.tex}%
+}
+
+\newcommand{\BeginQuestions}{%
+  \LMAnswerModefalse
+  \setcounter{LMmajor}{0}%
+  \setcounter{LMtype}{0}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+}
+
+\newcommand{\BeginAnswers}{%
+  \clearpage
+  \LMAnswerModetrue
+  \setcounter{LMmajor}{0}%
+  \setcounter{LMtype}{0}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+  \begin{center}
+    {\Large \LMCoverTitle}\par
+    \vspace{1mm}
+    {\normalsize \LMCoverSubtitle}\par
+  \end{center}
+  \vspace{3mm}
+  \begin{multicols}{2}
+  \raggedcolumns
+  \LMInAnswerBlockfalse
+}
+
+\newcommand{\PrintAnswers}{%
+  \BeginAnswers
+  \LMProblemList
+  \ifLMInAnswerBlock\end{minipage}\par\LMInAnswerBlockfalse\fi
+  \end{multicols}
+}
+
+\newcommand{\LMMeasureAnswer}[2]{%
+  \sbox{\LMMeasureBox}{\parbox[t]{#1}{#2}}%
+  \setlength{\LMAnswerHeight}{\dimexpr\ht\LMMeasureBox+\dp\LMMeasureBox\relax}%
+  \LMTallAnswerfalse
+  \ifdim\LMAnswerHeight>15pt
+    \LMTallAnswertrue
+  \fi
+}
+
+\newcommand{\LMPrintAnswer}[3]{%
+  \LMMeasureAnswer{#1}{#3}%
+  \ifLMTallAnswer
+    \parbox[t]{\dimexpr\linewidth-#2\relax}{%
+      \setlength{\baselineskip}{1.45\baselineskip}%
+      #3%
+    }%
+    \par\vspace{3mm}%
+  \else
+    \parbox[t]{\dimexpr\linewidth-#2\relax}{#3}%
+    \par\vspace{3mm}%
+  \fi
+}
+\makeatother
