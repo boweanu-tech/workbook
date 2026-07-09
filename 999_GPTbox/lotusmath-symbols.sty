@@ -1,5 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{lotusmath-symbols}[2026/07/08 lotusmath symbols]
+\RequirePackage{environ}
 
 \makeatletter
 %数学関連マクロ
@@ -18,31 +19,37 @@
 \newcommand{\SetEqListArrayStretch}[1]{\renewcommand{\EqListArrayStretch}{#1}}
 
 % 式一覧：横3列
-\newenvironment{EqListThree}{%
-  \par\smallskip
-  \begingroup
-  \renewcommand{\arraystretch}{\EqListArrayStretch}
-  \begin{center}
-  \begin{tabular*}{0.72\linewidth}{@{\extracolsep{\fill}}lll@{}}
-}{%
-  \end{tabular*}
-  \end{center}
-  \vspace{4mm}
-  \endgroup
+\NewEnviron{EqListThree}{%
+  \ifLMAnswerMode
+  \else
+    \par\smallskip
+    \begingroup
+    \renewcommand{\arraystretch}{\EqListArrayStretch}%
+    \begin{center}
+    \begin{tabular*}{0.72\linewidth}{@{\extracolsep{\fill}}lll@{}}
+      \BODY
+    \end{tabular*}
+    \end{center}
+    \vspace{4mm}
+    \endgroup
+  \fi
 }
 
 % 式一覧：横2列
-\newenvironment{EqListTwo}{%
-  \par\smallskip
-  \begingroup
-  \renewcommand{\arraystretch}{\EqListArrayStretch}
-  \begin{center}
-  \begin{tabular*}{0.50\linewidth}{@{\extracolsep{\fill}}ll@{}}
-}{%
-  \end{tabular*}
-  \end{center}
-  \vspace{4mm}
-  \endgroup
+\NewEnviron{EqListTwo}{%
+  \ifLMAnswerMode
+  \else
+    \par\smallskip
+    \begingroup
+    \renewcommand{\arraystretch}{\EqListArrayStretch}%
+    \begin{center}
+    \begin{tabular*}{0.50\linewidth}{@{\extracolsep{\fill}}ll@{}}
+      \BODY
+    \end{tabular*}
+    \end{center}
+    \vspace{4mm}
+    \endgroup
+  \fi
 }
 
 %パーセント
