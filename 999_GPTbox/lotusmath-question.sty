@@ -14,6 +14,7 @@
 }
 
 \newcommand{\Instruction}[1]{%
+  \LMAfterTypeQuestionfalse
   \ifLMInstructionUsed
     \par\vspace{7mm}%
   \fi
@@ -27,6 +28,7 @@
 }
 
 \newcommand{\InstructionTall}[1]{%
+  \LMAfterTypeQuestionfalse
   \ifLMInstructionUsed
     \par\vspace{7mm}%
   \fi
@@ -41,6 +43,7 @@
 }
 
 \newcommand{\Text}[1]{%
+  \LMAfterTypeQuestionfalse
   \ifLMAnswerMode
   \else
     \noindent #1\par\vspace{1mm}%
@@ -49,6 +52,7 @@
 }
 
 \newcommand{\TextTall}[1]{%
+  \LMAfterTypeQuestionfalse
   \ifLMAnswerMode
   \else
     {\setlength{\baselineskip}{1.25\baselineskip}%
@@ -59,6 +63,7 @@
 }
 
 \newcommand{\Q}[3]{%
+  \LMAfterTypeQuestionfalse
   \stepcounter{LMsubq}%
   \noindent
   \makebox[11mm][l]{(\theLMsubq)}%
@@ -70,10 +75,11 @@
   \fi
 }
 
-\newcommand{\BeginTwoCols}{\par\vspace{2mm}}
-\newcommand{\EndTwoCols}{\par}
+\newcommand{\BeginTwoCols}{\LMAfterTypeQuestionfalse\par\vspace{2mm}}
+\newcommand{\EndTwoCols}{\LMAfterTypeQuestionfalse\par}
 
 \newcommand{\QQ}[2]{%
+  \LMAfterTypeQuestionfalse
   \stepcounter{LMsubq}%
   \ifLMAnswerMode
     \noindent
@@ -95,6 +101,7 @@
 }
 
 \newcommand{\QQTall}[2]{%
+  \LMAfterTypeQuestionfalse
   \stepcounter{LMsubq}%
   \ifLMAnswerMode
     \noindent
@@ -120,6 +127,7 @@
 }
 
 \newcommand{\QQRow}[4]{%
+  \LMAfterTypeQuestionfalse
   \ifLMAnswerMode
     \noindent
     \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5mm\relax}
@@ -152,6 +160,7 @@
 }
 
 \newcommand{\QQSingle}[2]{%
+  \LMAfterTypeQuestionfalse
   \noindent
   \begin{minipage}[t]{0.48\linewidth}
     \stepcounter{LMsubq}%
