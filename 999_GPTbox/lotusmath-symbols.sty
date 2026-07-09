@@ -8,13 +8,16 @@
 \newcommand{\EqNo}[1]{\textcircled{\scriptsize #1}}
 
 % 式番号つきの式
-\newcommand{\EqItem}[2]{\EqNo{#1}\ $#2$}
+\newlength{\EqItemWidth}
+\setlength{\EqItemWidth}{25mm}
+\newcommand{\SetEqItemWidth}[1]{\setlength{\EqItemWidth}{#1}}
+\newcommand{\EqItem}[2]{\makebox[\EqItemWidth][l]{\EqNo{#1}\hspace{0.4em}$#2$}}
 
 % 式一覧：横3列
 \newenvironment{EqListThree}{%
   \par\smallskip
   \begin{center}
-  \begin{tabular*}{0.72\linewidth}{@{\extracolsep{\fill}}ccc@{}}
+  \begin{tabular*}{0.72\linewidth}{@{\extracolsep{\fill}}lll@{}}
 }{%
   \end{tabular*}
   \end{center}
@@ -25,7 +28,7 @@
 \newenvironment{EqListTwo}{%
   \par\smallskip
   \begin{center}
-  \begin{tabular*}{0.50\linewidth}{@{\extracolsep{\fill}}cc@{}}
+  \begin{tabular*}{0.50\linewidth}{@{\extracolsep{\fill}}ll@{}}
 }{%
   \end{tabular*}
   \end{center}
