@@ -7,6 +7,27 @@
 %式番号
 \newcommand{\EqNo}[1]{\textcircled{\scriptsize #1}}
 
+% 式番号つきの式
+\newcommand{\EqItem}[2]{\EqNo{#1}\ $#2$}
+
+% 式一覧：横3列
+\newenvironment{EqListThree}{%
+  \par\smallskip
+  \noindent\begin{tabular}{lll}
+}{%
+  \end{tabular}
+  \par\smallskip
+}
+
+% 式一覧：横2列
+\newenvironment{EqListTwo}{%
+  \par\smallskip
+  \noindent\begin{tabular}{ll}
+}{%
+  \end{tabular}
+  \par\smallskip
+}
+
 %パーセント
 \newcommand{\percent}{％ }
 
