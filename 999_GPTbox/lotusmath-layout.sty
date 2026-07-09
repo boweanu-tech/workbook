@@ -2,6 +2,9 @@
 \ProvidesPackage{lotusmath-layout}[2026/07/08 lotusmath layout]
 
 \makeatletter
+\newif\ifLMAfterTypeQuestion
+\LMAfterTypeQuestionfalse
+
 \newcommand{\CoverPage}[2]{%
   \gdef\LMCoverTitle{#1}%
   \gdef\LMCoverSubtitle{#2}%
@@ -70,6 +73,7 @@
 
 \newcommand{\MajorQuestionLesson}[1]{%
   \ResetRowSpace
+  \LMAfterTypeQuestionfalse
   \stepcounter{LMmajor}%
   \setcounter{LMtype}{0}%
   \setcounter{LMsubq}{0}%
@@ -89,6 +93,7 @@
 
 \newcommand{\MajorQuestion}[1]{%
   \ResetRowSpace
+  \LMAfterTypeQuestionfalse
   \stepcounter{LMmajor}%
   \setcounter{LMtype}{0}%
   \setcounter{LMsubq}{0}%
@@ -109,6 +114,7 @@
 % lesson_用の大問見出し。呼び出すたびに大問番号を進め、小問番号を(1)からに戻す。
 % 例: \TypeQuestion{平方根の形にする}
 \newcommand{\TypeQuestion}[2]{%
+  \LMAfterTypeQuestionfalse
   \stepcounter{LMtype}%
   \setcounter{LMsubq}{0}%
   \ifLMInstructionUsed
@@ -132,6 +138,7 @@
     \end{minipage}%
     \par
     \vspace{6mm}%
+    \LMAfterTypeQuestiontrue
   \fi
 }
 
@@ -146,6 +153,7 @@
 }
 
 \newcommand{\LessonPageBreak}{%
+  \LMAfterTypeQuestionfalse
   \ifLMAnswerMode
     \ifLMInAnswerBlock
       \end{minipage}\par
@@ -162,6 +170,7 @@
 }
 
 \newcommand{\MakeEvenPage}{%
+  \LMAfterTypeQuestionfalse
   \clearpage
   \ifodd\value{page}%
     \null\thispagestyle{empty}\clearpage
