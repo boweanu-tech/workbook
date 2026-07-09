@@ -13,23 +13,19 @@
 % 式一覧：横3列
 \newenvironment{EqListThree}{%
   \par\smallskip
-  \begin{center}
-  \begin{tabular}{lll}
+  \noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ccc@{}}
 }{%
-  \end{tabular}
-  \end{center}
-  \vspace{1mm}
+  \end{tabular*}
+  \par\vspace{2mm}
 }
 
 % 式一覧：横2列
 \newenvironment{EqListTwo}{%
   \par\smallskip
-  \begin{center}
-  \begin{tabular}{ll}
+  \noindent\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}cc@{}}
 }{%
-  \end{tabular}
-  \end{center}
-  \vspace{1mm}
+  \end{tabular*}
+  \par\vspace{2mm}
 }
 
 %パーセント
