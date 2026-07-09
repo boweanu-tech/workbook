@@ -18,18 +18,29 @@
 \newcommand{\EqListArrayStretch}{1.6}
 \newcommand{\SetEqListArrayStretch}[1]{\renewcommand{\EqListArrayStretch}{#1}}
 
+% 式一覧の直前余白
+\newcommand{\LMPrepareEqList}{%
+  \par
+  \ifLMAfterTypeQuestion
+    \vspace{-6mm}%
+  \else
+    \smallskip
+  \fi
+  \LMAfterTypeQuestionfalse
+}
+
 % 式一覧：横3列
 \NewEnviron{EqListThree}{%
   \ifLMAnswerMode
   \else
-    \par
+    \LMPrepareEqList
     \begingroup
     \renewcommand{\arraystretch}{\EqListArrayStretch}%
-    \begin{center}
+    \noindent\hspace*{\fill}%
     \begin{tabular*}{0.72\linewidth}{@{\extracolsep{\fill}}lll@{}}
       \BODY
-    \end{tabular*}
-    \end{center}
+    \end{tabular*}%
+    \hspace*{\fill}\par
     \vspace{4mm}
     \endgroup
   \fi
@@ -39,14 +50,14 @@
 \NewEnviron{EqListTwo}{%
   \ifLMAnswerMode
   \else
-    \par
+    \LMPrepareEqList
     \begingroup
     \renewcommand{\arraystretch}{\EqListArrayStretch}%
-    \begin{center}
+    \noindent\hspace*{\fill}%
     \begin{tabular*}{0.50\linewidth}{@{\extracolsep{\fill}}ll@{}}
       \BODY
-    \end{tabular*}
-    \end{center}
+    \end{tabular*}%
+    \hspace*{\fill}\par
     \vspace{4mm}
     \endgroup
   \fi
