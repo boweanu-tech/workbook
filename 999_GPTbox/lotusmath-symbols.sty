@@ -13,26 +13,36 @@
 \newcommand{\SetEqItemWidth}[1]{\setlength{\EqItemWidth}{#1}}
 \newcommand{\EqItem}[2]{\makebox[\EqItemWidth][l]{\EqNo{#1}\hspace{0.4em}$#2$}}
 
+% 式一覧の行間
+\newcommand{\EqListArrayStretch}{1.6}
+\newcommand{\SetEqListArrayStretch}[1]{\renewcommand{\EqListArrayStretch}{#1}}
+
 % 式一覧：横3列
 \newenvironment{EqListThree}{%
   \par\smallskip
+  \begingroup
+  \renewcommand{\arraystretch}{\EqListArrayStretch}
   \begin{center}
   \begin{tabular*}{0.72\linewidth}{@{\extracolsep{\fill}}lll@{}}
 }{%
   \end{tabular*}
   \end{center}
   \vspace{4mm}
+  \endgroup
 }
 
 % 式一覧：横2列
 \newenvironment{EqListTwo}{%
   \par\smallskip
+  \begingroup
+  \renewcommand{\arraystretch}{\EqListArrayStretch}
   \begin{center}
   \begin{tabular*}{0.50\linewidth}{@{\extracolsep{\fill}}ll@{}}
 }{%
   \end{tabular*}
   \end{center}
   \vspace{4mm}
+  \endgroup
 }
 
 %パーセント
