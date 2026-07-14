@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="58mm" viewBox="0 0 80 58">
+<defs><style>.main{stroke:#000;stroke-width:.45;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.25;fill:none;stroke-linecap:round;stroke-linejoin:round}.point{fill:#000}.label{font-family:serif;font-size:3.6px;fill:#000}.math{font-family:"Latin Modern Math","CMU Serif",serif;font-size:3.6px;font-style:italic;fill:#000}.shade{fill:#ddd;stroke:none}.arrow{fill:#000}</style></defs>
+<polygon class="shade" points="46.43,45.25 16.86,19.38 66.14,33.75"/>
+<line class="main" x1="7" y1="45.25" x2="74.6" y2="45.25"/>
+<polygon class="arrow" points="76,45.25 74,44.25 74,46.25"/>
+<text class="math" x="73.8" y="43.25">x</text>
+<line class="main" x1="46.43" y1="51" x2="46.43" y2="6.4"/>
+<polygon class="arrow" points="46.43,5 45.43,7 47.43,7"/>
+<text class="math" x="47.93" y="8">y</text>
+<path class="thin" d="M 9.62 5.16 L 10.49 7.04 L 11.37 8.88 L 12.24 10.67 L 13.11 12.41 L 13.99 14.11 L 14.86 15.76 L 15.73 17.37 L 16.61 18.94 L 17.48 20.46 L 18.35 21.93 L 19.23 23.36 L 20.10 24.74 L 20.97 26.08 L 21.85 27.37 L 22.72 28.62 L 23.59 29.82 L 24.47 30.98 L 25.34 32.09 L 26.22 33.16 L 27.09 34.18 L 27.96 35.16 L 28.84 36.09 L 29.71 36.98 L 30.58 37.82 L 31.46 38.62 L 32.33 39.37 L 33.20 40.07 L 34.08 40.74 L 34.95 41.35 L 35.82 41.92 L 36.70 42.45 L 37.57 42.93 L 38.44 43.36 L 39.32 43.75 L 40.19 44.10 L 41.06 44.40 L 41.94 44.65 L 42.81 44.86 L 43.68 45.03 L 44.56 45.15 L 45.43 45.22 L 46.30 45.25 L 47.18 45.23 L 48.05 45.17 L 48.92 45.07 L 49.80 44.91 L 50.67 44.72 L 51.54 44.48 L 52.42 44.19 L 53.29 43.86 L 54.16 43.48 L 55.04 43.06 L 55.91 42.59 L 56.78 42.08 L 57.66 41.52 L 58.53 40.92 L 59.41 40.27 L 60.28 39.57 L 61.15 38.84 L 62.03 38.05 L 62.90 37.22 L 63.77 36.35 L 64.65 35.43 L 65.52 34.47 L 66.39 33.46 L 67.27 32.40 L 68.14 31.30 L 69.01 30.16 L 69.89 28.97 L 70.76 27.73 L 71.63 26.45 L 72.51 25.13 L 73.38 23.76 L 74.25 22.34 L 75.13 20.88 L 76.00 19.38"/>
+<line class="thin" x1="7.00" y1="16.50" x2="76.00" y2="36.62"/>
+<circle class="point" cx="16.86" cy="19.38" r=".45"/>
+<text class="label" x="12.86" y="17.88">A</text>
+<circle class="point" cx="66.14" cy="33.75" r=".45"/>
+<text class="label" x="67.34" y="32.25">B</text>
+<circle class="point" cx="46.43" cy="45.25" r=".45"/>
+<text class="label" x="43.43" y="49.25">O</text>
+<text class="math" x="50" y="11">y=1/2 x²</text>
+<text class="math" x="45" y="23">y=-1/2 x+3</text>
+</svg>
