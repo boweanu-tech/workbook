@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="58mm" viewBox="0 0 80 58">
+<defs><style>.main{stroke:#000;stroke-width:.45;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.25;fill:none;stroke-linecap:round;stroke-linejoin:round}.point{fill:#000}.label{font-family:serif;font-size:3.6px;fill:#000}.math{font-family:"Latin Modern Math","CMU Serif",serif;font-size:3.6px;font-style:italic;fill:#000}.shade{fill:#ddd;stroke:none}.arrow{fill:#000}</style></defs>
+<polygon class="shade" points="48.40,11.57 20.80,37.86 62.20,18.14"/>
+<line class="main" x1="7" y1="11.57" x2="74.6" y2="11.57"/>
+<polygon class="arrow" points="76,11.57 74,10.57 74,12.57"/>
+<text class="math" x="73.8" y="9.57">x</text>
+<line class="main" x1="48.40" y1="51" x2="48.40" y2="6.4"/>
+<polygon class="arrow" points="48.40,5 47.40,7 49.40,7"/>
+<text class="math" x="49.90" y="8">y</text>
+<path class="thin" d="M 14.86 50.39 L 15.73 48.39 L 16.61 46.45 L 17.48 44.56 L 18.35 42.72 L 19.23 40.94 L 20.10 39.20 L 20.97 37.53 L 21.85 35.90 L 22.72 34.32 L 23.59 32.80 L 24.47 31.33 L 25.34 29.92 L 26.22 28.55 L 27.09 27.24 L 27.96 25.99 L 28.84 24.78 L 29.71 23.63 L 30.58 22.53 L 31.46 21.48 L 32.33 20.48 L 33.20 19.54 L 34.08 18.65 L 34.95 17.81 L 35.82 17.03 L 36.70 16.30 L 37.57 15.62 L 38.44 14.99 L 39.32 14.42 L 40.19 13.90 L 41.06 13.43 L 41.94 13.01 L 42.81 12.65 L 43.68 12.34 L 44.56 12.08 L 45.43 11.88 L 46.30 11.72 L 47.18 11.62 L 48.05 11.58 L 48.92 11.58 L 49.80 11.64 L 50.67 11.75 L 51.54 11.91 L 52.42 12.13 L 53.29 12.40 L 54.16 12.72 L 55.04 13.09 L 55.91 13.52 L 56.78 14.00 L 57.66 14.53 L 58.53 15.11 L 59.41 15.75 L 60.28 16.44 L 61.15 17.18 L 62.03 17.98 L 62.90 18.83 L 63.77 19.73 L 64.65 20.68 L 65.52 21.68 L 66.39 22.74 L 67.27 23.85 L 68.14 25.02 L 69.01 26.23 L 69.89 27.50 L 70.76 28.82 L 71.63 30.20 L 72.51 31.62 L 73.38 33.10 L 74.25 34.64 L 75.13 36.22 L 76.00 37.86"/>
+<line class="thin" x1="7.00" y1="44.43" x2="76.00" y2="11.57"/>
+<circle class="point" cx="20.80" cy="37.86" r=".45"/>
+<text class="label" x="16.80" y="41.86">A</text>
+<circle class="point" cx="62.20" cy="18.14" r=".45"/>
+<text class="label" x="63.40" y="16.64">B</text>
+<circle class="point" cx="48.40" cy="11.57" r=".45"/>
+<text class="label" x="45.40" y="9.57">O</text>
+<text class="math" x="50" y="47">y=-x²</text>
+<text class="math" x="46" y="18">y=x-2</text>
+</svg>
