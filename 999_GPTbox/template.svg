@@ -8,30 +8,31 @@
   基本方針:
   - viewBox の 1 単位を 1mm として扱う。
   - TeX 側では原則として等倍または小さな倍率変更で使う。
-  - 図の余白は必要最小限にする。特に \FigProblemBlock / \QQSideFig 用の小図では、軸ラベル・点ラベル・矢印の先端が切れない範囲で、viewBox を図形本体に近づける。
-  - 図形本体は .main、補助線は .thin、点線は .dash を使う。
-  - 点は r=0.4 を標準とする。ただし、多角形の頂点には原則として黒点を打たない。
-  - 黒点は座標平面上の点・実験装置の明示点など、点そのものを強調したい場合だけ使う。
-  - 通常ラベルは .label、数式ラベルは .math-label、軸ラベルは .axis-label を使う。
-  - 領域を示すときは斜線パターンを使わず、必要なら .light-fill や .mid-fill で薄く塗る。
-  - 軸の矢印は marker-end を使わず、軸線と三角形を分けて描く。
-  - 軸線の終点は、矢印三角形の重心よりやや底辺側で止め、三角形の先から線がはみ出ないようにする。
-  - 原点 O は、原則として第3象限側、つまり原点の左下に置く。
-  - このファイルは Inkscape で見て部品の雰囲気を確認し、
-    テキストエディタでは主に下の <style> を調整する。
+  - 図の余白は必要最小限にする。
+  - 図形本体は .main、補助線・関数グラフは .thin、点線は .dash を使う。
+  - 座標平面では原点 O を必ず表示し、原則として第3象限側に置く。
+  - 点名や関数式は、曲線・直線・座標軸と重ならない位置に置く。
+  - どうしても重なる場合は、文字の背後に .label-bg を置く。
+  - 面積を求める領域は灰色で塗るだけでなく、.triangle-outline などで実線の輪郭も描く。
 
-  作図精度に関するルール:
-  - 角度弧は折れ線で近似しない。必ず SVG の A コマンドで円弧として描く。
-  - 角度弧は「中心点・半径・2本の辺方向ベクトル」から始点と終点を計算して描く。
-  - 角度弧を見た目で手置きしない。頂点中心の扇形弧になることを確認する。
-  - 補助的な破線の角度弧も、必要なら A コマンドで描く。曖昧な補助弧は置かない。
-  - 直角記号は、頂点から2辺方向へ同じ距離だけ進み、辺方向ベクトルから計算して置く。
-  - 等辺印は、辺の中点・辺方向ベクトル・法線ベクトルから計算して置く。
-  - 平行記号は、対象線分の中点と方向ベクトルから計算し、主線が記号の中央を貫くように置く。
-  - 関数グラフでは、曲線・点・補助線・塗り領域を同じ数学座標から同じSVG座標変換で描く。
-  - グラフの軸は .main、曲線・補助線・角度弧は原則 .thin を使う。
-  - 図形問題の多角形は、頂点ドットを打たず、線とラベルだけで示す。
-  - 見た目だけで線・弧・記号を配置しない。必要な交点・角度・中点は先に計算する。
+  フォント:
+  - lesson_07_setsudan_01.svg などとそろえるため、CMU Serif を第一候補にする。
+  - 通常ラベルは .label、数式は .math-label、軸文字は .axis-label を使う。
+  - 変数だけを .var で斜体にする。
+
+  数式表記:
+  - x² のようなUnicode上付き文字は使わない。
+    <tspan class="var">x</tspan><tspan class="sup" dy="-1.45">2</tspan>
+    のように上付き文字を組む。
+  - 1/2 のようなスラッシュ分数は使わない。
+    .frac-text と .frac-line を使い、縦型分数として組む。
+  - 負号は互換性のため通常の半角ハイフン "-" を使う。
+
+  作図精度:
+  - 関数グラフ・点・補助線・塗り領域は、同じ数学座標から変換して配置する。
+  - 角度弧は SVG の A コマンドを使う。
+  - 直角記号、等辺印、平行記号は辺の方向ベクトルから配置する。
+  - 軸の矢印は軸線と三角形を分け、軸線が矢印の先からはみ出ないようにする。
   -->
 
   <defs>
@@ -48,44 +49,33 @@
         fill: none;
         stroke-dasharray: 1 1;
       }
-      .section-title {
-        font-family: serif;
-        font-size: 4px;
-        font-weight: bold;
-        fill: black;
-      }
-      .note {
-        font-family: serif;
-        font-size: 3px;
-        fill: #555555;
-      }
 
       /* ========= 線 ========= */
       .main {
         stroke: black;
-        stroke-width: 0.45;
+        stroke-width: 0.55;
         fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
       .thin {
         stroke: black;
-        stroke-width: 0.25;
+        stroke-width: 0.32;
         fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
       .dash {
         stroke: black;
-        stroke-width: 0.25;
+        stroke-width: 0.32;
         fill: none;
-        stroke-dasharray: 1 1.2;
+        stroke-dasharray: 1.2 1.4;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
       .bold {
         stroke: black;
-        stroke-width: 0.70;
+        stroke-width: 0.75;
         fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -100,39 +90,66 @@
         fill: black;
         stroke: none;
       }
-      .label {
-        font-family: serif;
-        font-size: 4px;
+      .section-title,
+      .note {
+        font-family: "Noto Serif CJK JP", "IPAexMincho", "IPAMincho", serif;
         fill: black;
       }
-      .small-label {
-        font-family: serif;
-        font-size: 3.4px;
+      .label,
+      .math-label,
+      .axis-label,
+      .angle-label,
+      .frac-text {
+        font-family: "CMU Serif", "Computer Modern Serif",
+                     "Latin Modern Roman", "Times New Roman", serif;
         fill: black;
+      }
+      .section-title {
+        font-size: 4px;
+        font-weight: bold;
+      }
+      .note {
+        font-size: 3px;
+        fill: #555555;
+      }
+      .label {
+        font-size: 4.1px;
+        font-style: normal;
       }
       .math-label {
-        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
-        font-size: 4px;
-        font-style: italic;
-        fill: black;
-      }
-      .axis-label {
-        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
         font-size: 4px;
         font-style: normal;
-        fill: black;
+      }
+      .axis-label {
+        font-size: 4px;
+        font-style: italic;
       }
       .angle-label {
-        font-family: "Latin Modern Math", "Latin Modern Roman", "CMU Serif", "Computer Modern", serif;
         font-size: 3.2px;
-        fill: black;
+      }
+      .var {
+        font-style: italic;
+      }
+      .sup {
+        font-size: 2.8px;
+      }
+      .frac-text {
+        font-size: 3.2px;
+      }
+      .frac-line {
+        stroke: black;
+        stroke-width: 0.28;
+      }
+      .label-bg {
+        fill: white;
+        opacity: 0.92;
       }
 
       /* ========= 塗り ========= */
       .white-shape {
         fill: white;
         stroke: black;
-        stroke-width: 0.45;
+        stroke-width: 0.55;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
@@ -140,117 +157,94 @@
         fill: #eeeeee;
         stroke: none;
       }
-      .mid-fill {
+      .mid-fill,
+      .triangle-fill {
         fill: #dddddd;
         stroke: none;
+      }
+      .triangle-outline {
+        fill: none;
+        stroke: black;
+        stroke-width: 0.55;
+        stroke-linejoin: round;
       }
     ]]></style>
   </defs>
 
-  <!-- 描画可能範囲の目安。実際の図では削除してもよい。 -->
   <rect class="page-border" x="1" y="1" width="158" height="108"/>
   <rect class="guide" x="5" y="5" width="150" height="100"/>
 
-  <!-- ========= 1. 線の見本 ========= -->
-  <text class="section-title" x="8" y="10">1. 線の見本</text>
+  <!-- ========= 1. 線 ========= -->
+  <text class="section-title" x="8" y="10">1. 線</text>
   <line class="main" x1="10" y1="18" x2="55" y2="18"/>
-  <text class="note" x="58" y="19">.main 通常線</text>
+  <text class="note" x="58" y="19">.main</text>
   <line class="thin" x1="10" y1="25" x2="55" y2="25"/>
-  <text class="note" x="58" y="26">.thin 補助線・角度弧・曲線</text>
+  <text class="note" x="58" y="26">.thin</text>
   <line class="dash" x1="10" y1="32" x2="55" y2="32"/>
-  <text class="note" x="58" y="33">.dash 点線 短め</text>
+  <text class="note" x="58" y="33">.dash</text>
   <line class="bold" x1="10" y1="39" x2="55" y2="39"/>
-  <text class="note" x="58" y="40">.bold 強調線</text>
+  <text class="note" x="58" y="40">.bold</text>
 
-  <!-- ========= 2. 点・ラベルの見本 ========= -->
-  <text class="section-title" x="8" y="52">2. 点・ラベル</text>
-  <circle class="point" cx="18" cy="62" r="0.4"/>
+  <!-- ========= 2. 点・ラベル ========= -->
+  <text class="section-title" x="8" y="51">2. 点・ラベル</text>
+  <circle class="point" cx="18" cy="61" r="0.4"/>
   <text class="label" x="14" y="58">A</text>
-  <circle class="point" cx="38" cy="62" r="0.4"/>
-  <text class="label" x="40" y="64">B</text>
-  <line class="thin" x1="18" y1="62" x2="38" y2="62"/>
-  <text class="math-label" x="25" y="69">x</text>
-  <text class="small-label" x="48" y="62">座標点などは r=0.4</text>
-  <text class="small-label" x="48" y="67">多角形の頂点は黒点なし</text>
+  <circle class="point" cx="38" cy="61" r="0.4"/>
+  <text class="label" x="40" y="63">B</text>
+  <line class="thin" x1="18" y1="61" x2="38" y2="61"/>
 
-  <!-- ========= 3. 角度・直角・等辺・平行記号 ========= -->
-  <text class="section-title" x="88" y="10">3. 記号の見本</text>
+  <!-- Unicode上付き文字を使わない x^2 の例 -->
+  <rect class="label-bg" x="12" y="67" width="21" height="6" rx="0.4"/>
+  <text class="math-label" x="14" y="71">
+    <tspan class="var">y</tspan>=
+    <tspan class="var">x</tspan><tspan class="sup" dy="-1.45">2</tspan>
+  </text>
 
-  <!-- 三角形と角度弧。多角形の頂点には黒点を打たない。 -->
+  <!-- 縦型分数の例 y=(1/2)x^2 -->
+  <g transform="translate(38,71)">
+    <rect class="label-bg" x="-1" y="-5" width="24" height="8" rx="0.4"/>
+    <text class="math-label" x="0" y="0"><tspan class="var">y</tspan>=</text>
+    <text class="frac-text" x="6.3" y="-1.45" text-anchor="middle">1</text>
+    <line class="frac-line" x1="4.8" y1="-0.65" x2="7.8" y2="-0.65"/>
+    <text class="frac-text" x="6.3" y="2.15" text-anchor="middle">2</text>
+    <text class="math-label" x="9.2" y="0">
+      <tspan class="var">x</tspan><tspan class="sup" dy="-1.45">2</tspan>
+    </text>
+  </g>
+
+  <!-- ========= 3. 記号 ========= -->
+  <text class="section-title" x="88" y="10">3. 記号</text>
   <path class="main" d="M 95 38 L 120 18 L 142 38 Z"/>
   <text class="label" x="91" y="43">A</text>
   <text class="label" x="118" y="15">B</text>
   <text class="label" x="144" y="43">C</text>
   <path class="thin" d="M 98.12 35.50 A 4 4 0 0 1 99 38"/>
   <text class="angle-label" x="100" y="37">60°</text>
+  <path class="thin" d="M 120 35.5 L 122.5 35.5 L 122.5 38"/>
 
-  <!-- 直角記号。小さめにする。 -->
-  <path class="main" d="M 123 47 L 123 30 L 146 47 Z"/>
-  <path class="thin" d="M 123 44.5 L 125.5 44.5 L 125.5 47"/>
-  <text class="note" x="126" y="52">直角記号</text>
+  <line class="main" x1="94" y1="50" x2="126" y2="50"/>
+  <path class="thin" d="M 109.4 49 L 110.6 51"/>
+  <line class="main" x1="94" y1="57" x2="126" y2="57"/>
+  <path class="thin" d="M 108.8 56 L 110.0 58"/>
+  <path class="thin" d="M 110.1 56 L 111.3 58"/>
 
-  <!-- 等辺記号。 / や // は長さが等しいことを表す。 -->
-  <line class="main" x1="95" y1="86" x2="125" y2="86"/>
-  <path class="thin" d="M 109.4 85 L 110.6 87"/>
-  <line class="main" x1="95" y1="94" x2="125" y2="94"/>
-  <path class="thin" d="M 108.8 93 L 110.0 95"/>
-  <path class="thin" d="M 110.1 93 L 111.3 95"/>
-  <text class="note" x="130" y="88">/ は等辺印</text>
-  <text class="note" x="130" y="96">// は2本印</text>
+  <!-- ========= 4. 座標軸 ========= -->
+  <text class="section-title" x="8" y="82">4. 座標軸</text>
+  <line class="main" x1="12" y1="101" x2="68" y2="101"/>
+  <polygon class="axis-arrow" points="70,101 67.3,100.05 67.3,101.95"/>
+  <line class="main" x1="34" y1="106" x2="34" y2="84"/>
+  <polygon class="axis-arrow" points="34,82 33.05,84.7 34.95,84.7"/>
+  <text class="label" x="30.2" y="105">O</text>
+  <text class="axis-label" x="72" y="102">x</text>
+  <text class="axis-label" x="36" y="85">y</text>
+  <path class="thin" d="M 18 89 C 27 104, 42 104, 54 89"/>
 
-  <!-- 平行記号。くの字 > を線の中央に置く。 -->
-  <line class="main" x1="12" y1="86" x2="52" y2="78"/>
-  <line class="main" x1="14" y1="100" x2="54" y2="92"/>
-  <g class="thin" transform="translate(32,82) rotate(-11.3)">
-    <path d="M -1.1 -0.9 L -0.1 0 L -1.1 0.9"/>
-    <path d="M 0.2 -0.9 L 1.2 0 L 0.2 0.9"/>
-  </g>
-  <g class="thin" transform="translate(34,96) rotate(-11.3)">
-    <path d="M -1.1 -0.9 L -0.1 0 L -1.1 0.9"/>
-    <path d="M 0.2 -0.9 L 1.2 0 L 0.2 0.9"/>
-  </g>
-  <text class="note" x="58" y="90">平行記号は くの字</text>
-  <text class="note" x="58" y="95">複数組は個数で区別</text>
-  <g class="thin" transform="translate(66,100)">
-    <path d="M 0 -0.8 L 0.9 0 L 0 0.8"/>
-    <path d="M 4.0 -0.8 L 4.9 0 L 4.0 0.8"/>
-    <path d="M 5.3 -0.8 L 6.2 0 L 5.3 0.8"/>
-    <path d="M 9.0 -0.8 L 9.9 0 L 9.0 0.8"/>
-    <path d="M 10.3 -0.8 L 11.2 0 L 10.3 0.8"/>
-    <path d="M 11.6 -0.8 L 12.5 0 L 11.6 0.8"/>
-  </g>
-
-  <!-- ========= 4. 座標軸・矢印 ========= -->
-  <text class="section-title" x="8" y="77">4. 座標軸・矢印</text>
-  <line class="main" x1="12" y1="72" x2="68.0" y2="72"/>
-  <polygon class="axis-arrow" points="70,72 67.3,71.05 67.3,72.95"/>
-  <line class="main" x1="12" y1="72" x2="12" y2="50.0"/>
-  <polygon class="axis-arrow" points="12,48 11.05,50.7 12.95,50.7"/>
-  <text class="axis-label" x="8.4" y="75.8">O</text>
-  <text class="axis-label" x="72" y="73">x</text>
-  <text class="axis-label" x="9" y="47">y</text>
-  <path class="thin" d="M 18 70 C 30 50, 48 50, 64 66"/>
-  <circle class="point" cx="42" cy="55" r="0.4"/>
-  <text class="label" x="44" y="56">P</text>
-
-  <!-- ========= 5. 塗り ========= -->
-  <text class="section-title" x="88" y="55">5. 塗り</text>
-  <rect class="white-shape" x="90" y="61" width="18" height="12"/>
-  <text class="note" x="90" y="78">white-shape</text>
-  <rect class="light-fill" x="115" y="61" width="18" height="12"/>
-  <rect class="main" x="115" y="61" width="18" height="12"/>
-  <text class="note" x="115" y="78">light-fill</text>
-  <rect class="mid-fill" x="140" y="61" width="14" height="12"/>
-  <rect class="main" x="140" y="61" width="14" height="12"/>
-  <text class="note" x="139" y="78">mid-fill</text>
-
-  <!-- ========= 6. 小さな完成例 ========= -->
-  <text class="section-title" x="88" y="84">6. 完成例</text>
-  <path class="light-fill" d="M 92 102 L 116 84 L 148 102 Z"/>
-  <path class="main" d="M 92 102 L 116 84 L 148 102 Z"/>
-  <line class="dash" x1="116" y1="84" x2="116" y2="102"/>
-  <path class="thin" d="M 95.2 99.6 A 4 4 0 0 1 96 102"/>
-  <text class="label" x="88" y="107">A</text>
-  <text class="label" x="114" y="81">B</text>
-  <text class="label" x="150" y="107">C</text>
+  <!-- ========= 5. 塗りと輪郭 ========= -->
+  <text class="section-title" x="88" y="72">5. 面積領域</text>
+  <polygon class="triangle-fill" points="94,103 119,78 148,103"/>
+  <polygon class="triangle-outline" points="94,103 119,78 148,103"/>
+  <text class="label" x="90" y="108">A</text>
+  <text class="label" x="117" y="75">B</text>
+  <text class="label" x="150" y="108">C</text>
+  <text class="note" x="92" y="69">灰色の塗り＋実線の輪郭</text>
 </svg>

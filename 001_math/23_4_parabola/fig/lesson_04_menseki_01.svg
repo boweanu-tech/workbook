@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="58mm" viewBox="0 0 80 58">
-<defs><style>.main{stroke:#000;stroke-width:.45;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.25;fill:none;stroke-linecap:round;stroke-linejoin:round}.point{fill:#000}.label{font-family:serif;font-size:3.6px;fill:#000}.math{font-family:"Latin Modern Math","CMU Serif",serif;font-size:3.6px;font-style:italic;fill:#000}.shade{fill:#ddd;stroke:none}.arrow{fill:#000}</style></defs>
-<polygon class="shade" points="41.50,45.16 19.94,15.95 63.06,15.95"/>
+<defs><style><![CDATA[
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.point{fill:#000}
+.label,.math-label,.axis-label{
+  font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;
+  fill:#000
+}
+.label{font-size:4.1px;font-style:normal}
+.math-label{font-size:4.0px;font-style:normal}
+.axis-label{font-size:4.0px;font-style:italic}
+.var{font-style:italic}
+.sup{font-size:2.8px}
+.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:3.2px;fill:#000}
+.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.92}
+.triangle-fill{fill:#ddd;stroke:none}
+.triangle-outline{fill:none;stroke:#000;stroke-width:.55;stroke-linejoin:round}
+.arrow{fill:#000}
+]]></style></defs>
+
+<polygon class="triangle-fill" points="41.50,45.16 19.94,15.95 63.06,15.95"/>
+
 <line class="main" x1="7" y1="45.16" x2="74.6" y2="45.16"/>
 <polygon class="arrow" points="76,45.16 74,44.16 74,46.16"/>
-<text class="math" x="73.8" y="43.16">x</text>
+<text class="axis-label" x="73.8" y="43.16">x</text>
 <line class="main" x1="41.50" y1="51" x2="41.50" y2="6.4"/>
 <polygon class="arrow" points="41.50,5 40.50,7 42.50,7"/>
-<text class="math" x="43.00" y="8">y</text>
-<path class="thin" d="M 16.61 6.24 L 17.48 8.92 L 18.35 11.51 L 19.23 14.00 L 20.10 16.39 L 20.97 18.69 L 21.85 20.90 L 22.72 23.01 L 23.59 25.02 L 24.47 26.94 L 25.34 28.76 L 26.22 30.48 L 27.09 32.11 L 27.96 33.65 L 28.84 35.08 L 29.71 36.43 L 30.58 37.67 L 31.46 38.82 L 32.33 39.88 L 33.20 40.83 L 34.08 41.70 L 34.95 42.46 L 35.82 43.13 L 36.70 43.71 L 37.57 44.19 L 38.44 44.57 L 39.32 44.86 L 40.19 45.05 L 41.06 45.15 L 41.94 45.15 L 42.81 45.05 L 43.68 44.86 L 44.56 44.57 L 45.43 44.19 L 46.30 43.71 L 47.18 43.13 L 48.05 42.46 L 48.92 41.70 L 49.80 40.83 L 50.67 39.88 L 51.54 38.82 L 52.42 37.67 L 53.29 36.43 L 54.16 35.08 L 55.04 33.65 L 55.91 32.11 L 56.78 30.48 L 57.66 28.76 L 58.53 26.94 L 59.41 25.02 L 60.28 23.01 L 61.15 20.90 L 62.03 18.69 L 62.90 16.39 L 63.77 14.00 L 64.65 11.51 L 65.52 8.92 L 66.39 6.24"/>
+<text class="axis-label" x="43.00" y="8">y</text>
+
+<path class="thin" d="M 16.61 6.24 Q 41.50 84.08 66.39 6.24"/>
 <line class="thin" x1="7.00" y1="15.95" x2="76.00" y2="15.95"/>
+<polygon class="triangle-outline" points="41.50,45.16 19.94,15.95 63.06,15.95"/>
 <circle class="point" cx="19.94" cy="15.95" r=".45"/>
-<text class="label" x="15.94" y="14.45">A</text>
+<text class="label" x="14.6" y="14.0">A</text>
 <circle class="point" cx="63.06" cy="15.95" r=".45"/>
-<text class="label" x="64.26" y="14.45">B</text>
+<text class="label" x="64.3" y="14.0">B</text>
 <circle class="point" cx="41.50" cy="45.16" r=".45"/>
-<text class="label" x="38.50" y="49.16">O</text>
-<text class="math" x="49" y="12">y=x²</text>
-<text class="math" x="54" y="26">y=4</text>
+<text class="label" x="37.6" y="50.0">O</text>
+<rect class="label-bg" x="47.8" y="5.7" width="12.8" height="5.3" rx=".35"/>
+<text class="math-label" x="49.0" y="10.0"><tspan class="var">y</tspan>=<tspan class="var">x</tspan><tspan class="sup" dy="-1.45">2</tspan></text>
+<rect class="label-bg" x="52.8" y="22.8" width="9.0" height="5.2" rx=".35"/>
+<text class="math-label" x="54" y="27"><tspan class="var">y</tspan>=4</text>
+
 </svg>
