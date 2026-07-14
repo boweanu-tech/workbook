@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="58mm" viewBox="0 0 80 58">
+<defs><style>.main{stroke:#000;stroke-width:.45;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.25;fill:none;stroke-linecap:round;stroke-linejoin:round}.point{fill:#000}.label{font-family:serif;font-size:3.6px;fill:#000}.math{font-family:"Latin Modern Math","CMU Serif",serif;font-size:3.6px;font-style:italic;fill:#000}.shade{fill:#ddd;stroke:none}.arrow{fill:#000}</style></defs>
+<polygon class="shade" points="68.33,44.43 14.67,18.14 45.33,18.14"/>
+<line class="main" x1="7" y1="44.43" x2="74.6" y2="44.43"/>
+<polygon class="arrow" points="76,44.43 74,43.43 74,45.43"/>
+<text class="math" x="73.8" y="42.43">x</text>
+<line class="main" x1="30.00" y1="51" x2="30.00" y2="6.4"/>
+<polygon class="arrow" points="30.00,5 29.00,7 31.00,7"/>
+<text class="math" x="31.50" y="8">y</text>
+<path class="thin" d="M 11.37 5.61 L 12.24 9.17 L 13.11 12.55 L 13.99 15.76 L 14.86 18.80 L 15.73 21.68 L 16.61 24.38 L 17.48 26.91 L 18.35 29.27 L 19.23 31.46 L 20.10 33.47 L 20.97 35.32 L 21.85 37.00 L 22.72 38.51 L 23.59 39.84 L 24.47 41.01 L 25.34 42.00 L 26.22 42.83 L 27.09 43.48 L 27.96 43.96 L 28.84 44.28 L 29.71 44.42 L 30.58 44.39 L 31.46 44.19 L 32.33 43.82 L 33.20 43.28 L 34.08 42.57 L 34.95 41.69 L 35.82 40.64 L 36.70 39.42 L 37.57 38.02 L 38.44 36.46 L 39.32 34.72 L 40.19 32.82 L 41.06 30.74 L 41.94 28.50 L 42.81 26.08 L 43.68 23.49 L 44.56 20.74 L 45.43 17.81 L 46.30 14.71 L 47.18 11.44 L 48.05 8.00 L 48.92 4.39"/>
+<line class="thin" x1="7.00" y1="18.14" x2="76.00" y2="18.14"/>
+<circle class="point" cx="14.67" cy="18.14" r=".45"/>
+<text class="label" x="10.67" y="16.64">A</text>
+<circle class="point" cx="45.33" cy="18.14" r=".45"/>
+<text class="label" x="46.53" y="16.64">B</text>
+<circle class="point" cx="68.33" cy="44.43" r=".45"/>
+<text class="label" x="60.33" y="48.43">P(5,0)</text>
+<text class="math" x="31" y="11">y=x²</text>
+<text class="math" x="51" y="24">y=4</text>
+</svg>
