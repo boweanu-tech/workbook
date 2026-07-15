@@ -159,6 +159,37 @@
   \fi
 }
 
+% \QQRowThree の1列分
+\newcommand{\LMQQRowThreeCell}[2]{%
+  \begin{minipage}[t]{0.32\linewidth}
+    \stepcounter{LMsubq}%
+    \ifLMAnswerMode
+      \makebox[\LMAnsLabelWidth][l]{\textbf{(\theLMsubq)}}%
+      \LMFitInlineAnswer
+        {\dimexpr\linewidth-\LMAnsLabelWidth\relax}{#2}%
+    \else
+      \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
+    \fi
+  \end{minipage}%
+}
+
+% 3問横並び
+\newcommand{\QQRowThree}[6]{%
+  \LMAfterTypeQuestionfalse
+  \noindent
+  \LMQQRowThreeCell{#1}{#2}%
+  \hfill
+  \LMQQRowThreeCell{#3}{#4}%
+  \hfill
+  \LMQQRowThreeCell{#5}{#6}%
+  \par
+  \ifLMAnswerMode
+    \vspace{\LMAnswerRowSpace}%
+  \else
+    \vspace{\LMRowSpace}%
+  \fi
+}
 \newcommand{\QQSingle}[2]{%
   \LMAfterTypeQuestionfalse
   \noindent
