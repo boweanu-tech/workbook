@@ -86,17 +86,14 @@
     \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
     \LMPrintAnswer{\dimexpr\linewidth-9mm\relax}{9mm}{#2}%
   \else
-    \ifLMWrapMode
-      {\hangindent=9mm\hangafter=1\noindent
-       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-       #1\par}%
-      \vspace{\LMRowSpace}%
-    \else
+    {%
+      \hangindent=9mm
+      \hangafter=1
       \noindent
       \makebox[9mm][l]{\textbf{(\theLMsubq)}}%
-      \parbox[t]{\dimexpr\linewidth-9mm\relax}{#1}%
-      \par\vspace{\LMRowSpace}%
-    \fi
+      #1\par
+    }%
+    \vspace{\LMRowSpace}%
   \fi
 }
 
