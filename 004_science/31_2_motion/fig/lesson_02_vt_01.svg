@@ -1,7 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="43mm" viewBox="0 0 58 43">
-  <defs>
-    <style><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="58mm"
+   height="43mm"
+   viewBox="0 0 58 43"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="lesson_02_vt_01.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.9915589"
+     inkscape:cx="109.6063"
+     inkscape:cy="81.296558"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <defs
+     id="defs1">
+    <style
+       id="style1"><![CDATA[
       .main { stroke:#000; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .thin { stroke:#000; stroke-width:0.32; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .dash { stroke:#000; stroke-width:0.32; fill:none; stroke-dasharray:1.2 1.4; stroke-linecap:round; stroke-linejoin:round; }
@@ -16,34 +48,105 @@
       .axis-label { font-size:3.8px; font-style:italic; }
     ]]></style>
   </defs>
-
-  <line class="main" x1="7" y1="37" x2="54.2" y2="37"/>
-  <polygon class="axis-arrow" points="57,37 54.2,36 54.2,38"/>
-  <line class="main" x1="7" y1="37" x2="7" y2="3.8"/>
-  <polygon class="axis-arrow" points="7,1 6,3.8 8,3.8"/>
-
-  <text class="label" x="3.6" y="40.8">O</text>
-  <text class="axis-label" x="50.8" y="41.2">t</text>
-  <text class="math-label" x="53.1" y="41.2">[s]</text>
-  <text class="axis-label" x="9.3" y="3.4">v</text>
-  <text class="math-label" x="11.7" y="3.4">[m/s]</text>
-
-  <g class="dash">
-    <path d="M7 29 H29"/>
-    <path d="M7 5 H51"/>
-    <path d="M29 37 V5"/>
-    <path d="M51 37 V5"/>
+  <line
+     class="main"
+     x1="7"
+     y1="37"
+     x2="54.2"
+     y2="37"
+     id="line1" />
+  <polygon
+     class="axis-arrow"
+     points="57,37 54.2,36 54.2,38"
+     id="polygon1" />
+  <line
+     class="main"
+     x1="7"
+     y1="37"
+     x2="7"
+     y2="3.8"
+     id="line2" />
+  <polygon
+     class="axis-arrow"
+     points="7,1 6,3.8 8,3.8"
+     id="polygon2" />
+  <text
+     class="label"
+     x="3.6"
+     y="40.8"
+     id="text2">O</text>
+  <text
+     class="axis-label"
+     x="52.270699"
+     y="34.996178"
+     id="text3">t</text>
+  <text
+     class="math-label"
+     x="54.570698"
+     y="34.996178"
+     id="text4">[s]</text>
+  <text
+     class="axis-label"
+     x="9.3"
+     y="3.4"
+     id="text5">v</text>
+  <text
+     class="math-label"
+     x="11.7"
+     y="3.4"
+     id="text6">[m/s]</text>
+  <path
+     d="M 7,5 H 51"
+     id="path7"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.2, 1.4" />
+  <path
+     d="M 29,37 V 5"
+     id="path8"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.2, 1.4" />
+  <path
+     d="M 51,37 V 5"
+     id="path9"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.2, 1.4" />
+  <g
+     class="label"
+     id="g12">
+    <text
+       x="28.2"
+       y="40.5"
+       id="text9">4</text>
+    <text
+       x="50.2"
+       y="40.5"
+       id="text10">8</text>
+    <text
+       x="3.9"
+       y="30"
+       id="text11">2</text>
+    <text
+       x="3.9"
+       y="6"
+       id="text12">8</text>
   </g>
-
-  <g class="label">
-    <text x="28.2" y="40.5">4</text>
-    <text x="50.2" y="40.5">8</text>
-    <text x="3.9" y="30">2</text>
-    <text x="3.9" y="6">8</text>
-  </g>
-
-  <path class="thin" d="M7 29 L29 5 L51 5"/>
-  <circle class="point" cx="7" cy="29" r="0.42"/>
-  <circle class="point" cx="29" cy="5" r="0.42"/>
-  <circle class="point" cx="51" cy="5" r="0.42"/>
+  <path
+     class="thin"
+     d="M7 29 L29 5 L51 5"
+     id="path12" />
+  <circle
+     class="point"
+     cx="7"
+     cy="29"
+     r="0.42"
+     id="circle12" />
+  <circle
+     class="point"
+     cx="29"
+     cy="5"
+     r="0.42"
+     id="circle13" />
+  <circle
+     class="point"
+     cx="51"
+     cy="5"
+     r="0.42"
+     id="circle14" />
 </svg>
