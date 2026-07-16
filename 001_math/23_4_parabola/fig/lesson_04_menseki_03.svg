@@ -47,7 +47,7 @@
   </defs>
   <polygon
      class="triangle-fill"
-     points="30.00,47.46 18.50,40.38 64.50,12.08"
+     points="30.00,51.00 18.50,40.38 64.50,12.08"
      id="polygon1" />
   <line
      class="main"
@@ -68,7 +68,7 @@
   <line
      class="main"
      x1="30.00"
-     y1="51"
+     y1="54"
      x2="30.00"
      y2="6.4"
      id="line2" />
@@ -94,7 +94,7 @@
      id="line3" />
   <polygon
      class="triangle-outline"
-     points="30.00,47.46 18.50,40.38 64.50,12.08"
+     points="30.00,51.00 18.50,40.38 64.50,12.08"
      id="polygon4" />
   <circle
      class="point"
@@ -121,13 +121,13 @@
   <circle
      class="point"
      cx="30.00"
-     cy="47.46"
+     cy="51.00"
      r=".45"
      id="circle6" />
   <text
      class="label"
      x="31.669216"
-     y="50.434555"
+     y="55.0"
      id="text6">C</text>
   <text
      class="label"
