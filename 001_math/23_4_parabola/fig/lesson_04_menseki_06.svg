@@ -4,32 +4,20 @@
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .point{fill:#000}
-.label,.math-label,.axis-label{
-  font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;
-  fill:#000
-}
+.label,.axis-label,.name{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000}
 .label{font-size:4.1px;font-style:normal}
-.math-label{font-size:4.0px;font-style:normal}
-.axis-label{font-size:4.0px;font-style:italic}
-.var{font-style:italic}
-.sup{font-size:2.8px}
-.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:3.2px;fill:#000}
-.frac-line{stroke:#000;stroke-width:.28}
-.label-bg{fill:#fff;opacity:.92}
+.axis-label,.name{font-size:4.1px;font-style:italic}
 .triangle-fill{fill:#ddd;stroke:none}
 .triangle-outline{fill:none;stroke:#000;stroke-width:.55;stroke-linejoin:round}
 .arrow{fill:#000}
 ]]></style></defs>
-
 <polygon class="triangle-fill" points="46.43,45.25 16.86,19.38 66.14,33.75"/>
-
 <line class="main" x1="7" y1="45.25" x2="74.6" y2="45.25"/>
 <polygon class="arrow" points="76,45.25 74,44.25 74,46.25"/>
 <text class="axis-label" x="73.8" y="43.25">x</text>
 <line class="main" x1="46.43" y1="51" x2="46.43" y2="6.4"/>
 <polygon class="arrow" points="46.43,5 45.43,7 47.43,7"/>
 <text class="axis-label" x="47.93" y="8">y</text>
-
 <path class="thin" d="M 9.62 5.16 Q 42.81 77.45 76.00 19.38"/>
 <line class="thin" x1="7.00" y1="16.50" x2="76.00" y2="36.62"/>
 <polygon class="triangle-outline" points="46.43,45.25 16.86,19.38 66.14,33.75"/>
@@ -39,23 +27,6 @@
 <text class="label" x="67.2" y="31.9">B</text>
 <circle class="point" cx="46.43" cy="45.25" r=".45"/>
 <text class="label" x="42.2" y="50.1">O</text>
-
-<g transform="translate(53.5,10.5)">
-  <rect x="-0.8" y="-4.5" width="17.5" height="7.2" rx=".5" fill="#fff" opacity=".88"/>
-  <text class="math-label" x="0" y="0"><tspan class="var">y</tspan>=</text>
-  <text class="frac-text" x="6.3" y="-1.45" text-anchor="middle">1</text>
-  <line class="frac-line" x1="4.8" y1="-0.65" x2="7.8" y2="-0.65"/>
-  <text class="frac-text" x="6.3" y="2.15" text-anchor="middle">2</text>
-  <text class="math-label" x="9.2" y="0"><tspan class="var">x</tspan><tspan class="sup" dy="-1.45">2</tspan></text>
-</g>
-
-<g transform="translate(49.5,26.0)">
-  <rect x="-0.8" y="-4.5" width="25.0" height="7.2" rx=".5" fill="#fff" opacity=".88"/>
-  <text class="math-label" x="0" y="0"><tspan class="var">y</tspan>=-</text>
-  <text class="frac-text" x="8.4" y="-1.45" text-anchor="middle">1</text>
-  <line class="frac-line" x1="6.9" y1="-0.65" x2="9.9" y2="-0.65"/>
-  <text class="frac-text" x="8.4" y="2.15" text-anchor="middle">2</text>
-  <text class="math-label" x="11.2" y="0"><tspan class="var">x</tspan>+3</text>
-</g>
-
+<text class="name" x="70.0" y="21.7">m</text>
+<text class="name" x="70.2" y="35.0">l</text>
 </svg>
