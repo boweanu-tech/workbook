@@ -1,47 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="43mm" viewBox="0 0 58 43">
   <defs>
     <style><![CDATA[
-      .main{stroke:black;stroke-width:0.55;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-      .thin{stroke:black;stroke-width:0.32;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-      .dash{stroke:black;stroke-width:0.32;fill:none;stroke-dasharray:1.2 1.4;stroke-linecap:round;stroke-linejoin:round;}
-      .bold{stroke:black;stroke-width:0.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-      .grid{stroke:#d8d8d8;stroke-width:0.18;fill:none;}
-      .axis-arrow{fill:black;stroke:none;}
-      .point{fill:black;stroke:none;}
-      .label,.math-label,.axis-label,.tick{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:black;}
-      .label{font-size:4.1px;font-style:normal;}
-      .math-label{font-size:4px;font-style:normal;}
-      .axis-label{font-size:4px;font-style:italic;}
-      .tick{font-size:3px;font-style:normal;}
-      .var{font-style:italic;}
+      .main { stroke:#000; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#000; stroke-width:0.32; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .dash { stroke:#000; stroke-width:0.28; fill:none; stroke-dasharray:1.2 1.4; stroke-linecap:round; }
+      .axis-arrow { fill:#000; stroke:none; }
+      .point { fill:#000; stroke:none; }
+      .label, .math-label, .axis-label {
+        font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;
+        fill:#000;
+      }
+      .label { font-size:3.2px; font-style:normal; }
+      .math-label { font-size:3.2px; font-style:normal; }
+      .axis-label { font-size:3.8px; font-style:italic; }
     ]]></style>
   </defs>
-  <rect x="0" y="0" width="60" height="42" fill="white"/>
-  <g transform="translate(9,33)">
-    <line class="main" x1="0" y1="0" x2="43" y2="0"/>
-    <polygon class="axis-arrow" points="45,0 42.3,-0.95 42.3,0.95"/>
-    <line class="main" x1="0" y1="0" x2="0" y2="-26"/>
-    <polygon class="axis-arrow" points="0,-28 -0.95,-25.3 0.95,-25.3"/>
 
-    <text class="axis-label" x="46.2" y="1.2">t</text>
-    <text class="label" x="48.5" y="1.2">[s]</text>
-    <text class="axis-label" x="-5.7" y="-29.2">x</text>
-    <text class="label" x="-2.8" y="-29.2">[m]</text>
-    <text class="tick" x="-3.2" y="4.0">O</text>
+  <line class="main" x1="7" y1="38" x2="54.2" y2="38"/>
+  <polygon class="axis-arrow" points="57,38 54.2,37 54.2,39"/>
+  <line class="main" x1="7" y1="38" x2="7" y2="3.8"/>
+  <polygon class="axis-arrow" points="7,1 6,3.8 8,3.8"/>
 
-    <g>
-      <line class="grid" x1="7" y1="0" x2="7" y2="-25.2"/><line class="grid" x1="14" y1="0" x2="14" y2="-25.2"/><line class="grid" x1="21" y1="0" x2="21" y2="-25.2"/><line class="grid" x1="28" y1="0" x2="28" y2="-25.2"/><line class="grid" x1="35" y1="0" x2="35" y2="-25.2"/><line class="grid" x1="42" y1="0" x2="42" y2="-25.2"/>
-      <line class="grid" x1="0" y1="-7" x2="42" y2="-7"/><line class="grid" x1="0" y1="-14" x2="42" y2="-14"/><line class="grid" x1="0" y1="-21" x2="42" y2="-21"/>
-    </g>
-    <g class="tick">
-      <text x="6.0" y="4.0">1</text><text x="13.0" y="4.0">2</text><text x="20.0" y="4.0">3</text><text x="27.0" y="4.0">4</text><text x="34.0" y="4.0">5</text><text x="41.0" y="4.0">6</text>
-      <text x="-5.8" y="-5.9">5</text><text x="-8.0" y="-12.9">10</text><text x="-8.0" y="-19.9">15</text>
-    </g>
+  <text class="label" x="3.6" y="41.6">O</text>
+  <text class="axis-label" x="50.8" y="42">t</text>
+  <text class="math-label" x="53.1" y="42">[s]</text>
+  <text class="axis-label" x="0.8" y="3.5">x</text>
+  <text class="math-label" x="3.4" y="3.5">[m]</text>
 
-    <path class="bold" d="M0 -5.6 C7 -8.0 14 -9.8 21 -11.2 C28 -12.0 35 -11.2 42 -9.8"/>
-    <line class="dash" x1="0" y1="-7" x2="28" y2="-12.6"/>
-    <circle class="point" cx="14" cy="-9.8" r="0.55"/>
-    <text class="math-label" x="15.4" y="-11.0"><tspan class="var">t</tspan>=2.0</text>
+  <g class="dash">
+    <path d="M7 24.8 H7"/>
+    <path d="M22 38 V14.9 H7"/>
+    <path d="M37 38 V8.3 H7"/>
+    <path d="M52 38 V14.9 H7"/>
+    <path d="M7 21.5 H7"/>
   </g>
+
+  <g class="label">
+    <text x="21.2" y="41.5">2</text>
+    <text x="36.2" y="41.5">4</text>
+    <text x="51.2" y="41.5">6</text>
+    <text x="3.9" y="25.8">4</text>
+    <text x="3.9" y="22.5">5</text>
+    <text x="3.9" y="15.9">7</text>
+    <text x="3.9" y="9.3">9</text>
+  </g>
+
+  <path class="thin" d="M7 24.8 Q29.5 5 52 14.9"/>
+  <line class="main" x1="7" y1="21.5" x2="48.25" y2="3.35"/>
+
+  <circle class="point" cx="7" cy="24.8" r="0.42"/>
+  <circle class="point" cx="22" cy="14.9" r="0.42"/>
+  <circle class="point" cx="52" cy="14.9" r="0.42"/>
+  <circle class="point" cx="7" cy="21.5" r="0.42"/>
+  <circle class="point" cx="37" cy="8.3" r="0.42"/>
 </svg>
