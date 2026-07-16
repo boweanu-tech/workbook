@@ -21,9 +21,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="3.9915589"
-     inkscape:cx="120.37903"
-     inkscape:cy="94.825107"
+     inkscape:zoom="2.8224584"
+     inkscape:cx="113.19919"
+     inkscape:cy="78.123383"
      inkscape:window-width="1920"
      inkscape:window-height="996"
      inkscape:window-x="1920"
@@ -72,8 +72,8 @@
      id="polygon2" />
   <text
      class="label"
-     x="3.6"
-     y="34.6"
+     x="3.5999999"
+     y="32.894184"
      id="text2">O</text>
   <text
      class="axis-label"
@@ -111,46 +111,51 @@
        d="M52 31 V35.2 H7"
        id="path9" />
   </g>
-  <g
-     class="label"
-     id="g17">
-    <text
-       x="21.2"
-       y="39.5"
-       id="text9">2</text>
-    <text
-       x="36.2"
-       y="39.5"
-       id="text10">4</text>
-    <text
-       x="43.7"
-       y="39.5"
-       id="text11">5</text>
-    <text
-       x="51.2"
-       y="39.5"
-       id="text12">6</text>
-    <text
-       x="2.2"
-       y="6.8"
-       id="text13">18</text>
-    <text
-       x="2.2"
-       y="11.0"
-       id="text14">15</text>
-    <text
-       x="3.9"
-       y="20.8"
-       id="text15">8</text>
-    <text
-       x="3.9"
-       y="27.8"
-       id="text16">3</text>
-    <text
-       x="1.0"
-       y="36.2"
-       id="text17">-3</text>
-  </g>
+  <text
+     x="21.200001"
+     y="34.027905"
+     id="text9"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">2</text>
+  <text
+     x="36.200001"
+     y="34.027905"
+     id="text10"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">4</text>
+  <text
+     x="43.700001"
+     y="34.027905"
+     id="text11"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">5</text>
+  <text
+     x="52.319294"
+     y="34.027905"
+     id="text12"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">6</text>
+  <text
+     x="2.2"
+     y="6.8000002"
+     id="text13"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">18</text>
+  <text
+     x="2.2"
+     y="11"
+     id="text14"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">15</text>
+  <text
+     x="3.9000001"
+     y="20.799999"
+     id="text15"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">8</text>
+  <text
+     x="3.9000001"
+     y="27.799999"
+     id="text16"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">3</text>
+  <text
+     x="3.1024919"
+     y="36.200001"
+     id="text17"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">-3</text>
   <path
      class="thin"
      d="M7 5.8 Q29.5 7.9 52 35.2"

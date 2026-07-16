@@ -25,8 +25,8 @@
      inkscape:cx="94.825107"
      inkscape:cy="98.332509"
      inkscape:window-width="1920"
-     inkscape:window-height="996"
-     inkscape:window-x="1920"
+     inkscape:window-height="1044"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg19" />
@@ -113,38 +113,41 @@
      d="M 52,38 V 24.8 H 7"
      id="path9"
      style="fill:none;stroke:#000000;stroke-width:0.28;stroke-linecap:round;stroke-dasharray:1.2, 1.4" />
-  <g
-     class="label"
-     id="g15">
-    <text
-       x="13.7"
-       y="41.5"
-       id="text9">1</text>
-    <text
-       x="21.2"
-       y="41.5"
-       id="text10">2</text>
-    <text
-       x="43.7"
-       y="41.5"
-       id="text11">5</text>
-    <text
-       x="51.2"
-       y="41.5"
-       id="text12">6</text>
-    <text
-       x="3.9"
-       y="25.8"
-       id="text13">6</text>
-    <text
-       x="0.5"
-       y="20.3"
-       id="text14">8.5</text>
-    <text
-       x="2.2"
-       y="17.0"
-       id="text15">10</text>
-  </g>
+  <text
+     x="13.7"
+     y="41.5"
+     id="text9"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">1</text>
+  <text
+     x="21.200001"
+     y="41.5"
+     id="text10"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">2</text>
+  <text
+     x="43.700001"
+     y="41.5"
+     id="text11"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">5</text>
+  <text
+     x="51.200001"
+     y="41.5"
+     id="text12"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">6</text>
+  <text
+     x="3.9000001"
+     y="25.799999"
+     id="text13"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">6</text>
+  <text
+     x="1.2657701"
+     y="20.299999"
+     id="text14"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">8.5</text>
+  <text
+     x="2.2"
+     y="17"
+     id="text15"
+     style="font-style:normal;font-size:3.2px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;fill:#000000">10</text>
   <path
      class="thin"
      d="M7 24.8 Q29.5 5 52 24.8"
