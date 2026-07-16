@@ -26,7 +26,7 @@
       <text x="-6" y="-6">5</text><text x="-8" y="-13">10</text><text x="-8" y="-20">15</text>
     </g>
     <path class="curve" d="M0 -5.6 C7 -8.0 14 -9.8 21 -11.2 C28 -12.0 35 -11.2 42 -9.8"/>
-    <line class="tan" x1="7" y1="-7" x2="28" y2="-11.2"/>
+    <line class="tan" x1="0" y1="-7" x2="28" y2="-12.6"/>
     <circle cx="14" cy="-9.8" r="0.9" fill="#000"/>
     <text class="small" x="15.2" y="-11.0">t=2.0</text>
   </g>
