@@ -4,32 +4,20 @@
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .point{fill:#000}
-.label,.math-label,.axis-label{
-  font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;
-  fill:#000
-}
+.label,.axis-label,.name{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000}
 .label{font-size:4.1px;font-style:normal}
-.math-label{font-size:4.0px;font-style:normal}
-.axis-label{font-size:4.0px;font-style:italic}
-.var{font-style:italic}
-.sup{font-size:2.8px}
-.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:3.2px;fill:#000}
-.frac-line{stroke:#000;stroke-width:.28}
-.label-bg{fill:#fff;opacity:.92}
+.axis-label,.name{font-size:4.1px;font-style:italic}
 .triangle-fill{fill:#ddd;stroke:none}
 .triangle-outline{fill:none;stroke:#000;stroke-width:.55;stroke-linejoin:round}
 .arrow{fill:#000}
 ]]></style></defs>
-
 <polygon class="triangle-fill" points="41.50,45.16 19.94,15.95 63.06,15.95"/>
-
 <line class="main" x1="7" y1="45.16" x2="74.6" y2="45.16"/>
 <polygon class="arrow" points="76,45.16 74,44.16 74,46.16"/>
 <text class="axis-label" x="73.8" y="43.16">x</text>
 <line class="main" x1="41.50" y1="51" x2="41.50" y2="6.4"/>
 <polygon class="arrow" points="41.50,5 40.50,7 42.50,7"/>
 <text class="axis-label" x="43.00" y="8">y</text>
-
 <path class="thin" d="M 16.61 6.24 Q 41.50 84.08 66.39 6.24"/>
 <line class="thin" x1="7.00" y1="15.95" x2="76.00" y2="15.95"/>
 <polygon class="triangle-outline" points="41.50,45.16 19.94,15.95 63.06,15.95"/>
@@ -39,9 +27,6 @@
 <text class="label" x="64.3" y="14.0">B</text>
 <circle class="point" cx="41.50" cy="45.16" r=".45"/>
 <text class="label" x="37.6" y="50.0">O</text>
-<rect class="label-bg" x="47.8" y="5.7" width="12.8" height="5.3" rx=".35"/>
-<text class="math-label" x="49.0" y="10.0"><tspan class="var">y</tspan>=<tspan class="var">x</tspan><tspan class="sup" dy="-1.45">2</tspan></text>
-<rect class="label-bg" x="52.8" y="22.8" width="9.0" height="5.2" rx=".35"/>
-<text class="math-label" x="54" y="27"><tspan class="var">y</tspan>=4</text>
-
+<text class="name" x="61.8" y="8.8">m</text>
+<text class="name" x="69.2" y="14.2">l</text>
 </svg>
