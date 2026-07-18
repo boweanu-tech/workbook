@@ -175,14 +175,17 @@
 }
 
 \newcommand{\AnswerTwoLines}[2]{%
-  \shortstack[l]{#1\\[1mm]#2}%
+  \begin{tabular}[t]{@{}l@{}}
+    #1\\[1mm]
+    #2
+  \end{tabular}%
 }
 
 \newcommand{\AnswerThreeLines}[3]{%
-  \shortstack[l]{%
+  \begin{tabular}[t]{@{}l@{}}
     #1\\[1mm]
     #2\\[1mm]
-    #3%
-  }%
+    #3
+  \end{tabular}%
 }
 \makeatother
