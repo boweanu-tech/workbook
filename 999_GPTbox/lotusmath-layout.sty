@@ -169,6 +169,14 @@
   \fi
 }
 
+\newcommand{\LessonQuestionBreak}{%
+  \LMAfterTypeQuestionfalse
+  \ifLMAnswerMode
+  \else
+    \clearpage
+  \fi
+}
+
 \newcommand{\MakeEvenPage}{%
   \LMAfterTypeQuestionfalse
   \clearpage
