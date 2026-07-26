@@ -4,41 +4,43 @@
 
 \TypeQuestionDouble{表の各列について、$x$ と $y$ の値の組が二元一次方程式を成り立たせるように、空欄を埋めなさい。}{hyou}
 
-\QQRow{%
-  $x+y=3$\par\smallskip
-  {\renewcommand{\arraystretch}{1.4}%
-  \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    $x$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\ \hline
-    $y$ &      &     &     &     &     \\ \hline
-  \end{tabular}}%
-}{}{%
-  $x-2y=0$\par\smallskip
-  {\renewcommand{\arraystretch}{1.4}%
-  \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    $x$ &      &     &     &     &     \\ \hline
-    $y$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\ \hline
-  \end{tabular}}%
-}{}
+\begingroup
+\newcommand{\SimTableCell}[1]{%
+  \makebox[5mm][c]{\raisebox{0.3mm}{$#1$}}%
+}
+\renewcommand{\arraystretch}{1.4}
 
 \QQRow{%
-  $2x+y=5$\par\smallskip
-  {\renewcommand{\arraystretch}{1.4}%
+  $x+y=3$\par\smallskip
   \begin{tabular}{|c|c|c|c|c|c|}
     \hline
-    $x$ & $-1$ &     & $1$ & $2$ &      \\ \hline
-    $y$ &      & $5$ &     &     & $-1$ \\ \hline
-  \end{tabular}}%
+    \SimTableCell{x} & \SimTableCell{-1} & \SimTableCell{0} & \SimTableCell{1} & \SimTableCell{2} & \SimTableCell{3} \\ \hline
+    \SimTableCell{y} & \SimTableCell{}   & \SimTableCell{}  & \SimTableCell{}  & \SimTableCell{}  & \SimTableCell{}  \\ \hline
+  \end{tabular}%
+}{}{%
+  $x-2y=0$\par\smallskip
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \SimTableCell{x} & \SimTableCell{}   & \SimTableCell{}  & \SimTableCell{}  & \SimTableCell{}  & \SimTableCell{}  \\ \hline
+    \SimTableCell{y} & \SimTableCell{-1} & \SimTableCell{0} & \SimTableCell{1} & \SimTableCell{2} & \SimTableCell{3} \\ \hline
+  \end{tabular}%
+}{}\n
+\QQRow{%
+  $2x+y=5$\par\smallskip
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \SimTableCell{x} & \SimTableCell{-1} & \SimTableCell{}  & \SimTableCell{1}  & \SimTableCell{2} & \SimTableCell{}   \\ \hline
+    \SimTableCell{y} & \SimTableCell{}   & \SimTableCell{5} & \SimTableCell{}   & \SimTableCell{}  & \SimTableCell{-1} \\ \hline
+  \end{tabular}%
 }{}{%
   $x-3y=-1$\par\smallskip
-  {\renewcommand{\arraystretch}{1.4}%
   \begin{tabular}{|c|c|c|c|c|c|}
     \hline
-    $x$ & $-4$ &     & $2$ &     & $8$ \\ \hline
-    $y$ &      & $0$ &     & $2$ &     \\ \hline
-  \end{tabular}}%
-}{}
+    \SimTableCell{x} & \SimTableCell{-4} & \SimTableCell{}  & \SimTableCell{2} & \SimTableCell{}  & \SimTableCell{8} \\ \hline
+    \SimTableCell{y} & \SimTableCell{}   & \SimTableCell{0} & \SimTableCell{}  & \SimTableCell{2} & \SimTableCell{}  \\ \hline
+  \end{tabular}%
+}{}\n
+\endgroup
 
 \TypeQuestionDouble{次の数の組を二元一次方程式に代入したとき、等式が成り立つ場合は○、成り立たない場合は×を答えなさい。}{nigenkai}
 \QQRow{$x=2,\ y=3$ は $x+y=5$ の解である}{}{$x=-1,\ y=4$ は $2x+y=1$ の解である}{}
