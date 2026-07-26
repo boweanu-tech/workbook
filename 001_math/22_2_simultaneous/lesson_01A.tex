@@ -2,16 +2,43 @@
 \MajorQuestionLesson{連立方程式の意味と解}
 \SetRowSpace{6mm}
 
-%\TypeQuestionDoubleを１つ新設します
-%表があって、「xとyの二元一次方程式を成立させるx,yの値の組を求めて、表を完成させなさい」という問題。
-%yがわが全部空欄、x側が全部空欄、空欄がx,y側に混在など。合計4問
-%値が片側で全部指定されている時、その値は全て連続する整数にして下さい。
-%それとなく、小問に共通の数字ペアが含まれていて、自然と連立方程式の解が分かるようになっているとベストです。
+\TypeQuestionDouble{表の各列について、$x$ と $y$ の値の組が二元一次方程式を成り立たせるように、空欄を埋めなさい。}{hyou}
 
-\TypeQuestionDouble{次の数の組を二元一次方程式に代入したとき、等式が成り立つ場合は○、成り立たない場合は×を答えなさい。}{nigenkai}
-\QQRow{$x=2,\ y=3$ は $x+y=5$ の解である}{}{$x=-1,\ y=4$ は $2x+y=1$ の解である}{}
-\QQRow{$x=3,\ y=-2$ は $x-2y=6$ の解である}{}{$x=0,\ y=-5$ は $3x-y=5$ の解である}{}
-\QQRow{$x=\dfrac{1}{2},\ y=2$ は $4x-y=0$ の解である}{}{$x=-3,\ y=\dfrac{1}{2}$ は $x+2y=-1$ の解である}{}
+\QQRow{%
+  $x+y=3$\par\smallskip
+  {\renewcommand{\arraystretch}{1.4}%
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $x$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\ \hline
+    $y$ &      &     &     &     &     \\ \hline
+  \end{tabular}}%
+}{}{%
+  $x-2y=0$\par\smallskip
+  {\renewcommand{\arraystretch}{1.4}%
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $x$ &      &     &     &     &     \\ \hline
+    $y$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\ \hline
+  \end{tabular}}%
+}{}
+
+\QQRow{%
+  $2x+y=5$\par\smallskip
+  {\renewcommand{\arraystretch}{1.4}%
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $x$ & $-1$ &     & $1$ & $2$ &      \\ \hline
+    $y$ &      & $5$ &     &     & $-1$ \\ \hline
+  \end{tabular}}%
+}{}{%
+  $x-3y=-1$\par\smallskip
+  {\renewcommand{\arraystretch}{1.4}%
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $x$ & $-4$ &     & $2$ &     & $8$ \\ \hline
+    $y$ &      & $0$ &     & $2$ &     \\ \hline
+  \end{tabular}}%
+}{}
 
 \TypeQuestionDouble{次の数の組が、与えられた連立方程式の解である場合は○、そうでない場合は×を答えなさい。}{kaihan}
 \QQRow{$(x,y)=(-1,3),\quad \begin{cases}2x+y=1\\x-y=-3\end{cases}$}{}{$(x,y)=(3,-1),\quad \begin{cases}x-2y=5\\3x+y=8\end{cases}$}{}
