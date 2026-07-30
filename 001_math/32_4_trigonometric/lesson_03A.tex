@@ -1,10 +1,17 @@
 % theme: graphs_of_trigonometric_functions←修正して下さい。
 \MajorQuestionLesson{三角関数のグラフと最大・最小}
+
 \SetRowSpace{3mm}
+
+%y=sin(\theta)のような基礎の三角関数に定義域が与えられていて、
+%図中の複数の点の座標を答えさせる問題
+%4題 sin cos tan それぞれ１つは登場させて
+\TypeQuestionSingle{}{}
 
 \TypeQuestionDouble{基本となる三角関数のグラフをもとに考え、次の関数のグラフを、指定された範囲にかきなさい。}{horizontal_transform}
 % 図生成工程：各小問に、横軸を弧度法で目盛った座標平面を挿入する。
 %問題数を多くして下さい。合計12題、係数を変えてsin cos tanで4問ずつ。平行移動はなしでOKです。
+%周期も答えさせるようにして下さい。
 \QQRow
   {$y=\sin2\theta\quad(-\pi\leqq\theta\leqq\pi)$}{}
   {$y=\cos\dfrac{\theta}{2}\quad(-2\pi\leqq\theta\leqq2\pi)$}{}
@@ -14,33 +21,34 @@
 
 \TypeQuestionDouble{基本となる三角関数のグラフを平行移動して、次の関数のグラフを、指定された範囲にかきなさい。}{translation}
 % 図生成工程：各小問に、横軸を弧度法で目盛った座標平面を挿入する。
+%問題数を多くして下さい。合計12題、係数を変えてsin cos tanで4問ずつ。平行移動はx軸方向だけアリに統一してください。
+%周期も答えさせるようにして下さい。
 \QQRow
   {$y=\sin\left(\theta-\dfrac{\pi}{3}\right)\quad(-\pi\leqq\theta\leqq2\pi)$}{}
   {$y=\cos\left(\theta+\dfrac{\pi}{4}\right)\quad(-2\pi\leqq\theta\leqq\pi)$}{}
 \QQRow
   {$y=\tan\left(\theta-\dfrac{\pi}{6}\right)\quad\left(-\dfrac{\pi}{2}<\theta<\dfrac{\pi}{2}\right)$}{}
   {$y=\sin\left(\theta+\dfrac{\pi}{2}\right)-1\quad(-2\pi\leqq\theta\leqq2\pi)$}{}
+  
+%ページを切り替えて最大・最小の問題
 
-\SetRowSpace{2mm}
-\TypeQuestionSingle{次の関数の周期のうち、正で最小のものを答えなさい。}{period}
-\QQRowThree
-  {$y=\sin3\theta$}{}
-  {$y=\cos\dfrac{\theta}{2}$}{}
-  {$y=\tan4\theta$}{}
-\QQRowThree
-  {$y=-2\cos5\theta$}{}
-  {$y=\sin\left(2\theta-\dfrac{\pi}{3}\right)$}{}
-  {$y=3\tan\left(\dfrac{\theta}{3}+\dfrac{\pi}{6}\right)$}{}
-\QQRowThree
-  {$y=\cos\left(\dfrac{3}{2}\theta+\pi\right)$}{}
-  {$y=-\sin\dfrac{\theta}{4}+2$}{}
-  {$y=\dfrac{1}{2}\tan\left(6\theta-\dfrac{\pi}{4}\right)$}{}
+%y=sin(\theta-\dfrac{1}{6}\pi)のような単純な三角関数に定義域が与えられていて、
+%最大・最小を求める問題
+%8題
+\TypeQuestionSingle{}{}
 
-\TypeQuestionDouble{図のグラフを表す式として最も適切なものを、各小問の選択肢から1つ選びなさい。}{identify_equation}
-% 図生成工程：振幅・周期・平行移動を読み取るグラフを各小問に挿入し、選択肢も図に合わせて追加する。
-\QQRow
-  {図1}{}
-  {図2}{}
-\QQRow
-  {図3}{}
-  {図4}{}
+%cos　や sin　をtなどで置き換えて解く問題。
+%相互関係を使う必要はナシのやつ
+%4題
+\TypeQuestionSingle{}{}
+
+
+
+%cos　や sin　をtなどで置き換えて解く問題。
+%相互関係を使う必要があるやつ
+%4題
+\TypeQuestionSingle{}{}
+
+
+
+
