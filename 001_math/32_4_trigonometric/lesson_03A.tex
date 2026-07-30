@@ -7,18 +7,16 @@
 % 図生成工程：各小問に、指定範囲の基本グラフと3点 P, Q, R を示す。
 % 各点は、目盛や補助線から座標を直接読むのではなく、基本グラフの特徴から座標を判断する位置に置く。
 % (1) P,Q,R の theta 座標：pi/2, pi, 3pi/2
-% (2) P,Q,R の theta 座標：-pi, -pi/2, 0
-% (3) P,Q,R の theta 座標：-pi/4, 0, pi/4
-% (4) P,Q,R の theta 座標：-pi/2, 0, pi/2
+% (2) P,Q,R の theta 座標：-pi/4, 0, pi/4
 \QQRow
   {$y=\sin\theta\quad(0\leqq\theta\leqq2\pi)$}{}
-  {$y=\cos\theta\quad(-\pi\leqq\theta\leqq\pi)$}{}
-\QQRow
   {$y=\tan\theta\quad\left(-\dfrac{\pi}{2}<\theta<\dfrac{\pi}{2}\right)$}{}
-  {$y=\sin\theta\quad(-\pi\leqq\theta\leqq\pi)$}{}
+\QQRow
 
 \TypeQuestionDouble{基本となる三角関数のグラフをもとに考え、次の関数のグラフを指定された範囲にかき、その周期を求めなさい。}{horizontal_transform}
 % 図生成工程：各小問に、横軸を弧度法で目盛った座標平面を挿入する。
+%\thetaの係数が分数・整数かで揃っているので、ランダムに。
+%ただ、小問がsin 4つ→cos 4つ→tan 4つ に並ぶようにして。
 \QQRow
   {$y=\sin2\theta\quad(-\pi\leqq\theta\leqq\pi)$}{}
   {$y=\cos\dfrac{\theta}{2}\quad(-2\pi\leqq\theta\leqq2\pi)$}{}
