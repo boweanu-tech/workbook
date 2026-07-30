@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="80mm" height="34mm" viewBox="0 0 80 34">
+  <!--
+  三角関数グラフ用雛形（tan）。
+  保存先: 001_math/32_4_trigonometric/fig/
+
+  初期状態は問題用の空グラフ。漸近線も表示しない。
+  解答図を作るときは answer-layer の display:none を外し、
+  表示範囲・目盛・曲線・漸近線を対象の式に合わせて変更する。
+
+  標準表示:
+  - theta: -pi/2 ～ pi/2
+  - y: -1.5 ～ 1.5
+  - 縦罫線: pi/4 間隔
+  - 横罫線: y=-1, 0, 1
+  -->
+  <defs>
+    <style><![CDATA[
+      .grid {
+        stroke: #b7b7b7;
+        stroke-width: 0.20;
+        fill: none;
+      }
+      .frame-guide {
+        stroke: #dddddd;
+        stroke-width: 0.15;
+        fill: none;
+      }
+      .axis {
+        stroke: #000000;
+        stroke-width: 0.42;
+        fill: none;
+        stroke-linecap: round;
+      }
+      .axis-arrow {
+        fill: #000000;
+        stroke: none;
+      }
+      .tick {
+        stroke: #000000;
+        stroke-width: 0.30;
+      }
+      .curve {
+        stroke: #000000;
+        stroke-width: 0.42;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .asymptote {
+        stroke: #000000;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-dasharray: 1.2 1.4;
+      }
+      .axis-label,
+      .tick-label,
+      .frac-text {
+        font-family: "CMU Serif", "Latin Modern Roman",
+                     "Computer Modern Serif", serif;
+        fill: #000000;
+      }
+      .axis-label {
+        font-size: 3.8px;
+        font-style: italic;
+      }
+      .tick-label {
+        font-size: 3.0px;
+        font-style: normal;
+      }
+      .frac-text {
+        font-size: 2.7px;
+        font-style: normal;
+      }
+      .frac-line {
+        stroke: #000000;
+        stroke-width: 0.24;
+      }
+    ]]></style>
+    <clipPath id="graph-clip">
+      <rect x="8" y="5" width="64" height="24"/>
+    </clipPath>
+  </defs>
+
+  <g id="grid-layer">
+    <rect class="frame-guide" x="8" y="5" width="64" height="24"/>
+    <line class="grid" x1="8"  y1="5" x2="8"  y2="29"/>
+    <line class="grid" x1="24" y1="5" x2="24" y2="29"/>
+    <line class="grid" x1="40" y1="5" x2="40" y2="29"/>
+    <line class="grid" x1="56" y1="5" x2="56" y2="29"/>
+    <line class="grid" x1="72" y1="5" x2="72" y2="29"/>
+    <line class="grid" x1="8" y1="9"  x2="72" y2="9"/>
+    <line class="grid" x1="8" y1="17" x2="72" y2="17"/>
+    <line class="grid" x1="8" y1="25" x2="72" y2="25"/>
+  </g>
+
+  <g id="axis-layer">
+    <line class="axis" x1="6" y1="17" x2="72.8" y2="17"/>
+    <polygon class="axis-arrow" points="75,17 72.3,16.05 72.3,17.95"/>
+    <line class="axis" x1="40" y1="30" x2="40" y2="5.8"/>
+    <polygon class="axis-arrow" points="40,3.6 39.05,6.3 40.95,6.3"/>
+    <line class="tick" x1="8"  y1="16.5" x2="8"  y2="17.5"/>
+    <line class="tick" x1="24" y1="16.5" x2="24" y2="17.5"/>
+    <line class="tick" x1="56" y1="16.5" x2="56" y2="17.5"/>
+    <line class="tick" x1="72" y1="16.5" x2="72" y2="17.5"/>
+    <line class="tick" x1="39.5" y1="9"  x2="40.5" y2="9"/>
+    <line class="tick" x1="39.5" y1="25" x2="40.5" y2="25"/>
+    <text class="tick-label" x="36.7" y="20.4">O</text>
+    <text class="axis-label" x="75.8" y="18.2">θ</text>
+    <text class="axis-label" x="42.0" y="5.0">y</text>
+    <g transform="translate(8,20.2)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">-π</text>
+      <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">2</text>
+    </g>
+    <g transform="translate(24,20.2)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">-π</text>
+      <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">4</text>
+    </g>
+    <g transform="translate(56,20.2)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
+      <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">4</text>
+    </g>
+    <g transform="translate(72,20.2)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
+      <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">2</text>
+    </g>
+    <text class="tick-label" x="38.2" y="10.0" text-anchor="end">1</text>
+    <text class="tick-label" x="38.2" y="26.0" text-anchor="end">-1</text>
+  </g>
+
+  <!-- 問題用では非表示。解答図に複製した後で display:none を外す。 -->
+  <g id="answer-layer" style="display:none" clip-path="url(#graph-clip)">
+    <line class="asymptote" x1="8" y1="5" x2="8" y2="29"/>
+    <line class="asymptote" x1="72" y1="5" x2="72" y2="29"/>
+    <path class="curve"
+          d="M 19.98,29
+             L 21.67,27.08
+             L 23.70,25.24
+             L 25.74,23.74
+             L 27.78,22.47
+             L 29.81,21.37
+             L 31.85,20.38
+             L 33.89,19.47
+             L 35.93,18.62
+             L 37.96,17.80
+             L 40,17
+             L 42.04,16.20
+             L 44.07,15.38
+             L 46.11,14.53
+             L 48.15,13.62
+             L 50.19,12.63
+             L 52.22,11.53
+             L 54.26,10.26
+             L 56.30,8.76
+             L 58.33,6.92
+             L 60.02,5"/>
+  </g>
+</svg>
