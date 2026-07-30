@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="80mm" height="45mm" viewBox="0 0 80 45">
+  <defs>
+    <style><![CDATA[
+      .grid {
+        stroke: #b7b7b7;
+        stroke-width: 0.20;
+        fill: none;
+      }
+      .frame-guide {
+        stroke: #dddddd;
+        stroke-width: 0.15;
+        fill: none;
+      }
+      .axis {
+        stroke: #000000;
+        stroke-width: 0.42;
+        fill: none;
+        stroke-linecap: round;
+      }
+      .axis-arrow,
+      .point {
+        fill: #000000;
+        stroke: none;
+      }
+      .tick {
+        stroke: #000000;
+        stroke-width: 0.30;
+      }
+      .curve {
+        stroke: #000000;
+        stroke-width: 0.42;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .asymptote {
+        stroke: #000000;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-dasharray: 1.2 1.4;
+      }
+      .axis-label,
+      .tick-label,
+      .point-label,
+      .frac-text {
+        font-family: "CMU Serif", "Latin Modern Roman",
+                     "Computer Modern Serif", serif;
+        fill: #000000;
+      }
+      .axis-label {
+        font-size: 3.8px;
+        font-style: italic;
+      }
+      .tick-label {
+        font-size: 3.0px;
+        font-style: normal;
+      }
+      .point-label {
+        font-size: 3.2px;
+        font-style: normal;
+      }
+      .frac-text {
+        font-size: 2.7px;
+        font-style: normal;
+      }
+      .frac-line {
+        stroke: #000000;
+        stroke-width: 0.24;
+      }
+    ]]></style>
+    <clipPath id="graph-clip">
+      <rect x="8" y="5" width="64" height="35"/>
+    </clipPath>
+  </defs>
+
+  <g id="grid-layer">
+    <rect class="frame-guide" x="8" y="5" width="64" height="35"/>
+    <line class="grid" x1="8"  y1="5" x2="8"  y2="40"/>
+    <line class="grid" x1="24" y1="5" x2="24" y2="40"/>
+    <line class="grid" x1="40" y1="5" x2="40" y2="40"/>
+    <line class="grid" x1="56" y1="5" x2="56" y2="40"/>
+    <line class="grid" x1="72" y1="5" x2="72" y2="40"/>
+    <line class="grid" x1="8" y1="10.833" x2="72" y2="10.833"/>
+    <line class="grid" x1="8" y1="22.5" x2="72" y2="22.5"/>
+    <line class="grid" x1="8" y1="34.167" x2="72" y2="34.167"/>
+  </g>
+
+  <g id="asymptote-layer">
+    <line class="asymptote" x1="8" y1="5" x2="8" y2="40"/>
+    <line class="asymptote" x1="72" y1="5" x2="72" y2="40"/>
+  </g>
+
+  <g id="axis-layer">
+    <line class="axis" x1="6" y1="22.5" x2="72.8" y2="22.5"/>
+    <polygon class="axis-arrow" points="75,22.5 72.3,21.55 72.3,23.45"/>
+    <line class="axis" x1="40" y1="41" x2="40" y2="5.8"/>
+    <polygon class="axis-arrow" points="40,3.6 39.05,6.3 40.95,6.3"/>
+
+    <line class="tick" x1="8"  y1="22" x2="8"  y2="23"/>
+    <line class="tick" x1="24" y1="22" x2="24" y2="23"/>
+    <line class="tick" x1="56" y1="22" x2="56" y2="23"/>
+    <line class="tick" x1="72" y1="22" x2="72" y2="23"/>
+    <line class="tick" x1="39.5" y1="10.833" x2="40.5" y2="10.833"/>
+    <line class="tick" x1="39.5" y1="34.167" x2="40.5" y2="34.167"/>
+
+    <text class="tick-label" x="36.7" y="25.9">O</text>
+    <text class="axis-label" x="75.8" y="23.7">θ</text>
+    <text class="axis-label" x="42.0" y="5.0">y</text>
+
+    <g transform="translate(8,25.7)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">-π</text>
+      <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">2</text>
+    </g>
+    <g transform="translate(24,25.7)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">-π</text>
+      <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">4</text>
+    </g>
+    <g transform="translate(56,25.7)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
+      <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">4</text>
+    </g>
+    <g transform="translate(72,25.7)">
+      <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
+      <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">2</text>
+    </g>
+    <text class="tick-label" x="38.2" y="11.833" text-anchor="end">1</text>
+    <text class="tick-label" x="38.2" y="35.167" text-anchor="end">-1</text>
+  </g>
+
+  <g id="curve-layer" clip-path="url(#graph-clip)">
+    <path class="curve"
+          d="M 19.98,40
+             L 21.67,37.200
+             L 24,34.167
+             L 25.74,32.329
+             L 27.78,30.477
+             L 29.81,28.873
+             L 31.85,27.429
+             L 33.89,26.102
+             L 35.93,24.863
+             L 37.96,23.667
+             L 40,22.5
+             L 42.04,21.333
+             L 44.07,20.138
+             L 46.11,18.898
+             L 48.15,17.571
+             L 50.19,16.127
+             L 52.22,14.523
+             L 54.26,12.671
+             L 56,10.833
+             L 58.33,7.800
+             L 60.02,5"/>
+  </g>
+
+  <g id="point-layer">
+    <circle class="point" cx="24" cy="34.167" r="0.75"/>
+    <circle class="point" cx="40" cy="22.5" r="0.75"/>
+    <circle class="point" cx="56" cy="10.833" r="0.75"/>
+    <text class="point-label" x="21.5" y="37.3">P</text>
+    <text class="point-label" x="41.3" y="20.4">Q</text>
+    <text class="point-label" x="57.2" y="9.0">R</text>
+  </g>
+</svg>
