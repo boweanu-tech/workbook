@@ -82,9 +82,9 @@
     <line class="grid" x1="40" y1="5" x2="40" y2="40"/>
     <line class="grid" x1="56" y1="5" x2="56" y2="40"/>
     <line class="grid" x1="72" y1="5" x2="72" y2="40"/>
-    <line class="grid" x1="8" y1="10.833" x2="72" y2="10.833"/>
+    <line class="grid" x1="8" y1="14.545" x2="72" y2="14.545"/>
     <line class="grid" x1="8" y1="22.5" x2="72" y2="22.5"/>
-    <line class="grid" x1="8" y1="34.167" x2="72" y2="34.167"/>
+    <line class="grid" x1="8" y1="30.455" x2="72" y2="30.455"/>
   </g>
 
   <g id="asymptote-layer">
@@ -102,8 +102,8 @@
     <line class="tick" x1="24" y1="22" x2="24" y2="23"/>
     <line class="tick" x1="56" y1="22" x2="56" y2="23"/>
     <line class="tick" x1="72" y1="22" x2="72" y2="23"/>
-    <line class="tick" x1="39.5" y1="10.833" x2="40.5" y2="10.833"/>
-    <line class="tick" x1="39.5" y1="34.167" x2="40.5" y2="34.167"/>
+    <line class="tick" x1="39.5" y1="14.545" x2="40.5" y2="14.545"/>
+    <line class="tick" x1="39.5" y1="30.455" x2="40.5" y2="30.455"/>
 
     <text class="tick-label" x="36.7" y="25.9">O</text>
     <text class="axis-label" x="75.8" y="23.7">θ</text>
@@ -129,41 +129,47 @@
       <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
       <text class="frac-text" x="0" y="3.0" text-anchor="middle">2</text>
     </g>
-    <text class="tick-label" x="38.2" y="11.833" text-anchor="end">1</text>
-    <text class="tick-label" x="38.2" y="35.167" text-anchor="end">-1</text>
+    <text class="tick-label" x="38.2" y="15.545" text-anchor="end">1</text>
+    <text class="tick-label" x="38.2" y="31.455" text-anchor="end">-1</text>
   </g>
 
   <g id="curve-layer" clip-path="url(#graph-clip)">
     <path class="curve"
-          d="M 19.98,40
-             L 21.67,37.200
-             L 24,34.167
-             L 25.74,32.329
-             L 27.78,30.477
-             L 29.81,28.873
-             L 31.85,27.429
-             L 33.89,26.102
-             L 35.93,24.863
-             L 37.96,23.667
+          d="M 16.691,40
+             L 18.634,36.329
+             L 20.576,33.706
+             L 22.518,31.705
+             L 24,30.455
+             L 24.461,30.103
+             L 26.403,28.769
+             L 28.346,27.622
+             L 30.288,26.608
+             L 32.230,25.690
+             L 34.173,24.839
+             L 36.115,24.036
+             L 38.058,23.261
              L 40,22.5
-             L 42.04,21.333
-             L 44.07,20.138
-             L 46.11,18.898
-             L 48.15,17.571
-             L 50.19,16.127
-             L 52.22,14.523
-             L 54.26,12.671
-             L 56,10.833
-             L 58.33,7.800
-             L 60.02,5"/>
+             L 41.942,21.739
+             L 43.885,20.964
+             L 45.827,20.161
+             L 47.770,19.310
+             L 49.712,18.392
+             L 51.654,17.378
+             L 53.597,16.231
+             L 55.539,14.897
+             L 56,14.545
+             L 57.482,13.295
+             L 59.424,11.294
+             L 61.366,8.671
+             L 63.309,5"/>
   </g>
 
   <g id="point-layer">
-    <circle class="point" cx="24" cy="34.167" r="0.75"/>
+    <circle class="point" cx="24" cy="30.455" r="0.75"/>
     <circle class="point" cx="40" cy="22.5" r="0.75"/>
-    <circle class="point" cx="56" cy="10.833" r="0.75"/>
-    <text class="point-label" x="21.5" y="37.3">P</text>
+    <circle class="point" cx="56" cy="14.545" r="0.75"/>
+    <text class="point-label" x="21.5" y="33.4">P</text>
     <text class="point-label" x="41.3" y="20.4">Q</text>
-    <text class="point-label" x="57.2" y="9.0">R</text>
+    <text class="point-label" x="57.2" y="12.6">R</text>
   </g>
 </svg>
