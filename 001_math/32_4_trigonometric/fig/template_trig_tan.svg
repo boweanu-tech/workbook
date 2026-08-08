@@ -12,21 +12,12 @@
   標準表示:
   - theta: -pi/2 ～ pi/2
   - y: -1.5 ～ 1.5
-  - 縦罫線: pi/4 間隔
-  - 横罫線: y=-1, 0, 1
+  - theta目盛: pi/4 間隔
+  - y目盛: -1, 0, 1
+  - 灰色の罫線・外枠: なし
   -->
   <defs>
     <style><![CDATA[
-      .grid {
-        stroke: #b7b7b7;
-        stroke-width: 0.20;
-        fill: none;
-      }
-      .frame-guide {
-        stroke: #dddddd;
-        stroke-width: 0.15;
-        fill: none;
-      }
       .axis {
         stroke: #000000;
         stroke-width: 0.42;
@@ -82,18 +73,6 @@
       <rect x="8" y="5" width="64" height="35"/>
     </clipPath>
   </defs>
-
-  <g id="grid-layer">
-    <rect class="frame-guide" x="8" y="5" width="64" height="35"/>
-    <line class="grid" x1="8"  y1="5" x2="8"  y2="40"/>
-    <line class="grid" x1="24" y1="5" x2="24" y2="40"/>
-    <line class="grid" x1="40" y1="5" x2="40" y2="40"/>
-    <line class="grid" x1="56" y1="5" x2="56" y2="40"/>
-    <line class="grid" x1="72" y1="5" x2="72" y2="40"/>
-    <line class="grid" x1="8" y1="10.833" x2="72" y2="10.833"/>
-    <line class="grid" x1="8" y1="22.5" x2="72" y2="22.5"/>
-    <line class="grid" x1="8" y1="34.167" x2="72" y2="34.167"/>
-  </g>
 
   <g id="axis-layer">
     <line class="axis" x1="6" y1="22.5" x2="72.8" y2="22.5"/>
