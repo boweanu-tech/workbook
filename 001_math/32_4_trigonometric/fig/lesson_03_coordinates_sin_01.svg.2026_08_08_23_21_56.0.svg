@@ -22,8 +22,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="4.2664062"
-     inkscape:cx="110.16298"
-     inkscape:cy="82.270647"
+     inkscape:cx="110.16297"
+     inkscape:cy="82.505036"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -185,7 +185,7 @@
        id="text14">4</text>
   </g>
   <g
-     transform="translate(61.345075,18.498834)"
+     transform="translate(61.158952,18.001224)"
      id="g16">
     <text
        class="frac-text"
@@ -285,14 +285,6 @@
      x2="32.046516"
      y2="14.071365"
      id="line2-9-6-6-7"
-     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:1.2, 1.4" />
-  <line
-     class="asymptote"
-     x1="61.318531"
-     y1="32.485897"
-     x2="61.318531"
-     y2="22.675182"
-     id="line2-9-6-6-7-6"
      style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:1.2, 1.4" />
   <line
      class="asymptote"
