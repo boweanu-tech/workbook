@@ -3,16 +3,6 @@
      width="80mm" height="45mm" viewBox="0 0 80 45">
   <defs>
     <style><![CDATA[
-      .grid {
-        stroke: #b7b7b7;
-        stroke-width: 0.20;
-        fill: none;
-      }
-      .frame-guide {
-        stroke: #dddddd;
-        stroke-width: 0.15;
-        fill: none;
-      }
       .axis {
         stroke: #000000;
         stroke-width: 0.42;
@@ -75,18 +65,6 @@
     </clipPath>
   </defs>
 
-  <g id="grid-layer">
-    <rect class="frame-guide" x="8" y="5" width="64" height="35"/>
-    <line class="grid" x1="8"  y1="5" x2="8"  y2="40"/>
-    <line class="grid" x1="24" y1="5" x2="24" y2="40"/>
-    <line class="grid" x1="40" y1="5" x2="40" y2="40"/>
-    <line class="grid" x1="56" y1="5" x2="56" y2="40"/>
-    <line class="grid" x1="72" y1="5" x2="72" y2="40"/>
-    <line class="grid" x1="8" y1="14.545" x2="72" y2="14.545"/>
-    <line class="grid" x1="8" y1="22.5" x2="72" y2="22.5"/>
-    <line class="grid" x1="8" y1="30.455" x2="72" y2="30.455"/>
-  </g>
-
   <g id="asymptote-layer">
     <line class="asymptote" x1="8" y1="5" x2="8" y2="40"/>
     <line class="asymptote" x1="72" y1="5" x2="72" y2="40"/>
@@ -99,8 +77,8 @@
     <polygon class="axis-arrow" points="40,3.6 39.05,6.3 40.95,6.3"/>
 
     <line class="tick" x1="8"  y1="22" x2="8"  y2="23"/>
-    <line class="tick" x1="24" y1="22" x2="24" y2="23"/>
-    <line class="tick" x1="56" y1="22" x2="56" y2="23"/>
+    <line class="tick" x1="29.333" y1="22" x2="29.333" y2="23"/>
+    <line class="tick" x1="61.333" y1="22" x2="61.333" y2="23"/>
     <line class="tick" x1="72" y1="22" x2="72" y2="23"/>
     <line class="tick" x1="39.5" y1="14.545" x2="40.5" y2="14.545"/>
     <line class="tick" x1="39.5" y1="30.455" x2="40.5" y2="30.455"/>
@@ -114,15 +92,15 @@
       <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
       <text class="frac-text" x="0" y="3.0" text-anchor="middle">2</text>
     </g>
-    <g transform="translate(24,25.7)">
+    <g transform="translate(29.333,32.2)">
       <text class="frac-text" x="0" y="0" text-anchor="middle">-π</text>
       <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
-      <text class="frac-text" x="0" y="3.0" text-anchor="middle">4</text>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">6</text>
     </g>
-    <g transform="translate(56,25.7)">
+    <g transform="translate(61.333,25.7)">
       <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
       <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
-      <text class="frac-text" x="0" y="3.0" text-anchor="middle">4</text>
+      <text class="frac-text" x="0" y="3.0" text-anchor="middle">3</text>
     </g>
     <g transform="translate(72,25.7)">
       <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
@@ -165,11 +143,11 @@
   </g>
 
   <g id="point-layer">
-    <circle class="point" cx="24" cy="30.455" r="0.75"/>
+    <circle class="point" cx="29.333" cy="27.093" r="0.75"/>
     <circle class="point" cx="40" cy="22.5" r="0.75"/>
-    <circle class="point" cx="56" cy="14.545" r="0.75"/>
-    <text class="point-label" x="21.5" y="33.4">P</text>
+    <circle class="point" cx="61.333" cy="8.721" r="0.75"/>
+    <text class="point-label" x="25.8" y="25.8">P</text>
     <text class="point-label" x="41.3" y="20.4">Q</text>
-    <text class="point-label" x="57.2" y="12.6">R</text>
+    <text class="point-label" x="62.4" y="7.5">R</text>
   </g>
 </svg>
