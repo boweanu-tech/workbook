@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="80mm" height="45mm" viewBox="0 0 80 45">
+  <!-- y=cos(theta/2), answer graph: -2pi <= theta <= 2pi -->
+  <defs>
+    <style><![CDATA[
+      .axis { stroke:#000; stroke-width:0.42; fill:none; stroke-linecap:round; }
+      .axis-arrow { fill:#000; stroke:none; }
+      .tick { stroke:#000; stroke-width:0.30; }
+      .curve { stroke:#000; stroke-width:0.42; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .axis-label, .tick-label {
+        font-family:"CMU Serif","Latin Modern Roman","Computer Modern Serif",serif;
+        fill:#000;
+      }
+      .axis-label { font-size:3.8px; font-style:italic; }
+      .tick-label { font-size:3.0px; font-style:normal; }
+    ]]></style>
+    <clipPath id="graph-clip">
+      <rect x="8" y="5" width="64" height="35"/>
+    </clipPath>
+  </defs>
+
+  <line class="axis" x1="6" y1="22.5" x2="72.8" y2="22.5"/>
+  <polygon class="axis-arrow" points="75,22.5 72.3,21.55 72.3,23.45"/>
+  <line class="axis" x1="40" y1="41" x2="40" y2="5.8"/>
+  <polygon class="axis-arrow" points="40,3.6 39.05,6.3 40.95,6.3"/>
+
+  <line class="tick" x1="8" y1="22" x2="8" y2="23"/>
+  <line class="tick" x1="24" y1="22" x2="24" y2="23"/>
+  <line class="tick" x1="56" y1="22" x2="56" y2="23"/>
+  <line class="tick" x1="72" y1="22" x2="72" y2="23"/>
+  <line class="tick" x1="39.5" y1="10.833" x2="40.5" y2="10.833"/>
+  <line class="tick" x1="39.5" y1="34.167" x2="40.5" y2="34.167"/>
+
+  <text class="tick-label" x="36.7" y="25.9">O</text>
+  <text class="axis-label" x="75.8" y="23.7">θ</text>
+  <text class="axis-label" x="42" y="5">y</text>
+  <text class="tick-label" x="8" y="26.5" text-anchor="middle">−2π</text>
+  <text class="tick-label" x="24" y="26.5" text-anchor="middle">−π</text>
+  <text class="tick-label" x="56" y="26.5" text-anchor="middle">π</text>
+  <text class="tick-label" x="72" y="26.5" text-anchor="middle">2π</text>
+  <text class="tick-label" x="38.2" y="11.833" text-anchor="end">1</text>
+  <text class="tick-label" x="38.2" y="35.167" text-anchor="end">−1</text>
+
+  <g id="answer-layer" clip-path="url(#graph-clip)">
+    <path class="curve"
+          d="M 8,34.167
+             C 13.333,34.167 18.667,28.609 24,22.5
+             C 29.333,16.391 34.667,10.833 40,10.833
+             C 45.333,10.833 50.667,16.391 56,22.5
+             C 61.333,28.609 66.667,34.167 72,34.167"/>
+  </g>
+</svg>
