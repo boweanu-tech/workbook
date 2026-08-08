@@ -5,7 +5,7 @@
 % 共通外形：横長、width=80mm、height=45mm、viewBox="0 0 80 45"。
 % 共通書式：temp_graph.svg と template.svg に準拠し、横軸は theta、縦軸は y、原点は O。
 % 正方向だけ矢印を付け、軸線が矢印先端からはみ出ないようにする。
-% 原点 O は原則として第3象限側。目盛ラベルは CMU Serif 系、点名 P,Q,R はローマン体。
+% 原点 O は原則として第3象限側。目盛ラベルは CMU Serif 系、点名 P,Q,R,S はローマン体。
 % sin・cos：y表示範囲は -1.4～1.4、y=+-1 に目盛。tan：y表示範囲は -2.2～2.2、y=+-1 に目盛。
 % 問題用空グラフ（*_q）は軸・目盛だけとし、灰色の罫線・外枠・曲線・漸近線・特徴点を入れない。
 % 解答用完成グラフ（*_a）は同一外形・同一目盛とし、曲線を黒実線、漸近線を黒破線で示す。
@@ -17,30 +17,34 @@
 
 \SetRowSpace{2mm}
 
-\TypeQuestionSingle{次の関数のグラフ上に示された点 ${\rm P},\ {\rm Q},\ {\rm R}$ の座標をそれぞれ求めなさい。}{graph_coordinates}
+\TypeQuestionSingle{次の関数のグラフ上に示された点 ${\rm P},\ {\rm Q},\ {\rm R},\ {\rm S}$ の座標をそれぞれ求めなさい。}{graph_coordinates}
 % (1) SVG：lesson_03_coordinates_sin_01.svg
 %     theta範囲 0～2pi。灰色の罫線・外枠は入れない。
-%     y=sin theta を描き、P(pi/6,1/2), Q(3pi/4,sqrt(2)/2), R(5pi/3,-sqrt(3)/2) を黒点で示す。
-%     横軸には各点の theta 座標 pi/6, 3pi/4, 5pi/3 の目盛とラベルを置く。
-%     y座標の投影補助線・数値ラベルは入れず、三角関数の値から求めさせる。
+%     y=sin theta を描き、P(pi/6,1/2), Q(3pi/4,sqrt(2)/2), R(5pi/3,-sqrt(3)/2), S(pi/2,1) を黒点で示す。
+%     P,Q,R は theta 座標 pi/6, 3pi/4, 5pi/3 を縦の補助線で示し、S は y=1 を横の補助線で示す。
+%     残りの座標は三角関数の値から求めさせる。
 % (2) SVG：lesson_03_coordinates_tan_01.svg
 %     theta範囲 -pi/2～pi/2。灰色の罫線・外枠は入れない。
-%     theta=+-pi/2 に漸近線を描き、P(-pi/6,-sqrt(3)/3), Q(0,0), R(pi/3,sqrt(3)) を黒点で示す。
-%     PとRは横軸に theta 座標 -pi/6, pi/3 の目盛とラベルを置き、Qは原点 O だけを手がかりとする。
-%     y座標の投影補助線・数値ラベルは入れず、三角関数の値から求めさせる。
+%     theta=+-pi/2 に漸近線を描き、P(-pi/6,-sqrt(3)/3), Q(-pi/4,-1), R(pi/3,sqrt(3)), S(pi/4,1) を黒点で示す。
+%     P,R は theta 座標 -pi/6, pi/3 を縦の補助線で示し、Q,S は y 座標 -1, 1 を横の補助線で示す。
+%     残りの座標は三角関数の値から求めさせる。
 \QQFigRow[0.98\linewidth]
   {fig/lesson_03_coordinates_sin_01}
   {$y=\sin\theta$\ $(0\leqq\theta\leqq2\pi)$}
-  {\AnswerThreeLines
-    {${\rm P}\left(\dfrac{\pi}{6},\dfrac{1}{2}\right)$}
-    {${\rm Q}\left(\dfrac{3\pi}{4},\dfrac{\sqrt{2}}{2}\right)$}
-    {${\rm R}\left(\dfrac{5\pi}{3},-\dfrac{\sqrt{3}}{2}\right)$}}
+  {\begin{tabular}[t]{@{}l@{}}
+    ${\rm P}\left(\dfrac{\pi}{6},\dfrac{1}{2}\right)$\\[3mm]
+    ${\rm Q}\left(\dfrac{3\pi}{4},\dfrac{\sqrt{2}}{2}\right)$\\[3mm]
+    ${\rm R}\left(\dfrac{5\pi}{3},-\dfrac{\sqrt{3}}{2}\right)$\\[3mm]
+    ${\rm S}\left(\dfrac{\pi}{2},1\right)$
+  \end{tabular}}
   {fig/lesson_03_coordinates_tan_01}
   {$y=\tan\theta$\ $\left(-\dfrac{\pi}{2}<\theta<\dfrac{\pi}{2}\right)$}
-  {\AnswerThreeLines
-    {${\rm P}\left(-\dfrac{\pi}{6},-\dfrac{\sqrt{3}}{3}\right)$}
-    {${\rm Q}(0,0)$}
-    {${\rm R}\left(\dfrac{\pi}{3},\sqrt{3}\right)$}}
+  {\begin{tabular}[t]{@{}l@{}}
+    ${\rm P}\left(-\dfrac{\pi}{6},-\dfrac{\sqrt{3}}{3}\right)$\\[3mm]
+    ${\rm Q}\left(-\dfrac{\pi}{4},-1\right)$\\[3mm]
+    ${\rm R}\left(\dfrac{\pi}{3},\sqrt{3}\right)$\\[3mm]
+    ${\rm S}\left(\dfrac{\pi}{4},1\right)$
+  \end{tabular}}
 
 \TypeQuestionSingle{次の関数のグラフをかき、その周期を求めなさい。}{horizontal_transform}
 % (1) SVG：lesson_03_scale_sin_01_q.svg / lesson_03_scale_sin_01_a.svg

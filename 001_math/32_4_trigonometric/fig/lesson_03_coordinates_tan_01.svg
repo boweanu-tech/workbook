@@ -62,6 +62,13 @@
         fill: none;
         stroke-dasharray: 1.2 1.4;
       }
+      .guide {
+        stroke: #000000;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-linecap: round;
+        stroke-dasharray: 1.2 1.4;
+      }
       .axis-label,
       .tick-label,
       .point-label,
@@ -118,7 +125,7 @@
      id="line2"
      style="stroke-linecap:round" />
   <line
-     class="asymptote"
+     class="guide"
      x1="61.325672"
      y1="8.5834637"
      x2="61.325672"
@@ -126,7 +133,7 @@
      id="line2-9"
      style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:1.2, 1.4" />
   <line
-     class="asymptote"
+     class="guide"
      x1="29.335682"
      y1="22.367739"
      x2="29.335682"
@@ -134,7 +141,7 @@
      id="line2-9-6"
      style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:1.2, 1.4" />
   <line
-     class="asymptote"
+     class="guide"
      x1="55.551277"
      y1="14.592113"
      x2="40.111935"
@@ -142,7 +149,7 @@
      id="line2-9-6-6"
      style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:1.2, 1.4" />
   <line
-     class="asymptote"
+     class="guide"
      x1="39.655457"
      y1="30.345003"
      x2="24.216114"
@@ -304,12 +311,6 @@
      cy="27.093"
      r="0.75"
      id="circle22" />
-  <circle
-     class="point"
-     cx="40"
-     cy="22.5"
-     r="0.75"
-     id="circle23" />
   <circle
      class="point"
      cx="61.333"
