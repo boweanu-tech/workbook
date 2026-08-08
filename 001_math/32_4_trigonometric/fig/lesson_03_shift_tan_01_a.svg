@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="80mm" height="45mm" viewBox="0 0 80 45">
+  <!-- y=tan(2(theta+pi/8)), answer graph: -3pi/8 < theta < 5pi/8 -->
+  <defs>
+    <style><![CDATA[
+      .axis { stroke:#000; stroke-width:0.42; fill:none; stroke-linecap:round; }
+      .axis-arrow { fill:#000; stroke:none; }
+      .tick { stroke:#000; stroke-width:0.30; }
+      .curve { stroke:#000; stroke-width:0.42; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .asymptote { stroke:#000; stroke-width:0.32; fill:none; stroke-dasharray:1.2 1.4; }
+      .axis-label, .tick-label, .frac-text {
+        font-family:"CMU Serif","Latin Modern Roman","Computer Modern Serif",serif;
+        fill:#000;
+      }
+      .axis-label { font-size:3.8px; font-style:italic; }
+      .tick-label { font-size:3.0px; font-style:normal; }
+      .frac-text { font-size:2.7px; font-style:normal; }
+      .frac-line { stroke:#000; stroke-width:0.24; }
+    ]]></style>
+    <clipPath id="graph-clip">
+      <rect x="8" y="5" width="64" height="35"/>
+    </clipPath>
+  </defs>
+
+  <line class="axis" x1="6" y1="22.5" x2="72.8" y2="22.5"/>
+  <polygon class="axis-arrow" points="75,22.5 72.3,21.55 72.3,23.45"/>
+  <line class="axis" x1="32" y1="41" x2="32" y2="5.8"/>
+  <polygon class="axis-arrow" points="32,3.6 31.05,6.3 32.95,6.3"/>
+
+  <line class="tick" x1="8"  y1="22" x2="8"  y2="23"/>
+  <line class="tick" x1="16" y1="22" x2="16" y2="23"/>
+  <line class="tick" x1="24" y1="22" x2="24" y2="23"/>
+  <line class="tick" x1="40" y1="22" x2="40" y2="23"/>
+  <line class="tick" x1="48" y1="22" x2="48" y2="23"/>
+  <line class="tick" x1="56" y1="22" x2="56" y2="23"/>
+  <line class="tick" x1="64" y1="22" x2="64" y2="23"/>
+  <line class="tick" x1="72" y1="22" x2="72" y2="23"/>
+  <line class="tick" x1="31.5" y1="14.545" x2="32.5" y2="14.545"/>
+  <line class="tick" x1="31.5" y1="30.455" x2="32.5" y2="30.455"/>
+
+  <text class="tick-label" x="28.7" y="25.9">O</text>
+  <text class="axis-label" x="75.8" y="23.7">θ</text>
+  <text class="axis-label" x="34" y="5">y</text>
+  <g transform="translate(8,25.7)">
+    <text class="frac-text" x="0" y="0" text-anchor="middle">−3π</text>
+    <line class="frac-line" x1="-3.8" y1="0.7" x2="3.8" y2="0.7"/>
+    <text class="frac-text" x="0" y="3.0" text-anchor="middle">8</text>
+  </g>
+  <g transform="translate(24,25.7)">
+    <text class="frac-text" x="0" y="0" text-anchor="middle">−π</text>
+    <line class="frac-line" x1="-2.8" y1="0.7" x2="2.8" y2="0.7"/>
+    <text class="frac-text" x="0" y="3.0" text-anchor="middle">8</text>
+  </g>
+  <g transform="translate(40,25.7)">
+    <text class="frac-text" x="0" y="0" text-anchor="middle">π</text>
+    <line class="frac-line" x1="-2.2" y1="0.7" x2="2.2" y2="0.7"/>
+    <text class="frac-text" x="0" y="3.0" text-anchor="middle">8</text>
+  </g>
+  <g transform="translate(56,25.7)">
+    <text class="frac-text" x="0" y="0" text-anchor="middle">3π</text>
+    <line class="frac-line" x1="-3.2" y1="0.7" x2="3.2" y2="0.7"/>
+    <text class="frac-text" x="0" y="3.0" text-anchor="middle">8</text>
+  </g>
+  <g transform="translate(72,25.7)">
+    <text class="frac-text" x="0" y="0" text-anchor="middle">5π</text>
+    <line class="frac-line" x1="-3.2" y1="0.7" x2="3.2" y2="0.7"/>
+    <text class="frac-text" x="0" y="3.0" text-anchor="middle">8</text>
+  </g>
+  <text class="tick-label" x="30.2" y="15.545" text-anchor="end">1</text>
+  <text class="tick-label" x="30.2" y="31.455" text-anchor="end">−1</text>
+
+  <g id="answer-layer" clip-path="url(#graph-clip)">
+    <line class="asymptote" x1="8" y1="5" x2="8" y2="23"/>
+    <line class="asymptote" x1="8" y1="29.5" x2="8" y2="40"/>
+    <line class="asymptote" x1="40" y1="5" x2="40" y2="23"/>
+    <line class="asymptote" x1="40" y1="29.5" x2="40" y2="40"/>
+    <line class="asymptote" x1="72" y1="5" x2="72" y2="23"/>
+    <line class="asymptote" x1="72" y1="29.5" x2="72" y2="40"/>
+    <path class="curve"
+          d="M 12.346,40
+             L 13.317,36.329 L 14.288,33.706 L 15.259,31.705
+             L 16,30.455 L 16.230,30.103 L 17.202,28.769
+             L 18.173,27.622 L 19.144,26.608 L 20.115,25.690
+             L 21.087,24.839 L 22.058,24.036 L 23.029,23.261
+             L 24,22.5
+             L 24.971,21.739 L 25.942,20.964 L 26.914,20.161
+             L 27.885,19.310 L 28.856,18.392 L 29.827,17.378
+             L 30.799,16.231 L 31.770,14.897 L 32,14.545
+             L 32.741,13.295 L 33.712,11.294 L 34.683,8.671
+             L 35.654,5"/>
+    <path class="curve"
+          d="M 44.346,40
+             L 45.317,36.329 L 46.288,33.706 L 47.259,31.705
+             L 48,30.455 L 48.230,30.103 L 49.202,28.769
+             L 50.173,27.622 L 51.144,26.608 L 52.115,25.690
+             L 53.087,24.839 L 54.058,24.036 L 55.029,23.261
+             L 56,22.5
+             L 56.971,21.739 L 57.942,20.964 L 58.914,20.161
+             L 59.885,19.310 L 60.856,18.392 L 61.827,17.378
+             L 62.799,16.231 L 63.770,14.897 L 64,14.545
+             L 64.741,13.295 L 65.712,11.294 L 66.683,8.671
+             L 67.654,5"/>
+  </g>
+</svg>
