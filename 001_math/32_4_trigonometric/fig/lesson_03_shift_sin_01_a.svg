@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  width="80mm"
+  height="45mm"
+  viewBox="0 0 80 45"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg">
+  <!-- y=sin(theta-pi/3), answer graph: -pi <= theta <= 2pi -->
+  <defs>
+    <style><![CDATA[
+      .axis { stroke:#000; stroke-width:0.42; fill:none; stroke-linecap:round; }
+      .axis-arrow { fill:#000; stroke:none; }
+      .tick { stroke:#000; stroke-width:0.30; }
+      .curve { stroke:#000; stroke-width:0.42; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .axis-label, .tick-label {
+        font-family:"CMU Serif","Latin Modern Roman","Computer Modern Serif",serif;
+        fill:#000;
+      }
+      .axis-label { font-size:3.8px; font-style:italic; }
+      .tick-label { font-size:3.0px; font-style:normal; }
+    ]]></style>
+    <clipPath id="graph-clip">
+      <rect x="8" y="5" width="64" height="35" />
+    </clipPath>
+  </defs>
+
+  <line class="axis" x1="6" y1="22.5" x2="72.8" y2="22.5" />
+  <polygon class="axis-arrow" points="72.3,23.45 75,22.5 72.3,21.55" />
+  <line class="axis" x1="29.333" y1="41" x2="29.333" y2="5.8" />
+  <polygon class="axis-arrow" points="30.283,6.3 29.333,3.6 28.383,6.3" />
+
+  <g class="tick">
+    <path d="M8,22 v1 M11.556,22 v1 M15.111,22 v1 M18.667,22 v1 M22.222,22 v1 M25.778,22 v1
+             M32.889,22 v1 M36.444,22 v1 M40,22 v1 M43.556,22 v1 M47.111,22 v1 M50.667,22 v1
+             M54.222,22 v1 M57.778,22 v1 M61.333,22 v1 M64.889,22 v1 M68.444,22 v1 M72,22 v1" />
+    <path d="M28.833,10.833 h1 M28.833,34.167 h1" />
+  </g>
+
+  <text class="tick-label" x="25.45" y="25.35">O</text>
+  <text class="axis-label" x="75.8" y="23.7">&#952;</text>
+  <text class="axis-label" x="31.333" y="5">y</text>
+  <text class="tick-label" x="8" y="26.5" text-anchor="middle">&#8722;&#960;</text>
+  <text class="tick-label" x="18.667" y="20.8" text-anchor="middle">&#8722;&#960;/2</text>
+  <text class="tick-label" x="40" y="26.5" text-anchor="middle">&#960;/2</text>
+  <text class="tick-label" x="50.667" y="26.5" text-anchor="middle">&#960;</text>
+  <text class="tick-label" x="61.333" y="20.8" text-anchor="middle">3&#960;/2</text>
+  <text class="tick-label" x="72" y="26.5" text-anchor="middle">2&#960;</text>
+  <text class="tick-label" x="27.533" y="11.833" text-anchor="end">1</text>
+  <text class="tick-label" x="31.133" y="35.167" text-anchor="start">&#8722;1</text>
+
+  <g id="answer-layer" clip-path="url(#graph-clip)">
+    <path
+      class="curve"
+      d="M 8.000,12.396
+         C 9.185,13.414 10.370,14.903 11.556,16.666
+         C 12.741,18.430 13.926,20.464 15.111,22.500
+         C 16.296,24.536 17.481,26.570 18.667,28.334
+         C 19.852,30.097 21.037,31.586 22.222,32.604
+         C 23.407,33.622 24.593,34.167 25.778,34.167
+         C 26.963,34.167 28.148,33.622 29.333,32.604
+         C 30.519,31.586 31.704,30.097 32.889,28.333
+         C 34.074,26.570 35.259,24.536 36.444,22.500
+         C 37.630,20.464 38.815,18.430 40.000,16.666
+         C 41.185,14.903 42.370,13.414 43.556,12.396
+         C 44.741,11.378 45.926,10.833 47.111,10.833
+         C 48.296,10.833 49.481,11.378 50.667,12.396
+         C 51.852,13.414 53.037,14.903 54.222,16.666
+         C 55.407,18.430 56.593,20.464 57.778,22.500
+         C 58.963,24.536 60.148,26.570 61.333,28.334
+         C 62.519,30.097 63.704,31.586 64.889,32.604
+         C 66.074,33.622 67.259,34.167 68.444,34.167
+         C 69.630,34.167 70.815,33.622 72.000,32.604" />
+  </g>
+</svg>
