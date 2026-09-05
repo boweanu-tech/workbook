@@ -1,0 +1,180 @@
+% theme: integration_calculation
+% 問題面では2列、解答面では1問ずつ全幅で表示する。
+\providecommand{\IntegralPair}[4]{%
+  \ifLMAnswerMode
+    \QQ{#1}{#2}%
+    \QQ{#3}{#4}%
+  \else
+    \QQRow{#1}{#2}{#3}{#4}%
+  \fi
+}
+\providecommand{\IntegralAnswer}[2]{%
+  \AnswerTwoLines{\small 初手：#1}{\small #2}%
+}
+
+\MajorQuestionLesson{積分の計算}
+\SetRowSpaceQanda
+\SetRowSpace{2mm}
+
+\TypeQuestionSingle{次の不定積分を求めなさい。}{indefinite}
+\IntegralPair
+  {$\displaystyle \int e^x\sin x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle \frac{e^x}{2}(\sin x-\cos x)+C$}}
+  {$\displaystyle \int \frac{1}{x^2-1}\,dx$}
+  {\IntegralAnswer{部分分数分解}{$\displaystyle \frac12\log\left|\frac{x-1}{x+1}\right|+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{\cos x}{2+\sin x}\,dx$}
+  {\IntegralAnswer{$u=2+\sin x$ とおく}{$\displaystyle \log(2+\sin x)+C$}}
+  {$\displaystyle \int \sqrt{9-x^2}\,dx$}
+  {\IntegralAnswer{$x=3\sin\theta$ とおく}{$\displaystyle \frac{x}{2}\sqrt{9-x^2}+\frac92\sin^{-1}\frac{x}{3}+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{x^2}{x+1}\,dx$}
+  {\IntegralAnswer{整式の除法}{$\displaystyle \frac{x^2}{2}-x+\log|x+1|+C$}}
+  {$\displaystyle \int \frac{1}{x(\log x)^2}\,dx$}
+  {\IntegralAnswer{$u=\log x$ とおく}{$\displaystyle -\frac{1}{\log x}+C$}}
+\IntegralPair
+  {$\displaystyle \int \sin^3x\cos^2x\,dx$}
+  {\IntegralAnswer{$\sin^3x=(1-\cos^2x)\sin x$}{$\displaystyle \frac15\cos^5x-\frac13\cos^3x+C$}}
+  {$\displaystyle \int \log x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle x\log x-x+C$}}
+\AnswerColumnBreak
+\IntegralPair
+  {$\displaystyle \int \frac{1}{(1+x^2)^2}\,dx$}
+  {\IntegralAnswer{$x=\tan\theta$ とおく}{$\displaystyle \frac{x}{2(1+x^2)}+\frac12\tan^{-1}x+C$}}
+  {$\displaystyle \int \frac{x}{x^2+4}\,dx$}
+  {\IntegralAnswer{$u=x^2+4$ とおく}{$\displaystyle \frac12\log(x^2+4)+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{1}{1+\cos x}\,dx$}
+  {\IntegralAnswer{$1+\cos x=2\cos^2\frac{x}{2}$}{$\displaystyle \tan\frac{x}{2}+C$}}
+  {$\displaystyle \int x^2e^x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle e^x(x^2-2x+2)+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{1}{\sqrt{x^2+4}}\,dx$}
+  {\IntegralAnswer{$x=2\tan\theta$ とおく}{$\displaystyle \log\left|x+\sqrt{x^2+4}\right|+C$}}
+  {$\displaystyle \int \tan^{-1}x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle x\tan^{-1}x-\frac12\log(1+x^2)+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{1}{x(x+2)}\,dx$}
+  {\IntegralAnswer{部分分数分解}{$\displaystyle \frac12\log\left|\frac{x}{x+2}\right|+C$}}
+  {$\displaystyle \int \sin 2x\cos 3x\,dx$}
+  {\IntegralAnswer{積和の公式}{$\displaystyle \frac12\cos x-\frac1{10}\cos5x+C$}}
+\AnswerColumnBreak
+\IntegralPair
+  {$\displaystyle \int \frac{e^{2x}}{1+e^{2x}}\,dx$}
+  {\IntegralAnswer{$u=1+e^{2x}$ とおく}{$\displaystyle \frac12\log(1+e^{2x})+C$}}
+  {$\displaystyle \int \frac{x}{\sqrt{x+1}}\,dx$}
+  {\IntegralAnswer{$u=x+1$ とおく}{$\displaystyle \frac23(x+1)^{3/2}-2\sqrt{x+1}+C$}}
+\IntegralPair
+  {$\displaystyle \int \tan^3x\,dx$}
+  {\IntegralAnswer{$\tan^2x=\sec^2x-1$}{$\displaystyle \frac12\tan^2x+\log|\cos x|+C$}}
+  {$\displaystyle \int \frac{x+2}{x^2+4x+8}\,dx$}
+  {\IntegralAnswer{$u=x^2+4x+8$ とおく}{$\displaystyle \frac12\log(x^2+4x+8)+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{1}{x^2\sqrt{x^2-1}}\,dx$}
+  {\IntegralAnswer{$x=\sec\theta$ とおく}{$\displaystyle \frac{\sqrt{x^2-1}}{x}+C$}}
+  {$\displaystyle \int xe^x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle (x-1)e^x+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{1}{2+\sin x}\,dx$}
+  {\IntegralAnswer{$t=\tan\frac{x}{2}$ とおく}{$\displaystyle \frac{2}{\sqrt3}\tan^{-1}\!\left(\frac{2\tan\frac{x}{2}+1}{\sqrt3}\right)+C$}}
+  {$\displaystyle \int \frac{(\log x)^2}{x}\,dx$}
+  {\IntegralAnswer{$u=\log x$ とおく}{$\displaystyle \frac13(\log x)^3+C$}}
+\AnswerColumnBreak
+\IntegralPair
+  {$\displaystyle \int \frac{1}{1+\sin x}\,dx$}
+  {\IntegralAnswer{分母を有理化}{$\displaystyle \tan x-\sec x+C$}}
+  {$\displaystyle \int \frac{x^3}{\sqrt{1-x^2}}\,dx$}
+  {\IntegralAnswer{$u=1-x^2$ とおく}{$\displaystyle -\sqrt{1-x^2}+\frac13(1-x^2)^{3/2}+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{1}{x^2+4x+5}\,dx$}
+  {\IntegralAnswer{平方完成}{$\displaystyle \tan^{-1}(x+2)+C$}}
+  {$\displaystyle \int \frac{e^x+e^{-x}}{e^x-e^{-x}}\,dx$}
+  {\IntegralAnswer{$u=e^x-e^{-x}$ とおく}{$\displaystyle \log|e^x-e^{-x}|+C$}}
+\IntegralPair
+  {$\displaystyle \int \frac{2x+1}{x^2+x+3}\,dx$}
+  {\IntegralAnswer{$u=x^2+x+3$ とおく}{$\displaystyle \log(x^2+x+3)+C$}}
+  {$\displaystyle \int x\log x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle \frac{x^2}{2}\log x-\frac{x^2}{4}+C$}}
+
+\LessonPageBreak
+\SetRowSpace{2mm}
+
+\TypeQuestionSingle{次の定積分を求めなさい。}{definite}
+\IntegralPair
+  {$\displaystyle \int_0^{\frac{\pi}{2}}x\cos^2x\,dx$}
+  {\IntegralAnswer{$\cos^2x=\frac{1+\cos2x}{2}$}{$\displaystyle \frac{\pi^2}{16}-\frac14$}}
+  {$\displaystyle \int_0^1\frac{1}{(x+1)(x+2)}\,dx$}
+  {\IntegralAnswer{部分分数分解}{$\displaystyle \log\frac43$}}
+\IntegralPair
+  {$\displaystyle \int_{-1}^1x^2e^{x^3}\,dx$}
+  {\IntegralAnswer{$u=x^3$ とおく}{$\displaystyle \frac{e-e^{-1}}{3}$}}
+  {$\displaystyle \int_1^e\log x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle 1$}}
+\IntegralPair
+  {$\displaystyle \int_{-2}^2x^3e^{x^2}\,dx$}
+  {\IntegralAnswer{被積分関数の奇偶性に注目}{$\displaystyle 0$}}
+  {$\displaystyle \int_1^4\frac{1}{\sqrt{x}(1+\sqrt{x})}\,dx$}
+  {\IntegralAnswer{$t=\sqrt{x}$ とおく}{$\displaystyle 2\log\frac32$}}
+\IntegralPair
+  {$\displaystyle \int_0^{\frac{\pi}{2}}e^x\cos x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle \frac{e^{\pi/2}-1}{2}$}}
+  {$\displaystyle \int_0^1\frac{x^2}{x+1}\,dx$}
+  {\IntegralAnswer{整式の除法}{$\displaystyle \log2-\frac12$}}
+\AnswerColumnBreak
+\IntegralPair
+  {$\displaystyle \int_0^2\sqrt{4-x^2}\,dx$}
+  {\IntegralAnswer{$x=2\sin\theta$ とおく}{$\displaystyle \pi$}}
+  {$\displaystyle \int_0^{\frac{\pi}{2}}\frac{\sin x}{1+\cos^2x}\,dx$}
+  {\IntegralAnswer{$u=\cos x$ とおく}{$\displaystyle \frac{\pi}{4}$}}
+\IntegralPair
+  {$\displaystyle \int_0^1\log(1+x)\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle 2\log2-1$}}
+  {$\displaystyle \int_0^2|x-1|\,dx$}
+  {\IntegralAnswer{$x=1$ で積分区間を分ける}{$\displaystyle 1$}}
+\IntegralPair
+  {$\displaystyle \int_0^1\frac{1}{1+x^2}\,dx$}
+  {\IntegralAnswer{$x=\tan\theta$ とおく}{$\displaystyle \frac{\pi}{4}$}}
+  {$\displaystyle \int_0^{\frac{\pi}{2}}x\sin x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle 1$}}
+\IntegralPair
+  {$\displaystyle \int_0^\pi\sin^2x\,dx$}
+  {\IntegralAnswer{$\sin^2x=\frac{1-\cos2x}{2}$}{$\displaystyle \frac{\pi}{2}$}}
+  {$\displaystyle \int_0^1xe^{x^2}\,dx$}
+  {\IntegralAnswer{$u=x^2$ とおく}{$\displaystyle \frac{e-1}{2}$}}
+\AnswerColumnBreak
+\IntegralPair
+  {$\displaystyle \int_0^\pi x\sin x\,dx$}
+  {\IntegralAnswer{$x\mapsto\pi-x$ として対称性を使う}{$\displaystyle \pi$}}
+  {$\displaystyle \int_0^1\frac{1}{x^2+2x+2}\,dx$}
+  {\IntegralAnswer{平方完成}{$\displaystyle \tan^{-1}2-\frac{\pi}{4}$}}
+\IntegralPair
+  {$\displaystyle \int_0^{\frac{\pi}{2}}\sin^3x\,dx$}
+  {\IntegralAnswer{$\sin^3x=(1-\cos^2x)\sin x$}{$\displaystyle \frac23$}}
+  {$\displaystyle \int_0^1\tan^{-1}x\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle \frac{\pi}{4}-\frac12\log2$}}
+\IntegralPair
+  {$\displaystyle \int_0^1\frac{x}{1+x^2}\,dx$}
+  {\IntegralAnswer{$u=1+x^2$ とおく}{$\displaystyle \frac12\log2$}}
+  {$\displaystyle \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x\sin x\,dx$}
+  {\IntegralAnswer{被積分関数が偶関数}{$\displaystyle 2$}}
+\IntegralPair
+  {$\displaystyle \int_0^{\frac{\pi}{4}}\frac{1}{2+\cos2x}\,dx$}
+  {\IntegralAnswer{$t=\tan x$ とおく}{$\displaystyle \frac{\pi}{6\sqrt3}$}}
+  {$\displaystyle \int_1^e(\log x)^2\,dx$}
+  {\IntegralAnswer{部分積分}{$\displaystyle e-2$}}
+\AnswerColumnBreak
+\IntegralPair
+  {$\displaystyle \int_0^{\log2}\frac{e^x}{1+e^x}\,dx$}
+  {\IntegralAnswer{$u=1+e^x$ とおく}{$\displaystyle \log\frac32$}}
+  {$\displaystyle \int_{-1}^1(x^4+2x^3+1)\,dx$}
+  {\IntegralAnswer{奇関数の項を除く}{$\displaystyle \frac{12}{5}$}}
+\IntegralPair
+  {$\displaystyle \int_0^{\frac{\pi}{2}}\frac{1}{1+\sin x}\,dx$}
+  {\IntegralAnswer{分母を有理化}{$\displaystyle 1$}}
+  {$\displaystyle \int_0^1\frac{x}{\sqrt{1+x^2}}\,dx$}
+  {\IntegralAnswer{$u=1+x^2$ とおく}{$\displaystyle \sqrt2-1$}}
+\IntegralPair
+  {$\displaystyle \int_0^{\frac{\pi}{4}}\tan x\,dx$}
+  {\IntegralAnswer{$u=\cos x$ とおく}{$\displaystyle \frac12\log2$}}
+  {$\displaystyle \int_0^1\frac{1}{\sqrt{1-x^2}}\,dx$}
+  {\IntegralAnswer{$x=\sin\theta$ とおく}{$\displaystyle \frac{\pi}{2}$}}
