@@ -1,5 +1,5 @@
 % theme: meaning_and_notation_of_vectors
-\MajorQuestionLesson{ベクトルの意味と表し方}
+\MajorQuestionLesson{ベクトルの意味と加法・減法・実数倍}
 \SetRowSpace{4mm}
 
 \TypeQuestionDouble{次の量が、向きと大きさをもつ量なら「ベクトル」、大きさだけをもつ量なら「スカラー」と答えなさい。}{vector_or_scalar}
@@ -26,3 +26,29 @@
 \TypeQuestionDouble{図の正六角形 $\mathrm{ABCDEF}$ の中心を $\mathrm{O}$ とする。次のベクトルと等しいベクトルを、端点が $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D},\mathrm{E},\mathrm{F},\mathrm{O}$ のいずれかである有向線分から、それ自身を除いてすべて答えなさい。}{equal_vectors_in_hexagon}
 \QQRowThree{$\overrightarrow{\mathrm{AB}}$}{}{$\overrightarrow{\mathrm{BC}}$}{}{$\overrightarrow{\mathrm{AO}}$}{}
 \QQRowThree{$\overrightarrow{\mathrm{OC}}$}{}{$\overrightarrow{\mathrm{AC}}$}{}{$\overrightarrow{\mathrm{FA}}$}{}
+
+\TypeQuestionSingle{次の式を、できるだけ簡単なベクトルで表しなさい。}{point_vector_difference}
+%3つ以上のベクトルが登場するものも追加
+%合計１２問ほど。
+\QQRowThree{$\overrightarrow{\mathrm{AB}}+\overrightarrow{\mathrm{BC}}$}{}{$\overrightarrow{\mathrm{PQ}}+\overrightarrow{\mathrm{QR}}$}{}{$\overrightarrow{\mathrm{XY}}+\overrightarrow{\mathrm{YZ}}$}{}
+\QQRowThree{$\overrightarrow{\mathrm{AB}}-\overrightarrow{\mathrm{AC}}$}{}{$\overrightarrow{\mathrm{PQ}}-\overrightarrow{\mathrm{RQ}}$}{}{$\overrightarrow{\mathrm{OA}}-\overrightarrow{\mathrm{OB}}$}{}
+\QQRowThree{$\overrightarrow{\mathrm{AB}}-\overrightarrow{\mathrm{DB}}$}{}{$\overrightarrow{\mathrm{XY}}+\overrightarrow{\mathrm{YX}}$}{}{$\overrightarrow{\mathrm{MN}}-\overrightarrow{\mathrm{MP}}$}{}
+
+\TypeQuestionSingle{次の式を簡単にしなさい。}{algebraic_operations}
+\QQRowThree{$2\vec{a}+3\vec{a}$}{}{$4\vec{b}-7\vec{b}$}{}{$-3\vec{p}+\vec{p}$}{}
+\QQRowThree{$2(\vec{a}+\vec{b})-\vec{a}$}{}{$3(\vec{x}-\vec{y})+2\vec{y}$}{}{$-2(\vec{p}-3\vec{q})+\vec{p}$}{}
+\QQRow{$3(2\vec{a}-\vec{b})-2(\vec{a}+\vec{b})$}{}{$-2(\vec{p}-3\vec{q})+4(\vec{p}+\vec{q})$}{}
+\QQRow{$\dfrac12(4\vec{x}-2\vec{y})-3\vec{x}$}{}{$2(\vec{a}-\vec{b})-(3\vec{a}-4\vec{b})$}{}
+\QQRow{$5\left(\dfrac13\vec{p}+\vec{q}\right)-\dfrac23\vec{p}$}{}{$-3\left(\vec{x}-\dfrac12\vec{y}\right)+2\vec{x}$}{}
+
+\TypeQuestionDouble{三角形 $\mathrm{ABC}$ において、$\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とする。次のベクトルを $\vec{a},\vec{b}$ を用いて表しなさい。}{triangle_expression}
+\QQRowThree{$\overrightarrow{\mathrm{BC}}$}{}{$\overrightarrow{\mathrm{CB}}$}{}{$\overrightarrow{\mathrm{BA}}$}{}
+\QQRowThree{$\overrightarrow{\mathrm{CA}}$}{}{$\overrightarrow{\mathrm{AB}}+\overrightarrow{\mathrm{BC}}$}{}{$\overrightarrow{\mathrm{BA}}+\overrightarrow{\mathrm{AC}}$}{}
+
+\TypeQuestionDouble{平行四辺形 $\mathrm{ABCD}$ において、$\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AD}}=\vec{b}$ とする。次のベクトルを $\vec{a},\vec{b}$ を用いて表しなさい。}{parallelogram_expression}
+\QQRowThree{$\overrightarrow{\mathrm{BC}}$}{}{$\overrightarrow{\mathrm{DC}}$}{}{$\overrightarrow{\mathrm{AC}}$}{}
+\QQRowThree{$\overrightarrow{\mathrm{CA}}$}{}{$\overrightarrow{\mathrm{BD}}$}{}{$\overrightarrow{\mathrm{DB}}$}{}
+
+\TypeQuestionSingle{次の等式を満たすベクトル $\vec{x}$ を求めなさい。}{vector_equation_basic}
+\QQRow{$2\vec{x}+\vec{a}=3\vec{b}$}{}{$3\vec{x}-2\vec{p}=\vec{q}$}{}
+\QQRow{$\dfrac12\vec{x}+\vec{a}=\vec{b}$}{}{$4(\vec{x}-\vec{a})=2\vec{b}$}{}
