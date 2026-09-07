@@ -4,6 +4,17 @@
 - qanda入り切らない問題　応急処置
 - bookの整理・・・カオスすぎ！
 
+
+ln -s "/home/keisuke/LOTUS/002_Java/002_001_Workspace/eclipse/[ドキュメント]/[007]創発シミュレーション" "/home/keisuke/LOTUS/006_memo/創発"
+
+git check-ignore -v -- [007]創発シミュレーション
+
+git rm --cached [007]創発シミュレーション
+git rm --cached [006]workbook
+git commit -m "追跡対象からファイルを除外" 
+git push
+
+
 ---
 ## 作るやつ
 
