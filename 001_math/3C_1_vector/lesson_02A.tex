@@ -1,0 +1,41 @@
+% theme: parallel_vectors_and_decomposition
+\MajorQuestionLesson{ベクトルの平行と分解}
+\SetRowSpace{5mm}
+
+\TypeQuestionDouble{$\vec{a},\vec{b}$ は一次独立なベクトルであり、$\vec{u}=2\vec{a}-\vec{b}$、$\vec{v}=-\vec{a}+3\vec{b}$ とする。次のベクトルを $\vec{a},\vec{b}$ を用いて表しなさい。}{change_of_generators}
+\QQRowThree{$\vec{u}+\vec{v}$}{$\vec{a}+2\vec{b}$}{$2\vec{u}-\vec{v}$}{$5\vec{a}-5\vec{b}$}{$3\vec{u}+2\vec{v}$}{$4\vec{a}+3\vec{b}$}
+\QQRowThree{$-\vec{u}+4\vec{v}$}{$-6\vec{a}+13\vec{b}$}{$\dfrac12\vec{u}-\vec{v}$}{$2\vec{a}-\dfrac72\vec{b}$}{$2(\vec{u}+\vec{v})-3\vec{u}$}{$-4\vec{a}+7\vec{b}$}
+
+\TypeQuestionDouble{$\vec{a},\vec{b}$ は一次独立なベクトルである。次の2つのベクトルが平行になるように、実数 $k$ を求めなさい。}{parallel_condition_abstract}
+\QQRow{$3\vec{a}+k\vec{b}$ と $-2\vec{a}+4\vec{b}$}{$k=-6$}{$k\vec{a}-\vec{b}$ と $6\vec{a}+3\vec{b}$}{$k=-2$}
+\QQRow{$\dfrac12\vec{a}+3\vec{b}$ と $2\vec{a}+k\vec{b}$}{$k=12$}{$3\vec{a}-\dfrac12\vec{b}$ と $k\vec{a}+2\vec{b}$}{$k=-12$}
+\QQRow{$k\vec{a}+\dfrac23\vec{b}$ と $-6\vec{a}+4\vec{b}$}{$k=-1$}{$(k-1)\vec{a}+\dfrac32\vec{b}$ と $4\vec{a}-3\vec{b}$}{$k=-1$}
+
+\TypeQuestionDouble{$\vec{a}\ne\vec{0}$ とする。次の条件を満たすベクトル $\vec{b}$ を、$\vec{a}$ を用いて表しなさい。}{parallel_vector_with_magnitude}
+\QQRow{$|\vec{a}|=3$、$\vec{a}$ と同じ向きで $|\vec{b}|=5$}{$\vec{b}=\dfrac53\vec{a}$}{$|\vec{a}|=4$、$\vec{a}$ と反対向きで $|\vec{b}|=6$}{$\vec{b}=-\dfrac32\vec{a}$}
+\QQRow{$|\vec{a}|=9$、$\vec{a}$ と平行な単位ベクトルすべて}{$\vec{b}=\pm\dfrac19\vec{a}$}{$|\vec{a}|=\sqrt5$、$\vec{a}$ と同じ向きで $|\vec{b}|=2\sqrt5$}{$\vec{b}=2\vec{a}$}
+\QQRow{$|\vec{a}|=6$、$\vec{a}$ と反対向きで $|\vec{b}|=1$}{$\vec{b}=-\dfrac16\vec{a}$}{$|\vec{a}|=2\sqrt3$、$\vec{a}$ と平行で $|\vec{b}|=3$}{$\vec{b}=\pm\dfrac{\sqrt3}{2}\vec{a}$}
+
+\TypeQuestionDouble{三角形 $\mathrm{ABC}$ において $\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とする。条件を満たす点について、指定されたベクトルを $\vec{a},\vec{b}$ で表しなさい。}{parallel_geometry}
+\QQRow{$\overrightarrow{\mathrm{AP}}=2\overrightarrow{\mathrm{AB}}$ のとき $\overrightarrow{\mathrm{CP}}$}{$2\vec{a}-\vec{b}$}{$\overrightarrow{\mathrm{AQ}}=-\overrightarrow{\mathrm{AC}}$ のとき $\overrightarrow{\mathrm{BQ}}$}{$-\vec{a}-\vec{b}$}
+\QQRow{$\overrightarrow{\mathrm{AR}}=3\overrightarrow{\mathrm{BC}}$ のとき $\overrightarrow{\mathrm{AR}}$}{$-3\vec{a}+3\vec{b}$}{$\overrightarrow{\mathrm{BS}}=2\overrightarrow{\mathrm{CA}}$ のとき $\overrightarrow{\mathrm{AS}}$}{$\vec{a}-2\vec{b}$}
+\QQRow{$\overrightarrow{\mathrm{AT}}=\dfrac12(\overrightarrow{\mathrm{AB}}+\overrightarrow{\mathrm{AC}})$ のとき $\overrightarrow{\mathrm{BT}}$}{$\dfrac12(-\vec{a}+\vec{b})$}{$\overrightarrow{\mathrm{AU}}=\dfrac13\overrightarrow{\mathrm{AB}}+\dfrac23\overrightarrow{\mathrm{AC}}$ のとき $\overrightarrow{\mathrm{BU}}$}{$\dfrac23(-\vec{a}+\vec{b})$}
+
+\LessonPageBreak
+
+\TypeQuestionDouble{$\vec{a},\vec{b}$ は一次独立なベクトルである。$\vec{u},\vec{v}$ が次のように与えられているとき、$\vec{a},\vec{b}$ をそれぞれ $\vec{u},\vec{v}$ を用いて表しなさい。}{inverse_decomposition}
+\QQRow{$\vec{u}=2\vec{a}+\vec{b},\quad \vec{v}=\vec{a}-2\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac{2\vec{u}+\vec{v}}5$}{$\displaystyle \vec{b}=\dfrac{\vec{u}-2\vec{v}}5$}}{$\vec{u}=3\vec{a}-2\vec{b},\quad \vec{v}=\vec{a}+\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac{\vec{u}+2\vec{v}}5$}{$\displaystyle \vec{b}=\dfrac{-\vec{u}+3\vec{v}}5$}}
+\QQRow{$\vec{u}=\vec{a}+3\vec{b},\quad \vec{v}=2\vec{a}-\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac{\vec{u}+3\vec{v}}7$}{$\displaystyle \vec{b}=\dfrac{2\vec{u}-\vec{v}}7$}}{$\vec{u}=4\vec{a}+\vec{b},\quad \vec{v}=-\vec{a}+2\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac{2\vec{u}-\vec{v}}9$}{$\displaystyle \vec{b}=\dfrac{\vec{u}+4\vec{v}}9$}}
+\QQRow{$\vec{u}=\dfrac12\vec{a}+\vec{b},\quad \vec{v}=\vec{a}-\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac23(\vec{u}+\vec{v})$}{$\displaystyle \vec{b}=\dfrac{2\vec{u}-\vec{v}}3$}}{$\vec{u}=2\vec{a}-\dfrac13\vec{b},\quad \vec{v}=\vec{a}+2\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac{6\vec{u}+\vec{v}}{13}$}{$\displaystyle \vec{b}=\dfrac{-3\vec{u}+6\vec{v}}{13}$}}
+\QQRow{$\vec{u}=\dfrac32\vec{a}+2\vec{b},\quad \vec{v}=-\vec{a}+\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac27(\vec{u}-2\vec{v})$}{$\displaystyle \vec{b}=\dfrac{2\vec{u}+3\vec{v}}7$}}{$\vec{u}=\vec{a}-\dfrac12\vec{b},\quad \vec{v}=\dfrac13\vec{a}+\vec{b}$}{\AnswerTwoLines{$\displaystyle \vec{a}=\dfrac{6\vec{u}+3\vec{v}}7$}{$\displaystyle \vec{b}=\dfrac{-2\vec{u}+6\vec{v}}7$}}
+
+\TypeQuestionDouble{$\vec{a},\vec{b}$ は一次独立なベクトルである。次の等式が成り立つように、実数 $s,t$ を求めなさい。}{nontrivial_coefficient_comparison}
+\QQRow{$(2s-t)\vec{a}+(s+3t)\vec{b}=5\vec{a}+4\vec{b}$}{$s=\dfrac{19}{7},\ t=\dfrac37$}{$(s+2t)\vec{a}+(3s-t)\vec{b}=4\vec{a}+7\vec{b}$}{$s=\dfrac{18}{7},\ t=\dfrac57$}
+\QQRow{$(3s+t)\vec{a}+(s-2t)\vec{b}=7\vec{a}-\vec{b}$}{$s=\dfrac{13}{7},\ t=\dfrac{10}{7}$}{$(s-t)\vec{a}+(2s+3t)\vec{b}=-2\vec{a}+9\vec{b}$}{$s=\dfrac35,\ t=\dfrac{13}{5}$}
+\QQRow{$\left(\dfrac{s}{2}-t\right)\vec{a}+\left(s+\dfrac{t}{3}\right)\vec{b}=2\vec{a}+\dfrac53\vec{b}$}{$s=2,\ t=-1$}{$\left(2s+\dfrac{t}{2}\right)\vec{a}+(s-3t)\vec{b}=-\vec{a}-7\vec{b}$}{$s=-1,\ t=2$}
+\QQRow{$\left(s-\dfrac{2t}{3}\right)\vec{a}+\left(\dfrac{s}{2}+t\right)\vec{b}=\vec{a}+\dfrac92\vec{b}$}{$s=3,\ t=3$}{$\left(\dfrac{3s}{2}+t\right)\vec{a}+\left(s-\dfrac{t}{2}\right)\vec{b}=\vec{a}+3\vec{b}$}{$s=2,\ t=-2$}
+
+% figure: 平行四辺形 ABCD、辺 BC の内分点 P、辺 CD の内分点 Q
+\TypeQuestionDouble{平行四辺形 $\mathrm{ABCD}$ の辺 $\mathrm{BC}$ を $1:2$ に内分する点を $\mathrm{P}$、辺 $\mathrm{CD}$ を $2:1$ に内分する点を $\mathrm{Q}$ とする。$\overrightarrow{\mathrm{AP}}=\vec{p}$、$\overrightarrow{\mathrm{AQ}}=\vec{q}$ とするとき、次のベクトルを $\vec{p},\vec{q}$ を用いて表しなさい。}{parallelogram_change_of_basis}
+\QQRow{$\overrightarrow{\mathrm{AB}}$}{$\dfrac18(9\vec{p}-3\vec{q})$}{$\overrightarrow{\mathrm{AD}}$}{$\dfrac18(-3\vec{p}+9\vec{q})$}
+\QQRow{$\overrightarrow{\mathrm{AC}}$}{$\dfrac34(\vec{p}+\vec{q})$}{$\overrightarrow{\mathrm{BD}}$}{$\dfrac32(-\vec{p}+\vec{q})$}
