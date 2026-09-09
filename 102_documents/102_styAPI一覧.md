@@ -217,6 +217,7 @@
 | `\LMRowSpace` | 現在の小問間隔 | 初期値 `\LMDefaultRowSpace` |
 | `\LMFigureRowSpace` | 図つき問題の下余白 | `3mm` |
 | `\LMFigSideGap` | 図と本文の横間隔 | `4mm` |
+| `\LMTypeQuestionTopSpace` | 大問2以降の見出し上余白 | `5mm` |
 
 ---
 
