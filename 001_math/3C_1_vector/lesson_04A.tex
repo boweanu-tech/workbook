@@ -2,6 +2,10 @@
 \MajorQuestionLesson{ベクトルの成分と大きさ}
 \SetRowSpace{5mm}
 
+%ベクトルを横ベクトル表示にしてください。
+%縦がわかりやすいですが、高校では横が普通です。
+
+
 \TypeQuestionSingle{次のベクトルの和・差・実数倍を成分で表しなさい。}{component_operations}
 \QQRow{$\begin{pmatrix}2\\-3\end{pmatrix}+\begin{pmatrix}-5\\4\end{pmatrix}$}{}{$\begin{pmatrix}7\\1\end{pmatrix}-\begin{pmatrix}3\\-6\end{pmatrix}$}{}
 \QQRow{$-3\begin{pmatrix}2\\-1\end{pmatrix}$}{}{$2\begin{pmatrix}-4\\3\end{pmatrix}-\begin{pmatrix}1\\5\end{pmatrix}$}{}
@@ -11,17 +15,24 @@
 \QQRow{$\begin{pmatrix}x+1\\2y\end{pmatrix}=\begin{pmatrix}5\\-6\end{pmatrix}$}{}{$\begin{pmatrix}3x-2\\y+4\end{pmatrix}=\begin{pmatrix}7\\1\end{pmatrix}$}{}
 \QQRow{$2\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}-8\\10\end{pmatrix}$}{}{$\begin{pmatrix}x-y\\x+y\end{pmatrix}=\begin{pmatrix}1\\7\end{pmatrix}$}{}
 
+%a,bではなく、すべて実数でお願い。
 \TypeQuestionSingle{次のベクトルの大きさを求めなさい。}{component_magnitude}
 \QQRowThree{$\begin{pmatrix}3\\4\end{pmatrix}$}{}{$\begin{pmatrix}-5\\12\end{pmatrix}$}{}{$\begin{pmatrix}1\\-1\end{pmatrix}$}{}
 \QQRowThree{$\begin{pmatrix}-6\\-8\end{pmatrix}$}{}{$\begin{pmatrix}2\\\sqrt5\end{pmatrix}$}{}{$\begin{pmatrix}a\\b\end{pmatrix}$}{}
 
-\LessonPageBreak
-\SetRowSpace{5mm}
 
 \TypeQuestionSingle{2点 $\mathrm{A},\mathrm{B}$ に対して、$\overrightarrow{\mathrm{AB}}$ の成分を求めなさい。}{points_to_components}
 \QQRow{$\mathrm{A}(2,-1),\ \mathrm{B}(7,3)$}{}{$\mathrm{A}(-4,5),\ \mathrm{B}(1,-2)$}{}
 \QQRow{$\mathrm{A}(3,6),\ \mathrm{B}(-2,6)$}{}{$\mathrm{A}(-1,-3),\ \mathrm{B}(4,2)$}{}
 \QQRow{$\mathrm{A}(0,7),\ \mathrm{B}(-6,0)$}{}{$\mathrm{A}(5,-2),\ \mathrm{B}(2,4)$}{}
+
+\LessonPageBreak
+\SetRowSpace{5mm}
+
+%a,bの成分が与えられていて、2a-3bとかカンタンなベクトルの成分を求める問題を追加。
+
+
+%方眼紙があり、「図のようにa~cベクトルが与えられている。この時以下のベクトル(a,b,cのほか、2a-3bとかカンタンな計算アリ)の成分を求めなさい」みたいな問題を追加。
 
 \TypeQuestionSingle{次の条件を満たす実数 $x$ を求めなさい。}{magnitude_equation}
 \QQRow{$\left|\begin{pmatrix}x\\4\end{pmatrix}\right|=5$}{}{$\left|\begin{pmatrix}3\\x\end{pmatrix}\right|=\sqrt{34}$}{}
@@ -31,23 +42,10 @@
 \QQRowThree{$\begin{pmatrix}3\\4\end{pmatrix}$}{}{$\begin{pmatrix}-8\\6\end{pmatrix}$}{}{$\begin{pmatrix}1\\-\sqrt3\end{pmatrix}$}{}
 \QQRowThree{$\begin{pmatrix}-5\\-12\end{pmatrix}$}{}{$\begin{pmatrix}0\\7\end{pmatrix}$}{}{$\begin{pmatrix}2\\2\end{pmatrix}$}{}
 
-\TypeQuestionDouble{点 $\mathrm{A}$ とベクトル $\overrightarrow{\mathrm{AB}}$ が与えられている。点 $\mathrm{B}$ の座標を求めなさい。}{endpoint_from_vector}
-\QQRow{$\mathrm{A}(1,2),\ \overrightarrow{\mathrm{AB}}=\begin{pmatrix}4\\-3\end{pmatrix}$}{}{$\mathrm{A}(-2,5),\ \overrightarrow{\mathrm{AB}}=\begin{pmatrix}-1\\6\end{pmatrix}$}{}
-\QQRow{$\mathrm{A}(3,-4),\ \overrightarrow{\mathrm{AB}}=\begin{pmatrix}-5\\2\end{pmatrix}$}{}{$\mathrm{A}(0,-3),\ \overrightarrow{\mathrm{AB}}=\begin{pmatrix}7\\7\end{pmatrix}$}{}
-
-\LessonPageBreak
-\SetRowSpace{6mm}
-
 \TypeQuestionDouble{次の2つのベクトルが平行になるように、実数 $k$ の値を求めなさい。}{parallel_condition_components}
 \QQRow{$\begin{pmatrix}2\\3\end{pmatrix},\ \begin{pmatrix}k\\6\end{pmatrix}$}{}{$\begin{pmatrix}-4\\6\end{pmatrix},\ \begin{pmatrix}2\\k\end{pmatrix}$}{}
 \QQRow{$\begin{pmatrix}k-1\\2\end{pmatrix},\ \begin{pmatrix}3\\k+1\end{pmatrix}$}{}{$\begin{pmatrix}k+1\\2k-1\end{pmatrix},\ \begin{pmatrix}3\\5\end{pmatrix}$}{}
 
-\TypeQuestionSingle{次の2点間の距離を求めなさい。}{distance_between_points}
-\QQRow{$\mathrm{A}(2,-1),\ \mathrm{B}(-4,7)$}{}{$\mathrm{P}(-3,5),\ \mathrm{Q}(5,-10)$}{}
-\QQRow{$\mathrm{A}(a,b),\ \mathrm{B}(c,d)$}{}{$\mathrm{P}(1-\sqrt3,2),\ \mathrm{Q}(1,2+\sqrt3)$}{}
 
-\TypeQuestionDouble{2点 $\mathrm{A},\mathrm{B}$ の間の距離が次の値となるように、実数 $k$ を求めなさい。}{distance_parameter}
-\QQRow{$\mathrm{A}(k,1),\ \mathrm{B}(2,-3),\quad \mathrm{AB}=5$}{}{$\mathrm{A}(-1,k),\ \mathrm{B}(3,2),\quad \mathrm{AB}=\sqrt{20}$}{}
-
-%方眼紙があり、「図のようにa~cベクトルが与えられている。この時いかのベクトルを図示しなさい」みたいな問題。
+%方眼紙があり、「図のようにa~cベクトルが与えられている。この時以下のベクトルを図示しなさい」みたいな問題を追加。
 
