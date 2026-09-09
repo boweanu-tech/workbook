@@ -11,11 +11,11 @@
       }
     ]]></style>
   </defs>
-  <path class="main" d="M 8 31 L 48 31 L 27 7 Z"/>
+  <path class="main" d="M 8 31 L 48 31 L 20 7 Z"/>
   <circle class="point" cx="8" cy="31" r="0.45"/>
   <circle class="point" cx="48" cy="31" r="0.45"/>
-  <circle class="point" cx="27" cy="7" r="0.45"/>
+  <circle class="point" cx="20" cy="7" r="0.45"/>
   <text class="label" x="3.7" y="35.2">A</text>
   <text class="label" x="49.5" y="35.2">B</text>
-  <text class="label" x="25.3" y="4.6">C</text>
+  <text class="label" x="18.3" y="4.6">C</text>
 </svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="44mm" viewBox="0 0 62 44">
+  <!-- AB + AC -->
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 5 2.5 L 0 5 Z" fill="black"/>
+    </marker>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .answer { stroke: black; stroke-width: 0.8; fill: none; stroke-linecap: round; marker-end: url(#arrow); }
+      .point { fill: black; stroke: none; }
+      .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4.1px; font-style: normal; fill: black; }
+    ]]></style>
+  </defs>
+  <path class="main" d="M 13 26 L 31 26 L 18.4 15.2 Z"/>
+  <circle class="point" cx="13" cy="26" r="0.42"/>
+  <circle class="point" cx="31" cy="26" r="0.42"/>
+  <circle class="point" cx="18.4" cy="15.2" r="0.42"/>
+  <text class="label" x="8.8" y="30.2">A</text>
+  <text class="label" x="32.2" y="30.2">B</text>
+  <text class="label" x="16.7" y="12.3">C</text>
+  <line class="answer" x1="13" y1="26" x2="36.4" y2="15.2"/>
+</svg>
