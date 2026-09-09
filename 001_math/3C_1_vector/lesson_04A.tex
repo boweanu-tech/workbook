@@ -7,13 +7,18 @@
 \QQRow{$|\vec{a}|=2\sqrt3,\ |\vec{b}|=3,\ \theta=30^\circ$}{}{$|\vec{a}|=6,\ |\vec{b}|=1,\ \theta=135^\circ$}{}
 \QQRow{$|\vec{a}|=4,\ |\vec{b}|=7,\ \theta=90^\circ$}{}{$|\vec{a}|=\sqrt2,\ |\vec{b}|=5,\ \theta=45^\circ$}{}
 
+%右図の長方形ABCD(対角線がひかれている)において、各ベクトルの内積をもとめる問題を追加。
+%長方形の辺の長さはわかっている。
+%対角線と辺のなす角が30や60度などで、cosを計算できる形に。
+
 \TypeQuestionSingle{次の2つのベクトルの内積を求めなさい。}{component_dot_product}
 \QQRow{$\begin{pmatrix}2\\3\end{pmatrix},\ \begin{pmatrix}4\\-1\end{pmatrix}$}{}{$\begin{pmatrix}-5\\2\end{pmatrix},\ \begin{pmatrix}1\\6\end{pmatrix}$}{}
 \QQRow{$\begin{pmatrix}3\\-4\end{pmatrix},\ \begin{pmatrix}-2\\-7\end{pmatrix}$}{}{$\begin{pmatrix}\sqrt3\\1\end{pmatrix},\ \begin{pmatrix}\sqrt3\\-1\end{pmatrix}$}{}
 \QQRow{$\begin{pmatrix}0\\8\end{pmatrix},\ \begin{pmatrix}-3\\5\end{pmatrix}$}{}{$\begin{pmatrix}a\\b\end{pmatrix},\ \begin{pmatrix}c\\d\end{pmatrix}$}{}
 
-\TypeQuestionDouble{$\vec{a}\cdot\vec{a}$ を、$|\vec{a}|$ を用いて表しなさい。また、与えられた $\vec{a}$ についてその値を求めなさい。}{self_dot_product}
-\QQRow{$\vec{a}=\begin{pmatrix}3\\-2\end{pmatrix}$}{}{$\vec{a}=\begin{pmatrix}-1\\4\end{pmatrix}$}{}
+\TypeQuestionDouble{$\vec{a}=\begin{pmatrix}2\\-1\end{pmatrix}$、$\vec{b}=\begin{pmatrix}-3\\4\end{pmatrix}$ とする。次の値を求めなさい。}{component_dot_composite}
+\QQRow{$(\vec{a}+\vec{b})\cdot\vec{a}$}{}{$(2\vec{a}-\vec{b})\cdot\vec{b}$}{}
+\QQRow{$|\vec{a}+2\vec{b}|^2$}{}{$|3\vec{a}-\vec{b}|^2$}{}
 
 \LessonPageBreak
 \SetRowSpace{5mm}
@@ -27,16 +32,10 @@
 \QQRow{$|\vec{a}|=3,\ |\vec{b}|=4,\ |\vec{a}+\vec{b}|=5$}{}{$|\vec{a}|=2,\ |\vec{b}|=5,\ |\vec{a}-\vec{b}|=\sqrt{33}$}{}
 \QQRow{$|\vec{a}+\vec{b}|=6,\ |\vec{a}-\vec{b}|=4$}{}{$|2\vec{a}+\vec{b}|^2-|2\vec{a}-\vec{b}|^2=24$}{}
 
-\TypeQuestionDouble{$\vec{a}=\begin{pmatrix}2\\-1\end{pmatrix}$、$\vec{b}=\begin{pmatrix}-3\\4\end{pmatrix}$ とする。次の値を求めなさい。}{component_dot_composite}
-\QQRow{$(\vec{a}+\vec{b})\cdot\vec{a}$}{}{$(2\vec{a}-\vec{b})\cdot\vec{b}$}{}
-\QQRow{$|\vec{a}+2\vec{b}|^2$}{}{$|3\vec{a}-\vec{b}|^2$}{}
-
 \TypeQuestionSingle{内積の性質を用いて、次の式を展開しなさい。}{dot_product_identity}
 \QQRow{$|\vec{a}+\vec{b}|^2$}{}{$|\vec{a}-\vec{b}|^2$}{}
 \QQRow{$(\vec{a}+2\vec{b})\cdot(\vec{a}-\vec{b})$}{}{$|2\vec{a}-3\vec{b}|^2$}{}
 
-\LessonPageBreak
-\SetRowSpace{6mm}
 
 \TypeQuestionDouble{$|\vec{a}|=3$、$|\vec{b}|=4$、$\vec{a}\cdot\vec{b}=6$ とする。次のベクトルの大きさを求めなさい。}{magnitude_from_dot_product}
 \QQRow{$|\vec{a}+\vec{b}|$}{}{$|\vec{a}-\vec{b}|$}{}
