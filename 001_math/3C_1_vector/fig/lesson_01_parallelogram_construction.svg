@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="40mm" viewBox="0 0 62 40">
+  <!-- 作図問題の条件を示す平行四辺形。書き込み用の方眼・解答欄は含めない。 -->
+  <defs>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.55; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .point { fill: black; stroke: none; }
+      .label {
+        font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
+        font-size: 4.1px; font-style: normal; fill: black;
+      }
+    ]]></style>
+  </defs>
+  <path class="main" d="M 8 33 L 43 33 L 54 8 L 19 8 Z"/>
+  <circle class="point" cx="8" cy="33" r="0.45"/>
+  <circle class="point" cx="43" cy="33" r="0.45"/>
+  <circle class="point" cx="54" cy="8" r="0.45"/>
+  <circle class="point" cx="19" cy="8" r="0.45"/>
+  <text class="label" x="3.7" y="37.2">A</text>
+  <text class="label" x="44.3" y="37.2">B</text>
+  <text class="label" x="55.2" y="9.5">C</text>
+  <text class="label" x="14.6" y="5.3">D</text>
+</svg>

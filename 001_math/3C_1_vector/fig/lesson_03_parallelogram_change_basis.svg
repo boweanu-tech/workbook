@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="82mm" height="52mm" viewBox="0 0 82 52">
+  <!-- 平行四辺形 ABCD。P は BC を 1:2、Q は CD を 2:1 に内分する。 -->
+  <defs>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.55; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .point { fill: black; stroke: none; }
+      .label {
+        font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
+        font-size: 4.1px; font-style: normal; fill: black;
+      }
+    ]]></style>
+  </defs>
+  <path class="main" d="M 10 43 L 55 43 L 72 10 L 27 10 Z"/>
+  <circle class="point" cx="10" cy="43" r="0.45"/>
+  <circle class="point" cx="55" cy="43" r="0.45"/>
+  <circle class="point" cx="72" cy="10" r="0.45"/>
+  <circle class="point" cx="27" cy="10" r="0.45"/>
+  <circle class="point" cx="60.67" cy="32" r="0.45"/>
+  <circle class="point" cx="42" cy="10" r="0.45"/>
+  <text class="label" x="5.6" y="47.2">A</text>
+  <text class="label" x="56.2" y="47.2">B</text>
+  <text class="label" x="73.2" y="11.4">C</text>
+  <text class="label" x="22.5" y="7.2">D</text>
+  <text class="label" x="62.2" y="34.2">P</text>
+  <text class="label" x="40.5" y="7.2">Q</text>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138mm" height="94mm" viewBox="0 0 138 94">
+  <!-- lesson_01_triangle_construction.svg の解答図。 -->
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 5 2.5 L 0 5 Z" fill="black"/>
+    </marker>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .answer { stroke: black; stroke-width: 0.9; fill: none; stroke-linecap: round; marker-end: url(#arrow); }
+      .guide { stroke: #bbbbbb; stroke-width: 0.22; fill: none; }
+      .point { fill: black; stroke: none; }
+      .label, .number {
+        font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
+        font-style: normal; fill: black;
+      }
+      .label { font-size: 4.1px; }
+      .number { font-size: 4px; }
+    ]]></style>
+    <g id="triangle">
+      <path class="main" d="M 16 29 L 29 29 L 23 17 Z"/>
+      <circle class="point" cx="16" cy="29" r="0.42"/>
+      <circle class="point" cx="29" cy="29" r="0.42"/>
+      <circle class="point" cx="23" cy="17" r="0.42"/>
+      <text class="label" x="11.7" y="33.2">A</text>
+      <text class="label" x="30.2" y="33.2">B</text>
+      <text class="label" x="21.4" y="13.8">C</text>
+    </g>
+  </defs>
+  <line class="guide" x1="69" y1="3" x2="69" y2="91"/>
+  <line class="guide" x1="3" y1="47" x2="135" y2="47"/>
+  <g transform="translate(2,2)"><text class="number" x="2" y="6">(1)</text><use xlink:href="#triangle"/><line class="answer" x1="16" y1="29" x2="36" y2="17"/></g>
+  <g transform="translate(70,2)"><text class="number" x="2" y="6">(2)</text><use xlink:href="#triangle"/><line class="answer" x1="16" y1="29" x2="22" y2="41"/></g>
+  <g transform="translate(2,48)"><text class="number" x="2" y="6">(3)</text><use xlink:href="#triangle"/><line class="answer" x1="16" y1="29" x2="49" y2="17"/></g>
+  <g transform="translate(70,48)"><text class="number" x="2" y="6">(4)</text><use xlink:href="#triangle"/><line class="answer" x1="16" y1="29" x2="17" y2="5"/></g>
+</svg>
