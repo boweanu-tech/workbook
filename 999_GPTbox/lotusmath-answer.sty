@@ -194,4 +194,20 @@
     \LessonPageBreak
   \fi
 }
+
+\newcommand{\QueueAnswerPageBreak}{%
+  \g@addto@macro\LMProblemList{\LMQueuedAnswerPageBreak}%
+}
+
+% \PrintAnswers 中で実際に改ページする内部命令
+\newcommand{\LMQueuedAnswerPageBreak}{%
+  \ifLMInAnswerBlock
+    \end{minipage}\par
+    \LMInAnswerBlockfalse
+  \fi
+  \end{multicols}
+  \clearpage
+  \begin{multicols}{2}
+  \raggedcolumns
+}
 \makeatother
