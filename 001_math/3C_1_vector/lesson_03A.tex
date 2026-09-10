@@ -1,59 +1,34 @@
-% theme: vector_components_and_magnitude
-\MajorQuestionLesson{ベクトルの成分と大きさ}
+% theme: vector_components_and_calculation
+\MajorQuestionLesson{ベクトルの成分と計算}
 \SetRowSpace{5mm}
 
 \TypeQuestionSingle{次のベクトルの和・差・実数倍を成分で表しなさい。}{component_operations}
-\QQRow{$(2,-3)+(-5,4)$}{}{$(7,1)-(3,-6)$}{}
-\QQRow{$-3(2,-1)$}{}{$2(-4,3)-(1,5)$}{}
+\QQRow{$(2,-3)+(-5,4)$}{}{$\left(\dfrac72,1\right)-\left(\dfrac12,-3\right)$}{}
+\QQRow{$\dfrac32(4,-2)$}{}{$2(-4,3)-(1,5)$}{}
 \QQRow{$\dfrac12(6,-8)+(-2,7)$}{}{$3(1,2)-2(-3,4)$}{}
 
 \TypeQuestionSingle{ベクトルの相等を用いて、実数 $x,y$ を求めなさい。}{component_equality}
 \QQRow{$(x+1,2y)=(5,-6)$}{}{$(3x-2,y+4)=(7,1)$}{}
-\QQRow{$2(x,y)=(-8,10)$}{}{$(x-y,x+y)=(1,7)$}{}
-
-\TypeQuestionSingle{次のベクトルの大きさを求めなさい。}{component_magnitude}
-\QQRowThree{$(3,4)$}{}{$(-5,12)$}{}{$(1,-1)$}{}
-\QQRowThree{$(-6,-8)$}{}{$(2,\sqrt5)$}{}{$(-4,7)$}{}
+\QQRow{$\dfrac12(x,y)=(-4,5)$}{}{$(x-y,x+y)=(1,7)$}{}
 
 \TypeQuestionSingle{2点 $\mathrm{A},\mathrm{B}$ に対して、$\overrightarrow{\mathrm{AB}}$ の成分を求めなさい。}{points_to_components}
 \QQRow{$\mathrm{A}(2,-1),\ \mathrm{B}(7,3)$}{}{$\mathrm{A}(-4,5),\ \mathrm{B}(1,-2)$}{}
-\QQRow{$\mathrm{A}(3,6),\ \mathrm{B}(-2,6)$}{}{$\mathrm{A}(-1,-3),\ \mathrm{B}(4,2)$}{}
-\QQRow{$\mathrm{A}(0,7),\ \mathrm{B}(-6,0)$}{}{$\mathrm{A}(5,-2),\ \mathrm{B}(2,4)$}{}
+\QQRow{$\mathrm{A}\left(\dfrac12,-1\right),\ \mathrm{B}\left(\dfrac72,2\right)$}{}{$\mathrm{A}(-1,-3),\ \mathrm{B}(4,2)$}{}
+\QQRow{$\mathrm{A}\left(-2,\dfrac52\right),\ \mathrm{B}\left(1,-\dfrac32\right)$}{}{$\mathrm{A}(5,-2),\ \mathrm{B}(2,4)$}{}
+
+\TypeQuestionSingle{$\vec{a}=(2,-1)$、$\vec{b}=(-3,4)$ とする。次のベクトルの成分を求めなさい。}{component_linear_operations}
+\QQRowThree{$\vec{a}+\vec{b}$}{}{$2\vec{a}-3\vec{b}$}{}{$-3\vec{a}+2\vec{b}$}{}
+\QQRowThree{$\dfrac12\vec{a}+\vec{b}$}{}{$\dfrac32\vec{a}+\vec{b}$}{}{$-\vec{a}-2\vec{b}$}{}
 
 \LessonPageBreak
 \SetRowSpace{5mm}
 
-\TypeQuestionDouble{$\vec{a}=(2,-1)$、$\vec{b}=(-3,4)$ とする。次のベクトルの成分を求めなさい。}{component_linear_operations}
-\QQRowThree{$\vec{a}+\vec{b}$}{}{$2\vec{a}-3\vec{b}$}{}{$-3\vec{a}+2\vec{b}$}{}
-\QQRowThree{$\dfrac12\vec{a}+\vec{b}$}{}{$4\vec{a}+\vec{b}$}{}{$-\vec{a}-2\vec{b}$}{}
-
-\TypeQuestionSingle{次の条件を満たす実数 $x$ を求めなさい。}{magnitude_equation}
-\QQRow{$\left|(x,4)\right|=5$}{}{$\left|(3,x)\right|=\sqrt{34}$}{}
-\QQRow{$\left|(x-1,2)\right|=\sqrt{13}$}{}{$\left|(2x,-3)\right|=5$}{}
-
-\TypeQuestionSingle{次のベクトルと同じ向きの単位ベクトルを求めなさい。}{unit_vector}
-\QQRowThree{$(3,4)$}{}{$(-8,6)$}{}{$(1,-\sqrt3)$}{}
-\QQRowThree{$(-5,-12)$}{}{$(0,7)$}{}{$(2,2)$}{}
-
-\TypeQuestionDouble{次の2つのベクトルが平行になるように、実数 $k$ の値を求めなさい。}{parallel_condition_components}
-\QQRow{$(2,3),\ (k,6)$}{}{$(-4,6),\ (2,k)$}{}
-\QQRow{$(k-1,2),\ (3,k+1)$}{}{$(k+1,2k-1),\ (3,5)$}{}
-
-\TypeQuestionDouble{$\vec{a}=(2,1)$、$\vec{b}=(-1,2)$ とする。次のベクトルを $s\vec{a}+t\vec{b}$ の形で表しなさい。}{component_linear_combination}
-\QQRowThree{$\vec{c}=(3,4)$}{}{$\vec{d}=(-4,3)$}{}{$\vec{e}=(0,-5)$}{}
-
 % 図生成時：原点を共有する a=(2,3), b=(-3,1), c=(1,-2) を方眼上に描く。
-\TypeQuestionDouble{図の方眼上に $\vec{a},\vec{b},\vec{c}$ が示されている。次のベクトルの成分を求めなさい。}{read_components_from_grid}
+\TypeQuestionSingle{図の方眼上に $\vec{a},\vec{b},\vec{c}$ が示されている。次のベクトルの成分を求めなさい。}{read_components_from_grid}
 \QQRowThree{$\vec{a}$}{}{$\vec{b}$}{}{$\vec{c}$}{}
-\QQRowThree{$2\vec{a}-\vec{b}$}{}{$\vec{b}+2\vec{c}$}{}{$-\vec{a}+\vec{c}$}{}
+\QQRowThree{$2\vec{a}-\vec{b}$}{}{$\dfrac12\vec{a}+\vec{c}$}{}{$-\vec{a}+\vec{c}$}{}
 
 % 図生成時：上と同じ方眼図を問題図に用いる。解答図は各小問ごとに作る。
-\TypeQuestionDouble{図の方眼上に $\vec{a},\vec{b},\vec{c}$ が示されている。次のベクトルを、原点を始点として図示しなさい。}{draw_vectors_on_grid}
+\TypeQuestionSingle{図の方眼上に $\vec{a},\vec{b},\vec{c}$ が示されている。次のベクトルを、原点を始点として図示しなさい。}{draw_vectors_on_grid}
 \QQRow{$\vec{a}+\vec{b}$}{}{$\vec{a}-\vec{c}$}{}
-\QQRow{$-\vec{b}+\vec{c}$}{}{$-\vec{a}-\vec{b}$}{}
-
-\TypeQuestionSingle{次の問いに答えなさい。}{component_applications}
-\QQ{3点 $\mathrm{A}(-1,2)$、$\mathrm{B}(5,-1)$、$\mathrm{C}(2,5)$ に対して、$2\overrightarrow{\mathrm{AB}}=3\overrightarrow{\mathrm{CD}}$ を満たす点 $\mathrm{D}$ の座標を求めなさい。}{}
-\QQ{$\vec{a}=(4,-2)$、$\vec{b}=(1,1)$ とする。$\vec{p}=\vec{a}+t\vec{b}$ の大きさの最小値と、そのときの実数 $t$ の値を求めなさい。}{}
-\QQ{4点 $\mathrm{A}(1,-2)$、$\mathrm{B}(5,1)$、$\mathrm{C}(x,y)$、$\mathrm{D}(-2,4)$ をこの順に結んで平行四辺形ができるとき、$x,y$ の値を求めなさい。}{}
-\QQ{3点 $\mathrm{A}(1,1)$、$\mathrm{B}(5,2)$、$\mathrm{C}(2,5)$ がある。これらのうち3点を頂点とする平行四辺形の第4の頂点 $\mathrm{D}$ の座標をすべて求めなさい。}{}
+\QQRow{$-\vec{b}+\vec{c}$}{}{$\dfrac12(\vec{a}+\vec{b})$}{}
