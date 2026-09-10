@@ -96,13 +96,13 @@
 
 | コマンド | 引数 | 用途 | 備考 |
 |---|---:|---|---|
-| `\TypeQuestion{text}{vspace}` | 2 | 問題タイプ見出しを出す | 第2引数は見出し本文の縦位置調整 |
-| `\TypeQuestionSingle{text}{tag}` | 2 | 1行見出し用 | 現実装では第2引数 `tag` は表示処理に使っていない |
-| `\TypeQuestionDouble{text}{tag}` | 2 | 2行見出し用 | 現実装では第2引数 `tag` は表示処理に使っていない |
+| `\TypeQuestion{text}{tag}` | 2 | 問題タイプ見出しを出す | 行数にかかわらず、番号枠と説明文を中央揃えする |
+| `\TypeQuestionSingle{text}{tag}` | 2 | 旧1行見出しとの互換用 | 内部では `\TypeQuestion` を呼ぶ |
+| `\TypeQuestionDouble{text}{tag}` | 2 | 旧2行見出しとの互換用 | 内部では `\TypeQuestion` を呼ぶ |
 
 ## 注意
 
-`\TypeQuestionSingle` / `\TypeQuestionDouble` の第2引数は、既存の運用上は「大問タグ」として渡している。しかし、現在の `lotusmath.sty` ではこの値を参照していない。将来おかわり問題・REF生成などで使う可能性があるため、引数自体は維持する。
+`\TypeQuestion` の第2引数は「大問タグ」として渡す。現在の `lotusmath.sty` ではこの値を参照していないが、将来のおかわり問題・REF生成などで使う可能性があるため、引数自体は維持する。旧 `\TypeQuestionSingle` / `\TypeQuestionDouble` も同じ形式で利用できる。
 
 ## 内部API
 
@@ -110,6 +110,7 @@
 |---|---:|---|
 | `\LMBoxedTypeQuestion` | 0 | 問題側のタイプ番号枠 |
 | `\LMBoxedTypeQuestionAns` | 0 | 解答側のタイプ番号枠 |
+| `\LMTypeQuestionText` | 1 | 見出し内の `\vec` の表示を保ち、矢印の高さだけを中央揃えの計算から除外する |
 
 ---
 
@@ -335,7 +336,8 @@
 - 小問番号・大問番号・タイプ番号の進み方
 - 問題モードと解答モードの切替仕様
 - 図の表示幅指定の仕様
-- `\TypeQuestionSingle{text}{tag}` / `\TypeQuestionDouble{text}{tag}` の第2引数の存在
+- `\TypeQuestion{text}{tag}` の第2引数の存在
+- `\TypeQuestionSingle{text}{tag}` / `\TypeQuestionDouble{text}{tag}` の互換性
 - `\WrapFig` の互換性
 - `\usepackage{lotusmath}` で従来通り使えること
 
@@ -343,7 +345,7 @@
 
 # 16. 未整理・今後確認する点
 
-- `\TypeQuestionSingle` / `\TypeQuestionDouble` の第2引数を、将来本当に大問タグとして使うか。
+- `\TypeQuestion` の第2引数を、将来本当に大問タグとして使うか。
 - `\BeginTwoCols` / `\EndTwoCols` は現状ほぼ互換用なので、実使用箇所を確認する。
 - `\Q` は旧形式の可能性があるため、既存ファイルでの使用状況を確認する。
 - `\LM...` の内部コマンドを既存 `.tex` が直接呼んでいないか確認する。

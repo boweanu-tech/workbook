@@ -111,8 +111,19 @@
   \fi
 }
 
+% 見出し内では、\vec の矢印を表示したまま高さの計算から除外する。
+% これにより、ベクトル記号の有無で説明文の中央位置がずれるのを防ぐ。
+\newcommand{\LMTypeQuestionText}[1]{%
+  \begingroup
+    \let\LMOriginalVec\vec
+    \def\vec##1{\mathord{\vphantom{##1}\smash{\LMOriginalVec{##1}}}}%
+    #1%
+  \endgroup
+}
+
 % lesson_用の大問見出し。呼び出すたびに大問番号を進め、小問番号を(1)からに戻す。
-% 例: \TypeQuestion{平方根の形にする}
+% 番号枠と説明文は、それぞれの内容全体の中央でそろえる。
+% 例: \TypeQuestion{平方根の形にしなさい。}{rewrite_as_radical}
 \newcommand{\TypeQuestion}[2]{%
   \LMAfterTypeQuestionfalse
   \stepcounter{LMtype}%
@@ -129,12 +140,12 @@
     \par\vspace{4mm}%
   \else
     \noindent
-    \begin{minipage}[t]{10mm}%
-      \vspace{0pt}\LMBoxedTypeQuestion%
+    \begin{minipage}[c]{10mm}%
+      \LMBoxedTypeQuestion%
     \end{minipage}%
     \hspace{2mm}%
-    \begin{minipage}[t]{\dimexpr\linewidth-12mm\relax}%
-      \vspace{#2}#1%
+    \begin{minipage}[c]{\dimexpr\linewidth-12mm\relax}%
+      \LMTypeQuestionText{#1}%
     \end{minipage}%
     \par
     \vspace{6mm}%
@@ -142,15 +153,9 @@
   \fi
 }
 
-%1行用
-\newcommand{\TypeQuestionSingle}[2]{
-\TypeQuestion{#1}{2.8mm}
-}
-
-%2行用
-\newcommand{\TypeQuestionDouble}[2]{
-\TypeQuestion{#1}{0.2mm}
-}
+% 旧記法との互換用。新規ファイルでは \TypeQuestion を用いる。
+\newcommand{\TypeQuestionSingle}[2]{\TypeQuestion{#1}{#2}}
+\newcommand{\TypeQuestionDouble}[2]{\TypeQuestion{#1}{#2}}
 
 \newcommand{\LessonPageBreak}{%
   \LMAfterTypeQuestionfalse
