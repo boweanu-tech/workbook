@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="58mm" viewBox="0 0 58 58">
+  <!-- a=(2,3), b=(-3,1), c=(1,-2)。各ベクトルの始点・終点は格子点に置く。 -->
+  <defs>
+    <marker id="vector-arrow" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 5 2.5 L 0 5 Z" fill="black"/>
+    </marker>
+    <style><![CDATA[
+      .grid { stroke: #b8b8b8; stroke-width: 0.18; fill: none; }
+      .axis { stroke: black; stroke-width: 0.38; fill: none; }
+      .vector { stroke: black; stroke-width: 0.72; fill: none; stroke-linecap: round; marker-end: url(#vector-arrow); }
+      .point { fill: black; stroke: none; }
+      .label, .axis-label {
+        font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
+        fill: black;
+      }
+      .label { font-size: 4.1px; font-style: italic; }
+      .axis-label { font-size: 3.8px; font-style: italic; }
+      .origin-label { font-style: normal; }
+      .label-bg { fill: white; opacity: 0.9; }
+    ]]></style>
+  </defs>
+
+  <g class="grid">
+    <line x1="7" y1="8" x2="7" y2="50"/><line x1="13" y1="8" x2="13" y2="50"/>
+    <line x1="19" y1="8" x2="19" y2="50"/><line x1="25" y1="8" x2="25" y2="50"/>
+    <line x1="31" y1="8" x2="31" y2="50"/><line x1="37" y1="8" x2="37" y2="50"/>
+    <line x1="43" y1="8" x2="43" y2="50"/><line x1="49" y1="8" x2="49" y2="50"/>
+    <line x1="55" y1="8" x2="55" y2="50"/>
+    <line x1="7" y1="8" x2="55" y2="8"/><line x1="7" y1="14" x2="55" y2="14"/>
+    <line x1="7" y1="20" x2="55" y2="20"/><line x1="7" y1="26" x2="55" y2="26"/>
+    <line x1="7" y1="32" x2="55" y2="32"/><line x1="7" y1="38" x2="55" y2="38"/>
+    <line x1="7" y1="44" x2="55" y2="44"/><line x1="7" y1="50" x2="55" y2="50"/>
+  </g>
+
+  <line class="axis" x1="5" y1="32" x2="55" y2="32"/>
+  <polygon points="57,32 54.2,31.05 54.2,32.95" fill="black"/>
+  <line class="axis" x1="31" y1="52" x2="31" y2="8"/>
+  <polygon points="31,6 30.05,8.8 31.95,8.8" fill="black"/>
+  <text class="axis-label" x="54.2" y="36.2">x</text>
+  <text class="axis-label" x="33" y="8.2">y</text>
+
+  <line class="vector" x1="31" y1="32" x2="43" y2="14"/>
+  <line class="vector" x1="31" y1="32" x2="13" y2="26"/>
+  <line class="vector" x1="31" y1="32" x2="37" y2="44"/>
+  <circle class="point" cx="31" cy="32" r="0.42"/>
+
+  <rect class="label-bg" x="43" y="8.7" width="5" height="5" rx="0.5"/>
+  <text class="label" x="44.3" y="12.5">a</text>
+  <rect class="label-bg" x="7.4" y="21.1" width="5" height="5" rx="0.5"/>
+  <text class="label" x="8.7" y="24.9">b</text>
+  <rect class="label-bg" x="38.1" y="43.2" width="5" height="5" rx="0.5"/>
+  <text class="label" x="39.4" y="47">c</text>
+  <text class="axis-label origin-label" x="27.1" y="36.2">O</text>
+</svg>
