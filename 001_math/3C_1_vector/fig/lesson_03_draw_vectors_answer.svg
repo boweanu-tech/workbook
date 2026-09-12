@@ -2,13 +2,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="64mm" viewBox="0 0 58 64">
   <!-- (1)=(-1,4), (2)=(1,5), (3)=(4,-3), (4)=(2,2)。すべて原点始点で終点は格子点。 -->
   <defs>
-    <marker id="answer-arrow" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M 0 0 L 5 2.5 L 0 5 Z" fill="black"/>
-    </marker>
     <style><![CDATA[
       .grid { stroke: #b8b8b8; stroke-width: 0.18; fill: none; }
       .axis { stroke: black; stroke-width: 0.34; fill: none; }
-      .answer { stroke: black; stroke-width: 0.7; fill: none; stroke-linecap: round; marker-end: url(#answer-arrow); }
+      .answer { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .point { fill: black; stroke: none; }
       .label, .axis-label {
         font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
@@ -41,10 +38,23 @@
   <text class="axis-label" x="47" y="42">x</text>
   <text class="axis-label" x="19" y="5.2">y</text>
 
-  <line class="answer" x1="17" y1="38" x2="11.5" y2="16"/>
-  <line class="answer" x1="17" y1="38" x2="22.5" y2="10.5"/>
-  <line class="answer" x1="17" y1="38" x2="39" y2="54.5"/>
-  <line class="answer" x1="17" y1="38" x2="28" y2="27"/>
+  <!-- template.svg「2. 点・ラベル」の矢印を、長さと向きだけ変えて使用する。 -->
+  <g transform="translate(17,38) rotate(-104.036243)">
+    <line class="answer" x1="0" y1="0" x2="22.677869" y2="0"/>
+    <path class="answer" d="M 21.090369,-0.529167 22.677869,0 21.090369,0.529166"/>
+  </g>
+  <g transform="translate(17,38) rotate(-78.690068)">
+    <line class="answer" x1="0" y1="0" x2="28.044607" y2="0"/>
+    <path class="answer" d="M 26.457107,-0.529167 28.044607,0 26.457107,0.529166"/>
+  </g>
+  <g transform="translate(17,38) rotate(36.869898)">
+    <line class="answer" x1="0" y1="0" x2="27.5" y2="0"/>
+    <path class="answer" d="M 25.9125,-0.529167 27.5,0 25.9125,0.529166"/>
+  </g>
+  <g transform="translate(17,38) rotate(-45)">
+    <line class="answer" x1="0" y1="0" x2="15.556349" y2="0"/>
+    <path class="answer" d="M 13.968849,-0.529167 15.556349,0 13.968849,0.529166"/>
+  </g>
   <circle class="point" cx="17" cy="38" r="0.42"/>
 
   <rect class="label-bg" x="5.8" y="11.1" width="7" height="4.8" rx="0.5"/>

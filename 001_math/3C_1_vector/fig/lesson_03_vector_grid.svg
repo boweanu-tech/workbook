@@ -2,13 +2,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="58mm" viewBox="0 0 58 58">
   <!-- a=(2,3), b=(-3,1), c=(1,-2)。各ベクトルの始点・終点は格子点に置く。 -->
   <defs>
-    <marker id="vector-arrow" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M 0 0 L 5 2.5 L 0 5 Z" fill="black"/>
-    </marker>
     <style><![CDATA[
       .grid { stroke: #b8b8b8; stroke-width: 0.18; fill: none; }
       .axis { stroke: black; stroke-width: 0.38; fill: none; }
-      .vector { stroke: black; stroke-width: 0.72; fill: none; stroke-linecap: round; marker-end: url(#vector-arrow); }
+      .vector { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .point { fill: black; stroke: none; }
       .label, .axis-label {
         font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
@@ -40,9 +37,19 @@
   <text class="axis-label" x="54.2" y="36.2">x</text>
   <text class="axis-label" x="33" y="8.2">y</text>
 
-  <line class="vector" x1="31" y1="32" x2="43" y2="14"/>
-  <line class="vector" x1="31" y1="32" x2="13" y2="26"/>
-  <line class="vector" x1="31" y1="32" x2="37" y2="44"/>
+  <!-- template.svg「2. 点・ラベル」の矢印を、長さと向きだけ変えて使用する。 -->
+  <g transform="translate(31,32) rotate(-56.309932)">
+    <line class="vector" x1="0" y1="0" x2="21.633308" y2="0"/>
+    <path class="vector" d="M 20.045808,-0.529167 21.633308,0 20.045808,0.529166"/>
+  </g>
+  <g transform="translate(31,32) rotate(-161.565051)">
+    <line class="vector" x1="0" y1="0" x2="18.973666" y2="0"/>
+    <path class="vector" d="M 17.386166,-0.529167 18.973666,0 17.386166,0.529166"/>
+  </g>
+  <g transform="translate(31,32) rotate(63.434949)">
+    <line class="vector" x1="0" y1="0" x2="13.416408" y2="0"/>
+    <path class="vector" d="M 11.828908,-0.529167 13.416408,0 11.828908,0.529166"/>
+  </g>
   <circle class="point" cx="31" cy="32" r="0.42"/>
 
   <rect class="label-bg" x="43" y="8.7" width="5" height="5" rx="0.5"/>
