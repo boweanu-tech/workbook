@@ -2,12 +2,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="44mm" viewBox="0 0 62 44">
   <!-- 2AB + AC -->
   <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto" markerUnits="strokeWidth">
-      <path d="M 0 0 L 5 2.5 L 0 5 Z" fill="black"/>
-    </marker>
     <style><![CDATA[
       .main { stroke: black; stroke-width: 0.45; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .answer { stroke: black; stroke-width: 0.8; fill: none; stroke-linecap: round; marker-end: url(#arrow); }
+      .answer { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .point { fill: black; stroke: none; }
       .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4.1px; font-style: normal; fill: black; }
     ]]></style>
@@ -19,5 +16,8 @@
   <text class="label" x="8.8" y="30.2">A</text>
   <text class="label" x="32.2" y="30.2">B</text>
   <text class="label" x="16.7" y="12.3">C</text>
-  <line class="answer" x1="13" y1="26" x2="54.4" y2="15.2"/>
+  <g transform="translate(13,26) rotate(-14.620874)">
+    <line class="answer" x1="0" y1="0" x2="42.785512" y2="0"/>
+    <path class="answer" d="M 41.198012,-0.529167 42.785512,0 41.198012,0.529166"/>
+  </g>
 </svg>
