@@ -7,6 +7,10 @@
 *.fls
 *.fdb_latexmk
 *.pdf
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
 
 # editor/system
 .DS_Store
