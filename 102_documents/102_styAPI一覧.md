@@ -164,7 +164,7 @@
 
 ---
 
-# 8. 回り込み図
+# 8. 回り込み図・表
 
 ## 公開API
 
@@ -172,6 +172,8 @@
 |---|---:|---|---|
 | `\WrapTextFig{pos}{width}{figPath}{text}` | 4 | 説明文だけを図に回り込ませる | 小問番号つき `\QQ` は中に入れない |
 | `\WrapTextFig[rows]{pos}{width}{figPath}{text}` | 5 | 行数指定ありの回り込み図 | `wrapfigure` の行数指定を使う |
+| `\WrapTextTable{pos}{width}{table}{text}` | 4 | 本文や小問を表に回り込ませる | `table` には `tabular` などを記述する |
+| `\WrapTextTable[rows]{pos}{width}{table}{text}` | 5 | 行数指定ありの回り込み表 | `wraptable` の行数指定を使う |
 
 ## 互換API
 
@@ -186,6 +188,8 @@
 |---|---:|---|
 | `\LMWrapTextFigAuto` | 4 | 行数指定なし `\WrapTextFig` の実体 |
 | `\LMWrapTextFigRows` | 5 | 行数指定あり `\WrapTextFig` の実体 |
+| `\LMWrapTextTableAuto` | 4 | 行数指定なし `\WrapTextTable` の実体 |
+| `\LMWrapTextTableRows` | 5 | 行数指定あり `\WrapTextTable` の実体 |
 | `\LMWrapFigAuto` | 4 | 行数指定なし `\WrapFig` の実体 |
 | `\LMWrapFigRows` | 5 | 行数指定あり `\WrapFig` の実体 |
 
@@ -306,7 +310,7 @@
 | `lotusmath-layout.sty` | 表紙、ページ制御、大問見出し、タイプ見出し |
 | `lotusmath-qanda.sty` | `\Blank`, `\NamedBlank`, `\RefBlank`, 一問一答系補助 |
 | `lotusmath-question.sty` | `\Q`, `\QQ`, `\QQTall`, `\QQRow`, `\QQSingle`, 指示文、本文 |
-| `lotusmath-figure.sty` | `\LMFig`, `\QQSideFig`, `\QQFigRow`, `\FigProblemBlock`, 回り込み図 |
+| `lotusmath-figure.sty` | `\LMFig`, `\QQSideFig`, `\QQFigRow`, `\FigProblemBlock`, 回り込み図・表 |
 | `lotusmath-symbols.sty` | `\percent`, `\Tri`, `\Ang`, `\Lseg` |
 
 現在の `lotusmath.sty` 本体は、おおむね次の入口になっている。

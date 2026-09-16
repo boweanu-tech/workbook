@@ -48,6 +48,47 @@
   \fi
 }
 
+% 表を左右に置き、本文や小問を表の周囲へ回り込ませる。
+% 自動行数: \WrapTextTable{r}{表幅}{表}{本文}
+% 行数指定: \WrapTextTable[行数]{r}{表幅}{表}{本文}
+\newcommand{\WrapTextTable}{\@ifnextchar[{\LMWrapTextTableRows}{\LMWrapTextTableAuto}}
+\newcommand{\LMWrapTextTableAuto}[4]{%
+  \ifLMAnswerMode
+    #4%
+  \else
+    \par\noindent
+    \begin{wraptable}{#1}{#2}
+      \vspace{-\baselineskip}%
+      \centering
+      #3%
+      \vspace{-0.5\baselineskip}%
+    \end{wraptable}%
+    \LMWrapModetrue
+    #4\par
+    \LMWrapModefalse
+    \WFclear
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+\newcommand{\LMWrapTextTableRows}[5][]{%
+  \ifLMAnswerMode
+    #5%
+  \else
+    \par\noindent
+    \begin{wraptable}[#1]{#2}{#3}
+      \vspace{-\baselineskip}%
+      \centering
+      #4%
+      \vspace{-0.5\baselineskip}%
+    \end{wraptable}%
+    \LMWrapModetrue
+    #5\par
+    \LMWrapModefalse
+    \WFclear
+    \vspace{\LMFigureRowSpace}%
+  \fi
+}
+
 % 互換用。今後は説明文だけの回り込みには \WrapTextFig を使う。
 \newcommand{\WrapFig}{\@ifnextchar[{\LMWrapFigRows}{\LMWrapFigAuto}}
 \newcommand{\LMWrapFigAuto}[4]{%
