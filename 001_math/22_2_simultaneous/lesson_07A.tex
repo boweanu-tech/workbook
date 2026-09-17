@@ -1,116 +1,33 @@
-% theme: applications_reading_numerical_tables
-\MajorQuestionLesson{数表を読み取る問題}
-\SetRowSpace{3mm}
+% theme: applications_of_prices_and_quantities
+\MajorQuestionLesson{代金と個数の利用問題}
+\SetRowSpace{6mm}
 
-\TypeQuestion{表から数量の関係を読み取り、連立方程式を用いて次の問いに答えなさい。}{tokuten}
+\TypeQuestionSingle{品物の個数を $x,\ y$ 個として連立方程式をつくり、それぞれの個数を求めなさい。}{kosu}
 
-\WrapTextTable{r}{45mm}{%
-\begin{tabular}{|c|c|}\hline
-シュートA & シュートB \\ \hline
-$2$点 & $3$点 \\ \hline
-\end{tabular}
-}{%
-\QQTall{あるバスケットボールの試合では、シュートAとシュートBの1本あたりの得点が右の表のように決められている。2種類のシュートが合わせて23本成功し、それらによる得点が60点であった。成功したシュートAとシュートBは、それぞれ何本か。}{\AnswerTwoLines{$\begin{cases}x+y=23\\2x+3y=60\end{cases}$}{シュートA 9本、シュートB 14本}}
-}
+\QQ{1本80円の鉛筆と1個120円の消しゴムを合わせて15個買うと、代金の合計は1560円であった。鉛筆と消しゴムをそれぞれ何個買ったか。}{\AnswerTwoLines{$\begin{cases}x+y=15\\80x+120y=1560\end{cases}$}{鉛筆6本、消しゴム9個}}
+\QQ{1冊150円のノートと1本90円のボールペンを合わせて18個買うと、代金の合計は2040円であった。ノートとボールペンをそれぞれ何個買ったか。}{\AnswerTwoLines{$\begin{cases}x+y=18\\150x+90y=2040\end{cases}$}{ノート7冊、ボールペン11本}}
+\QQ{1個70円のパンと1本110円の飲み物を合わせて24個買うと、代金の合計は2000円であった。パンと飲み物をそれぞれ何個買ったか。}{\AnswerTwoLines{$\begin{cases}x+y=24\\70x+110y=2000\end{cases}$}{パン16個、飲み物8本}}
+\QQ{1個180円のケーキと1個250円のプリンを合わせて14個買うと、代金の合計は2800円であった。ケーキとプリンをそれぞれ何個買ったか。}{\AnswerTwoLines{$\begin{cases}x+y=14\\180x+250y=2800\end{cases}$}{ケーキ10個、プリン4個}}
 
-\WrapTextTable{r}{49mm}{%
-\begin{tabular}{|c|c|c|}\hline
-正解 & 不正解 & 無解答 \\ \hline
-$4$点 & $-1$点 & $0$点 \\ \hline
-\end{tabular}
-}{%
-\QQTall{25問のクイズで1問あたりに得られるポイントは右の表のようになっている。無解答が4問で、合計が44点であったとき、正解と不正解はそれぞれ何問か。}{\AnswerTwoLines{$\begin{cases}x+y=21\\4x-y=44\end{cases}$}{正解13問、不正解8問}}
-}
+\TypeQuestionSingle{求める2つの数量をそれぞれ $x,\ y$ として連立方程式をつくり、問いに答えなさい。}{ryoukin}
 
-\WrapTextTable{r}{54mm}{%
-\begin{tabular}{|c|c|c|}\hline
-クラスA & クラスB & 学年全体 \\ \hline
-$65$点 & $80$点 & $73.4$点 \\ \hline
-\end{tabular}
-}{%
-\QQTall{クラスAとクラスBの生徒は合わせて50人である。各クラスと学年全体のテストの平均点が右の表のようになったとき、各クラスの生徒数を求めなさい。}{\AnswerTwoLines{$\begin{cases}x+y=50\\65x+80y=3670\end{cases}$}{クラスA 22人、クラスB 28人}}
-}
+\QQ{ある施設の入場料は、大人1人700円、子ども1人400円である。大人と子どもが合わせて23人入場し、入場料の合計は14600円であった。大人と子どもはそれぞれ何人か。}{\AnswerTwoLines{$\begin{cases}x+y=23\\700x+400y=14600\end{cases}$}{大人18人、子ども5人}}
+\QQ{100円硬貨と50円硬貨が合わせて32枚あり、金額の合計は2250円である。100円硬貨と50円硬貨はそれぞれ何枚あるか。}{\AnswerTwoLines{$\begin{cases}x+y=32\\100x+50y=2250\end{cases}$}{100円硬貨13枚、50円硬貨19枚}}
+\QQ{通常は1個600円で販売し、閉店前には1個400円に値下げした弁当が、合わせて29個売れた。売上金額は14000円であった。600円で売れた弁当と400円で売れた弁当は、それぞれ何個か。}{\AnswerTwoLines{$\begin{cases}x+y=29\\600x+400y=14000\end{cases}$}{600円：12個、400円：17個}}
+\QQ{ある映画館の入場料は、大人1人1200円、学生1人800円である。大人と学生が合わせて37人入場し、入場料の合計は38400円であった。大人と学生はそれぞれ何人か。}{\AnswerTwoLines{$\begin{cases}x+y=37\\1200x+800y=38400\end{cases}$}{大人22人、学生15人}}
 
-\WrapTextTable{r}{50mm}{%
-\begin{tabular}{|c|c|c|}\hline
-種類A & 種類B & 全体 \\ \hline
-$4$kg & $7$kg & $5.2$kg \\ \hline
-\end{tabular}
-}{%
-\QQTall{種類Aと種類Bの荷物が合わせて30箱ある。種類ごとの1箱あたりの重さと、荷物全体の1箱あたりの平均の重さは右の表のようになっている。それぞれ何箱あるか。}{\AnswerTwoLines{$\begin{cases}x+y=30\\4x+7y=156\end{cases}$}{種類A 18箱、種類B 12箱}}
-}
+\LessonPageBreak
 
+\TypeQuestionSingle{品物1個の値段を $x,\ y$ 円として連立方程式をつくり、それぞれの値段を求めなさい。}{nedan}
 
-\AnswerColumnBreak
-\TypeQuestion{表に示された数量の関係から、それぞれの個数を求めなさい。}{kumiawase}
+\QQ{同じ種類のノート3冊とボールペン2本を買うと730円、ノート2冊とボールペン5本を買うと890円であった。ノート1冊とボールペン1本の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}3x+2y=730\\2x+5y=890\end{cases}$}{ノート170円、ボールペン110円}}
+\QQ{同じ種類のりんご4個とみかん3個を買うと840円、りんご5個とみかん1個を買うと610円であった。りんご1個とみかん1個の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}4x+3y=840\\5x+y=610\end{cases}$}{りんご90円、みかん160円}}
+\QQ{同じ種類のサンドイッチ3個と飲み物6本を買うと2100円、サンドイッチ7個と飲み物2本を買うと1780円であった。サンドイッチ1個と飲み物1本の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}3x+6y=2100\\7x+2y=1780\end{cases}$}{サンドイッチ180円、飲み物260円}}
+\QQ{ある施設で、大人4人と学生7人の入場料は合わせて6900円、大人9人と学生3人の入場料は合わせて9150円であった。大人1人と学生1人の入場料をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}4x+7y=6900\\9x+3y=9150\end{cases}$}{大人850円、学生500円}}
 
-\WrapTextTable{r}{54mm}{%
-\begin{tabular}{|c|c|c|}\hline
- & 製品A & 製品B \\ \hline
-材料 & $3$kg & $2$kg \\ \hline
-作業時間 & $2$分 & $5$分 \\ \hline
-\end{tabular}
-}{%
-\QQTall{製品Aと製品Bを1個作るために必要な材料と作業時間は右の表のとおりである。材料を29kg、作業時間を56分使ったとき、製品Aと製品Bをそれぞれ何個作ったか。}{\AnswerTwoLines{$\begin{cases}3x+2y=29\\2x+5y=56\end{cases}$}{製品A 3個、製品B 10個}}
-}
+\TypeQuestionSingle{求める2つの値段をそれぞれ $x,\ y$ 円として連立方程式をつくり、問いに答えなさい。}{otsuri}
 
-\WrapTextTable{r}{57mm}{%
-\begin{tabular}{|c|c|c|}\hline
- & セットP & セットQ \\ \hline
-鉛筆 & $2$本 & $5$本 \\ \hline
-消しゴム & $3$個 & $1$個 \\ \hline
-\end{tabular}
-}{%
-\QQTall{ギフトセットPとギフトセットQを1組作るために必要な鉛筆と消しゴムの数は右の表のとおりである。鉛筆を32本、消しゴムを35個使ったとき、セットPとセットQをそれぞれ何組作ったか。}{\AnswerTwoLines{$\begin{cases}2x+5y=32\\3x+y=35\end{cases}$}{セットP 11組、セットQ 2組}}
-}
-
-\WrapTextTable{r}{54mm}{%
-\begin{tabular}{|c|c|c|}\hline
- & 弁当A & 弁当B \\ \hline
-おにぎり & $2$個 & $1$個 \\ \hline
-おかず & $1$個 & $3$個 \\ \hline
-\end{tabular}
-}{%
-\QQTall{弁当Aと弁当Bを1個作るために必要なおにぎりとおかずの数は右の表のとおりである。おにぎりを27個、おかずを51個使ったとき、弁当Aと弁当Bをそれぞれ何個作ったか。}{\AnswerTwoLines{$\begin{cases}2x+y=27\\x+3y=51\end{cases}$}{弁当A 6個、弁当B 15個}}
-}
-
-\WrapTextTable{r}{57mm}{%
-\begin{tabular}{|c|c|c|}\hline
- & セットP & セットQ \\ \hline
-机 & $2$台 & $4$台 \\ \hline
-いす & $6$脚 & $3$脚 \\ \hline
-\end{tabular}
-}{%
-\QQTall{座席セットPと座席セットQを1組作るために必要な机といすの数は右の表のとおりである。机を30台、いすを54脚使ったとき、セットPとセットQをそれぞれ何組作ったか。}{\AnswerTwoLines{$\begin{cases}2x+4y=30\\6x+3y=54\end{cases}$}{セットP 7組、セットQ 4組}}
-}
-
-\TypeQuestion{次の度数分布表について、あとの問いに答えなさい。}{frequency_table_1}
-
-\WrapTextTable{r}{76mm}{%
-\begin{tabular}{|c|c|c|c|c|c|c|}\hline
-得点（点） & $10$ & $20$ & $30$ & $40$ & $50$ & 合計 \\ \hline
-人数（人） & $3$ & $x$ & $8$ & $y$ & $5$ & $24$ \\ \hline
-\end{tabular}
-}{%
-\TextTall{あるクラス24人の小テストの得点を調べたところ、右の表のようになり、平均点は30点であった。}
-\QQ{人数の合計から、$x, y$ についての方程式を1つつくりなさい。}{$x+y=8$}
-\QQ{平均点から、$x, y$ についての方程式をもう1つつくりなさい。}{$20x+40y+520=30\cdot24$}
-\QQ{$x, y$ の値をそれぞれ求めなさい。}{$x=6,\ y=2$}
-\QQ{40点以上の生徒は何人か。}{7人}
-}
-
-\par\noindent
-\TypeQuestion{次の度数分布表について、あとの問いに答えなさい。}{frequency_table_2}
-
-\WrapTextTable{r}{76mm}{%
-\begin{tabular}{|c|c|c|c|c|c|c|}\hline
-練習日数（日） & $1$ & $2$ & $3$ & $4$ & $5$ & 合計 \\ \hline
-人数（人） & $x$ & $4$ & $y$ & $6$ & $2$ & $24$ \\ \hline
-\end{tabular}
-}{%
-\TextTall{ある部活動の24人について、1週間の練習日数を調べたところ、右の表のようになり、平均は3日であった。}
-\QQ{人数の合計から、$x, y$ についての方程式を1つつくりなさい。}{$x+y=12$}
-\QQ{平均から、$x, y$ についての方程式をもう1つつくりなさい。}{$x+3y+42=3\cdot24$}
-\QQ{$x, y$ の値をそれぞれ求めなさい。}{$x=3,\ y=9$}
-\QQ{3日以上練習した人は何人か。}{17人}
-}
+\QQ{同じ種類の鉛筆6本とノート1冊を買い、1000円を出すと330円のおつりがあった。また、鉛筆5本とノート4冊を買い、1500円を出すと340円のおつりがあった。鉛筆1本とノート1冊の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}6x+y=670\\5x+4y=1160\end{cases}$}{鉛筆80円、ノート190円}}
+\QQ{同じ種類のケーキ2個とプリン4個を買い、1500円を出すと480円のおつりがあった。また、ケーキ7個とプリン3個を買おうとすると、2000円では30円不足した。ケーキ1個とプリン1個の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}2x+4y=1020\\7x+3y=2030\end{cases}$}{ケーキ230円、プリン140円}}
+\QQ{同じ種類の赤いペン5本と青いペン3本を買い、50円の包装代を加えると1150円であった。また、赤いペン2本と青いペン8本を買い、50円の包装代を加えると1510円であった。赤いペン1本と青いペン1本の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}5x+3y=1100\\2x+8y=1460\end{cases}$}{赤いペン130円、青いペン150円}}
+\QQ{同じ種類の商品Aを4個と商品Bを6個注文すると、400円の送料を含めて1960円であった。また、商品Aを8個と商品Bを1個注文すると、400円の送料を含めて2200円であった。商品A、商品Bの1個の値段をそれぞれ求めなさい。}{\AnswerTwoLines{$\begin{cases}4x+6y=1560\\8x+y=1800\end{cases}$}{商品A 210円、商品B 120円}}
