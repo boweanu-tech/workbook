@@ -74,8 +74,6 @@
 
 
 
-
-
 ### 3_linear_一次関数
 ### 4_congruence_平行と合同
 ### 5_shapes_三角形と四角形
