@@ -2,32 +2,25 @@
 \MajorQuestionLesson{連立方程式の前処理}
 \SetRowSpace{4mm}
 
-%あからさまに代入法とわかるよう、
-%10x=20y-30とか、\frac{x}{10}=\frac{y}{5}+\frac{3}{10}とか、そういうのにしてください。全体の2~3割程度です。
-%あと、両方代入っぽいやつ(y=〜が２つ並び、xの方程式に直ちに帰着できる)も１割程度入れてほしい。
-
-
 \TypeQuestionSingle{次の連立方程式を解きなさい。}{common_factor}
-\QQRow{$\begin{cases}20x+30y=130\\50x-20y=40\end{cases}$}{}{$\begin{cases}x+2y=6\\40x-60y=-460\end{cases}$}{}
+\QQRow{$\begin{cases}20x+30y=130\\50x-20y=40\end{cases}$}{}{$\begin{cases}x=6-2y\\40x=60y-460\end{cases}$}{}
 \QQRow{$\begin{cases}40x-70y=310\\30x+50y=130\end{cases}$}{}{$\begin{cases}500x+200y=-1600\\300x-400y=600\end{cases}$}{}
-\QQRow{$\begin{cases}2x+y=-3\\200x-500y=2700\end{cases}$}{}{$\begin{cases}70x+50y=-220\\20x-80y=-440\end{cases}$}{}
-\QQRow{$\begin{cases}50x+200y=0\\x-3y=7\end{cases}$}{}{$\begin{cases}100x+20y=-140\\150x-60y=-480\end{cases}$}{}
+\QQRow{$\begin{cases}y=-2x-3\\200x-500y=2700\end{cases}$}{}{$\begin{cases}70x+50y=-220\\20x-80y=-440\end{cases}$}{}
+\QQRow{$\begin{cases}50x+200y=0\\x=3y+7\end{cases}$}{}{$\begin{cases}100x+20y=-140\\150x-60y=-480\end{cases}$}{}
 
 \TypeQuestionSingle{次の連立方程式を解きなさい。}{fraction}
-%ここの単調性がほんとに強い。片方が全部整数パターン・分子全体を括る形のやつを割合で今の二倍程度に増やしてください。
-\QQRow{$\begin{cases}\dfrac{3x+2y}{6}=1\\[1mm]\dfrac{x}{4}-\dfrac{y}{2}=\dfrac52\end{cases}$}{}{$\begin{cases}x+y=3\\[1mm]\dfrac{x}{2}-\dfrac{y}{10}=-\dfrac32\end{cases}$}{}
-\QQRow{$\begin{cases}\dfrac{x}{3}-y=5\\[1mm]\dfrac{x}{2}+\dfrac{y}{4}=\dfrac12\end{cases}$}{}{$\begin{cases}\dfrac{x}{5}+y=-3\\[1mm]\dfrac{x}{2}-\dfrac{y}{4}=-2\end{cases}$}{}
-\QQRow{$\begin{cases}\dfrac{x}{3}+\dfrac{y}{2}=\dfrac52\\[1mm]\dfrac{x}{2}-\dfrac{y}{4}=\dfrac{11}{4}\end{cases}$}{}{$\begin{cases}\dfrac{x}{4}-\dfrac{y}{3}=-\dfrac98\\[1mm]\dfrac{x}{2}+\dfrac{y}{6}=\dfrac14\end{cases}$}{}
-\QQRow{$\begin{cases}\dfrac{x}{3}+\dfrac{y}{2}=\dfrac78\\[1mm]\dfrac{x}{2}-\dfrac{y}{3}=\dfrac12\end{cases}$}{}{$\begin{cases}\dfrac{x-y}{4}=-\dfrac43\\[1mm]3x+y=-8\end{cases}$}{}
+\QQRow{$\begin{cases}\dfrac{3x+2y}{6}=1\\[1mm]\dfrac{x}{4}-\dfrac{y}{2}=\dfrac52\end{cases}$}{}{$\begin{cases}x=3-y\\[1mm]\dfrac{x}{2}=\dfrac{y}{10}-\dfrac32\end{cases}$}{}
+\QQRow{$\begin{cases}\dfrac{x-3y}{3}=5\\[1mm]\dfrac{x}{2}+\dfrac{y}{4}=\dfrac12\end{cases}$}{}{$\begin{cases}x=-5y-15\\[1mm]\dfrac{2x-y}{4}=-2\end{cases}$}{}
+\QQRow{$\begin{cases}\dfrac{2x+3y}{6}=\dfrac52\\[1mm]\dfrac{x}{2}-\dfrac{y}{4}=\dfrac{11}{4}\end{cases}$}{}{$\begin{cases}\dfrac{x}{4}-\dfrac{y}{3}=-\dfrac98\\[1mm]6x+2y=3\end{cases}$}{}
+\QQRow{$\begin{cases}\dfrac{x}{3}+\dfrac{y}{2}=\dfrac78\\[1mm]\dfrac{x}{2}=\dfrac{y}{3}+\dfrac12\end{cases}$}{}{$\begin{cases}\dfrac{x-y}{4}=-\dfrac43\\[1mm]3x+y=-8\end{cases}$}{}
 
 \LessonPageBreak
 
 \TypeQuestionSingle{次の連立方程式を解きなさい。}{decimal}
-%片方が全部整数パターンのやつを割合で今の二倍程度に増やしてください。
-\QQRow{$\begin{cases}0.2x+0.5y=1.4\\0.4x-0.3y=-2.4\end{cases}$}{}{$\begin{cases}x+2y=1\\0.3x-0.5y=2.5\end{cases}$}{}
-\QQRow{$\begin{cases}1.2x+0.4y=0.4\\0.3x-0.8y=4.6\end{cases}$}{}{$\begin{cases}0.25x+0.5y=-1.5\\0.4x-0.2y=-1.4\end{cases}$}{}
-\QQRow{$\begin{cases}0.7x-0.2y=0.9\\x+2y=15\end{cases}$}{}{$\begin{cases}0.4x+0.75y=-0.9\\0.3x-0.2y=-2.2\end{cases}$}{}
-\QQRow{$\begin{cases}0.5x+0.3y=-0.4\\0.25x-0.2y=0.5\end{cases}$}{}{$\begin{cases}0.4x+0.5y=-0.2\\2x+5y=1\end{cases}$}{}
+\QQRow{$\begin{cases}0.2x+0.5y=1.4\\0.4x-0.3y=-2.4\end{cases}$}{}{$\begin{cases}x=1-2y\\0.3x-0.5y=2.5\end{cases}$}{}
+\QQRow{$\begin{cases}3x+y=1\\0.3x-0.8y=4.6\end{cases}$}{}{$\begin{cases}x+2y=-6\\0.4x-0.2y=-1.4\end{cases}$}{}
+\QQRow{$\begin{cases}0.7x=0.2y+0.9\\x=15-2y\end{cases}$}{}{$\begin{cases}0.4x+0.75y=-0.9\\0.3x-0.2y=-2.2\end{cases}$}{}
+\QQRow{$\begin{cases}0.5x+0.3y=-0.4\\5x-4y=10\end{cases}$}{}{$\begin{cases}0.4x=-0.5y-0.2\\2x=1-5y\end{cases}$}{}
 
 \TypeQuestionSingle{次の連立方程式を解きなさい。}{mixed_preprocessing}
 \QQRow{$\begin{cases}0.5x+0.2y=1.8\\30x-20y=-20\end{cases}$}{}{$\begin{cases}\dfrac{x}{2}+\dfrac{y}{4}=0\\[1mm]0.4x-0.2y=1.6\end{cases}$}{}
