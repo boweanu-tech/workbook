@@ -1,0 +1,40 @@
+% theme: permutations_with_identical_objects
+\MajorQuestionLesson{同じものを含む順列}
+\SetRowSpace{4mm}
+
+\TypeQuestion{次の値を求めなさい。}{multiset_formula_calculation}
+\QQRowThree{$\dfrac{7!}{3!2!}$}{}{$\dfrac{9!}{4!3!2!}$}{}{$\dfrac{10!}{5!3!2!}$}{}
+\QQRowThree{$\dfrac{8!}{2!2!2!}$}{}{$\dfrac{11!}{4!4!2!}$}{}{$\dfrac{12!}{6!3!3!}$}{}
+
+\TypeQuestion{同じ文字を含む文字列を並べ替えてできる、異なる文字列の個数を求めなさい。}{word_arrangements}
+\QQRowThree{$\mathrm{BANANA}$}{}{$\mathrm{LEVEL}$}{}{$\mathrm{SUCCESS}$}{}
+\QQRowThree{$\mathrm{TOMATO}$}{}{$\mathrm{BALLOON}$}{}{$\mathrm{MISSISSIPPI}$}{}
+\QQ{$\mathrm{MATHEMATICS}$ の11文字をすべて使ってできる異なる文字列は何個あるか。}{}
+
+\TypeQuestion{同じ色のものは区別しないものとして、一列に並べる方法を求めなさい。}{colored_object_arrangements}
+\QQRow{赤玉3個、青玉2個、白玉2個を一列に並べる。}{}{赤旗4枚、青旗3枚、黄旗2枚を一列に掲げる。}{}
+\QQRow{黒石5個、白石4個を一列に並べる。}{}{赤、青、黄、緑のカードをそれぞれ2枚ずつ一列に並べる。}{}
+\QQ{赤玉4個、青玉3個、白玉2個、黒玉1個を一列に並べる方法は何通りあるか。}{}
+
+\TypeQuestion{指定された数字をすべて使って整数を作るとき、異なる整数の個数を求めなさい。}{multiset_numbers}
+\QQRow{数字 $1,1,2,2,3,4$ をすべて使って作る6桁の整数。}{}{数字 $0,0,1,2,2,3$ をすべて使って作る6桁の整数。}{}
+\QQRow{数字 $0,1,1,2,2,3$ をすべて使って作る6桁の偶数。}{}{数字 $0,0,1,1,2,3,3$ をすべて使って作る7桁の整数。}{}
+\QQ{数字 $1,1,1,2,2,3,4$ をすべて使って作る7桁の整数のうち、奇数は何個あるか。}{}
+
+\LessonPageBreak
+
+\TypeQuestion{指定された同じ文字や同じ色のものが続けて並ぶ方法を求めなさい。}{identical_objects_together}
+\QQRow{文字 $\mathrm{A},\mathrm{A},\mathrm{A},\mathrm{B},\mathrm{B},\mathrm{C},\mathrm{D}$ を一列に並べるとき、3個の $\mathrm{A}$ がすべて続けて並ぶ方法。}{}{赤玉3個、青玉2個、白玉2個を一列に並べるとき、青玉2個が隣り合う方法。}{}
+\QQRow{文字 $\mathrm{A},\mathrm{A},\mathrm{B},\mathrm{B},\mathrm{C},\mathrm{C},\mathrm{D}$ を一列に並べるとき、同じ文字がそれぞれまとまって並ぶ方法。}{}{赤玉4個、青玉3個、白玉2個を一列に並べるとき、赤玉4個と白玉2個がそれぞれ続けて並ぶ方法。}{}
+\QQ{文字 $\mathrm{A},\mathrm{A},\mathrm{A},\mathrm{B},\mathrm{B},\mathrm{C},\mathrm{C}$ を一列に並べるとき、3個の $\mathrm{A}$ が続けて並び、2個の $\mathrm{B}$ は隣り合わない方法は何通りあるか。}{}
+
+\TypeQuestion{隣り合う条件を満たさないものを、全体から除いて求めなさい。}{identical_objects_not_together}
+\QQRow{文字 $\mathrm{A},\mathrm{A},\mathrm{B},\mathrm{B},\mathrm{C},\mathrm{D}$ を一列に並べるとき、2個の $\mathrm{A}$ が隣り合わない方法。}{}{赤玉2個、青玉3個、白玉2個を一列に並べるとき、赤玉2個が隣り合わない方法。}{}
+\QQ{文字 $\mathrm{A},\mathrm{A},\mathrm{B},\mathrm{B},\mathrm{C},\mathrm{C}$ を一列に並べるとき、2個の $\mathrm{A}$ も2個の $\mathrm{B}$ も隣り合わない方法は何通りあるか。}{}
+\QQ{数字 $0,0,1,1,2,3$ を一列に並べて6桁の整数を作る。2個の0が隣り合わない整数は何個あるか。}{}
+
+\TypeQuestion{先頭・末尾や相対的な位置に条件がある並べ方を求めなさい。}{multiset_position_constraints}
+\QQ{文字 $\mathrm{A},\mathrm{A},\mathrm{A},\mathrm{B},\mathrm{B},\mathrm{C},\mathrm{D}$ を一列に並べる。先頭と末尾が同じ文字になる並べ方は何通りあるか。}{}
+\QQ{赤玉3個、青玉3個、白玉2個を一列に並べる。左端が赤玉、右端が青玉となる並べ方は何通りあるか。}{}
+\QQ{数字 $0,0,1,1,2,2,3$ をすべて使って7桁の整数を作る。最初の数字より最後の数字の方が大きい整数は何個あるか。}{}
+\QQ{$\mathrm{STATISTICS}$ の10文字を一列に並べる。3個の $\mathrm{T}$ が続けて並ぶ並べ方は何通りあるか。}{}
