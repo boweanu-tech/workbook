@@ -314,16 +314,20 @@
 | `\EngBlank[width]` | 1 | 適語補充用の横線を表示する | 幅は省略可。初期値は `20mm` |
 | `\EngRuledLines[rows]` | 1 | 英字練習用の4本罫を表示する | 段数は省略可。初期値は1段。3本目を基線として少し太くする |
 | `\EngWritingLines[rows]` | 1 | `\EngRuledLines` と同じ4本罫を表示する | 初期実装との互換名 |
+| `\EngSplitRuledLine` | 0 | 4本罫1段を中央で分け、左右に1つずつ表示する | 短い英文を2回書く問題向け |
 | `\EngAnswerLines[rows]` | 1 | 和訳などのための通常の横罫を表示する | 行数は省略可。初期値は1行 |
 | `\SetEngWritingLineHeight{length}` | 1 | 英字用4本罫1段の高さを変更する | 初期値は `10mm` |
 | `\SetEngAnswerLineHeight{length}` | 1 | 和訳用横罫の行高を変更する | 初期値は `8mm` |
 | `\SetEngRuledOuterSpace{top}{bottom}` | 2 | 4本罫1段の前後に置く空白を変更する | 初期値は上 `2.5mm`、下 `3mm`。複数段の間隔は前段の下＋次段の上になる |
 | `\SetEngRuledLineGray{light}{base}` | 2 | 補助線3本と基線の灰色濃度を変更する | `0` が黒、`1` が白。初期値は `0.78`、`0.45` |
 | `\SetEngRuledLineThickness{light}{base}` | 2 | 補助線3本と基線の太さを変更する | 初期値は `0.25pt`、`0.45pt` |
+| `\SetEngSplitGap{length}` | 1 | 左右分割した4本罫の中央の空白幅を変更する | 初期値は `7mm` |
 | `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 内部で `\AnswerTwoLines` を使う |
 | `\EngWriteQuestion[rows]{prompt}{answer}` | 3 | 英字4本罫つきの標準小問を出す | 段数は省略可。小問番号を進める |
+| `\EngWriteQuestionSplit{prompt}{answer}` | 2 | 左右2分割の4本罫つき小問を出す | 短い英文を左右に1回ずつ書かせる |
 | `\EngCopy[rows]{english}` | 2 | 英文と英字4本罫の書写欄を出す | 段数は省略可。解答には英文を表示する |
 | `\EngCopyTranslate[rows]{english}{japanese}` | 3 | 英文、英字4本罫の書写欄、通常罫の和訳欄を出す | 段数は省略可。和訳欄は1行 |
+| `\EngCopyTranslateSplit{english}{japanese}` | 2 | 書写欄と和訳欄を左右に並べる | 短い英文向け。1段に収める |
 
 ### 組合せ例
 
@@ -340,8 +344,10 @@
 }{I study English every day.}
 
 \TypeQuestion{英文を書き写し、日本語に訳しなさい。}{beverb_copy_translate}
-\EngCopyTranslate{I am a student.}{私は生徒です。}
+\EngCopyTranslateSplit{I am a student.}{私は生徒です。}
 ```
+
+短い英文の書写・和訳には `\EngCopyTranslateSplit` を使う。英文または想定される和訳が半幅に収まりにくい場合は、上下配置の `\EngCopyTranslate` を使う。長さの判定は問題作成時に行い、自動判定にはしない。
 
 `\EngChoice` や `\EngReorder` は表示用の部品であり、それ自体では小問番号を進めない。丸で囲むだけの問題は既存の `\QQ`、完成文を書かせる問題は `\EngWriteQuestion` と組み合わせる。
 
@@ -388,6 +394,7 @@ PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers
 | `\LMEngRuledBottomSpace` | length | 4本罫1段の下側余白。初期値 `3mm` |
 | `\LMEngGuideRuleThickness` | length | 1・2・4本目の太さ。初期値 `0.25pt` |
 | `\LMEngBaseRuleThickness` | length | 3本目の基線の太さ。初期値 `0.45pt` |
+| `\LMEngSplitGap` | length | 左右分割した4本罫の中央余白。初期値 `7mm` |
 | `LMEngGuideLight` | color | 1・2・4本目の色。初期値は gray `0.78` |
 | `LMEngGuideBase` | color | 3本目の基線の色。初期値は gray `0.45` |
 | `\LMEngRuledBand` | command | 上線・中線・基線・下線からなる4本罫1段を出す |

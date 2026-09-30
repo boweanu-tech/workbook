@@ -20,6 +20,8 @@
 \setlength{\LMEngGuideRuleThickness}{0.25pt}
 \newlength{\LMEngBaseRuleThickness}
 \setlength{\LMEngBaseRuleThickness}{0.45pt}
+\newlength{\LMEngSplitGap}
+\setlength{\LMEngSplitGap}{7mm}
 
 % gray は 0 が黒、1 が白。3本目の基線だけを濃くする。
 \definecolor{LMEngGuideLight}{gray}{0.80}
@@ -46,6 +48,10 @@
 \newcommand{\SetEngRuledLineThickness}[2]{%
   \setlength{\LMEngGuideRuleThickness}{#1}%
   \setlength{\LMEngBaseRuleThickness}{#2}%
+}
+
+\newcommand{\SetEngSplitGap}[1]{%
+  \setlength{\LMEngSplitGap}{#1}%
 }
 
 % 英文を本文中で統一した体裁にする。長文でも改行できるよう、箱には入れない。
@@ -97,6 +103,19 @@
   \EngRuledLines[#1]%
 }
 
+% 短い英文を2回書くため、4本罫1段を中央で分けて左右に置く。
+\newcommand{\EngSplitRuledLine}{%
+  \par\noindent
+  \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5\LMEngSplitGap\relax}%
+    \EngRuledLines[1]%
+  \end{minipage}%
+  \hspace{\LMEngSplitGap}%
+  \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5\LMEngSplitGap\relax}%
+    \EngRuledLines[1]%
+  \end{minipage}%
+  \par
+}
+
 % 和訳など、英字の4本罫を必要としない記述欄。
 \newcommand{\EngAnswerLines}[1][1]{%
   \par
@@ -120,6 +139,11 @@
   \QQTall{#2\EngRuledLines[#1]}{#3}%
 }
 
+% 短い英文を左右に1回ずつ、計2回書かせる小問。
+\newcommand{\EngWriteQuestionSplit}[2]{%
+  \QQTall{#1\EngSplitRuledLine}{#2}%
+}
+
 % 英文を書き写す基本問題。第1引数は省略可能で、書写欄の行数。
 \newcommand{\EngCopy}[2][1]{%
   \QQTall{%
@@ -141,6 +165,26 @@
     {\small\textbf{和訳}}%
     \EngAnswerLines[1]%
   }{\EngAnswerPair{#2}{#3}}%
+}
+
+% 短い英文向け。書写欄と和訳欄を左右に並べ、1段に収める。
+\newcommand{\EngCopyTranslateSplit}[2]{%
+  \QQTall{%
+    \EngSentence{#1}\par
+    \noindent
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5\LMEngSplitGap\relax}%
+      \vspace{0pt}%
+      {\small\textbf{書写}}%
+      \EngRuledLines[1]%
+    \end{minipage}%
+    \hspace{\LMEngSplitGap}%
+    \begin{minipage}[t]{\dimexpr0.5\linewidth-0.5\LMEngSplitGap\relax}%
+      \vspace{0pt}%
+      {\small\textbf{和訳}}%
+      \EngAnswerLines[1]%
+    \end{minipage}%
+    \par
+  }{\EngAnswerPair{#1}{#2}}%
 }
 
 % ===== ワードバンク =====
