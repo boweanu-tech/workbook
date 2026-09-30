@@ -131,7 +131,12 @@
 
 % 英文と和訳を解答欄に2行で表示する。
 \newcommand{\EngAnswerPair}[2]{%
-  \AnswerTwoLines{#1}{#2}%
+  \parbox[t]{\linewidth}{%
+    \raggedright
+    #1\par
+    \vspace{2mm}%
+    #2\par
+  }%
 }
 
 % 記述欄つきの標準小問。第1引数は省略可能で、記述欄の行数。

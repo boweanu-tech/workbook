@@ -322,7 +322,7 @@
 | `\SetEngRuledLineGray{light}{base}` | 2 | 補助線3本と基線の灰色濃度を変更する | `0` が黒、`1` が白。初期値は `0.78`、`0.45` |
 | `\SetEngRuledLineThickness{light}{base}` | 2 | 補助線3本と基線の太さを変更する | 初期値は `0.25pt`、`0.45pt` |
 | `\SetEngSplitGap{length}` | 1 | 左右分割した4本罫の中央の空白幅を変更する | 初期値は `7mm` |
-| `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 内部で `\AnswerTwoLines` を使う |
+| `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 解答段の幅に合わせて英文・和訳を折り返す |
 | `\EngWriteQuestion[rows]{prompt}{answer}` | 3 | 英字4本罫つきの標準小問を出す | 段数は省略可。小問番号を進める |
 | `\EngWriteQuestionSplit{prompt}{answer}` | 2 | 左右2分割の4本罫つき小問を出す | 短い英文を左右に1回ずつ書かせる |
 | `\EngCopy[rows]{english}` | 2 | 英文と英字4本罫の書写欄を出す | 段数は省略可。解答には英文を表示する |
