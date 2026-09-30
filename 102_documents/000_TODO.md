@@ -2,17 +2,13 @@
 - autopull化
 - 授業で扱いたい問題に＊をつける？
 - qanda入り切らない問題　応急処置
-- bookの整理・・・カオスすぎ！
 
 
-ln -s "/home/keisuke/LOTUS/002_Java/002_001_Workspace/eclipse/[ドキュメント]/[007]創発シミュレーション" "/home/keisuke/LOTUS/006_memo/創発"
+002_english　の中学生の単元洗い出しをお願いします。このchat画面にお願い。
 
-git check-ignore -v -- [007]創発シミュレーション
+そもそも中学英語の単元の分け方がすごく細分化され過ぎな気がしていて。数学と違って抽象的ではないので、そこまで分ける必要ある？みたいな気がしている。
 
-git rm --cached [007]創発シミュレーション
-git rm --cached [006]workbook
-git commit -m "追跡対象からファイルを除外" 
-git push
+英語フォントどうする？
 
 
 
@@ -45,6 +41,3 @@ git push
 運動方程式
 力学的エネルギー
 
-
-
-5-8,26,27

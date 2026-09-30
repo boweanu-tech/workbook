@@ -1,0 +1,230 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lotusmath-english}[2026/09/30 lotusmath English workbook]
+
+\RequirePackage{array}
+\RequirePackage{longtable}
+
+\makeatletter
+
+% ===== 英語問題の基本部品 =====
+
+\newlength{\LMEngWritingLineHeight}
+\setlength{\LMEngWritingLineHeight}{10mm}
+\newlength{\LMEngAnswerLineHeight}
+\setlength{\LMEngAnswerLineHeight}{8mm}
+\newlength{\LMEngRuledTopSpace}
+\setlength{\LMEngRuledTopSpace}{2.5mm}
+\newlength{\LMEngRuledBottomSpace}
+\setlength{\LMEngRuledBottomSpace}{3mm}
+\newlength{\LMEngGuideRuleThickness}
+\setlength{\LMEngGuideRuleThickness}{0.25pt}
+\newlength{\LMEngBaseRuleThickness}
+\setlength{\LMEngBaseRuleThickness}{0.45pt}
+
+% gray は 0 が黒、1 が白。3本目の基線だけを濃くする。
+\definecolor{LMEngGuideLight}{gray}{0.78}
+\definecolor{LMEngGuideBase}{gray}{0.45}
+
+\newcommand{\SetEngWritingLineHeight}[1]{%
+  \setlength{\LMEngWritingLineHeight}{#1}%
+}
+
+\newcommand{\SetEngAnswerLineHeight}[1]{%
+  \setlength{\LMEngAnswerLineHeight}{#1}%
+}
+
+\newcommand{\SetEngRuledOuterSpace}[2]{%
+  \setlength{\LMEngRuledTopSpace}{#1}%
+  \setlength{\LMEngRuledBottomSpace}{#2}%
+}
+
+\newcommand{\SetEngRuledLineGray}[2]{%
+  \definecolor{LMEngGuideLight}{gray}{#1}%
+  \definecolor{LMEngGuideBase}{gray}{#2}%
+}
+
+\newcommand{\SetEngRuledLineThickness}[2]{%
+  \setlength{\LMEngGuideRuleThickness}{#1}%
+  \setlength{\LMEngBaseRuleThickness}{#2}%
+}
+
+% 英文を本文中で統一した体裁にする。長文でも改行できるよう、箱には入れない。
+\newcommand{\EngSentence}[1]{{\large\rmfamily #1}}
+
+% 選択肢・並べ替え語群・補充用空欄。
+% 区切り記号や語順は教材側で明示し、内容を不用意に解釈しない。
+\newcommand{\EngChoice}[1]{(\,#1\,)}
+\newcommand{\EngReorder}[1]{[\,#1\,]}
+\newcommand{\EngBlank}[1][20mm]{%
+  \leavevmode\rule[-0.5ex]{#1}{0.35pt}%
+}
+
+% 英字練習用の4本罫1段。3本目を基線として少し太くする。
+\newcommand{\LMEngRuledBand}{%
+  \par\vspace{\LMEngRuledTopSpace}%
+  \noindent
+  \vbox to \LMEngWritingLineHeight{%
+    \hsize=\linewidth
+    {\color{LMEngGuideLight}%
+     \hrule width \linewidth height \LMEngGuideRuleThickness}%
+    \vfil
+    {\color{LMEngGuideLight}%
+     \hrule width \linewidth height \LMEngGuideRuleThickness}%
+    \vfil
+    {\color{LMEngGuideBase}%
+     \hrule width \linewidth height \LMEngBaseRuleThickness}%
+    \vfil
+    {\color{LMEngGuideLight}%
+     \hrule width \linewidth height \LMEngGuideRuleThickness}%
+  }%
+  \par\vspace{\LMEngRuledBottomSpace}%
+}
+
+% 英文を書かせるための4本罫。省略可能引数は段数。
+\newcommand{\EngRuledLines}[1][1]{%
+  \par
+  \begingroup
+    \@tempcnta=0\relax
+    \loop\ifnum\@tempcnta<#1\relax
+      \advance\@tempcnta by 1\relax
+      \LMEngRuledBand
+    \repeat
+  \endgroup
+}
+
+% 従来名との互換用。英語の記述欄は4本罫を標準にする。
+\newcommand{\EngWritingLines}[1][1]{%
+  \EngRuledLines[#1]%
+}
+
+% 和訳など、英字の4本罫を必要としない記述欄。
+\newcommand{\EngAnswerLines}[1][1]{%
+  \par
+  \begingroup
+    \@tempcnta=0\relax
+    \loop\ifnum\@tempcnta<#1\relax
+      \advance\@tempcnta by 1\relax
+      \vspace{\LMEngAnswerLineHeight}%
+      \noindent\leaders\hrule height 0.35pt\hfill\kern0pt\par
+    \repeat
+  \endgroup
+}
+
+% 英文と和訳を解答欄に2行で表示する。
+\newcommand{\EngAnswerPair}[2]{%
+  \AnswerTwoLines{#1}{#2}%
+}
+
+% 記述欄つきの標準小問。第1引数は省略可能で、記述欄の行数。
+\newcommand{\EngWriteQuestion}[3][1]{%
+  \QQTall{#2\EngRuledLines[#1]}{#3}%
+}
+
+% 英文を書き写す基本問題。第1引数は省略可能で、書写欄の行数。
+\newcommand{\EngCopy}[2][1]{%
+  \QQTall{%
+    \EngSentence{#2}\par
+    \vspace{1mm}%
+    {\small\textbf{書写}}%
+    \EngRuledLines[#1]%
+  }{#2}%
+}
+
+% 英文を書き写して和訳する問題。第1引数は省略可能で、書写欄の行数。
+\newcommand{\EngCopyTranslate}[3][1]{%
+  \QQTall{%
+    \EngSentence{#2}\par
+    \vspace{1mm}%
+    {\small\textbf{書写}}%
+    \EngRuledLines[#1]%
+    \vspace{1mm}%
+    {\small\textbf{和訳}}%
+    \EngAnswerLines[1]%
+  }{\EngAnswerPair{#2}{#3}}%
+}
+
+% ===== ワードバンク =====
+
+% \WordBank で登録された各テーマのワードバンクを、登録順に蓄積する。
+\newcommand{\LMWordBankList}{}
+
+\newcommand{\LMResetWordBanks}{%
+  \global\let\LMWordBankList\@empty
+}
+
+% 同じ文書で \BeginQuestions を再度使う場合にも、以前の登録を残さない。
+\g@addto@macro\BeginQuestions{\LMResetWordBanks}
+
+% #1: テーマ名、#2: \WB の列
+% 現在のテーマ番号を値として固定し、問題ファイル再読込時の変化を受けないようにする。
+\newcommand{\WordBank}[2]{%
+  \ifLMAnswerMode
+  \else
+    \begingroup
+      \edef\LMStoredWordBankTheme{\LMCurrentTheme}%
+      \xdef\LMWordBankList{%
+        \unexpanded\expandafter{\LMWordBankList}%
+        \noexpand\LMPrintWordBankBlock
+          {\LMStoredWordBankTheme}%
+          {\unexpanded{#1}}%
+          {\unexpanded{#2}}%
+      }%
+    \endgroup
+  \fi
+}
+
+% ワードバンク1行。
+% #1: 単語・熟語、#2: 品詞、#3: 意味、#4: 変化形・注意
+\newcommand{\WB}[4]{%
+  #1 & #2 & #3 & #4\\\hline
+}
+
+\newcommand{\LMWordBankThemeBox}[1]{%
+  {\setlength{\fboxsep}{1.5mm}\fbox{\strut #1}}%
+}
+
+\newcommand{\LMPrintWordBankBlock}[3]{%
+  \par\vspace{3mm}%
+  \noindent\LMWordBankThemeBox{#1}\hspace{2mm}{\large #2}\par
+  \vspace{1mm}%
+  \begingroup
+    \small
+    \hbadness=10000\relax
+    \setlength{\tabcolsep}{1.5mm}%
+    \setlength{\arrayrulewidth}{0.3pt}%
+    \renewcommand{\arraystretch}{1.35}%
+    \setlength{\LTleft}{0pt}%
+    \setlength{\LTright}{0pt}%
+    \begin{longtable}{%
+      @{}>{\raggedright\arraybackslash}p{0.21\linewidth}
+      >{\raggedright\arraybackslash}p{0.11\linewidth}
+      >{\raggedright\arraybackslash}p{0.28\linewidth}
+      >{\raggedright\arraybackslash}p{0.30\linewidth}@{}}
+      \hline
+      \textbf{単語・熟語} & \textbf{品詞} & \textbf{意味} & \textbf{変化形・注意}\\\hline
+      \endfirsthead
+      \hline
+      \textbf{単語・熟語} & \textbf{品詞} & \textbf{意味} & \textbf{変化形・注意}\\\hline
+      \endhead
+      #3
+    \end{longtable}%
+  \endgroup
+}
+
+% 登録済みワードバンクを問題と解答の間にまとめて出力する。
+% 1件も登録されていない場合は、改ページも見出しも出さない。
+\newcommand{\PrintWordBanks}{%
+  \ifx\LMWordBankList\@empty
+  \else
+    \clearpage
+    \begin{center}
+      {\Large ワードバンク}\par
+      \vspace{1mm}%
+      {\normalsize \LMCoverTitle}\par
+    \end{center}
+    \vspace{2mm}%
+    \LMWordBankList
+  \fi
+}
+
+\makeatother

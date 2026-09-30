@@ -7,7 +7,7 @@
 ## 対象
 
 - 対象ファイル：`workbook/999_GPTbox/lotusmath.sty` および `workbook/999_GPTbox/lotusmath-*.sty`
-- 確認版：`2026/07/08 split workbook package`
+- 確認版：`2026/09/30 workbook package with English API`
 - 用途：数学・理科・副教科などを含む workbook 系教材全体の組版
 
 ## 基本方針
@@ -103,6 +103,8 @@
 ## 注意
 
 `\TypeQuestion` の第2引数は「大問タグ」として渡す。現在の `lotusmath.sty` ではこの値を参照していないが、将来のおかわり問題・REF生成などで使う可能性があるため、引数自体は維持する。旧 `\TypeQuestionSingle` / `\TypeQuestionDouble` も同じ形式で利用できる。
+
+大問タグは原則として `テーマタグ_問題の形式タグ` とする。半角英小文字とアンダースコアを基本とし、同じテーマ・問題形式には同じタグを使う。例：`beverb_copy`、`beverb_choose`、`beverb_error_correct`。
 
 ## 内部API
 
@@ -222,7 +224,7 @@
 | `\LMRowSpace` | 現在の小問間隔 | 初期値 `\LMDefaultRowSpace` |
 | `\LMFigureRowSpace` | 図つき問題の下余白 | `3mm` |
 | `\LMFigSideGap` | 図と本文の横間隔 | `4mm` |
-| `\LMTypeQuestionTopSpace` | 大問2以降の見出し上余白 | `5mm` |
+| `\LMTypeQuestionTopSpace` | 大問2以降の見出し上余白 | `2mm` |
 
 ---
 
@@ -247,6 +249,7 @@
 | `\AnswerTwoLines{line1}{line2}` | 2 | 解答を左揃えで2行表示する | 小問番号と1行目を上揃えにする |
 | `\AnswerThreeLines{line1}{line2}{line3}` | 3 | 解答を左揃えで3行表示する | 小問番号と1行目を上揃えにする |
 | `\AnswerColumnBreak` | 0 | 解答ページだけ次の段へ送る | 問題モードでは何もしない |
+| `\QueueAnswerPageBreak` | 0 | 解答出力対象に改ページを予約する | `\PrintAnswers` 実行時に、現在の解答ブロックを閉じて次ページへ送る |
 
 ## 内部API
 
@@ -261,6 +264,7 @@
 | `\LMPrintAnswerBox{width}{answer}` | 2 | 指定幅で解答本体だけを出力する。縦余白は入れない |
 | `\LMPrintAnswer{width}{labelWidth}{answer}` | 3 | 解答本体と後続の縦余白を出力する共通処理 |
 | `\LMPrintLabeledAnswer{labelWidth}{answer}` | 2 | 小問番号つき解答を出力する内部補助 |
+| `\LMQueuedAnswerPageBreak` | 0 | `\QueueAnswerPageBreak` で予約された改ページを解答出力時に実行する |
 
 ---
 
@@ -274,10 +278,129 @@
 | `\Tri{name}`  |   1 | 三角形記号つきでローマン体の頂点名を出す | 例：`\Tri{ABC}` |
 | `\Ang{name}`  |   1 | 角記号つきでローマン体の点名を出す    | 例：`\Ang{ABC}` |
 | `\Lseg{name}` |   1 | 線分名をローマン体で出す         | 例：`\Lseg{AB}` |
+| `\EqNo{label}` | 1 | 式番号を丸囲みで表示する | 例：`\EqNo{1}` |
+| `\EqItem{label}{formula}` | 2 | 式番号と数式を一定幅で横並びにする | 数式部分は内部で数式モードになる |
+| `\SetEqItemWidth{length}` | 1 | `\EqItem` 1項目分の幅を変更する | 初期値は `25mm` |
+| `\SetEqListArrayStretch{value}` | 1 | 式一覧の行間倍率を変更する | 初期値は `1.6` |
+
+## 公開環境
+
+| 環境 | 用途 | 備考 |
+|---|---|---|
+| `EqListTwo` | 式を横2列で一覧表示する | 問題モードだけ表示する |
+| `EqListThree` | 式を横3列で一覧表示する | 問題モードだけ表示する |
+
+## 内部API
+
+| コマンド・長さ | 用途 | 現在値・備考 |
+|---|---|---|
+| `\LMPrepareEqList` | 式一覧の直前余白を調整する | `\TypeQuestion` 直後かどうかで余白を変える |
+| `\EqItemWidth` | `\EqItem` 1項目分の幅 | `25mm` |
+| `\EqListArrayStretch` | 式一覧の行間倍率 | `1.6` |
 
 ---
 
-# 13. 状態変数・カウンタ
+# 13. 英語教材・ワードバンク
+
+英語教材では、既存の `\QQ` / `\QQTall` / `\TypeQuestion` と組み合わせて使う。問題形式ごとに専用コマンドを増やしすぎず、英文・選択肢・語群・記述欄などの部品を組み合わせる。
+
+## 英語問題の公開API
+
+| コマンド | 引数 | 用途 | 備考 |
+|---|---:|---|---|
+| `\EngSentence{text}` | 1 | 英文を統一した体裁で表示する | 改行可能。長い英文を箱に閉じ込めない |
+| `\EngChoice{items}` | 1 | 適語選択の選択肢を丸括弧で表示する | 区切りの `/` などは引数内に書く |
+| `\EngReorder{items}` | 1 | 並べ替え語群を角括弧で表示する | 過不足・活用の指定は問題文側に書く |
+| `\EngBlank[width]` | 1 | 適語補充用の横線を表示する | 幅は省略可。初期値は `20mm` |
+| `\EngRuledLines[rows]` | 1 | 英字練習用の4本罫を表示する | 段数は省略可。初期値は1段。3本目を基線として少し太くする |
+| `\EngWritingLines[rows]` | 1 | `\EngRuledLines` と同じ4本罫を表示する | 初期実装との互換名 |
+| `\EngAnswerLines[rows]` | 1 | 和訳などのための通常の横罫を表示する | 行数は省略可。初期値は1行 |
+| `\SetEngWritingLineHeight{length}` | 1 | 英字用4本罫1段の高さを変更する | 初期値は `10mm` |
+| `\SetEngAnswerLineHeight{length}` | 1 | 和訳用横罫の行高を変更する | 初期値は `8mm` |
+| `\SetEngRuledOuterSpace{top}{bottom}` | 2 | 4本罫1段の前後に置く空白を変更する | 初期値は上 `2.5mm`、下 `3mm`。複数段の間隔は前段の下＋次段の上になる |
+| `\SetEngRuledLineGray{light}{base}` | 2 | 補助線3本と基線の灰色濃度を変更する | `0` が黒、`1` が白。初期値は `0.78`、`0.45` |
+| `\SetEngRuledLineThickness{light}{base}` | 2 | 補助線3本と基線の太さを変更する | 初期値は `0.25pt`、`0.45pt` |
+| `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 内部で `\AnswerTwoLines` を使う |
+| `\EngWriteQuestion[rows]{prompt}{answer}` | 3 | 英字4本罫つきの標準小問を出す | 段数は省略可。小問番号を進める |
+| `\EngCopy[rows]{english}` | 2 | 英文と英字4本罫の書写欄を出す | 段数は省略可。解答には英文を表示する |
+| `\EngCopyTranslate[rows]{english}{japanese}` | 3 | 英文、英字4本罫の書写欄、通常罫の和訳欄を出す | 段数は省略可。和訳欄は1行 |
+
+### 組合せ例
+
+```tex
+\TypeQuestion{適切な語を選び、完成した英文を書きなさい。}{beverb_choose}
+\EngWriteQuestion{%
+  \EngSentence{I \EngChoice{am / is / are} happy.}%
+}{I am happy.}
+
+\TypeQuestion{語群を並べ替え、英文を書きなさい。}{simplepresent_reorder}
+\EngWriteQuestion{%
+  私は毎日英語を勉強します。\par
+  \EngReorder{English / every day / study / I}%
+}{I study English every day.}
+
+\TypeQuestion{英文を書き写し、日本語に訳しなさい。}{beverb_copy_translate}
+\EngCopyTranslate{I am a student.}{私は生徒です。}
+```
+
+`\EngChoice` や `\EngReorder` は表示用の部品であり、それ自体では小問番号を進めない。丸で囲むだけの問題は既存の `\QQ`、完成文を書かせる問題は `\EngWriteQuestion` と組み合わせる。
+
+## ワードバンクの公開API
+
+| コマンド | 引数 | 用途 | 備考 |
+|---|---:|---|---|
+| `\WordBank{title}{body}` | 2 | 現在のテーマ番号とワードバンクを登録する | 問題位置には表示せず、`\PrintWordBanks` まで蓄積する |
+| `\WB{word}{part}{meaning}{note}` | 4 | ワードバンクの1行を記述する | 第4引数は変化形・注意。不要なら空欄 `{}` |
+| `\PrintWordBanks` | 0 | 登録済みワードバンクを登録順にまとめて出力する | 1件もなければ何も出力せず、改ページもしない |
+
+問題ファイルでは、問題の後などに次のように登録する。
+
+```tex
+\WordBank{be動詞の基本}{
+  \WB{am}{be動詞}{～です、～にいます}{主語が I のときに使う}
+  \WB{student}{名詞}{生徒}{複数形 students}
+  \WB{every day}{熟語}{毎日}{}
+}
+```
+
+PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers` より前に `\PrintWordBanks` を呼ぶ。
+
+```tex
+\BeginQuestions
+\Use{lesson}{01B}
+\Use{lesson}{02B}
+
+\PrintWordBanks
+\PrintAnswers
+```
+
+出力順は「問題本体 → 改ページ → テーマ番号つきワードバンク → 改ページ → 解答」になる。テーマ番号は `\Use` の第2引数を登録時に固定するため、ワードバンク側で重ねて指定しない。
+
+## 内部API・長さ
+
+原則として `.tex` 側から直接使わない。
+
+| 名前 | 種類 | 用途・現在値 |
+|---|---|---|
+| `\LMEngWritingLineHeight` | length | 英字用4本罫1段の高さ。初期値 `10mm` |
+| `\LMEngAnswerLineHeight` | length | 和訳用横罫の行高。初期値 `8mm` |
+| `\LMEngRuledTopSpace` | length | 4本罫1段の上側余白。初期値 `2.5mm` |
+| `\LMEngRuledBottomSpace` | length | 4本罫1段の下側余白。初期値 `3mm` |
+| `\LMEngGuideRuleThickness` | length | 1・2・4本目の太さ。初期値 `0.25pt` |
+| `\LMEngBaseRuleThickness` | length | 3本目の基線の太さ。初期値 `0.45pt` |
+| `LMEngGuideLight` | color | 1・2・4本目の色。初期値は gray `0.78` |
+| `LMEngGuideBase` | color | 3本目の基線の色。初期値は gray `0.45` |
+| `\LMEngRuledBand` | command | 上線・中線・基線・下線からなる4本罫1段を出す |
+| `\LMWordBankList` | macro | 登録されたワードバンクの蓄積先 |
+| `\LMResetWordBanks` | command | `\BeginQuestions` 時に登録内容を空にする |
+| `\LMPrintWordBankBlock` | command | テーマ番号・題名・表本体をまとめて出力する |
+| `\LMWordBankThemeBox` | command | ワードバンクのテーマ番号枠を出す |
+
+解答出力時には問題ファイルが再読込されるが、`\WordBank` は解答モードでは登録を行わない。このためワードバンクが二重登録されることはない。
+
+---
+
+# 14. 状態変数・カウンタ
 
 ## 内部API
 
@@ -299,7 +422,7 @@
 
 ---
 
-# 14. 現行の分割構成
+# 15. 現行の分割構成
 
 `lotusmath.sty` は入口ファイルとして残し、次の分割ファイルを読み込む。
 
@@ -312,12 +435,13 @@
 | `lotusmath-question.sty` | `\Q`, `\QQ`, `\QQTall`, `\QQRow`, `\QQSingle`, 指示文、本文 |
 | `lotusmath-figure.sty` | `\LMFig`, `\QQSideFig`, `\QQFigRow`, `\FigProblemBlock`, 回り込み図・表 |
 | `lotusmath-symbols.sty` | `\percent`, `\Tri`, `\Ang`, `\Lseg` |
+| `lotusmath-english.sty` | 英語問題の表示部品、書写・記述欄、ワードバンクの登録・一括出力 |
 
 現在の `lotusmath.sty` 本体は、おおむね次の入口になっている。
 
 ```tex
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath}[2026/07/08 split workbook package]
+\ProvidesPackage{lotusmath}[2026/09/30 workbook package with English API]
 
 \RequirePackage{lotusmath-core}
 \RequirePackage{lotusmath-answer}
@@ -326,11 +450,12 @@
 \RequirePackage{lotusmath-question}
 \RequirePackage{lotusmath-figure}
 \RequirePackage{lotusmath-symbols}
+\RequirePackage{lotusmath-english}
 ```
 
 ---
 
-# 15. 変更禁止リスト
+# 16. 変更禁止リスト
 
 少なくとも分割直後は、次を変更しない。
 
@@ -347,7 +472,7 @@
 
 ---
 
-# 16. 未整理・今後確認する点
+# 17. 未整理・今後確認する点
 
 - `\TypeQuestion` の第2引数を、将来本当に大問タグとして使うか。
 - `\BeginTwoCols` / `\EndTwoCols` は現状ほぼ互換用なので、実使用箇所を確認する。
