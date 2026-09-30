@@ -2,20 +2,21 @@
 \MajorQuestion{円に内接する四角形の総合問題}
 \SetRowSpace{4mm}
 
-%誘導がくどすぎたので削りました。
-\TypeQuestion{}{}%大問番号はつけてください。タグも生成お願い。
-%図はなし(文章で問題設定を表現し、図は生徒に書かせる)でお願い。
-%コメントとして、問題で使う定理を一覧にしておいて。
-\FigProblemBlock{58mm}{fig/snipe_01_01}{
-  \TextTall{四角形 ${\rm ABCD}$ は円に内接しており、$\Lseg{AB}=3$、$\Lseg{BC}=8$、$\Ang{ABC}=60^\circ$ である。対角線 $\Lseg{AC}$ を引き、$\Ang{ADC}$ の二等分線と $\Lseg{AC}$ との交点を ${\rm E}$ とする。また、$\Lseg{AE}:\Lseg{EC}=1:2$ である。図は必ずしも正確ではない。}
-}{
-  \QQ{$\Lseg{AC}$ の長さを求めなさい。}{$7$}
-  \QQ{$\sin\Ang{ACB}$ の値を求めなさい。}{$\dfrac{3\sqrt{3}}{14}$}
-  \QQ{四角形 ${\rm ABCD}$ の外接円の半径を求めなさい。}{$\dfrac{7\sqrt{3}}{3}$}
-  \QQ{$\Ang{ADC}$ の大きさを求めなさい。}{$120^\circ$}
-  \QQ{$\Lseg{AD}:\Lseg{DC}$ を最も簡単な整数の比で表しなさい。}{$1:2$}
-  \QQ{$\Lseg{AD}$、$\Lseg{DC}$ の長さをそれぞれ求めなさい。}{$\Lseg{AD}=\sqrt{7},\quad \Lseg{DC}=2\sqrt{7}$}
-  \QQ{$\cos\Ang{DAC}$ の値を求めなさい。}{$\dfrac{2\sqrt{7}}{7}$}
-  \QQ{$\Lseg{DE}$ の長さを求めなさい。}{$\dfrac{2\sqrt{7}}{3}$}
-  \QQ{四角形 ${\rm ABCD}$ の面積を求めなさい。}{$\dfrac{19\sqrt{3}}{2}$}
-}
+% 使用する定理・公式:
+% - 余弦定理
+% - 正弦定理（外接円の半径との関係を含む）
+% - 円周角の定理、円に内接する四角形の対角の関係
+% - 角の二等分線の定理
+% - 三角形の面積公式
+\TypeQuestion{次の問いに答えなさい。}{cyclic_quadrilateral}
+\TextTall{円に内接する四角形 ${\rm ABCD}$ があり、$\Lseg{AB}=3$、$\Lseg{BC}=8$、$\Ang{ABC}=60^\circ$ である。対角線 $\Lseg{AC}$ を引き、$\Ang{ADC}$ の二等分線と線分 $\Lseg{AC}$ との交点を ${\rm E}$ とする。また、$\Lseg{AE}:\Lseg{EC}=1:2$ である。}
+
+\QQ{$\Lseg{AC}$ の長さを求めなさい。}{$7$}
+\QQ{$\sin\Ang{ACB}$ の値を求めなさい。}{$\dfrac{3\sqrt{3}}{14}$}
+\QQ{四角形 ${\rm ABCD}$ の外接円の半径を求めなさい。}{$\dfrac{7\sqrt{3}}{3}$}
+\QQ{$\Ang{ADC}$ の大きさを求めなさい。}{$120^\circ$}
+\QQ{$\Lseg{AD}:\Lseg{DC}$ を最も簡単な整数の比で表しなさい。}{$1:2$}
+\QQ{$\Lseg{AD}$、$\Lseg{DC}$ の長さをそれぞれ求めなさい。}{$\Lseg{AD}=\sqrt{7},\quad \Lseg{DC}=2\sqrt{7}$}
+\QQ{$\cos\Ang{DAC}$ の値を求めなさい。}{$\dfrac{2\sqrt{7}}{7}$}
+\QQ{$\Lseg{DE}$ の長さを求めなさい。}{$\dfrac{2\sqrt{7}}{3}$}
+\QQ{四角形 ${\rm ABCD}$ の面積を求めなさい。}{$\dfrac{19\sqrt{3}}{2}$}
