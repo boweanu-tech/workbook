@@ -308,9 +308,12 @@
 
 | コマンド | 引数 | 用途 | 備考 |
 |---|---:|---|---|
-| `\EngSentence{text}` | 1 | 英文を統一した体裁で表示する | 改行可能。長い英文を箱に閉じ込めない |
-| `\EngChoice{items}` | 1 | 適語選択の選択肢を丸括弧で表示する | 区切りの `/` などは引数内に書く |
-| `\EngReorder{items}` | 1 | 並べ替え語群を角括弧で表示する | すべて使用・不要語・不足語・活用の指定は問題文側に書く |
+| `\SetEngFont{declaration}` | 1 | 英語部分の書体宣言を指定する | 高度な設定用。大問・小問番号には影響しない |
+| `\UseAndikaForEnglish` | 0 | 英語部分にAndikaを適用する | 親TeXで先に `\usepackage{andika}` が必要。和文書体は変更しない |
+| `\EngText{text}` | 1 | 通常サイズの英語に英文用書体を適用する | `\QQ` 内の英文やヒントの英単語向け |
+| `\EngSentence{text}` | 1 | 問題文の英文を大きく表示する | 英文用書体を適用。改行可能 |
+| `\EngChoice{items}` | 1 | 適語選択の選択肢を丸括弧で表示する | 外側の `()` は本文書体、中身は英文用書体。区切りの `/` は引数内に書く |
+| `\EngReorder{items}` | 1 | 並べ替え語群を角括弧で表示する | 外側の `[]` は本文書体、中身は英文用書体。すべて使用・不要語・不足語・活用の指定は問題文側に書く |
 | `\EngBlank[width]` | 1 | 適語補充用の横線を表示する | 幅は省略可。初期値は `20mm` |
 | `\EngRuledLines[rows]` | 1 | 英字練習用の4本罫を表示する | 段数は省略可。初期値は1段。3本目を基線として少し太くする |
 | `\EngWritingLines[rows]` | 1 | `\EngRuledLines` と同じ4本罫を表示する | 初期実装との互換名 |
@@ -330,6 +333,16 @@
 | `\EngCopyTranslateSplit{english}{japanese}` | 2 | 書写欄と和訳欄を左右に並べる | 短い英文向け。1段に収める |
 
 ### 組合せ例
+
+英語問題集の親TeXでAndikaを使う場合は、次のように読み込む。`sfdefault` は指定しない。
+
+```tex
+\usepackage{andika}
+\usepackage{lotusmath}
+\UseAndikaForEnglish
+```
+
+`sfdefault` を指定しないことで、大問・小問番号や本文の括弧は従来の書体に保ち、英語APIで指定した内容だけをAndikaにする。
 
 ```tex
 \TypeQuestion{適切な語を選び、完成した英文を書きなさい。}{beverb_choose}
