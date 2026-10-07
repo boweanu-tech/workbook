@@ -46,7 +46,7 @@
   </defs>
   <polygon
      class="triangle-fill"
-     points="28,12 17,15.6 61,44.4"
+     points="28,12 6,26.4 39,15.6"
      id="polygon6" />
   <line
      class="main"
@@ -87,13 +87,13 @@
   <line
      class="thin"
      x1="0.5"
-     y1="4.8"
+     y1="28.2"
      x2="72"
-     y2="51.6"
+     y2="4.8"
      id="line22" />
   <polygon
      class="triangle-outline"
-     points="28,12 17,15.6 61,44.4"
+     points="28,12 6,26.4 39,15.6"
      id="polygon24" />
   <circle
      class="point"
@@ -103,25 +103,25 @@
      id="circle26" />
   <circle
      class="point"
-     cx="17"
-     cy="15.6"
+     cx="6"
+     cy="26.4"
      r=".45"
      id="circle28" />
   <circle
      class="point"
-     cx="61"
-     cy="44.4"
+     cx="39"
+     cy="15.6"
      r=".45"
      id="circle30" />
   <circle
      class="point"
      cx="28"
-     cy="22.8"
+     cy="19.2"
      r=".45"
      id="circle32" />
   <circle
      class="point"
-     cx="11.5"
+     cx="50"
      cy="12"
      r=".45"
      id="circle34" />
@@ -132,27 +132,27 @@
      id="text36">O</text>
   <text
      class="label"
-     x="15.52282"
-     y="20.159567"
+     x="2.7"
+     y="30.2"
      id="text38">A</text>
   <text
      class="label"
-     x="62"
-     y="44.5"
+     x="39.8"
+     y="18.7"
      id="text40">B</text>
   <text
      class="label"
-     x="24.093409"
-     y="25.813351"
+     x="24.1"
+     y="22.2"
      id="text42">P</text>
   <text
      class="label"
-     x="10.865458"
-     y="10.688282"
+     x="49.2"
+     y="10.5"
      id="text44">Q</text>
   <text
      class="name"
-     x="71.715271"
-     y="49.3531"
+     x="68.5"
+     y="8.2"
      id="text46">l</text>
 </svg>

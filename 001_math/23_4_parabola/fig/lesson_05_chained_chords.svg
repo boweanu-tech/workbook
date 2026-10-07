@@ -22,7 +22,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.8224318"
-     inkscape:cx="91.361446"
+     inkscape:cx="91.361444"
      inkscape:cy="149.52549"
      inkscape:window-width="1920"
      inkscape:window-height="995"
@@ -86,13 +86,6 @@
      x2="75"
      y2="32.2"
      id="line20" />
-  <line
-     class="thin"
-     x1="5"
-     y1="32.2"
-     x2="75"
-     y2="50.2"
-     id="line22" />
   <circle
      class="point"
      cx="26"
@@ -164,9 +157,4 @@
      x="71.64727"
      y="31.754919"
      id="text48">l</text>
-  <text
-     class="name"
-     x="5.9004712"
-     y="31.500675"
-     id="text50">m</text>
 </svg>
