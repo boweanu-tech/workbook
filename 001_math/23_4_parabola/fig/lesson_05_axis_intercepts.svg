@@ -22,13 +22,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.8224318"
-     inkscape:cx="54.323022"
-     inkscape:cy="130.8691"
-     inkscape:window-width="1825"
-     inkscape:window-height="991"
-     inkscape:window-x="26"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:cx="5.7615325"
+     inkscape:cy="140.74601"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg48" />
   <!-- 数学座標から X=28+5.5x, Y=12-1.8y で変換。 -->
   <defs
@@ -132,27 +132,27 @@
      id="text36">O</text>
   <text
      class="label"
-     x="2.7"
-     y="30.2"
+     x="5.6058979"
+     y="30.531763"
      id="text38">A</text>
   <text
      class="label"
-     x="39.8"
-     y="18.7"
+     x="37.985229"
+     y="19.778654"
      id="text40">B</text>
   <text
      class="label"
-     x="24.1"
-     y="22.2"
+     x="24.28091"
+     y="23.980742"
      id="text42">P</text>
   <text
      class="label"
-     x="49.2"
+     x="48.120213"
      y="10.5"
      id="text44">Q</text>
   <text
      class="name"
-     x="68.5"
-     y="8.2"
+     x="68.356522"
+     y="9.5026636"
      id="text46">l</text>
 </svg>
