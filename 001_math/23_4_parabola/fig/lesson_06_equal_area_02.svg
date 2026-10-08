@@ -13,5 +13,5 @@
   <path class="thin" d="M 10.6,54.1 Q 36.5,-23.6 62.4,35.6"/>
   <polygon class="main" points="12,50 26,20 40,10"/><polygon class="main" points="54,20 26,20 40,10"/>
   <circle class="point" cx="12" cy="50" r=".45"/><circle class="point" cx="26" cy="20" r=".45"/><circle class="point" cx="40" cy="10" r=".45"/><circle class="point" cx="54" cy="20" r=".45"/>
-  <text class="label" x="7.8" y="54">A</text><text class="label" x="21.8" y="19">B</text><text class="label" x="35.8" y="8">C</text><text class="label" x="55" y="19">D</text>
+  <text class="label" x="7.8" y="54">A</text><text class="label" x="21.8" y="19">B</text><text class="label" x="35.8" y="8">O</text><text class="label" x="55" y="19">D</text>
 </svg>
