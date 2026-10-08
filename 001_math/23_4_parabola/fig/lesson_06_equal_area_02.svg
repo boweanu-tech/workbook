@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="80mm" height="58mm" viewBox="0 0 80 58" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <!-- X=40+7x, Y=10-5y。補助線 AD は描かない。 -->
+  <!-- X=40+7x, Y=10-5y。P は答えを示すため描かない。 -->
   <defs><style><![CDATA[
     .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
     .point{fill:#000}.fill{fill:#eee}.arrow{fill:#000}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;fill:#000}
     .axis{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:italic;fill:#000}
   ]]></style></defs>
-  <polygon class="fill" points="12,50 26,20 40,10"/><polygon class="fill" points="54,20 26,20 40,10"/>
+  <polygon class="fill" points="19,32.5 40,10 54,20"/><polygon class="fill" points="19,32.5 40,40 54,20"/>
   <line class="main" x1="4" y1="10" x2="75" y2="10"/><polygon class="arrow" points="77,10 74.3,9.05 74.3,10.95"/>
   <line class="main" x1="40" y1="55" x2="40" y2="4"/><polygon class="arrow" points="40,2 39.05,4.7 40.95,4.7"/>
   <text class="axis" x="73.5" y="7.2">x</text><text class="axis" x="42" y="5.5">y</text>
-  <path class="thin" d="M 10.6,54.1 Q 36.5,-23.6 62.4,35.6"/>
-  <polygon class="main" points="12,50 26,20 40,10"/><polygon class="main" points="54,20 26,20 40,10"/>
-  <circle class="point" cx="12" cy="50" r=".45"/><circle class="point" cx="26" cy="20" r=".45"/><circle class="point" cx="40" cy="10" r=".45"/><circle class="point" cx="54" cy="20" r=".45"/>
-  <text class="label" x="7.8" y="54">A</text><text class="label" x="21.8" y="19">B</text><text class="label" x="35.8" y="8">O</text><text class="label" x="55" y="19">D</text>
+  <path class="thin" d="M 10.6,54.1 Q 40,-34.1 69.4,54.1"/>
+  <polygon class="main" points="19,32.5 40,10 54,20"/><polygon class="main" points="19,32.5 40,40 54,20"/>
+  <circle class="point" cx="19" cy="32.5" r=".45"/><circle class="point" cx="54" cy="20" r=".45"/><circle class="point" cx="40" cy="10" r=".45"/><circle class="point" cx="40" cy="40" r=".45"/>
+  <text class="label" x="14.8" y="36.5">A</text><text class="label" x="55" y="19">B</text><text class="label" x="35.8" y="8">O</text><text class="label" x="41" y="44">C</text>
 </svg>

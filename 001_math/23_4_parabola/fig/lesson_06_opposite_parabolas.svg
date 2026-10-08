@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="80mm" height="58mm" viewBox="0 0 80 58" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <!-- X=40+7x, Y=29-6y。2つの放物線の頂点は原点。 -->
+  <!-- X=40+10x, Y=26-10y。開き方の異なる2つの放物線。 -->
   <defs><style><![CDATA[
     .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
     .point{fill:#000}.fill{fill:#ddd}.arrow{fill:#000}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;fill:#000}
     .axis{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:italic;fill:#000}
   ]]></style></defs>
-  <polygon class="fill" points="26,41 54,41 54,17 26,17"/>
-  <line class="main" x1="4" y1="29" x2="75" y2="29"/><polygon class="arrow" points="77,29 74.3,28.05 74.3,29.95"/>
+  <polygon class="fill" points="30,41 50,41 50,21 30,21"/>
+  <line class="main" x1="4" y1="26" x2="75" y2="26"/><polygon class="arrow" points="77,26 74.3,25.05 74.3,26.95"/>
   <line class="main" x1="40" y1="56" x2="40" y2="4"/><polygon class="arrow" points="40,2 39.05,4.7 40.95,4.7"/>
-  <text class="axis" x="73.5" y="26.2">x</text><text class="axis" x="42" y="5.5">y</text>
-  <path class="thin" d="M 19,2 Q 40,56 61,2"/><path class="thin" d="M 19,56 Q 40,2 61,56"/>
-  <polygon class="main" points="26,41 54,41 54,17 26,17"/>
-  <circle class="point" cx="26" cy="41" r=".45"/><circle class="point" cx="54" cy="41" r=".45"/><circle class="point" cx="54" cy="17" r=".45"/><circle class="point" cx="26" cy="17" r=".45"/>
-  <text class="label" x="21.8" y="45">A</text><text class="label" x="55" y="45">B</text><text class="label" x="55" y="16">C</text><text class="label" x="21.8" y="16">D</text><text class="label" x="35.8" y="33.5">O</text>
+  <text class="axis" x="73.5" y="23.2">x</text><text class="axis" x="42" y="5.5">y</text>
+  <path class="thin" d="M 16,-2.8 Q 40,54.8 64,-2.8"/><path class="thin" d="M 25.5,57.5 Q 40,-5.5 54.5,57.5"/>
+  <polygon class="main" points="30,41 50,41 50,21 30,21"/>
+  <circle class="point" cx="30" cy="41" r=".45"/><circle class="point" cx="50" cy="41" r=".45"/><circle class="point" cx="50" cy="21" r=".45"/><circle class="point" cx="30" cy="21" r=".45"/>
+  <text class="label" x="25.8" y="45">A</text><text class="label" x="51" y="45">B</text><text class="label" x="51" y="20">C</text><text class="label" x="25.8" y="20">D</text><text class="label" x="35.8" y="30.5">O</text>
 </svg>
