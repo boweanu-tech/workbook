@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80mm" height="58mm" viewBox="0 0 80 58" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- X=30+12x, Y=44-4y。二等分線は描かない。 -->
+  <defs><style><![CDATA[
+    .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .point{fill:#000}.fill{fill:#eee}.arrow{fill:#000}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;fill:#000}
+    .axis{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:italic;fill:#000}
+  ]]></style></defs>
+  <polygon class="fill" points="18,40 66,8 18,56"/>
+  <line class="main" x1="4" y1="44" x2="75" y2="44"/><polygon class="arrow" points="77,44 74.3,43.05 74.3,44.95"/>
+  <line class="main" x1="30" y1="56" x2="30" y2="4"/><polygon class="arrow" points="30,2 29.05,4.7 30.95,4.7"/>
+  <text class="axis" x="73.5" y="41.2">x</text><text class="axis" x="32" y="5.5">y</text>
+  <path class="thin" d="M 8.4,31.04 Q 39.6,66.32 67.2,5.56"/>
+  <polygon class="main" points="18,40 66,8 18,56"/>
+  <circle class="point" cx="18" cy="40" r=".45"/><circle class="point" cx="66" cy="8" r=".45"/><circle class="point" cx="18" cy="56" r=".45"/>
+  <text class="label" x="13.8" y="39">A</text><text class="label" x="67" y="11">B</text><text class="label" x="13.8" y="55">C</text><text class="label" x="25.8" y="48">O</text>
+</svg>
