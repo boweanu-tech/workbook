@@ -76,6 +76,32 @@
 \newcommand{\EngText}[1]{{\LMEngTextFont #1}}
 \newcommand{\EngSentence}[1]{{\large\LMEngTextFont #1}}
 
+% 解答で語句を丸で囲む。内容の幅に応じた楕円を本文の基線にそろえる。
+\newsavebox{\LMEngCircleBox}
+\newlength{\LMEngCircleWidth}
+\newlength{\LMEngCircleHeight}
+\newlength{\LMEngCircleX}
+\newlength{\LMEngCircleY}
+\newcommand{\EngCircle}[1]{%
+  \begingroup
+    \sbox{\LMEngCircleBox}{\EngText{#1}}%
+    \setlength{\LMEngCircleWidth}{\dimexpr\wd\LMEngCircleBox+4pt\relax}%
+    \setlength{\LMEngCircleHeight}{\dimexpr\ht\LMEngCircleBox+\dp\LMEngCircleBox+4pt\relax}%
+    \setlength{\LMEngCircleX}{0.5\LMEngCircleWidth}%
+    \setlength{\LMEngCircleY}{\dimexpr\ht\LMEngCircleBox-\dp\LMEngCircleBox\relax}%
+    \divide\LMEngCircleY by 2\relax
+    \setlength{\unitlength}{1pt}%
+    \raisebox{0pt}[\dimexpr\ht\LMEngCircleBox+2pt\relax][\dimexpr\dp\LMEngCircleBox+2pt\relax]{%
+      \begin{picture}(\strip@pt\LMEngCircleWidth,0)%
+        \thinlines
+        \put(\strip@pt\LMEngCircleX,\strip@pt\LMEngCircleY){%
+          \oval(\strip@pt\LMEngCircleWidth,\strip@pt\LMEngCircleHeight)}%
+        \put(2,0){\usebox{\LMEngCircleBox}}%
+      \end{picture}%
+    }%
+  \endgroup
+}
+
 % 選択肢・並べ替え語群・補充用空欄。
 % 外側の括弧は本文の書体、英語の中身だけを英文用書体にする。
 % 区切り記号や語順は教材側で明示し、内容を不用意に解釈しない。
@@ -214,6 +240,119 @@
     \end{minipage}%
     \par
   }{\EngAnswerPair{#1}{#2}}%
+}
+
+% ===== 英語解答の自動段送り（親TeXで明示的に有効化） =====
+
+\newif\ifLMEngAutoAnswers
+\LMEngAutoAnswersfalse
+\newcommand{\UseEnglishAutoAnswers}{\LMEngAutoAnswerstrue}
+\newcommand{\UseStandardAnswers}{\LMEngAutoAnswersfalse}
+
+\newif\ifLMEngPendingAnswerHeading
+\newsavebox{\LMEngAnswerHeadingBox}
+\newsavebox{\LMEngAutoAnswerBox}
+
+% テーマ全体を箱にしない。テーマ番号は各大問の見出しに併記する。
+\newcommand{\LMEngAutoMajorQuestion}[1]{%
+  \ResetRowSpace
+  \LMAfterTypeQuestionfalse
+  \stepcounter{LMmajor}%
+  \setcounter{LMtype}{0}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedfalse
+  \LMWrapModefalse
+}
+
+% 見出しは保留し、最初の小問と一つの箱にして段末の孤立を防ぐ。
+\newcommand{\LMEngAutoTypeQuestion}[2]{%
+  \LMAfterTypeQuestionfalse
+  \stepcounter{LMtype}%
+  \setcounter{LMsubq}{0}%
+  \LMInstructionUsedtrue
+  \sbox{\LMEngAnswerHeadingBox}{%
+    \begin{minipage}{\linewidth}%
+      \noindent\LMBoxedMajor\hspace{2mm}\LMBoxedTypeQuestionAns\par
+      \vspace{4mm}%
+    \end{minipage}%
+  }%
+  \LMEngPendingAnswerHeadingtrue
+}
+
+% 小問ごとに箱を作る。英文＋和訳／疑問文＋返答の組も途中分割しない。
+% 解答は測定のため再実行せず、一度だけ組版する。
+\newcommand{\LMEngAutoAnswerQuestion}[2]{%
+  \LMAfterTypeQuestionfalse
+  \stepcounter{LMsubq}%
+  \par
+  \sbox{\LMEngAutoAnswerBox}{%
+    \begin{minipage}{\linewidth}%
+      \ifLMEngPendingAnswerHeading
+        \vspace{2mm}%
+        \noindent\usebox{\LMEngAnswerHeadingBox}\par
+      \fi
+      \noindent\makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \parbox[t]{\dimexpr\linewidth-9mm\relax}{%
+        \raggedright
+        #2\par
+      }%
+      \par
+    \end{minipage}%
+  }%
+  \noindent\usebox{\LMEngAutoAnswerBox}\par
+  \LMEngPendingAnswerHeadingfalse
+  \vspace{\LMAnswerRowSpace}%
+}
+
+\newcommand{\LMEngAutoAnswerQ}[3]{\LMEngAutoAnswerQuestion{#1}{#2}}
+
+\newcommand{\LMEngPrintAutoAnswers}{%
+  \clearpage
+  \begingroup
+    \LMAnswerModetrue
+    \setcounter{LMmajor}{0}%
+    \setcounter{LMtype}{0}%
+    \setcounter{LMsubq}{0}%
+    \LMInstructionUsedfalse
+    \LMWrapModefalse
+    \LMInAnswerBlockfalse
+    \LMEngPendingAnswerHeadingfalse
+    % 再読込中だけ差し替える。問題側・通常解答モードには影響しない。
+    \let\MajorQuestionLesson\LMEngAutoMajorQuestion
+    \let\MajorQuestion\LMEngAutoMajorQuestion
+    \let\TypeQuestion\LMEngAutoTypeQuestion
+    \let\QQ\LMEngAutoAnswerQuestion
+    \let\QQTall\LMEngAutoAnswerQuestion
+    \let\Q\LMEngAutoAnswerQ
+    \renewcommand{\LessonPageBreak}{\LMAfterTypeQuestionfalse}%
+    % 明示的な解答専用の段切り・改ページは残す。
+    \renewcommand{\AnswerColumnBreak}{\par\columnbreak}%
+    \renewcommand{\LMQueuedAnswerPageBreak}{%
+      \end{multicols*}\clearpage
+      \begin{multicols*}{2}\raggedcolumns
+    }%
+    \begin{center}
+      {\Large \LMCoverTitle}\par
+      \vspace{1mm}%
+      {\normalsize \LMCoverSubtitle}\par
+    \end{center}
+    \vspace{3mm}%
+    % 星付きでは最終ページも均等化せず、左→右→次ページの順で埋める。
+    \begin{multicols*}{2}
+      \raggedcolumns
+      \LMProblemList
+    \end{multicols*}
+    \clearpage
+  \endgroup
+}
+
+\let\LMEngStandardPrintAnswers\PrintAnswers
+\renewcommand{\PrintAnswers}{%
+  \ifLMEngAutoAnswers
+    \LMEngPrintAutoAnswers
+  \else
+    \LMEngStandardPrintAnswers
+  \fi
 }
 
 % ===== ワードバンク =====

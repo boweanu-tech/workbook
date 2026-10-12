@@ -38,7 +38,7 @@
 | `\Use{variant}{theme}` | 2 | 問題ファイルを読み込み、解答出力対象に登録する | 例：`\Use{lesson}{01A}` のような使い方を想定 |
 | `\UseREF{variant}{theme}{suffix}` | 3 | REF系など、サフィックス付きファイルを読み込む | `variant_themeSuffix.tex` を読み込む |
 | `\BeginQuestions` | 0 | 問題モードを開始する | カウンタ・状態を初期化 |
-| `\PrintAnswers` | 0 | 登録済み問題の解答を最後にまとめて出力する | 内部で `\BeginAnswers` を呼ぶ |
+| `\PrintAnswers` | 0 | 登録済み問題の解答を最後にまとめて出力する | 通常は内部で `\BeginAnswers` を呼ぶ。英語自動配置モードは専用の出力処理に切り替える |
 
 ## 準公開・内部寄り
 
@@ -65,7 +65,7 @@
 |---|---:|---|---|
 | `\CoverPage{title}{subtitle}` | 2 | テスト系表紙を作る | 見出しは「総まとめテスト」固定 |
 | `\CoverPageLesson{title}{subtitle}{note}` | 3 | lesson系表紙を作る | 表紙後に空白ページを挿入 |
-| `\LessonPageBreak` | 0 | lesson用の改ページ | 解答モードでは段切りにする |
+| `\LessonPageBreak` | 0 | lesson用の改ページ | 通常の解答モードでは段切り。英語自動配置モードでは無視する |
 | `\LessonQuestionBreak` | 0 | lessonの問題ページだけ改ページする | 解答モードでは何もしない |
 | `\MakeEvenPage` | 0 | 偶数ページ終わりに調整する | 必要なら空白ページを追加 |
 
@@ -311,8 +311,11 @@
 |---|---:|---|---|
 | `\SetEngFont{declaration}` | 1 | 英語部分の書体宣言を指定する | 高度な設定用。大問・小問番号には影響しない |
 | `\UseAndikaForEnglish` | 0 | 英語部分にAndikaを適用する | 親TeXで先に `\usepackage{andika}` が必要。和文書体は変更しない |
+| `\UseEnglishAutoAnswers` | 0 | 英語解答の自動段送りを有効にする | 親TeXで指定。`\PrintAnswers` が小問単位で左段→右段→次ページへ流す。既定は無効 |
+| `\UseStandardAnswers` | 0 | 従来の解答配置に戻す | `\PrintAnswers` の前に指定する |
 | `\EngText{text}` | 1 | 通常サイズの英語に英文用書体を適用する | `\QQ` 内の英文やヒントの英単語向け |
 | `\EngSentence{text}` | 1 | 問題文の英文を大きく表示する | 英文用書体を適用。改行可能 |
+| `\EngCircle{text}` | 1 | 英語の語句を幅に応じた楕円で囲む | 主語・動詞・否定語などを丸で囲む解答向け。英文用書体を適用し、本文の基線にそろえる |
 | `\EngChoice{items}` | 1 | 適語選択の選択肢を丸括弧で表示する | 外側の `()` は本文書体、中身は英文用書体。区切りの `/` は引数内に書く |
 | `\EngReorder{items}` | 1 | 並べ替え語群を角括弧で表示する | 外側の `[]` は本文書体、中身は英文用書体。すべて使用・不要語・不足語・活用の指定は問題文側に書く |
 | `\EngBlank[width]` | 1 | 適語補充用の横線を表示する | 幅は省略可。初期値は `20mm` |
@@ -332,6 +335,19 @@
 | `\EngCopy[rows]{english}` | 2 | 英文と英字4本罫の書写欄を出す | 段数は省略可。解答には英文を表示する |
 | `\EngCopyTranslate[rows]{english}{japanese}` | 3 | 英文、英字4本罫の書写欄、通常罫の和訳欄を出す | 段数は省略可。和訳欄は1行 |
 | `\EngCopyTranslateSplit{english}{japanese}` | 2 | 書写欄と和訳欄を左右に並べる | 短い英文向け。1段に収める |
+
+### 解答の自動配置
+
+親TeXで `\UseEnglishAutoAnswers` を指定すると、`\PrintAnswers` は小問単位で左段→右段→次ページへ自動的に送る。各大問にはテーマ番号と大問番号を併記し、見出しは最初の解答と同じ段に置く。英文＋和訳、疑問文＋短い返答は一組のまま保持する。大問途中での段・ページまたぎは許可する。
+
+問題側の `\LessonPageBreak` は解答配置に引き継がない。明示的な解答専用の `\AnswerColumnBreak` / `\QueueAnswerPageBreak` は有効。最終ページは左右を均等化せず、左段から順に埋める。小問間の余白は既存の `\LMAnswerRowSpace` に従う。
+
+対象は `\QQ` / `\QQTall` / `\Q` と、それらを使う英語問題API。数学・理科や図つき・横並び小問は従来モードを使う。指定がなければ従来の解答配置を維持し、`\UseStandardAnswers` でも戻せる。各 lesson ファイルの編集は不要。
+
+```tex
+\usepackage{lotusmath}
+\UseEnglishAutoAnswers % プリアンブルで指定。最後は従来どおり \PrintAnswers
+```
 
 ### 組合せ例
 
