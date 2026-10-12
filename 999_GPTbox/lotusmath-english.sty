@@ -392,36 +392,46 @@
 }
 
 \newcommand{\LMWordBankThemeBox}[1]{%
-  {\setlength{\fboxsep}{1.5mm}\fbox{\strut #1}}%
+  {\setlength{\fboxsep}{1.5mm}\fcolorbox{black}{LMBoxGray}{\strut #1}}%
 }
 
+\newsavebox{\LMWordBankPageBox}
+
+% 各テーマは独立した1ページ。表を分割せず、収まりきらなければ通知する。
 \newcommand{\LMPrintWordBankBlock}[3]{%
-  \Needspace{45mm}%
-  \par\vspace{3mm}%
-  \noindent\LMWordBankThemeBox{#1}\hspace{2mm}{\large #2}\par
-  \vspace{1mm}%
-  \begingroup
+  \clearpage
+  \sbox{\LMWordBankPageBox}{%
+    \begin{minipage}{\linewidth}%
+      \begin{center}
+        {\Large ワードバンク}\par
+        \vspace{1mm}%
+        {\normalsize \LMCoverTitle}\par
+      \end{center}
+      \vspace{2mm}%
+      \noindent\LMWordBankThemeBox{#1}\hspace{2mm}{\large #2}\par
+      \vspace{2mm}%
     \small
     \hbadness=10000\relax
     \setlength{\tabcolsep}{1.5mm}%
     \setlength{\arrayrulewidth}{0.3pt}%
-    \renewcommand{\arraystretch}{1.35}%
-    \setlength{\LTleft}{0pt}%
-    \setlength{\LTright}{0pt}%
-    \begin{longtable}{%
+    \renewcommand{\arraystretch}{1.00}%
+    \noindent\begin{tabular}{%
       @{}>{\raggedright\arraybackslash}p{0.21\linewidth}
       >{\raggedright\arraybackslash}p{0.11\linewidth}
       >{\raggedright\arraybackslash}p{0.28\linewidth}
       >{\raggedright\arraybackslash}p{0.30\linewidth}@{}}
       \hline
       \textbf{単語・熟語} & \textbf{品詞} & \textbf{意味} & \textbf{変化形・注意}\\\hline
-      \endfirsthead
-      \hline
-      \textbf{単語・熟語} & \textbf{品詞} & \textbf{意味} & \textbf{変化形・注意}\\\hline
-      \endhead
       #3
-    \end{longtable}%
-  \endgroup
+    \end{tabular}\par
+    \end{minipage}%
+  }%
+  \ifdim\dimexpr\ht\LMWordBankPageBox+\dp\LMWordBankPageBox\relax>\textheight
+    \PackageError{lotusmath-english}{Word bank #1 exceeds one page}%
+      {Shorten notes or combine inflected forms in this theme's word bank.
+       The table is not reduced to unreadably small text.}%
+  \fi
+  \noindent\usebox{\LMWordBankPageBox}\par
 }
 
 % 登録済みワードバンクを問題と解答の間にまとめて出力する。
@@ -429,13 +439,6 @@
 \newcommand{\PrintWordBanks}{%
   \ifx\LMWordBankList\@empty
   \else
-    \clearpage
-    \begin{center}
-      {\Large ワードバンク}\par
-      \vspace{1mm}%
-      {\normalsize \LMCoverTitle}\par
-    \end{center}
-    \vspace{2mm}%
     \LMWordBankList
   \fi
 }
