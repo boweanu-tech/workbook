@@ -301,7 +301,7 @@
 
 ---
 
-# 13. 英語教材・ワードバンク
+# 13. 英語教材・ワードバンク・フレーズバンク
 
 英語教材では、既存の `\QQ` / `\QQTall` / `\TypeQuestion` と組み合わせて使う。問題形式ごとに専用コマンドを増やしすぎず、英文・選択肢・語群・記述欄などの部品を組み合わせる。
 
@@ -320,10 +320,10 @@
 | `\EngWritingLines[rows]` | 1 | `\EngRuledLines` と同じ4本罫を表示する | 初期実装との互換名 |
 | `\EngSplitRuledLine` | 0 | 4本罫1段を中央で分け、左右に1つずつ表示する | 短い英文を2回書く問題向け |
 | `\EngAnswerLines[rows]` | 1 | 和訳などのための通常の横罫を表示する | 行数は省略可。初期値は1行 |
-| `\SetEngWritingLineHeight{length}` | 1 | 英字用4本罫1段の高さを変更する | 初期値は `10mm` |
-| `\SetEngAnswerLineHeight{length}` | 1 | 和訳用横罫の行高を変更する | 初期値は `8mm` |
+| `\SetEngWritingLineHeight{length}` | 1 | 英字用4本罫1段の高さを変更する | 初期値は `7mm` |
+| `\SetEngAnswerLineHeight{length}` | 1 | 和訳用横罫の行高を変更する | 初期値は `5mm` |
 | `\SetEngRuledOuterSpace{top}{bottom}` | 2 | 4本罫1段の前後に置く空白を変更する | 初期値は上 `2.5mm`、下 `3mm`。複数段の間隔は前段の下＋次段の上になる |
-| `\SetEngRuledLineGray{light}{base}` | 2 | 補助線3本と基線の灰色濃度を変更する | `0` が黒、`1` が白。初期値は `0.78`、`0.45` |
+| `\SetEngRuledLineGray{light}{base}` | 2 | 補助線3本と基線の灰色濃度を変更する | `0` が黒、`1` が白。初期値は `0.80`、`0.60` |
 | `\SetEngRuledLineThickness{light}{base}` | 2 | 補助線3本と基線の太さを変更する | 初期値は `0.25pt`、`0.45pt` |
 | `\SetEngSplitGap{length}` | 1 | 左右分割した4本罫の中央の空白幅を変更する | 初期値は `7mm` |
 | `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 解答段の幅に合わせて英文・和訳を折り返す |
@@ -383,7 +383,28 @@
 }
 ```
 
-PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers` より前に `\PrintWordBanks` を呼ぶ。
+ワードバンクには単語・熟語・短縮形を登録する。`Do you ...?` のような文の型や `No, I don't.` のような短い答えは、完成した英文としてフレーズバンクに登録する。
+
+## フレーズバンクの公開API
+
+| コマンド | 引数 | 用途 | 備考 |
+|---|---:|---|---|
+| `\PhraseBank{title}{body}` | 2 | 現在のテーマ番号と例文集を登録する | 問題位置には表示せず、`\PrintPhraseBanks` まで蓄積する |
+| `\PB{english}{japanese}` | 2 | 完成した英文と和訳を1行にまとめる | 英文には `\EngText` の書体を適用。疑問文・短い答えも登録できる |
+| `\PB*{english}{japanese}` | 2 | 次の例文と同じページに保つ | 疑問文・Yesの答えに星を付け、最後のNoの答えを通常の `\PB` にすると3行を一組にできる |
+| `\PrintPhraseBanks` | 0 | 登録済みフレーズバンクを登録順にまとめて出力する | 改ページして英文・日本語訳の2列表を出す。未登録なら改ページもしない |
+
+問題ファイルで、単語とは別に例文を登録する。
+
+```tex
+\PhraseBank{一般動詞の疑問文と短い答え}{
+  \PB*{Do you play tennis?}{あなたはテニスをしますか。}
+  \PB*{Yes, I do.}{はい、します。}
+  \PB{No, I don't.}{いいえ、しません。}
+}
+```
+
+PDF出力用ファイルでは、全問題を読み込んだ後、ワードバンク・フレーズバンク・解答の順に呼ぶ。叩き台など解答をまだ作らない段階では `\PrintAnswers` を省略する。
 
 ```tex
 \BeginQuestions
@@ -391,10 +412,11 @@ PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers
 \Use{lesson}{02B}
 
 \PrintWordBanks
+\PrintPhraseBanks
 \PrintAnswers
 ```
 
-出力順は「問題本体 → 改ページ → テーマ番号つきワードバンク → 改ページ → 解答」になる。テーマ番号は `\Use` の第2引数を登録時に固定するため、ワードバンク側で重ねて指定しない。
+出力順は「問題本体 → 改ページ → ワードバンク → 改ページ → フレーズバンク → 改ページ → 解答」になる。どちらのバンクもテーマ番号は `\Use` の第2引数を登録時に固定するため、バンク側で重ねて指定しない。テーマ見出しの前には最低 `45mm` の空きが必要で、足りなければ次ページへ送る。表が複数ページにわたる場合は、列見出しを次ページにも表示する。
 
 ## 内部API・長さ
 
@@ -402,22 +424,25 @@ PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers
 
 | 名前 | 種類 | 用途・現在値 |
 |---|---|---|
-| `\LMEngWritingLineHeight` | length | 英字用4本罫1段の高さ。初期値 `10mm` |
-| `\LMEngAnswerLineHeight` | length | 和訳用横罫の行高。初期値 `8mm` |
+| `\LMEngWritingLineHeight` | length | 英字用4本罫1段の高さ。初期値 `7mm` |
+| `\LMEngAnswerLineHeight` | length | 和訳用横罫の行高。初期値 `5mm` |
 | `\LMEngRuledTopSpace` | length | 4本罫1段の上側余白。初期値 `2.5mm` |
 | `\LMEngRuledBottomSpace` | length | 4本罫1段の下側余白。初期値 `3mm` |
 | `\LMEngGuideRuleThickness` | length | 1・2・4本目の太さ。初期値 `0.25pt` |
 | `\LMEngBaseRuleThickness` | length | 3本目の基線の太さ。初期値 `0.45pt` |
 | `\LMEngSplitGap` | length | 左右分割した4本罫の中央余白。初期値 `7mm` |
-| `LMEngGuideLight` | color | 1・2・4本目の色。初期値は gray `0.78` |
-| `LMEngGuideBase` | color | 3本目の基線の色。初期値は gray `0.45` |
+| `LMEngGuideLight` | color | 1・2・4本目の色。初期値は gray `0.80` |
+| `LMEngGuideBase` | color | 3本目の基線の色。初期値は gray `0.60` |
 | `\LMEngRuledBand` | command | 上線・中線・基線・下線からなる4本罫1段を出す |
 | `\LMWordBankList` | macro | 登録されたワードバンクの蓄積先 |
 | `\LMResetWordBanks` | command | `\BeginQuestions` 時に登録内容を空にする |
 | `\LMPrintWordBankBlock` | command | テーマ番号・題名・表本体をまとめて出力する |
 | `\LMWordBankThemeBox` | command | ワードバンクのテーマ番号枠を出す |
+| `\LMPhraseBankList` | macro | 登録されたフレーズバンクの蓄積先 |
+| `\LMResetPhraseBanks` | command | `\BeginQuestions` 時にフレーズバンクの登録内容を空にする |
+| `\LMPrintPhraseBankBlock` | command | フレーズバンクのテーマ番号・題名・英文と和訳の表を出す |
 
-解答出力時には問題ファイルが再読込されるが、`\WordBank` は解答モードでは登録を行わない。このためワードバンクが二重登録されることはない。
+解答出力時には問題ファイルが再読込されるが、`\WordBank` と `\PhraseBank` は解答モードでは登録を行わない。このためバンクが二重登録されることはない。`\BeginQuestions` は両方の登録内容を初期化する。
 
 ---
 
@@ -456,7 +481,7 @@ PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers
 | `lotusmath-question.sty` | `\Q`, `\QQ`, `\QQTall`, `\QQRow`, `\QQSingle`, 指示文、本文 |
 | `lotusmath-figure.sty` | `\LMFig`, `\QQSideFig`, `\QQFigRow`, `\FigProblemBlock`, 回り込み図・表 |
 | `lotusmath-symbols.sty` | `\percent`, `\Tri`, `\Ang`, `\Lseg`, `\Parallel` |
-| `lotusmath-english.sty` | 英語問題の表示部品、書写・記述欄、ワードバンクの登録・一括出力 |
+| `lotusmath-english.sty` | 英語問題の表示部品、書写・記述欄、ワードバンク・フレーズバンクの登録・一括出力 |
 
 現在の `lotusmath.sty` 本体は、おおむね次の入口になっている。
 

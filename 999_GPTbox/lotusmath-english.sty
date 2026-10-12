@@ -1,8 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath-english}[2026/10/01 lotusmath English workbook]
+\ProvidesPackage{lotusmath-english}[2026/10/12 lotusmath English workbook]
 
 \RequirePackage{array}
 \RequirePackage{longtable}
+\RequirePackage{needspace}
 
 \makeatletter
 
@@ -256,6 +257,7 @@
 }
 
 \newcommand{\LMPrintWordBankBlock}[3]{%
+  \Needspace{45mm}%
   \par\vspace{3mm}%
   \noindent\LMWordBankThemeBox{#1}\hspace{2mm}{\large #2}\par
   \vspace{1mm}%
@@ -296,6 +298,86 @@
     \end{center}
     \vspace{2mm}%
     \LMWordBankList
+  \fi
+}
+
+% ===== フレーズバンク =====
+
+% 完成した英文と和訳を、ワードバンクとは別にテーマ順で蓄積する。
+\newcommand{\LMPhraseBankList}{}
+\newcommand{\LMResetPhraseBanks}{%
+  \global\let\LMPhraseBankList\@empty
+}
+\g@addto@macro\BeginQuestions{\LMResetPhraseBanks}
+
+% #1: テーマ名、#2: \PB の列。解答用の再読込では登録しない。
+\newcommand{\PhraseBank}[2]{%
+  \ifLMAnswerMode
+  \else
+    \begingroup
+      \edef\LMStoredPhraseBankTheme{\LMCurrentTheme}%
+      \xdef\LMPhraseBankList{%
+        \unexpanded\expandafter{\LMPhraseBankList}%
+        \noexpand\LMPrintPhraseBankBlock
+          {\LMStoredPhraseBankTheme}%
+          {\unexpanded{#1}}%
+          {\unexpanded{#2}}%
+      }%
+    \endgroup
+  \fi
+}
+
+% #1: 完成した英文（短い答えを含む）、#2: 和訳。
+% 星付きは次の例文と同じページに保つ（疑問文と返答の組向け）。
+\newcommand{\PB}{\@ifstar{\LMPBKeepNext}{\LMPBRow}}
+\newcommand{\LMPBRow}[2]{%
+  \EngText{#1} & #2\\\hline
+}
+\newcommand{\LMPBKeepNext}[2]{%
+  % longtable の \hline 自体に改ページ候補があるため、
+  % 星付きの行では通常の罫線を引き、次の行まで改ページを禁止する。
+  \EngText{#1} & #2\\*%
+  \noalign{\hrule height \arrayrulewidth\penalty10000}%
+}
+
+\newcommand{\LMPrintPhraseBankBlock}[3]{%
+  \Needspace{45mm}%
+  \par\vspace{3mm}%
+  \noindent\LMWordBankThemeBox{#1}\hspace{2mm}{\large #2}\par
+  \vspace{1mm}%
+  \begingroup
+    \normalsize
+    \setlength{\tabcolsep}{1.5mm}%
+    \setlength{\arrayrulewidth}{0.3pt}%
+    \renewcommand{\arraystretch}{1.4}%
+    \setlength{\LTleft}{0pt}%
+    \setlength{\LTright}{0pt}%
+    \begin{longtable}{%
+      @{}>{\raggedright\arraybackslash}p{\dimexpr0.5\linewidth-1.5mm\relax}
+      >{\raggedright\arraybackslash}p{\dimexpr0.5\linewidth-1.5mm\relax}@{}}
+      \hline
+      \textbf{英文} & \textbf{日本語訳}\\\hline
+      \endfirsthead
+      \hline
+      \textbf{英文} & \textbf{日本語訳}\\\hline
+      \endhead
+      #3
+    \end{longtable}%
+  \endgroup
+}
+
+% ワードバンクの後・解答の前に呼ぶ。未登録なら改ページもしない。
+\newcommand{\PrintPhraseBanks}{%
+  \ifx\LMPhraseBankList\@empty
+  \else
+    \clearpage
+    \begin{center}
+      {\Large フレーズバンク}\par
+      \vspace{1mm}%
+      {\normalsize \LMCoverTitle}\par
+    \end{center}
+    \vspace{2mm}%
+    \LMPhraseBankList
   \fi
 }
 
