@@ -278,6 +278,7 @@
 | `\Tri{name}`  |   1 | 三角形記号つきでローマン体の頂点名を出す | 例：`\Tri{ABC}` |
 | `\Ang{name}`  |   1 | 角記号つきでローマン体の点名を出す    | 例：`\Ang{ABC}` |
 | `\Lseg{name}` |   1 | 線分名をローマン体で出す         | 例：`\Lseg{AB}` |
+| `\Parallel`   |   0 | 右上がりの斜線2本で平行関係を表す      | 例：`$\Lseg{AB}\Parallel\Lseg{CD}$` |
 | `\EqNo{label}` | 1 | 式番号を丸囲みで表示する | 例：`\EqNo{1}` |
 | `\EqItem{label}{formula}` | 2 | 式番号と数式を一定幅で横並びにする | 数式部分は内部で数式モードになる |
 | `\SetEqItemWidth{length}` | 1 | `\EqItem` 1項目分の幅を変更する | 初期値は `25mm` |
@@ -454,7 +455,7 @@ PDF出力用ファイルでは、全問題を読み込んだ後、`\PrintAnswers
 | `lotusmath-qanda.sty` | `\Blank`, `\NamedBlank`, `\RefBlank`, 一問一答系補助 |
 | `lotusmath-question.sty` | `\Q`, `\QQ`, `\QQTall`, `\QQRow`, `\QQSingle`, 指示文、本文 |
 | `lotusmath-figure.sty` | `\LMFig`, `\QQSideFig`, `\QQFigRow`, `\FigProblemBlock`, 回り込み図・表 |
-| `lotusmath-symbols.sty` | `\percent`, `\Tri`, `\Ang`, `\Lseg` |
+| `lotusmath-symbols.sty` | `\percent`, `\Tri`, `\Ang`, `\Lseg`, `\Parallel` |
 | `lotusmath-english.sty` | 英語問題の表示部品、書写・記述欄、ワードバンクの登録・一括出力 |
 
 現在の `lotusmath.sty` 本体は、おおむね次の入口になっている。
