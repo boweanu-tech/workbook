@@ -1,38 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="130mm" height="54mm" viewBox="0 0 130 54">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_01_quadrilateral_pair; coordinates={"A":[0,0],"B":[10,0],"C":[7,3],"D":[0,3],"G":[24,-2],"H":[15.760984358425159,9.318949653474261],"E":[14.837004154855334,3.45156006495953],"F":[20.604315103957724,-4.471704692472452]}; ABCD corresponds to GHEF; scale 7/5.</desc>
-<defs><style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70mm"
+   height="47mm"
+   viewBox="0 0 70 47"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="lesson_01_quadrilateral_pair.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.658734"
+     inkscape:cx="291.18593"
+     inkscape:cy="188.3967"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+  <desc
+     id="desc2">lesson_01_quadrilateral_pair; coordinates={&quot;A&quot;:[0,0],&quot;B&quot;:[10,0],&quot;C&quot;:[7,3],&quot;D&quot;:[0,3],&quot;G&quot;:[24,-2],&quot;H&quot;:[15.760984358425159,9.318949653474261],&quot;E&quot;:[14.837004154855334,3.45156006495953],&quot;F&quot;:[20.604315103957724,-4.471704692472452]}; ABCD corresponds to GHEF; scale 7/5.</desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
-.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
 .label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
-.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
-</style></defs>
-<polygon class="main" points="33.6744,33.3268 59.7791,33.3268 51.9477,25.4954 33.6744,25.4954"/>
-<polygon class="main" points="96.3256,38.5477 74.8179,9 72.4059,24.3166 87.4613,45"/>
-<text class="label" x="30.4034" y="33.7631" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="57.4548" y="35.6694" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="49.6849" y="23.2326" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="30.4007" y="25.0799" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="99.5004" y="39.448" text-anchor="middle" dominant-baseline="central">G</text>
-<text class="label" x="76.3956" y="6.1016" text-anchor="middle" dominant-baseline="central">H</text>
-<text class="label" x="75.263" y="22.6652" text-anchor="middle" dominant-baseline="central">E</text>
-<text class="label" x="90.2131" y="46.8213" text-anchor="middle" dominant-baseline="central">F</text>
-
-<rect class="label-bg" x="44.3898" y="34.4878" width="4.674" height="4.078" rx=".3"/><text class="math-label" x="46.7268" y="36.5268" text-anchor="middle" dominant-baseline="central">10</text>
-
-<rect class="label-bg" x="41.4176" y="20.2564" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="42.8111" y="22.2954" text-anchor="middle" dominant-baseline="central">7</text>
-
-<rect class="label-bg" x="29.0809" y="27.3721" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="30.4744" y="29.4111" text-anchor="middle" dominant-baseline="central">3</text>
-
-<rect class="label-bg" x="85.8219" y="19.8516" width="4.674" height="4.078" rx=".3"/><text class="math-label" x="88.1589" y="21.8906" text-anchor="middle" dominant-baseline="central">14</text>
-<path class="thin" d="M 56.5791 33.3268 A 3.2 3.2 0 0 1 57.5163 31.064"/>
-
-<rect class="label-bg" x="50.9827" y="29.8206" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="53.8662" y="31.5776" text-anchor="middle" dominant-baseline="central">45°</text>
-<path class="thin" d="M 35.6744 33.3268 l 0 -2 l -2 0"/>
-<path class="thin" d="M 33.6744 27.4954 l 2 0 l 0 -2"/>
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+</style>
+  </defs>
+  <polygon
+     class="main"
+     points="33.6744,33.3268 59.7791,33.3268 51.9477,25.4954 33.6744,25.4954 "
+     id="polygon8"
+     transform="translate(-24.851035,-3.0873754)" />
+  <polygon
+     class="main"
+     points="74.8179,9 72.4059,24.3166 87.4613,45 96.3256,38.5477 "
+     id="polygon10"
+     transform="translate(-35.024731,-3.1073141)" />
+  <text
+     class="label"
+     x="5.5523653"
+     y="30.675724"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text12">A</text>
+  <text
+     class="label"
+     x="32.603764"
+     y="32.582024"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text14">B</text>
+  <text
+     class="label"
+     x="24.833864"
+     y="20.145224"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text16">C</text>
+  <text
+     class="label"
+     x="5.5496645"
+     y="21.992525"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text18">D</text>
+  <text
+     class="label"
+     x="64.475662"
+     y="36.340687"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text20">G</text>
+  <text
+     class="label"
+     x="41.370869"
+     y="2.9942861"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text22">H</text>
+  <text
+     class="label"
+     x="40.23827"
+     y="19.557884"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">E</text>
+  <text
+     class="label"
+     x="55.188366"
+     y="43.713985"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">F</text>
+  <rect
+     class="label-bg"
+     x="19.538767"
+     y="31.400425"
+     width="4.6739998"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect28"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="21.875765"
+     y="33.439423"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text30">10</text>
+  <rect
+     class="label-bg"
+     x="16.566565"
+     y="17.169025"
+     width="2.7869999"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect32"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="17.960066"
+     y="19.208025"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text34">7</text>
+  <rect
+     class="label-bg"
+     x="4.2298651"
+     y="24.284725"
+     width="2.7869999"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect36"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="5.6233644"
+     y="26.323725"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text38">3</text>
+  <rect
+     class="label-bg"
+     x="50.797165"
+     y="16.744286"
+     width="4.6739998"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect40"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="53.134163"
+     y="18.783285"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text42">14</text>
+  <path
+     class="thin"
+     d="m 31.728065,30.239424 a 3.2,3.2 0 0 1 0.9372,-2.2628"
+     id="path44" />
+  <rect
+     class="label-bg"
+     x="26.131666"
+     y="26.733225"
+     width="5.7670002"
+     height="3.5139999"
+     rx="0.30000001"
+     id="rect46"
+     ry="0.30000001" />
+  <text
+     class="angle-label"
+     x="29.015165"
+     y="28.490225"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text48">45°</text>
+  <path
+     class="thin"
+     d="m 10.823365,30.239424 v -2 H 8.8233651"
+     id="path50" />
+  <path
+     class="thin"
+     d="m 8.8233651,24.408024 h 1.9999999 v -2"
+     id="path52" />
 </svg>
