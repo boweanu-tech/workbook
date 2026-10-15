@@ -2,40 +2,53 @@
 \MajorQuestionLesson{三角関数の合成と積和と和積の公式}
 \SetRowSpace{4mm}
 
+% 問題は横並びのまま、長い解答だけを1問ずつ縦に並べる。
+\providecommand{\TrigAnswerRow}[4]{%
+  \ifLMAnswerMode
+    \QQ{#1}{#2}\QQ{#3}{#4}%
+  \else
+    \QQRow{#1}{#2}{#3}{#4}%
+  \fi
+}
+
 \TypeQuestion{次の式を $r\sin(\theta+\alpha)$ の形に表しなさい。ただし、$r>0$、$-\pi<\alpha\leqq\pi$ とする。}{synthesis_sine_form}
-\QQRow{$\sin\theta+\cos\theta$}{}{$\sqrt{3}\sin\theta-\cos\theta$}{}
-\QQRow{$-\sin\theta+\sqrt{3}\cos\theta$}{}{$\sin\theta-\cos\theta$}{}
-\QQRow{$-2\sin\theta-2\cos\theta$}{}{$\cos\theta+\sqrt{3}\sin\theta$}{}
-\QQRow{$2\sqrt{3}\cos\theta-2\sin\theta$}{}{$\dfrac{1}{2}\sin\theta-\dfrac{\sqrt{3}}{2}\cos\theta$}{}
-\QQRow{$-\sqrt{3}\sin\theta-\cos\theta$}{}{$\dfrac{3}{2}\sin\theta+\dfrac{3}{2}\cos\theta$}{}
+\TrigAnswerRow{$\sin\theta+\cos\theta$}{$\sqrt2\sin\left(\theta+\dfrac\pi4\right)$}{$\sqrt{3}\sin\theta-\cos\theta$}{$2\sin\left(\theta-\dfrac\pi6\right)$}
+\TrigAnswerRow{$-\sin\theta+\sqrt{3}\cos\theta$}{$2\sin\left(\theta+\dfrac{2\pi}{3}\right)$}{$\sin\theta-\cos\theta$}{$\sqrt2\sin\left(\theta-\dfrac\pi4\right)$}
+\TrigAnswerRow{$-2\sin\theta-2\cos\theta$}{$2\sqrt2\sin\left(\theta-\dfrac{3\pi}{4}\right)$}{$\cos\theta+\sqrt{3}\sin\theta$}{$2\sin\left(\theta+\dfrac\pi6\right)$}
+\TrigAnswerRow{$2\sqrt{3}\cos\theta-2\sin\theta$}{$4\sin\left(\theta+\dfrac{2\pi}{3}\right)$}{$\dfrac{1}{2}\sin\theta-\dfrac{\sqrt{3}}{2}\cos\theta$}{$\sin\left(\theta-\dfrac\pi3\right)$}
+\AnswerColumnBreak
+\TrigAnswerRow{$-\sqrt{3}\sin\theta-\cos\theta$}{$2\sin\left(\theta-\dfrac{5\pi}{6}\right)$}{$\dfrac{3}{2}\sin\theta+\dfrac{3}{2}\cos\theta$}{$\dfrac{3\sqrt2}{2}\sin\left(\theta+\dfrac\pi4\right)$}
 
 \TypeQuestion{次の式を $r\cos(\theta-\alpha)$ の形に表しなさい。ただし、$r>0$、$-\pi<\alpha\leqq\pi$ とする。}{synthesis_cosine_form}
-\QQRow{$\sqrt{3}\cos\theta+\sin\theta$}{}{$\cos\theta-\sin\theta$}{}
-\QQRow{$-\sin\theta-\sqrt{3}\cos\theta$}{}{$2\sin\theta-2\cos\theta$}{}
-\QQRow{$3\sin\theta-\sqrt{3}\cos\theta$}{}{$-\dfrac{1}{2}\cos\theta-\dfrac{\sqrt{3}}{2}\sin\theta$}{}
+\TrigAnswerRow{$\sqrt{3}\cos\theta+\sin\theta$}{$2\cos\left(\theta-\dfrac\pi6\right)$}{$\cos\theta-\sin\theta$}{$\sqrt2\cos\left(\theta+\dfrac\pi4\right)$}
+\TrigAnswerRow{$-\sin\theta-\sqrt{3}\cos\theta$}{$2\cos\left(\theta+\dfrac{5\pi}{6}\right)$}{$2\sin\theta-2\cos\theta$}{$2\sqrt2\cos\left(\theta-\dfrac{3\pi}{4}\right)$}
+\TrigAnswerRow{$3\sin\theta-\sqrt{3}\cos\theta$}{$2\sqrt3\cos\left(\theta-\dfrac{2\pi}{3}\right)$}{$-\dfrac{1}{2}\cos\theta-\dfrac{\sqrt{3}}{2}\sin\theta$}{$\cos\left(\theta+\dfrac{2\pi}{3}\right)$}
 
+\AnswerColumnBreak
 \TypeQuestion{次の式を $r\sin(\theta+\alpha)$ の形に表し、$r,\ \sin\alpha,\ \cos\alpha$ の値を求めなさい。ただし、$r>0$、$-\pi<\alpha\leqq\pi$ とする。}{synthesis_nonstandard_phase}
-\QQRow{$3\sin\theta-4\cos\theta$}{}{$-2\sin\theta+3\cos\theta$}{}
-\QQRow{$-5\sin\theta-12\cos\theta$}{}{$\dfrac{5}{2}\sin\theta+6\cos\theta$}{}
-\QQRow{$\dfrac{1}{3}\sin\theta-\dfrac{2}{3}\cos\theta$}{}{$4\cos\theta-7\sin\theta$}{}
+\TrigAnswerRow{$3\sin\theta-4\cos\theta$}{\AnswerThreeLines{$r=5$}{$\sin\alpha=-\dfrac45,\ \cos\alpha=\dfrac35$}{$5\sin(\theta+\alpha)$}}{$-2\sin\theta+3\cos\theta$}{\AnswerThreeLines{$r=\sqrt{13}$}{$\sin\alpha=\dfrac{3\sqrt{13}}{13},\ \cos\alpha=-\dfrac{2\sqrt{13}}{13}$}{$\sqrt{13}\sin(\theta+\alpha)$}}
+\TrigAnswerRow{$-5\sin\theta-12\cos\theta$}{\AnswerThreeLines{$r=13$}{$\sin\alpha=-\dfrac{12}{13},\ \cos\alpha=-\dfrac5{13}$}{$13\sin(\theta+\alpha)$}}{$\dfrac{5}{2}\sin\theta+6\cos\theta$}{\AnswerThreeLines{$r=\dfrac{13}{2}$}{$\sin\alpha=\dfrac{12}{13},\ \cos\alpha=\dfrac5{13}$}{$\dfrac{13}{2}\sin(\theta+\alpha)$}}
+\TrigAnswerRow{$\dfrac{1}{3}\sin\theta-\dfrac{2}{3}\cos\theta$}{\AnswerThreeLines{$r=\dfrac{\sqrt5}{3}$}{$\sin\alpha=-\dfrac{2\sqrt5}{5},\ \cos\alpha=\dfrac{\sqrt5}{5}$}{$\dfrac{\sqrt5}{3}\sin(\theta+\alpha)$}}{$4\cos\theta-7\sin\theta$}{\AnswerThreeLines{$r=\sqrt{65}$}{$\sin\alpha=\dfrac{4\sqrt{65}}{65},\ \cos\alpha=-\dfrac{7\sqrt{65}}{65}$}{$\sqrt{65}\sin(\theta+\alpha)$}}
 
+\AnswerColumnBreak
 \TypeQuestion{次の関数のグラフを $0\leqq\theta\leqq2\pi$ の範囲でかき、周期を求めなさい。}{synthesis_graph}
-\QQRow{$y=\sin\theta+\cos\theta$}{}{$y=\sqrt{3}\cos\theta-\sin\theta$}{}
-\QQRow{$y=2\sin\theta-2\cos\theta+1$}{}{$y=\sin2\theta+\sqrt{3}\cos2\theta$}{}
+\TrigAnswerRow{$y=\sin\theta+\cos\theta$}{\begin{minipage}[t]{0.98\linewidth}\vspace{0pt}\LMFigBlock[\linewidth]{fig/lesson_08_synthesis_01_a}周期は $2\pi$\end{minipage}}{$y=\sqrt{3}\cos\theta-\sin\theta$}{\begin{minipage}[t]{0.98\linewidth}\vspace{0pt}\LMFigBlock[\linewidth]{fig/lesson_08_synthesis_02_a}周期は $2\pi$\end{minipage}}
+\TrigAnswerRow{$y=2\sin\theta-2\cos\theta+1$}{\begin{minipage}[t]{0.98\linewidth}\vspace{0pt}\LMFigBlock[\linewidth]{fig/lesson_08_synthesis_03_a}周期は $2\pi$\end{minipage}}{$y=\sin2\theta+\sqrt{3}\cos2\theta$}{\begin{minipage}[t]{0.98\linewidth}\vspace{0pt}\LMFigBlock[\linewidth]{fig/lesson_08_synthesis_04_a}周期は $\pi$\end{minipage}}
 
 \LessonQuestionBreak
 
+\AnswerColumnBreak
 \TypeQuestion{次の積を、三角関数の和または差の形に直しなさい。}{product_sum_product_to_sum}
-\QQRow{$2\sin3\theta\cos\theta$}{}{$\cos5\theta\cos2\theta$}{}
-\QQRow{$\sin4\theta\sin\theta$}{}{$2\cos3\theta\sin2\theta$}{}
-\QQRow{$\sin\left(\theta+\dfrac{\pi}{6}\right)\cos\left(\theta-\dfrac{\pi}{6}\right)$}{}{$\cos\left(\theta+\dfrac{\pi}{4}\right)\cos\left(\theta-\dfrac{\pi}{4}\right)$}{}
+\TrigAnswerRow{$2\sin3\theta\cos\theta$}{$\sin4\theta+\sin2\theta$}{$\cos5\theta\cos2\theta$}{$\dfrac12(\cos7\theta+\cos3\theta)$}
+\TrigAnswerRow{$\sin4\theta\sin\theta$}{$\dfrac12(\cos3\theta-\cos5\theta)$}{$2\cos3\theta\sin2\theta$}{$\sin5\theta-\sin\theta$}
+\TrigAnswerRow{$\sin\left(\theta+\dfrac{\pi}{6}\right)\cos\left(\theta-\dfrac{\pi}{6}\right)$}{$\dfrac12\sin2\theta+\dfrac{\sqrt3}{4}$}{$\cos\left(\theta+\dfrac{\pi}{4}\right)\cos\left(\theta-\dfrac{\pi}{4}\right)$}{$\dfrac12\cos2\theta$}
 
 \TypeQuestion{次の和または差を、三角関数の積の形に直しなさい。}{product_sum_sum_to_product}
-\QQRow{$\sin5\theta-\sin\theta$}{}{$\cos3\theta+\cos\theta$}{}
-\QQRow{$\cos4\theta-\cos2\theta$}{}{$\sin2\theta+\sin\theta$}{}
-\QQRow{$\sin\left(\theta+\dfrac{\pi}{3}\right)+\sin\left(\theta-\dfrac{\pi}{6}\right)$}{}{$\cos\left(\theta+\dfrac{\pi}{6}\right)-\cos\left(\theta-\dfrac{\pi}{3}\right)$}{}
+\TrigAnswerRow{$\sin5\theta-\sin\theta$}{$2\cos3\theta\sin2\theta$}{$\cos3\theta+\cos\theta$}{$2\cos2\theta\cos\theta$}
+\TrigAnswerRow{$\cos4\theta-\cos2\theta$}{$-2\sin3\theta\sin\theta$}{$\sin2\theta+\sin\theta$}{$2\sin\dfrac{3\theta}{2}\cos\dfrac\theta2$}
+\TrigAnswerRow{$\sin\left(\theta+\dfrac{\pi}{3}\right)+\sin\left(\theta-\dfrac{\pi}{6}\right)$}{$\sqrt2\sin\left(\theta+\dfrac\pi{12}\right)$}{$\cos\left(\theta+\dfrac{\pi}{6}\right)-\cos\left(\theta-\dfrac{\pi}{3}\right)$}{$-\sqrt2\sin\left(\theta-\dfrac\pi{12}\right)$}
 
 \TypeQuestion{次の式の値を求めなさい。}{product_sum_calculate}
-\QQRow{$\sin75^\circ\sin15^\circ$}{}{$\cos\dfrac{\pi}{12}\cos\dfrac{7\pi}{12}$}{}
-\QQRow{$\sin105^\circ+\sin15^\circ$}{}{$\cos\dfrac{\pi}{12}-\cos\dfrac{5\pi}{12}$}{}
-\QQRow{$\cos20^\circ\cos40^\circ\cos80^\circ$}{}{$2\sin10^\circ\sin50^\circ\sin70^\circ$}{}
+\QQRow{$\sin75^\circ\sin15^\circ$}{$\dfrac14$}{$\cos\dfrac{\pi}{12}\cos\dfrac{7\pi}{12}$}{$-\dfrac14$}
+\QQRow{$\sin105^\circ+\sin15^\circ$}{$\dfrac{\sqrt6}{2}$}{$\cos\dfrac{\pi}{12}-\cos\dfrac{5\pi}{12}$}{$\dfrac{\sqrt2}{2}$}
+\QQRow{$\cos20^\circ\cos40^\circ\cos80^\circ$}{$\dfrac18$}{$2\sin10^\circ\sin50^\circ\sin70^\circ$}{$\dfrac14$}

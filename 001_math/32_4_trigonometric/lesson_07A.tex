@@ -2,41 +2,54 @@
 \MajorQuestionLesson{倍角・半角の公式}
 \SetRowSpace{4mm}
 
+% 問題は横並びのまま、長い解答だけを1問ずつ縦に並べる。
+\providecommand{\TrigAnswerRow}[4]{%
+  \ifLMAnswerMode
+    \QQ{#1}{#2}\QQ{#3}{#4}%
+  \else
+    \QQRow{#1}{#2}{#3}{#4}%
+  \fi
+}
+
 \TypeQuestion{次の条件のもとで、$\sin2\theta,\ \cos2\theta,\ \tan2\theta$ の値を求めなさい。}{multiple_half_angles_double_value}
-\QQRow{$\sin\theta=\dfrac{3}{5},\quad\dfrac{\pi}{2}<\theta<\pi$}{}{$\tan\theta=\dfrac{1}{3},\quad0<\theta<\dfrac{\pi}{2}$}{}
-\QQRow{$\cos\theta=-\dfrac{5}{13},\quad\pi<\theta<\dfrac{3\pi}{2}$}{}{$\sin\theta=-\dfrac{2}{3},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{}
-\QQRow{$\tan\theta=\dfrac{1}{2},\quad\pi<\theta<\dfrac{3\pi}{2}$}{}{$\cos\theta=\dfrac{\sqrt{6}}{3},\quad0<\theta<\dfrac{\pi}{2}$}{}
-\QQRow{$\tan\theta=-\dfrac{3}{2},\quad\dfrac{\pi}{2}<\theta<\pi$}{}{$\cos\theta=-\dfrac{1}{3},\quad\dfrac{\pi}{2}<\theta<\pi$}{}
+\TrigAnswerRow{$\sin\theta=\dfrac{3}{5},\quad\dfrac{\pi}{2}<\theta<\pi$}{\AnswerThreeLines{$\sin2\theta=-\dfrac{24}{25}$}{$\cos2\theta=\dfrac7{25}$}{$\tan2\theta=-\dfrac{24}{7}$}}{$\tan\theta=\dfrac{1}{3},\quad0<\theta<\dfrac{\pi}{2}$}{\AnswerThreeLines{$\sin2\theta=\dfrac35$}{$\cos2\theta=\dfrac45$}{$\tan2\theta=\dfrac34$}}
+\TrigAnswerRow{$\cos\theta=-\dfrac{5}{13},\quad\pi<\theta<\dfrac{3\pi}{2}$}{\AnswerThreeLines{$\sin2\theta=\dfrac{120}{169}$}{$\cos2\theta=-\dfrac{119}{169}$}{$\tan2\theta=-\dfrac{120}{119}$}}{$\sin\theta=-\dfrac{2}{3},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{\AnswerThreeLines{$\sin2\theta=-\dfrac{4\sqrt5}{9}$}{$\cos2\theta=\dfrac19$}{$\tan2\theta=-4\sqrt5$}}
+\AnswerColumnBreak
+\TrigAnswerRow{$\tan\theta=\dfrac{1}{2},\quad\pi<\theta<\dfrac{3\pi}{2}$}{\AnswerThreeLines{$\sin2\theta=\dfrac45$}{$\cos2\theta=\dfrac35$}{$\tan2\theta=\dfrac43$}}{$\cos\theta=\dfrac{\sqrt{6}}{3},\quad0<\theta<\dfrac{\pi}{2}$}{\AnswerThreeLines{$\sin2\theta=\dfrac{2\sqrt2}{3}$}{$\cos2\theta=\dfrac13$}{$\tan2\theta=2\sqrt2$}}
+\TrigAnswerRow{$\tan\theta=-\dfrac{3}{2},\quad\dfrac{\pi}{2}<\theta<\pi$}{\AnswerThreeLines{$\sin2\theta=-\dfrac{12}{13}$}{$\cos2\theta=-\dfrac5{13}$}{$\tan2\theta=\dfrac{12}{5}$}}{$\cos\theta=-\dfrac{1}{3},\quad\dfrac{\pi}{2}<\theta<\pi$}{\AnswerThreeLines{$\sin2\theta=-\dfrac{4\sqrt2}{9}$}{$\cos2\theta=-\dfrac79$}{$\tan2\theta=\dfrac{4\sqrt2}{7}$}}
 
 \TypeQuestion{次の値を求めなさい。}{multiple_half_angles_half_exact}
-\QQRowThree{$\sin\dfrac{\pi}{8}$}{}{$\tan\dfrac{3\pi}{8}$}{}{$\cos\dfrac{5\pi}{8}$}{}
-\QQRowThree{$\cos\dfrac{\pi}{12}$}{}{$\sin\dfrac{7\pi}{8}$}{}{$\tan\dfrac{5\pi}{12}$}{}
-\QQRowThree{$\tan\dfrac{7\pi}{8}$}{}{$\cos\dfrac{3\pi}{8}$}{}{$\sin\left(-\dfrac{\pi}{8}\right)$}{}
+\QQRowThree{$\sin\dfrac{\pi}{8}$}{$\dfrac{\sqrt{2-\sqrt2}}2$}{$\tan\dfrac{3\pi}{8}$}{$1+\sqrt2$}{$\cos\dfrac{5\pi}{8}$}{$-\dfrac{\sqrt{2-\sqrt2}}2$}
+\QQRowThree{$\cos\dfrac{\pi}{12}$}{$\dfrac{\sqrt6+\sqrt2}{4}$}{$\sin\dfrac{7\pi}{8}$}{$\dfrac{\sqrt{2-\sqrt2}}2$}{$\tan\dfrac{5\pi}{12}$}{$2+\sqrt3$}
+\QQRowThree{$\tan\dfrac{7\pi}{8}$}{$1-\sqrt2$}{$\cos\dfrac{3\pi}{8}$}{$\dfrac{\sqrt{2-\sqrt2}}2$}{$\sin\left(-\dfrac{\pi}{8}\right)$}{$-\dfrac{\sqrt{2-\sqrt2}}2$}
 
+\AnswerColumnBreak
 \TypeQuestion{次の条件のもとで、$\sin\dfrac{\theta}{2},\ \cos\dfrac{\theta}{2},\ \tan\dfrac{\theta}{2}$ の値を求めなさい。}{multiple_half_angles_half_value}
-\QQRow{$\cos\theta=-\dfrac{7}{25},\quad\pi<\theta<\dfrac{3\pi}{2}$}{}{$\cos\theta=\dfrac{1}{3},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{}
-\QQRow{$\cos\theta=\dfrac{3}{5},\quad0<\theta<\dfrac{\pi}{2}$}{}{$\tan\theta=-\dfrac{3}{4},\quad\dfrac{\pi}{2}<\theta<\pi$}{}
-\QQRow{$\cos\theta=-\dfrac{2}{3},\quad-\pi<\theta<-\dfrac{\pi}{2}$}{}{$\sin\theta=-\dfrac{12}{13},\quad\pi<\theta<\dfrac{3\pi}{2}$}{}
+\TrigAnswerRow{$\cos\theta=-\dfrac{7}{25},\quad\pi<\theta<\dfrac{3\pi}{2}$}{\AnswerThreeLines{$\sin\dfrac\theta2=\dfrac45$}{$\cos\dfrac\theta2=-\dfrac35$}{$\tan\dfrac\theta2=-\dfrac43$}}{$\cos\theta=\dfrac{1}{3},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{\AnswerThreeLines{$\sin\dfrac\theta2=\dfrac{\sqrt3}{3}$}{$\cos\dfrac\theta2=-\dfrac{\sqrt6}{3}$}{$\tan\dfrac\theta2=-\dfrac{\sqrt2}{2}$}}
+\TrigAnswerRow{$\cos\theta=\dfrac{3}{5},\quad0<\theta<\dfrac{\pi}{2}$}{\AnswerThreeLines{$\sin\dfrac\theta2=\dfrac{\sqrt5}{5}$}{$\cos\dfrac\theta2=\dfrac{2\sqrt5}{5}$}{$\tan\dfrac\theta2=\dfrac12$}}{$\tan\theta=-\dfrac{3}{4},\quad\dfrac{\pi}{2}<\theta<\pi$}{\AnswerThreeLines{$\sin\dfrac\theta2=\dfrac{3\sqrt{10}}{10}$}{$\cos\dfrac\theta2=\dfrac{\sqrt{10}}{10}$}{$\tan\dfrac\theta2=3$}}
+\TrigAnswerRow{$\cos\theta=-\dfrac{2}{3},\quad-\pi<\theta<-\dfrac{\pi}{2}$}{\AnswerThreeLines{$\sin\dfrac\theta2=-\dfrac{\sqrt{30}}6$}{$\cos\dfrac\theta2=\dfrac{\sqrt6}{6}$}{$\tan\dfrac\theta2=-\sqrt5$}}{$\sin\theta=-\dfrac{12}{13},\quad\pi<\theta<\dfrac{3\pi}{2}$}{\AnswerThreeLines{$\sin\dfrac\theta2=\dfrac{3\sqrt{13}}{13}$}{$\cos\dfrac\theta2=-\dfrac{2\sqrt{13}}{13}$}{$\tan\dfrac\theta2=-\dfrac32$}}
 
 \LessonQuestionBreak
 
+\AnswerColumnBreak
 \TypeQuestion{次の式を簡単にしなさい。ただし、各式に含まれる分母は $0$ でないものとする。}{multiple_half_angles_simplify}
-\QQRow{$2\sin\theta\cos\theta$}{}{$\dfrac{1-\cos2\theta}{2}$}{}
-\QQRow{$\cos^2\theta-\sin^2\theta$}{}{$\dfrac{\sin2\theta}{1+\cos2\theta}$}{}
-\QQRow{$\dfrac{\sin4\theta}{\sin2\theta}$}{}{$\dfrac{2\tan\theta}{1-\tan^2\theta}$}{}
-\QQRow{$\cos^4\theta-\sin^4\theta$}{}{$\dfrac{1-\cos2\theta}{\sin2\theta}$}{}
+\QQRow{$2\sin\theta\cos\theta$}{$\sin2\theta$}{$\dfrac{1-\cos2\theta}{2}$}{$\sin^2\theta$}
+\QQRow{$\cos^2\theta-\sin^2\theta$}{$\cos2\theta$}{$\dfrac{\sin2\theta}{1+\cos2\theta}$}{$\tan\theta$}
+\QQRow{$\dfrac{\sin4\theta}{\sin2\theta}$}{$2\cos2\theta$}{$\dfrac{2\tan\theta}{1-\tan^2\theta}$}{$\tan2\theta$}
+\QQRow{$\cos^4\theta-\sin^4\theta$}{$\cos2\theta$}{$\dfrac{1-\cos2\theta}{\sin2\theta}$}{$\tan\theta$}
 
 \TypeQuestion{次の式を、三角関数の積や累乗を含まない形に直しなさい。}{multiple_half_angles_power_reduction}
-\QQRow{$\sin^2\theta$}{}{$\cos^2 2\theta$}{}
-\QQRow{$\sin^2\theta\cos^2\theta$}{}{$\sin^4\theta+\cos^4\theta$}{}
+\QQRow{$\sin^2\theta$}{$\dfrac{1-\cos2\theta}{2}$}{$\cos^2 2\theta$}{$\dfrac{1+\cos4\theta}{2}$}
+\QQRow{$\sin^2\theta\cos^2\theta$}{$\dfrac{1-\cos4\theta}{8}$}{$\sin^4\theta+\cos^4\theta$}{$\dfrac{3+\cos4\theta}{4}$}
 
 \TypeQuestion{次の問いに答えなさい。}{multiple_half_angles_triple_identity}
-\QQ{加法定理と倍角の公式を用いて、$\sin3\theta=3\sin\theta-4\sin^3\theta$ を証明しなさい。}{}
-\QQ{加法定理と倍角の公式を用いて、$\cos3\theta=4\cos^3\theta-3\cos\theta$ を証明しなさい。}{}
-\QQ{$4\sin^3 10^\circ-3\sin10^\circ$ の値を求めなさい。}{}
-\QQ{$\cos^3\dfrac{2\pi}{9}-\dfrac{3}{4}\cos\dfrac{2\pi}{9}$ の値を求めなさい。}{}
+\QQ{加法定理と倍角の公式を用いて、$\sin3\theta=3\sin\theta-4\sin^3\theta$ を証明しなさい。}{$\begin{aligned}[t]\sin3\theta&=\sin(2\theta+\theta)\\&=2\sin\theta(1-\sin^2\theta)\\&\quad+(1-2\sin^2\theta)\sin\theta\\&=3\sin\theta-4\sin^3\theta\end{aligned}$}
+\QQ{加法定理と倍角の公式を用いて、$\cos3\theta=4\cos^3\theta-3\cos\theta$ を証明しなさい。}{$\begin{aligned}[t]\cos3\theta&=\cos(2\theta+\theta)\\&=(2\cos^2\theta-1)\cos\theta\\&\quad-2(1-\cos^2\theta)\cos\theta\\&=4\cos^3\theta-3\cos\theta\end{aligned}$}
+\QQ{$4\sin^3 10^\circ-3\sin10^\circ$ の値を求めなさい。}{$-\dfrac12$}
+\QQ{$\cos^3\dfrac{2\pi}{9}-\dfrac{3}{4}\cos\dfrac{2\pi}{9}$ の値を求めなさい。}{$-\dfrac18$}
 
+\AnswerColumnBreak
 \TypeQuestion{次の条件のもとで、$\sin3\theta,\ \cos3\theta$ の値を求めなさい。}{multiple_half_angles_triple_value}
-\QQRow{$\sin\theta=\dfrac{3}{5},\quad\dfrac{\pi}{2}<\theta<\pi$}{}{$\cos\theta=-\dfrac{1}{3},\quad\pi<\theta<\dfrac{3\pi}{2}$}{}
-\QQRow{$\tan\theta=\dfrac{1}{2},\quad0<\theta<\dfrac{\pi}{2}$}{}{$\sin\theta=-\dfrac{1}{2},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{}
-\QQRow{$\cos\theta=\dfrac{5}{13},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{}{$\sin\theta=\dfrac{2}{3},\quad0<\theta<\dfrac{\pi}{2}$}{}
+\TrigAnswerRow{$\sin\theta=\dfrac{3}{5},\quad\dfrac{\pi}{2}<\theta<\pi$}{\AnswerTwoLines{$\sin3\theta=\dfrac{117}{125}$}{$\cos3\theta=\dfrac{44}{125}$}}{$\cos\theta=-\dfrac{1}{3},\quad\pi<\theta<\dfrac{3\pi}{2}$}{\AnswerTwoLines{$\sin3\theta=\dfrac{10\sqrt2}{27}$}{$\cos3\theta=\dfrac{23}{27}$}}
+\TrigAnswerRow{$\tan\theta=\dfrac{1}{2},\quad0<\theta<\dfrac{\pi}{2}$}{\AnswerTwoLines{$\sin3\theta=\dfrac{11\sqrt5}{25}$}{$\cos3\theta=\dfrac{2\sqrt5}{25}$}}{$\sin\theta=-\dfrac{1}{2},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{\AnswerTwoLines{$\sin3\theta=-1$}{$\cos3\theta=0$}}
+\TrigAnswerRow{$\cos\theta=\dfrac{5}{13},\quad\dfrac{3\pi}{2}<\theta<2\pi$}{\AnswerTwoLines{$\sin3\theta=\dfrac{828}{2197}$}{$\cos3\theta=-\dfrac{2035}{2197}$}}{$\sin\theta=\dfrac{2}{3},\quad0<\theta<\dfrac{\pi}{2}$}{\AnswerTwoLines{$\sin3\theta=\dfrac{22}{27}$}{$\cos3\theta=-\dfrac{7\sqrt5}{27}$}}

@@ -2,35 +2,48 @@
 \MajorQuestionLesson{公式の方程式・不等式への利用}
 \SetRowSpace{4mm}
 
+% 問題は横並びのまま、長い解答だけを1問ずつ縦に並べる。
+\providecommand{\TrigAnswerRow}[4]{%
+  \ifLMAnswerMode
+    \QQ{#1}{#2}\QQ{#3}{#4}%
+  \else
+    \QQRow{#1}{#2}{#3}{#4}%
+  \fi
+}
+
 \TypeQuestion{次の方程式を、$0\leqq\theta<2\pi$ の範囲で解きなさい。}{formula_application_equation}
-\QQRow{$\cos2\theta=3\cos\theta-2$}{}{$\sin\theta-\cos\theta=-\sqrt{2}$}{}
-\QQRow{$\cos2\theta=\sin\theta$}{}{$\sin\dfrac{\theta}{2}=\cos\theta$}{}
-\QQRow{$\tan2\theta+\tan\theta=0$}{}{$\sin2\theta+\sin\theta=0$}{}
-\QQRow{$\sin\theta+\sqrt{3}\cos\theta=\sqrt{3}$}{}{$\cos\theta+\cos\dfrac{\theta}{2}=0$}{}
-\QQRow{$\sin3\theta=\sin\theta$}{}{$\sin2\theta-\sqrt{3}\cos2\theta=1$}{}
-\QQRow{$\sqrt{3}\sin\theta-\cos\theta=1$}{}{$2\sin\theta+2\cos\theta=-\sqrt{2}$}{}
-\QQRow{$\cos2\theta+\cos\theta=0$}{}{$\tan\dfrac{\theta}{2}=\sin\theta$}{}
-\QQRow{$\sqrt{3}\cos\theta-\sin\theta=-1$}{}{$\cos3\theta=\cos\theta$}{}
-\QQRow{$\sin\theta+\cos\theta=1$}{}{$\sqrt{3}\sin\theta+\cos\theta=-2$}{}
-\QQRow{$\sin2\theta=\cos\theta$}{}{$\sin2\theta=2\sin\theta$}{}
+\TrigAnswerRow{$\cos2\theta=3\cos\theta-2$}{$\theta=0,\ \dfrac{\pi}{3},\ \dfrac{5\pi}{3}$}{$\sin\theta-\cos\theta=-\sqrt{2}$}{$\theta=\dfrac{7\pi}{4}$}
+\TrigAnswerRow{$\cos2\theta=\sin\theta$}{$\theta=\dfrac{\pi}{6},\ \dfrac{5\pi}{6},\ \dfrac{3\pi}{2}$}{$\sin\dfrac{\theta}{2}=\cos\theta$}{$\theta=\dfrac{\pi}{3},\ \dfrac{5\pi}{3}$}
+\TrigAnswerRow{$\tan2\theta+\tan\theta=0$}{\AnswerTwoLines{$\theta=0,\ \dfrac{\pi}{3},\ \dfrac{2\pi}{3},$}{$\pi,\ \dfrac{4\pi}{3},\ \dfrac{5\pi}{3}$}}{$\sin2\theta+\sin\theta=0$}{\AnswerTwoLines{$\theta=0,\ \dfrac{2\pi}{3},$}{$\pi,\ \dfrac{4\pi}{3}$}}
+\TrigAnswerRow{$\sin\theta+\sqrt{3}\cos\theta=\sqrt{3}$}{$\theta=0,\ \dfrac{\pi}{3}$}{$\cos\theta+\cos\dfrac{\theta}{2}=0$}{$\theta=\dfrac{2\pi}{3}$}
+\TrigAnswerRow{$\sin3\theta=\sin\theta$}{\AnswerTwoLines{$\theta=0,\ \dfrac{\pi}{4},\ \dfrac{3\pi}{4},$}{$\pi,\ \dfrac{5\pi}{4},\ \dfrac{7\pi}{4}$}}{$\sin2\theta-\sqrt{3}\cos2\theta=1$}{\AnswerTwoLines{$\theta=\dfrac{\pi}{4},\ \dfrac{7\pi}{12},$}{$\dfrac{5\pi}{4},\ \dfrac{19\pi}{12}$}}
+\AnswerColumnBreak
+\TrigAnswerRow{$\sqrt{3}\sin\theta-\cos\theta=1$}{$\theta=\dfrac{\pi}{3},\ \pi$}{$2\sin\theta+2\cos\theta=-\sqrt{2}$}{$\theta=\dfrac{11\pi}{12},\ \dfrac{19\pi}{12}$}
+\TrigAnswerRow{$\cos2\theta+\cos\theta=0$}{$\theta=\dfrac{\pi}{3},\ \pi,\ \dfrac{5\pi}{3}$}{$\tan\dfrac{\theta}{2}=\sin\theta$}{$\theta=0,\ \dfrac{\pi}{2},\ \dfrac{3\pi}{2}$}
+\TrigAnswerRow{$\sqrt{3}\cos\theta-\sin\theta=-1$}{$\theta=\dfrac{\pi}{2},\ \dfrac{7\pi}{6}$}{$\cos3\theta=\cos\theta$}{\AnswerTwoLines{$\theta=0,\ \dfrac{\pi}{2},$}{$\pi,\ \dfrac{3\pi}{2}$}}
+\TrigAnswerRow{$\sin\theta+\cos\theta=1$}{$\theta=0,\ \dfrac{\pi}{2}$}{$\sqrt{3}\sin\theta+\cos\theta=-2$}{$\theta=\dfrac{4\pi}{3}$}
+\TrigAnswerRow{$\sin2\theta=\cos\theta$}{\AnswerTwoLines{$\theta=\dfrac{\pi}{6},\ \dfrac{\pi}{2},$}{$\dfrac{5\pi}{6},\ \dfrac{3\pi}{2}$}}{$\sin2\theta=2\sin\theta$}{$\theta=0,\ \pi$}
 
 
+\AnswerColumnBreak
 \TypeQuestion{次の不等式を、$0\leqq\theta<2\pi$ の範囲で解きなさい。}{formula_application_inequality}
-\QQRow{$\sin\theta+\cos\theta>1$}{}{$\sqrt{3}\sin\theta-\cos\theta\leqq0$}{}
-\QQRow{$\cos\dfrac{\theta}{2}-\cos\theta\leqq0$}{}{$\sin\theta-\cos\theta\geqq-1$}{}
-\QQRow{$\cos2\theta\leqq\cos\theta$}{}{$\cos2\theta+\sin\theta\geqq0$}{}
-\QQRow{$\sin3\theta-\sin\theta<0$}{}{$\sin2\theta+\cos2\theta<1$}{}
-\QQRow{$\sin2\theta>\sin\theta$}{}{$\sin^2\dfrac{\theta}{2}\leqq\cos\theta+\dfrac{1}{2}$}{}
-\QQRow{$\sin\theta+\sqrt{3}\cos\theta\geqq\sqrt{3}$}{}{$\sqrt{3}\cos\theta-\sin\theta<-1$}{}
-\QQ{$\cos3\theta+\cos\theta\geqq0$}{}
+\TrigAnswerRow{$\sin\theta+\cos\theta>1$}{$0<\theta<\dfrac{\pi}{2}$}{$\sqrt{3}\sin\theta-\cos\theta\leqq0$}{\AnswerTwoLines{$0\leqq\theta\leqq\dfrac{\pi}{6}$}{$\dfrac{7\pi}{6}\leqq\theta<2\pi$}}
+\TrigAnswerRow{$\cos\dfrac{\theta}{2}-\cos\theta\leqq0$}{\AnswerTwoLines{$\theta=0$}{$\dfrac{4\pi}{3}\leqq\theta<2\pi$}}{$\sin\theta-\cos\theta\geqq-1$}{$0\leqq\theta\leqq\dfrac{3\pi}{2}$}
+\TrigAnswerRow{$\cos2\theta\leqq\cos\theta$}{\AnswerTwoLines{$0\leqq\theta\leqq\dfrac{2\pi}{3}$}{$\dfrac{4\pi}{3}\leqq\theta<2\pi$}}{$\cos2\theta+\sin\theta\geqq0$}{\AnswerTwoLines{$0\leqq\theta\leqq\dfrac{7\pi}{6}$}{$\dfrac{11\pi}{6}\leqq\theta<2\pi$}}
+\TrigAnswerRow{$\sin3\theta-\sin\theta<0$}{\AnswerThreeLines{$\dfrac{\pi}{4}<\theta<\dfrac{3\pi}{4}$}{$\pi<\theta<\dfrac{5\pi}{4}$}{$\dfrac{7\pi}{4}<\theta<2\pi$}}{$\sin2\theta+\cos2\theta<1$}{\AnswerTwoLines{$\dfrac{\pi}{4}<\theta<\pi$}{$\dfrac{5\pi}{4}<\theta<2\pi$}}
+\AnswerColumnBreak
+\TrigAnswerRow{$\sin2\theta>\sin\theta$}{\AnswerTwoLines{$0<\theta<\dfrac{\pi}{3}$}{$\pi<\theta<\dfrac{5\pi}{3}$}}{$\sin^2\dfrac{\theta}{2}\leqq\cos\theta+\dfrac{1}{2}$}{\AnswerTwoLines{$0\leqq\theta\leqq\dfrac{\pi}{2}$}{$\dfrac{3\pi}{2}\leqq\theta<2\pi$}}
+\TrigAnswerRow{$\sin\theta+\sqrt{3}\cos\theta\geqq\sqrt{3}$}{$0\leqq\theta\leqq\dfrac{\pi}{3}$}{$\sqrt{3}\cos\theta-\sin\theta<-1$}{$\dfrac{\pi}{2}<\theta<\dfrac{7\pi}{6}$}
+\QQ{$\cos3\theta+\cos\theta\geqq0$}{\begin{tabular}[t]{@{}l@{}}$0\leqq\theta\leqq\dfrac{\pi}{4}$\\[2mm]$\dfrac{\pi}{2}\leqq\theta\leqq\dfrac{3\pi}{4}$\\[2mm]$\dfrac{5\pi}{4}\leqq\theta\leqq\dfrac{3\pi}{2}$\\[2mm]$\dfrac{7\pi}{4}\leqq\theta<2\pi$\end{tabular}}
 
 \LessonQuestionBreak
 
 % 積和・和積の公式を履修しない場合は、ここからの2大問を省略する。
+\AnswerColumnBreak
 \TypeQuestion{積和・和積の公式を用いて、次の方程式を $0\leqq\theta<2\pi$ の範囲で解きなさい。}{product_sum_equation}
-\QQRow{$\sin3\theta+\sin\theta=0$}{}{$\cos2\theta-\cos\theta=0$}{}
-\QQRow{$2\sin2\theta\cos\theta=\sin3\theta$}{}{$2\cos2\theta\cos\theta=\cos3\theta+\dfrac{1}{2}$}{}
+\TrigAnswerRow{$\sin3\theta+\sin\theta=0$}{\AnswerTwoLines{$\theta=0,\ \dfrac{\pi}{2},$}{$\pi,\ \dfrac{3\pi}{2}$}}{$\cos2\theta-\cos\theta=0$}{$\theta=0,\ \dfrac{2\pi}{3},\ \dfrac{4\pi}{3}$}
+\TrigAnswerRow{$2\sin2\theta\cos\theta=\sin3\theta$}{$\theta=0,\ \pi$}{$2\cos2\theta\cos\theta=\cos3\theta+\dfrac{1}{2}$}{$\theta=\dfrac{\pi}{3},\ \dfrac{5\pi}{3}$}
 
 \TypeQuestion{積和・和積の公式を用いて、次の不等式を $0\leqq\theta<2\pi$ の範囲で解きなさい。}{product_sum_inequality}
-\QQRow{$\sin3\theta+\sin\theta>0$}{}{$\cos3\theta-\cos\theta\leqq0$}{}
-\QQRow{$2\sin2\theta\cos\theta\leqq\sin3\theta+\dfrac{1}{2}$}{}{$2\cos2\theta\cos\theta>\cos3\theta+\dfrac{\sqrt{3}}{2}$}{}
+\TrigAnswerRow{$\sin3\theta+\sin\theta>0$}{\AnswerTwoLines{$0<\theta<\dfrac{\pi}{2}$}{$\dfrac{\pi}{2}<\theta<\pi$}}{$\cos3\theta-\cos\theta\leqq0$}{\AnswerThreeLines{$0\leqq\theta\leqq\dfrac{\pi}{2}$}{$\theta=\pi$}{$\dfrac{3\pi}{2}\leqq\theta<2\pi$}}
+\TrigAnswerRow{$2\sin2\theta\cos\theta\leqq\sin3\theta+\dfrac{1}{2}$}{\AnswerTwoLines{$0\leqq\theta\leqq\dfrac{\pi}{6}$}{$\dfrac{5\pi}{6}\leqq\theta<2\pi$}}{$2\cos2\theta\cos\theta>\cos3\theta+\dfrac{\sqrt{3}}{2}$}{\AnswerTwoLines{$0\leqq\theta<\dfrac{\pi}{6}$}{$\dfrac{11\pi}{6}<\theta<2\pi$}}

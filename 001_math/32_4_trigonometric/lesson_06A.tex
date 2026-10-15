@@ -2,43 +2,61 @@
 \MajorQuestionLesson{加法定理}
 \SetRowSpace{4mm}
 
+% 問題は横並びのまま、長い解答だけを1問ずつ縦に並べる。
+\providecommand{\TrigAnswerRow}[4]{%
+  \ifLMAnswerMode
+    \QQ{#1}{#2}\QQ{#3}{#4}%
+  \else
+    \QQRow{#1}{#2}{#3}{#4}%
+  \fi
+}
+\providecommand{\TrigAnswerRowThree}[6]{%
+  \ifLMAnswerMode
+    \QQ{#1}{#2}\QQ{#3}{#4}\QQ{#5}{#6}%
+  \else
+    \QQRowThree{#1}{#2}{#3}{#4}{#5}{#6}%
+  \fi
+}
+
 \TypeQuestion{次の値を求めなさい。}{addition_theorems_degree_exact_value}
-\QQRowThree{$\sin75^\circ$}{}{$\tan15^\circ$}{}{$\cos105^\circ$}{}
-\QQRowThree{$\tan105^\circ$}{}{$\sin(-15^\circ)$}{}{$\cos165^\circ$}{}
-\QQRowThree{$\cos\dfrac{\pi}{12}$}{}{$\sin\dfrac{7\pi}{12}$}{}{$\tan\dfrac{5\pi}{12}$}{}
-\QQRowThree{$\sin\dfrac{13\pi}{12}$}{}{$\cos\left(-\dfrac{5\pi}{12}\right)$}{}{$\tan\dfrac{11\pi}{12}$}{}
+\QQRowThree{$\sin75^\circ$}{$\dfrac{\sqrt6+\sqrt2}{4}$}{$\tan15^\circ$}{$2-\sqrt3$}{$\cos105^\circ$}{$\dfrac{\sqrt2-\sqrt6}{4}$}
+\QQRowThree{$\tan105^\circ$}{$-2-\sqrt3$}{$\sin(-15^\circ)$}{$\dfrac{\sqrt2-\sqrt6}{4}$}{$\cos165^\circ$}{$-\dfrac{\sqrt6+\sqrt2}{4}$}
+\QQRowThree{$\cos\dfrac{\pi}{12}$}{$\dfrac{\sqrt6+\sqrt2}{4}$}{$\sin\dfrac{7\pi}{12}$}{$\dfrac{\sqrt6+\sqrt2}{4}$}{$\tan\dfrac{5\pi}{12}$}{$2+\sqrt3$}
+\QQRowThree{$\sin\dfrac{13\pi}{12}$}{$\dfrac{\sqrt2-\sqrt6}{4}$}{$\cos\left(-\dfrac{5\pi}{12}\right)$}{$\dfrac{\sqrt6-\sqrt2}{4}$}{$\tan\dfrac{11\pi}{12}$}{$\sqrt3-2$}
 
 \TypeQuestion{次の式の値を求めなさい。}{addition_theorems_recognize}
-\QQRow{$\sin38^\circ\cos22^\circ+\cos38^\circ\sin22^\circ$}{}{$\cos11^\circ\cos79^\circ-\sin11^\circ\sin79^\circ$}{}
-\QQRow{$\cos\dfrac{7\pi}{18}\cos\dfrac{\pi}{18}+\sin\dfrac{7\pi}{18}\sin\dfrac{\pi}{18}$}{}{$\dfrac{\tan\dfrac{\pi}{9}-\tan\dfrac{13\pi}{36}}{1+\tan\dfrac{\pi}{9}\tan\dfrac{13\pi}{36}}$}{}
-\QQRow{$\cos17^\circ\cos62^\circ+\sin17^\circ\sin62^\circ$}{}{$\dfrac{\tan47^\circ-\tan17^\circ}{1+\tan47^\circ\tan17^\circ}$}{}
-\QQRow{$\cos83^\circ\cos37^\circ-\sin83^\circ\sin37^\circ$}{}{$\dfrac{\tan\dfrac{5\pi}{18}+\tan\dfrac{\pi}{18}}{1-\tan\dfrac{5\pi}{18}\tan\dfrac{\pi}{18}}$}{}
-\QQRow{$\sin64^\circ\cos49^\circ-\cos64^\circ\sin49^\circ$}{}{$\sin\dfrac{5\pi}{18}\cos\dfrac{4\pi}{9}-\cos\dfrac{5\pi}{18}\sin\dfrac{4\pi}{9}$}{}
-\QQRow{$\dfrac{\tan13^\circ+\tan32^\circ}{1-\tan13^\circ\tan32^\circ}$}{}{$\sin\dfrac{\pi}{9}\cos\dfrac{4\pi}{9}-\cos\dfrac{\pi}{9}\sin\dfrac{4\pi}{9}$}{}
+\QQRow{$\sin38^\circ\cos22^\circ+\cos38^\circ\sin22^\circ$}{$\dfrac{\sqrt3}{2}$}{$\cos11^\circ\cos79^\circ-\sin11^\circ\sin79^\circ$}{$0$}
+\QQRow{$\cos\dfrac{7\pi}{18}\cos\dfrac{\pi}{18}+\sin\dfrac{7\pi}{18}\sin\dfrac{\pi}{18}$}{$\dfrac12$}{$\dfrac{\tan\dfrac{\pi}{9}-\tan\dfrac{13\pi}{36}}{1+\tan\dfrac{\pi}{9}\tan\dfrac{13\pi}{36}}$}{$-1$}
+\QQRow{$\cos17^\circ\cos62^\circ+\sin17^\circ\sin62^\circ$}{$\dfrac{\sqrt2}{2}$}{$\dfrac{\tan47^\circ-\tan17^\circ}{1+\tan47^\circ\tan17^\circ}$}{$\dfrac{\sqrt3}{3}$}
+\QQRow{$\cos83^\circ\cos37^\circ-\sin83^\circ\sin37^\circ$}{$-\dfrac12$}{$\dfrac{\tan\dfrac{5\pi}{18}+\tan\dfrac{\pi}{18}}{1-\tan\dfrac{5\pi}{18}\tan\dfrac{\pi}{18}}$}{$\sqrt3$}
+\QQRow{$\sin64^\circ\cos49^\circ-\cos64^\circ\sin49^\circ$}{$\dfrac{\sqrt6-\sqrt2}{4}$}{$\sin\dfrac{5\pi}{18}\cos\dfrac{4\pi}{9}-\cos\dfrac{5\pi}{18}\sin\dfrac{4\pi}{9}$}{$-\dfrac12$}
+\QQRow{$\dfrac{\tan13^\circ+\tan32^\circ}{1-\tan13^\circ\tan32^\circ}$}{$1$}{$\sin\dfrac{\pi}{9}\cos\dfrac{4\pi}{9}-\cos\dfrac{\pi}{9}\sin\dfrac{4\pi}{9}$}{$-\dfrac{\sqrt3}{2}$}
 
 
+\AnswerColumnBreak
 \TypeQuestion{次の式を、$\sin\theta,\ \cos\theta,\ \tan\theta$ を用いて表しなさい。}{addition_theorems_expand}
-\QQRowThree{$\sin\left(\theta+\dfrac{\pi}{3}\right)$}{}{$\cos\left(\theta-\dfrac{\pi}{4}\right)$}{}{$\tan\left(\theta+\dfrac{\pi}{6}\right)$}{}
-\QQRowThree{$\sin\left(\dfrac{\pi}{4}-\theta\right)$}{}{$\cos\left(\dfrac{\pi}{6}+\theta\right)$}{}{$\tan\left(\dfrac{\pi}{4}-\theta\right)$}{}
+\TrigAnswerRowThree{$\sin\left(\theta+\dfrac{\pi}{3}\right)$}{$\dfrac12\sin\theta+\dfrac{\sqrt3}{2}\cos\theta$}{$\cos\left(\theta-\dfrac{\pi}{4}\right)$}{$\dfrac{\sqrt2}{2}(\cos\theta+\sin\theta)$}{$\tan\left(\theta+\dfrac{\pi}{6}\right)$}{$\dfrac{\sqrt3\tan\theta+1}{\sqrt3-\tan\theta}$}
+\TrigAnswerRowThree{$\sin\left(\dfrac{\pi}{4}-\theta\right)$}{$\dfrac{\sqrt2}{2}(\cos\theta-\sin\theta)$}{$\cos\left(\dfrac{\pi}{6}+\theta\right)$}{$\dfrac{\sqrt3}{2}\cos\theta-\dfrac12\sin\theta$}{$\tan\left(\dfrac{\pi}{4}-\theta\right)$}{$\dfrac{1-\tan\theta}{1+\tan\theta}$}
 
 \LessonQuestionBreak
 
 \TypeQuestion{次の条件のもとで、指定された式の値を求めなさい。}{addition_theorems_one_angle}
-\QQ{$\sin\theta=\dfrac{3}{5}$、$\dfrac{\pi}{2}<\theta<\pi$ のとき、$\sin\left(\theta+\dfrac{\pi}{6}\right)$}{}
-\QQ{$\cos\theta=\dfrac{5}{13}$、$\dfrac{3\pi}{2}<\theta<2\pi$ のとき、$\cos\left(\theta-\dfrac{\pi}{3}\right)$}{}
-\QQ{$\tan\theta=2$、$0<\theta<\dfrac{\pi}{2}$ のとき、$\tan\left(\theta-\dfrac{\pi}{4}\right)$}{}
-\QQ{$\cos\theta=-\dfrac{2}{3}$、$\pi<\theta<\dfrac{3\pi}{2}$ のとき、$\sin\left(\dfrac{\pi}{4}-\theta\right)$}{}
-\QQ{$\tan\theta=-\dfrac{1}{2}$、$\dfrac{\pi}{2}<\theta<\pi$ のとき、$\cos\left(\theta+\dfrac{\pi}{4}\right)$}{}
-\QQ{$\sin\theta=-\dfrac{5}{13}$、$\pi<\theta<\dfrac{3\pi}{2}$ のとき、$\tan\left(\theta+\dfrac{\pi}{6}\right)$}{}
+\QQ{$\sin\theta=\dfrac{3}{5}$、$\dfrac{\pi}{2}<\theta<\pi$ のとき、$\sin\left(\theta+\dfrac{\pi}{6}\right)$}{$\dfrac{3\sqrt3-4}{10}$}
+\QQ{$\cos\theta=\dfrac{5}{13}$、$\dfrac{3\pi}{2}<\theta<2\pi$ のとき、$\cos\left(\theta-\dfrac{\pi}{3}\right)$}{$\dfrac{5-12\sqrt3}{26}$}
+\QQ{$\tan\theta=2$、$0<\theta<\dfrac{\pi}{2}$ のとき、$\tan\left(\theta-\dfrac{\pi}{4}\right)$}{$\dfrac13$}
+\QQ{$\cos\theta=-\dfrac{2}{3}$、$\pi<\theta<\dfrac{3\pi}{2}$ のとき、$\sin\left(\dfrac{\pi}{4}-\theta\right)$}{$\dfrac{\sqrt{10}-2\sqrt2}{6}$}
+\QQ{$\tan\theta=-\dfrac{1}{2}$、$\dfrac{\pi}{2}<\theta<\pi$ のとき、$\cos\left(\theta+\dfrac{\pi}{4}\right)$}{$-\dfrac{3\sqrt{10}}{10}$}
+\QQ{$\sin\theta=-\dfrac{5}{13}$、$\pi<\theta<\dfrac{3\pi}{2}$ のとき、$\tan\left(\theta+\dfrac{\pi}{6}\right)$}{$\dfrac{240+169\sqrt3}{407}$}
 
+\AnswerColumnBreak
 \TypeQuestion{次の条件のもとで、指定された式の値を求めなさい。}{addition_theorems_two_angles}
-\QQ{$\sin\alpha=\dfrac{3}{5}$、$\cos\beta=\dfrac{12}{13}$、$0<\alpha,\beta<\dfrac{\pi}{2}$ のとき、$\sin(\alpha+\beta)$}{}
-\QQ{$\cos\alpha=-\dfrac{4}{5}$、$\sin\beta=\dfrac{5}{13}$、$\dfrac{\pi}{2}<\alpha<\pi$、$0<\beta<\dfrac{\pi}{2}$ のとき、$\cos(\alpha-\beta)$}{}
-\QQ{$\tan\alpha=\dfrac{1}{3}$、$\tan\beta=-\dfrac{2}{5}$ のとき、$\tan(\alpha+\beta)$}{}
-\QQ{$\sin\alpha=-\dfrac{4}{5}$、$\cos\beta=-\dfrac{5}{13}$、$\dfrac{3\pi}{2}<\alpha<2\pi$、$\pi<\beta<\dfrac{3\pi}{2}$ のとき、$\sin(\alpha-\beta)$}{}
-\QQ{$\tan\alpha=-\dfrac{3}{4}$、$\tan\beta=\dfrac{1}{2}$ のとき、$\tan(\alpha-\beta)$}{}
-\QQ{$\cos\alpha=\dfrac{1}{3}$、$\sin\beta=-\dfrac{2}{3}$、$0<\alpha<\dfrac{\pi}{2}$、$\dfrac{3\pi}{2}<\beta<2\pi$ のとき、$\cos(\alpha+\beta)$}{}
+\QQ{$\sin\alpha=\dfrac{3}{5}$、$\cos\beta=\dfrac{12}{13}$、$0<\alpha,\beta<\dfrac{\pi}{2}$ のとき、$\sin(\alpha+\beta)$}{$\dfrac{56}{65}$}
+\QQ{$\cos\alpha=-\dfrac{4}{5}$、$\sin\beta=\dfrac{5}{13}$、$\dfrac{\pi}{2}<\alpha<\pi$、$0<\beta<\dfrac{\pi}{2}$ のとき、$\cos(\alpha-\beta)$}{$-\dfrac{33}{65}$}
+\QQ{$\tan\alpha=\dfrac{1}{3}$、$\tan\beta=-\dfrac{2}{5}$ のとき、$\tan(\alpha+\beta)$}{$-\dfrac1{17}$}
+\QQ{$\sin\alpha=-\dfrac{4}{5}$、$\cos\beta=-\dfrac{5}{13}$、$\dfrac{3\pi}{2}<\alpha<2\pi$、$\pi<\beta<\dfrac{3\pi}{2}$ のとき、$\sin(\alpha-\beta)$}{$\dfrac{56}{65}$}
+\QQ{$\tan\alpha=-\dfrac{3}{4}$、$\tan\beta=\dfrac{1}{2}$ のとき、$\tan(\alpha-\beta)$}{$-2$}
+\QQ{$\cos\alpha=\dfrac{1}{3}$、$\sin\beta=-\dfrac{2}{3}$、$0<\alpha<\dfrac{\pi}{2}$、$\dfrac{3\pi}{2}<\beta<2\pi$ のとき、$\cos(\alpha+\beta)$}{$\dfrac{\sqrt5+4\sqrt2}{9}$}
 
 \TypeQuestion{$0<\alpha,\beta<\dfrac{\pi}{2}$ とする。次の条件のもとで、$\alpha+\beta$ の値を求めなさい。}{addition_theorems_determine_angle}
-\QQRow{$\tan\alpha=2,\quad\tan\beta=3$}{}{$\tan\alpha=\dfrac{1}{2},\quad\tan\beta=2$}{}
-\QQRow{$\tan\alpha=\dfrac{1}{3},\quad\tan\beta=\dfrac{1}{2}$}{}{$\tan\alpha=\dfrac{\sqrt{3}}{2},\quad\tan\beta=\dfrac{\sqrt{3}}{5}$}{}
+\QQRow{$\tan\alpha=2,\quad\tan\beta=3$}{$\dfrac{3\pi}{4}$}{$\tan\alpha=\dfrac{1}{2},\quad\tan\beta=2$}{$\dfrac\pi2$}
+\QQRow{$\tan\alpha=\dfrac{1}{3},\quad\tan\beta=\dfrac{1}{2}$}{$\dfrac\pi4$}{$\tan\alpha=\dfrac{\sqrt{3}}{2},\quad\tan\beta=\dfrac{\sqrt{3}}{5}$}{$\dfrac\pi3$}
