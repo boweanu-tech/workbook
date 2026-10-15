@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_03_ratio_03; coordinates={"O":[0,0],"A":[6,0],"B":[-0.25,4.993746088859544],"C":[-8.399999999999999,0],"D":[0.35,-6.991244524403362]}; Construction: lesson_03_ratio_11</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<line class="main" x1="14.0431" y1="6.4" x2="31.6582" y2="30.6"/>
+<line class="main" x1="13.2963" y1="23.0122" x2="32.7037" y2="7.343"/>
+<line class="main" x1="14.0431" y1="6.4" x2="13.2963" y2="23.0122"/>
+<line class="main" x1="31.6582" y1="30.6" x2="32.7037" y2="7.343"/>
+<path class="thin" d="M 14.5497 12.9438 L 13.6787 14.5063 L 12.9513 12.872"/>
+<path class="thin" d="M 14.4779 14.5422 L 13.6068 16.1047 L 12.8795 14.4704"/>
+<path class="thin" d="M 31.3009 20.7337 L 32.172 19.1713 L 32.8993 20.8056"/>
+<path class="thin" d="M 31.3728 19.1354 L 32.2438 17.5729 L 32.9712 19.2072"/>
+<text class="label" x="11.9401" y="3.8569" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="10.5547" y="24.8489" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="33.4637" y="33.3623" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="35.115" y="5.09" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="24.5827" y="16.4833" text-anchor="middle" dominant-baseline="central">O</text>
+
+<rect class="label-bg" x="18.9066" y="7.5195" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="20.3001" y="9.5585" text-anchor="middle" dominant-baseline="central">6</text>
+
+<rect class="label-bg" x="21.1708" y="23.3859" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="23.9333" y="25.4249" text-anchor="middle" dominant-baseline="central">8.4</text>
+
+<rect class="label-bg" x="17.9562" y="20.1985" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="19.3497" y="22.2375" text-anchor="middle" dominant-baseline="central">5</text>
+
+<rect class="label-bg" x="23.5655" y="7.3844" width="2.935" height="4.078" rx=".3"/><text class="math-label var" x="25.033" y="9.4234" text-anchor="middle" dominant-baseline="central">x</text>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="61mm" height="46mm" viewBox="0 0 61 46">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_04_right_altitude; coordinates={"B":[0,0],"C":[13,0],"H":[4,0],"A":[4,6]}; BH=4, CH=9, AH=6. AB=2 sqrt(13), AC=3 sqrt(13), via similarity, not Pythagoras.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="21.2308,11.8769 6.4,34.1231 54.6,34.1231"/>
+<line class="main" x1="21.2308" y1="11.8769" x2="21.2308" y2="34.1231"/>
+<text class="label" x="3.227" y="35.0297" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="57.8399" y="34.7501" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="19.1182" y="36.6582" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="label" x="20.3475" y="8.6973" text-anchor="middle" dominant-baseline="central">A</text>
+<path class="thin" d="M 20.1214 13.541 l 1.6641 1.1094 l 1.1094 -1.6641"/>
+<path class="thin" d="M 21.2308 32.1231 l 2 0 l 0 2"/>
+
+<rect class="label-bg" x="12.4219" y="35.2841" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="13.8154" y="37.3231" text-anchor="middle" dominant-baseline="central">4</text>
+
+<rect class="label-bg" x="36.5219" y="35.2841" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="37.9154" y="37.3231" text-anchor="middle" dominant-baseline="central">9</text>
+</svg>

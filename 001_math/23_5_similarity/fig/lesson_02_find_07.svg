@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_02_find_07; coordinates={"O":[0,0],"A":[5,0],"B":[1,6.928203230275509],"C":[-2.403430846640801,1.7954164323118698],"D":[-2.9684881545347253,-2.9712081846257457]}; </desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="22.4579,23.3467 35.735,30.6 35.1638,6.4"/>
+<polygon class="main" points="22.4579,23.3467 18.6803,15.0925 10.265,26.9302"/>
+<text class="label" x="38.1901" y="32.8051" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="37.1614" y="3.7733" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="16.265" y="12.8438" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="7.2611" y="28.2964" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="22.4579" y="26.9467" text-anchor="middle" dominant-baseline="central">O</text>
+
+<rect class="label-bg" x="26.1688" y="27.7426" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="27.5623" y="29.7816" text-anchor="middle" dominant-baseline="central">5</text>
+
+<rect class="label-bg" x="24.857" y="10.9147" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="26.2505" y="12.9537" text-anchor="middle" dominant-baseline="central">7</text>
+
+<rect class="label-bg" x="37.255" y="16.3855" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="38.6485" y="18.4245" text-anchor="middle" dominant-baseline="central">8</text>
+
+<rect class="label-bg" x="22.0853" y="15.8489" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="23.4788" y="17.8879" text-anchor="middle" dominant-baseline="central">3</text>
+
+<rect class="label-bg" x="14.5013" y="26.1696" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="17.2638" y="28.2086" text-anchor="middle" dominant-baseline="central">4.2</text>
+
+<rect class="label-bg" x="9.102" y="17.1183" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="11.8645" y="19.1573" text-anchor="middle" dominant-baseline="central">4.8</text>
+</svg>

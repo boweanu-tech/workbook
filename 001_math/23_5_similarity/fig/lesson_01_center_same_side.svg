@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="84mm" height="65mm" viewBox="0 0 84 65">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_01_center_same_side; coordinates={"O":[0,0],"A":[3.794733192202055,1.2649110640673518],"B":[3.794733192202055,5.059644256269407],"C":[7.58946638440411,1.2649110640673518],"D":[6.640783086353596,2.2135943621178655],"E":[6.640783086353596,8.854377448471462],"F":[13.281566172707192,2.2135943621178655]}; Center O, homothety 7/4. OA=4, AD=3.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="27.8571,48.2143 27.8571,29.3571 46.7143,48.2143"/>
+<polygon class="main" points="42,43.5 42,10.5 75,43.5"/>
+<line class="dash" x1="9" y1="54.5" x2="42" y2="43.5"/>
+<line class="dash" x1="9" y1="54.5" x2="42" y2="10.5"/>
+<line class="dash" x1="9" y1="54.5" x2="75" y2="43.5"/>
+<text class="label" x="6.0484" y="55.9758" text-anchor="middle" dominant-baseline="central">O</text>
+<text class="label" x="27.8571" y="51.4143" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="25.4746" y="27.0739" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="48.9838" y="50.6099" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="44.2627" y="41.2373" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="42.3783" y="7.2218" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="78.282" y="43.8444" text-anchor="middle" dominant-baseline="central">F</text>
+
+<rect class="label-bg" x="18.4581" y="53.5872" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="19.8516" y="55.6262" text-anchor="middle" dominant-baseline="central">4</text>
+
+<rect class="label-bg" x="34.1877" y="48.1332" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="35.5812" y="50.1722" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="thin" d="M 27.8571 46.2143 l 2 0 l 0 2"/>
+<path class="thin" d="M 27.8571 32.5571 A 3.2 3.2 0 0 0 30.1199 31.6199"/>
+
+<rect class="label-bg" x="28.1228" y="34.213" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="31.0063" y="35.97" text-anchor="middle" dominant-baseline="central">45°</text>
+</svg>

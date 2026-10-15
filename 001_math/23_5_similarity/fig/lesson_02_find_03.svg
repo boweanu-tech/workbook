@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_02_find_03; coordinates={"A":[0,0],"B":[8,0],"C":[3.1875,5.083290641897235],"D":[3,0],"E":[2.125,3.3888604279314896]}; </desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="8.8161,30.6 37.1839,15.1026 10.2717,6.4"/>
+<line class="main" x1="19.454" y1="24.7885" x2="9.7865" y2="14.4667"/>
+<text class="label" x="6.9752" y="33.3388" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="40.4436" y="14.5882" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="8.6259" y="3.5397" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="20.5741" y="27.8926" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="6.8587" y="12.944" text-anchor="middle" dominant-baseline="central">E</text>
+<path class="thin" d="M 16.6458 26.3226 A 3.2 3.2 0 0 1 17.2665 22.4529"/>
+<path class="thin" d="M 10.0795 9.5942 A 3.2 3.2 0 0 0 13.3164 7.3846"/>
+</svg>

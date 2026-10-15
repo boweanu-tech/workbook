@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="61mm" height="49mm" viewBox="0 0 61 49">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_04_equilateral; coordinates={"B":[0,0],"C":[12,0],"A":[6,10.392304845413264],"H":[6,0],"D":[8,0],"E":[8,6.928203230275509]}; Equilateral side 12. BD=8, DC=4. CE=8, AE=4; DE:AH=2:3.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="30.5,6.4 9.5999,42.6 51.4001,42.6"/>
+<line class="main" x1="30.5" y1="6.4" x2="30.5" y2="42.6"/>
+<line class="main" x1="37.4667" y1="42.6" x2="37.4667" y2="18.4667"/>
+<text class="label" x="6.5716" y="43.9113" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="54.3022" y="44.1708" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="30.208" y="3.1129" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="29.7574" y="45.8154" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="label" x="38.8504" y="45.5959" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="38.5006" y="15.3328" text-anchor="middle" dominant-baseline="central">E</text>
+<path class="thin" d="M 30.5 40.6 l 2 0 l 0 2"/>
+<path class="thin" d="M 37.4667 40.6 l 2 0 l 0 2"/>
+<path class="thin" d="M 20.916 25 l -1.7321 -1"/>
+<path class="thin" d="M 41.8161 24 l -1.7321 1"/>
+<path class="thin" d="M 30.5 41.6 l 0 2"/>
+
+<rect class="label-bg" x="19.3531" y="43.561" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="20.7466" y="45.6" text-anchor="middle" dominant-baseline="central">8</text>
+
+<rect class="label-bg" x="43.0399" y="43.761" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="44.4334" y="45.8" text-anchor="middle" dominant-baseline="central">4</text>
+</svg>

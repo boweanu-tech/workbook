@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_02_find_01; coordinates={"A":[0,0],"B":[8,0],"C":[2.6875,9.632099654280992],"D":[3.6,0],"E":[1.209375,4.3344448444264465]}; </desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="12.0126,15.6572 23.8705,30.6 33.9874,6.4"/>
+<line class="main" x1="17.3486" y1="22.3815" x2="21.9013" y2="11.4915"/>
+<text class="label" x="8.7582" y="15.1103" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="24.3725" y="33.8616" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="36.4444" y="4.197" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="15.1661" y="24.8566" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="21.9451" y="8.1917" text-anchor="middle" dominant-baseline="central">E</text>
+<path class="thin" d="M 18.4202 17.7441 L 19.7754 16.5765 L 19.8964 18.3612"/>
+<path class="thin" d="M 19.0373 16.2679 L 20.3926 15.1003 L 20.5135 16.885"/>
+<path class="thin" d="M 29.0141 16.2222 L 30.3693 15.0545 L 30.4903 16.8393"/>
+<path class="thin" d="M 29.6312 14.746 L 30.9865 13.5783 L 31.1074 15.3631"/>
+</svg>

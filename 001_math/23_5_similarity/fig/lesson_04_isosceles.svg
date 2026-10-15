@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="61mm" height="47mm" viewBox="0 0 61 47">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_04_isosceles; coordinates={"B":[0,0],"C":[6,0],"A":[3,8.48528137423857],"D":[1.3333333333333333,3.771236166328253]}; AB=AC=9, BC=6, angle BCD=angle BAC. BD=4, AD=5, CD=6.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="30.5,6.4 18.4085,40.6 42.5915,40.6"/>
+<line class="main" x1="42.5915" y1="40.6" x2="23.7825" y2="25.4"/>
+<text class="label" x="16.2814" y="43.123" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="45.0483" y="42.8033" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="30.7529" y="3.1097" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="20.9102" y="23.7752" text-anchor="middle" dominant-baseline="central">D</text>
+<path class="thin" d="M 25.397 23.8333 l -1.8856 -0.6667"/>
+<path class="thin" d="M 37.4886 23.1667 l -1.8856 0.6667"/>
+<path class="thin" d="M 29.4333 9.417 A 3.2 3.2 0 0 0 31.5667 9.417"/>
+<path class="thin" d="M 39.3915 40.6 A 3.2 3.2 0 0 1 40.1026 38.5887"/>
+
+<rect class="label-bg" x="38.1693" y="20.3943" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="39.5628" y="22.4333" text-anchor="middle" dominant-baseline="central">9</text>
+
+<rect class="label-bg" x="29.1065" y="41.761" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="30.5" y="43.8" text-anchor="middle" dominant-baseline="central">6</text>
+</svg>

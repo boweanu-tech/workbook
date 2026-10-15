@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="48mm" viewBox="0 0 65 48">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_04_fold_diagonal; coordinates={"A":[0,0],"B":[8,0],"C":[8,6],"D":[0,6],"E":[6.4,4.8],"F":[8,2.6666666666666665]}; AB=8, AD=6, AC=10. Fold B onto E along AF. AE=8, CE=2, CF=10/3, BF=EF=8/3.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="triangle-fill" points="9.0333,41.6 46.58,13.44 55.9667,25.9556"/>
+<polygon class="main" points="9.0333,41.6 55.9667,41.6 55.9667,6.4 9.0333,6.4"/>
+<line class="thin" x1="9.0333" y1="41.6" x2="55.9667" y2="6.4"/>
+<line class="dash" x1="9.0333" y1="41.6" x2="55.9667" y2="25.9556"/>
+<line class="main" x1="46.58" y1="13.44" x2="55.9667" y2="25.9556"/>
+<text class="label" x="6.2543" y="43.3796" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="58.1798" y="44.0479" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="58.3719" y="4.1406" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="6.1343" y="4.8234" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="48.1873" y="9.5597" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="59.2045" y="26.5933" text-anchor="middle" dominant-baseline="central">F</text>
+<path class="thin" d="M 53.9667 41.6 l 0 -2 l 2 0"/>
+<path class="thin" d="M 48.18 12.24 l 1.2 1.6 l -1.6 1.2"/>
+</svg>

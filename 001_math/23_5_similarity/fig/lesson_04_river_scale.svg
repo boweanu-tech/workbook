@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="44mm" viewBox="0 0 65 44">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_04_river_scale; coordinates={"A":[0,0],"B":[4.5,0],"P":[1.5,2.8],"H":[1.5,0]}; Scale 1:400, cm. Real PH=11.2 m, AB=18 m.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="7.4286,37.6 57.5714,37.6 24.1429,6.4"/>
+<line class="dash" x1="24.1429" y1="6.4" x2="24.1429" y2="37.6"/>
+<text class="label" x="4.337" y="38.7542" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="60.76" y="38.4503" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="23.5627" y="3.1514" text-anchor="middle" dominant-baseline="central">P</text>
+<text class="label" x="22.5845" y="40.5089" text-anchor="middle" dominant-baseline="central">H</text>
+<path class="thin" d="M 24.1429 35.6 l 2 0 l 0 2"/>
+
+<rect class="label-bg" x="29.7375" y="38.561" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="32.5" y="40.6" text-anchor="middle" dominant-baseline="central">4.5</text>
+
+<rect class="label-bg" x="18.3804" y="23.081" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="21.1429" y="25.12" text-anchor="middle" dominant-baseline="central">2.8</text>
+</svg>

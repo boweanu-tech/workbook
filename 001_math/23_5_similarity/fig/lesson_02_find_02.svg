@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_02_find_02; coordinates={"O":[0,0],"A":[3,0],"B":[-0.3333333333333333,4.988876515698588],"C":[-4.5,0],"D":[0.5,-7.483314773547882]}; </desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<line class="main" x1="29.8249" y1="13.5474" x2="14.8495" y2="19.8789"/>
+<line class="main" x1="18.9575" y1="6.4" x2="31.1505" y2="30.6"/>
+<line class="main" x1="29.8249" y1="13.5474" x2="18.9575" y2="6.4"/>
+<line class="main" x1="14.8495" y1="19.8789" x2="31.1505" y2="30.6"/>
+<path class="thin" d="M 25.4555 11.6312 L 24.5583 10.0836 L 26.3347 10.2944"/>
+<path class="thin" d="M 24.1187 10.752 L 23.2215 9.2044 L 24.9979 9.4152"/>
+<path class="thin" d="M 21.9357 23.582 L 22.8329 25.1296 L 21.0565 24.9187"/>
+<path class="thin" d="M 23.2725 24.4612 L 24.1697 26.0088 L 22.3933 25.7979"/>
+<text class="label" x="32.6356" y="11.8182" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="17.6356" y="3.3763" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="11.6805" y="20.7994" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="32.7596" y="33.4811" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="25.0593" y="13.1236" text-anchor="middle" dominant-baseline="central">O</text>
+</svg>

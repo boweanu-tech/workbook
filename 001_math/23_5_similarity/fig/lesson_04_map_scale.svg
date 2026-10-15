@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="37mm" viewBox="0 0 65 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_04_map_scale; coordinates={"A":[0,0],"B":[3.6,0],"C":[5.272096102433197,1.7216546181588546]}; Map route A-B-C, cm, scale 1:25000; schematic.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<line class="main" x1="23.2027" y1="30.6" x2="39.5526" y2="19.4145"/>
+<line class="main" x1="39.5526" y1="19.4145" x2="41.7973" y2="6.4"/>
+<text class="label" x="20.884" y="32.948" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="42.8252" y="19.8388" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="43.4096" y="3.5207" text-anchor="middle" dominant-baseline="central">C</text>
+
+<rect class="label-bg" x="30.422" y="25.6093" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="33.1845" y="27.6483" text-anchor="middle" dominant-baseline="central">3.6</text>
+
+<rect class="label-bg" x="41.0659" y="11.4121" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="43.8284" y="13.4511" text-anchor="middle" dominant-baseline="central">2.4</text>
+</svg>

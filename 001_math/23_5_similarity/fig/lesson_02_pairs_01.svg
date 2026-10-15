@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="144mm" height="82mm" viewBox="0 0 144 82">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_02_pairs_01; coordinates={"a":[0,0],"b":[1,1]}; [{"type":"SSS","a":4,"b":5,"c":6,"rot":-0.4},{"type":"AA","angles":[42,68],"rot":-1.3},{"type":"SSS","a":6,"b":7.5,"c":9,"rot":2.4},{"type":"SAS","a":4,"b":6,"angle":50,"rot":2.6},{"type":"SAS","a":6,"b":10,"angle":50,"rot":-2.1},{"type":"AA","angles":[42,66],"rot":1.5},{"type":"AA","angles":[68,70],"rot":0.3,"mirror":true},{"type":"SAS","a":3,"b":5,"angle":50,"rot":0.6}]</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<g id="triangle_ア" transform="translate(0 0)"><polygon class="main" points="10.423,24.1929 25.577,30.6 20.7368,6.4"/>
+<text class="label" x="7.4103" y="25.5398" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="27.3818" y="33.3627" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="21.1633" y="3.1277" text-anchor="middle" dominant-baseline="central">C</text>
+
+<rect class="label-bg" x="15.5161" y="27.9364" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="16.9096" y="29.9754" text-anchor="middle" dominant-baseline="central">4</text>
+
+<rect class="label-bg" x="11.7639" y="11.8533" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="13.1574" y="13.8923" text-anchor="middle" dominant-baseline="central">5</text>
+
+<rect class="label-bg" x="24.509" y="15.9118" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="25.9025" y="17.9508" text-anchor="middle" dominant-baseline="central">6</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(ア)</text></g>
+<g id="triangle_イ" transform="translate(36 0)"><polygon class="main" points="7.5482,6.4 14.2665,30.6 28.4518,19.7091"/>
+<text class="label" x="4.3482" y="6.4" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="13.5797" y="33.8277" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="31.744" y="19.936" text-anchor="middle" dominant-baseline="central">F</text>
+<path class="thin" d="M 8.3507 9.2907 A 3 3 0 0 0 10.0788 8.0112"/>
+
+<rect class="label-bg" x="8.3539" y="10.3259" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="11.2374" y="12.0829" text-anchor="middle" dominant-baseline="central">42°</text>
+<path class="thin" d="M 13.464 27.7093 A 3 3 0 0 1 16.6461 28.7731"/>
+
+<rect class="label-bg" x="13.3487" y="22.9629" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="16.2322" y="24.7199" text-anchor="middle" dominant-baseline="central">68°</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(イ)</text></g>
+<g id="triangle_ウ" transform="translate(72 0)"><polygon class="main" points="25.7675,17.4117 13.7462,6.4 10.2325,30.6"/>
+<text class="label" x="29.0573" y="17.1519" text-anchor="middle" dominant-baseline="central">G</text>
+<text class="label" x="12.9711" y="3.1923" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="label" x="8.7344" y="33.5404" text-anchor="middle" dominant-baseline="central">I</text>
+
+<rect class="label-bg" x="20.2546" y="7.8022" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="21.6481" y="9.8412" text-anchor="middle" dominant-baseline="central">6</text>
+
+<rect class="label-bg" x="17.8909" y="25.0925" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="20.6534" y="27.1315" text-anchor="middle" dominant-baseline="central">7.5</text>
+
+<rect class="label-bg" x="7.8249" y="16.0587" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="9.2184" y="18.0977" text-anchor="middle" dominant-baseline="central">9</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(ウ)</text></g>
+<g id="triangle_エ" transform="translate(108 0)"><polygon class="main" points="29.6,18.7283 15.5857,10.2973 6.4,26.7027"/>
+<text class="label" x="32.8998" y="18.7688" text-anchor="middle" dominant-baseline="central">J</text>
+<text class="label" x="14.956" y="7.058" text-anchor="middle" dominant-baseline="central">K</text>
+<text class="label" x="3.7635" y="28.6874" text-anchor="middle" dominant-baseline="central">L</text>
+
+<rect class="label-bg" x="22.6428" y="10.0745" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="24.0363" y="12.1135" text-anchor="middle" dominant-baseline="central">4</text>
+
+<rect class="label-bg" x="17.5167" y="23.3244" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="18.9102" y="25.3634" text-anchor="middle" dominant-baseline="central">6</text>
+<path class="thin" d="M 27.0293 17.1818 A 3 3 0 0 0 26.7629 19.7035"/>
+
+<rect class="label-bg" x="19.8508" y="16.3199" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="22.7343" y="18.0769" text-anchor="middle" dominant-baseline="central">50°</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(エ)</text></g>
+<g id="triangle_オ" transform="translate(0 41)"><polygon class="main" points="17.5651,6.4 9.7801,19.7112 26.2199,30.6"/>
+<text class="label" x="17.4886" y="3.1009" text-anchor="middle" dominant-baseline="central">M</text>
+<text class="label" x="6.4965" y="20.0396" text-anchor="middle" dominant-baseline="central">N</text>
+<text class="label" x="28.1396" y="33.2842" text-anchor="middle" dominant-baseline="central">O</text>
+
+<rect class="label-bg" x="9.8621" y="9.6031" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="11.2556" y="11.6421" text-anchor="middle" dominant-baseline="central">6</text>
+
+<rect class="label-bg" x="22.192" y="15.5181" width="4.674" height="4.078" rx=".3"/><text class="math-label" x="24.529" y="17.5571" text-anchor="middle" dominant-baseline="central">10</text>
+<path class="thin" d="M 16.0506 8.9896 A 3 3 0 0 0 18.5754 9.2248"/>
+
+<rect class="label-bg" x="14.1067" y="11.5163" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="16.9902" y="13.2733" text-anchor="middle" dominant-baseline="central">50°</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(オ)</text></g>
+<g id="triangle_カ" transform="translate(36 41)"><polygon class="main" points="24.3066,30.6 26.0227,6.4 9.9773,12.2222"/>
+<text class="label" x="25.2439" y="33.7641" text-anchor="middle" dominant-baseline="central">P</text>
+<text class="label" x="27.703" y="3.5598" text-anchor="middle" dominant-baseline="central">Q</text>
+<text class="label" x="6.9276" y="10.9616" text-anchor="middle" dominant-baseline="central">R</text>
+<path class="thin" d="M 24.5188 27.6075 A 3 3 0 0 0 22.4619 28.2342"/>
+
+<rect class="label-bg" x="19.6162" y="22.2121" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="22.4997" y="23.9691" text-anchor="middle" dominant-baseline="central">42°</text>
+<path class="thin" d="M 25.8105 9.3925 A 3 3 0 0 1 23.2026 7.4233"/>
+
+<rect class="label-bg" x="19.4031" y="9.5909" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="22.2866" y="11.3479" text-anchor="middle" dominant-baseline="central">66°</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(カ)</text></g>
+<g id="triangle_キ" transform="translate(72 41)"><polygon class="main" points="26.3524,25.4326 9.6476,30.6 10.836,6.4"/>
+<text class="label" x="29.3836" y="26.737" text-anchor="middle" dominant-baseline="central">S</text>
+<text class="label" x="7.9306" y="33.4181" text-anchor="middle" dominant-baseline="central">T</text>
+<text class="label" x="9.7978" y="3.2675" text-anchor="middle" dominant-baseline="central">U</text>
+<path class="thin" d="M 23.4864 26.3192 A 3 3 0 0 1 24.4567 23.1074"/>
+
+<rect class="label-bg" x="17.5338" y="21.8825" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="20.4173" y="23.6395" text-anchor="middle" dominant-baseline="central">68°</text>
+<path class="thin" d="M 12.5136 29.7134 A 3 3 0 0 0 9.7948 27.6036"/>
+
+<rect class="label-bg" x="10.5651" y="23.9448" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="13.4486" y="25.7018" text-anchor="middle" dominant-baseline="central">70°</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(キ)</text></g>
+<g id="triangle_ク" transform="translate(108 41)"><polygon class="main" points="11.9791,30.6 24.0209,22.3618 14.3615,6.4"/>
+<text class="label" x="10.6383" y="33.6153" text-anchor="middle" dominant-baseline="central">V</text>
+<text class="label" x="27.1299" y="23.4682" text-anchor="middle" dominant-baseline="central">W</text>
+<text class="label" x="13.7732" y="3.1529" text-anchor="middle" dominant-baseline="central">X</text>
+
+<rect class="label-bg" x="18.1875" y="26.7528" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="19.581" y="28.7918" text-anchor="middle" dominant-baseline="central">3</text>
+
+<rect class="label-bg" x="8.9903" y="16.1867" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="10.3838" y="18.2257" text-anchor="middle" dominant-baseline="central">5</text>
+<path class="thin" d="M 14.4551 28.9061 A 3 3 0 0 0 12.273 27.6144"/>
+
+<rect class="label-bg" x="11.5538" y="23.5076" width="5.767" height="3.514" rx=".3"/><text class="angle-label" x="14.4373" y="25.2646" text-anchor="middle" dominant-baseline="central">50°</text>
+<text class="note" x="3.8" y="2.2" text-anchor="middle" dominant-baseline="central" style="font-size:3.5px">(ク)</text></g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+<desc>lesson_03_ratio_06; coordinates={"A":[0,0],"B":[9,0],"C":[9.375,7.490619133289317],"D":[6,0],"E":[6.25,4.993746088859544]}; Construction: lesson_03_ratio_04</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="34.7083,30.6 31.5641,6.4 11.2917,8.0086"/>
+<line class="main" x1="32.6122" y1="14.4667" x2="19.0972" y2="15.5391"/>
+<text class="label" x="36.3374" y="33.4699" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="33.3889" y="3.6504" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="8.3169" y="6.5799" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="35.9018" y="14.2056" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="15.8076" y="15.8001" text-anchor="middle" dominant-baseline="central">E</text>
+<path class="thin" d="M 27.0366 15.7116 L 25.3783 15.0407 L 26.91 14.1166"/>
+<path class="thin" d="M 25.4416 15.8382 L 23.7833 15.1672 L 25.315 14.2432"/>
+<path class="thin" d="M 20.2446 8.1007 L 18.5864 7.4298 L 20.1181 6.5057"/>
+<path class="thin" d="M 18.6497 8.2273 L 16.9914 7.5563 L 18.5231 6.6323"/>
+
+<rect class="label-bg" x="35.4401" y="20.082" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="36.8336" y="22.121" text-anchor="middle" dominant-baseline="central">6</text>
+
+<rect class="label-bg" x="33.868" y="7.982" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="35.2615" y="10.021" text-anchor="middle" dominant-baseline="central">3</text>
+
+<rect class="label-bg" x="24.2081" y="9.7739" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="25.6016" y="11.8129" text-anchor="middle" dominant-baseline="central">5</text>
+
+<rect class="label-bg" x="19.7073" y="1.9753" width="2.935" height="4.078" rx=".3"/><text class="math-label var" x="21.1748" y="4.0143" text-anchor="middle" dominant-baseline="central">x</text>
+</svg>
