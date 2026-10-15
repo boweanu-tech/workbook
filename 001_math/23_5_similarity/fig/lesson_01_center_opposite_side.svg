@@ -1,33 +1,178 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="87mm" height="65mm" viewBox="0 0 87 65">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_01_center_opposite_side; coordinates={"O":[0,0],"A":[3,0],"B":[0,5],"C":[4,4],"D":[-6,0],"E":[0,-10],"F":[-8,-8]}; Center O, homothety -2.</desc>
-<defs><style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="45mm"
+   height="60mm"
+   viewBox="0 0 45 60"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="lesson_01_center_opposite_side.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview46"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6261699"
+     inkscape:cx="86.706809"
+     inkscape:cy="92.548757"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+  <desc
+     id="desc2">lesson_01_center_opposite_side; coordinates={&quot;O&quot;:[0,0],&quot;A&quot;:[3,0],&quot;B&quot;:[0,5],&quot;C&quot;:[4,4],&quot;D&quot;:[-6,0],&quot;E&quot;:[0,-10],&quot;F&quot;:[-8,-8]}; Center O, homothety -2.</desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
-.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
 .label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
-.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
-</style></defs>
-<polygon class="main" points="58.2196,23.246 46.4518,9 59.4587,10.2391"/>
-<polygon class="main" points="30.0196,27.508 53.5551,56 27.5413,53.5218"/>
-<line class="dash" x1="58.2196" y1="23.246" x2="30.0196" y2="27.508"/>
-<line class="dash" x1="46.4518" y1="9" x2="53.5551" y2="56"/>
-<line class="dash" x1="59.4587" y1="10.2391" x2="27.5413" y2="53.5218"/>
-<text class="label" x="61.1751" y="21.778" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="46.4774" y="5.7001" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="61.3427" y="7.5298" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="26.7366" y="27.173" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="54.417" y="59.1854" text-anchor="middle" dominant-baseline="central">E</text>
-<text class="label" x="25.5279" y="56.1364" text-anchor="middle" dominant-baseline="central">F</text>
-<text class="label" x="51.5196" y="27.3667" text-anchor="middle" dominant-baseline="central">O</text>
-
-<rect class="label-bg" x="51.6479" y="18.7533" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="53.0414" y="20.7923" text-anchor="middle" dominant-baseline="central">3</text>
-
-<rect class="label-bg" x="37.5479" y="20.8843" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="38.9414" y="22.9233" text-anchor="middle" dominant-baseline="central">6</text>
-
-<rect class="label-bg" x="52.0144" y="37.8161" width="4.674" height="4.078" rx=".3"/><text class="math-label" x="54.3514" y="39.8551" text-anchor="middle" dominant-baseline="central">10</text>
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+</style>
+  </defs>
+  <polygon
+     class="main"
+     points="46.4518,9 59.4587,10.2391 58.2196,23.246 "
+     id="polygon8"
+     transform="translate(-22.328497,-2.9998436)" />
+  <polygon
+     class="main"
+     points="53.5551,56 27.5413,53.5218 30.0196,27.508 "
+     id="polygon10"
+     transform="translate(-22.328497,-2.9998436)" />
+  <line
+     class="dash"
+     x1="35.891106"
+     y1="20.246157"
+     x2="7.6911035"
+     y2="24.508156"
+     id="line12" />
+  <line
+     class="dash"
+     x1="24.123304"
+     y1="6.0001564"
+     x2="31.226603"
+     y2="53.000156"
+     id="line14" />
+  <line
+     class="dash"
+     x1="37.130203"
+     y1="7.2392569"
+     x2="5.2128034"
+     y2="50.521957"
+     id="line16" />
+  <text
+     class="label"
+     x="38.846603"
+     y="18.778156"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text18">A</text>
+  <text
+     class="label"
+     x="24.148905"
+     y="2.7002563"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text20">B</text>
+  <text
+     class="label"
+     x="39.014206"
+     y="4.5299563"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text22">C</text>
+  <text
+     class="label"
+     x="4.4081044"
+     y="24.173157"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">D</text>
+  <text
+     class="label"
+     x="32.088505"
+     y="56.185555"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">E</text>
+  <text
+     class="label"
+     x="3.1994042"
+     y="53.136555"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text28">F</text>
+  <text
+     class="label"
+     x="29.191103"
+     y="24.366856"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text30">O</text>
+  <rect
+     class="label-bg"
+     x="29.319403"
+     y="15.753456"
+     width="2.7869999"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect32"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="30.712904"
+     y="17.792456"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text34">3</text>
+  <rect
+     class="label-bg"
+     x="15.219404"
+     y="17.884457"
+     width="2.7869999"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect36"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="16.612902"
+     y="19.923456"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text38">6</text>
+  <rect
+     class="label-bg"
+     x="29.685904"
+     y="34.816257"
+     width="4.6739998"
+     height="4.0780001"
+     rx="0.30000001"
+     id="rect40"
+     ry="0.30000001" />
+  <text
+     class="math-label"
+     x="32.022903"
+     y="36.855255"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text42">10</text>
 </svg>
