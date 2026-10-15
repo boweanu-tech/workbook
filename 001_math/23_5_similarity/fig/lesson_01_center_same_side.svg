@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="78mm"
-   height="55mm"
-   viewBox="0 0 78 55"
+   width="70mm"
+   height="50mm"
+   viewBox="0 0 70 50"
    version="1.1"
    id="svg48"
    sodipodi:docname="lesson_01_center_same_side.svg"
@@ -21,9 +21,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.6261699"
-     inkscape:cx="168.49408"
-     inkscape:cy="174.95097"
+     inkscape:zoom="2.2997515"
+     inkscape:cx="111.31637"
+     inkscape:cy="135.88425"
      inkscape:window-width="1920"
      inkscape:window-height="995"
      inkscape:window-x="0"
@@ -49,88 +49,88 @@
   </defs>
   <polygon
      class="main"
-     points="46.7143,48.2143 27.8571,48.2143 27.8571,29.3571 "
+     points="27.8571,48.2143 27.8571,29.3571 46.7143,48.2143 "
      id="polygon8"
-     transform="translate(-4.0078418,-4.8245365)" />
+     transform="translate(-7.4952543,-9.0507771)" />
   <polygon
      class="main"
-     points="75,43.5 42,43.5 42,10.5 "
+     points="42,43.5 42,10.5 75,43.5 "
      id="polygon10"
-     transform="translate(-4.0078418,-4.8245365)" />
+     transform="translate(-7.4952543,-9.0507771)" />
   <line
      class="dash"
-     x1="4.9921579"
-     y1="49.675465"
-     x2="37.992157"
-     y2="38.675465"
+     x1="1.5047454"
+     y1="45.449223"
+     x2="34.504745"
+     y2="34.449223"
      id="line12" />
   <line
      class="dash"
-     x1="4.9921579"
-     y1="49.675465"
-     x2="37.992157"
-     y2="5.6754637"
+     x1="1.5047454"
+     y1="45.449223"
+     x2="34.504745"
+     y2="1.449223"
      id="line14" />
   <line
      class="dash"
-     x1="4.9921579"
-     y1="49.675465"
-     x2="70.992157"
-     y2="38.675465"
+     x1="1.5047454"
+     y1="45.449223"
+     x2="67.504745"
+     y2="34.449223"
      id="line16" />
   <text
      class="label"
-     x="2.0405581"
-     y="51.151264"
+     x="3.7878597"
+     y="47.729465"
      text-anchor="middle"
      dominant-baseline="central"
      id="text18">O</text>
   <text
      class="label"
-     x="23.849258"
-     y="46.589764"
+     x="20.361845"
+     y="42.363522"
      text-anchor="middle"
      dominant-baseline="central"
      id="text20">A</text>
   <text
      class="label"
-     x="21.466759"
-     y="22.249363"
+     x="17.979345"
+     y="18.023121"
      text-anchor="middle"
      dominant-baseline="central"
      id="text22">B</text>
   <text
      class="label"
-     x="44.975956"
-     y="45.785366"
+     x="41.488544"
+     y="41.559124"
      text-anchor="middle"
      dominant-baseline="central"
      id="text24">C</text>
   <text
      class="label"
-     x="40.254856"
-     y="36.412766"
+     x="36.767445"
+     y="32.186523"
      text-anchor="middle"
      dominant-baseline="central"
      id="text26">D</text>
   <text
      class="label"
-     x="38.370457"
-     y="2.3972633"
+     x="30.333069"
+     y="2.9593322"
      text-anchor="middle"
      dominant-baseline="central"
      id="text28">E</text>
   <text
      class="label"
-     x="74.274155"
-     y="39.019863"
+     x="66.914185"
+     y="37.743992"
      text-anchor="middle"
      dominant-baseline="central"
      id="text30">F</text>
   <rect
      class="label-bg"
-     x="14.450257"
-     y="48.762665"
+     x="10.962845"
+     y="44.536423"
      width="2.7869999"
      height="4.0780001"
      rx="0.30000001"
@@ -138,15 +138,15 @@
      ry="0.30000001" />
   <text
      class="math-label"
-     x="15.843759"
-     y="50.801666"
+     x="12.356347"
+     y="46.575424"
      text-anchor="middle"
      dominant-baseline="central"
      id="text34">4</text>
   <rect
      class="label-bg"
-     x="30.179857"
-     y="43.308666"
+     x="26.692444"
+     y="39.082424"
      width="2.7869999"
      height="4.0780001"
      rx="0.30000001"
@@ -154,23 +154,23 @@
      ry="0.30000001" />
   <text
      class="math-label"
-     x="31.573359"
-     y="45.347664"
+     x="28.085945"
+     y="41.121422"
      text-anchor="middle"
      dominant-baseline="central"
      id="text38">3</text>
   <path
      class="thin"
-     d="m 23.849258,41.389763 h 2 v 2"
+     d="m 20.361845,37.163522 h 2 v 2"
      id="path40" />
   <path
      class="thin"
-     d="m 23.849258,27.732563 a 3.2,3.2 0 0 0 2.2628,-0.9372"
+     d="m 20.361845,23.506322 a 3.2,3.2 0 0 0 2.2628,-0.9372"
      id="path42" />
   <rect
      class="label-bg"
-     x="24.11496"
-     y="29.388464"
+     x="20.627546"
+     y="25.162222"
      width="5.7670002"
      height="3.5139999"
      rx="0.30000001"
@@ -178,8 +178,8 @@
      ry="0.30000001" />
   <text
      class="angle-label"
-     x="26.998459"
-     y="31.145464"
+     x="23.511045"
+     y="26.919222"
      text-anchor="middle"
      dominant-baseline="central"
      id="text46">45°</text>
