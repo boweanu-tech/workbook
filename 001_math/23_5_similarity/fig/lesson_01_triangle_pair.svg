@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="70mm"
-   height="30mm"
-   viewBox="0 0 70 30"
+   width="68.3313mm"
+   height="27.3658mm"
+   viewBox="0.7101 0.6614 68.3313 27.3658"
    version="1.1"
    id="svg56"
    sodipodi:docname="lesson_01_triangle_pair.svg"
@@ -46,6 +46,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style>
   </defs>
   <polygon
@@ -180,36 +182,14 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text46">55°</text>
-  <rect
-     class="label-bg"
-     x="12.352632"
-     y="20.568108"
-     width="2.7869999"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect48"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="13.746129"
-     y="22.607109"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text50">6</text>
-  <rect
-     class="label-bg"
-     x="55.550537"
-     y="11.808075"
-     width="2.7869999"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect52"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="56.944038"
-     y="13.847075"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text54">9</text>
+  
+  <g class="length-mark" data-segment="AB">
+<path class="length-arc" d="M 6.8655 17.8094 Q 11.8104 28.8645 22.1338 22.5325"/>
+<text class="math-label" x="12.6231" y="22.4178" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+  
+  <g class="length-mark" data-segment="EF">
+<path class="length-arc" d="M 63.3287 24.8201 Q 59.7404 11.3485 46.7563 6.272"/>
+<text class="math-label" x="58.7337" y="11.3473" text-anchor="middle" dominant-baseline="central">9</text>
+</g>
 </svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="41.2366mm" height="49.4083mm" viewBox="10.5123 -0.0308 41.2366 49.4083">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_04_fold_side_ratios; coordinates={"A":[0,0],"B":[15,0],"C":[15,12],"D":[0,12],"E":[6,0],"F":[0,4.5]}; Fold D onto E on AB along CF. AB=15 AD=12 AE=6; BE=9 CE=15; AEF ~ BCE, ratio 1:2; AF:EF=3:5; AF=4.5 DF=EF=7.5. Only similarity and folding are needed.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="triangle-fill" points="16.3,21.2 46.7,44 27.7,6"/>
+<polygon class="main" points="16.3,6 16.3,44 46.7,44 46.7,6"/>
+<path class="dash" d="M 46.7 44 L 27.7 6"/>
+<path class="main" d="M 46.7 44 L 16.3 21.2"/>
+<path class="main" d="M 16.3 21.2 L 27.7 6"/>
+<path class="thin" d="M 16.3 42 L 18.3 42 L 18.3 44"/>
+<path class="thin" d="M 17.9 22.4 L 19.1 20.8 L 17.5 19.6"/>
+<text class="label" x="14.1275" y="3.2558" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="14.6663" y="47.0953" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="48.8957" y="46.7256" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="49.3964" y="3.7685" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="12.8" y="21.2" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="27.5543" y="2.503" text-anchor="middle" dominant-baseline="central">F</text>
+</svg>

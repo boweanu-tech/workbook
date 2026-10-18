@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="27.5927mm" height="42.6670mm" viewBox="11.9122 0.0507 27.5927 42.6670">
+<svg xmlns="http://www.w3.org/2000/svg" width="27.6927mm" height="42.7670mm" viewBox="11.8622 0.0007 27.6927 42.7670">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_02_find_05; coordinates={"B":[0,0],"C":[6,0],"A":[2.25,3.307189138830738],"D":[0.9375,-7.4411755623691604]}; </desc>
 <defs><style>
@@ -11,6 +11,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="21.0724,6 17.6625,17.1256 34.3375,11.9674"/>
 <polygon class="main" points="17.6625,17.1256 34.3375,11.9674 26.6651,37"/>
@@ -20,10 +22,19 @@
 <text class="label" x="37.2801" y="10.0723" text-anchor="middle" dominant-baseline="central">C</text>
 <text class="label" x="20.0021" y="2.6677" text-anchor="middle" dominant-baseline="central">A</text>
 <text class="label" x="26.983" y="40.4855" text-anchor="middle" dominant-baseline="central">D</text>
-<rect class="label-bg" x="14.3211" y="8.5372" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="16.0211" y="10.5372" text-anchor="middle" dominant-baseline="central">4</text>
-<rect class="label-bg" x="23.2657" y="9.2028" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="24.9657" y="11.2028" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="32.1477" y="23.5093" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="33.8477" y="25.5093" text-anchor="middle" dominant-baseline="central">9</text>
+
+<g class="length-mark" data-segment="AB">
+<path class="length-arc" d="M 20.1872 6.67 Q 12.7225 9.5262 17.3048 16.0746"/>
+<text class="math-label" x="14.0133" y="8.3493" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
+
+<g class="length-mark" data-segment="BC">
+<path class="length-arc" d="M 18.7144 17.4806 Q 28.8813 23.861 33.6698 12.8543"/>
+<text class="math-label" x="28.0686" y="17.4142" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="CD">
+<path class="length-arc" d="M 34.6952 13.0184 Q 37.1462 26.5203 27.5503 36.33"/>
+<text class="math-label" x="35.8555" y="23.4973" text-anchor="middle" dominant-baseline="central">9</text>
+</g>
 </svg>

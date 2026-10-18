@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="59.4513mm" height="53.6924mm" viewBox="4.3859 0.0085 59.4513 53.6924">
+<svg xmlns="http://www.w3.org/2000/svg" width="59.5513mm" height="53.7924mm" viewBox="4.3359 -0.0415 59.5513 53.7924">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_04_equilateral; coordinates={"C":[0,0],"A":[12,0],"B":[6,10.392304845413264],"D":[10,3.4641016151377544],"E":[2,10.392304845413264],"F":[4.666666666666667,8.082903768654761]}; Equilateral ABC side12 and CDE, E is D rotated +60 degrees around C. F=BC intersect DE. BE=4; BDF~ECF, BEF~DCF; DF:FE=2:1, BF=8/3, CF=28/3. No Pythagoras needed.</desc>
 <defs><style>
@@ -30,8 +30,8 @@
 <text class="label" x="53.7355" y="36.1183" text-anchor="middle" dominant-baseline="central">D</text>
 <text class="label" x="15.3404" y="3.2067" text-anchor="middle" dominant-baseline="central">E</text>
 <text class="label" x="27.1487" y="12.3199" text-anchor="middle" dominant-baseline="central">F</text>
-<rect class="label-bg" x="56.0195" y="38.0833" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="57.7195" y="40.0833" text-anchor="middle" dominant-baseline="central">4</text>
-<rect class="label-bg" x="43.6064" y="16.5833" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="45.3064" y="18.5833" text-anchor="middle" dominant-baseline="central">8</text>
+
+
+
+
 </svg>

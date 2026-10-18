@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="59.1143mm" height="34.3818mm" viewBox="0.9504 6.0803 59.1143 34.3818">
+<svg xmlns="http://www.w3.org/2000/svg" width="59.2143mm" height="32.9102mm" viewBox="0.9004 6.0303 59.2143 32.9102">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_04_right_altitude; coordinates={"B":[0,0],"C":[13,0],"H":[4,0],"A":[4,6]}; BH=4, CH=9, AH=6. AB=2 sqrt(13), AC=3 sqrt(13), via similarity, not Pythagoras.</desc>
 <defs><style>
@@ -21,7 +21,7 @@
 <path class="thin" d="M 20.1214 13.541 l 1.6641 1.1094 l 1.1094 -1.6641"/>
 <path class="thin" d="M 21.2308 32.1231 l 2 0 l 0 2"/>
 
-<rect class="label-bg" x="12.4219" y="35.2841" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="13.8154" y="37.3231" text-anchor="middle" dominant-baseline="central">4</text>
 
-<rect class="label-bg" x="36.5219" y="35.2841" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="37.9154" y="37.3231" text-anchor="middle" dominant-baseline="central">9</text>
+
+
 </svg>

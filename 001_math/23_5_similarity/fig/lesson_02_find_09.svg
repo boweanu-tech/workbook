@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="30.4792mm" height="36.7342mm" viewBox="6.9318 -0.6107 30.4792 36.7342">
+<svg xmlns="http://www.w3.org/2000/svg" width="30.3350mm" height="41.7327mm" viewBox="7.1260 -5.5591 30.3350 41.7327">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_02_find_09; coordinates={"A":[0,0],"B":[8,0],"C":[3.1875,5.083290641897235],"D":[3,0],"E":[2.125,3.3888604279314896]}; </desc>
 <defs><style>
@@ -11,6 +11,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="13.9731,6.4 20.6914,30.6 32.0269,11.7733"/>
 <line class="main" x1="16.4925" y1="15.475" x2="26.009" y2="9.9822"/>
@@ -22,13 +24,25 @@
 <path class="thin" d="M 15.6365 12.3916 A 3.2 3.2 0 0 1 19.264 13.8753"/>
 <path class="thin" d="M 28.9598 10.8605 A 3.2 3.2 0 0 0 30.3763 14.5147"/>
 
-<rect class="label-bg" x="10.7559" y="9.7545" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="12.1494" y="11.7935" text-anchor="middle" dominant-baseline="central">3</text>
+<g class="length-mark" data-segment="AD">
+<path class="length-arc" d="M 13.5875 7.4411 Q 8.5361 12.7966 15.6254 14.7817"/>
+<text class="math-label" x="9.8369" y="9.854" text-anchor="middle" dominant-baseline="central">3</text>
+</g>
 
-<rect class="label-bg" x="19.5104" y="3.0851" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="20.9039" y="5.1241" text-anchor="middle" dominant-baseline="central">4</text>
-<path class="thin" d="M 9.1553 7.7375 L 15.8736 31.9375 M 13.9731 6.4 L 8.1918 8.005 M 20.6914 30.6 L 14.9101 32.205"/>
+<g class="length-mark" data-segment="AE">
+<path class="length-arc" d="M 15.0211 6.0337 Q 21.9736 1.5299 25.3318 9.1025"/>
+<text class="math-label" x="21.5885" y="2.449" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
 
-<rect class="label-bg" x="11.121" y="17.7985" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="12.5145" y="19.8375" text-anchor="middle" dominant-baseline="central">8</text>
-<path class="thin" d="M 15.3994 1.6078 L 33.4532 6.9811 M 13.9731 6.4 L 15.6847 0.6493 M 32.0269 11.7733 L 33.7385 6.0226"/>
 
-<rect class="label-bg" x="23.0328" y="2.2554" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="24.4263" y="4.2944" text-anchor="middle" dominant-baseline="central">6</text>
+<g class="length-mark" data-segment="AB">
+<path class="length-arc" d="M 13.5875 7.4411 Q 4.8542 21.9641 19.8243 29.9067"/>
+<text class="math-label" x="9.0456" y="18.219" text-anchor="middle" dominant-baseline="central">8</text>
+</g>
+
+
+<g class="length-mark" data-segment="AC">
+<path class="length-arc" d="M 15.0211 6.0337 Q 28.8051 -10.4178 31.3497 10.8936"/>
+<text class="math-label" x="26.5087" y="-3.0771" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
 </svg>

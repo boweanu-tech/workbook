@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="57.0002mm" height="42.5333mm" viewBox="-1.6600 0.2333 57.0002 42.5333">
+<svg xmlns="http://www.w3.org/2000/svg" width="54.8775mm" height="43.4776mm" viewBox="0.5129 -1.5487 54.8775 43.4776">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_03_ratio_06; coordinates={"A":[0,0],"B":[12,0],"C":[12,8],"D":[0,8],"E":[6,0],"F":[4,2.6666666666666665]}; Rectangle, F=AC intersect DE. AFE ~ CFD, ratio 1:2; x=EF=10/3.</desc>
 <defs><style>
@@ -11,25 +11,39 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="6,36.1667 50,36.1667 50,6.8333 6,6.8333"/>
 <path class="main" d="M 6 36.1667 L 50 6.8333"/>
 <path class="main" d="M 6 6.8333 L 28 36.1667"/>
 <path class="thin" d="M 48 36.1667 L 48 34.1667 L 50 34.1667"/>
 <path class="thin" d="M 50 8.8333 L 48 8.8333 L 48 6.8333"/>
-<path class="thin" d="M 6 6.8333 L -0.4 11.6333 M 28 36.1667 L 21.6 40.9667 M 0.4 11.0333 L 22.4 40.3667"/>
+
 <text class="label" x="2.932" y="37.8511" text-anchor="middle" dominant-baseline="central">A</text>
 <text class="label" x="53.1414" y="37.7098" text-anchor="middle" dominant-baseline="central">B</text>
 <text class="label" x="52.7706" y="4.6947" text-anchor="middle" dominant-baseline="central">C</text>
 <text class="label" x="3.35" y="4.547" text-anchor="middle" dominant-baseline="central">D</text>
 <text class="label" x="28.3729" y="39.6467" text-anchor="middle" dominant-baseline="central">E</text>
 <text class="label" x="17.2848" y="27.2907" text-anchor="middle" dominant-baseline="central">F</text>
-<rect class="label-bg" x="15.3" y="37.6667" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="17" y="39.6667" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="25.9" y="1.3333" width="4.2" height="4" rx=".3"/>
-<text class="math-label" x="28" y="3.3333" text-anchor="middle" dominant-baseline="central">12</text>
-<rect class="label-bg" x="9.3" y="23.7" width="4.2" height="4" rx=".3"/>
-<text class="math-label" x="11.4" y="25.7" text-anchor="middle" dominant-baseline="central">10</text>
-<rect class="label-bg" x="19.8333" y="31.3778" width="3.4" height="4" rx=".3"/>
-<text class="math-label var" x="21.5333" y="33.3778" text-anchor="middle" dominant-baseline="central">x</text>
+
+<g class="length-mark" data-segment="AE">
+<path class="length-arc" d="M 6.9 36.8167 Q 17 43.1167 27.1 36.8167"/>
+<text class="math-label" x="17" y="37.8667" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="CD">
+<path class="length-arc" d="M 49.1 6.1833 Q 28 -0.1167 6.9 6.1833"/>
+<text class="math-label" x="28" y="0.9333" text-anchor="middle" dominant-baseline="central">12</text>
+</g>
+
+<g class="length-mark" data-segment="DE">
+<path class="length-arc" d="M 6.02 7.9433 Q 6.64 29.27 26.94 35.8367"/>
+<text class="math-label" x="10.12" y="23.48" text-anchor="middle" dominant-baseline="central">10</text>
+</g>
+
+<g class="length-mark" data-segment="EF">
+<path class="length-arc" d="M 26.94 35.8367 Q 18.7733 35.4478 20.6867 27.4989"/>
+<text class="math-label var" x="19.8533" y="31.4578" text-anchor="middle" dominant-baseline="central">x</text>
+</g>
 </svg>

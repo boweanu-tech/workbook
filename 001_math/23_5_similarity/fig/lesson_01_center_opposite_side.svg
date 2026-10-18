@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="45mm"
-   height="60mm"
-   viewBox="0 0 45 60"
+   width="40.3257mm"
+   height="58.3123mm"
+   viewBox="0.9635 0.1554 40.3257 58.3123"
    version="1.1"
    id="svg44"
    sodipodi:docname="lesson_01_center_opposite_side.svg"
@@ -45,6 +45,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style>
   </defs>
   <polygon
@@ -127,52 +129,19 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text30">O</text>
-  <rect
-     class="label-bg"
-     x="29.319403"
-     y="15.753456"
-     width="2.7869999"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect32"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="30.712904"
-     y="17.792456"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text34">3</text>
-  <rect
-     class="label-bg"
-     x="15.219404"
-     y="17.884457"
-     width="2.7869999"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect36"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="16.612902"
-     y="19.923456"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text38">6</text>
-  <rect
-     class="label-bg"
-     x="29.685904"
-     y="34.816257"
-     width="4.6739998"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect40"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="32.022903"
-     y="36.855255"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text42">10</text>
+  
+  <g class="length-mark" data-segment="OA">
+<path class="length-arc" d="M 27.4781 22.175 Q 34.2321 41.078 35.0983 21.0234"/>
+<text class="math-label" x="33.0292" y="29.2386" text-anchor="middle" dominant-baseline="central">3</text>
+</g>
+  
+  <g class="length-mark" data-segment="OD">
+<path class="length-arc" d="M 25.504 21.1586 Q 16.0525 16.2155 8.4839 23.731"/>
+<text class="math-label" x="16.2542" y="17.2302" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+  
+  <g class="length-mark" data-segment="OE">
+<path class="length-arc" d="M 25.9829 22.6539 Q 21.9869 38.3721 30.4494 52.2074"/>
+<text class="math-label" x="23.3217" y="35.8014" text-anchor="middle" dominant-baseline="central">10</text>
+</g>
 </svg>

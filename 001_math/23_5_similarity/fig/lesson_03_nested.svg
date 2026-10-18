@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="59.0918mm" height="37.2671mm" viewBox="0.9190 6.4074 59.0918 37.2671">
+<svg xmlns="http://www.w3.org/2000/svg" width="59.1918mm" height="37.0345mm" viewBox="0.8690 6.6900 59.1918 37.0345">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_03_nested; coordinates={"A":[0,0],"B":[10,0],"C":[9.05,11.962336728248372],"D":[4,0],"E":[3.6200000000000006,4.784934691299349]}; </desc>
 <defs><style>
@@ -24,11 +24,11 @@
 <path class="thin" d="M 42.8606 21.6978 L 44.5766 21.1925 L 43.9513 22.8685"/>
 <path class="thin" d="M 44.0312 20.6072 L 45.7472 20.1018 L 45.1219 21.7778"/>
 
-<rect class="label-bg" x="6.4958" y="17.9542" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="7.8893" y="19.9932" text-anchor="middle" dominant-baseline="central">4</text>
 
-<rect class="label-bg" x="16.4857" y="30.543" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="17.8792" y="32.582" text-anchor="middle" dominant-baseline="central">6</text>
 
-<rect class="label-bg" x="14.5725" y="7.5074" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="15.966" y="9.5464" text-anchor="middle" dominant-baseline="central">6</text>
 
-<rect class="label-bg" x="40.3342" y="25.3023" width="4.674" height="4.078" rx=".3"/><text class="math-label" x="42.6712" y="27.3413" text-anchor="middle" dominant-baseline="central">12</text>
+
+
+
+
 </svg>

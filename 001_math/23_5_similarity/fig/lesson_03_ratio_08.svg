@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="51.2490mm" height="28.5594mm" viewBox="0.4709 7.5231 51.2490 28.5594">
+<svg xmlns="http://www.w3.org/2000/svg" width="51.3490mm" height="27.3078mm" viewBox="0.4209 7.4731 51.3490 27.3078">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_03_ratio_08; coordinates={"B":[0,0],"C":[10,0],"H":[2,0],"A":[2,4]}; Similarity gives AH^2=BH*CH=16; x=4, no Pythagorean theorem.</desc>
 <defs><style>
@@ -11,6 +11,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="12.3946,13.0987 6,29.9013 46,25.888"/>
 <path class="main" d="M 12.3946 13.0987 L 14 29.0987"/>
@@ -20,10 +22,19 @@
 <text class="label" x="49.4952" y="26.0721" text-anchor="middle" dominant-baseline="central">C</text>
 <text class="label" x="14" y="32.4987" text-anchor="middle" dominant-baseline="central">H</text>
 <text class="label" x="10.5247" y="10.1401" text-anchor="middle" dominant-baseline="central">A</text>
-<rect class="label-bg" x="8.6494" y="30.9825" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="10.3494" y="32.9825" text-anchor="middle" dominant-baseline="central">2</text>
-<rect class="label-bg" x="28.6494" y="28.9758" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="30.3494" y="30.9758" text-anchor="middle" dominant-baseline="central">8</text>
-<rect class="label-bg" x="5.4278" y="19.7076" width="3.4" height="4" rx=".3"/>
-<text class="math-label var" x="7.1278" y="21.7076" text-anchor="middle" dominant-baseline="central">x</text>
+
+<g class="length-mark" data-segment="BH">
+<path class="length-arc" d="M 6.9604 30.4582 Q 10.6938 36.4153 13.1694 29.8353"/>
+<text class="math-label" x="10.559" y="31.181" text-anchor="middle" dominant-baseline="central">2</text>
+</g>
+
+<g class="length-mark" data-segment="HC">
+<path class="length-arc" d="M 14.9604 29.6556 Q 30.6938 34.4086 45.1694 26.6246"/>
+<text class="math-label" x="30.5591" y="29.1744" text-anchor="middle" dominant-baseline="central">8</text>
+</g>
+
+<g class="length-mark" data-segment="AH">
+<path class="length-arc" d="M 13.1312 13.9293 Q 20.1126 20.4048 14.5569 28.1383"/>
+<text class="math-label var" x="18.7693" y="18.6193" text-anchor="middle" dominant-baseline="central">x</text>
+</g>
 </svg>

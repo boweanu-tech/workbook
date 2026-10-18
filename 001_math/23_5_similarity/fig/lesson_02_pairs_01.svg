@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="148.3977mm" height="87.2009mm" viewBox="0.0000 0.0000 148.3977 87.2009">
+<svg xmlns="http://www.w3.org/2000/svg" width="148.4974mm" height="87.3008mm" viewBox="-0.0500 -0.0500 148.4974 87.3008">
 <desc>Board with distinctive isosceles, 120-degree obtuse, and right triangles; [{"type":"SSS","a":4,"b":4,"c":2,"turn":1.4},{"type":"AA","A":40,"B":90,"turn":-0.8},{"type":"SSS","a":6,"b":6,"c":3,"turn":-1.9},{"type":"SSS","a":5,"b":6,"c":7,"turn":0.3},{"type":"SAS","a":3,"b":8,"angle":120,"turn":-0.4},{"type":"AA","A":25,"B":65,"turn":2.6},{"type":"AA","A":90,"B":50,"turn":1.3},{"type":"SAS","a":6,"b":16,"angle":120,"turn":2.2}]</desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -10,17 +10,28 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <g transform="translate(-0.2128 1.8846)"><g id="triangle_ア" transform="translate(0 0)"><text class="note" x="1" y="2">(ア)</text><polygon class="main" points="21.8306,35 26.8324,6 12.1676,7.2035"/>
 <text class="label" x="22.1168" y="38.4883" text-anchor="middle" dominant-baseline="central">A</text>
 <text class="label" x="28.7422" y="3.067" text-anchor="middle" dominant-baseline="central">B</text>
 <text class="label" x="9.8052" y="4.6211" text-anchor="middle" dominant-baseline="central">C</text>
-<rect class="label-bg" x="26.0806" y="19.0949" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="27.7806" y="21.0949" text-anchor="middle" dominant-baseline="central">4</text>
-<rect class="label-bg" x="11.9932" y="20.251" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="13.6932" y="22.251" text-anchor="middle" dominant-baseline="central">4</text>
-<rect class="label-bg" x="17.5137" y="1.1135" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="19.2137" y="3.1135" text-anchor="middle" dominant-baseline="central">2</text></g></g>
+
+<g class="length-mark" data-segment="BA">
+<path class="length-arc" d="M 27.32 6.9974 Q 31.1804 21.6813 22.6241 34.2236"/>
+<text class="math-label" x="29.85" y="19.0459" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
+
+<g class="length-mark" data-segment="CA">
+<path class="length-arc" d="M 11.8492 8.267 Q 10.4345 23.3838 20.9211 34.3633"/>
+<text class="math-label" x="11.7096" y="20.2495" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
+
+<g class="length-mark" data-segment="CB">
+<path class="length-arc" d="M 13.0114 6.4821 Q 18.9315 -0.325 25.8823 5.4258"/>
+<text class="math-label" x="19.042" y="0.7145" text-anchor="middle" dominant-baseline="central">2</text>
+</g></g></g>
 <g transform="translate(-9.2843 1.8846)"><g id="triangle_イ" transform="translate(41 0)"><text class="note" x="1" y="2">(イ)</text><polygon class="main" points="6,13.0427 20.4852,27.9573 33,15.8027"/>
 <path class="thin" d="M 8.1598 15.2665 A 3.1 3.1 0 0 0 9.0839 13.358"/>
 <path class="thin" d="M 19.0918 26.5226 L 20.5265 25.1291 L 21.9199 26.5639"/>
@@ -32,31 +43,55 @@
 <text class="label" x="21.9479" y="2.5102" text-anchor="middle" dominant-baseline="central">G</text>
 <text class="label" x="9.809" y="36.4691" text-anchor="middle" dominant-baseline="central">H</text>
 <text class="label" x="28.7679" y="37.9227" text-anchor="middle" dominant-baseline="central">I</text>
-<rect class="label-bg" x="11.9069" y="16.8055" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="13.6069" y="18.8055" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="26.0072" y="17.8866" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="27.7072" y="19.8866" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="17.5324" y="35.9268" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="19.2324" y="37.9268" text-anchor="middle" dominant-baseline="central">3</text></g></g>
+
+<g class="length-mark" data-segment="HG">
+<path class="length-arc" d="M 11.8335 32.8123 Q 10.3422 17.6902 20.7743 6.6415"/>
+<text class="math-label" x="11.6197" y="16.6085" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="IG">
+<path class="length-arc" d="M 27.3246 34 Q 31.1038 19.282 22.4781 6.7722"/>
+<text class="math-label" x="29.7747" y="17.7341" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="IH">
+<path class="length-arc" d="M 25.8953 35.5793 Q 18.7546 44.1585 13.0053 34.591"/>
+<text class="math-label" x="18.9649" y="37.5218" text-anchor="middle" dominant-baseline="central">3</text>
+</g></g></g>
 <g transform="translate(-12.8763 1.8846)"><g id="triangle_エ" transform="translate(123 0)"><text class="note" x="1" y="2">(エ)</text><polygon class="main" points="9.3349,35 32.535,27.8234 6.465,6"/>
 <text class="label" x="7.6202" y="38.0512" text-anchor="middle" dominant-baseline="central">J</text>
 <text class="label" x="35.8899" y="28.8207" text-anchor="middle" dominant-baseline="central">K</text>
 <text class="label" x="4.7331" y="2.9585" text-anchor="middle" dominant-baseline="central">L</text>
-<rect class="label-bg" x="20.2693" y="32.7554" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="21.9693" y="34.7554" text-anchor="middle" dominant-baseline="central">5</text>
-<rect class="label-bg" x="2.717" y="18.8447" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="4.417" y="20.8447" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="20.0466" y="12.2279" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="21.7466" y="14.2279" text-anchor="middle" dominant-baseline="central">7</text></g></g>
+
+<g class="length-mark" data-segment="KJ">
+<path class="length-arc" d="M 31.8673 28.7103 Q 23.8163 40.7262 10.3868 35.355"/>
+<text class="math-label" x="23.0036" y="34.2795" text-anchor="middle" dominant-baseline="central">5</text>
+</g>
+
+<g class="length-mark" data-segment="JL">
+<path class="length-arc" d="M 8.5994 34.1684 Q 0.9837 21.1844 5.9068 6.9596"/>
+<text class="math-label" x="2.3272" y="18.7742" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="KL">
+<path class="length-arc" d="M 32.2621 26.7473 Q 23.9611 11.5825 7.5723 6.0793"/>
+<text class="math-label" x="23.0946" y="11.8979" text-anchor="middle" dominant-baseline="central">7</text>
+</g></g></g>
 <g transform="translate(0.4053 2.5960)"><g id="triangle_オ" transform="translate(0 44)"><text class="note" x="1" y="2">(オ)</text><polygon class="main" points="16.6709,31.2799 25.4697,35 13.5303,6"/>
 <path class="thin" d="M 19.5262 32.4871 A 3.1 3.1 0 0 0 16.2887 28.2036"/>
 <text class="label" x="15.7825" y="34.6653" text-anchor="middle" dominant-baseline="central">M</text>
 <text class="label" x="27.3433" y="37.9562" text-anchor="middle" dominant-baseline="central">N</text>
 <text class="label" x="12.5935" y="2.6277" text-anchor="middle" dominant-baseline="central">O</text>
-<rect class="label-bg" x="18.0073" y="34.3637" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="19.7073" y="36.3637" text-anchor="middle" dominant-baseline="central">3</text>
-<rect class="label-bg" x="9.9273" y="17.0715" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="11.6273" y="19.0715" text-anchor="middle" dominant-baseline="central">8</text>
+
+<g class="length-mark" data-segment="NM">
+<path class="length-arc" d="M 24.3876 35.2482 Q 18.3638 39.5413 17.2467 32.2291"/>
+<text class="math-label" x="18.8895" y="34.54" text-anchor="middle" dominant-baseline="central">3</text>
+</g>
+
+<g class="length-mark" data-segment="OM">
+<path class="length-arc" d="M 12.9962 6.9733 Q 8.2036 19.4968 15.9149 30.4669"/>
+<text class="math-label" x="9.5433" y="17.0084" text-anchor="middle" dominant-baseline="central">8</text>
+</g>
 <text class="angle-label" x="21.5373" y="27.6019" text-anchor="middle" dominant-baseline="central">120°</text></g></g>
 <g transform="translate(-9.2348 2.5960)"><g id="triangle_カ" transform="translate(41 44)"><text class="note" x="1" y="2">(カ)</text><polygon class="main" points="33,28.2214 7.3302,12.7786 6,25.3689"/>
 <path class="thin" d="M 30.3436 26.6234 A 3.1 3.1 0 0 0 29.9172 27.8957"/>
@@ -78,9 +113,15 @@
 <text class="label" x="27.5888" y="9.9714" text-anchor="middle" dominant-baseline="central">V</text>
 <text class="label" x="18.9961" y="2.501" text-anchor="middle" dominant-baseline="central">W</text>
 <text class="label" x="13.7283" y="38.3726" text-anchor="middle" dominant-baseline="central">X</text>
-<rect class="label-bg" x="22.8366" y="5.5523" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="24.5366" y="7.5523" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="20.5987" y="23.5328" width="4.2" height="4" rx=".3"/>
-<text class="math-label" x="22.6987" y="25.5328" text-anchor="middle" dominant-baseline="central">16</text>
+
+<g class="length-mark" data-segment="WV">
+<path class="length-arc" d="M 20.1329 6.3451 Q 27.3259 5.522 24.332 12.1139"/>
+<text class="math-label" x="26.2345" y="5.2757" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="XV">
+<path class="length-arc" d="M 15.6233 34.4413 Q 25.8516 26.9333 24.5648 14.3105"/>
+<text class="math-label" x="24.6179" y="23.5546" text-anchor="middle" dominant-baseline="central">16</text>
+</g>
 <text class="angle-label" x="18.2701" y="13.8671" text-anchor="middle" dominant-baseline="central">120°</text></g></g>
 </svg>

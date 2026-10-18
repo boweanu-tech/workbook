@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="70.0378mm" height="52.1994mm" viewBox="8.9420 1.2853 70.0378 52.1994">
+<svg xmlns="http://www.w3.org/2000/svg" width="70.1378mm" height="52.2994mm" viewBox="8.8921 1.2353 70.1378 52.2994">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_01_center_rectangle; coordinates={"O":[0,0],"A":[6,2],"B":[12,2],"C":[12,6],"D":[6,6],"E":[-9,-3],"F":[-18,-3],"G":[-18,-9],"H":[-9,-9]}; Rectangles, center O, homothety -3/2. EH=6, perimeters 20 and 30.</desc>
 <defs><style>
@@ -11,6 +11,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="61.3238,16.6397 73.5622,14.1589 71.9083,6 59.6699,8.4808"/>
 <polygon class="main" points="32.7953,33.0404 14.4378,36.7617 16.9187,49 35.2762,45.2788"/>
@@ -30,10 +32,19 @@
 <text class="label" x="11.128" y="37.8997" text-anchor="middle" dominant-baseline="central">F</text>
 <text class="label" x="14.1735" y="51.1712" text-anchor="middle" dominant-baseline="central">G</text>
 <text class="label" x="33.5615" y="48.3299" text-anchor="middle" dominant-baseline="central">H</text>
-<rect class="label-bg" x="63.2119" y="10.3412" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="64.9119" y="12.3412" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="22.6119" y="36.3313" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="24.3119" y="38.3313" text-anchor="middle" dominant-baseline="central">9</text>
-<rect class="label-bg" x="66.1474" y="9.0703" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="67.8474" y="11.0703" text-anchor="middle" dominant-baseline="central">4</text>
+
+<g class="length-mark" data-segment="AB">
+<path class="length-arc" d="M 62.335 17.0979 Q 71.4858 35.3437 72.8093 14.9747"/>
+<text class="math-label" x="69.8866" y="23.59" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="EF">
+<path class="length-arc" d="M 31.7841 32.5822 Q 21.0437 22.2092 15.1907 35.9459"/>
+<text class="math-label" x="21.908" y="26.1366" text-anchor="middle" dominant-baseline="central">9</text>
+</g>
+
+<g class="length-mark" data-segment="AD">
+<path class="length-arc" d="M 60.508 15.8868 Q 40.5525 16.6032 59.2117 9.492"/>
+<text class="math-label" x="48.442" y="12.5463" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
 </svg>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="65.0825mm" height="30.3451mm" viewBox="0.9230 7.7800 65.0825 30.3451">
+<svg xmlns="http://www.w3.org/2000/svg" width="65.1825mm" height="30.4451mm" viewBox="0.8731 7.7300 65.1825 30.4451">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_04_fold_opposite; coordinates={"A":[0,0],"B":[13,0],"C":[13,5],"D":[0,5],"E":[1,0],"F":[0,2.4]}; AB=13, AD=5, AE=1. Fold D onto E along CF. CE=13, BE=12, AF=12/5, DF=EF=13/5.</desc>
 <defs><style>

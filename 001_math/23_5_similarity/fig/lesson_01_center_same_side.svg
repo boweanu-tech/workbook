@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="70mm"
-   height="50mm"
-   viewBox="0 0 70 50"
+   width="68.8864mm"
+   height="50.0689mm"
+   viewBox="0.2267 0.0243 68.8864 50.0689"
    version="1.1"
    id="svg48"
    sodipodi:docname="lesson_01_center_same_side.svg"
@@ -45,6 +45,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style>
   </defs>
   <polygon
@@ -127,38 +129,16 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text30">F</text>
-  <rect
-     class="label-bg"
-     x="10.962845"
-     y="44.536423"
-     width="2.7869999"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect32"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="12.356347"
-     y="46.575424"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text34">4</text>
-  <rect
-     class="label-bg"
-     x="26.692444"
-     y="39.082424"
-     width="2.7869999"
-     height="4.0780001"
-     rx="0.30000001"
-     id="rect36"
-     ry="0.30000001" />
-  <text
-     class="math-label"
-     x="28.085945"
-     y="41.121422"
-     text-anchor="middle"
-     dominant-baseline="central"
-     id="text38">3</text>
+  
+  <g class="length-mark" data-segment="OA">
+<path class="length-arc" d="M 2.153 44.548 Q 5.763 26.7954 19.3025 38.8315"/>
+<text class="math-label" x="7.6761" y="32.1426" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
+  
+  <g class="length-mark" data-segment="AD">
+<path class="length-arc" d="M 21.0101 38.2623 Q 25.2355 30.213 33.4454 34.1172"/>
+<text class="math-label" x="25.6624" y="31.1014" text-anchor="middle" dominant-baseline="central">3</text>
+</g>
   <path
      class="thin"
      d="m 20.361845,37.163522 h 2 v 2"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="28.8004mm" height="42.4537mm" viewBox="11.5153 0.0975 28.8004 42.4537">
+<svg xmlns="http://www.w3.org/2000/svg" width="28.9004mm" height="42.5537mm" viewBox="11.4653 0.0475 28.9004 42.5537">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_03_ratio_05; coordinates={"O":[0,0],"A":[4,0],"B":[0.125,6.9988838395847095],"C":[-6,0],"D":[-0.1875,-10.498325759377064]}; Trapezoid with crossing diagonals; x=12.</desc>
 <defs><style>
@@ -11,6 +11,8 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+
+.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="34.8099,16.2198 24.1675,6 17.1901,21.6703 33.1536,37"/>
 <path class="main" d="M 34.8099 16.2198 L 17.1901 21.6703"/>
@@ -22,12 +24,24 @@
 <text class="label" x="23.3686" y="2.5924" text-anchor="middle" dominant-baseline="central">B</text>
 <text class="label" x="13.7438" y="22.281" text-anchor="middle" dominant-baseline="central">C</text>
 <text class="label" x="34.2645" y="40.3191" text-anchor="middle" dominant-baseline="central">D</text>
-<rect class="label-bg" x="27.4944" y="12.2933" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="29.1944" y="14.2933" text-anchor="middle" dominant-baseline="central">4</text>
-<rect class="label-bg" x="21.3275" y="14.2009" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="23.0275" y="16.2009" text-anchor="middle" dominant-baseline="central">6</text>
-<rect class="label-bg" x="30.213" y="6.5854" width="3.4" height="4" rx=".3"/>
-<text class="math-label" x="31.913" y="8.5854" text-anchor="middle" dominant-baseline="central">8</text>
-<rect class="label-bg" x="21.0476" y="29.8596" width="3.4" height="4" rx=".3"/>
-<text class="math-label var" x="22.7476" y="31.8596" text-anchor="middle" dominant-baseline="central">x</text>
+
+<g class="length-mark" data-segment="OA">
+<path class="length-arc" d="M 28.4297 17.5131 Q 25.272 -2.1312 33.758 15.8648"/>
+<text class="math-label" x="27.651" y="5.1789" text-anchor="middle" dominant-baseline="central">4</text>
+</g>
+
+<g class="length-mark" data-segment="OC">
+<path class="length-arc" d="M 27.0942 19.287 Q 25.3574 29.3497 18.242 22.0253"/>
+<text class="math-label" x="24.5447" y="22.9029" text-anchor="middle" dominant-baseline="central">6</text>
+</g>
+
+<g class="length-mark" data-segment="AB">
+<path class="length-arc" d="M 33.7105 16.0653 Q 20.519 20.4505 24.3664 7.0922"/>
+<text class="math-label" x="23.532" y="13.9146" text-anchor="middle" dominant-baseline="central">8</text>
+</g>
+
+<g class="length-mark" data-segment="CD">
+<path class="length-arc" d="M 17.389 22.7625 Q 20.358 34.348 32.0542 36.8455"/>
+<text class="math-label var" x="21.293" y="29.976" text-anchor="middle" dominant-baseline="central">x</text>
+</g>
 </svg>
