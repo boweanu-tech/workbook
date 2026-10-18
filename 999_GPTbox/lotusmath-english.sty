@@ -76,6 +76,11 @@
 \newcommand{\EngText}[1]{{\LMEngTextFont #1}}
 \newcommand{\EngSentence}[1]{{\large\LMEngTextFont #1}}
 
+% 疑問文と返答を同じ文字サイズで並べる。各文・語群の途中で折り返せる。
+\newcommand{\EngDialogue}[2]{%
+  \EngSentence{#1}\enspace---\enspace\EngSentence{#2}%
+}
+
 % 解答で語句を丸で囲む。内容の幅に応じた楕円を本文の基線にそろえる。
 \newsavebox{\LMEngCircleBox}
 \newlength{\LMEngCircleWidth}
@@ -248,7 +253,7 @@
 \newcommand{\EngResponseChoice}[4][1]{%
   \QQTall{%
     \EngSentence{#2}\par
-    #3%
+    {\large\raggedright #3\par}%
     \EngAnswerLines[#1]%
   }{#4}%
 }

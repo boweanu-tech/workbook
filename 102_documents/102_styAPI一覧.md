@@ -333,7 +333,8 @@
 | `\SetEngRuledLineThickness{light}{base}` | 2 | 補助線3本と基線の太さを変更する | 初期値は `0.25pt`、`0.45pt` |
 | `\SetEngSplitGap{length}` | 1 | 左右分割した4本罫の中央の空白幅を変更する | 初期値は `7mm` |
 | `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 解答段の幅に合わせて英文・和訳を折り返す |
-| `\EngResponseChoice[rows]{question}{choices}{answer}` | 4 | 返答の適文選択と和訳欄を出す | 和訳欄は既定1行。疑問文と選んだ返答の両方を訳させる。行高は `\SetEngAnswerLineHeight` で共通調整。選択肢は記号つきで渡す |
+| `\EngDialogue{question}{reply}` | 2 | 疑問文と応答文を同じ文字サイズで並べる | 両方に `\EngSentence` を適用し、間に区切りを置く。選択肢や並べ替え語群も渡せる |
+| `\EngResponseChoice[rows]{question}{choices}{answer}` | 4 | 返答の適文選択と和訳欄を出す | 和訳欄は既定1行。疑問文と選んだ返答の両方を訳させる。行高は `\SetEngAnswerLineHeight` で共通調整。選択肢は記号つきで渡し、英文は疑問文と同じ文字サイズで表示する |
 | `\EngWriteQuestion[rows]{prompt}{answer}` | 3 | 英字4本罫つきの標準小問を出す | 段数は省略可。小問番号を進める |
 | `\EngWriteQuestionSplit{prompt}{answer}` | 2 | 左右2分割の4本罫つき小問を出す | 短い英文を左右に1回ずつ書かせる |
 | `\EngCopy[rows]{english}` | 2 | 英文と英字4本罫の書写欄を出す | 段数は省略可。解答には英文を表示する |
