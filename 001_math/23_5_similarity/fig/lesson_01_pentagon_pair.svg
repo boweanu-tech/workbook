@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="98.4943mm" height="61.0563mm" viewBox="4.9636 0.4226 98.4943 61.0563">
+<svg xmlns="http://www.w3.org/2000/svg" width="98.7943mm" height="61.0563mm" viewBox="4.6636 0.4226 98.7943 61.0563">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_01_pentagon_pair; coordinates={"A":[0,0],"B":[8,0],"C":[8,3],"D":[3,8],"E":[0,5],"H":[24,3],"I":[14.386276613436795,10.181665729247479],"J":[11.69315196496899,6.576519459286278],"F":[13.21318800079132,-3.9205987380954],"G":[19.511458919220324,-3.0085771166020026]}; ABCDE corresponds to HIJFG; scale 3/2. Inner angles 90,90,135,90,135. FG=7.5, IJ=4.5.</desc>
 <defs><style>
@@ -33,22 +33,22 @@
 <text class="angle-label" x="35.1822" y="33.7972" text-anchor="middle" dominant-baseline="central">135°</text>
 
 <g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 13.3536 41.4494 Q 26.6358 35.1494 39.9179 41.4494"/>
-<text class="math-label" x="26.6358" y="36.1994" text-anchor="middle" dominant-baseline="central">8</text>
+<path class="length-arc" d="M 13.3536 42.7494 Q 26.6358 53.0494 39.9179 42.7494"/>
+<text id="length-value-AB" class="math-label" x="26.6358" y="44.2994" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
 
 <g class="length-mark" data-segment="AE">
-<path class="length-arc" d="M 11.8036 41.1994 Q 5.5036 33.2356 11.8036 25.2718"/>
-<text class="math-label" x="6.8536" y="31.1356" text-anchor="middle" dominant-baseline="central">5</text>
+<path class="length-arc" d="M 11.8036 41.1994 Q 8.3036 33.2356 11.8036 25.2718"/>
+<text id="length-value-AE" class="math-label" x="6.5536" y="30.8356" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
 
 <g class="length-mark" data-segment="BC">
-<path class="length-arc" d="M 41.4679 41.1994 Q 47.7679 36.7811 41.4679 32.3628"/>
-<text class="math-label" x="46.4179" y="34.6811" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="length-arc" d="M 41.4679 41.1994 Q 44.9679 36.7811 41.4679 32.3628"/>
+<text id="length-value-BC" class="math-label" x="46.7179" y="34.3811" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="HI">
-<path class="length-arc" d="M 97.2144 30.4034 Q 84.6629 13.1634 64.5706 6.0179"/>
-<text class="math-label" x="83.8549" y="13.5871" text-anchor="middle" dominant-baseline="central">12</text>
+<path class="length-arc" d="M 97.2144 30.4034 Q 82.9872 15.4067 64.5706 6.0179"/>
+<text id="length-value-HI" class="math-label" x="83.5856" y="13.2087" text-anchor="middle" dominant-baseline="central">12</text>
 </g>
 </svg>

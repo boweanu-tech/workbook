@@ -182,14 +182,14 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text46">55°</text>
-  
+
   <g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 6.8655 17.8094 Q 11.8104 28.8645 22.1338 22.5325"/>
-<text class="math-label" x="12.6231" y="22.4178" text-anchor="middle" dominant-baseline="central">6</text>
+<path class="length-arc" d="M 6.8655 17.8094 Q 11.4558 30.0109 22.1338 22.5325"/>
+<text id="length-value-AB" class="math-label" x="12.3276" y="20.291" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
-  
+
   <g class="length-mark" data-segment="EF">
-<path class="length-arc" d="M 63.3287 24.8201 Q 59.7404 11.3485 46.7563 6.272"/>
-<text class="math-label" x="58.7337" y="11.3473" text-anchor="middle" dominant-baseline="central">9</text>
+<path class="length-arc" d="M 63.3287 24.8201 Q 57.6525 13.2141 46.7563 6.272"/>
+<text id="length-value-EF" class="math-label" x="57.988" y="10.7801" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
 </svg>

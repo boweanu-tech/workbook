@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="51.3490mm" height="27.3078mm" viewBox="0.4209 7.4731 51.3490 27.3078">
+<svg xmlns="http://www.w3.org/2000/svg" width="51.3490mm" height="27.7203mm" viewBox="0.4209 7.4731 51.3490 27.7203">
 <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
 <desc>lesson_03_ratio_08; coordinates={"B":[0,0],"C":[10,0],"H":[2,0],"A":[2,4]}; Similarity gives AH^2=BH*CH=16; x=4, no Pythagorean theorem.</desc>
 <defs><style>
@@ -24,17 +24,17 @@
 <text class="label" x="10.5247" y="10.1401" text-anchor="middle" dominant-baseline="central">A</text>
 
 <g class="length-mark" data-segment="BH">
-<path class="length-arc" d="M 6.9604 30.4582 Q 10.6938 36.4153 13.1694 29.8353"/>
-<text class="math-label" x="10.559" y="31.181" text-anchor="middle" dominant-baseline="central">2</text>
+<path class="length-arc" d="M 6.9604 30.4582 Q 10.8136 37.6093 13.1694 29.8353"/>
+<text id="length-value-BH" class="math-label" x="10.6588" y="29.078" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
 
 <g class="length-mark" data-segment="HC">
-<path class="length-arc" d="M 14.9604 29.6556 Q 30.6938 34.4086 45.1694 26.6246"/>
-<text class="math-label" x="30.5591" y="29.1744" text-anchor="middle" dominant-baseline="central">8</text>
+<path class="length-arc" d="M 14.9604 29.6556 Q 30.9534 36.9956 45.1694 26.6246"/>
+<text id="length-value-HC" class="math-label" x="30.7288" y="28.9679" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
 
 <g class="length-mark" data-segment="AH">
-<path class="length-arc" d="M 13.1312 13.9293 Q 20.1126 20.4048 14.5569 28.1383"/>
-<text class="math-label var" x="18.7693" y="18.6193" text-anchor="middle" dominant-baseline="central">x</text>
+<path class="length-arc" d="M 11.8377 14.0591 Q 6.282 21.7926 13.2634 28.2681"/>
+<text id="length-value-AH" class="math-label var" x="5.9338" y="19.0781" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>

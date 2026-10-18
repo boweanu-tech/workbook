@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="30.3350mm" height="41.7327mm" viewBox="7.1260 -5.5591 30.3350 41.7327">
+<svg xmlns="http://www.w3.org/2000/svg" width="30.9131mm" height="39.9738mm" viewBox="6.5479 -3.8003 30.9131 39.9738">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_02_find_09; coordinates={"A":[0,0],"B":[8,0],"C":[3.1875,5.083290641897235],"D":[3,0],"E":[2.125,3.3888604279314896]}; </desc>
 <defs><style>
@@ -25,24 +25,24 @@
 <path class="thin" d="M 28.9598 10.8605 A 3.2 3.2 0 0 0 30.3763 14.5147"/>
 
 <g class="length-mark" data-segment="AD">
-<path class="length-arc" d="M 13.5875 7.4411 Q 8.5361 12.7966 15.6254 14.7817"/>
-<text class="math-label" x="9.8369" y="9.854" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="length-arc" d="M 13.5875 7.4411 Q 11.234 12.0476 15.6254 14.7817"/>
+<text id="length-value-AD" class="math-label" x="9.5478" y="9.1795" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="AE">
-<path class="length-arc" d="M 15.0211 6.0337 Q 21.9736 1.5299 25.3318 9.1025"/>
-<text class="math-label" x="21.5885" y="2.449" text-anchor="middle" dominant-baseline="central">4</text>
+<path class="length-arc" d="M 15.0211 6.0337 Q 21.1749 4.2135 25.3318 9.1025"/>
+<text id="length-value-AE" class="math-label" x="21.3032" y="2.2908" text-anchor="middle" dominant-baseline="central">4</text>
 </g>
 
 
 <g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 13.5875 7.4411 Q 4.8542 21.9641 19.8243 29.9067"/>
-<text class="math-label" x="9.0456" y="18.219" text-anchor="middle" dominant-baseline="central">8</text>
+<path class="length-arc" d="M 13.5875 7.4411 Q 6.974 21.3756 19.8243 29.9067"/>
+<text id="length-value-AB" class="math-label" x="8.4675" y="17.6247" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
 
 
 <g class="length-mark" data-segment="AC">
-<path class="length-arc" d="M 15.0211 6.0337 Q 28.8051 -10.4178 31.3497 10.8936"/>
-<text class="math-label" x="26.5087" y="-3.0771" text-anchor="middle" dominant-baseline="central">6</text>
+<path class="length-arc" d="M 15.0211 6.0337 Q 26.8653 -3.9003 31.3497 10.8936"/>
+<text id="length-value-AC" class="math-label" x="25.6529" y="-1.3183" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
 </svg>

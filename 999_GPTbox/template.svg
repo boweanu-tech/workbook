@@ -115,6 +115,13 @@
         stroke-linecap: round;
         stroke-linejoin: round;
       }
+      .length-arc {
+        stroke: black;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-dasharray: 0.45 1.05;
+        stroke-linecap: round;
+      }
       .axis-arrow {
         fill: black;
         stroke: none;

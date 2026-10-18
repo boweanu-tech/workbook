@@ -27,22 +27,22 @@
 <path class="thin" d="M 17.8871 14.0897 L 16.7343 12.7218 L 18.5203 12.6203"/>
 
 <g class="length-mark" data-segment="AD">
-<path class="length-arc" d="M 10.2419 29.1898 Q 22 33.2345 31.2548 24.9302"/>
-<text class="math-label" x="21.7318" y="28.0473" text-anchor="middle" dominant-baseline="central">9</text>
+<path class="length-arc" d="M 10.2419 29.1898 Q 22.5165 35.7826 31.2548 24.9302"/>
+<text id="length-value-AD" class="math-label" x="22.0695" y="27.8213" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
 
 <g class="length-mark" data-segment="DB">
-<path class="length-arc" d="M 32.7606 23.2986 Q 31.761 3.4005 38.5888 22.1172"/>
-<text class="math-label" x="33.3603" y="10.9542" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="length-arc" d="M 33.0189 24.5726 Q 37.423 31.3324 38.8471 23.3912"/>
+<text id="length-value-DB" class="math-label" x="37.115" y="22.8572" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="BC">
-<path class="length-arc" d="M 39.0307 21.6223 Q 25.7505 9.0393 7.4838 8.0276"/>
-<text class="math-label" x="25.2162" y="9.8321" text-anchor="middle" dominant-baseline="central">14</text>
+<path class="length-arc" d="M 39.0307 21.6223 Q 24.6424 11.6107 7.4838 8.0276"/>
+<text id="length-value-BC" class="math-label" x="25.0381" y="9.6178" text-anchor="middle" dominant-baseline="central">14</text>
 </g>
 
 <g class="length-mark" data-segment="DE">
-<path class="length-arc" d="M 30.9239 24.3552 Q 16.8072 25.1319 7.677 14.3373"/>
-<text class="math-label var" x="17.3415" y="20.1391" text-anchor="middle" dominant-baseline="central">x</text>
+<path class="length-arc" d="M 31.4384 23.1613 Q 21.2001 14.9381 8.1915 13.1434"/>
+<text id="length-value-DE" class="math-label var" x="21.3781" y="12.9452" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>

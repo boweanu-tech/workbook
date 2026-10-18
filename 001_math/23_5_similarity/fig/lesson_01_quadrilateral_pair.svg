@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="63.7773mm"
+   width="66.5890mm"
    height="45.5467mm"
-   viewBox="3.1158 0.4494 63.7773 45.5467"
+   viewBox="0.3038 0.4494 66.5890 45.5467"
    version="1.1"
    id="svg54"
    sodipodi:docname="lesson_01_quadrilateral_pair.svg"
@@ -115,25 +115,25 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text26">F</text>
-  
+
   <g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 9.7234 30.8894 Q 21.8757 39.9894 34.0281 30.8894"/>
-<text class="math-label" x="21.8757" y="33.3394" text-anchor="middle" dominant-baseline="central">10</text>
+<path class="length-arc" d="M 9.7234 30.8894 Q 21.8757 41.1894 34.0281 30.8894"/>
+<text id="length-value-AB" class="math-label" x="21.8757" y="32.4394" text-anchor="middle" dominant-baseline="central">10</text>
 </g>
-  
+
   <g class="length-mark" data-segment="CD">
-<path class="length-arc" d="M 26.1967 23.058 Q 17.96 32.158 9.7234 23.058"/>
-<text class="math-label" x="17.96" y="25.508" text-anchor="middle" dominant-baseline="central">7</text>
+<path class="length-arc" d="M 26.1967 21.758 Q 17.96 18.258 9.7234 21.758"/>
+<text id="length-value-CD" class="math-label" x="17.96" y="16.408" text-anchor="middle" dominant-baseline="central">7</text>
 </g>
-  
+
   <g class="length-mark" data-segment="AD">
-<path class="length-arc" d="M 9.4734 29.3394 Q 15.7734 26.3237 9.4734 23.308"/>
-<text class="math-label" x="14.4234" y="24.2237" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="length-arc" d="M 8.1734 29.3394 Q 3.2734 26.3237 8.1734 23.308"/>
+<text id="length-value-AD" class="math-label" x="2.2234" y="23.9237" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
-  
+
   <g class="length-mark" data-segment="GH">
-<path class="length-arc" d="M 61.2967 34.3302 Q 56.1661 16.5764 40.8483 6.2378"/>
-<text class="math-label" x="55.0746" y="16.3302" text-anchor="middle" dominant-baseline="central">14</text>
+<path class="length-arc" d="M 61.2967 34.3302 Q 53.9023 18.2243 40.8483 6.2378"/>
+<text id="length-value-GH" class="math-label" x="54.7108" y="15.6541" text-anchor="middle" dominant-baseline="central">14</text>
 </g>
   <path
      class="thin"

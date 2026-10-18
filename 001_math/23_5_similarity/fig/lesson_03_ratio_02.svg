@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="29.7447mm" height="35.7354mm" viewBox="7.7228 -0.0096 29.7447 35.7354">
+<svg xmlns="http://www.w3.org/2000/svg" width="29.2393mm" height="34.5360mm" viewBox="8.2281 1.1899 29.2393 34.5360">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_03_ratio_02; coordinates={"O":[0,0],"A":[6,0],"B":[-0.25,4.993746088859544],"C":[-8.399999999999999,0],"D":[0.35,-6.991244524403362]}; Construction: lesson_03_ratio_11</desc>
 <defs><style>
@@ -29,22 +29,22 @@
 <text class="label" x="24.5827" y="16.4833" text-anchor="middle" dominant-baseline="central">O</text>
 
 <g class="length-mark" data-segment="OA">
-<path class="length-arc" d="M 21.3786 15.3732 Q 23.332 7.3516 15.0983 6.7451"/>
-<text class="math-label" x="22.2405" y="7.1054" text-anchor="middle" dominant-baseline="central">6</text>
+<path class="length-arc" d="M 21.3786 15.3732 Q 21.0682 8.9994 15.0983 6.7451"/>
+<text id="length-value-OA" class="math-label" x="21.432" y="6.4293" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
 
 <g class="length-mark" data-segment="OC">
-<path class="length-arc" d="M 21.3869 17.5935 Q 20.9014 27.6318 30.603 30.2549"/>
-<text class="math-label" x="21.9929" y="23.678" text-anchor="middle" dominant-baseline="central">8.4</text>
+<path class="length-arc" d="M 21.3869 17.5935 Q 17.6674 29.9858 30.603 30.2549"/>
+<text id="length-value-OC" class="math-label" x="16.7579" y="24.555" text-anchor="middle" dominant-baseline="central">8.4</text>
 </g>
 
 <g class="length-mark" data-segment="OB">
-<path class="length-arc" d="M 20.2742 16.543 Q 4.5558 3.9143 13.5882 21.9411"/>
-<text class="math-label" x="9.6128" y="9.4782" text-anchor="middle" dominant-baseline="central">5</text>
+<path class="length-arc" d="M 21.0908 17.5545 Q 24.2182 28.2675 14.4049 22.9526"/>
+<text id="length-value-OB" class="math-label" x="23.9983" y="21.8605" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
 
 <g class="length-mark" data-segment="OD">
-<path class="length-arc" d="M 21.6747 15.4122 Q 14.2595 -3.9203 31.5951 7.4026"/>
-<text class="math-label var" x="19.3165" y="1.6436" text-anchor="middle" dominant-baseline="central">x</text>
+<path class="length-arc" d="M 21.6747 15.4122 Q 24.4362 8.6842 31.5951 7.4026"/>
+<text id="length-value-OD" class="math-label var" x="24.1535" y="5.2458" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>

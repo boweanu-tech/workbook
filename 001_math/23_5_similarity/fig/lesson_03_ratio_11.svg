@@ -22,29 +22,29 @@
 <path class="thin" d="M 23.8141 9.5473 A 3.8 3.8 0 0 0 25.4021 8.3946"/>
 <path class="thin" d="M 19.3945 34.243 A 3.1 3.1 0 0 0 17.8301 33.9035"/>
 <path class="thin" d="M 19.7146 33.6205 A 3.8 3.8 0 0 0 17.7969 33.2043"/>
-<text class="label" x="28.6546" y="21.9034" text-anchor="middle" dominant-baseline="central">O</text>
+<text class="label" x="29.3" y="15.5" text-anchor="middle" dominant-baseline="central">O</text>
 <text class="label" x="38.6474" y="15.7947" text-anchor="middle" dominant-baseline="central">A</text>
 <text class="label" x="22.0198" y="2.5267" text-anchor="middle" dominant-baseline="central">B</text>
 <text class="label" x="14.0711" y="10.2406" text-anchor="middle" dominant-baseline="central">C</text>
 <text class="label" x="16.9212" y="40.3369" text-anchor="middle" dominant-baseline="central">D</text>
 
 <g class="length-mark" data-segment="OA">
-<path class="length-arc" d="M 28.4053 19.1172 Q 34.1528 26.8648 34.5221 17.2251"/>
-<text class="math-label" x="33.3402" y="20.418" text-anchor="middle" dominant-baseline="central">3</text>
+<path class="length-arc" d="M 27.8376 18.9144 Q 31.5 28 34.7187 16.7859"/>
+<text id="length-value-OA" class="math-label" x="32.2" y="20" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="OC">
-<path class="length-arc" d="M 26.2471 18.8552 Q 17.0556 23.9454 17.2463 13.4403"/>
-<text class="math-label" x="18.4733" y="17.9466" text-anchor="middle" dominant-baseline="central">4.5</text>
+<path class="length-arc" d="M 26.9675 18.8014 Q 23.5 25.5 17.2811 12.9741"/>
+<text id="length-value-OC" class="math-label" x="21.5" y="18.6" text-anchor="middle" dominant-baseline="central">4.5</text>
 </g>
 
 <g class="length-mark" data-segment="OB">
-<path class="length-arc" d="M 27.6375 17.689 Q 43.8994 5.0846 23.3811 6.6071"/>
-<text class="math-label" x="36.3847" y="6.5163" text-anchor="middle" dominant-baseline="central">5</text>
+<path class="length-arc" d="M 26.8752 18.3204 Q 17.5 13 22.3319 6.4918"/>
+<text id="length-value-OB" class="math-label" x="20" y="10.5" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
 
 <g class="length-mark" data-segment="OD">
-<path class="length-arc" d="M 27.52 19.8598 Q 40.7635 37.1857 18.9667 36.4968"/>
-<text class="math-label var" x="33.6043" y="30.582" text-anchor="middle" dominant-baseline="central">x</text>
+<path class="length-arc" d="M 27.3936 19.34 Q 33 33 18.4745 36.6885"/>
+<text id="length-value-OD" class="math-label var" x="31" y="25.2" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>

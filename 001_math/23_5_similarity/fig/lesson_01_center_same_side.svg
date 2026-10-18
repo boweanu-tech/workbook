@@ -45,8 +45,6 @@
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
-
-.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style>
   </defs>
   <polygon
@@ -129,16 +127,10 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text30">F</text>
-  
-  <g class="length-mark" data-segment="OA">
-<path class="length-arc" d="M 2.153 44.548 Q 5.763 26.7954 19.3025 38.8315"/>
-<text class="math-label" x="7.6761" y="32.1426" text-anchor="middle" dominant-baseline="central">4</text>
-</g>
-  
-  <g class="length-mark" data-segment="AD">
-<path class="length-arc" d="M 21.0101 38.2623 Q 25.2355 30.213 33.4454 34.1172"/>
-<text class="math-label" x="25.6624" y="31.1014" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
+
+
+
+
   <path
      class="thin"
      d="m 20.361845,37.163522 h 2 v 2"
