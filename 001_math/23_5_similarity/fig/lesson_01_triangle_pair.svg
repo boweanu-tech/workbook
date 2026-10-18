@@ -22,14 +22,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:zoom="1.172902"
-     inkscape:cx="207.17843"
-     inkscape:cy="220.39351"
-     inkscape:window-width="1920"
-     inkscape:window-height="995"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:zoom="1.6587339"
+     inkscape:cx="30.444907"
+     inkscape:cy="127.50689"
+     inkscape:window-width="1825"
+     inkscape:window-height="991"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg56" />
   <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
   <desc
@@ -68,29 +68,29 @@
      id="text12">A</text>
   <text
      class="label"
-     x="21.555632"
-     y="25.04681"
+     x="23.839542"
+     y="24.758635"
      text-anchor="middle"
      dominant-baseline="central"
      id="text14">B</text>
   <text
      class="label"
-     x="21.407629"
-     y="4.8639097"
+     x="25.237408"
+     y="3.7211757"
      text-anchor="middle"
      dominant-baseline="central"
      id="text16">C</text>
   <text
      class="label"
-     x="66.738747"
-     y="25.744974"
+     x="66.192924"
+     y="25.699177"
      text-anchor="middle"
      dominant-baseline="central"
      id="text18">E</text>
   <text
      class="label"
-     x="47.354538"
-     y="3.1951745"
+     x="46.213985"
+     y="3.747849"
      text-anchor="middle"
      dominant-baseline="central"
      id="text20">F</text>
@@ -105,19 +105,10 @@
      class="thin"
      d="m 9.2549312,17.86821 a 3.2,3.2 0 0 0 -0.3087,-2.5847"
      id="path24" />
-  <rect
-     class="label-bg"
-     x="9.6691294"
-     y="14.406509"
-     width="5.7670002"
-     height="3.5139999"
-     rx="0.30000001"
-     id="rect26"
-     ry="0.30000001" />
   <text
      class="angle-label"
-     x="12.552629"
-     y="16.163509"
+     x="12.234234"
+     y="16.510567"
      text-anchor="middle"
      dominant-baseline="central"
      id="text28">48°</text>
@@ -136,8 +127,8 @@
      ry="0.30000001" />
   <text
      class="angle-label"
-     x="19.578131"
-     y="16.891209"
+     x="20.670551"
+     y="17.613205"
      text-anchor="middle"
      dominant-baseline="central"
      id="text34">77°</text>
@@ -145,19 +136,10 @@
      class="thin"
      d="m 61.311536,23.537974 a 3.2,3.2 0 0 0 -1.0679,2.374"
      id="path36" />
-  <rect
-     class="label-bg"
-     x="54.723434"
-     y="21.541773"
-     width="5.7670002"
-     height="3.5139999"
-     rx="0.30000001"
-     id="rect38"
-     ry="0.30000001" />
   <text
      class="angle-label"
-     x="57.606934"
-     y="23.298773"
+     x="57.781086"
+     y="23.669195"
      text-anchor="middle"
      dominant-baseline="central"
      id="text40">48°</text>
@@ -165,24 +147,11 @@
      class="thin"
      d="m 34.916536,25.814874 a 3.2,3.2 0 0 0 -1.3545,-2.6265"
      id="path42" />
-  <rect
-     class="label-bg"
-     x="34.521133"
-     y="21.112173"
-     width="5.7670002"
-     height="3.5139999"
-     rx="0.30000001"
-     id="rect44"
-     ry="0.30000001" />
   <text
      class="angle-label"
-     x="37.404633"
-     y="22.869173"
+     x="37.660721"
+     y="23.824982"
      text-anchor="middle"
      dominant-baseline="central"
      id="text46">55°</text>
-
-
-
-
 </svg>

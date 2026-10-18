@@ -21,11 +21,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.658734"
-     inkscape:cx="291.18593"
-     inkscape:cy="188.3967"
+     inkscape:zoom="2.3458041"
+     inkscape:cx="171.7961"
+     inkscape:cy="141.31615"
      inkscape:window-width="1920"
-     inkscape:window-height="995"
+     inkscape:window-height="1043"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -60,8 +60,8 @@
      transform="translate(-35.024731,-3.1073141)" />
   <text
      class="label"
-     x="5.5523653"
-     y="30.675724"
+     x="7.015111"
+     y="31.80715"
      text-anchor="middle"
      dominant-baseline="central"
      id="text12">A</text>
@@ -74,15 +74,15 @@
      id="text14">B</text>
   <text
      class="label"
-     x="24.833864"
-     y="20.145224"
+     x="27.739088"
+     y="20.318815"
      text-anchor="middle"
      dominant-baseline="central"
      id="text16">C</text>
   <text
      class="label"
-     x="5.5496645"
-     y="21.992525"
+     x="7.0058017"
+     y="20.791046"
      text-anchor="middle"
      dominant-baseline="central"
      id="text18">D</text>
@@ -102,8 +102,8 @@
      id="text22">H</text>
   <text
      class="label"
-     x="40.23827"
-     y="19.557884"
+     x="35.287403"
+     y="21.603525"
      text-anchor="middle"
      dominant-baseline="central"
      id="text24">E</text>
@@ -114,27 +114,10 @@
      text-anchor="middle"
      dominant-baseline="central"
      id="text26">F</text>
-
-
-
-
-
-
-
-
   <path
      class="thin"
      d="m 31.728065,30.239424 a 3.2,3.2 0 0 1 0.9372,-2.2628"
      id="path44" />
-  <rect
-     class="label-bg"
-     x="26.131666"
-     y="26.733225"
-     width="5.7670002"
-     height="3.5139999"
-     rx="0.30000001"
-     id="rect46"
-     ry="0.30000001" />
   <text
      class="angle-label"
      x="29.015165"
