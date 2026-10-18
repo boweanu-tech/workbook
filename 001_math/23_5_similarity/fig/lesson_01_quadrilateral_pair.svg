@@ -46,7 +46,6 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
 
-.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style>
   </defs>
   <polygon
@@ -116,25 +115,13 @@
      dominant-baseline="central"
      id="text26">F</text>
 
-  <g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 9.7234 30.8894 Q 21.8757 41.1894 34.0281 30.8894"/>
-<text id="length-value-AB" class="math-label" x="21.8757" y="32.4394" text-anchor="middle" dominant-baseline="central">10</text>
-</g>
 
-  <g class="length-mark" data-segment="CD">
-<path class="length-arc" d="M 26.1967 21.758 Q 17.96 18.258 9.7234 21.758"/>
-<text id="length-value-CD" class="math-label" x="17.96" y="16.408" text-anchor="middle" dominant-baseline="central">7</text>
-</g>
 
-  <g class="length-mark" data-segment="AD">
-<path class="length-arc" d="M 8.1734 29.3394 Q 3.2734 26.3237 8.1734 23.308"/>
-<text id="length-value-AD" class="math-label" x="2.2234" y="23.9237" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
 
-  <g class="length-mark" data-segment="GH">
-<path class="length-arc" d="M 61.2967 34.3302 Q 53.9023 18.2243 40.8483 6.2378"/>
-<text id="length-value-GH" class="math-label" x="54.7108" y="15.6541" text-anchor="middle" dominant-baseline="central">14</text>
-</g>
+
+
+
+
   <path
      class="thin"
      d="m 31.728065,30.239424 a 3.2,3.2 0 0 1 0.9372,-2.2628"

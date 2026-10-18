@@ -12,7 +12,6 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 
-.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style></defs>
 <polygon class="main" points="12.4536,42.0994 40.8179,42.0994 40.8179,31.4628 23.0902,13.7352 12.4536,24.3718"/>
 <polygon class="main" points="97.5464,31.4628 63.4606,6 53.9121,18.7822 59.3014,56 81.6321,52.7664"/>
@@ -32,23 +31,11 @@
 <text class="label" x="84.5916" y="54.635" text-anchor="middle" dominant-baseline="central">G</text>
 <text class="angle-label" x="35.1822" y="33.7972" text-anchor="middle" dominant-baseline="central">135°</text>
 
-<g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 13.3536 42.7494 Q 26.6358 53.0494 39.9179 42.7494"/>
-<text id="length-value-AB" class="math-label" x="26.6358" y="44.2994" text-anchor="middle" dominant-baseline="central">8</text>
-</g>
 
-<g class="length-mark" data-segment="AE">
-<path class="length-arc" d="M 11.8036 41.1994 Q 8.3036 33.2356 11.8036 25.2718"/>
-<text id="length-value-AE" class="math-label" x="6.5536" y="30.8356" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
 
-<g class="length-mark" data-segment="BC">
-<path class="length-arc" d="M 41.4679 41.1994 Q 44.9679 36.7811 41.4679 32.3628"/>
-<text id="length-value-BC" class="math-label" x="46.7179" y="34.3811" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
 
-<g class="length-mark" data-segment="HI">
-<path class="length-arc" d="M 97.2144 30.4034 Q 82.9872 15.4067 64.5706 6.0179"/>
-<text id="length-value-HI" class="math-label" x="83.5856" y="13.2087" text-anchor="middle" dominant-baseline="central">12</text>
-</g>
+
+
+
+
 </svg>

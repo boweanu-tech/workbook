@@ -47,7 +47,6 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
 
-.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
 </style>
   </defs>
   <polygon
@@ -183,13 +182,7 @@
      dominant-baseline="central"
      id="text46">55°</text>
 
-  <g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 6.8655 17.8094 Q 11.4558 30.0109 22.1338 22.5325"/>
-<text id="length-value-AB" class="math-label" x="12.3276" y="20.6910" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
 
-  <g class="length-mark" data-segment="EF">
-<path class="length-arc" d="M 63.3287 24.8201 Q 57.6525 13.2141 46.7563 6.272"/>
-<text id="length-value-EF" class="math-label" x="57.988" y="10.7801" text-anchor="middle" dominant-baseline="central">9</text>
-</g>
+
+
 </svg>
