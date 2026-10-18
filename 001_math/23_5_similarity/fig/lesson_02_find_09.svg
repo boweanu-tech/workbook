@@ -1,48 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="30.9131mm" height="39.9738mm" viewBox="6.5479 -3.8003 30.9131 39.9738">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_09; coordinates={"A":[0,0],"B":[8,0],"C":[3.1875,5.083290641897235],"D":[3,0],"E":[2.125,3.3888604279314896]}; </desc>
-<defs><style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="30.9131mm"
+   height="39.9738mm"
+   viewBox="6.5479 -3.8003 30.9131 39.9738"
+   version="1.1"
+   id="svg46"
+   sodipodi:docname="lesson_02_find_09.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview48"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.288516"
+     inkscape:cx="46.137707"
+     inkscape:cy="97.47536"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg46" />
+  <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+  <desc
+     id="desc2">lesson_02_find_09; coordinates={&quot;A&quot;:[0,0],&quot;B&quot;:[8,0],&quot;C&quot;:[3.1875,5.083290641897235],&quot;D&quot;:[3,0],&quot;E&quot;:[2.125,3.3888604279314896]}; </desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
-.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
 .label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
-.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
 
 .length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
-</style></defs>
-<polygon class="main" points="13.9731,6.4 20.6914,30.6 32.0269,11.7733"/>
-<line class="main" x1="16.4925" y1="15.475" x2="26.009" y2="9.9822"/>
-<text class="label" x="11.7241" y="3.985" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="20.4517" y="33.8913" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="35.1863" y="10.8204" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="13.2151" y="15.8605" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="28.157" y="7.477" text-anchor="middle" dominant-baseline="central">E</text>
-<path class="thin" d="M 15.6365 12.3916 A 3.2 3.2 0 0 1 19.264 13.8753"/>
-<path class="thin" d="M 28.9598 10.8605 A 3.2 3.2 0 0 0 30.3763 14.5147"/>
-
-<g class="length-mark" data-segment="AD">
-<path class="length-arc" d="M 13.5875 7.4411 Q 11.234 12.0476 15.6254 14.7817"/>
-<text id="length-value-AD" class="math-label" x="9.5478" y="9.1795" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
-
-<g class="length-mark" data-segment="AE">
-<path class="length-arc" d="M 15.0211 6.0337 Q 21.1749 4.2135 25.3318 9.1025"/>
-<text id="length-value-AE" class="math-label" x="21.3032" y="0.6908" text-anchor="middle" dominant-baseline="central">4</text>
-</g>
-
-
-<g class="length-mark" data-segment="AB">
-<path class="length-arc" d="M 13.5875 7.4411 Q 6.974 21.3756 19.8243 29.9067"/>
-<text id="length-value-AB" class="math-label" x="8.4675" y="17.6247" text-anchor="middle" dominant-baseline="central">8</text>
-</g>
-
-
-<g class="length-mark" data-segment="AC">
-<path class="length-arc" d="M 15.0211 6.0337 Q 26.8653 -3.9003 31.3497 10.8936"/>
-<text id="length-value-AC" class="math-label" x="25.6529" y="-1.3183" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
+</style>
+  </defs>
+  <polygon
+     class="main"
+     points="13.9731,6.4 20.6914,30.6 32.0269,11.7733"
+     id="polygon8" />
+  <line
+     class="main"
+     x1="16.4925"
+     y1="15.475"
+     x2="26.009"
+     y2="9.9822"
+     id="line10" />
+  <text
+     class="label"
+     x="11.7241"
+     y="3.985"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text12">A</text>
+  <text
+     class="label"
+     x="20.4517"
+     y="33.8913"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text14">B</text>
+  <text
+     class="label"
+     x="35.1863"
+     y="10.8204"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text16">C</text>
+  <text
+     class="label"
+     x="18.979078"
+     y="17.12258"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text18">D</text>
+  <text
+     class="label"
+     x="26.760857"
+     y="8.1369638"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text20">E</text>
+  <path
+     class="thin"
+     d="M 15.6365 12.3916 A 3.2 3.2 0 0 1 19.264 13.8753"
+     id="path22" />
+  <path
+     class="thin"
+     d="M 28.9598 10.8605 A 3.2 3.2 0 0 0 30.3763 14.5147"
+     id="path24" />
+  <g
+     class="length-mark"
+     data-segment="AD"
+     id="g29">
+    <path
+       class="length-arc"
+       d="m 13.5875,7.4411 c -0.08609,2.752646 0.320769,5.374536 2.905,8.0339"
+       id="path26"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-AD"
+       class="math-label"
+       x="13.807758"
+       y="15.434787"
+       text-anchor="middle"
+       dominant-baseline="central">3</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="AE"
+     id="g34">
+    <path
+       class="length-arc"
+       d="m 15.0211,6.0337 c 4.102533,-1.2134667 8.216634,0.6891663 10.987901,3.9484997"
+       id="path31"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-AE"
+       class="math-label"
+       x="21.474005"
+       y="4.25425"
+       text-anchor="middle"
+       dominant-baseline="central">4</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="AB"
+     id="g39">
+    <path
+       class="length-arc"
+       d="M 13.5875 7.4411 Q 6.974 21.3756 19.8243 29.9067"
+       id="path36" />
+    <text
+       id="length-value-AB"
+       class="math-label"
+       x="10.214634"
+       y="19.424601"
+       text-anchor="middle"
+       dominant-baseline="central">8</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="AC"
+     id="g44">
+    <path
+       class="length-arc"
+       d="m 15.0211,6.0337 c 7.896133,-6.62266667 14.0162,-4.123 17.0058,5.7396"
+       id="path41"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-AC"
+       class="math-label"
+       x="26.224335"
+       y="1.3608342"
+       text-anchor="middle"
+       dominant-baseline="central">6</text>
+  </g>
 </svg>
