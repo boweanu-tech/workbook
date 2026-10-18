@@ -3,17 +3,36 @@
 \SetRowSpace{3mm}
 
 \TypeQuestion{図から相似な三角形の組をすべて見つけ、対応する頂点の順に相似を表しなさい。また、相似条件を書きなさい。辺の長さの単位は $\mathrm{cm}$ とする。}{triangle_similarity_select_pairs}
-\WholeQuestion{\LMFigBlock[132mm]{fig/lesson_02_pairs_01}}{}
+\WholeQuestion{\LMFigBlock[132mm]{fig/lesson_02_pairs_01}}{\begin{tabular}[t]{@{}l@{}}$\Tri{ABC}\sim\Tri{GHI}$\\3組の辺の比がすべて等しい。\\[2mm]$\Tri{DEF}\sim\Tri{UST}$\\2組の角がそれぞれ等しい。\\[2mm]$\Tri{MNO}\sim\Tri{VWX}$\\2組の辺の比が等しく、\\その間の角が等しい。\end{tabular}}
 
 \TypeQuestion{図から相似な三角形の組をすべて見つけ、対応する頂点の順に相似を表しなさい。また、相似条件を書きなさい。辺の長さの単位は $\mathrm{cm}$ とする。}{triangle_similarity_select_pairs}
-\WholeQuestion{\LMFigBlock[132mm]{fig/lesson_02_pairs_02}}{}
+\WholeQuestion{\LMFigBlock[132mm]{fig/lesson_02_pairs_02}}{\begin{tabular}[t]{@{}l@{}}$\Tri{ABC}\sim\Tri{JLK}$\\2組の角がそれぞれ等しい。\\[2mm]$\Tri{DEF}\sim\Tri{VWX}$\\2組の辺の比が等しく、\\その間の角が等しい。\\[2mm]$\Tri{GHI}\sim\Tri{RPQ}$\\2組の角がそれぞれ等しい。\\[2mm]$\Tri{MNO}\sim\Tri{STU}$\\3組の辺の比がすべて等しい。\end{tabular}}
 
+\AnswerColumnBreak
 \LessonQuestionBreak
 \SetRowSpace{4mm}
 
 \TypeQuestion{}{triangle_similarity_find_in_figure}
 \Text{それぞれの図から相似な三角形を1組見つけ、対応する頂点の順に相似を表しなさい。また、相似条件を書きなさい。同じ印をつけた角は等しく、同じ平行の印をつけた線分は平行である。長さの単位は $\mathrm{cm}$ とする。}
+% 解答は相似条件が読める幅を確保して縦に並べる（問題の図の配列は変更しない）。
+\ifLMAnswerMode
+\SetRowSpace{3mm}
+\QQ{}{$\Tri{ADE}\sim\Tri{ABC}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{OAB}\sim\Tri{OCD}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{ADE}\sim\Tri{ACB}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{OAB}\sim\Tri{OCD}$\\3組の辺の比がすべて等しい。}
+\QQ{}{$\Tri{ABC}\sim\Tri{BCD}$\\2組の辺の比が等しく、\\その間の角が等しい。}
+\QQ{}{$\Tri{OAB}\sim\Tri{OCD}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{ABC}\sim\Tri{BDC}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{ABH}\sim\Tri{CAH}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{ADE}\sim\Tri{ACB}$\\2組の辺の比が等しく、\\その間の角が等しい。}
+\QQ{}{$\Tri{ADE}\sim\Tri{ACB}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{OAB}\sim\Tri{ODC}$\\2組の角がそれぞれ等しい。}
+\QQ{}{$\Tri{ABC}\sim\Tri{EDC}$\\2組の角がそれぞれ等しい。}
+\SetRowSpace{4mm}
+\else
 \QQFigRowThree[36mm]{fig/lesson_02_find_01}{}{fig/lesson_02_find_02}{}{fig/lesson_02_find_03}{}
 \QQFigRowThree[36mm]{fig/lesson_02_find_04}{}{fig/lesson_02_find_05}{}{fig/lesson_02_find_06}{}
 \QQFigRowThree[36mm]{fig/lesson_02_find_07}{}{fig/lesson_02_find_08}{}{fig/lesson_02_find_09}{}
 \QQFigRowThree[36mm]{fig/lesson_02_find_10}{}{fig/lesson_02_find_11}{}{fig/lesson_02_find_12}{}
+\fi
