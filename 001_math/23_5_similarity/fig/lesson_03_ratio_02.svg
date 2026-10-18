@@ -1,50 +1,199 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="29.2393mm" height="34.5360mm" viewBox="8.2281 1.1899 29.2393 34.5360">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_03_ratio_02; coordinates={"O":[0,0],"A":[6,0],"B":[-0.25,4.993746088859544],"C":[-8.399999999999999,0],"D":[0.35,-6.991244524403362]}; Construction: lesson_03_ratio_11</desc>
-<defs><style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="29.2393mm"
+   height="34.5360mm"
+   viewBox="8.2281 1.1899 29.2393 34.5360"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="lesson_03_ratio_02.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="6.1212094"
+     inkscape:cx="55.217846"
+     inkscape:cy="65.264881"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+  <desc
+     id="desc2">lesson_03_ratio_02; coordinates={&quot;O&quot;:[0,0],&quot;A&quot;:[6,0],&quot;B&quot;:[-0.25,4.993746088859544],&quot;C&quot;:[-8.399999999999999,0],&quot;D&quot;:[0.35,-6.991244524403362]}; Construction: lesson_03_ratio_11</desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
-.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
 .label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
-.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
 
 .length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
-</style></defs>
-<line class="main" x1="14.0431" y1="6.4" x2="31.6582" y2="30.6"/>
-<line class="main" x1="13.2963" y1="23.0122" x2="32.7037" y2="7.343"/>
-<line class="main" x1="14.0431" y1="6.4" x2="13.2963" y2="23.0122"/>
-<line class="main" x1="31.6582" y1="30.6" x2="32.7037" y2="7.343"/>
-<path class="thin" d="M 14.5497 12.9438 L 13.6787 14.5063 L 12.9513 12.872"/>
-<path class="thin" d="M 14.4779 14.5422 L 13.6068 16.1047 L 12.8795 14.4704"/>
-<path class="thin" d="M 31.3009 20.7337 L 32.172 19.1713 L 32.8993 20.8056"/>
-<path class="thin" d="M 31.3728 19.1354 L 32.2438 17.5729 L 32.9712 19.2072"/>
-<text class="label" x="11.9401" y="3.8569" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="10.5547" y="24.8489" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="33.4637" y="33.3623" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="35.115" y="5.09" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="24.5827" y="16.4833" text-anchor="middle" dominant-baseline="central">O</text>
-
-<g class="length-mark" data-segment="OA">
-<path class="length-arc" d="M 21.3786 15.3732 Q 21.0682 8.9994 15.0983 6.7451"/>
-<text id="length-value-OA" class="math-label" x="21.432" y="6.4293" text-anchor="middle" dominant-baseline="central">6</text>
-</g>
-
-<g class="length-mark" data-segment="OC">
-<path class="length-arc" d="M 21.3869 17.5935 Q 17.6674 29.9858 30.603 30.2549"/>
-<text id="length-value-OC" class="math-label" x="24.7" y="26" text-anchor="middle" dominant-baseline="central">8.4</text>
-</g>
-
-<g class="length-mark" data-segment="OB">
-<path class="length-arc" d="M 21.0908 17.5545 Q 24.2182 28.2675 14.4049 22.9526"/>
-<text id="length-value-OB" class="math-label" x="23.1983" y="21.8605" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
-
-<g class="length-mark" data-segment="OD">
-<path class="length-arc" d="M 21.6747 15.4122 Q 24.4362 8.6842 31.5951 7.4026"/>
-<text id="length-value-OD" class="math-label var" x="24.1535" y="5.2458" text-anchor="middle" dominant-baseline="central">x</text>
-</g>
+</style>
+  </defs>
+  <line
+     class="main"
+     x1="14.0431"
+     y1="6.4"
+     x2="31.6582"
+     y2="30.6"
+     id="line8" />
+  <line
+     class="main"
+     x1="13.2963"
+     y1="23.0122"
+     x2="32.7037"
+     y2="7.343"
+     id="line10" />
+  <line
+     class="main"
+     x1="14.0431"
+     y1="6.4"
+     x2="13.2963"
+     y2="23.0122"
+     id="line12" />
+  <line
+     class="main"
+     x1="31.6582"
+     y1="30.6"
+     x2="32.7037"
+     y2="7.343"
+     id="line14" />
+  <path
+     class="thin"
+     d="M 14.5497 12.9438 L 13.6787 14.5063 L 12.9513 12.872"
+     id="path16" />
+  <path
+     class="thin"
+     d="M 14.4779 14.5422 L 13.6068 16.1047 L 12.8795 14.4704"
+     id="path18" />
+  <path
+     class="thin"
+     d="M 31.3009 20.7337 L 32.172 19.1713 L 32.8993 20.8056"
+     id="path20" />
+  <path
+     class="thin"
+     d="M 31.3728 19.1354 L 32.2438 17.5729 L 32.9712 19.2072"
+     id="path22" />
+  <text
+     class="label"
+     x="11.9401"
+     y="3.8569"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">A</text>
+  <text
+     class="label"
+     x="10.5547"
+     y="24.8489"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">B</text>
+  <text
+     class="label"
+     x="33.4637"
+     y="33.3623"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text28">C</text>
+  <text
+     class="label"
+     x="35.115"
+     y="5.09"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text30">D</text>
+  <text
+     class="label"
+     x="24.03801"
+     y="16.909462"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text32">O</text>
+  <g
+     class="length-mark"
+     data-segment="OA"
+     id="g37">
+    <path
+       class="length-arc"
+       d="M 21.424214,16.625687 C 20.661203,12.421722 17.175282,7.9718291 14.0431,6.4000001"
+       id="path34"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OA"
+       class="math-label"
+       x="19.518322"
+       y="8.4848051"
+       text-anchor="middle"
+       dominant-baseline="central">6</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="OC"
+     id="g42">
+    <path
+       class="length-arc"
+       d="M 21.424214,16.625687 C 23.064195,22.0069 26.124426,28.260203 31.658199,30.6"
+       id="path39"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OC"
+       class="math-label"
+       x="22.524279"
+       y="26.504675"
+       text-anchor="middle"
+       dominant-baseline="central">8.4</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="OB"
+     id="g47">
+    <path
+       class="length-arc"
+       d="m 21.424214,16.625687 c -1.284768,2.759065 -3.942585,5.607125 -8.127914,6.386512"
+       id="path44"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OB"
+       class="math-label"
+       x="19.360647"
+       y="22.558668"
+       text-anchor="middle"
+       dominant-baseline="central">5</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="OD"
+     id="g52">
+    <path
+       class="length-arc"
+       d="m 21.424214,16.625687 c 1.445905,-4.69605 6.636053,-8.827434 11.279487,-9.2826871"
+       id="path49"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OD"
+       class="math-label var"
+       x="24.551971"
+       y="8.3619823"
+       text-anchor="middle"
+       dominant-baseline="central">x</text>
+  </g>
 </svg>
