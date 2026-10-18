@@ -68,7 +68,7 @@
 
 <g class="length-mark" data-segment="NM">
 <path class="length-arc" d="M 6.6696 18.8075 Q 5.2428 31.0726 17.0869 27.5819"/>
-<text id="length-value-NM" class="math-label" x="6.1931" y="22.3336" text-anchor="middle" dominant-baseline="central">7.5</text>
+<text id="length-value-NM" class="math-label" x="3.7931" y="22.3336" text-anchor="middle" dominant-baseline="central">7.5</text>
 </g>
 
 <g class="length-mark" data-segment="MO">
@@ -104,7 +104,7 @@
 
 <g class="length-mark" data-segment="SU">
 <path class="length-arc" d="M 28.8356 25.1022 Q 19.7647 35.8637 7.4046 29.1318"/>
-<text id="length-value-SU" class="math-label" x="19.349" y="27.8904" text-anchor="middle" dominant-baseline="central">7</text>
+<text id="length-value-SU" class="math-label" x="19.3490" y="28.2904" text-anchor="middle" dominant-baseline="central">7</text>
 </g>
 
 <g class="length-mark" data-segment="UT">
@@ -124,7 +124,7 @@
 
 <g class="length-mark" data-segment="VX">
 <path class="length-arc" d="M 27.0799 21.6588 Q 22.3953 34.1122 9.5184 30.7629"/>
-<text id="length-value-VX" class="math-label" x="21.3598" y="25.3615" text-anchor="middle" dominant-baseline="central">9</text>
+<text id="length-value-VX" class="math-label" x="21.7598" y="25.7615" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
 <path class="thin" d="M 27.1932 17.6925 A 3 3 0 0 0 24.9164 22.0482"/>
 

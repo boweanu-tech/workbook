@@ -27,7 +27,7 @@
 
 <g class="length-mark" data-segment="AB">
 <path class="length-arc" d="M 12.5387 29.8207 Q 17.327 42.0835 28.203 34.6663"/>
-<text id="length-value-AB" class="math-label" x="17.8146" y="32.3635" text-anchor="middle" dominant-baseline="central">6</text>
+<text id="length-value-AB" class="math-label" x="17.8146" y="32.7635" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
 
 <g class="length-mark" data-segment="AC">
@@ -42,6 +42,6 @@
 
 <g class="length-mark" data-segment="BD">
 <path class="length-arc" d="M 29.6789 34.7542 Q 30.9 50.5 37.4155 37.1474"/>
-<text id="length-value-BD" class="math-label var" x="34" y="40.2" text-anchor="middle" dominant-baseline="central">x</text>
+<text id="length-value-BD" class="math-label var" x="33.6000" y="39.8000" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>

@@ -30,17 +30,17 @@
 
 <g class="length-mark" data-segment="OA">
 <path class="length-arc" d="M 27.8376 18.9144 Q 31.5 28 34.7187 16.7859"/>
-<text id="length-value-OA" class="math-label" x="32.2" y="20" text-anchor="middle" dominant-baseline="central">3</text>
+<text id="length-value-OA" class="math-label" x="31.8000" y="20.0000" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="OC">
-<path class="length-arc" d="M 26.9675 18.8014 Q 23.5 25.5 17.2811 12.9741"/>
-<text id="length-value-OC" class="math-label" x="21.5" y="18.6" text-anchor="middle" dominant-baseline="central">4.5</text>
+<path class="length-arc" d="M 27.0775 18.7628 Q 30 29 17.3912 12.9355"/>
+<text id="length-value-OC" class="math-label" x="20.0000" y="20.7000" text-anchor="middle" dominant-baseline="central">4.5</text>
 </g>
 
 <g class="length-mark" data-segment="OB">
 <path class="length-arc" d="M 26.8752 18.3204 Q 17.5 13 22.3319 6.4918"/>
-<text id="length-value-OB" class="math-label" x="20" y="10.5" text-anchor="middle" dominant-baseline="central">5</text>
+<text id="length-value-OB" class="math-label" x="19.6000" y="10.5000" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
 
 <g class="length-mark" data-segment="OD">

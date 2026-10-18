@@ -28,12 +28,12 @@
 
 <g class="length-mark" data-segment="AD">
 <path class="length-arc" d="M 10.2419 29.1898 Q 22.5165 35.7826 31.2548 24.9302"/>
-<text id="length-value-AD" class="math-label" x="22.0695" y="27.8213" text-anchor="middle" dominant-baseline="central">9</text>
+<text id="length-value-AD" class="math-label" x="22.0695" y="28.2213" text-anchor="middle" dominant-baseline="central">9</text>
 </g>
 
 <g class="length-mark" data-segment="DB">
 <path class="length-arc" d="M 33.0189 24.5726 Q 37.423 31.3324 38.8471 23.3912"/>
-<text id="length-value-DB" class="math-label" x="37.115" y="22.8572" text-anchor="middle" dominant-baseline="central">3</text>
+<text id="length-value-DB" class="math-label" x="36.7150" y="25.2572" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="BC">
@@ -42,7 +42,7 @@
 </g>
 
 <g class="length-mark" data-segment="DE">
-<path class="length-arc" d="M 31.4384 23.1613 Q 21.2001 14.9381 8.1915 13.1434"/>
-<text id="length-value-DE" class="math-label var" x="21.3781" y="12.9452" text-anchor="middle" dominant-baseline="central">x</text>
+<path class="length-arc" d="M 31.43 24.19 Q 14 28 7.45 13.86"/>
+<text id="length-value-DE" class="math-label var" x="18" y="21" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>

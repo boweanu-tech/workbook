@@ -35,12 +35,12 @@
 
 <g class="length-mark" data-segment="OC">
 <path class="length-arc" d="M 21.3869 17.5935 Q 17.6674 29.9858 30.603 30.2549"/>
-<text id="length-value-OC" class="math-label" x="16.7579" y="24.555" text-anchor="middle" dominant-baseline="central">8.4</text>
+<text id="length-value-OC" class="math-label" x="24.7" y="26" text-anchor="middle" dominant-baseline="central">8.4</text>
 </g>
 
 <g class="length-mark" data-segment="OB">
 <path class="length-arc" d="M 21.0908 17.5545 Q 24.2182 28.2675 14.4049 22.9526"/>
-<text id="length-value-OB" class="math-label" x="23.9983" y="21.8605" text-anchor="middle" dominant-baseline="central">5</text>
+<text id="length-value-OB" class="math-label" x="23.1983" y="21.8605" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
 
 <g class="length-mark" data-segment="OD">

@@ -25,12 +25,12 @@
 
 <g class="length-mark" data-segment="BH">
 <path class="length-arc" d="M 6.9604 30.4582 Q 10.8136 37.6093 13.1694 29.8353"/>
-<text id="length-value-BH" class="math-label" x="10.6588" y="29.078" text-anchor="middle" dominant-baseline="central">2</text>
+<text id="length-value-BH" class="math-label" x="10.2588" y="27.8780" text-anchor="middle" dominant-baseline="central">2</text>
 </g>
 
 <g class="length-mark" data-segment="HC">
 <path class="length-arc" d="M 14.9604 29.6556 Q 30.9534 36.9956 45.1694 26.6246"/>
-<text id="length-value-HC" class="math-label" x="30.7288" y="28.9679" text-anchor="middle" dominant-baseline="central">8</text>
+<text id="length-value-HC" class="math-label" x="30.7288" y="29.3679" text-anchor="middle" dominant-baseline="central">8</text>
 </g>
 
 <g class="length-mark" data-segment="AH">

@@ -56,7 +56,7 @@
 
 <g class="length-mark" data-segment="IH">
 <path class="length-arc" d="M 25.8953 35.5793 Q 18.7699 43.9591 13.0053 34.591"/>
-<text id="length-value-IH" class="math-label" x="18.9419" y="35.9221" text-anchor="middle" dominant-baseline="central">3</text>
+<text id="length-value-IH" class="math-label" x="18.9419" y="36.3221" text-anchor="middle" dominant-baseline="central">3</text>
 </g></g></g>
 <g transform="translate(-12.8763 1.8846)"><g id="triangle_エ" transform="translate(123 0)"><text class="note" x="1" y="2">(エ)</text><polygon class="main" points="9.3349,35 32.535,27.8234 6.465,6"/>
 <text class="label" x="7.6202" y="38.0512" text-anchor="middle" dominant-baseline="central">J</text>
@@ -65,7 +65,7 @@
 
 <g class="length-mark" data-segment="KJ">
 <path class="length-arc" d="M 31.8673 28.7103 Q 24.1709 41.8726 10.3868 35.355"/>
-<text id="length-value-KJ" class="math-label" x="23.6833" y="32.1527" text-anchor="middle" dominant-baseline="central">5</text>
+<text id="length-value-KJ" class="math-label" x="23.6833" y="32.5527" text-anchor="middle" dominant-baseline="central">5</text>
 </g>
 
 <g class="length-mark" data-segment="JL">
@@ -85,7 +85,7 @@
 
 <g class="length-mark" data-segment="NM">
 <path class="length-arc" d="M 24.3876 35.2482 Q 17.8965 40.6466 17.2467 32.2291"/>
-<text id="length-value-NM" class="math-label" x="18.5001" y="32.3926" text-anchor="middle" dominant-baseline="central">3</text>
+<text id="length-value-NM" class="math-label" x="19.3001" y="34.3926" text-anchor="middle" dominant-baseline="central">3</text>
 </g>
 
 <g class="length-mark" data-segment="OM">

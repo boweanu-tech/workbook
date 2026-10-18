@@ -29,7 +29,7 @@
 
 <g class="length-mark" data-segment="AE">
 <path class="length-arc" d="M 6.9 36.8167 Q 17 45.7167 27.1 36.8167"/>
-<text id="length-value-AE" class="math-label" x="17" y="37.6667" text-anchor="middle" dominant-baseline="central">6</text>
+<text id="length-value-AE" class="math-label" x="17.0000" y="38.0667" text-anchor="middle" dominant-baseline="central">6</text>
 </g>
 
 <g class="length-mark" data-segment="CD">
@@ -39,11 +39,11 @@
 
 <g class="length-mark" data-segment="DE">
 <path class="length-arc" d="M 6.02 7.9433 Q 2.96 32.03 26.94 35.8367"/>
-<text id="length-value-DE" class="math-label" x="5.44" y="24.56" text-anchor="middle" dominant-baseline="central">10</text>
+<text id="length-value-DE" class="math-label" x="3.8400" y="24.5600" text-anchor="middle" dominant-baseline="central">10</text>
 </g>
 
 <g class="length-mark" data-segment="EF">
 <path class="length-arc" d="M 26.94 35.8367 Q 17.8133 36.1678 20.6867 27.4989"/>
-<text id="length-value-EF" class="math-label var" x="16.9733" y="31.5178" text-anchor="middle" dominant-baseline="central">x</text>
+<text id="length-value-EF" class="math-label var" x="17.3733" y="31.1178" text-anchor="middle" dominant-baseline="central">x</text>
 </g>
 </svg>
