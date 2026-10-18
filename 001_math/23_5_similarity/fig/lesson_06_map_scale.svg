@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="37mm" viewBox="0 0 65 37">
+<svg xmlns="http://www.w3.org/2000/svg" width="27.1195mm" height="34.2357mm" viewBox="18.5149 0.9444 27.1195 34.2357">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_04_map_scale; coordinates={"A":[0,0],"B":[3.6,0],"C":[5.272096102433197,1.7216546181588546]}; Map route A-B-C, cm, scale 1:25000; schematic.</desc>
+<desc>lesson_06_map_scale; coordinates={"A":[0,0],"B":[3.6,0],"C":[5.272096102433197,1.7216546181588546]}; Map route A-B-C, cm, scale 1:25000; schematic.</desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -18,7 +18,7 @@
 <text class="label" x="42.8252" y="19.8388" text-anchor="middle" dominant-baseline="central">B</text>
 <text class="label" x="43.4096" y="3.5207" text-anchor="middle" dominant-baseline="central">C</text>
 
-<rect class="label-bg" x="30.422" y="25.6093" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="33.1845" y="27.6483" text-anchor="middle" dominant-baseline="central">3.6</text>
 
-<rect class="label-bg" x="41.0659" y="11.4121" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="43.8284" y="13.4511" text-anchor="middle" dominant-baseline="central">2.4</text>
+
+
 </svg>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_05; coordinates={"O":[0,0],"A":[3,0],"B":[0,4],"C":[-5.424432852102367,2.5642792814029787],"D":[-3.4190390418706382,-7.23257713613649]}; </desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="27.5927mm" height="42.6670mm" viewBox="11.9122 0.0507 27.5927 42.6670">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_02_find_05; coordinates={"B":[0,0],"C":[6,0],"A":[2.25,3.307189138830738],"D":[0.9375,-7.4411755623691604]}; </desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -12,21 +12,18 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 </style></defs>
-<polygon class="main" points="28.8146,19.9971 35.3148,24.4441 34.744,11.3301"/>
-<polygon class="main" points="28.8146,19.9971 20.8624,6.4 10.6852,30.6"/>
-<text class="label" x="38.0967" y="26.2192" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="37.278" y="9.2161" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="19.5597" y="3.368" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="8.0859" y="32.6332" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="28.8146" y="23.5971" text-anchor="middle" dominant-baseline="central">O</text>
-
-<rect class="label-bg" x="31.503" y="16.8735" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="32.8965" y="18.9125" text-anchor="middle" dominant-baseline="central">3</text>
-
-<rect class="label-bg" x="34.9892" y="14.8654" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="36.3827" y="16.9044" text-anchor="middle" dominant-baseline="central">4</text>
-
-<rect class="label-bg" x="26.2073" y="9.544" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="27.6008" y="11.583" text-anchor="middle" dominant-baseline="central">6</text>
-
-<rect class="label-bg" x="19.9719" y="26.0218" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="21.3654" y="28.0608" text-anchor="middle" dominant-baseline="central">8</text>
-<path class="thin" d="M 31.043 21.5216 A 2.7 2.7 0 0 0 30.3391 17.7686"/>
-<path class="thin" d="M 27.4515 17.6664 A 2.7 2.7 0 0 0 26.4839 21.3601"/>
+<polygon class="main" points="21.0724,6 17.6625,17.1256 34.3375,11.9674"/>
+<polygon class="main" points="17.6625,17.1256 34.3375,11.9674 26.6651,37"/>
+<path class="thin" d="M 18.5709 14.1617 A 3.1 3.1 0 0 1 20.624 16.2095"/>
+<path class="thin" d="M 31.376 12.8835 A 3.1 3.1 0 0 0 33.4291 14.9313"/>
+<text class="label" x="14.1888" y="16.6968" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="37.2801" y="10.0723" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="20.0021" y="2.6677" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="26.983" y="40.4855" text-anchor="middle" dominant-baseline="central">D</text>
+<rect class="label-bg" x="14.3211" y="8.5372" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="16.0211" y="10.5372" text-anchor="middle" dominant-baseline="central">4</text>
+<rect class="label-bg" x="23.2657" y="9.2028" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="24.9657" y="11.2028" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="label-bg" x="32.1477" y="23.5093" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="33.8477" y="25.5093" text-anchor="middle" dominant-baseline="central">9</text>
 </svg>

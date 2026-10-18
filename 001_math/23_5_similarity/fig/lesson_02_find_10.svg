@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_10; coordinates={"A":[0,6],"B":[0,0],"C":[10,0],"D":[6.323529411764706,2.2058823529411766],"E":[5,0]}; </desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="38.0944mm" height="41.4983mm" viewBox="6.0835 0.4366 38.0944 41.4983">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_02_find_10; coordinates={"A":[0,0],"B":[6,0],"C":[6.666666666666667,9.977753031397176],"D":[9,0],"E":[2.5,3.741657386773941]}; </desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -12,13 +12,13 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 </style></defs>
-<polygon class="main" points="6.4,8.54 6.4,28.46 39.6,28.46"/>
-<line class="main" x1="27.3941" y1="21.1365" x2="23" y2="28.46"/>
-<text class="label" x="4.0922" y="6.1812" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="3.3202" y="29.6452" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="42.7727" y="29.3679" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="30.5766" y="20.2636" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="24.3493" y="31.4716" text-anchor="middle" dominant-baseline="central">E</text>
-<path class="thin" d="M 6.4 26.46 l 2 0 l 0 2"/>
-<path class="thin" d="M 29.1091 22.1655 l -1.029 1.715 l -1.715 -1.029"/>
+<polygon class="main" points="11.871,28.9338 29.2549,34.3113 40.129,6"/>
+<polygon class="main" points="11.871,28.9338 37.9469,37 22.4677,20.3336"/>
+<path class="thin" d="M 34.9853 36.0839 A 3.1 3.1 0 0 1 35.8373 34.7286"/>
+<path class="thin" d="M 37.722 7.9535 A 3.1 3.1 0 0 0 39.0175 8.8939"/>
+<text class="label" x="8.4526" y="29.685" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="29.6114" y="37.7931" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="41.9531" y="3.0129" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="40.1706" y="39.7028" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="19.8" y="18.0679" text-anchor="middle" dominant-baseline="central">E</text>
 </svg>

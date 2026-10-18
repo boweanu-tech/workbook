@@ -126,6 +126,7 @@
 | `\InstructionTall{text}` | 1 | 行間を広めにした指示文 | 長い指示文用 |
 | `\Text{text}` | 1 | 地の文を出す | 問題モードのみ表示 |
 | `\TextTall{text}` | 1 | 行間を広めにした地の文 | 長い本文用 |
+| `\WholeQuestion{problem}{answer}` | 2 | 小問番号を付けず、大問全体の問題本体と解答を切り替える | `\TypeQuestion` の直後で使う。小問カウンタは変更しない |
 
 ---
 
@@ -143,12 +144,14 @@
 | `\QQSingle{question}{answer}` | 2 | 左半分幅の小問1つを出す | 2列調整用 |
 | `\QQFigRow[width]{fig1}{q1}{a1}{fig2}{q2}{a2}` | 7 | 図つき小問2つを左右に並べる | 第1引数は省略可 |
 | `\QQSideFig{figWidth}{figPath}{question}{answer}` | 4 | 小問1つと図を横並びにする | 小問番号つき図版問題の標準 |
+| `\QQFigRowThree[maxHeight]{fig1}{a1}{fig2}{a2}{fig3}{a3}` | 7 | 番号を図の上に置いて図つき小問を3列に並べる | 図は列幅全体を使用。最大高さは既定35mm。縦横比を保持する |
 
 ## 内部API
 
 | コマンド | 引数 | 用途 |
 |---|---:|---|
 | `\LMQQRowThreeCell{question}{answer}` | 2 | `\QQRowThree` の1列分を出力する内部補助 |
+| `\LMQQFigRowThreeCell{maxHeight}{figPath}{answer}` | 3 | `\QQFigRowThree` の1列分を出力する内部補助 |
 
 ---
 
@@ -330,6 +333,7 @@
 | `\SetEngRuledLineThickness{light}{base}` | 2 | 補助線3本と基線の太さを変更する | 初期値は `0.25pt`、`0.45pt` |
 | `\SetEngSplitGap{length}` | 1 | 左右分割した4本罫の中央の空白幅を変更する | 初期値は `7mm` |
 | `\EngAnswerPair{english}{japanese}` | 2 | 英文と和訳を解答欄に2行で表示する | 解答段の幅に合わせて英文・和訳を折り返す |
+| `\EngResponseChoice[rows]{question}{choices}{answer}` | 4 | 返答の適文選択と和訳欄を出す | 和訳欄は既定1行。疑問文と選んだ返答の両方を訳させる。行高は `\SetEngAnswerLineHeight` で共通調整。選択肢は記号つきで渡す |
 | `\EngWriteQuestion[rows]{prompt}{answer}` | 3 | 英字4本罫つきの標準小問を出す | 段数は省略可。小問番号を進める |
 | `\EngWriteQuestionSplit{prompt}{answer}` | 2 | 左右2分割の4本罫つき小問を出す | 短い英文を左右に1回ずつ書かせる |
 | `\EngCopy[rows]{english}` | 2 | 英文と英字4本罫の書写欄を出す | 段数は省略可。解答には英文を表示する |

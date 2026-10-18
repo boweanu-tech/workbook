@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_08; coordinates={"O":[0,0],"A":[5,0],"B":[1.2,5.878775382679628],"C":[-4.424362293247473,4.0527790833069055],"D":[-5.826922531656102,-4.229299446726188]}; </desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="51.2752mm" height="32.0053mm" viewBox="0.2341 4.2606 51.2752 32.0053">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_02_find_08; coordinates={"B":[0,0],"C":[10,0],"H":[2,0],"A":[2,4]}; Altitude to the hypotenuse. Any correctly ordered pair among ABC, ABH, ACH is accepted.</desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -12,17 +12,12 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 </style></defs>
-<polygon class="main" points="25.1426,16.803 32.6925,10.4438 19.4778,6.4"/>
-<polygon class="main" points="25.1426,16.803 13.3075,16.3105 21.7231,30.6"/>
-<text class="label" x="35.5787" y="8.8439" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="18.5065" y="3.2462" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="10.0083" y="16.3821" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="21.5535" y="33.8956" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="26.3672" y="19.7594" text-anchor="middle" dominant-baseline="central">O</text>
-<path class="thin" d="M 30.245 12.5053 A 3.2 3.2 0 0 1 29.6326 9.5075"/>
-<path class="thin" d="M 16.5047 16.4435 A 3.2 3.2 0 0 1 14.9314 19.0678"/>
-<path class="thin" d="M 21.0081 9.2103 A 3.2 3.2 0 0 0 22.5377 7.3364"/>
-<path class="thin" d="M 21.3668 9.869 A 3.95 3.95 0 0 0 23.2549 7.5558"/>
-<path class="thin" d="M 22.4929 27.494 A 3.2 3.2 0 0 0 20.0992 27.8427"/>
-<path class="thin" d="M 22.6733 26.766 A 3.95 3.95 0 0 0 19.7186 27.1964"/>
+<polygon class="main" points="17.2434,10.2566 6,24.635 46,32.7434"/>
+<path class="main" d="M 17.2434 10.2566 L 14 26.2566"/>
+<path class="thin" d="M 16.0114 11.8321 L 17.5869 13.0641 L 18.8189 11.4886"/>
+<path class="thin" d="M 14.3973 24.2965 L 16.3575 24.6938 L 15.9601 26.654"/>
+<text class="label" x="2.5107" y="24.9087" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="49.2846" y="33.9522" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="10.7602" y="27.5808" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="label" x="16.3312" y="6.8776" text-anchor="middle" dominant-baseline="central">A</text>
 </svg>

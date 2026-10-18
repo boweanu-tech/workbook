@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="44mm" viewBox="0 0 65 44">
+<svg xmlns="http://www.w3.org/2000/svg" width="60.9909mm" height="42.0846mm" viewBox="1.9679 0.6565 60.9909 42.0846">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_04_river_scale; coordinates={"A":[0,0],"B":[4.5,0],"P":[1.5,2.8],"H":[1.5,0]}; Scale 1:400, cm. Real PH=11.2 m, AB=18 m.</desc>
+<desc>lesson_06_river_scale; coordinates={"A":[0,0],"B":[4.5,0],"P":[1.5,2.8],"H":[1.5,0]}; Scale 1:400, cm. Real PH=11.2 m, AB=18 m.</desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -20,7 +20,7 @@
 <text class="label" x="22.5845" y="40.5089" text-anchor="middle" dominant-baseline="central">H</text>
 <path class="thin" d="M 24.1429 35.6 l 2 0 l 0 2"/>
 
-<rect class="label-bg" x="29.7375" y="38.561" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="32.5" y="40.6" text-anchor="middle" dominant-baseline="central">4.5</text>
 
-<rect class="label-bg" x="18.3804" y="23.081" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="21.1429" y="25.12" text-anchor="middle" dominant-baseline="central">2.8</text>
+
+
 </svg>

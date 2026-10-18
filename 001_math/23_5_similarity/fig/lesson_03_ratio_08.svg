@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_03_ratio_08; coordinates={"A":[0,0],"B":[10,0],"C":[5.75,5.562148865321747],"D":[4,0],"E":[3.59375,3.476343040826092]}; Construction: lesson_03_ratio_13</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="51.2490mm" height="28.5594mm" viewBox="0.4709 7.5231 51.2490 28.5594">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_03_ratio_08; coordinates={"B":[0,0],"C":[10,0],"H":[2,0],"A":[2,4]}; Similarity gives AH^2=BH*CH=16; x=4, no Pythagorean theorem.</desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -12,23 +12,18 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 </style></defs>
-<polygon class="main" points="12.7287,6.4 25.0457,30.6 33.2713,13.4641"/>
-<line class="main" x1="17.6555" y1="16.08" x2="25.5678" y2="10.8151"/>
-<text class="label" x="10.2709" y="4.1979" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="25.5189" y="33.8659" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="36.5117" y="12.8396" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="17.6555" y="19.28" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="27.8306" y="8.5523" text-anchor="middle" dominant-baseline="central">E</text>
-<path class="thin" d="M 16.204 13.2281 A 3.2 3.2 0 0 1 20.3196 14.3073"/>
-<path class="thin" d="M 30.2453 12.4235 A 3.2 3.2 0 0 0 31.8865 16.3489"/>
-
-<rect class="label-bg" x="10.9467" y="10.6525" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="12.3402" y="12.6915" text-anchor="middle" dominant-baseline="central">4</text>
-<path class="thin" d="M 14.3546 1.6717 L 34.8973 8.7358 M 12.7287 6.4 L 14.6798 0.7261 M 33.2713 13.4641 L 35.2225 7.7902"/>
-
-<rect class="label-bg" x="23.2324" y="3.1648" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="24.6259" y="5.2038" text-anchor="middle" dominant-baseline="central">8</text>
-
-<rect class="label-bg" x="18.7953" y="3.5424" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="20.1888" y="5.5814" text-anchor="middle" dominant-baseline="central">5</text>
-<path class="thin" d="M 8.2726 8.668 L 20.5896 32.868 M 12.7287 6.4 L 7.3814 9.1216 M 25.0457 30.6 L 19.6984 33.3216"/>
-
-<rect class="label-bg" x="12.9636" y="18.729" width="2.935" height="4.078" rx=".3"/><text class="math-label var" x="14.4311" y="20.768" text-anchor="middle" dominant-baseline="central">x</text>
+<polygon class="main" points="12.3946,13.0987 6,29.9013 46,25.888"/>
+<path class="main" d="M 12.3946 13.0987 L 14 29.0987"/>
+<path class="thin" d="M 11.6833 14.9679 L 13.5525 15.6792 L 14.2639 13.81"/>
+<path class="thin" d="M 13.8003 27.1087 L 15.7903 26.909 L 15.99 28.899"/>
+<text class="label" x="2.7475" y="31.194" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="49.4952" y="26.0721" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="14" y="32.4987" text-anchor="middle" dominant-baseline="central">H</text>
+<text class="label" x="10.5247" y="10.1401" text-anchor="middle" dominant-baseline="central">A</text>
+<rect class="label-bg" x="8.6494" y="30.9825" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="10.3494" y="32.9825" text-anchor="middle" dominant-baseline="central">2</text>
+<rect class="label-bg" x="28.6494" y="28.9758" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="30.3494" y="30.9758" text-anchor="middle" dominant-baseline="central">8</text>
+<rect class="label-bg" x="5.4278" y="19.7076" width="3.4" height="4" rx=".3"/>
+<text class="math-label var" x="7.1278" y="21.7076" text-anchor="middle" dominant-baseline="central">x</text>
 </svg>

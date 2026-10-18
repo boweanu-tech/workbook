@@ -14,6 +14,35 @@
   {\centering\includegraphics[width=#1]{#2}\par}%
 }
 
+% 番号を図の上に置き、列幅全体を使って図を3つ並べる。
+% 省略可能引数は図の最大高さ。縦横比は保持する。
+\newcommand{\LMQQFigRowThreeCell}[3]{%
+  \begin{minipage}[t]{0.32\linewidth}%
+    \vspace{0pt}%
+    \stepcounter{LMsubq}%
+    \ifLMAnswerMode
+      \noindent\makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \LMPrintAnswerBox{\dimexpr\linewidth-9mm\relax}{#3}%
+    \else
+      \noindent\textbf{(\theLMsubq)}\par\nobreak\vspace{0.8mm}%
+      {\centering
+        \includegraphics[width=\linewidth,height=#1,keepaspectratio]{#2}\par}%
+    \fi
+  \end{minipage}%
+}
+\newcommand{\QQFigRowThree}[7][35mm]{%
+  \LMAfterTypeQuestionfalse
+  \noindent
+  \LMQQFigRowThreeCell{#1}{#2}{#3}\hfill
+  \LMQQFigRowThreeCell{#1}{#4}{#5}\hfill
+  \LMQQFigRowThreeCell{#1}{#6}{#7}\par
+  \ifLMAnswerMode
+    \vspace{\LMAnswerRowSpace}%
+  \else
+    \vspace{\LMRowSpace}%
+  \fi
+}
+
 % wrapfig は、説明文だけを図に回り込ませたいときに使う。
 % 小問番号つきの \QQ は入れず、\Text などの地の文だけを入れる。
 \newcommand{\WrapTextFig}{\@ifnextchar[{\LMWrapTextFigRows}{\LMWrapTextFigAuto}}

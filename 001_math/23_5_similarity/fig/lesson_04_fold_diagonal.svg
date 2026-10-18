@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="48mm" viewBox="0 0 65 48">
+<svg xmlns="http://www.w3.org/2000/svg" width="57.6030mm" height="44.7159mm" viewBox="3.7504 1.5643 57.6030 44.7159">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
 <desc>lesson_04_fold_diagonal; coordinates={"A":[0,0],"B":[8,0],"C":[8,6],"D":[0,6],"E":[6.4,4.8],"F":[8,2.6666666666666665]}; AB=8, AD=6, AC=10. Fold B onto E along AF. AE=8, CE=2, CF=10/3, BF=EF=8/3.</desc>
 <defs><style>

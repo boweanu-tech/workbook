@@ -62,6 +62,17 @@
   \fi
 }
 
+% 小問番号を付けず、大問全体の問題本体と解答を切り替える。
+% \TypeQuestion{指示}{タグ} の直後に置く。小問カウンタは変更しない。
+\newcommand{\WholeQuestion}[2]{%
+  \LMAfterTypeQuestionfalse
+  \ifLMAnswerMode
+    \noindent #2\par\vspace{\LMAnswerRowSpace}%
+  \else
+    #1\par\vspace{\LMRowSpace}%
+  \fi
+}
+
 \newcommand{\Q}[3]{%
   \LMAfterTypeQuestionfalse
   \stepcounter{LMsubq}%

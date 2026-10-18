@@ -242,6 +242,17 @@
   }{\EngAnswerPair{#1}{#2}}%
 }
 
+% 応答を選び、疑問文と選んだ返答を日本語に訳す。
+% #1: 和訳欄の行数（既定1）、#2: 疑問文、#3: 記号つき選択肢、#4: 解答。
+% 余分な段落間隔は置かず、和訳欄には既存の和文用行高を使う。
+\newcommand{\EngResponseChoice}[4][1]{%
+  \QQTall{%
+    \EngSentence{#2}\par
+    #3%
+    \EngAnswerLines[#1]%
+  }{#4}%
+}
+
 % ===== 英語解答の自動段送り（親TeXで明示的に有効化） =====
 
 \newif\ifLMEngAutoAnswers

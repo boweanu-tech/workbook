@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70.0378mm" height="52.1994mm" viewBox="8.9420 1.2853 70.0378 52.1994">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_01_center_rectangle; coordinates={"O":[0,0],"A":[6,2],"B":[12,2],"C":[12,6],"D":[6,6],"E":[-9,-3],"F":[-18,-3],"G":[-18,-9],"H":[-9,-9]}; Rectangles, center O, homothety -3/2. EH=6, perimeters 20 and 30.</desc>
+<defs><style>
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+</style></defs>
+<polygon class="main" points="61.3238,16.6397 73.5622,14.1589 71.9083,6 59.6699,8.4808"/>
+<polygon class="main" points="32.7953,33.0404 14.4378,36.7617 16.9187,49 35.2762,45.2788"/>
+<path class="dash" d="M 61.3238 16.6397 L 32.7953 33.0404"/>
+<path class="dash" d="M 73.5622 14.1589 L 14.4378 36.7617"/>
+<path class="dash" d="M 71.9083 6 L 16.9187 49"/>
+<path class="dash" d="M 59.6699 8.4808 L 35.2762 45.2788"/>
+<path class="thin" d="M 71.602 14.5562 L 71.2047 12.5961 L 73.1648 12.1988"/>
+<path class="thin" d="M 72.3056 7.9601 L 70.3455 8.3575 L 69.9481 6.3973"/>
+<path class="thin" d="M 61.6301 8.0835 L 62.0274 10.0436 L 60.0673 10.441"/>
+<text class="label" x="52.0937" y="17.9339" text-anchor="middle" dominant-baseline="central">O</text>
+<text class="label" x="65.5737" y="18.4001" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="76.7811" y="12.7847" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="74.6791" y="3.8616" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="61.8155" y="5.7156" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="30.3912" y="35.4446" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="11.128" y="37.8997" text-anchor="middle" dominant-baseline="central">F</text>
+<text class="label" x="14.1735" y="51.1712" text-anchor="middle" dominant-baseline="central">G</text>
+<text class="label" x="33.5615" y="48.3299" text-anchor="middle" dominant-baseline="central">H</text>
+<rect class="label-bg" x="63.2119" y="10.3412" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="64.9119" y="12.3412" text-anchor="middle" dominant-baseline="central">6</text>
+<rect class="label-bg" x="22.6119" y="36.3313" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="24.3119" y="38.3313" text-anchor="middle" dominant-baseline="central">9</text>
+<rect class="label-bg" x="66.1474" y="9.0703" width="3.4" height="4" rx=".3"/>
+<text class="math-label" x="67.8474" y="11.0703" text-anchor="middle" dominant-baseline="central">4</text>
+</svg>

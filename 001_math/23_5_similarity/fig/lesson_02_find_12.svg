@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
+<svg xmlns="http://www.w3.org/2000/svg" width="43.9539mm" height="30.1395mm" viewBox="1.0436 3.5642 43.9539 30.1395">
 <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_12; coordinates={"A":[0,0],"B":[10,0],"C":[3.7625,6.487957594651802],"D":[6,0],"E":[2.2575,3.892774556791081]}; </desc>
+<desc>lesson_02_find_12; coordinates={"A":[0,6],"B":[0,0],"C":[10,0],"D":[6.323529411764706,2.2058823529411766],"E":[5,0]}; </desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -12,15 +12,13 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 </style></defs>
-<polygon class="main" points="33.1676,6.4 20.8505,30.6 12.8324,7.514"/>
-<line class="main" x1="25.7774" y1="20.92" x2="20.9665" y2="7.0684"/>
-<text class="label" x="35.7756" y="4.3781" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="20.4701" y="33.878" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="10.1374" y="5.6095" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="27.1967" y="23.8992" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="20.2092" y="3.8565" text-anchor="middle" dominant-baseline="central">E</text>
-<path class="thin" d="M 22.9662 15.2645 L 23.197 13.4906 L 24.4777 14.7395"/>
-<path class="thin" d="M 22.4413 13.753 L 22.6721 11.9791 L 23.9527 13.2281"/>
-<path class="thin" d="M 15.4736 17.5569 L 15.7044 15.783 L 16.985 17.032"/>
-<path class="thin" d="M 14.9487 16.0455 L 15.1794 14.2716 L 16.4601 15.5206"/>
+<polygon class="main" points="6.4,8.54 6.4,28.46 39.6,28.46"/>
+<line class="main" x1="27.3941" y1="21.1365" x2="23" y2="28.46"/>
+<text class="label" x="4.0922" y="6.1812" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="3.3202" y="29.6452" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="42.7727" y="29.3679" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="30.5766" y="20.2636" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="24.3493" y="31.4716" text-anchor="middle" dominant-baseline="central">E</text>
+<path class="thin" d="M 6.4 26.46 l 2 0 l 0 2"/>
+<path class="thin" d="M 29.1091 22.1655 l -1.029 1.715 l -1.715 -1.029"/>
 </svg>

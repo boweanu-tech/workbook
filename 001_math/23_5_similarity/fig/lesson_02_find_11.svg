@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="46mm" height="37mm" viewBox="0 0 46 37">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_11; coordinates={"O":[0,0],"A":[4,0],"B":[0.375,5.988269783501742],"C":[-1.9988280638394724,2.2371156365301608],"D":[-3.5365031230931576,-2.7826508333515987]}; </desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="45.9391mm" height="42.4450mm" viewBox="3.0576 0.0214 45.9391 42.4450">
+<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+<desc>lesson_02_find_11; coordinates={"O":[0,0],"A":[3,0],"B":[1,4.898979485566356],"C":[-10,0],"D":[-1.2,-5.878775382679627]}; </desc>
 <defs><style>
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -12,21 +12,15 @@
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
 .note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
 </style></defs>
-<polygon class="main" points="27.7133,19.8914 25.9604,6.4 7.3515,21.2508"/>
-<polygon class="main" points="27.7133,19.8914 21.0438,27.6135 38.6485,30.6"/>
-<text class="label" x="26.3638" y="3.1248" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="4.0515" y="21.2703" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="19.6166" y="30.5889" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="41.4136" y="32.4012" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="29.7033" y="24.6955" text-anchor="middle" dominant-baseline="central">O</text>
-
-<rect class="label-bg" x="28.6167" y="10.6944" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="30.0102" y="12.7334" text-anchor="middle" dominant-baseline="central">4</text>
-
-<rect class="label-bg" x="15.9257" y="15.3392" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="17.3192" y="17.3782" text-anchor="middle" dominant-baseline="central">6</text>
-
-<rect class="label-bg" x="25.4068" y="23.8051" width="2.787" height="4.078" rx=".3"/><text class="math-label" x="26.8003" y="25.8441" text-anchor="middle" dominant-baseline="central">3</text>
-
-<rect class="label-bg" x="32.6573" y="20.9204" width="5.525" height="4.078" rx=".3"/><text class="math-label" x="35.4198" y="22.9594" text-anchor="middle" dominant-baseline="central">4.5</text>
-<path class="thin" d="M 27.3654 17.2139 A 2.7 2.7 0 0 0 25.0193 20.0712"/>
-<path class="thin" d="M 25.9485 21.9347 A 2.7 2.7 0 0 0 29.6424 21.7805"/>
+<path class="main" d="M 43.3995 17.1595 L 8.6005 29.8621"/>
+<path class="main" d="M 33.2589 6 L 37.901 37"/>
+<path class="main" d="M 43.3995 17.1595 L 33.2589 6"/>
+<path class="main" d="M 8.6005 29.8621 L 37.901 37"/>
+<path class="thin" d="M 40.4874 18.2225 A 3.1 3.1 0 0 1 41.3147 14.8653"/>
+<path class="thin" d="M 37.4419 33.9342 A 3.1 3.1 0 0 0 34.8891 36.2663"/>
+<text class="label" x="37.7731" y="17.6867" text-anchor="middle" dominant-baseline="central">O</text>
+<text class="label" x="46.6312" y="15.8156" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="33.5966" y="2.5163" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="5.2861" y="30.9867" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="39.2388" y="40.2342" text-anchor="middle" dominant-baseline="central">D</text>
 </svg>
