@@ -1,50 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="29.2703mm" height="42.6373mm" viewBox="11.7926 -0.0182 29.2703 42.6373">
-<!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
-<desc>lesson_03_ratio_11; coordinates={"O":[0,0],"A":[3,0],"B":[-0.3333333333333333,4.988876515698588],"C":[-2.9982420957592084,3.355673454795241],"D":[-5.247208820353796,-5.35880579939237]}; OAB ~ OCD by AA, x=7.5.</desc>
-<defs><style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="29.2703mm"
+   height="42.6373mm"
+   viewBox="11.7926 -0.0182 29.2703 42.6373"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="lesson_03_ratio_11.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.9581491"
+     inkscape:cx="55.262558"
+     inkscape:cy="80.574423"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Based on 999_GPTbox/template.svg; all vertices and marks use the same computed geometry. -->
+  <desc
+     id="desc2">lesson_03_ratio_11; coordinates={&quot;O&quot;:[0,0],&quot;A&quot;:[3,0],&quot;B&quot;:[-0.3333333333333333,4.988876515698588],&quot;C&quot;:[-2.9982420957592084,3.355673454795241],&quot;D&quot;:[-5.247208820353796,-5.35880579939237]}; OAB ~ OCD by AA, x=7.5.</desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
-.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
 .label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
-.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
 
 .length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}
-</style></defs>
-<polygon class="main" points="27.3534,18.7622 35.1898,16.3382 22.4516,6"/>
-<polygon class="main" points="27.3534,18.7622 16.8102,12.4194 17.9771,37"/>
-<path class="thin" d="M 32.2283 17.2543 A 3.1 3.1 0 0 1 32.7828 14.3847"/>
-<path class="thin" d="M 19.4665 14.0175 A 3.1 3.1 0 0 1 16.9572 15.516"/>
-<path class="thin" d="M 23.5631 8.8939 A 3.1 3.1 0 0 0 24.8586 7.9535"/>
-<path class="thin" d="M 23.8141 9.5473 A 3.8 3.8 0 0 0 25.4021 8.3946"/>
-<path class="thin" d="M 19.3945 34.243 A 3.1 3.1 0 0 0 17.8301 33.9035"/>
-<path class="thin" d="M 19.7146 33.6205 A 3.8 3.8 0 0 0 17.7969 33.2043"/>
-<text class="label" x="29.3" y="15.5" text-anchor="middle" dominant-baseline="central">O</text>
-<text class="label" x="38.6474" y="15.7947" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="22.0198" y="2.5267" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="14.0711" y="10.2406" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="16.9212" y="40.3369" text-anchor="middle" dominant-baseline="central">D</text>
-
-<g class="length-mark" data-segment="OA">
-<path class="length-arc" d="M 27.8376 18.9144 Q 31.5 28 34.7187 16.7859"/>
-<text id="length-value-OA" class="math-label" x="31.8000" y="20.0000" text-anchor="middle" dominant-baseline="central">3</text>
-</g>
-
-<g class="length-mark" data-segment="OC">
-<path class="length-arc" d="M 27.0775 18.7628 Q 30 29 17.3912 12.9355"/>
-<text id="length-value-OC" class="math-label" x="20.0000" y="20.7000" text-anchor="middle" dominant-baseline="central">4.5</text>
-</g>
-
-<g class="length-mark" data-segment="OB">
-<path class="length-arc" d="M 26.8752 18.3204 Q 17.5 13 22.3319 6.4918"/>
-<text id="length-value-OB" class="math-label" x="19.6000" y="10.5000" text-anchor="middle" dominant-baseline="central">5</text>
-</g>
-
-<g class="length-mark" data-segment="OD">
-<path class="length-arc" d="M 27.3936 19.34 Q 33 33 18.4745 36.6885"/>
-<text id="length-value-OD" class="math-label var" x="31" y="25.2" text-anchor="middle" dominant-baseline="central">x</text>
-</g>
+</style>
+  </defs>
+  <polygon
+     class="main"
+     points="27.3534,18.7622 35.1898,16.3382 22.4516,6"
+     id="polygon8" />
+  <polygon
+     class="main"
+     points="27.3534,18.7622 16.8102,12.4194 17.9771,37"
+     id="polygon10" />
+  <path
+     class="thin"
+     d="M 32.2283 17.2543 A 3.1 3.1 0 0 1 32.7828 14.3847"
+     id="path12" />
+  <path
+     class="thin"
+     d="M 19.4665 14.0175 A 3.1 3.1 0 0 1 16.9572 15.516"
+     id="path14" />
+  <path
+     class="thin"
+     d="M 23.5631 8.8939 A 3.1 3.1 0 0 0 24.8586 7.9535"
+     id="path16" />
+  <path
+     class="thin"
+     d="M 23.8141 9.5473 A 3.8 3.8 0 0 0 25.4021 8.3946"
+     id="path18" />
+  <path
+     class="thin"
+     d="M 19.3945 34.243 A 3.1 3.1 0 0 0 17.8301 33.9035"
+     id="path20" />
+  <path
+     class="thin"
+     d="M 19.7146 33.6205 A 3.8 3.8 0 0 0 17.7969 33.2043"
+     id="path22" />
+  <text
+     class="label"
+     x="28.616074"
+     y="21.236349"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">O</text>
+  <text
+     class="label"
+     x="36.289616"
+     y="14.054346"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">A</text>
+  <text
+     class="label"
+     x="20.537718"
+     y="4.9918356"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text28">B</text>
+  <text
+     class="label"
+     x="17.794443"
+     y="10.142628"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text30">C</text>
+  <text
+     class="label"
+     x="21.701387"
+     y="37.703125"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text32">D</text>
+  <g
+     class="length-mark"
+     data-segment="OA"
+     id="g37">
+    <path
+       class="length-arc"
+       d="m 27.8376,18.9144 c 3.425326,0.500786 5.178066,-0.521889 6.8811,-2.1285"
+       id="path34"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OA"
+       class="math-label"
+       x="31.799999"
+       y="20.867779"
+       text-anchor="middle"
+       dominant-baseline="central">3</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="OC"
+     id="g42">
+    <path
+       class="length-arc"
+       d="M 27.0775,18.7628 C 22.547394,18.60902 19.386665,16.873986 17.3912,12.9355"
+       id="path39"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OC"
+       class="math-label"
+       x="21.235069"
+       y="20.451111"
+       text-anchor="middle"
+       dominant-baseline="central">4.5</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="OB"
+     id="g47">
+    <path
+       class="length-arc"
+       d="M 27.3534,18.7622 C 23.31062,15.275553 21.900022,9.1106023 22.4516,6"
+       id="path44"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OB"
+       class="math-label"
+       x="21.43103"
+       y="11.700466"
+       text-anchor="middle"
+       dominant-baseline="central">5</text>
+  </g>
+  <g
+     class="length-mark"
+     data-segment="OD"
+     id="g52">
+    <path
+       class="length-arc"
+       d="M 27.0775,18.7628 C 27.00974,24.705053 23.938849,32.608454 17.9771,37"
+       id="path49"
+       sodipodi:nodetypes="cc" />
+    <text
+       id="length-value-OD"
+       class="math-label var"
+       x="26.36552"
+       y="27.968639"
+       text-anchor="middle"
+       dominant-baseline="central">x</text>
+  </g>
 </svg>
