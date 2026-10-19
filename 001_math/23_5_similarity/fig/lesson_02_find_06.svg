@@ -1,30 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="37.6235mm" height="33.9211mm" viewBox="4.1913 1.2073 37.6235 33.9211">
-<!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
-<desc>lesson_02_find_06; coordinates={"O":[0,0],"A":[4,0],"B":[0.375,5.988269783501742],"C":[-5.6,0],"D":[-0.5249999999999999,-8.383577696902439]}; </desc>
-<defs><style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="37.6235mm"
+   height="33.9211mm"
+   viewBox="4.1913 1.2073 37.6235 33.9211"
+   version="1.1"
+   id="svg38"
+   sodipodi:docname="lesson_02_find_06.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview40"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="6.2321705"
+     inkscape:cx="71.082779"
+     inkscape:cy="64.102867"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg38" />
+  <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+  <desc
+     id="desc2">lesson_02_find_06; coordinates={&quot;O&quot;:[0,0],&quot;A&quot;:[4,0],&quot;B&quot;:[0.375,5.988269783501742],&quot;C&quot;:[-5.6,0],&quot;D&quot;:[-0.5249999999999999,-8.383577696902439]}; </desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
 .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
-.label,.math-label,.angle-label,.frac-text{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000;font-style:normal}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
 .label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
 .frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
 .label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
-.note{font-family:"Noto Serif CJK JP","IPAexMincho",serif;font-size:3.4px;fill:#000}
-</style></defs>
-<line class="main" x1="32.4391" y1="23.977" x2="15.3681" y2="6.4"/>
-<line class="main" x1="36.9572" y1="6.6913" x2="9.0428" y2="30.6"/>
-<line class="main" x1="32.4391" y1="23.977" x2="36.9572" y2="6.6913"/>
-<line class="main" x1="15.3681" y1="6.4" x2="9.0428" y2="30.6"/>
-<line class="main" x1="32.4391" y1="23.977" x2="9.0428" y2="30.6"/>
-<line class="main" x1="36.9572" y1="6.6913" x2="15.3681" y2="6.4"/>
-<path class="thin" d="M 33.469 16.8734 L 34.6476 15.5277 L 35.017 17.278"/>
-<path class="thin" d="M 33.8736 15.3254 L 35.0522 13.9797 L 35.4216 15.73"/>
-<path class="thin" d="M 13.4346 16.9608 L 12.256 18.3065 L 11.8866 16.5562"/>
-<path class="thin" d="M 13.03 18.5088 L 11.8514 19.8545 L 11.482 18.1042"/>
-<text class="label" x="34.9836" y="26.0784" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="39.5659" y="4.6702" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="13.2936" y="3.8336" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="6.6252" y="32.8462" text-anchor="middle" dominant-baseline="central">D</text>
-<text class="label" x="29.2065" y="15.046" text-anchor="middle" dominant-baseline="central">O</text>
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+</style>
+  </defs>
+  <line
+     class="main"
+     x1="32.4391"
+     y1="23.977"
+     x2="15.3681"
+     y2="6.4"
+     id="line8" />
+  <line
+     class="main"
+     x1="36.9572"
+     y1="6.6913"
+     x2="9.0428"
+     y2="30.6"
+     id="line10" />
+  <line
+     class="main"
+     x1="32.4391"
+     y1="23.977"
+     x2="36.9572"
+     y2="6.6913"
+     id="line12" />
+  <line
+     class="main"
+     x1="15.3681"
+     y1="6.4"
+     x2="9.0428"
+     y2="30.6"
+     id="line14" />
+  <line
+     class="main"
+     x1="32.4391"
+     y1="23.977"
+     x2="9.0428"
+     y2="30.6"
+     id="line16" />
+  <line
+     class="main"
+     x1="36.9572"
+     y1="6.6913"
+     x2="15.3681"
+     y2="6.4"
+     id="line18" />
+  <path
+     class="thin"
+     d="M 33.469 16.8734 L 34.6476 15.5277 L 35.017 17.278"
+     id="path20" />
+  <path
+     class="thin"
+     d="M 33.8736 15.3254 L 35.0522 13.9797 L 35.4216 15.73"
+     id="path22" />
+  <path
+     class="thin"
+     d="M 13.4346 16.9608 L 12.256 18.3065 L 11.8866 16.5562"
+     id="path24" />
+  <path
+     class="thin"
+     d="M 13.03 18.5088 L 11.8514 19.8545 L 11.482 18.1042"
+     id="path26" />
+  <text
+     class="label"
+     x="34.9836"
+     y="26.0784"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text28">A</text>
+  <text
+     class="label"
+     x="39.5659"
+     y="4.6702"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text30">B</text>
+  <text
+     class="label"
+     x="13.2936"
+     y="3.8336"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text32">C</text>
+  <text
+     class="label"
+     x="6.6252"
+     y="32.8462"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text34">D</text>
+  <text
+     class="label"
+     x="25.299364"
+     y="14.081488"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text36">O</text>
 </svg>
