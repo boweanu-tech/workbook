@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{lotusmath-symbols}[2026/10/12 lotusmath symbols]
+\ProvidesPackage{lotusmath-symbols}[2026/10/19 lotusmath symbols]
 \RequirePackage{environ}
+\RequirePackage{amssymb}
 
 \makeatletter
 %数学関連マクロ
@@ -81,4 +82,7 @@
 
 % 平行（右上がりの斜線2本）
 \newcommand{\Parallel}{\mathrel{/\!/}}
+
+% 相似（日本式の相似記号）。通常の \sim の意味・表示は変更しない。
+\newcommand{\Similar}{\mathrel{\backsim}}
 \makeatother
