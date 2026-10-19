@@ -2,6 +2,7 @@
 \ProvidesPackage{lotusmath-symbols}[2026/10/19 lotusmath symbols]
 \RequirePackage{environ}
 \RequirePackage{amssymb}
+\RequirePackage{amsmath}
 
 \makeatletter
 %数学関連マクロ
@@ -83,6 +84,7 @@
 % 平行（右上がりの斜線2本）
 \newcommand{\Parallel}{\mathrel{/\!/}}
 
-% 相似（日本式の相似記号）。通常の \sim の意味・表示は変更しない。
-\newcommand{\Similar}{\mathrel{\backsim}}
+% 相似（両端が丸まった日本式の字形）。通常の \sim は変更しない。
+% 和文フォントの字形を使い、\text で添字内でも文字サイズを追従させる。
+\newcommand{\Similar}{\mathrel{\text{∽}}}
 \makeatother
