@@ -2,6 +2,7 @@
 \ProvidesPackage{lotusmath-symbols}[2026/10/19 lotusmath symbols]
 \RequirePackage{environ}
 \RequirePackage{amssymb}
+\usepackage{emath}
 
 \makeatletter
 %数学関連マクロ
@@ -84,5 +85,12 @@
 \newcommand{\Parallel}{\mathrel{/\!/}}
 
 % 相似（日本式の相似記号）。通常の \sim の意味・表示は変更しない。
-\newcommand{\Similar}{\mathrel{\backsim}}
+\newcommand{\Similar}{\mathrel{\souzi}}
+
+
+\DeclareRobustCommand\souzi{\@ifnextchar[{\@souzi}{\@souzi[\empty]}}%
+\def\@souzi[#1]{%
+（中略）
+  \mathrel{\hbox{\chgfontsizeratio{\sz@s}\raisebox{-\sz@r ex}{∽}}}%
+}%
 \makeatother
