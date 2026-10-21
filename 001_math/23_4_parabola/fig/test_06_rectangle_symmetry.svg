@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56mm" height="52mm" viewBox="0 0 56 52" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <!-- 数学座標から X=28+10x, Y=46-6y で変換。図では t=1.2。 -->
+  <defs>
+    <style><![CDATA[
+      .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .point,.axis-arrow{fill:#000;stroke:none}.light-fill{fill:#eee;stroke:none}
+      .label,.axis-label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000}
+      .label{font-size:4.1px;font-style:normal}.axis-label{font-size:4.1px;font-style:italic}
+    ]]></style>
+  </defs>
+  <polygon class="light-fill" points="16,46 40,46 40,28.72 16,28.72"/>
+  <line class="main" x1="3" y1="46" x2="51" y2="46"/>
+  <polygon class="axis-arrow" points="53,46 50.3,45.05 50.3,46.95"/>
+  <line class="main" x1="28" y1="50" x2="28" y2="4"/>
+  <polygon class="axis-arrow" points="28,2 27.05,4.7 28.95,4.7"/>
+  <text class="axis-label" x="50" y="43.5">x</text>
+  <text class="axis-label" x="30" y="5">y</text>
+  <path class="thin" d="M11,11.32 Q28,80.68 45,11.32"/>
+  <polygon class="main" points="16,46 40,46 40,28.72 16,28.72"/>
+  <line class="thin" x1="28" y1="46" x2="28" y2="28.72"/>
+  <circle class="point" cx="28" cy="46" r=".45"/>
+  <circle class="point" cx="40" cy="46" r=".45"/>
+  <circle class="point" cx="40" cy="28.72" r=".45"/>
+  <circle class="point" cx="28" cy="28.72" r=".45"/>
+  <circle class="point" cx="16" cy="28.72" r=".45"/>
+  <circle class="point" cx="16" cy="46" r=".45"/>
+  <text class="label" x="23.8" y="50.5">O</text>
+  <text class="label" x="41" y="50">A</text>
+  <text class="label" x="41" y="28">P</text>
+  <text class="label" x="29" y="27.5">B</text>
+  <text class="label" x="11.8" y="28">Q</text>
+  <text class="label" x="11.8" y="50">C</text>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72mm" height="50mm" viewBox="0 0 72 50" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <!-- 数学座標から X=36+8x, Y=44-4y で変換。 -->
+  <defs>
+    <style><![CDATA[
+      .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .point,.axis-arrow{fill:#000;stroke:none}
+      .label,.axis-label,.name{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;fill:#000}
+      .label{font-size:4.1px;font-style:normal}.axis-label,.name{font-size:4.1px;font-style:italic}
+      .triangle-fill{fill:#ddd;stroke:none}.triangle-outline{fill:none;stroke:#000;stroke-width:.55;stroke-linejoin:round}
+    ]]></style>
+  </defs>
+  <polygon class="triangle-fill" points="36,44 12,8 60,8"/>
+  <line class="main" x1="4" y1="44" x2="67" y2="44"/>
+  <polygon class="axis-arrow" points="69,44 66.3,43.05 66.3,44.95"/>
+  <line class="main" x1="36" y1="48" x2="36" y2="4"/>
+  <polygon class="axis-arrow" points="36,2 35.05,4.7 36.95,4.7"/>
+  <text class="axis-label" x="66" y="41.5">x</text>
+  <text class="axis-label" x="38" y="5">y</text>
+  <path class="thin" d="M10.4,3.04 Q36,84.96 61.6,3.04"/>
+  <line class="thin" x1="4" y1="8" x2="68" y2="8"/>
+  <polygon class="triangle-outline" points="36,44 12,8 60,8"/>
+  <circle class="point" cx="36" cy="44" r=".45"/>
+  <circle class="point" cx="12" cy="8" r=".45"/>
+  <circle class="point" cx="60" cy="8" r=".45"/>
+  <text class="label" x="31.8" y="48.5">O</text>
+  <text class="label" x="7.8" y="7">A</text>
+  <text class="label" x="61.2" y="7">B</text>
+  <text class="name" x="4" y="15">m</text>
+  <text class="name" x="66" y="12">l</text>
+</svg>

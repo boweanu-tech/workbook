@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62mm" height="48mm" viewBox="0 0 62 48" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style><![CDATA[
+      .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .point{fill:#000;stroke:none}
+      .label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal;fill:#000}
+    ]]></style>
+  </defs>
+  <rect class="main" x="10" y="8" width="42" height="32"/>
+  <line class="thin" x1="16" y1="4" x2="45" y2="4"/>
+  <path class="thin" d="M42.8,3.2 L45,4 L42.8,4.8"/>
+  <line class="thin" x1="5" y1="13" x2="5" y2="35"/>
+  <path class="thin" d="M4.2,32.8 L5,35 L5.8,32.8"/>
+  <circle class="point" cx="31" cy="8" r=".45"/>
+  <circle class="point" cx="10" cy="24" r=".45"/>
+  <text class="label" x="6" y="7">A</text>
+  <text class="label" x="53" y="7">B</text>
+  <text class="label" x="53" y="44">C</text>
+  <text class="label" x="6" y="44">D</text>
+  <text class="label" x="30" y="7">P</text>
+  <text class="label" x="6" y="25.5">Q</text>
+</svg>
