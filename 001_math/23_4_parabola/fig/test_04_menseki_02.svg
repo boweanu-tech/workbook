@@ -1,9 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="72mm" height="50mm" viewBox="0 0 72 50" version="1.1"
-     xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="60mm"
+   height="50mm"
+   viewBox="0 0 60 50"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="test_04_menseki_02.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="2.9896769"
+     inkscape:cx="137.47305"
+     inkscape:cy="121.91953"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg42" />
   <!-- 数学座標から X=27+7x, Y=44-4y で変換。 -->
-  <defs>
-    <style><![CDATA[
+  <defs
+     id="defs4">
+    <style
+       id="style2"><![CDATA[
       .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
       .thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
       .point,.axis-arrow{fill:#000;stroke:none}
@@ -12,22 +44,99 @@
       .triangle-fill{fill:#ddd;stroke:none}.triangle-outline{fill:none;stroke:#000;stroke-width:.55;stroke-linejoin:round}
     ]]></style>
   </defs>
-  <polygon class="triangle-fill" points="27,44 20,40 48,8"/>
-  <line class="main" x1="4" y1="44" x2="67" y2="44"/>
-  <polygon class="axis-arrow" points="69,44 66.3,43.05 66.3,44.95"/>
-  <line class="main" x1="27" y1="48" x2="27" y2="4"/>
-  <polygon class="axis-arrow" points="27,2 26.05,4.7 27.95,4.7"/>
-  <text class="axis-label" x="66" y="41.5">x</text>
-  <text class="axis-label" x="29" y="5">y</text>
-  <path class="thin" d="M4.6,3.04 Q27,84.96 49.4,3.04"/>
-  <line class="thin" x1="9.5" y1="46" x2="51.5" y2="-2"/>
-  <polygon class="triangle-outline" points="27,44 20,40 48,8"/>
-  <circle class="point" cx="27" cy="44" r=".45"/>
-  <circle class="point" cx="20" cy="40" r=".45"/>
-  <circle class="point" cx="48" cy="8" r=".45"/>
-  <text class="label" x="22.8" y="48.5">O</text>
-  <text class="label" x="15.8" y="39">A</text>
-  <text class="label" x="49.2" y="8">B</text>
-  <text class="name" x="3" y="15">m</text>
-  <text class="name" x="54" y="12">l</text>
+  <polygon
+     class="triangle-fill"
+     points="48,8 27,44 20,40 "
+     id="polygon6" />
+  <line
+     class="main"
+     x1="3.9911625"
+     y1="44"
+     x2="56.079346"
+     y2="44"
+     id="line8" />
+  <polygon
+     class="axis-arrow"
+     points="66.3,43.05 66.3,44.95 69,44 "
+     id="polygon10"
+     transform="translate(-11.182329)" />
+  <line
+     class="main"
+     x1="27"
+     y1="48"
+     x2="27"
+     y2="4"
+     id="line12" />
+  <polygon
+     class="axis-arrow"
+     points="27.95,4.7 27,2 26.05,4.7 "
+     id="polygon14" />
+  <text
+     class="axis-label"
+     x="53.259384"
+     y="41.5"
+     id="text16">x</text>
+  <text
+     class="axis-label"
+     x="29"
+     y="5"
+     id="text18">y</text>
+  <path
+     class="thin"
+     d="m 4.6,3.04 q 22.4,81.92 44.8,0"
+     id="path20" />
+  <line
+     class="thin"
+     x1="11.941528"
+     y1="49.40538"
+     x2="53.941528"
+     y2="1.4053798"
+     id="line22" />
+  <polygon
+     class="triangle-outline"
+     points="48,8 27,44 20,40 "
+     id="polygon24" />
+  <circle
+     class="point"
+     cx="27"
+     cy="44"
+     r="0.44999999"
+     id="circle26" />
+  <circle
+     class="point"
+     cx="20"
+     cy="40"
+     r="0.44999999"
+     id="circle28" />
+  <circle
+     class="point"
+     cx="48"
+     cy="8"
+     r="0.44999999"
+     id="circle30" />
+  <text
+     class="label"
+     x="22.799999"
+     y="48.5"
+     id="text32">O</text>
+  <text
+     class="label"
+     x="15.626444"
+     y="40.973904"
+     id="text34">A</text>
+  <text
+     class="label"
+     x="48.845554"
+     y="11.064133"
+     id="text36">B</text>
+  <text
+     class="name"
+     x="3"
+     y="15"
+     id="text38">m</text>
+  <text
+     class="name"
+     x="53.416508"
+     y="5.600399"
+     id="text40">l</text>
 </svg>
