@@ -1,12 +1,11 @@
 % theme: proving_triangle_similarity
 % 叩き台：表・裏とも大問4題。穴埋めは各2題、残りは全文記述。
 % 既存図は表示のみ利用し、図ファイルは変更しない。
-\MajorQuestionLesson{相似の証明}
+\MajorQuestionLesson{相似の証明１}
 \SetRowSpace{3mm}
 
 \Needspace{75mm}
-\TypeQuestion{}{triangle_similarity_proof_parallel_fill}
-\Text{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{DE}\Parallel\Lseg{BC}$ である。$\Tri{ADE}\Similar\Tri{ABC}$ となることを証明したい。次の証明の空欄をうめなさい。}
+\TypeQuestion{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{DE}\Parallel\Lseg{BC}$ である。$\Tri{ADE}\Similar\Tri{ABC}$ となることを証明したい。次の証明の空欄をうめなさい。}{triangle_similarity_proof_parallel_fill}
 \FigProblemBlock{43mm}{fig/lesson_03_nested}{
 \WholeQuestion{%
 \textbf{証明}\par\smallskip
@@ -19,37 +18,19 @@ $\Tri{ADE}\Similar\Tri{ABC}$
 }{}
 }{}
 
-\Needspace{85mm}
-\TypeQuestion{図に示した長さを用いて、$\Tri{OAB}\Similar\Tri{OCD}$ となることを証明したい。次の証明の空欄をうめなさい。長さの単位は $\mathrm{cm}$ とする。}{triangle_similarity_proof_three_sides_fill}
-\FigProblemBlock{40mm}{fig/lesson_02_find_04}{
-\WholeQuestion{%
-\textbf{証明}\par\smallskip
-$\Tri{OAB}$ と $\Tri{OCD}$ において、\par\smallskip
-$\Lseg{OA}:\Lseg{OC}=4:6=$\Blank{ア}\par\medskip
-$\Lseg{OB}:\Lseg{OD}=$\Blank{イ}$=2:3$\par\medskip
-$\Lseg{AB}:\Lseg{CD}=6:9=2:3$\par\medskip
-したがって、\Blank{ウ}がすべて等しいので、\par
-$\Tri{OAB}\Similar$\Blank{エ}
-}{}
-}{}
-
+%図を回り込みさせ、文章と図を横並びに。
+%穴埋め問題にしてください。
 \Needspace{75mm}
 \TypeQuestion{}{triangle_similarity_proof_two_sides_angle}
 % 図は等角・平行の印なし。長さは文中指定のみ。
 \Text{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{AD}=3\mathrm{cm}$、$\Lseg{AE}=4\mathrm{cm}$、$\Lseg{AB}=8\mathrm{cm}$、$\Lseg{AC}=6\mathrm{cm}$ である。$\Tri{ADE}\Similar\Tri{ACB}$ となることを証明しなさい。}
 \FigProblemBlock{45mm}{fig/lesson_05_two_sides_angle}{\WholeQuestion{}{}}{}
 
-\Needspace{80mm}
-\TypeQuestion{}{triangle_similarity_proof_crossing}
-\Text{図で、$\Lseg{AB}\Parallel\Lseg{CD}$ であり、線分 $\Lseg{AC},\Lseg{BD}$ は点 $\mathrm{O}$ で交わっている。$\Tri{OAB}\Similar\Tri{OCD}$ となることを証明しなさい。}
-\FigProblemBlock{32mm}{fig/lesson_03_crossing}{\WholeQuestion{}{} }{}
 
-\AnswerColumnBreak
 \LessonQuestionBreak
 
 \Needspace{100mm}
-\TypeQuestion{}{triangle_similarity_proof_isosceles_fill}
-\Text{図の $\Tri{ABC}$ は $\Lseg{AB}=\Lseg{AC}$ の二等辺三角形である。辺 $\Lseg{AB}$ 上に、$\Ang{BCD}=\Ang{BAC}$ となる点 $\mathrm{D}$ をとった。次の問いに答えなさい。}
+\TypeQuestion{図の $\Tri{ABC}$ は $\Lseg{AB}=\Lseg{AC}$ の二等辺三角形である。辺 $\Lseg{AB}$ 上に、$\Ang{BCD}=\Ang{BAC}$ となる点 $\mathrm{D}$ をとった。次の問いに答えなさい。}{triangle_similarity_proof_isosceles_fill}
 \FigProblemBlock{35mm}{fig/lesson_04_isosceles}{
 \QQ{$\Tri{BCD}\Similar\Tri{BAC}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
 \textbf{証明}\par
@@ -61,12 +42,12 @@ $\Ang{CBD}=$\Blank{イ}\par\smallskip
 $\Tri{BCD}\Similar\Tri{BAC}$
 }{}
 }{
+%これは穴埋めではありませんが、残していいと思う。
 \QQ{前の小問で示した相似と $\Lseg{AB}=\Lseg{AC}$ を用いて、$\Lseg{CD}=\Lseg{BC}$ となることを証明しなさい。}{}
 }
 
 \Needspace{110mm}
-\TypeQuestion{}{triangle_similarity_proof_fold_fill}
-\Text{図の長方形 $\mathrm{ABCD}$ で、辺 $\Lseg{BC}$ 上に点 $\mathrm{F}$ をとり、線分 $\Lseg{AF}$ を折り目として折ると、点 $\mathrm{B}$ は対角線 $\Lseg{AC}$ 上の点 $\mathrm{E}$ に移った。次の問いに答えなさい。}
+\TypeQuestion{図の長方形 $\mathrm{ABCD}$ で、辺 $\Lseg{BC}$ 上に点 $\mathrm{F}$ をとり、線分 $\Lseg{AF}$ を折り目として折ると、点 $\mathrm{B}$ は対角線 $\Lseg{AC}$ 上の点 $\mathrm{E}$ に移った。次の問いに答えなさい。}{triangle_similarity_proof_fold_fill}
 \FigProblemBlock{42mm}{fig/lesson_04_fold_diagonal}{
 \QQ{$\Tri{CEF}\Similar\Tri{CBA}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
 \textbf{証明}\par
@@ -80,21 +61,7 @@ $\Ang{ECF}=$\Blank{イ}\par\smallskip
 $\Tri{CEF}\Similar$\Blank{エ}
 }{}
 }{
+%これは穴埋めではありませんが、残していいと思う。
 \QQ{前の小問で示した相似を用いて、$\Lseg{CE}\cdot\Lseg{AB}=\Lseg{EF}\cdot\Lseg{BC}$ となることを示しなさい。}{}
 }
 
-\Needspace{80mm}
-\TypeQuestion{}{triangle_similarity_proof_right_altitude}
-\Text{図の $\Tri{ABC}$ は $\Ang{BAC}=90^\circ$ の直角三角形である。点 $\mathrm{A}$ から辺 $\Lseg{BC}$ に垂線 $\Lseg{AH}$ を引いた。次の問いに答えなさい。}
-\FigProblemBlock{43mm}{fig/lesson_04_right_altitude}{
-\QQ{$\Tri{ABH}\Similar\Tri{CAH}$ となることを証明しなさい。}{}
-\QQ{前の小問で示した相似を用いて、$\Lseg{AH}^{2}=\Lseg{BH}\cdot\Lseg{CH}$ となることを示しなさい。}{}
-}{}
-
-\Needspace{80mm}
-\TypeQuestion{}{triangle_similarity_proof_product}
-\Text{図で、点 $\mathrm{D}$ は辺 $\Lseg{BC}$ 上にあり、$\Ang{BAD}=\Ang{ACB}$ である。次の問いに答えなさい。}
-\FigProblemBlock{43mm}{fig/lesson_03_shared_angle}{
-\QQ{相似な2つの三角形を見つけ、対応する頂点の順に書きなさい。また、その相似を証明しなさい。}{}
-\QQ{相似を用いて、$\Lseg{AB}^{2}=\Lseg{BD}\cdot\Lseg{BC}$ となることを証明しなさい。}{}
-}{}
