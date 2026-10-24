@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="44mm" height="31.44198mm" viewBox="0 0 44 31.44198">
+<!-- Based on 999_GPTbox/template.svg. Points, segments and angle marks use one mathematical coordinate model. Lengths are specified in the TeX problem, not repeated here. -->
+<desc>lesson_06_bisector_calc_07; coordinates={"A":[2.25,3.307189138830738],"B":[0,0],"C":[6,0],"F":[3.75,1.9843134832984428]}; Calculation (7); angle B is bisected at F. No numeric labels or extra right-angle marks.</desc>
+<defs><style><![CDATA[
+      /* ========= 全体・ガイド ========= */
+      .page-border {
+        stroke: #bbbbbb;
+        stroke-width: 0.2;
+        fill: none;
+      }
+      .guide {
+        stroke: #cccccc;
+        stroke-width: 0.15;
+        fill: none;
+        stroke-dasharray: 1 1;
+      }
+
+      /* ========= 線 ========= */
+      .main {
+        stroke: black;
+        stroke-width: 0.55;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .thin {
+        stroke: black;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .dash {
+        stroke: black;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-dasharray: 1.2 1.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .bold {
+        stroke: black;
+        stroke-width: 0.75;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .length-arc {
+        stroke: black;
+        stroke-width: 0.32;
+        fill: none;
+        stroke-dasharray: 0.45 1.05;
+        stroke-linecap: round;
+      }
+      .axis-arrow {
+        fill: black;
+        stroke: none;
+      }
+
+      /* ========= 点・文字 ========= */
+      .point {
+        fill: black;
+        stroke: none;
+      }
+      .section-title,
+      .note {
+        font-family: "Noto Serif CJK JP", "IPAexMincho", "IPAMincho", serif;
+        fill: black;
+      }
+      .label,
+      .math-label,
+      .axis-label,
+      .angle-label,
+      .frac-text {
+        font-family: "CMU Serif", "Computer Modern Serif",
+                     "Latin Modern Roman", "Times New Roman", serif;
+        fill: black;
+      }
+      .section-title {
+        font-size: 4px;
+        font-weight: bold;
+      }
+      .note {
+        font-size: 3px;
+        fill: #555555;
+      }
+      .label {
+        font-size: 4.1px;
+        font-style: normal;
+      }
+      .math-label {
+        font-size: 4px;
+        font-style: normal;
+      }
+      .axis-label {
+        font-size: 4px;
+        font-style: italic;
+      }
+      .angle-label {
+        font-size: 3.2px;
+      }
+      .var {
+        font-style: italic;
+      }
+      .sup {
+        font-size: 2.8px;
+      }
+      .frac-text {
+        font-size: 3.2px;
+      }
+      .frac-line {
+        stroke: black;
+        stroke-width: 0.28;
+      }
+      .label-bg {
+        fill: white;
+        opacity: 0.92;
+      }
+
+      /* ========= 塗り ========= */
+      .white-shape {
+        fill: white;
+        stroke: black;
+        stroke-width: 0.55;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .light-fill {
+        fill: #eeeeee;
+        stroke: none;
+      }
+      .mid-fill,
+      .triangle-fill {
+        fill: #dddddd;
+        stroke: none;
+      }
+      .triangle-outline {
+        fill: none;
+        stroke: black;
+        stroke-width: 0.55;
+        stroke-linejoin: round;
+      }
+    
+.label {font-style:normal;}
+]]></style></defs>
+<polygon class="main" points="19.31985,6.5 6.5,22.77424 37.5,24.94198"/>
+<path class="thin" d="M 6.5,22.77424 L 26.59191,13.87679"/>
+<path class="thin" d="M 8.60393,20.10339 A 3.4,3.4 0 0 1 9.60881,21.39755"/>
+<path class="thin" d="M 9.60881,21.39755 A 3.4,3.4 0 0 1 9.89172,23.01142"/>
+<text class="label" x="18.9231" y="3.93045" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="4.02508" y="23.57097" text-anchor="end" dominant-baseline="central">B</text>
+<text class="label" x="39.89795" y="25.94688" text-anchor="start" dominant-baseline="central">C</text>
+<text class="label" x="28.44348" y="12.0515" text-anchor="start" dominant-baseline="central">F</text>
+</svg>
