@@ -126,6 +126,7 @@
 | `\InstructionTall{text}` | 1 | 行間を広めにした指示文 | 長い指示文用 |
 | `\Text{text}` | 1 | 地の文を出す | 問題モードのみ表示 |
 | `\TextTall{text}` | 1 | 行間を広めにした地の文 | 長い本文用 |
+| `\ProofHeading` | 0 | 太字の「【証明】」と、その直後の改行・小余白を出す | 問題文・解答のどちらでも利用可。表示は `lotusmath-question.sty` で一括調節 |
 | `\WholeQuestion{problem}{answer}` | 2 | 小問番号を付けず、大問全体の問題本体と解答を切り替える | `\TypeQuestion` の直後で使う。小問カウンタは変更しない |
 
 ---

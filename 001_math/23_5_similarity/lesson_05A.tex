@@ -1,6 +1,6 @@
 % theme: proving_triangle_similarity
-% 叩き台：表・裏とも大問4題。穴埋めは各2題、残りは全文記述。
-% 既存図は表示のみ利用し、図ファイルは変更しない。
+% 表：基本の相似条件を使う穴埋め3題。裏：角を追う穴埋め2題。
+% 裏の相似を利用する小問は記述のまま残す。解答は未生成。
 \MajorQuestionLesson{相似の証明１}
 \SetRowSpace{3mm}
 
@@ -8,8 +8,7 @@
 \TypeQuestion{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{DE}\Parallel\Lseg{BC}$ である。$\Tri{ADE}\Similar\Tri{ABC}$ となることを証明したい。次の証明の空欄をうめなさい。}{triangle_similarity_proof_parallel_fill}
 \FigProblemBlock{43mm}{fig/lesson_03_nested}{
 \WholeQuestion{%
-%「証明」表示を.styでAPI化してください。【】というカッコもつけて
-\textbf{証明}\par\smallskip
+\ProofHeading
 
 $\Tri{ADE}$ と $\Tri{ABC}$ において、共通な角であるから、\par
 $\Ang{DAE}=$\Blank{ア}\par\smallskip
@@ -20,15 +19,37 @@ $\Tri{ADE}\Similar\Tri{ABC}$
 }{}
 }{}
 
-%図を回り込みさせ、文章と図を横並びに。
-%穴埋め問題にしてください。
 \Needspace{75mm}
 \TypeQuestion{}{triangle_similarity_proof_two_sides_angle}
 % 図は等角・平行の印なし。長さは文中指定のみ。
-\Text{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{AD}=3\mathrm{cm}$、$\Lseg{AE}=4\mathrm{cm}$、$\Lseg{AB}=8\mathrm{cm}$、$\Lseg{AC}=6\mathrm{cm}$ である。$\Tri{ADE}\Similar\Tri{ACB}$ となることを証明しなさい。}
-\FigProblemBlock{45mm}{fig/lesson_05_two_sides_angle}{\WholeQuestion{}{}}{}
+\FigProblemBlock{45mm}{fig/lesson_05_two_sides_angle}{
+\Text{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{AD}=3\mathrm{cm}$、$\Lseg{AE}=4\mathrm{cm}$、$\Lseg{AB}=8\mathrm{cm}$、$\Lseg{AC}=6\mathrm{cm}$ である。$\Tri{ADE}\Similar\Tri{ACB}$ となることを示す次の証明の空欄をうめなさい。}
+}{
+\WholeQuestion{%
+\ProofHeading
+$\Tri{ADE}$ と $\Tri{ACB}$ において、\par
+$\Lseg{AD}:\Lseg{AC}=3:6=$\Blank{ア}\par\smallskip
+$\Lseg{AE}:\Lseg{AB}=$\Blank{イ}$=1:2$\par\smallskip
+また、共通な角であるから、$\Ang{DAE}=$\Blank{ウ}\par\smallskip
+よって、\Blank{エ}がそれぞれ等しいので、\par
+$\Tri{ADE}\Similar\Tri{ACB}$
+}{}
+}
 
-%もう１題追加
+\Needspace{85mm}
+\TypeQuestion{}{triangle_similarity_proof_three_sides_sum_fill}
+\FigProblemBlock{43mm}{fig/lesson_05_three_sides_sum}{
+\Text{図で、点 $\mathrm{D},\mathrm{E}$ はそれぞれ辺 $\Lseg{AB},\Lseg{AC}$ 上にあり、$\Lseg{AD}=4\mathrm{cm}$、$\Lseg{DB}=6\mathrm{cm}$、$\Lseg{AE}=6\mathrm{cm}$、$\Lseg{EC}=9\mathrm{cm}$、$\Lseg{DE}=8\mathrm{cm}$、$\Lseg{BC}=20\mathrm{cm}$ である。$\Tri{ADE}\Similar\Tri{ABC}$ となることを示す次の証明の空欄をうめなさい。}
+}{
+\WholeQuestion{%
+\ProofHeading
+$\Tri{ADE}$ と $\Tri{ABC}$ において、\par
+$\Lseg{AB}=4+6=$\Blank{ア}$\mathrm{cm}$、$\Lseg{AC}=6+9=$\Blank{イ}$\mathrm{cm}$\par\smallskip
+したがって、$\Lseg{AD}:\Lseg{AB}=\Lseg{AE}:\Lseg{AC}=\Lseg{DE}:\Lseg{BC}=$\Blank{ウ}\par\smallskip
+よって、\Blank{エ}がすべて等しいので、\par
+$\Tri{ADE}\Similar$\Blank{オ}
+}{}
+}
 
 \LessonQuestionBreak
 
@@ -36,7 +57,7 @@ $\Tri{ADE}\Similar\Tri{ABC}$
 \TypeQuestion{図の $\Tri{ABC}$ は $\Lseg{AB}=\Lseg{AC}$ の二等辺三角形である。辺 $\Lseg{AB}$ 上に、$\Ang{BCD}=\Ang{BAC}$ となる点 $\mathrm{D}$ をとった。次の問いに答えなさい。}{triangle_similarity_proof_isosceles_fill}
 \FigProblemBlock{35mm}{fig/lesson_04_isosceles}{
 \QQ{$\Tri{BCD}\Similar\Tri{BAC}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
-\textbf{証明}\par
+\ProofHeading
 $\Tri{BCD}$ と $\Tri{BAC}$ において、仮定より、\par
 $\Ang{BCD}=$\Blank{ア}\par\smallskip
 点 $\mathrm{D}$ は辺 $\Lseg{AB}$ 上にあるから、\par
@@ -45,7 +66,6 @@ $\Ang{CBD}=$\Blank{イ}\par\smallskip
 $\Tri{BCD}\Similar\Tri{BAC}$
 }{}
 }{
-%これは穴埋めではありませんが、残していいと思う。
 \QQ{前の小問で示した相似と $\Lseg{AB}=\Lseg{AC}$ を用いて、$\Lseg{CD}=\Lseg{BC}$ となることを証明しなさい。}{}
 }
 
@@ -53,7 +73,7 @@ $\Tri{BCD}\Similar\Tri{BAC}$
 \TypeQuestion{図の長方形 $\mathrm{ABCD}$ で、辺 $\Lseg{BC}$ 上に点 $\mathrm{F}$ をとり、線分 $\Lseg{AF}$ を折り目として折ると、点 $\mathrm{B}$ は対角線 $\Lseg{AC}$ 上の点 $\mathrm{E}$ に移った。次の問いに答えなさい。}{triangle_similarity_proof_fold_fill}
 \FigProblemBlock{42mm}{fig/lesson_04_fold_diagonal}{
 \QQ{$\Tri{CEF}\Similar\Tri{CBA}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
-\textbf{証明}\par
+\ProofHeading
 $\Tri{CEF}$ と $\Tri{CBA}$ において、折り返しにより、\par
 $\Ang{AEF}=$\Blank{ア}$=90^\circ$\par\smallskip
 点 $\mathrm{A},\mathrm{E},\mathrm{C}$ は一直線上にあるから、\par
@@ -64,7 +84,6 @@ $\Ang{ECF}=$\Blank{イ}\par\smallskip
 $\Tri{CEF}\Similar$\Blank{エ}
 }{}
 }{
-%これは穴埋めではありませんが、残していいと思う。
 \QQ{前の小問で示した相似を用いて、$\Lseg{CE}\cdot\Lseg{AB}=\Lseg{EF}\cdot\Lseg{BC}$ となることを示しなさい。}{}
 }
 

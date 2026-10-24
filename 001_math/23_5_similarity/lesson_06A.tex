@@ -1,17 +1,27 @@
 % theme: proving_triangle_similarity
-% 叩き台：表・裏とも大問4題。穴埋めは各2題、残りは全文記述。
-% 既存図は表示のみ利用し、図ファイルは変更しない。
+% 表：相似条件を選んで記述する基本3題。裏：角を追い、相似を利用する4題。
+% 合同や複数組の相似を経由する発展問題は扱わない。解答は未生成。
 \MajorQuestionLesson{相似の証明２}
 \SetRowSpace{3mm}
 
 \Needspace{80mm}
-%図を回り込みさせ、文章と図を横並びに。
 \TypeQuestion{}{triangle_similarity_proof_crossing}
+\FigProblemBlock{32mm}{fig/lesson_03_crossing}{
 \Text{図で、$\Lseg{AB}\Parallel\Lseg{CD}$ であり、線分 $\Lseg{AC},\Lseg{BD}$ は点 $\mathrm{O}$ で交わっている。$\Tri{OAB}\Similar\Tri{OCD}$ となることを証明しなさい。}
-\FigProblemBlock{32mm}{fig/lesson_03_crossing}{\WholeQuestion{}{} }{}
+}{\WholeQuestion{}{}}
 
+\Needspace{60mm}
+\TypeQuestion{}{triangle_similarity_proof_crossing_sas}
+\FigProblemBlock{43mm}{fig/lesson_06_proof_crossing_sas}{
+\Text{図で、線分 $\Lseg{AC},\Lseg{BD}$ は点 $\mathrm{O}$ で交わっている。$\Lseg{OA}=4\mathrm{cm}$、$\Lseg{OB}=6\mathrm{cm}$、$\Lseg{OC}=9\mathrm{cm}$、$\Lseg{OD}=6\mathrm{cm}$ のとき、$\Tri{OAB}\Similar\Tri{ODC}$ となることを証明しなさい。}
+}{\WholeQuestion{}{}}
 
-%もう２題追加
+\Needspace{75mm}
+\TypeQuestion{}{triangle_similarity_proof_shared_side_sss}
+\FigProblemBlock{32mm}{fig/lesson_06_proof_shared_side_sss}{
+\Text{図の四角形 $\mathrm{ABCD}$ で、$\Lseg{AB}=4\mathrm{cm}$、$\Lseg{BC}=5\mathrm{cm}$、$\Lseg{AC}=6\mathrm{cm}$、$\Lseg{AD}=7.5\mathrm{cm}$、$\Lseg{CD}=9\mathrm{cm}$ である。$\Tri{ABC}\Similar\Tri{CAD}$ となることを証明しなさい。}
+}{\WholeQuestion{}{}}
+
 \AnswerColumnBreak
 \LessonQuestionBreak
 \SetRowSpace{8mm}
@@ -32,4 +42,21 @@
 }{}
 
 
-%もう２題追加
+\Needspace{80mm}
+\TypeQuestion{}{triangle_similarity_proof_equilateral_angle_chase}
+\FigProblemBlock{43mm}{fig/lesson_06_proof_equilateral_angle_chase}{
+\Text{正三角形 $\mathrm{ABC}$ の辺 $\Lseg{BC},\Lseg{CA}$ 上にそれぞれ点 $\mathrm{D},\mathrm{E}$ をとると、$\Ang{ADE}=60^\circ$ となった。次の問いに答えなさい。}
+}{
+\QQ{$\Ang{BAD}=a^\circ$ とするとき、$\Ang{CDE}$ を $a$ を用いて表しなさい。}{}
+\QQ{$\Tri{ABD}\Similar\Tri{DCE}$ となることを証明しなさい。}{}
+\QQ{前の小問で示した相似を用いて、$\Lseg{AB}\cdot\Lseg{CE}=\Lseg{BD}\cdot\Lseg{DC}$ となることを示しなさい。}{}
+}
+
+\Needspace{80mm}
+\TypeQuestion{}{triangle_similarity_proof_rectangle_perpendicular}
+\FigProblemBlock{43mm}{fig/lesson_06_proof_rectangle_perpendicular}{
+\Text{長方形 $\mathrm{ABCD}$ の辺 $\Lseg{BC},\Lseg{CD}$ 上にそれぞれ点 $\mathrm{E},\mathrm{F}$ をとると、線分 $\Lseg{AE},\Lseg{BF}$ は垂直に交わった。次の問いに答えなさい。}
+}{
+\QQ{$\Tri{ABE}\Similar\Tri{BCF}$ となることを証明しなさい。}{}
+\QQ{前の小問で示した相似を用いて、$\Lseg{AB}\cdot\Lseg{CF}=\Lseg{BC}\cdot\Lseg{BE}$ となることを示しなさい。}{}
+}

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="44mm" height="31.49762mm" viewBox="0 0 44 31.49762">
-<!-- Based on 999_GPTbox/template.svg. Points, segments and angle marks use one mathematical coordinate model. Lengths are specified in the TeX problem, not repeated here. -->
-<desc>lesson_06_bisector_calc_03; coordinates={"A":[1.4166666666666667,8.887803753208976],"B":[0,0],"C":[6,0],"F":[4.166666666666666,3.5551215012835904]}; Calculation (3); angle B is bisected at F. No numeric labels or extra right-angle marks.</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="46.5428mm" height="57.1070mm" viewBox="-5.8685 -35.0289 46.5428 57.1070">
+<!-- Based on 999_GPTbox/template.svg; all geometry uses one coordinate model. -->
+<desc>{&quot;coordinates&quot;: {&quot;A&quot;: [1.4166666666666667, 8.887803753208976], &quot;B&quot;: [0, 0], &quot;C&quot;: [6, 0], &quot;F&quot;: [4.166666666666666, 3.5551215012835904]}, &quot;description&quot;: &quot;AB=9, AC=10, BC=6; angle B is bisected at F. Dimension labels are the complete givens.&quot;}</desc>
 <defs><style><![CDATA[
       /* ========= 全体・ガイド ========= */
       .page-border {
@@ -141,15 +141,27 @@
         stroke-width: 0.55;
         stroke-linejoin: round;
       }
-    
-.label {font-style:normal;}
-]]></style></defs>
-<polygon class="main" points="37.5,24.99762 16.4713,6.5 6.5,22.28547"/>
-<path class="thin" d="M 16.4713,6.5 L 18.9,23.37033"/>
-<path class="thin" d="M 19.02419,8.74561 A 3.4,3.4 0 0 1 16.95578,9.86531"/>
-<path class="thin" d="M 16.95578,9.86531 A 3.4,3.4 0 0 1 14.65553,9.37454"/>
-<text class="label" x="39.90763" y="25.97911" text-anchor="start" dominant-baseline="central">A</text>
-<text class="label" x="15.6732" y="4.02552" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="4.02304" y="23.07583" text-anchor="end" dominant-baseline="central">C</text>
-<text class="label" x="18.6734" y="25.96044" text-anchor="middle" dominant-baseline="central">F</text>
+    ]]></style></defs>
+<path class="main" d="M 27.1569,-28.0664 L 0.0000,-0.0000"/>
+<path class="main" d="M 0.0000,-0.0000 L 21.3274,14.9336"/>
+<path class="main" d="M 21.3274,14.9336 L 27.1569,-28.0664"/>
+<path class="main" d="M 0.0000,-0.0000 L 23.6592,-2.2664"/>
+<path class="thin" d="M 2.4338,-2.5153 A 3.5,3.5 0 0 1 3.4841,-0.3337"/>
+<path class="thin" d="M 3.4841,-0.3337 A 3.5,3.5 0 0 1 2.8670,2.0075"/>
+<text class="label" x="28.4610" y="-31.5289" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="-3.6185" y="0.7724" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="21.9661" y="18.5781" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="19.5731" y="1.0593" text-anchor="middle" dominant-baseline="central">F</text>
+<path class="length-arc" d="M 26.3663,-28.8313 A 65.0506,65.0506 0 0 0 -0.7905,-0.7649"/>
+<rect class="label-bg" x="7.1946" y="-20.7749" width="4.0000" height="5"/>
+<text class="math-label" x="9.1946" y="-18.2749" text-anchor="middle" dominant-baseline="central">9</text>
+<path class="length-arc" d="M -0.6309,0.9011 A 29.7447,29.7447 0 0 0 20.6965,15.8347"/>
+<rect class="label-bg" x="5.1649" y="9.9636" width="4.0000" height="5"/>
+<text class="math-label" x="7.1649" y="12.4636" text-anchor="middle" dominant-baseline="central">6</text>
+<path class="length-arc" d="M 35.0843,-26.9917 A 79.9576,79.9576 0 0 1 29.2549,16.0083"/>
+<rect class="label-bg" x="34.5743" y="-7.3200" width="5.1000" height="5"/>
+<text class="math-label" x="37.1243" y="-4.8200" text-anchor="middle" dominant-baseline="central">10</text>
+<path class="length-arc" d="M 24.6501,-2.1320 A 14.0532,14.0532 0 0 1 22.3184,15.0680"/>
+<rect class="label-bg" x="26.4389" y="4.6397" width="4.0000" height="5"/>
+<text class="math-label" x="28.4389" y="7.1397" text-anchor="middle" dominant-baseline="central"><tspan class="var">x</tspan></text>
 </svg>
