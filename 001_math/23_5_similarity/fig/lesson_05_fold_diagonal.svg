@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="57.7030mm"
+   height="44.8159mm"
+   viewBox="3.7004 1.5143 57.7030 44.8159"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="lesson_05_fold_diagonal.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.3355093"
+     inkscape:cx="140.30841"
+     inkscape:cy="6.145988"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg34" />
+  <!-- Based on 999_GPTbox/template.svg. Geometry computed; keep .main/.thin widths and upright point labels. -->
+  <desc
+     id="desc2">lesson_04_fold_diagonal; coordinates={&quot;A&quot;:[0,0],&quot;B&quot;:[8,0],&quot;C&quot;:[8,6],&quot;D&quot;:[0,6],&quot;E&quot;:[6.4,4.8],&quot;F&quot;:[8,2.6666666666666665]}; AB=8, AD=6, AC=10. Fold B onto E along AF. AE=8, CE=2, CF=10/3, BF=EF=8/3.</desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4">
+.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}
+.label,.math-label,.angle-label,.frac-text{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;fill:#000;font-style:normal}
+.label,.math-label{font-size:3.7px}.angle-label{font-size:3.1px}.var{font-style:italic}
+.frac-text{font-size:2.9px}.frac-line{stroke:#000;stroke-width:.28}
+.label-bg{fill:#fff;opacity:.96}.triangle-fill{fill:#ddd;stroke:none}
+.note{font-family:&quot;Noto Serif CJK JP&quot;,&quot;IPAexMincho&quot;,serif;font-size:3.4px;fill:#000}
+</style>
+  </defs>
+  <polygon
+     class="triangle-fill"
+     points="9.0333,41.6 46.58,13.44 55.9667,25.9556"
+     id="polygon8" />
+  <polygon
+     class="main"
+     points="9.0333,41.6 55.9667,41.6 55.9667,6.4 9.0333,6.4"
+     id="polygon10" />
+  <line
+     class="thin"
+     x1="9.0333"
+     y1="41.6"
+     x2="55.9667"
+     y2="6.4"
+     id="line12" />
+  <line
+     class="dash"
+     x1="9.0333"
+     y1="41.6"
+     x2="55.9667"
+     y2="25.9556"
+     id="line14" />
+  <line
+     class="main"
+     x1="46.58"
+     y1="13.44"
+     x2="55.9667"
+     y2="25.9556"
+     id="line16" />
+  <text
+     class="label"
+     x="6.2543"
+     y="43.3796"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text18">A</text>
+  <text
+     class="label"
+     x="58.1798"
+     y="44.0479"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text20">B</text>
+  <text
+     class="label"
+     x="58.3719"
+     y="4.1406"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text22">C</text>
+  <text
+     class="label"
+     x="6.1343"
+     y="4.8234"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">D</text>
+  <text
+     class="label"
+     x="48.1873"
+     y="9.5597"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">E</text>
+  <text
+     class="label"
+     x="59.2045"
+     y="26.5933"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text28">F</text>
+  <path
+     class="thin"
+     d="M 53.9667 41.6 l 0 -2 l 2 0"
+     id="path30" />
+</svg>
