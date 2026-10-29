@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="54.2759mm" height="49.7069mm" viewBox="-48.3267 -26.3350 54.2759 49.7069">
-<!-- Based on 999_GPTbox/template.svg; all geometry uses one coordinate model. -->
+<!-- Based on 999_GPTbox/template.svg; all geometry uses one coordinate model. Equal angles are indicated by black dots; other geometry and length labels are unchanged. -->
 <desc>{&quot;coordinates&quot;: {&quot;A&quot;: [2.25, 3.307189138830738], &quot;B&quot;: [0, 0], &quot;C&quot;: [6, 0], &quot;F&quot;: [3.75, 1.9843134832984428]}, &quot;description&quot;: &quot;AB=4, AC=5, BC=6; angle B is bisected at F. Dimension labels are the complete givens.&quot;}</desc>
 <defs><style><![CDATA[
       /* ========= 全体・ガイド ========= */
@@ -146,8 +146,8 @@
 <path class="main" d="M -0.0000,-0.0000 L -43.0000,-20.0512"/>
 <path class="main" d="M -43.0000,-20.0512 L -27.1772,16.1823"/>
 <path class="main" d="M -0.0000,-0.0000 L -33.5063,1.6889"/>
-<path class="thin" d="M -3.0073,1.7906 A 3.5,3.5 0 0 1 -3.4956,0.1762"/>
-<path class="thin" d="M -3.4956,0.1762 A 3.5,3.5 0 0 1 -3.1721,-1.4792"/>
+<circle class="point" cx="-3.3501" cy="1.0132" r="0.55"/>
+<circle class="point" cx="-3.4350" cy="-0.6713" r="0.55"/>
 <text class="label" x="-27.4543" y="19.8719" text-anchor="middle" dominant-baseline="central">A</text>
 <text class="label" x="3.6992" y="0.0778" text-anchor="middle" dominant-baseline="central">B</text>
 <text class="label" x="-45.4374" y="-22.8350" text-anchor="middle" dominant-baseline="central">C</text>
