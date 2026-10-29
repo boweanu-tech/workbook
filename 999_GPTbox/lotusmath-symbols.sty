@@ -20,6 +20,15 @@
   \fi
 }
 
+% 条件式の行末に添える番号。本文中の参照には横線なしの \CondNo を使う。
+\DeclareRobustCommand{\CondTag}[1]{%
+  \ifmmode
+    \text{\normalfont\rule[0.5ex]{1em}{0.3pt}\hspace{0.1em}\CondNo{#1}}%
+  \else
+    \mbox{\normalfont\rule[0.5ex]{1em}{0.3pt}\hspace{0.1em}\CondNo{#1}}%
+  \fi
+}
+
 % 式番号つきの式
 \newlength{\EqItemWidth}
 \setlength{\EqItemWidth}{25mm}
