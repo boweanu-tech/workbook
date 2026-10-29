@@ -10,6 +10,16 @@
 %式番号
 \newcommand{\EqNo}[1]{\textcircled{\scriptsize #1}}
 
+% 条件番号。既存の式番号の字形を使い、本文・数式の両方に対応する。
+% 番号は手動指定で、自動採番やカウンタの更新は行わない。
+\DeclareRobustCommand{\CondNo}[1]{%
+  \ifmmode
+    \text{\normalfont\EqNo{#1}}%
+  \else
+    \mbox{\normalfont\EqNo{#1}}%
+  \fi
+}
+
 % 式番号つきの式
 \newlength{\EqItemWidth}
 \setlength{\EqItemWidth}{25mm}

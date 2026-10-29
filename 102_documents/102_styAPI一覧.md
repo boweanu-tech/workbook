@@ -285,6 +285,7 @@
 | `\Parallel`   |   0 | 右上がりの斜線2本で平行関係を表す      | 例：`$\Lseg{AB}\Parallel\Lseg{CD}$` |
 | `\Similar`    |   0 | 両端が丸まった日本式の相似記号を出す | 例：`$\Tri{ABC}\Similar\Tri{DEF}$`。和文フォントの「∽」を使う。添字内でもサイズが追従し、通常の `\sim` は変更しない |
 | `\EqNo{label}` | 1 | 式番号を丸囲みで表示する | 例：`\EqNo{1}` |
+| `\CondNo{number}` | 1 | 条件番号を丸囲みで表示する | 本文・数式の両方で使用可。例：`$\Ang{ABC}=\Ang{DEF}\quad\CondNo{1}$`、`\CondNo{1}と\CondNo{2}より`。手動指定で、自動採番はしない。字形は既存の `\EqNo` を利用 |
 | `\EqItem{label}{formula}` | 2 | 式番号と数式を一定幅で横並びにする | 数式部分は内部で数式モードになる |
 | `\SetEqItemWidth{length}` | 1 | `\EqItem` 1項目分の幅を変更する | 初期値は `25mm` |
 | `\SetEqListArrayStretch{value}` | 1 | 式一覧の行間倍率を変更する | 初期値は `1.6` |
