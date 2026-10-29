@@ -1,8 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="47.2317mm" height="56.9473mm" viewBox="-9.1231 -50.1986 47.2317 56.9473">
-<!-- Based on 999_GPTbox/template.svg; all geometry uses one coordinate model. Equal angles are indicated by black dots; other geometry and length labels are unchanged. -->
-<desc>{&quot;coordinates&quot;: {&quot;A&quot;: [6.666666666666667, 4.422166387140533], &quot;B&quot;: [0, 0], &quot;C&quot;: [7.5, 0], &quot;E&quot;: [4.166666666666667, 2.763853991962833]}, &quot;description&quot;: &quot;AB=8, AC=4.5, BC=7.5; angle C is bisected at E. Dimension labels are the complete givens.&quot;}</desc>
-<defs><style><![CDATA[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="42mm"
+   height="48mm"
+   viewBox="-9.1231 -50.1986 41.999999 48"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="lesson_06_bisector_calc_09.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.8561203"
+     inkscape:cx="74.887386"
+     inkscape:cy="162.43559"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Based on 999_GPTbox/template.svg; all geometry uses one coordinate model. Equal angles are indicated by black dots; other geometry and length labels are unchanged. -->
+  <desc
+     id="desc2">{&quot;coordinates&quot;: {&quot;A&quot;: [6.666666666666667, 4.422166387140533], &quot;B&quot;: [0, 0], &quot;C&quot;: [7.5, 0], &quot;E&quot;: [4.166666666666667, 2.763853991962833]}, &quot;description&quot;: &quot;AB=8, AC=4.5, BC=7.5; angle C is bisected at E. Dimension labels are the complete givens.&quot;}</desc>
+  <defs
+     id="defs6">
+    <style
+       id="style4"><![CDATA[
       /* ========= 全体・ガイド ========= */
       .page-border {
         stroke: #bbbbbb;
@@ -141,27 +175,108 @@
         stroke-width: 0.55;
         stroke-linejoin: round;
       }
-    ]]></style></defs>
-<path class="main" d="M 12.6904,-43.0000 L 0.0000,-0.0000"/>
-<path class="main" d="M 0.0000,-0.0000 L 32.1980,-27.0173"/>
-<path class="main" d="M 32.1980,-27.0173 L 12.6904,-43.0000"/>
-<path class="main" d="M 32.1980,-27.0173 L 7.9315,-26.8750"/>
-<circle class="point" cx="28.8987" cy="-28.1854" r="0.55"/>
-<circle class="point" cx="28.9126" cy="-25.8106" r="0.55"/>
-<text class="label" x="12.5891" y="-46.6986" text-anchor="middle" dominant-baseline="central">A</text>
-<text class="label" x="-1.7710" y="3.2486" text-anchor="middle" dominant-baseline="central">B</text>
-<text class="label" x="35.8586" y="-27.5558" text-anchor="middle" dominant-baseline="central">C</text>
-<text class="label" x="10.7823" y="-24.0194" text-anchor="middle" dominant-baseline="central">E</text>
-<path class="length-arc" d="M 13.3875,-43.8509 A 27.9996,27.9996 0 0 1 32.8951,-27.8682"/>
-<rect class="label-bg" x="22.7351" y="-42.2272" width="7.1500" height="5"/>
-<text class="math-label" x="26.3101" y="-39.7272" text-anchor="middle" dominant-baseline="central">4.5</text>
-<path class="length-arc" d="M 0.7071,0.8426 A 75.1101,75.1101 0 0 0 32.9050,-26.1746"/>
-<rect class="label-bg" x="16.4450" y="-11.3358" width="7.1500" height="5"/>
-<text class="math-label" x="20.0200" y="-8.8358" text-anchor="middle" dominant-baseline="central">7.5</text>
-<path class="length-arc" d="M 5.0176,-45.2644 A 85.2519,85.2519 0 0 0 -7.6728,-2.2644"/>
-<rect class="label-bg" x="-8.1231" y="-27.6797" width="4.0000" height="5"/>
-<text class="math-label" x="-6.1231" y="-25.1797" text-anchor="middle" dominant-baseline="central">8</text>
-<path class="length-arc" d="M 11.7313,-43.2831 A 13.2776,13.2776 0 0 0 6.9724,-27.1581"/>
-<rect class="label-bg" x="2.5563" y="-39.1358" width="4.0000" height="5"/>
-<text class="math-label" x="4.5563" y="-36.6358" text-anchor="middle" dominant-baseline="central"><tspan class="var">x</tspan></text>
+    ]]></style>
+  </defs>
+  <path
+     class="main"
+     d="m 8.3961887,-46.948982 -12.6904,43.0000004"
+     id="path8" />
+  <path
+     class="main"
+     d="M -4.2942113,-3.9489816 27.903789,-30.966282"
+     id="path10" />
+  <path
+     class="main"
+     d="M 27.903789,-30.966282 8.3961887,-46.948982"
+     id="path12" />
+  <path
+     class="main"
+     d="m 27.903789,-30.966282 -24.2665003,0.1423"
+     id="path14" />
+  <circle
+     class="point"
+     cx="24.60449"
+     cy="-32.13438"
+     r="0.55000001"
+     id="circle16" />
+  <circle
+     class="point"
+     cx="24.618389"
+     cy="-29.759583"
+     r="0.55000001"
+     id="circle18" />
+  <text
+     class="label"
+     x="5.6981487"
+     y="-47.151299"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text20">A</text>
+  <text
+     class="label"
+     x="-6.8976603"
+     y="-5.9924178"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text22">B</text>
+  <text
+     class="label"
+     x="29.758894"
+     y="-28.800018"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text24">C</text>
+  <text
+     class="label"
+     x="6.4880886"
+     y="-27.968382"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text26">E</text>
+  <path
+     class="length-arc"
+     d="m 8.3961887,-46.948982 a 27.9996,27.9996 0 0 1 19.5076003,15.9827"
+     id="path28" />
+  <text
+     class="math-label"
+     x="22.01589"
+     y="-43.676182"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text32">4.5</text>
+  <path
+     class="length-arc"
+     d="M -4.2941113,-3.9490816 A 75.1101,75.1101 0 0 0 27.903789,-30.966282"
+     id="path34" />
+  <text
+     class="math-label"
+     x="15.725789"
+     y="-12.784781"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text38">7.5</text>
+  <path
+     class="length-arc"
+     d="m 8.3961887,-46.948982 a 85.2519,85.2519 0 0 0 -12.6904,43.0000004"
+     id="path40" />
+  <text
+     class="math-label"
+     x="-2.3745742"
+     y="-29.042933"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text44">8</text>
+  <path
+     class="length-arc"
+     d="m 3.6372887,-30.823982 a 13.2776,13.2776 0 0 0 4.7589,-16.124999"
+     id="path46" />
+  <text
+     class="math-label"
+     x="10.591972"
+     y="-37.566807"
+     text-anchor="middle"
+     dominant-baseline="central"
+     id="text52"><tspan
+       class="var"
+       id="tspan50">x</tspan></text>
 </svg>

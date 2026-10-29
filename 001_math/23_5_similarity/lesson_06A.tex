@@ -1,30 +1,53 @@
 % theme: proving_triangle_similarity
 % 表：相似条件を選んで記述する基本3題。裏：角を追い、相似を利用する4題。
-% 合同や複数組の相似を経由する発展問題は扱わない。解答は未生成。
+% 合同や複数組の相似を経由する発展問題は扱わない。解答生成済み。
 \MajorQuestionLesson{相似の証明２}
 \SetRowSpace{3mm}
 
 \TypeQuestion{図で、$\Lseg{AB}\Parallel\Lseg{CD}$ であり、線分 $\Lseg{AC},\Lseg{BD}$ は点 $\mathrm{O}$ で交わっている。}{triangle_similarity_proof_crossing}
 \FigProblemBlock{32mm}{fig/lesson_03_crossing}{
-\QQ{$\Tri{OAB}\Similar\Tri{OCD}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{OA}=6\mathrm{cm}$、$\Lseg{OC}=9\mathrm{cm}$、$\Lseg{AB}=8\mathrm{cm}$ のとき、$\Lseg{CD}$ の長さを求めなさい。}{}
-\QQ{$\Lseg{AB}=6\mathrm{cm}$、$\Lseg{CD}=10\mathrm{cm}$、$\Lseg{BD}=28\mathrm{cm}$ のとき、$\Lseg{OB}$ の長さを求めなさい。}{}
+\QQ{$\Tri{OAB}\Similar\Tri{OCD}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{OAB}$ と $\Tri{OCD}$ において、\par
+対頂角は等しいから、\par
+$\Ang{AOB}=\Ang{COD}$。\par
+$\Lseg{AB}\Parallel\Lseg{CD}$ より、錯角は等しいから、\par
+$\Ang{OAB}=\Ang{OCD}$。\par
+よって、2組の角がそれぞれ等しいので、\par
+$\Tri{OAB}\Similar\Tri{OCD}$。}
+\QQ{$\Lseg{OA}=6\mathrm{cm}$、$\Lseg{OC}=9\mathrm{cm}$、$\Lseg{AB}=8\mathrm{cm}$ のとき、$\Lseg{CD}$ の長さを求めなさい。}{$12\mathrm{cm}$}
+\QQ{$\Lseg{AB}=6\mathrm{cm}$、$\Lseg{CD}=10\mathrm{cm}$、$\Lseg{BD}=28\mathrm{cm}$ のとき、$\Lseg{OB}$ の長さを求めなさい。}{$\dfrac{21}{2}\mathrm{cm}$}
 }{
 }
 
 \TypeQuestion{図で、線分 $\Lseg{AC},\Lseg{BD}$ は点 $\mathrm{O}$ で交わっており、$\Lseg{OA}:\Lseg{OD}=4:6$、$\Lseg{OB}:\Lseg{OC}=6:9$ である。次の問いに答えなさい。}{triangle_similarity_proof_crossing_sas}
 \FigProblemBlock{43mm}{fig/lesson_06_proof_crossing_sas}{
-\QQ{$\Tri{OAB}\Similar\Tri{ODC}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{AB}=10\mathrm{cm}$ のとき、$\Lseg{CD}$ の長さを求めなさい。}{}
-\QQ{$\Lseg{OB}=4\mathrm{cm}$、$\Lseg{AC}=15\mathrm{cm}$ のとき、$\Lseg{OD}$ の長さを求めなさい。}{}
+\QQ{$\Tri{OAB}\Similar\Tri{ODC}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{OAB}$ と $\Tri{ODC}$ において、\par
+仮定より、\par
+$\Lseg{OA}:\Lseg{OD}=4:6=2:3$、\par
+$\Lseg{OB}:\Lseg{OC}=6:9=2:3$。\par
+また、対頂角は等しいから、\par
+$\Ang{AOB}=\Ang{DOC}$。\par
+よって、2組の辺の比とその間の角がそれぞれ等しいので、\par
+$\Tri{OAB}\Similar\Tri{ODC}$。}
+\QQ{$\Lseg{AB}=10\mathrm{cm}$ のとき、$\Lseg{CD}$ の長さを求めなさい。}{$15\mathrm{cm}$}
+\QQ{$\Lseg{OB}=4\mathrm{cm}$、$\Lseg{AC}=15\mathrm{cm}$ のとき、$\Lseg{OD}$ の長さを求めなさい。}{$\dfrac{27}{2}\mathrm{cm}$}
 }{
 }
 
+\AnswerColumnBreak
 \TypeQuestion{図の四角形 $\mathrm{ABCD}$ で、$\Lseg{AB}:\Lseg{AC}=2:3$、$\Lseg{BC}:\Lseg{AD}=10:15$、$\Lseg{AC}:\Lseg{CD}=4:6$ である。次の問いに答えなさい。}{triangle_similarity_proof_shared_side_sss}
 \FigProblemBlock{32mm}{fig/lesson_06_proof_shared_side_sss}{
-\QQ{$\Tri{ABC}\Similar\Tri{CAD}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{AB}=8\mathrm{cm}$ のとき、$\Lseg{CD}$ の長さを求めなさい。}{}
-\QQ{$\Tri{CAD}$ の周の長さが $24\mathrm{cm}$、$\Lseg{BC}=5\mathrm{cm}$ のとき、$\Lseg{AB}$ の長さを求めなさい。}{}
+\QQ{$\Tri{ABC}\Similar\Tri{CAD}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{ABC}$ と $\Tri{CAD}$ において、\par
+仮定より、\par
+$\Lseg{AB}:\Lseg{CA}=2:3$、\par
+$\Lseg{BC}:\Lseg{AD}=10:15=2:3$、\par
+$\Lseg{CA}:\Lseg{DC}=4:6=2:3$。\par
+よって、3組の辺の比がすべて等しいので、\par
+$\Tri{ABC}\Similar\Tri{CAD}$。}
+\QQ{$\Lseg{AB}=8\mathrm{cm}$ のとき、$\Lseg{CD}$ の長さを求めなさい。}{$18\mathrm{cm}$}
+\QQ{$\Tri{CAD}$ の周の長さが $24\mathrm{cm}$、$\Lseg{BC}=5\mathrm{cm}$ のとき、$\Lseg{AB}$ の長さを求めなさい。}{$\dfrac{22}{5}\mathrm{cm}$}
 }{
 }
 
@@ -35,30 +58,68 @@
 
 \TypeQuestion{図の $\Tri{ABC}$ は $\Ang{BAC}=90^\circ$ の直角三角形である。点 $\mathrm{A}$ から辺 $\Lseg{BC}$ に垂線 $\Lseg{AH}$ を引いた。次の問いに答えなさい。}{triangle_similarity_proof_right_altitude}
 \FigProblemBlock{43mm}{fig/lesson_04_right_altitude}{
-\QQ{$\Tri{ABH}\Similar\Tri{CAH}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{BH}=4\mathrm{cm}$、$\Lseg{CH}=9\mathrm{cm}$ のとき、$\Lseg{AH}$ の長さを求めなさい。}{}
+\QQ{$\Tri{ABH}\Similar\Tri{CAH}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{ABH}$ と $\Tri{CAH}$ において、\par
+$\Lseg{AH}\perp\Lseg{BC}$ より、\par
+$\Ang{AHB}=\Ang{CHA}=90^\circ$。\par
+また、$\Ang{BAC}=90^\circ$ より、\par
+$\Ang{CAH}=90^\circ-\Ang{BAH}$。\par
+$\Tri{ABH}$ の内角の和より、\par
+$\Ang{ABH}=90^\circ-\Ang{BAH}$。\par
+したがって、$\Ang{ABH}=\Ang{CAH}$。\par
+よって、2組の角がそれぞれ等しいので、\par
+$\Tri{ABH}\Similar\Tri{CAH}$。}
+\QQ{$\Lseg{BH}=4\mathrm{cm}$、$\Lseg{CH}=9\mathrm{cm}$ のとき、$\Lseg{AH}$ の長さを求めなさい。}{$6\mathrm{cm}$}
 }{}
 
 \TypeQuestion{長方形 $\mathrm{ABCD}$ の辺 $\Lseg{BC},\Lseg{CD}$ 上にそれぞれ点 $\mathrm{E},\mathrm{F}$ をとると、線分 $\Lseg{AE},\Lseg{BF}$ は垂直に交わった。次の問いに答えなさい。}{triangle_similarity_proof_rectangle_perpendicular}
 \FigProblemBlock{30mm}{fig/lesson_06_proof_rectangle_perpendicular}{
-\QQ{$\Tri{ABE}\Similar\Tri{BCF}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{AB}=6\mathrm{cm}$、$\Lseg{BC}=10\mathrm{cm}$、$\Lseg{BE}=3\mathrm{cm}$ のとき、$\Lseg{CF}$ の長さを求めなさい。}{}
+\QQ{$\Tri{ABE}\Similar\Tri{BCF}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{ABE}$ と $\Tri{BCF}$ において、\par
+長方形の角は直角だから、\par
+$\Ang{ABE}=\Ang{BCF}=90^\circ$。\par
+$\Lseg{AE}\perp\Lseg{BF}$ より、\par
+$\Ang{BAE}=90^\circ-\Ang{ABF}$。\par
+また、$\Ang{ABC}=90^\circ$ より、\par
+$\Ang{CBF}=90^\circ-\Ang{ABF}$。\par
+したがって、$\Ang{BAE}=\Ang{CBF}$。\par
+よって、2組の角がそれぞれ等しいので、\par
+$\Tri{ABE}\Similar\Tri{BCF}$。}
+\QQ{$\Lseg{AB}=6\mathrm{cm}$、$\Lseg{BC}=10\mathrm{cm}$、$\Lseg{BE}=3\mathrm{cm}$ のとき、$\Lseg{CF}$ の長さを求めなさい。}{$5\mathrm{cm}$}
 }{
 }
 
+\AnswerColumnBreak
 \TypeQuestion{図で、点 $\mathrm{D}$ は辺 $\Lseg{BC}$ 上にあり、$\Ang{BAD}=\Ang{ACB}$ である。次の問いに答えなさい。}{triangle_similarity_proof_product}
 \FigProblemBlock{43mm}{fig/lesson_03_shared_angle}{
-\QQ{相似な2つの三角形を見つけ、対応する頂点の順に書きなさい。また、その相似を証明しなさい。}{}
-\QQ{$\Lseg{BD}=2\mathrm{cm}$、$\Lseg{BC}=8\mathrm{cm}$ のとき、$\Lseg{AB}$ の長さを求めなさい。}{}
+\QQ{相似な2つの三角形を見つけ、対応する頂点の順に書きなさい。また、その相似を証明しなさい。}{$\Tri{ABD}\Similar\Tri{CBA}$\par
+\ProofHeading
+$\Tri{ABD}$ と $\Tri{CBA}$ において、\par
+仮定より、$\Ang{BAD}=\Ang{ACB}$。\par
+点 $\mathrm{D}$ は辺 $\Lseg{BC}$ 上にあるから、\par
+$\Ang{ABD}=\Ang{CBA}$。\par
+よって、2組の角がそれぞれ等しいので、\par
+$\Tri{ABD}\Similar\Tri{CBA}$。}
+\QQ{$\Lseg{BD}=2\mathrm{cm}$、$\Lseg{BC}=8\mathrm{cm}$ のとき、$\Lseg{AB}$ の長さを求めなさい。}{$4\mathrm{cm}$}
 }{}
 
 
-%少し問題を変えた。数学として・問題として成立しているか確認を。
 \TypeQuestion{正三角形 $\mathrm{ABC}$ の辺 $\Lseg{BC},\Lseg{CA}$ 上にそれぞれ点 $\mathrm{D},\mathrm{E}$ をとると、$\Ang{ADE}=60^\circ$ となった。次の問いに答えなさい。}{triangle_similarity_proof_equilateral_angle_chase}
 \FigProblemBlock{43mm}{fig/lesson_06_proof_equilateral_angle_chase}{
-\QQ{$\Ang{BAD}=$ と等しい角を１つ見つけなさい。}{}
-\QQ{相似な2つの三角形を見つけ、対応する頂点の順に書きなさい。また、その相似を証明しなさい。}{}
-\QQ{$\Lseg{AB}=10\mathrm{cm}$、$\Lseg{BD}=4\mathrm{cm}$ のとき、$\Lseg{CE}$ の長さを求めなさい。}{}
+\QQ{$\Ang{BAD}$ と等しい角を1つ見つけなさい。}{$\Ang{CDE}$}
+\QQ{相似な2つの三角形を見つけ、対応する頂点の順に書きなさい。また、その相似を証明しなさい。}{$\Tri{ABD}\Similar\Tri{DCE}$\par
+\ProofHeading
+$\Tri{ABD}$ と $\Tri{DCE}$ において、\par
+$\Tri{ABC}$ は正三角形だから、\par
+$\Ang{ABD}=\Ang{DCE}=60^\circ$。\par
+$\Tri{ABD}$ の外角より、\par
+$\Ang{ADC}=\Ang{BAD}+60^\circ$。\par
+仮定より、$\Ang{ADE}=60^\circ$ だから、\par
+$\Ang{CDE}=\Ang{ADC}-60^\circ$\par
+$\phantom{\Ang{CDE}}=\Ang{BAD}$。\par
+よって、2組の角がそれぞれ等しいので、\par
+$\Tri{ABD}\Similar\Tri{DCE}$。}
+\QQ{$\Lseg{AB}=10\mathrm{cm}$、$\Lseg{BD}=4\mathrm{cm}$ のとき、$\Lseg{CE}$ の長さを求めなさい。}{$\dfrac{12}{5}\mathrm{cm}$}
 }{
 }
 
