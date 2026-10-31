@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="57mm" viewBox="0 0 68 57">
+  <title>数直線への記入問題の解答</title>
+  <desc>template.svg準拠。(1)はx=36+6v、y=10。(2)はx=30+12v、y=27。(3)はx=33+24v、y=46。点の数値ラベルは指定された数を示す。</desc>
+  <defs>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.55; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; }
+      .axis-arrow, .point { fill: black; stroke: none; }
+      .label, .frac-text { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-style: normal; fill: black; text-anchor: middle; }
+      .label { font-size: 3.2px; }
+      .frac-text { font-size: 3px; }
+      .frac-line { stroke: black; stroke-width: 0.28; }
+    ]]></style>
+  </defs>
+  <g id="answer-1" data-origin="36" data-scale="6" data-y="10">
+    <text class="label" x="3.5" y="4">(1)</text>
+    <line class="main" x1="2" y1="10" x2="65" y2="10"/>
+    <polygon class="axis-arrow" points="67,10 64.3,9.05 64.3,10.95"/>
+    <path class="thin" d="M 6 8.8 V 11.2 M 12 8.8 V 11.2 M 18 8.8 V 11.2 M 24 8.8 V 11.2 M 30 8.8 V 11.2 M 36 8.8 V 11.2 M 42 8.8 V 11.2 M 48 8.8 V 11.2 M 54 8.8 V 11.2 M 60 8.8 V 11.2"/>
+    <g class="point">
+      <circle cx="12" cy="10" r="0.6" data-value="-4"/>
+      <circle cx="30" cy="10" r="0.6" data-value="-1"/>
+      <circle cx="54" cy="10" r="0.6" data-value="3"/>
+    </g>
+    <g class="label">
+      <text x="12" y="6.3">-4</text>
+      <text x="30" y="6.3">-1</text>
+      <text x="54" y="6.3">+3</text>
+      <text x="36" y="15">0</text>
+    </g>
+  </g>
+  <g id="answer-2" data-origin="30" data-scale="12" data-y="27">
+    <text class="label" x="3.5" y="21">(2)</text>
+    <line class="main" x1="2" y1="27" x2="65" y2="27"/>
+    <polygon class="axis-arrow" points="67,27 64.3,26.05 64.3,27.95"/>
+    <path class="thin" d="M 6 25.8 V 28.2 M 12 25.8 V 28.2 M 18 25.8 V 28.2 M 24 25.8 V 28.2 M 30 25.8 V 28.2 M 36 25.8 V 28.2 M 42 25.8 V 28.2 M 48 25.8 V 28.2 M 54 25.8 V 28.2 M 60 25.8 V 28.2"/>
+    <g class="point">
+      <circle cx="12" cy="27" r="0.6" data-value="-1.5"/>
+      <circle cx="36" cy="27" r="0.6" data-value="0.5"/>
+      <circle cx="54" cy="27" r="0.6" data-value="2"/>
+    </g>
+    <g class="label">
+      <text x="12" y="23.3">-1.5</text>
+      <text x="36" y="23.3">+0.5</text>
+      <text x="54" y="23.3">+2</text>
+      <text x="30" y="32">0</text>
+    </g>
+  </g>
+  <g id="answer-3" data-origin="33" data-scale="24" data-y="46">
+    <text class="label" x="3.5" y="38">(3)</text>
+    <line class="main" x1="2" y1="46" x2="65" y2="46"/>
+    <polygon class="axis-arrow" points="67,46 64.3,45.05 64.3,46.95"/>
+    <path class="thin" d="M 9 44.8 V 47.2 M 15 44.8 V 47.2 M 21 44.8 V 47.2 M 27 44.8 V 47.2 M 33 44.8 V 47.2 M 39 44.8 V 47.2 M 45 44.8 V 47.2 M 51 44.8 V 47.2 M 57 44.8 V 47.2"/>
+    <g class="point">
+      <circle cx="21" cy="46" r="0.6" data-value="-0.5"/>
+      <circle cx="27" cy="46" r="0.6" data-value="-0.25"/>
+      <circle cx="51" cy="46" r="0.6" data-value="0.75"/>
+    </g>
+    <text class="label" x="17" y="41.8">-</text>
+    <text class="frac-text" x="21" y="39.5">1</text>
+    <line class="frac-line" x1="19.5" y1="40.3" x2="22.5" y2="40.3"/>
+    <text class="frac-text" x="21" y="43.1">2</text>
+    <text class="label" x="47" y="41.8">+</text>
+    <text class="frac-text" x="51" y="39.5">3</text>
+    <line class="frac-line" x1="49.5" y1="40.3" x2="52.5" y2="40.3"/>
+    <text class="frac-text" x="51" y="43.1">4</text>
+    <text class="label" x="23" y="53.2">-</text>
+    <text class="frac-text" x="27" y="50.9">1</text>
+    <line class="frac-line" x1="25.5" y1="51.7" x2="28.5" y2="51.7"/>
+    <text class="frac-text" x="27" y="54.5">4</text>
+    <text class="label" x="33" y="51.4">0</text>
+  </g>
+</svg>

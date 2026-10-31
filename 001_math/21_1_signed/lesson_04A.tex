@@ -1,47 +1,48 @@
 % theme: mixed_addition_subtraction_and_terms
-% 叩き台：表3大問・裏3大問。解答は未生成。
+% 表3大問・裏3大問。解答生成済み。
 % 乗除・累乗や文字式の知識は使わない。
 \MajorQuestionLesson{加減混合と項}
 \SetRowSpace{4mm}
 
 \TypeQuestion{次の計算をしなさい。}{signed_mixed_addition_subtraction_integer}
-\QQRow{$(-7)+(+12)+(-4)$}{}{$(+5)-(-3)+(-11)$}{}
-\QQRow{$(-6)-(+9)-(-8)$}{}{$(+14)+(-5)-(+2)$}{}
-\QQRow{$0-(-6)+(-10)$}{}{$(-8)+(+10)-(-2)$}{}
-\QQRow{$(+9)+(-16)+(+7)$}{}{$(-4)-(-11)-(+5)$}{}
-\QQRow{$(+6)-(+10)+(-3)-(-5)$}{}{$(-12)+(+5)-(-9)+(+3)$}{}
-\QQRow{$(-32)+(+47)-(+28)$}{}{$(+24)-(-36)+(-51)$}{}
-\QQRow{$(+38)+(-56)-(-23)+(+7)$}{}{$(-45)-(+18)-(-27)$}{}
+\QQRow{$(-7)+(+12)+(-4)$}{$1$}{$(+5)-(-3)+(-11)$}{$-3$}
+\QQRow{$(-6)-(+9)-(-8)$}{$-7$}{$(+14)+(-5)-(+2)$}{$7$}
+\QQRow{$0-(-6)+(-10)$}{$-4$}{$(-8)+(+10)-(-2)$}{$4$}
+\QQRow{$(+9)+(-16)+(+7)$}{$0$}{$(-4)-(-11)-(+5)$}{$2$}
+\QQRow{$(+6)-(+10)+(-3)-(-5)$}{$-2$}{$(-12)+(+5)-(-9)+(+3)$}{$5$}
+\QQRow{$(-32)+(+47)-(+28)$}{$-13$}{$(+24)-(-36)+(-51)$}{$9$}
+\QQRow{$(+38)+(-56)-(-23)+(+7)$}{$12$}{$(-45)-(+18)-(-27)$}{$-36$}
 
 \TypeQuestion{}{signed_mixed_addition_subtraction_rewrite}
 \Text{次の式を、かっこを使った加法だけの式に書きかえなさい。さらに、その式のかっこと加法の記号を省略した式を書きなさい。計算する必要はない。}
-\QQRow{$(+8)-(-5)+(-3)$}{}{$(-6)-(+4)+(-9)$}{}
-\QQRow{$(-7)-(-2)-(+5)$}{}{$(+4)+(-8)-(-6)$}{}
-\QQRow{$\left(-\dfrac12\right)-\left(+\dfrac34\right)+\left(+\dfrac16\right)$}{}{$(-1.2)+(+0.7)-(-0.4)$}{}
+\QQRow{$(+8)-(-5)+(-3)$}{\shortstack[l]{$(+8)+(+5)+(-3)$\\$8+5-3$}}{$(-6)-(+4)+(-9)$}{\shortstack[l]{$(-6)+(-4)+(-9)$\\$-6-4-9$}}
+\QQRow{$(-7)-(-2)-(+5)$}{\shortstack[l]{$(-7)+(+2)+(-5)$\\$-7+2-5$}}{$(+4)+(-8)-(-6)$}{\shortstack[l]{$(+4)+(-8)+(+6)$\\$4-8+6$}}
+\QQRow{$\left(-\dfrac12\right)-\left(+\dfrac34\right)+\left(+\dfrac16\right)$}{\shortstack[l]{$\left(-\dfrac12\right)+\left(-\dfrac34\right)+\left(+\dfrac16\right)$\\[1mm]$-\dfrac12-\dfrac34+\dfrac16$}}{$(-1.2)+(+0.7)-(-0.4)$}{\shortstack[l]{$(-1.2)+(+0.7)+(+0.4)$\\$-1.2+0.7+0.4$}}
 
 \TypeQuestion{次の式の項をすべて書き、正の項と負の項に分けなさい。}{signed_mixed_addition_subtraction_terms}
-\QQRow{$-3+8-5$}{}{$7-12+4-9$}{}
-\QQRow{$-0.6-1.4+2.5$}{}{$\dfrac23-\dfrac56+\dfrac14$}{}
-\QQRow{$-8+3+6-2$}{}{$-\dfrac34-\dfrac12+\dfrac58$}{}
+\QQRow{$-3+8-5$}{\shortstack[l]{正：$+8$\\負：$-3,-5$}}{$7-12+4-9$}{\shortstack[l]{正：$+7,+4$\\負：$-12,-9$}}
+\QQRow{$-0.6-1.4+2.5$}{\shortstack[l]{正：$+2.5$\\負：$-0.6,-1.4$}}{$\dfrac23-\dfrac56+\dfrac14$}{\shortstack[l]{正：$+\dfrac23,+\dfrac14$\\[1mm]負：$-\dfrac56$}}
+\QQRow{$-8+3+6-2$}{\shortstack[l]{正：$+3,+6$\\負：$-8,-2$}}{$-\dfrac34-\dfrac12+\dfrac58$}{\shortstack[l]{正：$+\dfrac58$\\[1mm]負：$-\dfrac34,-\dfrac12$}}
 
+\AnswerColumnBreak
 \LessonQuestionBreak
 
 \TypeQuestion{次の計算をしなさい。}{signed_mixed_addition_subtraction_integer_unbracketed}
-\QQRow{$-18+7-4$}{}{$25-39+16$}{}
-\QQRow{$-12-8+35$}{}{$-7+24-13-9$}{}
-\QQRow{$46-28-31+17$}{}{$-34+19-12$}{}
-\QQRow{$9-16+7$}{}{$-23+41+8-15$}{}
-\QQRow{$37-50+6-4$}{}{$-15-27+38+9$}{}
+\QQRow{$-18+7-4$}{$-15$}{$25-39+16$}{$2$}
+\QQRow{$-12-8+35$}{$15$}{$-7+24-13-9$}{$-5$}
+\QQRow{$46-28-31+17$}{$4$}{$-34+19-12$}{$-27$}
+\QQRow{$9-16+7$}{$0$}{$-23+41+8-15$}{$11$}
+\QQRow{$37-50+6-4$}{$-11$}{$-15-27+38+9$}{$5$}
 
 \TypeQuestion{次の計算をしなさい。}{signed_mixed_addition_subtraction_rational}
-\QQRow{$-2.4+5.7-1.8$}{}{$\dfrac34-\dfrac56+\dfrac12$}{}
-\QQRow{$-\dfrac23+\dfrac14-\dfrac56$}{}{$1.25-0.8-0.65+0.4$}{}
-\QQRow{$-3+\dfrac52-\dfrac34$}{}{$0.6-\dfrac34+\dfrac15$}{}
-\QQRow{$\dfrac7{12}-\dfrac13-\dfrac58$}{}{$-1.5+\dfrac23+\dfrac56$}{}
+\QQRow{$-2.4+5.7-1.8$}{$1.5$}{$\dfrac34-\dfrac56+\dfrac12$}{$\dfrac5{12}$}
+\QQRow{$-\dfrac23+\dfrac14-\dfrac56$}{$-\dfrac54$}{$1.25-0.8-0.65+0.4$}{$0.2$}
+\QQRow{$-3+\dfrac72-\dfrac34$}{$-\dfrac14$}{$0.6-\dfrac34+\dfrac15$}{$\dfrac1{20}$}
+\QQRow{$\dfrac7{12}-\dfrac13-\dfrac58$}{$-\dfrac38$}{$-1.5+\dfrac23+\dfrac56$}{$0$}
 
 \TypeQuestion{次の計算をしなさい。}{signed_mixed_addition_subtraction_parentheses}
-\QQRow{$7-(3-8)$}{}{$-4+(-6+9)$}{}
-\QQRow{$-(5-12)-3$}{}{$6-(-2+11)$}{}
-\QQRow{$-\left(\dfrac23-\dfrac56\right)+\dfrac14$}{}{$1.8-(0.6-1.1)$}{}
-\QQRow{$-3-\{4-(-2+5)\}$}{}{$\dfrac12-\left(-\dfrac34+\dfrac16\right)$}{}
+\QQRow{$7-(3-8)$}{$12$}{$-4+(-6+9)$}{$-1$}
+\QQRow{$-(5-12)-3$}{$4$}{$6-(-2+11)$}{$-3$}
+\QQRow{$-\left(\dfrac23-\dfrac56\right)+\dfrac14$}{$\dfrac5{12}$}{$1.8-(0.6-1.1)$}{$2.3$}
+\QQRow{$-3-\{4-(-2+5)\}$}{$-4$}{$\dfrac12-\left(-\dfrac34+\dfrac16\right)$}{$\dfrac{13}{12}$}
 

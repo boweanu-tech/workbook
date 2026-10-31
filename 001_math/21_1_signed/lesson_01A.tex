@@ -1,29 +1,30 @@
 % theme: meaning_and_notation_of_signed_numbers
-% 叩き台：表3大問・裏4大問。解答は未生成。
+% 表3大問・裏4大問。解答生成済み。
 % 正負の数の加減計算を前提にせず、基準からの位置・向きとして読む。
 \MajorQuestionLesson{正の数・負の数の意味と表し方}
 \SetRowSpace{3mm}
 
 \TypeQuestion{次の数を、正の符号や負の符号をつけて表しなさい。}{signed_meaning_relative_to_zero}
-\QQRow{$0$ より $5$ 大きい数}{}{$0$ より $8$ 小さい数}{}
-\QQRow{$0$ より $2.3$ 小さい数}{}{$0$ より $\dfrac12$ 大きい数}{}
-\QQRow{$0$ より $12$ 大きい数}{}{$0$ より $\dfrac34$ 小さい数}{}
-\QQRow{$3$ より $5$ 小さい数}{}{$-1$ より $3$ 小さい数}{}
-\QQRow{$-2$ より $6$ 大きい数}{}{$5$ より $2$ 大きい数}{}
-\QQRow{$-3$ より $5$ 大きい数}{}{$-4$ より $3$ 大きい数}{}
+\QQRow{$0$ より $5$ 大きい数}{$+5$}{$0$ より $8$ 小さい数}{$-8$}
+\QQRow{$0$ より $2.3$ 小さい数}{$-2.3$}{$0$ より $\dfrac12$ 大きい数}{$+\dfrac12$}
+\QQRow{$0$ より $12$ 大きい数}{$+12$}{$0$ より $\dfrac34$ 小さい数}{$-\dfrac34$}
+\QQRow{$3$ より $5$ 小さい数}{$-2$}{$-1$ より $3$ 小さい数}{$-4$}
+\QQRow{$-2$ より $6$ 大きい数}{$+4$}{$5$ より $2$ 大きい数}{$+7$}
+\QQRow{$-3$ より $5$ 大きい数}{$+2$}{$-4$ より $3$ 大きい数}{$-1$}
 
 \TypeQuestion{}{signed_meaning_write}
 \Text{次の数量を、正の数・負の数または $0$ を使って表しなさい。［\quad］内に示した方を正とし、正の数の $+$ は省かないこと。}
-\QQRow{西へ $5\mathrm{m}$ 移動［東］}{}{海面より $18\mathrm{m}$ 高い［高い］}{}
-\QQRow{$700$ 円の損失［利益］}{}{$7$ 人の退場［入場］}{}
-\QQRow{予定より $250\mathrm{g}$ 多い［多い］}{}{予定と同じ人数［多い］}{}
-\QQRow{定員より $3$ 人少ない［多い］}{}{$4$ 分遅く到着［遅い］}{}
+\QQRow{西へ $5\mathrm{m}$ 移動［東］}{$-5\mathrm{m}$}{海面より $18\mathrm{m}$ 高い［高い］}{$+18\mathrm{m}$}
+\QQRow{$700$ 円の損失［利益］}{$-700$ 円}{$7$ 人の退場［入場］}{$-7$ 人}
+\QQRow{予定より $250\mathrm{g}$ 多い［多い］}{$+250\mathrm{g}$}{予定と同じ人数［多い］}{$0$ 人}
+\QQRow{定員より $3$ 人少ない［多い］}{$-3$ 人}{$4$ 分遅く到着［遅い］}{$+4$ 分}
 
 \TypeQuestion{次の数量を、［\quad］内の言葉を使って表しなさい。}{signed_meaning_opposite_expression}
-\QQRow{$7\mathrm{m}$ 低い［高い］}{}{$-3\,{}^\circ\mathrm{C}$ 上がる［下がる］}{}
-\QQRow{$4$ 枚不足する［余る］}{}{南へ $-2\mathrm{km}$ 進む［北］}{}
-\QQRow{$600$ 円の支出［収入］}{}{$-5$ 分遅い［早い］}{}
+\QQRow{$7\mathrm{m}$ 低い［高い］}{$-7\mathrm{m}$ 高い}{$-3\,{}^\circ\mathrm{C}$ 上がる［下がる］}{$+3\,{}^\circ\mathrm{C}$ 下がる}
+\QQRow{南へ $-2\mathrm{km}$ 進む［北］}{北へ $+2\mathrm{km}$ 進む}{$600$ 円の支出［収入］}{$-600$ 円の収入}
+\QQRow{$4$ 枚不足する［余る］}{$-4$ 枚余る}{$-5$ 分遅い［早い］}{$+5$ 分早い}
 
+\AnswerColumnBreak
 \LessonQuestionBreak
 
 \TypeQuestion{次の数直線は、等しい間隔で目盛りをつけてある。}{signed_meaning_number_line_read}
@@ -31,23 +32,25 @@
 % A=-6, B=3, C=-2。D=-4.5, E=6.5, F=1.5。
 % G=-0.75, H=4.25, I=-7.25。点名は上、数値は下に置く。
 \WholeQuestion{\LMFigBlock[144mm]{fig/lesson_01_number_line_mixed}}{}
-\QQ{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ が表す数を求めなさい。}{}
-\QQ{点 $\mathrm{D},\mathrm{E},\mathrm{F}$ が表す数を小数を用いて表しなさい。}{}
-\QQ{点 $\mathrm{G},\mathrm{H},\mathrm{I}$ が表す数を分数を用いて表しなさい。}{}
+\QQ{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ が表す数を求めなさい。}{$\mathrm{A}:-6,\quad \mathrm{B}:+3,\quad \mathrm{C}:-2$}
+\QQ{点 $\mathrm{D},\mathrm{E},\mathrm{F}$ が表す数を小数を用いて表しなさい。}{$\mathrm{D}:-4.5,\quad \mathrm{E}:+6.5,\quad \mathrm{F}:+1.5$}
+\QQ{点 $\mathrm{G},\mathrm{H},\mathrm{I}$ が表す数を分数を用いて表しなさい。}{$\mathrm{G}:-\dfrac34,\quad \mathrm{H}:+\dfrac{17}{4},\quad \mathrm{I}:-\dfrac{29}{4}$}
 
 % 記入用の数直線は、生徒自身にかかせる。
 \TypeQuestion{数直線をかき、次の数を表す点をそれぞれ記入しなさい。}{signed_meaning_number_line_plot}
-\QQRowThree{$+3,\quad -4,\quad -1$}{}{$-1.5,\quad +0.5,\quad +2$}{}{$-\dfrac12,\quad +\dfrac34,\quad -\dfrac14$}{}
+\QQRowThree{$+3,\quad -4,\quad -1$}{下図}{$-1.5,\quad +0.5,\quad +2$}{下図}{$-\dfrac12,\quad +\dfrac34,\quad -\dfrac14$}{下図}
+\WholeQuestion{}{\LMFigBlock[\linewidth]{fig/lesson_01_number_line_plot_answers}}
 
+\AnswerColumnBreak
 \TypeQuestion{次の数の中から、各問いにあてはまる数をすべて選びなさい。}{signed_meaning_classify}
 \TextTall{$-6,\quad +2.5,\quad 0,\quad +7,\quad -\dfrac32,\quad -1,\quad \dfrac{12}{3},\quad -0.4$}
-\QQRow{自然数}{}{整数}{}
-\QQRow{負の数}{}{正の数}{}
-\QQ{正の数でも負の数でもない数}{}
+\QQRow{自然数}{$+7,\ \dfrac{12}{3}$}{整数}{$-6,\ 0,\ +7,\ -1,\ \dfrac{12}{3}$}
+\QQRow{負の数}{$-6,\ -\dfrac32,\ -1,\ -0.4$}{正の数}{$+2.5,\ +7,\ \dfrac{12}{3}$}
+\QQ{正の数でも負の数でもない数}{$0$}
 
 \TypeQuestion{同じ数量でも、基準を変えると表し方が変わる。次の問いに答えなさい。正の数の $+$ の符号は省かないこと。}{signed_meaning_change_reference}
-\QQ{$75$ 点の得点を、$60$ 点を基準にした場合と、$80$ 点を基準にした場合について、それぞれ表しなさい。基準より高い得点を正の数で表す。}{}
-\QQ{水位が底から $46\mathrm{cm}$ の高さにある。底から $50\mathrm{cm}$ の高さを基準にした場合と、$40\mathrm{cm}$ の高さを基準にした場合について、それぞれ水位を表しなさい。基準より高い水位を正の数で表す。}{}
-\QQ{午前 $8$ 時 $55$ 分に着いた。午前 $9$ 時を基準にした場合と、午前 $8$ 時 $50$ 分を基準にした場合について、それぞれ何分の違いか表しなさい。基準より後の時刻を正の数で表す。}{}
-\QQ{海面より $20\mathrm{m}$ 高い地点を新たな基準にする。海面より $6\mathrm{m}$ 低い地点の高さを、この基準より高い方を正の数として表しなさい。}{}
+\QQ{$75$ 点の得点を、$60$ 点を基準にした場合と、$80$ 点を基準にした場合について、それぞれ表しなさい。基準より高い得点を正の数で表す。}{$60$ 点基準：$+15$ 点\par $80$ 点基準：$-5$ 点}
+\QQ{水位が底から $46\mathrm{cm}$ の高さにある。底から $50\mathrm{cm}$ の高さを基準にした場合と、$40\mathrm{cm}$ の高さを基準にした場合について、それぞれ水位を表しなさい。基準より高い水位を正の数で表す。}{$50\mathrm{cm}$ 基準：$-4\mathrm{cm}$\par $40\mathrm{cm}$ 基準：$+6\mathrm{cm}$}
+\QQ{午前 $8$ 時 $55$ 分に着いた。午前 $9$ 時を基準にした場合と、午前 $8$ 時 $50$ 分を基準にした場合について、それぞれ何分の違いか表しなさい。基準より後の時刻を正の数で表す。}{午前 $9$ 時基準：$-5$ 分\par 午前 $8$ 時 $50$ 分基準：$+5$ 分}
+\QQ{海面より $20\mathrm{m}$ 高い地点を新たな基準にする。海面より $6\mathrm{m}$ 低い地点の高さを、この基準より高い方を正の数として表しなさい。}{$-26\mathrm{m}$}
 
