@@ -1,5 +1,5 @@
 % theme: meaning_and_notation_of_signed_numbers
-% 叩き台：表4大問・裏4大問。解答は未生成。
+% 叩き台：表3大問・裏4大問。解答は未生成。
 % 正負の数の加減計算を前提にせず、基準からの位置・向きとして読む。
 \MajorQuestionLesson{正の数・負の数の意味と表し方}
 \SetRowSpace{3mm}
@@ -8,15 +8,15 @@
 \QQRow{$0$ より $5$ 大きい数}{}{$0$ より $8$ 小さい数}{}
 \QQRow{$0$ より $2.3$ 小さい数}{}{$0$ より $\dfrac12$ 大きい数}{}
 \QQRow{$0$ より $12$ 大きい数}{}{$0$ より $\dfrac34$ 小さい数}{}
-%ここに、「3より5小さい数」とか0が登場しないものも6つ追加
-%加・減法を習っていないので、あくまで整数で、数直線を書いて数えていけばできるレベルの数字に。
+\QQRow{$3$ より $5$ 小さい数}{}{$-1$ より $3$ 小さい数}{}
+\QQRow{$-2$ より $6$ 大きい数}{}{$5$ より $2$ 大きい数}{}
+\QQRow{$-3$ より $5$ 大きい数}{}{$-4$ より $3$ 大きい数}{}
 
 \TypeQuestion{}{signed_meaning_write}
 \Text{次の数量を、正の数・負の数または $0$ を使って表しなさい。［\quad］内に示した方を正とし、正の数の $+$ は省かないこと。}
-%零上・収入超過とはあまり言わない(生徒が知らない可能性がある)と思うので、これのみ別の問題にしてください。
-\QQRow{零下 $5\,{}^\circ\mathrm{C}$［零上］}{}{海面より $18\mathrm{m}$ 高い［高い］}{}
+\QQRow{西へ $5\mathrm{m}$ 移動［東］}{}{海面より $18\mathrm{m}$ 高い［高い］}{}
 \QQRow{$700$ 円の損失［利益］}{}{$7$ 人の退場［入場］}{}
-\QQRow{予定より $250\mathrm{g}$ 多い［多い］}{}{収入と支出が同額［収入超過］}{}
+\QQRow{予定より $250\mathrm{g}$ 多い［多い］}{}{予定と同じ人数［多い］}{}
 \QQRow{定員より $3$ 人少ない［多い］}{}{$4$ 分遅く到着［遅い］}{}
 
 \TypeQuestion{次の数量を、［\quad］内の言葉を使って表しなさい。}{signed_meaning_opposite_expression}
@@ -34,20 +34,16 @@
 %       A=-2.5, B=-1, C=0.5。
 % 図③：-1から1まで0.25刻み。数値ラベルは-1,0,1のみ。
 %       G=-0.75, H=0.25, I=0.75。
-\WholeQuestion{\fbox{\parbox[c][23mm][c]{0.94\linewidth}{\centering 数直線\EqNo{1}・\EqNo{2}・\EqNo{3}を挿入予定\par 図生成用の目盛り・点の位置はソース内に指定}}}{}
-\QQ{数直線\EqNo{1}の点 $\mathrm{D},\mathrm{E},\mathrm{F}$が表す数を求めなさい。}{}
-\QQ{数直線\EqNo{2}の点 $\mathrm{A},\mathrm{B},\mathrm{C}$が表す数を求めなさい。}{}
-\QQ{数直線\EqNo{3}の点 $\mathrm{G},\mathrm{H},\mathrm{I}$が表す数を分数を用いて表しなさい。}{}
+\QQ{数直線\EqNo{1}の点 $\mathrm{D},\mathrm{E},\mathrm{F}$が表す数を求めなさい。\par\nobreak\smallskip
+\LMFigBlock[120mm]{fig/lesson_01_number_line_integer}}{}
+\QQ{数直線\EqNo{2}の点 $\mathrm{A},\mathrm{B},\mathrm{C}$が表す数を求めなさい。\par\nobreak\smallskip
+\LMFigBlock[120mm]{fig/lesson_01_number_line_decimal}}{}
+\QQ{数直線\EqNo{3}の点 $\mathrm{G},\mathrm{H},\mathrm{I}$が表す数を分数を用いて表しなさい。\par\nobreak\smallskip
+\LMFigBlock[120mm]{fig/lesson_01_number_line_fraction}}{}
 
-%数直線は生徒に書かせるので、ここでは不要です。
-\TypeQuestion{次の数を表す点を、それぞれ指定された数直線上に記入しなさい。}{signed_meaning_number_line_plot}
-% 図生成仕様：右向きを正とし、書き込み用の数直線を3本用意する。
-% 図④：-6から6まで1刻み。数値ラベルは-5,0,5のみ。
-% 図⑤：-3から3まで0.5刻み。数値ラベルは-2,0,2のみ。
-% 図⑥：-1から1まで0.25刻み。数値ラベルは-1,0,1のみ。
-% 問題で指定した数の位置には、点や文字をあらかじめ記入しない。
-
-\QQRowThree{$+3,\quad -4,\quad -1$}{}{$-1.5,\quad +0.5,\quad +2$}{}{$-\dfrac12,\quad +\dfrac34,\quad -\dfrac14$}{}{}{}
+% 記入用の数直線は、生徒自身にかかせる。
+\TypeQuestion{数直線をかき、次の数を表す点をそれぞれ記入しなさい。}{signed_meaning_number_line_plot}
+\QQRowThree{$+3,\quad -4,\quad -1$}{}{$-1.5,\quad +0.5,\quad +2$}{}{$-\dfrac12,\quad +\dfrac34,\quad -\dfrac14$}{}
 
 \TypeQuestion{次の数の中から、各問いにあてはまる数をすべて選びなさい。}{signed_meaning_classify}
 \TextTall{$-6,\quad +2.5,\quad 0,\quad +7,\quad -\dfrac32,\quad -1,\quad \dfrac{12}{3},\quad -0.4$}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120mm" height="16mm" viewBox="0 0 120 16">
+  <title>数直線1：整数の目盛り</title>
+  <desc>template.svg準拠。x=12+16(v+2)、軸の高さは7.5。-2から4まで1刻み。点名は上、数値は下。</desc>
+  <defs>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.55; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .axis-arrow, .point { fill: black; stroke: none; }
+      .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4.1px; font-style: normal; fill: black; text-anchor: middle; }
+    ]]></style>
+  </defs>
+  <line class="main" x1="4" y1="7.5" x2="117" y2="7.5"/>
+  <polygon class="axis-arrow" points="119,7.5 116.3,6.55 116.3,8.45"/>
+  <g class="thin">
+    <line x1="12" y1="6.2" x2="12" y2="8.8"/>
+    <line x1="28" y1="6.2" x2="28" y2="8.8"/>
+    <line x1="44" y1="6.2" x2="44" y2="8.8"/>
+    <line x1="60" y1="6.2" x2="60" y2="8.8"/>
+    <line x1="76" y1="6.2" x2="76" y2="8.8"/>
+    <line x1="92" y1="6.2" x2="92" y2="8.8"/>
+    <line x1="108" y1="6.2" x2="108" y2="8.8"/>
+  </g>
+  <g class="point">
+    <circle cx="28" cy="7.5" r="0.65" data-name="D" data-value="-1"/>
+    <circle cx="60" cy="7.5" r="0.65" data-name="E" data-value="1"/>
+    <circle cx="92" cy="7.5" r="0.65" data-name="F" data-value="3"/>
+  </g>
+  <g class="label">
+    <text x="28" y="3.8">D</text>
+    <text x="60" y="3.8">E</text>
+    <text x="92" y="3.8">F</text>
+    <text x="12" y="13.6" data-value="-2">-2</text>
+    <text x="44" y="13.6" data-value="0">0</text>
+    <text x="108" y="13.6" data-value="4">4</text>
+  </g>
+</svg>
