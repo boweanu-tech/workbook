@@ -1,20 +1,24 @@
 % theme: order_and_absolute_value
-% 叩き台：表3大問・裏3大問。解答は未生成。
+% 叩き台：表5大問・裏3大問。解答は未生成。
 \MajorQuestionLesson{数の大小と絶対値}
 \SetRowSpace{4mm}
 
-%整数のみのものかそれ以外(分数・小数が登場するもの)で分けて、大問を２つに。
-%QQRowThreeで収まるかな？
-\TypeQuestion{次の2数の大小を、不等号を使って表しなさい。}{signed_order_compare}
-\QQRow{$-7,\quad -3$}{}{$+0.4,\quad -0.6$}{}
-\QQRow{$-\dfrac23,\quad -\dfrac34$}{}{$0,\quad -1.2$}{}
-\QQRow{$-2.05,\quad -2.5$}{}{$+\dfrac12,\quad +0.6$}{}
-\QQRow{$-0.8,\quad -\dfrac34$}{}{$-12,\quad -15$}{}
-\QQRow{$-\dfrac56,\quad -\dfrac79$}{}{$+1.3,\quad +\dfrac54$}{}
-\QQRow{$-0.04,\quad 0$}{}{$-\dfrac32,\quad -1.4$}{}
+\TypeQuestion{次の2数の大小を、不等号を使って表しなさい。}{signed_order_compare_integer}
+\QQRowThree{$-7,\quad -3$}{}{$+5,\quad -2$}{}{$-12,\quad -15$}{}
+\QQRowThree{$0,\quad +8$}{}{$-4,\quad 0$}{}{$+9,\quad +6$}{}
 
-%不等号を用いて表す、3つの数バージョン
-%QQRow構成で10問ほど。整数のみのパターン・分数などアリパターンは混ぜてください。
+\TypeQuestion{次の2数の大小を、不等号を使って表しなさい。}{signed_order_compare_rational}
+\QQRowThree{$+0.4,\quad -0.6$}{}{$-0.8,\quad -\dfrac34$}{}{$-0.04,\quad 0$}{}
+\QQRowThree{$-2.05,\quad -2.5$}{}{$-\dfrac23,\quad -\dfrac34$}{}{$+\dfrac12,\quad +0.6$}{}
+\QQRowThree{$-\dfrac56,\quad -\dfrac79$}{}{$-\dfrac32,\quad -1.4$}{}{$+1.3,\quad +\dfrac54$}{}
+\QQRowThree{$-0.3,\quad +\dfrac14$}{}{$0,\quad -1.2$}{}{$-\dfrac12,\quad 0$}{}
+
+\TypeQuestion{次の3数を小さい順に並べ、不等号を使って表しなさい。}{signed_order_compare_three}
+\QQRow{$-5,\quad +1,\quad -2$}{}{$+0.6,\quad -0.4,\quad 0$}{}
+\QQRow{$-\dfrac34,\quad -\dfrac12,\quad -\dfrac56$}{}{$-9,\quad -3,\quad -12$}{}
+\QQRow{$-0.25,\quad +\dfrac15,\quad -\dfrac12$}{}{$+7,\quad 0,\quad +3$}{}
+\QQRow{$-\dfrac54,\quad -1.2,\quad -1.3$}{}{$-1,\quad -\dfrac32,\quad -0.8$}{}
+\QQRow{$+\dfrac23,\quad -\dfrac16,\quad +0.5$}{}{$-2.4,\quad -2,\quad -\dfrac{11}{5}$}{}
 
 \TypeQuestion{次の数を、指定された順に並べなさい。}{signed_order_sort}
 \QQ{小さい順：$-4,\quad +2,\quad -1,\quad 0,\quad -6$}{}
@@ -22,33 +26,31 @@
 \QQ{小さい順：$-\dfrac12,\quad -\dfrac34,\quad +\dfrac13,\quad -\dfrac23,\quad 0$}{}
 \QQ{大きい順：$-1.4,\quad +\dfrac12,\quad -\dfrac32,\quad -1.35,\quad +0.45$}{}
 
-%QQRowThreeで9問にしてください。
 \TypeQuestion{次の数の絶対値を求めなさい。}{signed_absolute_value_find}
-\QQRow{$-9$}{}{$+\dfrac47$}{}
-\QQRow{$0$}{}{$-2.6$}{}
-\QQRow{$+13$}{}{$-\dfrac{11}{6}$}{}
-\QQRow{$-0.08$}{}{$+\dfrac52$}{}
+\QQRowThree{$-9$}{}{$+\dfrac47$}{}{$0$}{}
+\QQRowThree{$+13$}{}{$-2.6$}{}{$-\dfrac{11}{6}$}{}
+\QQRowThree{$-0.08$}{}{$-3.7$}{}{$+\dfrac52$}{}
 
 \LessonQuestionBreak
 
 \TypeQuestion{次の条件にあてはまる数をすべて求めなさい。}{signed_absolute_value_inverse}
-\QQRow{絶対値が $6$ である数。}{}{絶対値が $0.4$ である負の数。}{}
-\QQRow{絶対値が $0$ である数。}{}{絶対値が $\dfrac32$ である数。}{}
-\QQRow{絶対値が $8$ である正の数。}{}{数直線上で、原点からの距離が $2.5$ である点が表す数。}{}
+\QQRow{絶対値が $6$ である数}{}{絶対値が $0.4$ である負の数}{}
+\QQRow{絶対値が $0$ である数}{}{絶対値が $\dfrac32$ である数}{}
+\QQRow{絶対値が $8$ である正の数}{}{数直線上で、原点からの距離が $2.5$ である点が表す数}{}
 
 \TypeQuestion{次の条件にあてはまる整数をすべて求めなさい。}{signed_order_integer_range}
-\QQ{$-4$ より大きく、$+2$ 以下である整数。}{}
-\QQ{$-1.5$ 以上で、$+2.5$ より小さい整数。}{}
-\QQ{$-\dfrac{10}{3}$ より大きく、$-\dfrac23$ より小さい整数。}{}
-\QQ{絶対値が $3$ より小さい整数。}{}
-\QQ{絶対値が $2$ 以上、$5$ 未満である負の整数。}{}
-\QQ{$-0.6$ より大きく、$+0.4$ より小さい整数。}{}
+\QQ{$-4$ より大きく、$+2$ 以下である整数}{}
+\QQ{$-1.5$ 以上で、$+2.5$ より小さい整数}{}
+\QQ{$-\dfrac{10}{3}$ より大きく、$-\dfrac23$ より小さい整数}{}
+\QQ{絶対値が $3$ より小さい整数}{}
+\QQ{絶対値が $2$ 以上、$5$ 未満である負の整数}{}
+\QQ{$-0.6$ より大きく、$+0.4$ より小さい整数}{}
 
 \TypeQuestion{次の数の中から、各問いの条件にあてはまる数をすべて選びなさい。}{signed_order_absolute_value_select}
 \TextTall{$-5,\quad +\dfrac32,\quad -2.5,\quad 0,\quad -\dfrac12,\quad +4,\quad -1,\quad +0.8,\quad +\dfrac12$}
-\QQ{負の数で、絶対値が $2$ より小さい数。}{}
-\QQ{$-3$ より大きく、絶対値が $1$ 以上である数。}{}
-\QQ{絶対値が $\dfrac32$ 以下である正の数。}{}
-\QQ{絶対値が $\dfrac12$ である数。}{}
-\QQ{$0$ 以下で、絶対値が $\dfrac12$ より小さい数。}{}
-\QQ{$+2$ より小さい数で、絶対値が $1$ より大きい数。}{}
+\QQ{負の数で、絶対値が $2$ より小さい数}{}
+\QQ{$-3$ より大きく、絶対値が $1$ 以上である数}{}
+\QQ{絶対値が $\dfrac32$ 以下である正の数}{}
+\QQ{絶対値が $\dfrac12$ である数}{}
+\QQ{$0$ 以下で、絶対値が $\dfrac12$ より小さい数}{}
+\QQ{$+2$ より小さい数で、絶対値が $1$ より大きい数}{}
