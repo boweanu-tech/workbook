@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144mm" height="16mm" viewBox="0 0 144 16">
+  <title>整数・小数・分数を読み取る共通の数直線</title>
+  <desc>template.svg準拠。x=72+8v、軸の高さは7.5。-8から8まで0.25刻み。整数の目盛りは長くし、数値は-5,0,+5だけを表示する。</desc>
+  <defs>
+    <style><![CDATA[
+      .main { stroke: black; stroke-width: 0.55; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .axis-arrow, .point { fill: black; stroke: none; }
+      .label { font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif; font-size: 4.1px; font-style: normal; fill: black; text-anchor: middle; }
+      .quarter-ticks { stroke: black; stroke-width: 0.32; fill: none; stroke-linecap: round; }
+    ]]></style>
+    <path id="quarter-ticks" class="quarter-ticks" d="M 0 6.7 V 8.3 M 2 6.7 V 8.3 M 4 6.7 V 8.3 M 6 6.7 V 8.3"/>
+  </defs>
+  <line class="main" x1="2" y1="7.5" x2="141" y2="7.5"/>
+  <polygon class="axis-arrow" points="143,7.5 140.3,6.55 140.3,8.45"/>
+  <!-- 0.25刻み：1区間を8mmとし、その中を2mmずつ4等分する。 -->
+  <g>
+    <use xlink:href="#quarter-ticks" x="8"/>
+    <use xlink:href="#quarter-ticks" x="16"/>
+    <use xlink:href="#quarter-ticks" x="24"/>
+    <use xlink:href="#quarter-ticks" x="32"/>
+    <use xlink:href="#quarter-ticks" x="40"/>
+    <use xlink:href="#quarter-ticks" x="48"/>
+    <use xlink:href="#quarter-ticks" x="56"/>
+    <use xlink:href="#quarter-ticks" x="64"/>
+    <use xlink:href="#quarter-ticks" x="72"/>
+    <use xlink:href="#quarter-ticks" x="80"/>
+    <use xlink:href="#quarter-ticks" x="88"/>
+    <use xlink:href="#quarter-ticks" x="96"/>
+    <use xlink:href="#quarter-ticks" x="104"/>
+    <use xlink:href="#quarter-ticks" x="112"/>
+    <use xlink:href="#quarter-ticks" x="120"/>
+    <use xlink:href="#quarter-ticks" x="128"/>
+  </g>
+  <path class="thin" d="M 8 6.2 V 8.8 M 16 6.2 V 8.8 M 24 6.2 V 8.8 M 32 6.2 V 8.8 M 40 6.2 V 8.8 M 48 6.2 V 8.8 M 56 6.2 V 8.8 M 64 6.2 V 8.8 M 72 6.2 V 8.8 M 80 6.2 V 8.8 M 88 6.2 V 8.8 M 96 6.2 V 8.8 M 104 6.2 V 8.8 M 112 6.2 V 8.8 M 120 6.2 V 8.8 M 128 6.2 V 8.8 M 136 6.2 V 8.8"/>
+  <g class="point">
+    <circle cx="24" cy="7.5" r="0.65" data-name="A" data-value="-6"/>
+    <circle cx="96" cy="7.5" r="0.65" data-name="B" data-value="3"/>
+    <circle cx="56" cy="7.5" r="0.65" data-name="C" data-value="-2"/>
+    <circle cx="36" cy="7.5" r="0.65" data-name="D" data-value="-4.5"/>
+    <circle cx="124" cy="7.5" r="0.65" data-name="E" data-value="6.5"/>
+    <circle cx="84" cy="7.5" r="0.65" data-name="F" data-value="1.5"/>
+    <circle cx="66" cy="7.5" r="0.65" data-name="G" data-value="-0.75"/>
+    <circle cx="106" cy="7.5" r="0.65" data-name="H" data-value="4.25"/>
+    <circle cx="14" cy="7.5" r="0.65" data-name="I" data-value="-7.25"/>
+  </g>
+  <g class="label">
+    <text x="24" y="3.8">A</text>
+    <text x="96" y="3.8">B</text>
+    <text x="56" y="3.8">C</text>
+    <text x="36" y="3.8">D</text>
+    <text x="124" y="3.8">E</text>
+    <text x="84" y="3.8">F</text>
+    <text x="66" y="3.8">G</text>
+    <text x="106" y="3.8">H</text>
+    <text x="14" y="3.8">I</text>
+    <text x="32" y="13.6" data-value="-5">-5</text>
+    <text x="72" y="13.6" data-value="0">0</text>
+    <text x="112" y="13.6" data-value="5">+5</text>
+  </g>
+</svg>
