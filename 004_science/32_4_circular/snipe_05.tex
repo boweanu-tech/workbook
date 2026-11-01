@@ -1,0 +1,56 @@
+% theme: simple_harmonic_motion
+\MajorQuestion{単振動}
+\SetRowSpace{2mm}
+
+\TextTall{単振動の振幅を $A$、周期を $T$、振動数を $f$、角振動数を $\omega$ とする。円周率は $\pi$ として、次の問いに答えなさい。}
+
+\TypeQuestion{ある物体が、振幅 $0.20\,{\rm m}$、周期 $2.0\,{\rm s}$ で単振動している。次の問いに答えなさい。}{period_and_amplitude_to_motion_quantities}
+\QQ{物体の振動数を求めなさい。}{$0.50\,{\rm Hz}$}
+\QQ{物体の角振動数を求めなさい。}{$\pi\,{\rm rad/s}$}
+\QQ{物体の速さの最大値を求めなさい。}{$0.20\pi\,{\rm m/s}$}
+\QQ{物体の加速度の大きさの最大値を求めなさい。}{$0.20\pi^2\,{\rm m/s^2}$}
+
+\TypeQuestion{ある物体が、振幅 $0.10\,{\rm m}$、振動数 $2.0\,{\rm Hz}$ で単振動している。つり合いの位置を原点とし、変位が $x=+0.050\,{\rm m}$ の瞬間について考える。次の問いに答えなさい。}{frequency_and_displacement_to_motion_quantities}
+\QQ{物体の周期を求めなさい。}{$0.50\,{\rm s}$}
+\QQ{物体の角振動数を求めなさい。}{$4\pi\,{\rm rad/s}$}
+\QQ{この瞬間の物体の加速度を求めなさい。}{$-0.80\pi^2\,{\rm m/s^2}$}
+\QQ{この瞬間の物体の速さを求めなさい。}{$0.20\sqrt{3}\pi\,{\rm m/s}$}
+
+\TypeQuestion{質量 $0.50\,{\rm kg}$ の物体を、ばね定数 $8.0\,{\rm N/m}$ の軽いばねにつけ、振幅 $0.20\,{\rm m}$ で単振動させた。摩擦はないものとして、次の問いに答えなさい。}{spring_oscillator_numerical}
+\QQ{物体の角振動数を求めなさい。}{$4.0\,{\rm rad/s}$}
+\QQ{物体の周期を求めなさい。}{$\dfrac{\pi}{2}\,{\rm s}$}
+\QQ{物体の速さの最大値を求めなさい。}{$0.80\,{\rm m/s}$}
+\QQ{物体の力学的エネルギーを求めなさい。}{$0.16\,{\rm J}$}
+
+\AnswerColumnBreak
+\LessonQuestionBreak
+
+\TextTall{ばねは軽く、摩擦や空気抵抗は無視する。重力加速度の大きさを $g$ とする。}
+\SetRowSpace{2mm}
+
+\TypeQuestion{なめらかな水平面上で、質量 $m$ の物体をばね定数 $k$ のばねにつなぎ、振幅 $A$ で単振動させた。つり合いの位置を原点とし、物体の変位を $x$ とする。次の問いに答えなさい。}{horizontal_spring_oscillator}
+\FigProblemBlock{34mm}{fig/snipe_05_horizontal_spring}{
+\QQ{物体にはたらくばねの弾性力 $F$ を、$k$ と $x$ を用いて表しなさい。}{$F=-kx$}
+\QQ{物体の運動方程式を書きなさい。}{$m\dfrac{d^2x}{dt^2}=-kx$}
+\QQ{物体の角振動数 $\omega$ を、$m$ と $k$ を用いて表しなさい。}{$\omega=\sqrt{\dfrac{k}{m}}$}
+\QQ{物体の周期 $T$ を、$m$ と $k$ を用いて表しなさい。}{$T=2\pi\sqrt{\dfrac{m}{k}}$}
+}{
+}
+
+\TypeQuestion{ばね定数 $k$ のばねを鉛直につるし、その下端に質量 $m$ の物体をつけたところ、ばねは自然の長さから $x_0$ だけ伸びてつり合った。つり合いの位置から鉛直下向きに測った物体の変位を $y$ とする。次の問いに答えなさい。}{vertical_spring_oscillator}
+\FigProblemBlock{34mm}{fig/snipe_05_vertical_spring}{
+\QQ{つり合いの位置における力のつり合いを表す式を書きなさい。}{$kx_0=mg$}
+\QQ{ばねの伸び $x_0$ を、$m$、$g$、$k$ を用いて表しなさい。}{$x_0=\dfrac{mg}{k}$}
+\QQ{変位が $y$ のときの物体の運動方程式を書きなさい。}{$m\dfrac{d^2y}{dt^2}=-ky$}
+\QQ{物体の周期 $T$ を、$m$ と $k$ を用いて表しなさい。}{$T=2\pi\sqrt{\dfrac{m}{k}}$}
+}{
+}
+
+\TypeQuestion{長さ $\ell$ の軽くて伸びない糸の先に質量 $m$ の小球をつけ、鉛直面内で小さく振動させた。糸が鉛直方向となす角を $\theta$、小球のつり合いの位置から円弧に沿って測った変位を $x=\ell\theta$ とし、$\sin\theta\simeq\theta$ とする。次の問いに答えなさい。}{simple_pendulum_small_oscillation}
+\FigProblemBlock{34mm}{fig/snipe_05_simple_pendulum}{
+\QQ{小球にはたらく接線方向の復元力 $F$ を、$m$、$g$、$\theta$ を用いて表しなさい。}{$F=-mg\sin\theta$}
+\QQ{小球の運動方程式を、$x$ を用いて表しなさい。}{$m\dfrac{d^2x}{dt^2}=-\dfrac{mg}{\ell}x$}
+\QQ{小球の角振動数 $\omega$ を、$g$ と $\ell$ を用いて表しなさい。}{$\omega=\sqrt{\dfrac{g}{\ell}}$}
+\QQ{小球の周期 $T$ を、$g$ と $\ell$ を用いて表しなさい。}{$T=2\pi\sqrt{\dfrac{\ell}{g}}$}
+}{
+}
