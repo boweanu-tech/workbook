@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="42mm" height="30mm" viewBox="0 0 42 30" version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<svg
+   width="42mm"
+   height="30mm"
+   viewBox="0 0 42 30"
+   version="1.1"
+   id="svg34"
+   sodipodi:docname="snipe_01_conical_pendulum.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="7.0467361"
+     inkscape:cx="79.327506"
+     inkscape:cy="56.692913"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg34" />
   <!--
   教材SVGテンプレート準拠。
   viewBoxの1単位を1mmとし、図形は座標計算に基づいて配置する。
   糸の方向ベクトルは (14,18)。角度弧の終点は、このベクトルを
   半径5に正規化して求めた (23.068,7.945) とする。
   -->
-  <defs>
-    <style><![CDATA[
+  <defs
+     id="defs4">
+    <style
+       id="style2"><![CDATA[
       .main { stroke:#000; stroke-width:0.55; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .thin { stroke:#000; stroke-width:0.32; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .dash { stroke:#000; stroke-width:0.32; fill:none; stroke-dasharray:1.2 1.4; stroke-linecap:round; }
@@ -25,18 +55,83 @@
       .axis-arrow { fill:#000; stroke:none; }
     ]]></style>
   </defs>
-  <ellipse class="thin" cx="20" cy="22" rx="15" ry="4.2" />
-  <line class="dash" x1="20" y1="2" x2="20" y2="28" />
-  <line class="main" x1="20" y1="4" x2="34" y2="22" />
-  <line class="dash" x1="20" y1="22" x2="34" y2="22" />
-  <circle class="point" cx="20" cy="4" r="0.65" />
-  <circle class="white-shape" cx="34" cy="22" r="1.7" />
-  <path class="thin" d="M20 9 A5 5 0 0 0 23.068 7.945" />
-  <path class="thin" d="M10.2 25.3 A15 4.2 0 0 0 7.2 22.8" />
-  <polygon class="axis-arrow" points="7.2,22.8 7.65,24.45 8.7,23.2" />
-  <text class="label" x="17.2" y="3.2">O</text>
-  <text class="angle-label" x="21.2" y="10.7">θ</text>
-  <text class="math-label" x="27.7" y="11.4">ℓ</text>
-  <text class="math-label" x="26.2" y="20.7">r</text>
-  <text class="math-label" x="5.3" y="27.7">ω</text>
+  <ellipse
+     class="thin"
+     cx="20"
+     cy="22"
+     rx="15"
+     ry="4.2"
+     id="ellipse6" />
+  <line
+     class="dash"
+     x1="20"
+     y1="2"
+     x2="20"
+     y2="28"
+     id="line8" />
+  <line
+     class="main"
+     x1="20"
+     y1="4"
+     x2="34"
+     y2="22"
+     id="line10" />
+  <line
+     class="dash"
+     x1="20"
+     y1="22"
+     x2="34"
+     y2="22"
+     id="line12" />
+  <circle
+     class="point"
+     cx="20"
+     cy="4"
+     r="0.65"
+     id="circle14" />
+  <circle
+     class="white-shape"
+     cx="34"
+     cy="22"
+     r="1.7"
+     id="circle16" />
+  <path
+     class="thin"
+     d="M20 9 A5 5 0 0 0 23.068 7.945"
+     id="path18" />
+  <path
+     class="thin"
+     d="M 12.868326,24.639409 C 11.261007,24.539332 9.1405069,23.74666 8.4460889,23.061509"
+     id="path20"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     class="axis-arrow"
+     points="7.65,24.45 8.7,23.2 7.2,22.8 "
+     id="polygon22"
+     transform="translate(0.69139158,-0.35170917)" />
+  <text
+     class="label"
+     x="17.2"
+     y="3.2"
+     id="text24">O</text>
+  <text
+     class="angle-label"
+     x="21.205427"
+     y="11.803967"
+     id="text26">θ</text>
+  <text
+     class="math-label"
+     x="27.7"
+     y="11.4"
+     id="text28">ℓ</text>
+  <text
+     class="math-label"
+     x="26.2"
+     y="20.7"
+     id="text30">r</text>
+  <text
+     class="math-label"
+     x="7.5066161"
+     y="27.5504"
+     id="text32">ω</text>
 </svg>
