@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="54.0673mm" height="42.6865mm" viewBox="-5.5673 -6.7865 54.0673 42.6865">
+<!-- Based on 999_GPTbox/template.svg. Lengths are specified in the TeX problem, not duplicated in the figure. -->
+<desc>{&quot;coordinates&quot;: {&quot;A&quot;: [3, 12], &quot;B&quot;: [0, 0], &quot;C&quot;: [12, 0], &quot;D&quot;: [1.5, 6.0], &quot;E&quot;: [6.0, 0.0], &quot;F&quot;: [7.5, 6.0]}, &quot;rotation&quot;: 0, &quot;note&quot;: &quot;&quot;}</desc>
+<defs><style>
+.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:black;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4;stroke-linecap:round;stroke-linejoin:round}
+.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal;fill:black}
+.triangle-fill{fill:#ddd;stroke:none}
+</style></defs>
+<polygon class="triangle-fill" points="3.6250,14.5000 0.0000,29.0000 29.0000,29.0000 18.1250,14.5000"/>
+<line class="main" x1="7.2500" y1="0.0000" x2="0.0000" y2="29.0000"/>
+<line class="main" x1="0.0000" y1="29.0000" x2="29.0000" y2="29.0000"/>
+<line class="main" x1="29.0000" y1="29.0000" x2="7.2500" y2="0.0000"/>
+<line class="main" x1="3.6250" y1="14.5000" x2="14.5000" y2="29.0000"/>
+<line class="main" x1="14.5000" y1="29.0000" x2="18.1250" y2="14.5000"/>
+<line class="main" x1="18.1250" y1="14.5000" x2="3.6250" y2="14.5000"/>
+<line class="thin" x1="6.4076" y1="7.4925" x2="4.4674" y2="7.0075"/>
+<line class="thin" x1="2.7826" y1="21.9925" x2="0.8424" y2="21.5075"/>
+<line class="thin" x1="6.6250" y1="28.0000" x2="6.6250" y2="30.0000"/>
+<line class="thin" x1="7.8750" y1="28.0000" x2="7.8750" y2="30.0000"/>
+<line class="thin" x1="21.1250" y1="28.0000" x2="21.1250" y2="30.0000"/>
+<line class="thin" x1="22.3750" y1="28.0000" x2="22.3750" y2="30.0000"/>
+<line class="thin" x1="23.5125" y1="23.3500" x2="25.1125" y2="22.1500"/>
+<line class="thin" x1="22.7625" y1="22.3500" x2="24.3625" y2="21.1500"/>
+<line class="thin" x1="22.0125" y1="21.3500" x2="23.6125" y2="20.1500"/>
+<line class="thin" x1="12.6375" y1="8.8500" x2="14.2375" y2="7.6500"/>
+<line class="thin" x1="11.8875" y1="7.8500" x2="13.4875" y2="6.6500"/>
+<line class="thin" x1="11.1375" y1="6.8500" x2="12.7375" y2="5.6500"/>
+<text class="label" x="6.3284" y="-3.6865" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="-2.9673" y="31.3738" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="32.2993" y="30.8853" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="0.3257" y="12.6147" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="14.5000" y="32.8000" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="21.0923" y="12.1262" text-anchor="middle" dominant-baseline="central">F</text>
+</svg>

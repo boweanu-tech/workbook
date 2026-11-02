@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="54.6014mm" height="42.7689mm" viewBox="-6.1014 -6.8689 54.6014 42.7689">
+<!-- Based on 999_GPTbox/template.svg. Lengths are specified in the TeX problem, not duplicated in the figure. -->
+<desc>{&quot;coordinates&quot;: {&quot;A&quot;: [2.97, 8.0], &quot;B&quot;: [0, 0], &quot;C&quot;: [9, 0], &quot;D&quot;: [2, 0], &quot;E&quot;: [5, 0]}, &quot;rotation&quot;: 0, &quot;note&quot;: &quot;&quot;}</desc>
+<defs><style>
+.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:black;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4;stroke-linecap:round;stroke-linejoin:round}
+.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal;fill:black}
+.triangle-fill{fill:#ddd;stroke:none}
+</style></defs>
+<line class="main" x1="10.7663" y1="0.0000" x2="0.0000" y2="29.0000"/>
+<line class="main" x1="0.0000" y1="29.0000" x2="32.6250" y2="29.0000"/>
+<line class="main" x1="32.6250" y1="29.0000" x2="10.7663" y2="0.0000"/>
+<line class="thin" x1="10.7663" y1="0.0000" x2="7.2500" y2="29.0000"/>
+<line class="thin" x1="10.7663" y1="0.0000" x2="18.1250" y2="29.0000"/>
+<text class="label" x="10.2810" y="-3.7689" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="-3.5014" y="30.4766" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="36.2573" y="30.1163" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="7.2500" y="32.8000" text-anchor="middle" dominant-baseline="central">D</text>
+<text class="label" x="18.1250" y="32.8000" text-anchor="middle" dominant-baseline="central">E</text>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="55.8000mm" height="20.0057mm" viewBox="-6.4000 -4.0835 55.8000 20.0057">
+<!-- Based on 999_GPTbox/template.svg. Lengths are specified in the TeX problem, not duplicated in the figure. -->
+<desc>{&quot;coordinates&quot;: {&quot;A&quot;: [0, 4], &quot;E&quot;: [11.313708498984761, 4], &quot;B&quot;: [0, 7], &quot;F&quot;: [19.79898987322333, 7], &quot;C&quot;: [0, 12], &quot;G&quot;: [33.941125496954285, 12]}, &quot;rotation&quot;: 0, &quot;note&quot;: &quot;&quot;}</desc>
+<defs><style>
+.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:black;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4;stroke-linecap:round;stroke-linejoin:round}
+.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal;fill:black}
+.triangle-fill{fill:#ddd;stroke:none}
+</style></defs>
+<line class="main" x1="0.0000" y1="10.1352" x2="0.0000" y2="0.0000"/>
+<line class="main" x1="14.3333" y1="10.1352" x2="43.0000" y2="0.0000"/>
+<line class="main" x1="0.0000" y1="10.1352" x2="14.3333" y2="10.1352"/>
+<line class="main" x1="0.0000" y1="6.3345" x2="25.0833" y2="6.3345"/>
+<line class="main" x1="0.0000" y1="0.0000" x2="43.0000" y2="0.0000"/>
+<polyline class="thin" points="6.5267,9.3852 8.1267,10.1352 6.5267,10.8852"/>
+<polyline class="thin" points="7.9267,9.3852 9.5267,10.1352 7.9267,10.8852"/>
+<polyline class="thin" points="12.5467,5.5845 14.1467,6.3345 12.5467,7.0845"/>
+<polyline class="thin" points="13.9467,5.5845 15.5467,6.3345 13.9467,7.0845"/>
+<polyline class="thin" points="22.5800,-0.7500 24.1800,0.0000 22.5800,0.7500"/>
+<polyline class="thin" points="23.9800,-0.7500 25.5800,0.0000 23.9800,0.7500"/>
+<text class="label" x="-3.8000" y="10.1352" text-anchor="middle" dominant-baseline="central">A</text>
+<text class="label" x="17.0203" y="12.8222" text-anchor="middle" dominant-baseline="central">E</text>
+<text class="label" x="-3.2909" y="4.4345" text-anchor="middle" dominant-baseline="central">B</text>
+<text class="label" x="27.7703" y="9.0215" text-anchor="middle" dominant-baseline="central">F</text>
+<text class="label" x="-3.6705" y="-0.9835" text-anchor="middle" dominant-baseline="central">C</text>
+<text class="label" x="46.8000" y="0.0000" text-anchor="middle" dominant-baseline="central">G</text>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="44mm" height="44mm" viewBox="-1 0 44 44">
+<!-- Based on 999_GPTbox/template.svg. Section dimensions and height use the same similarity ratio. -->
+<desc>{&quot;height&quot;: 12, &quot;section_ratio&quot;: 0.75, &quot;water&quot;: true, &quot;kind&quot;: &quot;cone&quot;}</desc><defs><style>
+.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:black;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4;stroke-linecap:round;stroke-linejoin:round}
+.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal;fill:black}
+.triangle-fill{fill:#ddd;stroke:none}
+</style></defs>
+<polygon class="triangle-fill" points="21.5,39 8.75,12.75 34.25,12.75"/>
+<ellipse class="triangle-fill" cx="21.5" cy="12.75" rx="12.75" ry="3.0"/>
+<ellipse class="main" cx="21.5" cy="4" rx="17" ry="4"/>
+<path class="main" d="M 4.5 4 L 21.5 39 L 38.5 4"/>
+<ellipse class="thin" cx="21.5" cy="12.75" rx="12.75" ry="3.0"/>
+<line class="dash" x1="21.5" y1="39" x2="21.5" y2="4"/>
+</svg>
