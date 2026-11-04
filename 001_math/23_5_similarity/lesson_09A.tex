@@ -1,81 +1,62 @@
-% theme: converse_segment_ratios_and_midpoint_theorem
-% 叩き台。解答は未生成。レビュー用図を挿入済み。表3大問、裏4大問。
-\MajorQuestionLesson{平行線と線分比の逆・中点連結定理}
+% theme: figures_and_segment_ratios
+% 叩き台。解答は未生成。レビュー用図を挿入済み。
+% 表：台形・平行線を含む図形3大問。裏：平行四辺形と対角線・延長線3大問。
+\MajorQuestionLesson{図形と線分の比}
 \SetRowSpace{3mm}
 
-\Needspace{90mm}
-\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に、それぞれ端点と異なる点 $\mathrm{D},\mathrm{E}$ をとる。次の各場合について、$\Lseg{DE}\Parallel\Lseg{BC}$ となるかどうかを答えなさい。長さの単位は $\mathrm{cm}$ とする。}{converse_segment_ratio_judge}
-\QQFigRow[46mm]{fig/lesson_09_judge_01}{$\Lseg{AD}=4,\ \Lseg{DB}=6,\ \Lseg{AE}=6,\ \Lseg{EC}=9$。}{}{fig/lesson_09_judge_02}{$\Lseg{AD}=3,\ \Lseg{AB}=9,\ \Lseg{AE}=2,\ \Lseg{EC}=5$。}{}
-\QQFigRow[46mm]{fig/lesson_09_judge_03}{$\Lseg{AD}=5,\ \Lseg{DB}=3,\ \Lseg{AE}=7.5,\ \Lseg{EC}=4.5$。}{}{fig/lesson_09_judge_04}{$\Lseg{AD}=6,\ \Lseg{AB}=15,\ \Lseg{AE}=4,\ \Lseg{AC}=12$。}{}
-\QQFigRow[46mm]{fig/lesson_09_judge_05}{$\Lseg{AD}:\Lseg{DB}=2:3,\ \Lseg{AE}:\Lseg{EC}=3:2$。}{}{fig/lesson_09_judge_06}{$\Lseg{AB}=14,\ \Lseg{AD}=8,\ \Lseg{AC}=21,\ \Lseg{AE}=12$。}{}
+\Needspace{78mm}
+\TypeQuestion{}{figure_segment_ratio_right_trapezoid}
+\FigProblemBlock{58mm}{fig/lesson_09_figure_01}{
+\Text{$\Lseg{AB}\Parallel\Lseg{EF}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、点 $\mathrm{E},\mathrm{F}$ はそれぞれ辺 $\Lseg{AD},\Lseg{BC}$ 上にあり、対角線 $\Lseg{AC}$ と線分 $\Lseg{EF}$ の交点を $\mathrm{P}$ とする。$\Lseg{AE}:\Lseg{ED}=2:3,\ \Lseg{AB}=8\mathrm{cm},\ \Lseg{CD}=18\mathrm{cm}$ とする。}
+}{
+\QQRow{$\Lseg{AP}:\Lseg{PC}$ を求めなさい。}{}{線分 $\Lseg{EP}$ の長さを求めなさい。}{}
+\QQRow{線分 $\Lseg{PF}$ の長さを求めなさい。}{}{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
+}
 
+\Needspace{78mm}
+\TypeQuestion{}{figure_segment_ratio_slanted_trapezoid}
+\FigProblemBlock{58mm}{fig/lesson_09_figure_02}{
+\Text{$\Lseg{AB}\Parallel\Lseg{EF}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、点 $\mathrm{E},\mathrm{F}$ はそれぞれ辺 $\Lseg{BC},\Lseg{AD}$ 上にあり、対角線 $\Lseg{BD}$ と線分 $\Lseg{EF}$ の交点を $\mathrm{Q}$ とする。$\Lseg{BE}:\Lseg{EC}=3:2,\ \Lseg{AB}=10\mathrm{cm},\ \Lseg{CD}=15\mathrm{cm}$ とする。}
+}{
+\QQRow{$\Lseg{BQ}:\Lseg{QD}$ を求めなさい。}{}{線分 $\Lseg{EQ}$ の長さを求めなさい。}{}
+\QQRow{線分 $\Lseg{QF}$ の長さを求めなさい。}{}{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
+}
 
-\Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{converse_segment_ratio_proof}
-\QQSideFig{42mm}{fig/lesson_09_proof_fill}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に点 $\mathrm{D},\mathrm{E}$ をとり、$\Lseg{AD}=6\mathrm{cm},\ \Lseg{DB}=9\mathrm{cm},\ \Lseg{AE}=4\mathrm{cm},\ \Lseg{EC}=6\mathrm{cm}$ とする。$\Lseg{DE}\Parallel\Lseg{BC}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
-\ProofHeading
-$\Tri{ADE}$ と $\Tri{ABC}$ において、\par
-$\Lseg{AB}=$\Blank{ア}$\mathrm{cm}$、$\Lseg{AC}=$\Blank{イ}$\mathrm{cm}$\par\smallskip
-$\Lseg{AD}:\Lseg{AB}=\Lseg{AE}:\Lseg{AC}=$\Blank{ウ}\quad\CondTag{1}\par\smallskip
-共通な角であるから、$\Ang{DAE}=\Ang{BAC}$\quad\CondTag{2}\par\smallskip
-\CondNo{1}、\CondNo{2}より、\Blank{エ}ので、\par
-$\Tri{ADE}\Similar\Tri{ABC}$\par\smallskip
-したがって、$\Ang{ADE}=$\Blank{オ}\par\smallskip
-\Blank{カ}が等しいので、$\Lseg{DE}\Parallel\Lseg{BC}$
-}{}
-\QQSideFig{42mm}{fig/lesson_09_proof_write}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ をそれぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ のとき、$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
-
-
-\Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{midpoint_theorem_length}
-\QQFigRow[46mm]{fig/lesson_09_midpoint_01}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。$\Lseg{BC}=15\mathrm{cm}$ のとき、線分 $\Lseg{MN}$ の長さを求めなさい。}{}{fig/lesson_09_midpoint_02}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。$\Lseg{MN}=6.5\mathrm{cm}$ のとき、辺 $\Lseg{BC}$ の長さを求めなさい。}{}
-\QQFigRow[46mm]{fig/lesson_09_midpoint_03}{$\Tri{ABC}$ の辺 $\Lseg{AB}$ の中点 $\mathrm{M}$ を通り辺 $\Lseg{BC}$ に平行な直線と、辺 $\Lseg{AC}$ との交点を $\mathrm{N}$ とする。$\Lseg{AN}=4.2\mathrm{cm}$ のとき、線分 $\Lseg{NC}$ の長さを求めなさい。}{}{fig/lesson_09_midpoint_04}{$\Tri{PQR}$ の辺 $\Lseg{PQ}$ の中点を $\mathrm{D}$ とする。辺 $\Lseg{PR}$ 上に、$\Lseg{DE}\Parallel\Lseg{QR}$ となる点 $\mathrm{E}$ をとる。$\Lseg{PR}=18\mathrm{cm}$ のとき、線分 $\Lseg{PE}$ の長さを求めなさい。}{}
-\QQFigRow[46mm]{fig/lesson_09_midpoint_05}{四角形 $\mathrm{ABCD}$ の辺 $\Lseg{AB},\Lseg{AD}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。対角線 $\Lseg{BD}$ の長さが $14\mathrm{cm}$ のとき、線分 $\Lseg{MN}$ の長さを求めなさい。}{}{fig/lesson_09_midpoint_06}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{BC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。$\Lseg{MN}=4\mathrm{cm}$ のとき、辺 $\Lseg{AC}$ の長さを求めなさい。}{}
+\Needspace{78mm}
+\TypeQuestion{}{figure_segment_ratio_shifted_trapezoid}
+\FigProblemBlock{58mm}{fig/lesson_09_figure_03}{
+\Text{$\Lseg{AB}\Parallel\Lseg{EF}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、点 $\mathrm{E},\mathrm{F}$ はそれぞれ辺 $\Lseg{AD},\Lseg{BC}$ 上にあり、対角線 $\Lseg{AC}$ と線分 $\Lseg{EF}$ の交点を $\mathrm{P}$ とする。$\Lseg{AE}:\Lseg{ED}=1:2,\ \Lseg{AB}=9\mathrm{cm},\ \Lseg{CD}=15\mathrm{cm}$ とする。}
+}{
+\QQRow{$\Lseg{AP}:\Lseg{PC}$ を求めなさい。}{}{線分 $\Lseg{EP}$ の長さを求めなさい。}{}
+\QQRow{線分 $\Lseg{PF}$ の長さを求めなさい。}{}{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
+}
 
 \AnswerColumnBreak
 \LessonQuestionBreak
 
-
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_repeated}
-\FigProblemBlock{48mm}{fig/lesson_09_repeated}{
-\Text{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とし、線分 $\Lseg{AM},\Lseg{AN}$ の中点をそれぞれ $\mathrm{P},\mathrm{Q}$ とする。$\Lseg{BC}=28\mathrm{cm},\ \Lseg{AB}=20\mathrm{cm}$ とする。}
+\Needspace{78mm}
+\TypeQuestion{}{parallelogram_diagonal_ratio_inside}
+\FigProblemBlock{58mm}{fig/lesson_09_parallelogram_01}{
+\Text{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{BC}$ 上に点 $\mathrm{E}$ をとり、線分 $\Lseg{AE}$ と対角線 $\Lseg{BD}$ の交点を $\mathrm{P}$ とする。$\Lseg{BE}:\Lseg{EC}=2:1,\ \Lseg{BD}=20\mathrm{cm},\ \Lseg{AE}=15\mathrm{cm}$ とする。}
 }{
-\QQ{線分 $\Lseg{MN}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{PQ}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{PB}$ の長さを求めなさい。}{}
+\QQRow{$\Lseg{BP}:\Lseg{PD}$ を求めなさい。}{}{$\Lseg{AP}:\Lseg{PE}$ を求めなさい。}{}
+\QQRow{線分 $\Lseg{BP}$ の長さを求めなさい。}{}{線分 $\Lseg{PE}$ の長さを求めなさい。}{}
 }
 
-
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_quadrilateral}
-\FigProblemBlock{48mm}{fig/lesson_09_quadrilateral}{
-\Text{凸四角形 $\mathrm{ABCD}$ の辺 $\Lseg{AB},\Lseg{BC},\Lseg{CD},\Lseg{DA}$ の中点をそれぞれ $\mathrm{E},\mathrm{F},\mathrm{G},\mathrm{H}$ とする。対角線の長さは $\Lseg{AC}=12\mathrm{cm},\ \Lseg{BD}=16\mathrm{cm}$ である。}
+\Needspace{78mm}
+\TypeQuestion{}{parallelogram_diagonal_ratio_extension}
+\FigProblemBlock{58mm}{fig/lesson_09_parallelogram_02}{
+\Text{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{DC}$ を点 $\mathrm{D}$ の側に延長した直線上に点 $\mathrm{E}$ をとり、線分 $\Lseg{BE}$ と対角線 $\Lseg{AC}$ の交点を $\mathrm{P}$ とする。$\Lseg{DE}:\Lseg{DC}=1:2,\ \Lseg{AC}=25\mathrm{cm},\ \Lseg{BE}=30\mathrm{cm}$ とする。}
 }{
-\QQ{線分 $\Lseg{EF}$ と対角線 $\Lseg{AC}$ の位置関係を答え、線分 $\Lseg{EF}$ の長さを求めなさい。}{}
-\QQ{四角形 $\mathrm{EFGH}$ が平行四辺形であることを証明しなさい。}{}
-\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
+\QQRow{$\Lseg{AP}:\Lseg{PC}$ を求めなさい。}{}{$\Lseg{BP}:\Lseg{BE}$ を求めなさい。}{}
+\QQRow{線分 $\Lseg{AP}$ の長さを求めなさい。}{}{線分 $\Lseg{PE}$ の長さを求めなさい。}{}
 }
 
-
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_trapezoid}
-\FigProblemBlock{48mm}{fig/lesson_09_trapezoid}{
-\Text{$\Lseg{AB}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、$\Lseg{AB}=10\mathrm{cm},\ \Lseg{CD}=22\mathrm{cm}$ とする。辺 $\Lseg{AD},\Lseg{BC}$ の中点をそれぞれ $\mathrm{E},\mathrm{F}$ とし、対角線 $\Lseg{AC}$ の中点を $\mathrm{M}$ とする。}
+\Needspace{78mm}
+\TypeQuestion{}{parallelogram_butterfly_extension}
+\FigProblemBlock{58mm}{fig/lesson_09_parallelogram_03}{
+\Text{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{DC}$ 上に点 $\mathrm{E}$ をとり、直線 $\mathrm{AE}$ と辺 $\Lseg{BC}$ を点 $\mathrm{C}$ の側に延長した直線との交点を $\mathrm{F}$ とする。$\Lseg{DE}:\Lseg{EC}=2:1,\ \Lseg{AD}=12\mathrm{cm},\ \Lseg{AE}=16\mathrm{cm}$ とする。}
 }{
-\QQ{3点 $\mathrm{E},\mathrm{M},\mathrm{F}$ が一直線上にあることを示し、線分 $\Lseg{EM}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{MF}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
-}
-
-
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_medians}
-\FigProblemBlock{48mm}{fig/lesson_09_medians}{
-\Text{$\Tri{ABC}$ の辺 $\Lseg{BC},\Lseg{CA}$ の中点をそれぞれ $\mathrm{D},\mathrm{E}$ とし、線分 $\Lseg{AD},\Lseg{BE}$ の交点を $\mathrm{G}$ とする。点 $\mathrm{E}$ を通り線分 $\Lseg{AD}$ に平行な直線と、辺 $\Lseg{BC}$ との交点を $\mathrm{F}$ とする。}
-}{
-\QQ{点 $\mathrm{F}$ が線分 $\Lseg{DC}$ の中点であることを証明しなさい。}{}
-\QQ{$\Lseg{EF}:\Lseg{AD}$ を求めなさい。}{}
-\QQ{$\Tri{BDG}$ と $\Tri{BFE}$ に注目して、$\Lseg{BG}:\Lseg{GE}$ を求めなさい。}{}
-\QQ{$\Lseg{AG}:\Lseg{GD}$ を求めなさい。}{}
+\QQRow{$\Lseg{AD}:\Lseg{CF}$ を求めなさい。}{}{$\Lseg{AF}:\Lseg{EF}$ を求めなさい。}{}
+\QQRow{線分 $\Lseg{CF}$ の長さを求めなさい。}{}{線分 $\Lseg{BF}$ の長さを求めなさい。}{}
 }

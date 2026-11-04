@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
+<!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
+<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
+<path class="main" d="M5 5 H55 M5 14 H55 M5 28 H55 M5 38 H55 M14 2 L25 40 M47 2 L35 40"/>
+<path class="thin" d="M28 4 l2 1 -2 1 M28 13 l2 1 -2 1 M28 27 l2 1 -2 1 M28 37 l2 1 -2 1"/>
+<path class="length-arc" d="M38 29 Q36 33 35 37"/><text class="var" x="39" y="34">x</text>
+<g class="label"><text x="11" y="4">A</text><text x="14" y="13">B</text><text x="19" y="27">C</text><text x="22" y="41">D</text><text x="48" y="4">E</text><text x="44" y="13">F</text><text x="38" y="27">G</text><text x="32" y="41">H</text></g>
+</svg>

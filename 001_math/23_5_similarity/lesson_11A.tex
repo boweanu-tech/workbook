@@ -1,91 +1,77 @@
-% theme: similarity_ratios_and_volume_ratios
-% 叩き台。解答は未生成。レビュー用図を挿入済み。表3大問、裏4大問。
-% 体積の比の逆算は既知の整数比の3乗で処理できる数値に限定する。
-\MajorQuestionLesson{相似比と体積比}
+% theme: similarity_ratios_and_area_ratios
+% 叩き台。解答は未生成。レビュー用図を挿入済み。
+% 表3大問：底辺・高さと面積の比例だけ。相似比の2乗は使わない。
+% 裏4大問：相似比と面積比の順算・逆算、および図形内での利用。
+\MajorQuestionLesson{相似比と面積比}
 \SetRowSpace{3mm}
 
 \Needspace{90mm}
-\TypeQuestion{相似な2つの立体 $\mathrm{A},\mathrm{B}$ について、次の表の空欄をうめなさい。どの比も、立体 $\mathrm{A}$ と立体 $\mathrm{B}$ の順に、最も簡単な整数の比で答えなさい。}{similarity_volume_ratio_table}
-\WholeQuestion{%
-\begin{center}
-\renewcommand{\arraystretch}{1.8}
-\begin{tabular}{|c|c|c|c|}
-\hline
- & 相似比 & 表面積比 & 体積比 \\
-\hline
-(1) & $2:3$ & & \\
-\hline
-(2) & & $9:25$ & \\
-\hline
-(3) & & & $64:27$ \\
-\hline
-(4) & $5:2$ & & \\
-\hline
-(5) & & $25:16$ & \\
-\hline
-(6) & & & $27:8$ \\
-\hline
-\end{tabular}
-\end{center}
-}{}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{BC}$ 上に、端点と異なる点 $\mathrm{D}$ をとる。次の問いに答えなさい。}{area_ratio_common_height}
+\QQFigRow[46mm]{fig/lesson_10_base_01}{$\Lseg{BD}:\Lseg{DC}=2:5$ のとき、$\Tri{ABD}$ と $\Tri{ADC}$ の面積比を、この順に求めなさい。}{}{fig/lesson_10_base_02}{$\Lseg{BD}=3\mathrm{cm},\ \Lseg{DC}=5\mathrm{cm}$ で、$\Tri{ABC}$ の面積が $40\mathrm{cm}^2$ のとき、$\Tri{ABD}$ の面積を求めなさい。}{}
+\QQFigRow[46mm]{fig/lesson_10_base_03}{$\Tri{ABD}$ と $\Tri{ADC}$ の面積がそれぞれ $18\mathrm{cm}^2,\ 30\mathrm{cm}^2$ で、$\Lseg{BC}=16\mathrm{cm}$ のとき、線分 $\Lseg{BD}$ の長さを求めなさい。}{}{fig/lesson_10_base_04}{$\Lseg{BD}:\Lseg{BC}=3:8$ で、$\Tri{ADC}$ の面積が $25\mathrm{cm}^2$ のとき、$\Tri{ABC}$ の面積を求めなさい。}{}
+\QQFigRow[46mm]{fig/lesson_10_base_05}{辺 $\Lseg{BC}$ 上に点 $\mathrm{E}$ をとり、$\mathrm{B},\mathrm{D},\mathrm{E},\mathrm{C}$ がこの順に並んでいるとする。$\Lseg{BD}=2\mathrm{cm},\ \Lseg{DE}=3\mathrm{cm},\ \Lseg{EC}=4\mathrm{cm}$ で、$\Tri{ADE}$ の面積が $12\mathrm{cm}^2$ のとき、$\Tri{ABE}$ の面積を求めなさい。}{}{fig/lesson_10_base_06}{$\Lseg{BD}:\Lseg{DC}=5:3$ で、$\Tri{ABC}$ の面積が $44\mathrm{cm}^2$ のとき、$\Tri{ADC}$ の面積を求めなさい。}{}
 
 
 \Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{similarity_volume_ratio_prisms_cylinders}
-\QQ{相似な2つの三角柱 $\mathrm{A},\mathrm{B}$ の相似比は $3:2$ である。三角柱 $\mathrm{B}$ の体積が $80\mathrm{cm}^3$ のとき、三角柱 $\mathrm{A}$ の体積を求めなさい。}{}
-\QQ{相似な2つの直方体 $\mathrm{A},\mathrm{B}$ の対応する辺の長さは、それぞれ $6\mathrm{cm},\ 9\mathrm{cm}$ である。直方体 $\mathrm{A}$ の表面積が $88\mathrm{cm}^2$、体積が $48\mathrm{cm}^3$ のとき、直方体 $\mathrm{B}$ の表面積と体積をそれぞれ求めなさい。}{}
-\QQ{相似な2つの円柱 $\mathrm{A},\mathrm{B}$ の高さは、それぞれ $8\mathrm{cm},\ 12\mathrm{cm}$ である。円柱 $\mathrm{A}$ の体積が $32\pi\mathrm{cm}^3$ のとき、円柱 $\mathrm{B}$ の体積を求めなさい。}{}
+\TypeQuestion{同じ線分 $\Lseg{AB}$ を底辺とする2つの三角形 $\mathrm{PAB},\mathrm{QAB}$ を考える。点 $\mathrm{P},\mathrm{Q}$ から直線 $\Lseg{AB}$ に引いた垂線の足をそれぞれ $\mathrm{H},\mathrm{K}$ とする。次の問いに答えなさい。}{area_ratio_common_base}
+\QQFigRow[46mm]{fig/lesson_10_height_01}{$\Lseg{PH}=6\mathrm{cm},\ \Lseg{QK}=9\mathrm{cm}$ のとき、$\Tri{PAB}$ と $\Tri{QAB}$ の面積比を、この順に求めなさい。}{}{fig/lesson_10_height_02}{$\Lseg{PH}=4\mathrm{cm},\ \Lseg{QK}=7\mathrm{cm}$ で、$\Tri{QAB}$ の面積が $35\mathrm{cm}^2$ のとき、$\Tri{PAB}$ の面積を求めなさい。}{}
+\QQFigRow[46mm]{fig/lesson_10_height_03}{$\Tri{PAB}$ と $\Tri{QAB}$ の面積がそれぞれ $24\mathrm{cm}^2,\ 40\mathrm{cm}^2$ で、$\Lseg{PH}=6\mathrm{cm}$ のとき、線分 $\Lseg{QK}$ の長さを求めなさい。}{}{fig/lesson_10_height_04}{点 $\mathrm{P},\mathrm{Q}$ が直線 $\Lseg{AB}$ の反対側にあり、四角形 $\mathrm{APBQ}$ は凸四角形である。$\Lseg{PH}=3\mathrm{cm},\ \Lseg{QK}=5\mathrm{cm}$ で、$\Tri{PAB}$ の面積が $12\mathrm{cm}^2$ のとき、四角形 $\mathrm{APBQ}$ の面積を求めなさい。}{}
+\QQFigRow[46mm]{fig/lesson_10_height_05}{$\Lseg{AB}=8\mathrm{cm}$ で、$\Tri{PAB}$ の面積が $28\mathrm{cm}^2$ である。$\Lseg{QK}$ が $\Lseg{PH}$ より $3\mathrm{cm}$ 長いとき、$\Tri{QAB}$ の面積を求めなさい。}{}{fig/lesson_10_height_06}{$\Lseg{PH}:\Lseg{QK}=4:7$ で、$\Tri{PAB}$ の面積が $16\mathrm{cm}^2$ のとき、$\Tri{QAB}$ と $\Tri{PAB}$ の面積の差を求めなさい。}{}
 
 
 \Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{similarity_volume_ratio_pyramids_cones_spheres}
-\QQ{相似な2つの正四角錐 $\mathrm{A},\mathrm{B}$ の底面の1辺の長さは、それぞれ $4\mathrm{cm},\ 10\mathrm{cm}$ である。正四角錐 $\mathrm{A}$ の体積が $32\mathrm{cm}^3$ のとき、正四角錐 $\mathrm{B}$ の体積を求めなさい。}{}
-\QQ{相似な2つの円錐 $\mathrm{A},\mathrm{B}$ の底面の半径は、それぞれ $3\mathrm{cm},\ 5\mathrm{cm}$ である。円錐 $\mathrm{A}$ の体積が $18\pi\mathrm{cm}^3$ のとき、円錐 $\mathrm{B}$ の体積を求めなさい。}{}
-\QQ{2つの球 $\mathrm{A},\mathrm{B}$ の表面積比が $4:9$ である。球 $\mathrm{B}$ の体積が $36\pi\mathrm{cm}^3$ のとき、球 $\mathrm{A}$ の体積を求めなさい。}{}
+\TypeQuestion{}{area_ratio_subdivided_triangle}
+\FigProblemBlock{48mm}{fig/lesson_10_subdivision}{
+\Text{$\Tri{ABC}$ の辺 $\Lseg{BC}$ 上に $\Lseg{BD}:\Lseg{DC}=2:3$ となる点 $\mathrm{D}$ をとる。線分 $\Lseg{AD}$ 上に $\Lseg{AE}:\Lseg{ED}=3:2$ となる点 $\mathrm{E}$ をとる。$\Tri{ABC}$ の面積は $75\mathrm{cm}^2$ である。}
+}{
+\QQ{$\Tri{ABD}$ と $\Tri{ADC}$ の面積をそれぞれ求めなさい。}{}
+\QQ{$\Tri{EBD}$ の面積を求めなさい。}{}
+\QQ{$\Tri{ABE}$ と $\Tri{ACE}$ の面積をそれぞれ求めなさい。}{}
+\QQ{$\Tri{EBC}$ の面積を求めなさい。}{}
+}
 
 \AnswerColumnBreak
 \LessonQuestionBreak
 
 
 \Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_pyramid_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_pyramid_cut}{
-\Text{高さが $12\mathrm{cm}$、底面積が $81\mathrm{cm}^2$ の正四角錐を、底面に平行な平面で切る。頂点から切断面までの距離は $8\mathrm{cm}$ である。}
+\TypeQuestion{次の問いに答えなさい。相似比・面積比は、図形を挙げた順に答えなさい。}{similarity_area_ratio_forward_inverse}
+\QQ{$\Tri{ABC}\Similar\Tri{DEF}$ で、$\Lseg{AB}:\Lseg{DE}=3:4$ である。$\Tri{ABC}$ と $\Tri{DEF}$ の面積比を求めなさい。}{}
+\QQ{相似な2つの四角形 $\mathrm{ABCD},\mathrm{EFGH}$ の相似比が $2:5$ で、四角形 $\mathrm{ABCD}$ の面積が $12\mathrm{cm}^2$ である。四角形 $\mathrm{EFGH}$ の面積を求めなさい。}{}
+\QQ{$\Tri{ABC}\Similar\Tri{DEF}$ で、面積比が $25:9$ である。$\Lseg{AB}=15\mathrm{cm}$ のとき、対応する辺 $\Lseg{DE}$ の長さを求めなさい。}{}
+\QQ{相似な2つの図形 $\mathrm{P},\mathrm{Q}$ の面積がそれぞれ $98\mathrm{cm}^2,\ 200\mathrm{cm}^2$ である。図形 $\mathrm{P}$ のある辺の長さが $14\mathrm{cm}$ のとき、それに対応する図形 $\mathrm{Q}$ の辺の長さを求めなさい。}{}
+\QQ{相似な2つの五角形 $\mathrm{P},\mathrm{Q}$ の相似比が $3:5$ である。五角形 $\mathrm{Q}$ の周の長さが $50\mathrm{cm}$、面積が $125\mathrm{cm}^2$ のとき、五角形 $\mathrm{P}$ の周の長さと面積をそれぞれ求めなさい。}{}
+\QQ{相似な2つの長方形 $\mathrm{P},\mathrm{Q}$ の面積がそれぞれ $48\mathrm{cm}^2,\ 108\mathrm{cm}^2$ である。長方形 $\mathrm{Q}$ のある辺の長さが $9\mathrm{cm}$ のとき、それに対応する長方形 $\mathrm{P}$ の辺の長さを求めなさい。}{}
+
+
+\Needspace{90mm}
+\TypeQuestion{}{similarity_area_ratio_triangle_cut}
+\FigProblemBlock{48mm}{fig/lesson_10_triangle_cut}{
+\Text{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に点 $\mathrm{D},\mathrm{E}$ をとり、$\Lseg{DE}\Parallel\Lseg{BC}$ とする。$\Lseg{AD}:\Lseg{DB}=2:3,\ \Lseg{BC}=15\mathrm{cm}$ で、$\Tri{ABC}$ の面積は $100\mathrm{cm}^2$ である。}
 }{
-\QQ{切断面の面積を求めなさい。}{}
-\QQ{頂点を含む小さい正四角錐の体積を求めなさい。}{}
-\QQ{切断後の2つの立体のうち、頂点を含まない方の体積を求めなさい。}{}
+\QQ{線分 $\Lseg{DE}$ の長さを求めなさい。}{}
+\QQ{$\Tri{ADE}$ の面積を求めなさい。}{}
+\QQ{台形 $\mathrm{DBCE}$ の面積を求めなさい。}{}
 }
 
 
 \Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_cone_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_cone_cut}{
-\Text{高さが $12\mathrm{cm}$、底面の半径が $6\mathrm{cm}$ の円錐を、頂点からの距離が $6\mathrm{cm}$ である、底面に平行な平面で切る。}
+\TypeQuestion{}{similarity_area_ratio_midpoints}
+\FigProblemBlock{48mm}{fig/lesson_10_midpoint_area}{
+\Text{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{BC},\Lseg{CA}$ の中点をそれぞれ $\mathrm{D},\mathrm{E},\mathrm{F}$ とし、3点を結ぶ。$\Tri{ABC}$ の面積は $72\mathrm{cm}^2$ である。}
 }{
-\QQ{切断面の円の半径を求めなさい。}{}
-\QQ{頂点を含む小さい円錐の体積を求めなさい。}{}
-\QQ{切断後の2つの立体のうち、頂点を含まない方の体積を求めなさい。}{}
+\QQ{$\Tri{ADF}$ の面積を求めなさい。}{}
+\QQ{$\Tri{DEF}$ の面積を求めなさい。}{}
+\QQ{四角形 $\mathrm{DBCF}$ の面積を求めなさい。}{}
 }
 
 
 \Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_water_depth}
-\FigProblemBlock{48mm}{fig/lesson_11_water}{
-\Text{頂点を下にして置いた円錐形の容器がある。容器の深さは $12\mathrm{cm}$、満水のときの水の体積は $960\mathrm{cm}^3$ である。水面は容器の上端の面と平行である。容器の厚さは考えないものとする。}
+\TypeQuestion{}{similarity_area_ratio_trapezoid}
+\FigProblemBlock{48mm}{fig/lesson_10_trapezoid_area}{
+\Text{$\Lseg{AB}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ の対角線 $\Lseg{AC},\Lseg{BD}$ の交点を $\mathrm{O}$ とする。$\Lseg{AB}=6\mathrm{cm},\ \Lseg{CD}=15\mathrm{cm}$ で、$\Tri{AOB}$ の面積は $12\mathrm{cm}^2$ である。}
 }{
-\QQ{水深が $6\mathrm{cm}$ のとき、水の体積を求めなさい。}{}
-\QQ{$405\mathrm{cm}^3$ の水を入れたとき、水深を求めなさい。}{}
-\QQ{深さが $12\mathrm{cm}$、満水のときの水の体積が $960\mathrm{cm}^3$ の円柱形の容器を、底面が水平になるように置く。2つの容器の水深がともに $6\mathrm{cm}$ のとき、円柱形の容器に入る水の体積は、円錐形の容器に入る水の体積の何倍か求めなさい。}{}
-}
-
-
-\Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_inverse_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_inverse_cut}{
-\Text{高さが $18\mathrm{cm}$、体積が $648\mathrm{cm}^3$ の正四角錐を、底面に平行な平面で切った。頂点を含まない方の立体の体積は $456\mathrm{cm}^3$ であった。}
-}{
-\QQ{頂点を含む小さい正四角錐の体積を求めなさい。}{}
-\QQ{頂点から切断面までの距離を求めなさい。}{}
-\QQ{切断面からもとの底面までの距離を求めなさい。}{}
+\QQ{$\Tri{AOB}$ と $\Tri{COD}$ の面積比を、この順に求めなさい。}{}
+\QQ{$\Tri{BOC}$ の面積を求めなさい。}{}
+\QQ{台形 $\mathrm{ABCD}$ の面積を求めなさい。}{}
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
+<!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
+<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
+<path class="main" d="M7 36 L53 36 L19 4 Z M25.4 36 L11.8 23.2"/>
+<path class="thin" d="M30 35 l2 1 -2 1 M31.5 35 l2 1 -2 1 M18 22 l1.5 .9 -2 .5 M19.2 24 l1.5 .9 -2 .5"/>
+<path class="length-arc" d="M13.2 22 Q16 14 20.5 5"/><text class="var" x="18" y="15">x</text>
+<g class="label"><text x="2" y="39">A</text><text x="54" y="39">B</text><text x="18" y="3">C</text><text x="24" y="40">D</text><text x="7.5" y="23">E</text></g>
+</svg>
