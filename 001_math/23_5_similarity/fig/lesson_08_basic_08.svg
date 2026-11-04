@@ -40,7 +40,8 @@
      class="main"
      d="M 5,5 H 38.0228 M 5,14 H 38.0228 M 5,28 H 38.0228 M 5,38 H 38.0228 M 14,2 25,40 m 8.022791,-37.3596961 -12,38.0000001"
      id="path6"
-     sodipodi:nodetypes="cccccccccccc" />
+     sodipodi:nodetypes="cccccccccccc"
+     style="stroke-width:0.45;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
      class="thin"
      d="m 28,4 2,1 -2,1 m 0,7 2,1 -2,1 m 0,12 2,1 -2,1 m 0,8 2,1 -2,1"
