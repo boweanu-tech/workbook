@@ -1,9 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
-<!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
-<path class="main" d="M5 5 H55 M5 14 H55 M5 28 H55 M5 38 H55 M14 2 L25 40 M47 2 L35 40"/>
-<path class="thin" d="M28 4 l2 1 -2 1 M28 13 l2 1 -2 1 M28 27 l2 1 -2 1 M28 37 l2 1 -2 1"/>
-<path class="length-arc" d="M38 29 Q36 33 35 37"/><text class="var" x="39" y="34">x</text>
-<g class="label"><text x="11" y="4">A</text><text x="14" y="13">B</text><text x="19" y="27">C</text><text x="22" y="41">D</text><text x="48" y="4">E</text><text x="44" y="13">F</text><text x="38" y="27">G</text><text x="32" y="41">H</text></g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="45mm"
+   height="42mm"
+   viewBox="0 0 45 42"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="lesson_08_basic_08.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.5591392"
+     inkscape:cx="130.08763"
+     inkscape:cy="53.243211"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32" />
+  <!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:4.1px;font-style:normal}.var{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:4px;font-style:italic}</style>
+  </defs>
+  <path
+     class="main"
+     d="M 5,5 H 38.0228 M 5,14 H 38.0228 M 5,28 H 38.0228 M 5,38 H 38.0228 M 14,2 25,40 m 8.022791,-37.3596961 -12,38.0000001"
+     id="path6"
+     sodipodi:nodetypes="cccccccccccc" />
+  <path
+     class="thin"
+     d="m 28,4 2,1 -2,1 m 0,7 2,1 -2,1 m 0,12 2,1 -2,1 m 0,8 2,1 -2,1"
+     id="path8" />
+  <path
+     class="length-arc"
+     d="m 24.925024,28.305103 c -1.499491,0.944796 -4.167667,4.425524 -2.90243,8.792758"
+     id="path10"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="var"
+     x="19.119799"
+     y="33.488918"
+     id="text12">x</text>
+  <text
+     x="12.033488"
+     y="8.4074974"
+     id="text14"
+     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">A</text>
+  <text
+     x="14.325814"
+     y="17.814329"
+     id="text16"
+     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">B</text>
+  <text
+     x="16.995457"
+     y="27.074339"
+     id="text18"
+     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">C</text>
+  <text
+     x="24.918102"
+     y="36.455147"
+     id="text20"
+     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">D</text>
+  <text
+     x="32.516262"
+     y="8.7669973"
+     id="text22"
+     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">E</text>
+  <text
+     x="30.009142"
+     y="18.127367"
+     id="text24"
+     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">F</text>
 </svg>
