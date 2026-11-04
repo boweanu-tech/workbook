@@ -44,7 +44,7 @@
      style="stroke-width:0.45;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
      class="thin"
-     d="m 28,4 2,1 -2,1 m 0,7 2,1 -2,1 m 0,12 2,1 -2,1 m 0,8 2,1 -2,1"
+     d="m 7.3961534,4 2,1 -2,1 m 0,7 2,1 -2,1 m 0,12 2,1 -2,1 m 0,8 2,1 -2,1"
      id="path8" />
   <path
      class="length-arc"
@@ -53,37 +53,38 @@
      sodipodi:nodetypes="cc" />
   <text
      class="var"
-     x="19.119799"
-     y="33.488918"
-     id="text12">x</text>
+     x="18.978922"
+     y="33.572613"
+     id="text12"
+     style="stroke-width:0.999997">x</text>
   <text
-     x="12.033488"
-     y="8.4074974"
+     x="12.650576"
+     y="7.9063191"
      id="text14"
-     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">A</text>
+     style="font-style:normal;font-size:3.03779px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;stroke-width:0.999997">A</text>
   <text
-     x="14.325814"
-     y="17.814329"
+     x="15.310201"
+     y="17.230537"
      id="text16"
-     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">B</text>
+     style="font-style:normal;font-size:3.03779px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;stroke-width:0.999997">B</text>
   <text
-     x="16.995457"
-     y="27.074339"
+     x="17.941868"
+     y="27.237568"
      id="text18"
-     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">C</text>
+     style="font-style:normal;font-size:3.03779px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;stroke-width:0.999997">C</text>
   <text
-     x="24.918102"
-     y="36.455147"
+     x="24.800436"
+     y="36.9566"
      id="text20"
-     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">D</text>
+     style="font-style:normal;font-size:3.03779px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;stroke-width:0.999997">D</text>
   <text
-     x="32.516262"
-     y="8.7669973"
+     x="32.366989"
+     y="7.7298398"
      id="text22"
-     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">E</text>
+     style="font-style:normal;font-size:3.03779px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;stroke-width:0.999997">E</text>
   <text
-     x="30.009142"
-     y="18.127367"
+     x="29.933851"
+     y="16.911901"
      id="text24"
-     style="font-style:normal;font-size:4.1px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif">F</text>
+     style="font-style:normal;font-size:3.03779px;font-family:'CMU Serif', 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;stroke-width:0.999997">F</text>
 </svg>
