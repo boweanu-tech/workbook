@@ -1,32 +1,70 @@
 % theme: figures_and_segment_ratios
 % 叩き台。解答は未生成。レビュー用図を挿入済み。
-% 表：台形・平行線を含む図形3大問。裏：平行四辺形と対角線・延長線3大問。
+% 表：交差型と平行線・垂線を組み合わせた3大問。裏：平行四辺形と対角線・延長線3大問。
 \MajorQuestionLesson{図形と線分の比}
-\SetRowSpace{3mm}
-%ここに、画像からの表問題を３つ入れる。
+\SetRowSpace{1mm}
+
+\Needspace{52mm}
+\TypeQuestion{}{figure_segment_ratio_butterfly_triangle}
+\FigProblemBlock{38mm}{fig/lesson_09_mixed_01}{
+\Text{図で、点 $\mathrm{A},\mathrm{E},\mathrm{C}$ は一直線上にあり、$\Lseg{AB}\Parallel\Lseg{PE}\Parallel\Lseg{CD}$ である。また、直線 $\mathrm{AD}$ と直線 $\mathrm{BC}$ の交点を $\mathrm{P}$ とする。$\Lseg{AB}=10\mathrm{cm},\ \Lseg{CD}=15\mathrm{cm},\ \Lseg{EC}=9\mathrm{cm}$ とする。}
+}{
+\QQ{$\Lseg{AP}:\Lseg{PD}$ を求めなさい。}{}
+\QQ{線分 $\Lseg{PE}$ の長さを求めなさい。}{}
+\QQ{線分 $\Lseg{AC}$ の長さを求めなさい。}{}
+}
+
+\Needspace{52mm}
+\TypeQuestion{}{figure_segment_ratio_perpendicular_butterfly}
+\FigProblemBlock{38mm}{fig/lesson_09_mixed_02}{
+\Text{図で、点 $\mathrm{A},\mathrm{E},\mathrm{C}$ は一直線上にあり、$\Lseg{AB},\Lseg{PE},\Lseg{CD}$ はいずれも直線 $\mathrm{AC}$ に垂直である。また、直線 $\mathrm{AD}$ と直線 $\mathrm{BC}$ の交点を $\mathrm{P}$ とする。$\Lseg{AB}=10\mathrm{cm},\ \Lseg{CD}=15\mathrm{cm},\ \Lseg{AC}=20\mathrm{cm}$ とする。}
+}{
+\QQ{$\Lseg{AE}:\Lseg{EC}$ を求めなさい。}{}
+\QQ{線分 $\Lseg{AE},\Lseg{EC}$ の長さをそれぞれ求めなさい。}{}
+\QQ{線分 $\Lseg{PE}$ の長さを求めなさい。}{}
+}
+
+\Needspace{52mm}
+\TypeQuestion{}{figure_segment_ratio_shifted_butterfly}
+\FigProblemBlock{38mm}{fig/lesson_09_mixed_03}{
+\Text{図で、点 $\mathrm{A},\mathrm{E},\mathrm{C}$ は一直線上にあり、$\Lseg{AB}\Parallel\Lseg{PE}\Parallel\Lseg{CD}$ である。また、直線 $\mathrm{AD}$ と直線 $\mathrm{BC}$ の交点を $\mathrm{P}$ とする。$\Lseg{AB}=12\mathrm{cm},\ \Lseg{CD}=24\mathrm{cm},\ \Lseg{EC}=14\mathrm{cm}$ とする。}
+}{
+\QQ{$\Lseg{AP}:\Lseg{PD}$ を求めなさい。}{}
+\QQ{線分 $\Lseg{PE}$ の長さを求めなさい。}{}
+\QQ{線分 $\Lseg{AE},\Lseg{AC}$ の長さをそれぞれ求めなさい。}{}
+}
 
 
 \AnswerColumnBreak
 \LessonQuestionBreak
 
-%あまりに誘導が細かいので少し変更・削りました。
-\Needspace{78mm}
-\TypeQuestion{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{DC}$ 上に点 $\mathrm{E}$ をとり、直線 $\mathrm{AE}$ と辺 $\Lseg{BC}$ を点 $\mathrm{C}$ の側に延長した直線との交点を $\mathrm{F}$ とする。$\Lseg{DE}:\Lseg{EC}=2:1,\ \Lseg{BC}=12\mathrm{cm},\ \Lseg{AE}=16\mathrm{cm}$ とする。}{parallelogram_butterfly_extension}
-\FigProblemBlock{58mm}{fig/lesson_09_parallelogram_03}{
+\Needspace{52mm}
+\TypeQuestion{}{parallelogram_butterfly_extension}
+\FigProblemBlock{38mm}{fig/lesson_09_parallelogram_03}{
+\Text{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{DC}$ 上に点 $\mathrm{E}$ をとり、直線 $\mathrm{AE}$ と辺 $\Lseg{BC}$ を点 $\mathrm{C}$ の側に延長した直線との交点を $\mathrm{F}$ とする。$\Lseg{DE}:\Lseg{EC}=2:1,\ \Lseg{BC}=12\mathrm{cm},\ \Lseg{AE}=16\mathrm{cm}$ とする。}
+}{
 \QQ{$\Lseg{AD}:\Lseg{BF}$ を求めなさい。}{}
 \QQ{線分 $\Lseg{CF}$ の長さを求めなさい。}{}
 \QQ{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
 }
 
 
-%ADとEBの交点をQとし、コレに関する問題も追加して。
-%たとえばBP:PQ:QEを最終的に求める、とかね。
-\Needspace{78mm}
-\TypeQuestion{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{DC}$ を点 $\mathrm{D}$ の側に延長した直線上に点 $\mathrm{E}$ をとる。$\Lseg{DE}:\Lseg{DC}=1:2,\ \Lseg{AC}=25\mathrm{cm},\ \Lseg{BE}=30\mathrm{cm}$ とする。}{parallelogram_diagonal_ratio_extension}
-\FigProblemBlock{58mm}{fig/lesson_09_parallelogram_02}{
+\Needspace{52mm}
+\TypeQuestion{}{parallelogram_diagonal_ratio_extension}
+\FigProblemBlock{38mm}{fig/lesson_09_parallelogram_02}{
+\Text{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{DC}$ を点 $\mathrm{D}$ の側に延長した直線上に点 $\mathrm{E}$ をとる。線分 $\Lseg{BE}$ と対角線 $\Lseg{AC}$ の交点を $\mathrm{P}$、線分 $\Lseg{BE}$ と辺 $\Lseg{AD}$ の交点を $\mathrm{Q}$ とする。$\Lseg{DE}:\Lseg{DC}=1:2,\ \Lseg{AC}=25\mathrm{cm},\ \Lseg{BE}=30\mathrm{cm}$ とする。}
+}{
 \QQ{$\Lseg{AP}:\Lseg{PC}$ を求めなさい。}{}
 \QQ{線分 $\Lseg{AP}$ の長さを求めなさい。}{}
-}{
+\QQ{$\Lseg{BP}:\Lseg{PQ}:\Lseg{QE}$ を求めなさい。}{}
 }
 
-%ここに、画像からの裏問題を入れる。
+\Needspace{52mm}
+\TypeQuestion{}{parallelogram_two_points_on_diagonal}
+\FigProblemBlock{38mm}{fig/lesson_09_parallelogram_04}{
+\Text{平行四辺形 $\mathrm{ABCD}$ の辺 $\Lseg{BC}$ 上に、$\Lseg{BE}:\Lseg{EC}=3:1$ となる点 $\mathrm{E}$ をとる。線分 $\Lseg{AE}$ と対角線 $\Lseg{BD}$ の交点を $\mathrm{P}$、2本の対角線の交点を $\mathrm{Q}$ とする。}
+}{
+\QQ{$\Lseg{BP}:\Lseg{PD}$ を求めなさい。}{}
+\QQ{$\Lseg{BQ}:\Lseg{QD}$ を求めなさい。}{}
+\QQ{$\Lseg{BP}:\Lseg{PQ}:\Lseg{QD}$ を求めなさい。}{}
+}

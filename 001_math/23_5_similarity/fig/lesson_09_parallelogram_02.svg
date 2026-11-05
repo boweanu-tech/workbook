@@ -4,5 +4,5 @@
 <defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}</style></defs>
 <path class="main" d="M18 34 H44 L52 8 H26 Z M13 8 H52 M44 34 L13 8 M18 34 L52 8"/>
 <path class="thin" d="M29 33 l2 1 -2 1 M30.5 33 l2 1 -2 1 M37 7 l2 1 -2 1 M38.5 7 l2 1 -2 1 M21 22 l1.5 1.5 M48 21 l1.5 1.5 M22 20 l1.5 1.5 M49 19 l1.5 1.5"/>
-<g class="label"><text x="14" y="38">A</text><text x="45" y="38">B</text><text x="53" y="8">C</text><text x="25" y="7">D</text><text x="8" y="8">E</text><text x="31" y="23">P</text></g>
+<g class="label"><text x="14" y="38">A</text><text x="45" y="38">B</text><text x="53" y="8">C</text><text x="25" y="7">D</text><text x="8" y="8">E</text><text x="31" y="23">P</text><text x="20" y="17">Q</text></g>
 </svg>

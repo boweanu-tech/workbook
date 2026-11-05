@@ -5,5 +5,5 @@
 <path class="main" d="M5 5 H55 M5 17 H55 M5 37 H55 M14 2 L24 40 M48 2 L35 40"/>
 <path class="thin" d="M29 4 l2 1 -2 1 M29 16 l2 1 -2 1 M29 36 l2 1 -2 1"/>
 <path class="length-arc" d="M42 19 Q39 28 36 36"/><text class="var" x="42" y="29">x</text>
-<g class="label"><text x="11" y="4">A</text><text x="14" y="16">B</text><text x="21" y="41">C</text><text x="49" y="4">D</text><text x="43" y="16">E</text><text x="33" y="41">G</text></g>
+<g class="label"><text x="11" y="4">A</text><text x="14" y="16">B</text><text x="21" y="41">C</text><text x="49" y="4">D</text><text x="33" y="41">G</text></g>
 </svg>

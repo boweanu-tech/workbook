@@ -9,8 +9,8 @@
 <path class="length-arc" d="M16.5 2 Q19.7 7.8 22.5 14"/>
 <text class="var" x="20.5" y="7.2">y</text>
 <g class="label">
-  <text x="8.2" y="3.5">A</text><text x="8.6" y="16.9">B</text><text x="9.8" y="29.6">C</text><text x="11.3" y="41.2">D</text>
-  <text x="41.9" y="3.5">E</text><text x="36" y="13.2">F</text><text x="18.2" y="41.2">G</text>
-  <text x="34.4" y="41.2">H</text><text x="19.1" y="13.2">I</text><text x="14.5" y="3.5">J</text><text x="28.5" y="25.2">P</text>
+  <text x="8.6" y="16.9">B</text><text x="9.8" y="29.6">C</text><text x="11.3" y="41.2">D</text>
+  <text x="41.9" y="3.5">E</text><text x="36" y="13.2">F</text>
+  <text x="34.4" y="41.2">H</text><text x="28.5" y="25.2">P</text>
 </g>
 </svg>

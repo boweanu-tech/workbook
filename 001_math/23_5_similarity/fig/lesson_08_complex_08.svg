@@ -3,7 +3,7 @@
 <!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
 <defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
 <path class="main" d="M6 37 H54 L30 3 Z M25.2 37 L15.6 23.4 M25.2 37 L39.6 16.6 M15.6 23.4 L54 37"/>
-<path class="thin" d="M29 36 l2 1 -2 1 M30.5 36 l2 1 -2 1 M35 25 l1.5 .8 -1.8 .5 M36.2 27 l1.5 .8 -1.8 .5 M22 24 l1 .9 -1.8 .2 M23.5 23 l1 .9 -1.8 .2"/>
+<path class="thin" d="M19 16.5 L20.6 16.2 L20.3 17.4 M32 25.5 L33.6 25.2 L33.3 26.4 M46 23.5 L44.4 23.2 L44.7 24.4 M44.8 21.8 L43.2 21.5 L43.5 22.7 M21 29.1 L19.4 28.8 L19.7 30 M19.8 27.4 L18.2 27.1 L18.5 28.3"/>
 <path class="length-arc" d="M40.5 14.5 Q35 8 30.5 4"/><text class="var" x="35" y="8">x</text>
-<g class="label"><text x="2" y="40">A</text><text x="55" y="40">B</text><text x="29" y="3">C</text><text x="24" y="41">D</text><text x="11" y="24">E</text><text x="41" y="17">F</text></g>
+<g class="label"><text x="2" y="40">A</text><text x="55" y="40">B</text><text x="29" y="3">C</text><text x="11" y="24">E</text><text x="41" y="17">F</text></g>
 </svg>

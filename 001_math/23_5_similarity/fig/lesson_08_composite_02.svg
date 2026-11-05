@@ -9,7 +9,7 @@
 <path class="length-arc" d="M52 21.5 Q54.5 29 49 37"/>
 <text class="var" x="53.3" y="30.6">y</text>
 <g class="label">
-  <text x="53" y="4.5">A</text><text x="51" y="20.2">B</text><text x="48.5" y="40.8">C</text>
-  <text x="9.5" y="4.5">E</text><text x="44.5" y="4.5">F</text><text x="3.8" y="40.8">G</text><text x="39.8" y="40.8">H</text><text x="26.5" y="20.3">P</text>
+  <text x="53" y="4.5">A</text><text x="51" y="20.2">B</text>
+  <text x="44.5" y="4.5">F</text><text x="3.8" y="40.8">G</text><text x="39.8" y="40.8">H</text><text x="26.5" y="20.3">P</text>
 </g>
 </svg>
