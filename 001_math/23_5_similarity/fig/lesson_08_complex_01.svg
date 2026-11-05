@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
 <!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
-<path class="main" d="M5 5 H55 M5 17 H55 M5 37 H55 M14 2 L24 40 M48 2 L35 40"/>
-<path class="thin" d="M29 4 l2 1 -2 1 M29 16 l2 1 -2 1 M29 36 l2 1 -2 1"/>
-<path class="length-arc" d="M42 19 Q39 28 36 36"/><text class="var" x="42" y="29">x</text>
-<g class="label"><text x="11" y="4">A</text><text x="14" y="16">B</text><text x="21" y="41">C</text><text x="49" y="4">D</text><text x="43" y="16">E</text><text x="33" y="41">G</text></g>
+<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
+<path class="main" d="M4 4 H56 M4 14 H56 M4 26 H56 M4 38 H56 M10 2 L14.2 40 M41.2 4 L20.8 38 M17 4 L34 38"/>
+<path class="thin" d="M49 3 l2 1 -2 1 M49 13 l2 1 -2 1 M49 25 l2 1 -2 1 M49 37 l2 1 -2 1"/>
+<path class="length-arc" d="M8 4.5 Q6.7 9.2 9.2 14"/>
+<text class="var" x="4.5" y="10.5">x</text>
+<path class="length-arc" d="M16.5 2 Q19.7 7.8 22.5 14"/>
+<text class="var" x="20.5" y="7.2">y</text>
+<g class="label">
+  <text x="8.2" y="3.5">A</text><text x="8.6" y="16.9">B</text><text x="9.8" y="29.6">C</text><text x="11.3" y="41.2">D</text>
+  <text x="41.9" y="3.5">E</text><text x="36" y="13.2">F</text><text x="18.2" y="41.2">G</text>
+  <text x="34.4" y="41.2">H</text><text x="19.1" y="13.2">I</text><text x="14.5" y="3.5">J</text><text x="28.5" y="25.2">P</text>
+</g>
 </svg>
