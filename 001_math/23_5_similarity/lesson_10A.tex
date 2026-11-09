@@ -1,13 +1,16 @@
 % theme: converse_segment_ratios_and_midpoint_theorem
 % 叩き台。解答は未生成。レビュー用図を挿入済み。表3大問、裏4大問。
-\MajorQuestionLesson{平行線と線分比の逆・中点連結定理}
+\MajorQuestionLesson{中点連結定理}
 \SetRowSpace{3mm}
 
-\Needspace{90mm}
-\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に、それぞれ端点と異なる点 $\mathrm{D},\mathrm{E}$ をとる。次の各場合について、$\Lseg{DE}\Parallel\Lseg{BC}$ となるかどうかを答えなさい。長さの単位は $\mathrm{cm}$ とする。}{converse_segment_ratio_judge}
-\QQFigRow[46mm]{fig/lesson_09_judge_01}{$\Lseg{AD}=4,\ \Lseg{DB}=6,\ \Lseg{AE}=6,\ \Lseg{EC}=9$。}{}{fig/lesson_09_judge_02}{$\Lseg{AD}=3,\ \Lseg{AB}=9,\ \Lseg{AE}=2,\ \Lseg{EC}=5$。}{}
-\QQFigRow[46mm]{fig/lesson_09_judge_03}{$\Lseg{AD}=5,\ \Lseg{DB}=3,\ \Lseg{AE}=7.5,\ \Lseg{EC}=4.5$。}{}{fig/lesson_09_judge_04}{$\Lseg{AD}=6,\ \Lseg{AB}=15,\ \Lseg{AE}=4,\ \Lseg{AC}=12$。}{}
-\QQFigRow[46mm]{fig/lesson_09_judge_05}{$\Lseg{AD}:\Lseg{DB}=2:3,\ \Lseg{AE}:\Lseg{EC}=3:2$。}{}{fig/lesson_09_judge_06}{$\Lseg{AB}=14,\ \Lseg{AD}=8,\ \Lseg{AC}=21,\ \Lseg{AE}=12$。}{}
+%平行線の逆はあまり出ない(大概わかる)ので、中点連結定理の証明問題に絞ります。
+%長さ求める系も、普通に相似でいいと思う。
+%表面を穴埋め、ウラ面を完全記述に。
+
+%問題の案として、有名なものをいくつか載せます。converse_segment_ratio_proofなものも冒頭にあっていいですが、ページ最後の問題は、この程度の難易度に揃えてください。
+%四角形の対角線の中点と、向かい合う辺の中点を結ぶと平行四辺形になることを示す
+%四角形の各辺の中点を結ぶと平行四辺形になることを示す
+%上下平行の台形があり、左右の中点を結ぶ線の長さは、上底と下底の平均になる
 
 
 \Needspace{90mm}
@@ -26,27 +29,11 @@ $\Tri{ADE}\Similar\Tri{ABC}$\par\smallskip
 \QQSideFig{42mm}{fig/lesson_09_proof_write}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ をそれぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ のとき、$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
 
 
-\Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{midpoint_theorem_length}
-\QQFigRow[46mm]{fig/lesson_09_midpoint_01}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。$\Lseg{BC}=15\mathrm{cm}$ のとき、線分 $\Lseg{MN}$ の長さを求めなさい。}{}{fig/lesson_09_midpoint_02}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。$\Lseg{MN}=6.5\mathrm{cm}$ のとき、辺 $\Lseg{BC}$ の長さを求めなさい。}{}
-\QQFigRow[46mm]{fig/lesson_09_midpoint_03}{$\Tri{ABC}$ の辺 $\Lseg{AB}$ の中点 $\mathrm{M}$ を通り辺 $\Lseg{BC}$ に平行な直線と、辺 $\Lseg{AC}$ との交点を $\mathrm{N}$ とする。$\Lseg{AN}=4.2\mathrm{cm}$ のとき、線分 $\Lseg{NC}$ の長さを求めなさい。}{}{fig/lesson_09_midpoint_04}{$\Tri{PQR}$ の辺 $\Lseg{PQ}$ の中点を $\mathrm{D}$ とする。辺 $\Lseg{PR}$ 上に、$\Lseg{DE}\Parallel\Lseg{QR}$ となる点 $\mathrm{E}$ をとる。$\Lseg{PR}=18\mathrm{cm}$ のとき、線分 $\Lseg{PE}$ の長さを求めなさい。}{}
-\QQFigRow[46mm]{fig/lesson_09_midpoint_05}{四角形 $\mathrm{ABCD}$ の辺 $\Lseg{AB},\Lseg{AD}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。対角線 $\Lseg{BD}$ の長さが $14\mathrm{cm}$ のとき、線分 $\Lseg{MN}$ の長さを求めなさい。}{}{fig/lesson_09_midpoint_06}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{BC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。$\Lseg{MN}=4\mathrm{cm}$ のとき、辺 $\Lseg{AC}$ の長さを求めなさい。}{}
-
 \AnswerColumnBreak
 \LessonQuestionBreak
 
 
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_repeated}
-\FigProblemBlock{48mm}{fig/lesson_09_repeated}{
-\Text{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とし、線分 $\Lseg{AM},\Lseg{AN}$ の中点をそれぞれ $\mathrm{P},\mathrm{Q}$ とする。$\Lseg{BC}=28\mathrm{cm},\ \Lseg{AB}=20\mathrm{cm}$ とする。}
-}{
-\QQ{線分 $\Lseg{MN}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{PQ}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{PB}$ の長さを求めなさい。}{}
-}
-
-
+%証明をまぜつつ、多少辺や周の長さなどを聞く問題があってもいいですね。
 \Needspace{90mm}
 \TypeQuestion{}{midpoint_theorem_quadrilateral}
 \FigProblemBlock{48mm}{fig/lesson_09_quadrilateral}{
@@ -57,6 +44,9 @@ $\Tri{ADE}\Similar\Tri{ABC}$\par\smallskip
 \QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
 }
 
+
+%一直線上に並ぶことを示す、などは避けて。高校っぽい？
+%平行四辺形の成立条件を使ったり、二等辺三角形であることを示す、程度はアリです(こういうのと中点連結定理がつながるかは別として、無理に使わなくていいですよ)。
 
 \Needspace{90mm}
 \TypeQuestion{}{midpoint_theorem_trapezoid}

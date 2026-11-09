@@ -1,91 +1,10 @@
-% theme: similarity_ratios_and_volume_ratios
-% 叩き台。解答は未生成。レビュー用図を挿入済み。表3大問、裏4大問。
-% 体積の比の逆算は既知の整数比の3乗で処理できる数値に限定する。
-\MajorQuestionLesson{相似比と体積比}
-\SetRowSpace{3mm}
+\MajorQuestionLesson{相似比と面積比}
 
-\Needspace{90mm}
-\TypeQuestion{相似な2つの立体 $\mathrm{A},\mathrm{B}$ について、次の表の空欄をうめなさい。どの比も、立体 $\mathrm{A}$ と立体 $\mathrm{B}$ の順に、最も簡単な整数の比で答えなさい。}{similarity_volume_ratio_table}
-\WholeQuestion{%
-\begin{center}
-\renewcommand{\arraystretch}{1.8}
-\begin{tabular}{|c|c|c|c|}
-\hline
- & 相似比 & 表面積比 & 体積比 \\
-\hline
-(1) & $2:3$ & & \\
-\hline
-(2) & & $9:25$ & \\
-\hline
-(3) & & & $64:27$ \\
-\hline
-(4) & $5:2$ & & \\
-\hline
-(5) & & $25:16$ & \\
-\hline
-(6) & & & $27:8$ \\
-\hline
-\end{tabular}
-\end{center}
-}{}
+%表：送った図のような感じ。
+%大問＋小問構成
+%辺の分割比がわかっていて、三角形や台形の面積比を聞く問題。
+%影をつけた部分の面積が〜〜のとき、〜〜の面積は？とかでもいいですね。
 
-
-\Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{similarity_volume_ratio_prisms_cylinders}
-\QQ{相似な2つの三角柱 $\mathrm{A},\mathrm{B}$ の相似比は $3:2$ である。三角柱 $\mathrm{B}$ の体積が $80\mathrm{cm}^3$ のとき、三角柱 $\mathrm{A}$ の体積を求めなさい。}{}
-\QQ{相似な2つの直方体 $\mathrm{A},\mathrm{B}$ の対応する辺の長さは、それぞれ $6\mathrm{cm},\ 9\mathrm{cm}$ である。直方体 $\mathrm{A}$ の表面積が $88\mathrm{cm}^2$、体積が $48\mathrm{cm}^3$ のとき、直方体 $\mathrm{B}$ の表面積と体積をそれぞれ求めなさい。}{}
-\QQ{相似な2つの円柱 $\mathrm{A},\mathrm{B}$ の高さは、それぞれ $8\mathrm{cm},\ 12\mathrm{cm}$ である。円柱 $\mathrm{A}$ の体積が $32\pi\mathrm{cm}^3$ のとき、円柱 $\mathrm{B}$ の体積を求めなさい。}{}
-
-
-\Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{similarity_volume_ratio_pyramids_cones_spheres}
-\QQ{相似な2つの正四角錐 $\mathrm{A},\mathrm{B}$ の底面の1辺の長さは、それぞれ $4\mathrm{cm},\ 10\mathrm{cm}$ である。正四角錐 $\mathrm{A}$ の体積が $32\mathrm{cm}^3$ のとき、正四角錐 $\mathrm{B}$ の体積を求めなさい。}{}
-\QQ{相似な2つの円錐 $\mathrm{A},\mathrm{B}$ の底面の半径は、それぞれ $3\mathrm{cm},\ 5\mathrm{cm}$ である。円錐 $\mathrm{A}$ の体積が $18\pi\mathrm{cm}^3$ のとき、円錐 $\mathrm{B}$ の体積を求めなさい。}{}
-\QQ{2つの球 $\mathrm{A},\mathrm{B}$ の表面積比が $4:9$ である。球 $\mathrm{B}$ の体積が $36\pi\mathrm{cm}^3$ のとき、球 $\mathrm{A}$ の体積を求めなさい。}{}
-
-\AnswerColumnBreak
-\LessonQuestionBreak
-
-
-\Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_pyramid_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_pyramid_cut}{
-\Text{高さが $12\mathrm{cm}$、底面積が $81\mathrm{cm}^2$ の正四角錐を、底面に平行な平面で切る。頂点から切断面までの距離は $8\mathrm{cm}$ である。}
-}{
-\QQ{切断面の面積を求めなさい。}{}
-\QQ{頂点を含む小さい正四角錐の体積を求めなさい。}{}
-\QQ{切断後の2つの立体のうち、頂点を含まない方の体積を求めなさい。}{}
-}
-
-
-\Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_cone_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_cone_cut}{
-\Text{高さが $12\mathrm{cm}$、底面の半径が $6\mathrm{cm}$ の円錐を、頂点からの距離が $6\mathrm{cm}$ である、底面に平行な平面で切る。}
-}{
-\QQ{切断面の円の半径を求めなさい。}{}
-\QQ{頂点を含む小さい円錐の体積を求めなさい。}{}
-\QQ{切断後の2つの立体のうち、頂点を含まない方の体積を求めなさい。}{}
-}
-
-
-\Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_water_depth}
-\FigProblemBlock{48mm}{fig/lesson_11_water}{
-\Text{頂点を下にして置いた円錐形の容器がある。容器の深さは $12\mathrm{cm}$、満水のときの水の体積は $960\mathrm{cm}^3$ である。水面は容器の上端の面と平行である。容器の厚さは考えないものとする。}
-}{
-\QQ{水深が $6\mathrm{cm}$ のとき、水の体積を求めなさい。}{}
-\QQ{$405\mathrm{cm}^3$ の水を入れたとき、水深を求めなさい。}{}
-\QQ{深さが $12\mathrm{cm}$、満水のときの水の体積が $960\mathrm{cm}^3$ の円柱形の容器を、底面が水平になるように置く。2つの容器の水深がともに $6\mathrm{cm}$ のとき、円柱形の容器に入る水の体積は、円錐形の容器に入る水の体積の何倍か求めなさい。}{}
-}
-
-
-\Needspace{90mm}
-\TypeQuestion{}{similarity_volume_ratio_inverse_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_inverse_cut}{
-\Text{高さが $18\mathrm{cm}$、体積が $648\mathrm{cm}^3$ の正四角錐を、底面に平行な平面で切った。頂点を含まない方の立体の体積は $456\mathrm{cm}^3$ であった。}
-}{
-\QQ{頂点を含む小さい正四角錐の体積を求めなさい。}{}
-\QQ{頂点から切断面までの距離を求めなさい。}{}
-\QQ{切断面からもとの底面までの距離を求めなさい。}{}
-}
+%裏：送った図のような感じ。
+%09Aの裏のような平行四辺形に関する問題。
+%こっちは面積比がメインテーマで、これを聞くように。
