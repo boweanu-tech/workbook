@@ -1,6 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-5 -5 66 51"><defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:"CMU Serif","Computer Modern Serif",serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style></defs>
-<polygon class="shade" points="28,2 44.2,23.6 28.75,29"/><path class="main" d="M28 2 L3 38 L55 38 Z M3 38 L44.2 23.6 M28 2 L28.75 29"/>
-<path class="dim" d="M31 1 Q39 10 46 21 M47 24 Q52 30 57 36 M3 41 Q16 36 28 32 M30 31 Q37 28 44 26"/>
-<g class="num" text-anchor="middle"><text x="39" y="9">6</text><text x="53" y="31">4</text><text x="16" y="37">5</text><text x="37" y="27">3</text></g>
-<g class="label" text-anchor="middle"><text x="28" y="0">A</text><text x="0" y="42">B</text><text x="59" y="42">C</text></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="50mm"
+   height="40mm"
+   viewBox="-5 -5 56.896552 46.363636"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="lesson_11_chain_01.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.3973602"
+     inkscape:cx="84.771701"
+     inkscape:cy="75.794143"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style>
+  </defs>
+  <polygon
+     class="shade"
+     points="28,2 44.2,23.6 28.75,29 "
+     id="polygon6"
+     transform="translate(-4.4940539,-2.1072159)" />
+  <path
+     class="main"
+     d="M 23.505946,-0.10721586 -1.4940539,35.892784 H 50.505946 Z M -1.4940539,35.892784 l 41.1999999,-14.4 m -16.2,-21.59999986 0.75,26.99999986"
+     id="path8" />
+  <path
+     class="dim"
+     d="m 23.505946,-0.10721586 c 5.199028,2.15802066 14.803283,12.62765186 16.2,21.59999986 m 0,0 c 4.949662,2.47383 8.088831,7.282663 10.8,14.4 m -51.9999999,0 c 7.162912,-5.241273 15.9039339,-8.830271 25.7499999,-9 m 0,0 c 3.664838,1.247091 13.415065,-0.496437 15.45,-5.4"
+     id="path10"
+     sodipodi:nodetypes="cccccccc"
+     style="stroke-linecap:round;stroke-linejoin:round" />
+  <g
+     class="num"
+     text-anchor="middle"
+     id="g20"
+     transform="translate(-4.4940539,-2.1072159)">
+    <text
+       x="40.936836"
+       y="11.000166"
+       id="text12">6</text>
+    <text
+       x="52.548954"
+       y="29.109791"
+       id="text14">4</text>
+    <text
+       x="16.715342"
+       y="30.030834"
+       id="text16">5</text>
+    <text
+       x="38.408993"
+       y="32.077709"
+       id="text18">3</text>
+  </g>
+  <g
+     class="label"
+     text-anchor="middle"
+     id="g28"
+     transform="translate(-4.4940539,-2.1072159)">
+    <text
+       x="27.326048"
+       y="0.94522941"
+       id="text22">A</text>
+    <text
+       x="0.96392953"
+       y="40.601479"
+       id="text24">B</text>
+    <text
+       x="55.083195"
+       y="41.972824"
+       id="text26">C</text>
+  </g>
+</svg>
