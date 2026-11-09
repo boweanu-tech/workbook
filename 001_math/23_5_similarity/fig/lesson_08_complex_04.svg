@@ -1,9 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
-<!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
-<path class="main" d="M11 7 H49 M6 35 H54 M11 7 L54 35 M49 7 L6 35"/>
-<path class="thin" d="M28 6 l2 1 -2 1 M29.5 6 l2 1 -2 1 M28 34 l2 1 -2 1 M29.5 34 l2 1 -2 1"/>
-<path class="length-arc" d="M12 4 Q30 2 48 4"/><text class="var" x="29" y="5">x</text>
-<g class="label"><text x="50" y="7">B</text><text x="1" y="39">C</text><text x="55" y="39">D</text><text x="28" y="23">O</text></g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="52mm"
+   height="38mm"
+   viewBox="0 0 52 38"
+   version="1.1"
+   id="svg24"
+   sodipodi:docname="lesson_08_complex_04.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview26"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.5166915"
+     inkscape:cx="86.224316"
+     inkscape:cy="88.012378"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24" />
+  <!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:4.1px;font-style:normal}.var{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:4px;font-style:italic}</style>
+  </defs>
+  <path
+     class="main"
+     d="M 7.3729662,5.6246676 H 45.372966 M 2.3729662,33.624668 H 50.372966 M 7.3729662,5.6246676 50.372966,33.624668 m -5,-28.0000004 L 2.3729662,33.624668"
+     id="path6" />
+  <path
+     class="thin"
+     d="m 24.372966,4.6246676 2,1 -2,1 m 1.5,-2 2,1 -2,1 m -1.5,26.0000004 2,1 -2,1 m 1.5,-2 2,1 -2,1"
+     id="path8" />
+  <path
+     class="length-arc"
+     d="M 7.3729662,5.6246676 C 18.123,2.4453968 34.338705,2.1841043 45.372966,5.6246676"
+     id="path10"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="var"
+     x="25.372967"
+     y="2.2916341"
+     id="text12">x</text>
+  <g
+     class="label"
+     id="g22"
+     transform="translate(-3.6270338,-1.3753324)">
+    <text
+       x="48.893246"
+       y="10.583914"
+       id="text14">B</text>
+    <text
+       x="4.4097896"
+       y="38.887066"
+       id="text16">C</text>
+    <text
+       x="51.779942"
+       y="38.889942"
+       id="text18">D</text>
+    <text
+       x="28.581097"
+       y="23.367754"
+       id="text20">O</text>
+  </g>
 </svg>
