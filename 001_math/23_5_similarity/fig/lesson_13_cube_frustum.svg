@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="66mm" viewBox="-5 -9 70 70">
+<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="66mm" viewBox="-3 -3 66 64">
   <defs>
     <style>
       .box{stroke:#000;stroke-width:.34;fill:none;stroke-linecap:round;stroke-linejoin:round}
       .main{stroke:#000;stroke-width:.58;fill:none;stroke-linecap:round;stroke-linejoin:round}
-      .dash{stroke:#000;stroke-width:.34;fill:none;stroke-dasharray:1.4 1.5}
-      .face{fill:#e3e3e3;stroke:none}
-      .topface{fill:#c7c7c7;stroke:none}
-      .label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:3.8px;fill:#000}
+      .guide{stroke:#000;stroke-width:.34;fill:none;stroke-dasharray:1.4 1.5}
+      .solid{fill:#ededed;stroke:none}
+      .cut{fill:#cfcfcf;stroke:none}
+      .top{fill:#e1e1e1;stroke:none}
+      .label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:3.7px;fill:#000}
     </style>
   </defs>
-  <!-- 立方体内は O-ABD から、上面より上の O-PQR を除いた立体。 -->
-  <polygon class="face" points="8,45 34,51 29,33"/>
-  <polygon class="face" points="8,45 19.75,20.5 32.75,23.5 34,51"/>
-  <polygon class="face" points="8,45 19.75,20.5 30.25,14.5 29,33"/>
-  <polygon class="face" points="34,51 32.75,23.5 30.25,14.5 29,33"/>
-  <polygon class="topface" points="19.75,20.5 32.75,23.5 30.25,14.5"/>
-  <path class="box" d="M8 45 L34 51 L55 39 L29 33 Z M8 22 L34 28 L55 16 L29 10 Z M8 45 L8 22 M34 51 L34 28 M55 39 L55 16 M29 33 L29 10"/>
-  <path class="main" d="M31.5 -4 L8 45 M31.5 -4 L34 51 M31.5 -4 L29 33 M8 45 L34 51 L29 33 Z M19.75 20.5 L32.75 23.5 L30.25 14.5 Z"/>
-  <path class="dash" d="M31.5 -4 L19.75 20.5 M31.5 -4 L32.75 23.5 M31.5 -4 L30.25 14.5"/>
+
+  <!-- P=E, Q は EF 上、R は EH 上。平面 OBD による1回の切断。 -->
+  <polygon class="solid" points="8,50 34,55 21,28.5 8,26"/>
+  <polygon class="solid" points="8,50 8,26 19.5,19.5 31,37"/>
+  <polygon class="solid" points="8,50 34,55 31,37"/>
+  <polygon class="top" points="8,26 21,28.5 19.5,19.5"/>
+  <polygon class="cut" points="34,55 21,28.5 19.5,19.5 31,37"/>
+
+  <!-- 立方体 ABCD-EFGH -->
+  <path class="box" d="M8 50 L34 55 L57 42 L31 37 Z M8 26 L34 31 L57 18 L31 13 Z M8 50 L8 26 M34 55 L34 31 M57 42 L57 18 M31 37 L31 13"/>
+
+  <!-- 補助となる三角錐 O-ABD と、切断面 BQRD -->
+  <path class="main" d="M8 2 L8 50 M8 2 L34 55 M8 2 L31 37 M8 50 L34 55 L31 37 Z"/>
+  <path class="main" d="M34 55 L21 28.5 L19.5 19.5 L31 37 Z"/>
+  <path class="main" d="M8 26 L21 28.5 L19.5 19.5 Z"/>
+  <path class="guide" d="M8 2 L8 26"/>
+
   <g class="label" text-anchor="middle">
-    <text x="5" y="48">A</text><text x="34" y="55">B</text><text x="59" y="41">C</text><text x="32" y="35">D</text>
-    <text x="4" y="21">E</text><text x="37" y="31">F</text><text x="59" y="15">G</text><text x="23" y="9">H</text>
-    <text x="17" y="22">P</text><text x="36" y="24">Q</text><text x="35" y="16">R</text><text x="34" y="-5">O</text>
+    <text x="5" y="53">A</text><text x="34" y="59">B</text><text x="61" y="44">C</text><text x="33" y="39">D</text>
+    <text x="4" y="25">E</text><text x="37" y="33">F</text><text x="61" y="18">G</text><text x="33" y="12">H</text>
+    <text x="10.5" y="29">P</text><text x="23" y="29">Q</text><text x="21" y="18.5">R</text><text x="8" y="0">O</text>
   </g>
 </svg>
