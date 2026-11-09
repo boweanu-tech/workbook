@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="64mm" height="58mm" viewBox="-3 -3 64 58">
-<defs><style>.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:black;stroke-width:.32;fill:none}.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:3.8px;fill:black}</style></defs>
-<path class="main" d="M6 39 L38 46 L55 37 L23 30 Z M6 18 L38 25 L55 16 L23 9 Z M6 39 L6 18 M38 46 L38 25 M55 37 L55 16 M23 30 L23 9"/>
-<line class="thin" x1="30" y1="0" x2="6" y2="39"/><line class="thin" x1="30" y1="0" x2="38" y2="46"/><line class="thin" x1="30" y1="0" x2="55" y2="37"/><line class="dash" x1="30" y1="0" x2="23" y2="30"/>
-<path class="main" d="M22 13 L32.7 15.3 L38.3 12.3 L27.7 10 Z"/>
-<text class="label" x="30" y="-2" text-anchor="middle">O</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="61mm" viewBox="-4 -4 70 61">
+  <defs>
+    <style>
+      .box{stroke:#000;stroke-width:.34;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .main{stroke:#000;stroke-width:.58;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .dash{stroke:#000;stroke-width:.34;fill:none;stroke-dasharray:1.4 1.5}
+      .face{fill:#e3e3e3;stroke:none}
+      .topface{fill:#c9c9c9;stroke:none}
+      .missing{fill:#f2f2f2;stroke:none}
+      .label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:3.8px;fill:#000}
+    </style>
+  </defs>
+  <!-- 完全な角錐台 AXD-PQR から、三角錐 U-BXM が欠けた形 -->
+  <polygon class="face" points="7,44 32,49 38.5,46 33,32"/>
+  <polygon class="face" points="7,44 7,30 23.67,33.33 32,42 32,49"/>
+  <polygon class="face" points="7,44 7,30 20,24 33,32"/>
+  <polygon class="face" points="23.67,33.33 32,42 38.5,46 33,32 20,24"/>
+  <polygon class="topface" points="7,30 23.67,33.33 20,24"/>
+  <polygon class="missing" points="32,49 40.33,50.67 38.5,46"/>
+  <path class="box" d="M7 44 L32 49 L58 37 L33 32 Z M7 16 L32 21 L58 9 L33 4 Z M7 44 L7 16 M32 49 L32 21 M58 37 L58 9 M33 32 L33 4"/>
+  <path class="main" d="M7 16 L32 42 L38.5 46 L33 32 Z M7 30 L23.67 33.33 L20 24 Z M7 44 L32 49 L38.5 46 L33 32 Z"/>
+  <path class="dash" d="M32 42 L40.33 50.67 L38.5 46 M32 49 L40.33 50.67"/>
+  <g class="label" text-anchor="middle">
+    <text x="4" y="47">A</text>
+    <text x="31" y="53">B</text>
+    <text x="61" y="39">C</text>
+    <text x="36" y="31">D</text>
+    <text x="4" y="15">E</text>
+    <text x="31" y="19">F</text>
+    <text x="35" y="42">U</text>
+    <text x="4" y="30">P</text>
+    <text x="21.5" y="36">Q</text>
+    <text x="18" y="22">R</text>
+    <text x="41" y="46">M</text>
+    <text x="43" y="53">X</text>
+  </g>
 </svg>

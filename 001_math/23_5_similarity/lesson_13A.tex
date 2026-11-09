@@ -1,5 +1,5 @@
 % theme: similarity_ratios_and_volume_ratios
-% 叩き台。解答は未生成。表は錐体の多段切断、裏は柱体内にできる角錐台。
+% 叩き台。解答は未生成。表は錐体の多段切断、裏は立方体・直方体の切断。
 \MajorQuestionLesson{相似比と体積比}
 \SetRowSpace{3mm}
 
@@ -25,29 +25,23 @@
 \AnswerColumnBreak
 \LessonQuestionBreak
 
-
-%ここは意図と違います。
-%立方体や直方体を「切断」してください。つまり、角錐台の底面や上の面の形は直角三角形になります。切断面がもとの立方体の頂点を２つ通らないなら、角錐台の下がちょっとかけた形になりますが。
-
 \Needspace{108mm}
-\TypeQuestion{一辺が $12\mathrm{cm}$ の立方体 $\mathrm{ABCD-EFGH}$ がある。点 $\mathrm{O}$ は上面 $\mathrm{EFGH}$ の中心の真上にあり、点 $\mathrm{O}$ と底面 $\mathrm{ABCD}$ との距離は $18\mathrm{cm}$ である。}{similarity_volume_ratio_cube_frustum}
+\TypeQuestion{一辺が $12\mathrm{cm}$ の立方体を、3点 $\mathrm{E},\mathrm{B},\mathrm{D}$ を通る平面で切ると、頂点 $\mathrm{A}$ を含む側に三角錐 $\mathrm{E-ABD}$ ができる。さらに、辺 $\Lseg{AE}$ の中点 $\mathrm{P}$ を通り、底面 $\mathrm{ABD}$ に平行な平面でこの三角錐を切り、辺 $\Lseg{EB},\Lseg{ED}$ との交点をそれぞれ $\mathrm{Q},\mathrm{R}$ とする。}{similarity_volume_ratio_cube_frustum}
 \FigProblemBlock{64mm}{fig/lesson_13_cube_frustum}{
-\Text{線分 $\Lseg{OA},\Lseg{OB},\Lseg{OC},\Lseg{OD}$ と上面との交点を、それぞれ $\mathrm{P},\mathrm{Q},\mathrm{R},\mathrm{S}$ とする。}
-}{
-\QQ{正四角錐 $\mathrm{OPQRS}$ と正四角錐 $\mathrm{OABCD}$ の相似比を求めなさい。}{}
-\QQ{正方形 $\mathrm{PQRS}$ の一辺の長さと面積を求めなさい。}{}
-\QQ{立方体の中にある角錐台 $\mathrm{ABCD-PQRS}$ の体積を求めなさい。}{}
-\QQ{立方体のうち、角錐台に含まれない部分の体積を求めなさい。}{}
-\QQ{角錐台と立方体の体積比を、この順に求めなさい。}{}
-}
+\QQ{三角錐 $\mathrm{E-PQR}$ と三角錐 $\mathrm{E-ABD}$ の相似比を求めなさい。}{}
+\QQ{$\Tri{ABD}$ と $\Tri{PQR}$ の面積をそれぞれ求めなさい。}{}
+\QQ{三角錐 $\mathrm{E-ABD}$ と三角錐 $\mathrm{E-PQR}$ の体積をそれぞれ求めなさい。}{}
+\QQ{切断してできる角錐台 $\mathrm{ABD-PQR}$ の体積を求めなさい。}{}
+\QQ{角錐台 $\mathrm{ABD-PQR}$ と、もとの立方体の体積比を、この順に求めなさい。}{}
+}{}
 
-\Needspace{110mm}
-\TypeQuestion{底面が縦 $9\mathrm{cm}$、横 $12\mathrm{cm}$、高さが $12\mathrm{cm}$ の直方体がある。点 $\mathrm{O}$ は上面の中心を通り上面に垂直な直線上にあり、直方体の外部にある。}{similarity_volume_ratio_cuboid_frustum}
+\Needspace{116mm}
+\TypeQuestion{底面が $\Lseg{AB}=12\mathrm{cm},\ \Lseg{AD}=16\mathrm{cm}$、高さが $\Lseg{AE}=12\mathrm{cm}$ の直方体がある。辺 $\Lseg{BF}$ 上に $\Lseg{BU}=3\mathrm{cm}$ となる点 $\mathrm{U}$ をとり、3点 $\mathrm{E},\mathrm{D},\mathrm{U}$ を通る平面で切る。さらに、辺 $\Lseg{AE}$ の中点 $\mathrm{P}$ を通り、底面に平行な平面で切り、点 $\mathrm{A}$ を含む下側の立体を考える。}{similarity_volume_ratio_cuboid_frustum}
 \FigProblemBlock{64mm}{fig/lesson_13_cuboid_frustum}{
-\Text{点 $\mathrm{O}$ と底面の4頂点を結んだ線分は上面と交わり、上面に面積 $27\mathrm{cm}^2$ の長方形をつくる。}
-}{
-\QQ{上面にできる長方形と底面の長方形の相似比を求めなさい。}{}
-\QQ{点 $\mathrm{O}$ と上面との距離を求めなさい。}{}
-\QQ{直方体の中にある角錐台の体積を求めなさい。}{}
-\QQ{直方体のうち、角錐台に含まれない部分の体積を求めなさい。}{}
-}
+\Text{上側の切断面と $\Lseg{EU},\Lseg{ED}$ との交点を $\mathrm{Q},\mathrm{R}$ とする。また、平面 $\mathrm{EDU}$ と辺 $\Lseg{BC}$ との交点を $\mathrm{M}$ とし、直線 $\mathrm{EU}$ と直線 $\mathrm{AB}$ の交点を $\mathrm{X}$ とする。}
+\QQ{$\Lseg{AX}$ と $\Lseg{BM}$ の長さをそれぞれ求めなさい。}{}
+\QQ{$\Lseg{PQ},\Lseg{PR}$ の長さと、$\Tri{PQR}$ の面積を求めなさい。}{}
+\QQ{直方体の外まで補ってできる角錐台 $\mathrm{AXD-PQR}$ の体積を求めなさい。}{}
+\QQ{三角錐 $\mathrm{U-BXM}$ の体積を求めなさい。}{}
+\QQ{直方体を切断してできた、下側が欠けた立体の体積を求めなさい。}{}
+}{}
