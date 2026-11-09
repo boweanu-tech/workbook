@@ -21,11 +21,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.5166915"
-     inkscape:cx="86.224316"
-     inkscape:cy="88.012378"
+     inkscape:zoom="5.033383"
+     inkscape:cx="87.813703"
+     inkscape:cy="61.48946"
      inkscape:window-width="1920"
-     inkscape:window-height="1043"
+     inkscape:window-height="995"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -43,7 +43,8 @@
   <path
      class="thin"
      d="m 24.372966,4.6246676 2,1 -2,1 m 1.5,-2 2,1 -2,1 m -1.5,26.0000004 2,1 -2,1 m 1.5,-2 2,1 -2,1"
-     id="path8" />
+     id="path8"
+     style="stroke-linejoin:round;stroke-linecap:round" />
   <path
      class="length-arc"
      d="M 7.3729662,5.6246676 C 18.123,2.4453968 34.338705,2.1841043 45.372966,5.6246676"
