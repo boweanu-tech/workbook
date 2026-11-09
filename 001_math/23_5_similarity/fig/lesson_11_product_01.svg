@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-4 -4 62 48">
+<!-- P,QはそれぞれAB,AC上。共通頂点Aから出る2辺の比を掛ける基本形。 -->
+<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.shade{fill:#ddd;stroke:none}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}</style></defs>
+<polygon class="shade" points="28,2 18,16.4 44.9,24.5"/>
+<path class="main" d="M28 2 L3 38 L55 38 Z"/><line class="main" x1="18" y1="16.4" x2="44.9" y2="24.5"/>
+<g class="label" text-anchor="middle" dominant-baseline="central"><text x="28" y="-1">A</text><text x="0" y="40">B</text><text x="58" y="40">C</text><text x="14" y="15">P</text><text x="48" y="23">Q</text></g>
+</svg>

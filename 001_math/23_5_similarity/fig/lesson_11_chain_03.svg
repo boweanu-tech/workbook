@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-4 -4 64 48">
+<!-- CとAB上のPを結び、CP上のQとBを結ぶ。分割方向をさらに変える。 -->
+<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.shade{fill:#ddd;stroke:none}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}</style></defs>
+<polygon class="shade" points="2,38 16,17 29,24"/>
+<path class="main" d="M26 2 L2 38 L55 38 Z"/>
+<line class="main" x1="55" y1="38" x2="16" y2="17"/><line class="thin" x1="2" y1="38" x2="29" y2="24"/>
+<g class="label" text-anchor="middle" dominant-baseline="central"><text x="26" y="-1">A</text><text x="-1" y="41">B</text><text x="58" y="41">C</text><text x="13" y="15">P</text><text x="31" y="21">Q</text></g>
+</svg>
