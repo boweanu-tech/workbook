@@ -1,6 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-5 -5 67 51"><defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:"CMU Serif","Computer Modern Serif",serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style></defs>
-<polygon class="shade" points="2,38 16,17 29,24"/><path class="main" d="M26 2 L2 38 L55 38 Z M55 38 L16 17 M2 38 L29 24"/>
-<path class="dim" d="M24 1 Q18 8 14 15 M13 18 Q7 27 0 36 M56 41 Q43 35 31 27 M29 26 Q22 22 16 19"/>
-<g class="num" text-anchor="middle"><text x="18" y="8">5</text><text x="6" y="28">7</text><text x="44" y="35">6</text><text x="22" y="21">3</text></g>
-<g class="label" text-anchor="middle"><text x="26" y="0">A</text><text x="-1" y="42">B</text><text x="59" y="42">C</text></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="53mm"
+   height="40mm"
+   viewBox="-5 -5 61.224138 46.363636"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="lesson_11_chain_03.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.3973602"
+     inkscape:cx="111.26286"
+     inkscape:cy="97.57576"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style>
+  </defs>
+  <polygon
+     class="shade"
+     points="16,17 29,24 2,38 "
+     id="polygon6"
+     transform="translate(-3.3900223,-2.4841593)" />
+  <path
+     class="main"
+     d="M 22.609978,-0.48415926 -1.3900223,35.515841 H 51.609978 Z m 29,36.00000026 -39,-21 m -14.0000003,21 27.0000003,-14"
+     id="path8" />
+  <path
+     class="dim"
+     d="m 22.609978,-0.48415926 c -3.895371,2.26523316 -9.196897,7.81523576 -10,15.00000026 m 0,0 c -6.2728821,3.463982 -13.5200648,13.050007 -14.0000003,21 m 53.0000003,0 c -11.044015,-2.433947 -20.608453,-7.533773 -26,-14 m 0,0 c -2.885653,-4.810536 -7.626132,-7.16402 -13,-7"
+     id="path10"
+     style="stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+     sodipodi:nodetypes="cccccccc" />
+  <g
+     class="num"
+     text-anchor="middle"
+     id="g20"
+     transform="translate(-3.3900223,-2.4841593)">
+    <text
+       x="18"
+       y="8"
+       id="text12">5</text>
+    <text
+       x="5.7381983"
+       y="24.829205"
+       id="text14">7</text>
+    <text
+       x="37.127575"
+       y="34.929192"
+       id="text16">6</text>
+    <text
+       x="23.941572"
+       y="17.83893"
+       id="text18">3</text>
+  </g>
+  <g
+     class="label"
+     text-anchor="middle"
+     id="g28"
+     transform="translate(-3.3900223,-2.4841593)">
+    <text
+       x="26.958755"
+       y="1.4344301"
+       id="text22">A</text>
+    <text
+       x="0.59416378"
+       y="41.171005"
+       id="text24">B</text>
+    <text
+       x="55.658638"
+       y="42.396336"
+       id="text26">C</text>
+  </g>
+</svg>
