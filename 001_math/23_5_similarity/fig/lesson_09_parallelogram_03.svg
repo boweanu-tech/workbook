@@ -22,8 +22,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="3.2496488"
-     inkscape:cx="113.243"
-     inkscape:cy="94.317883"
+     inkscape:cx="103.08806"
+     inkscape:cy="96.779689"
      inkscape:window-width="1920"
      inkscape:window-height="995"
      inkscape:window-x="0"
@@ -38,14 +38,15 @@
   </defs>
   <path
      class="main"
-     d="M 2.3521891,40 H 33.083843 L 54.359601,14 H 23.627949 Z m 0,0 L 64.997481,1 M 33.083843,40 64.997481,1 M 23.627949,14 h 30.731652"
-     id="path6" />
+     d="M 2.3521891,40 H 33.083843 L 50.681114,18.513033 H 19.949462 Z m 0,0 L 64.997481,1 M 33.083843,40 64.997481,1 M 19.949462,18.513033 h 30.731652"
+     id="path6"
+     sodipodi:nodetypes="ccccccccccc" />
   <path
      class="thin"
-     d="m 15.927385,39 2,1 -2,1 m 1.5,-2 2,1 -2,1 m 16.5,-28 2,1 -2,1 m 1.5,-2 2,1 -2,1"
+     d="m 15.927385,39 2,1 -2,1 m 1.5,-2 2,1 -2,1 m 12.794797,-23.555028 2,1 -2,1 m 1.5,-2 2,1 -2,1"
      id="path8"
      sodipodi:nodetypes="cccccccccccc"
-     style="stroke-linejoin:round;stroke-linecap:round" />
+     style="stroke-linecap:round;stroke-linejoin:round" />
   <g
      class="label"
      id="g22"
@@ -59,16 +60,16 @@
        y="43.93639"
        id="text12">B</text>
     <text
-       x="57.888645"
-       y="17.126045"
+       x="53.51746"
+       y="21.735128"
        id="text14">C</text>
     <text
-       x="22.942045"
-       y="13.346031"
+       x="20.801933"
+       y="17.668875"
        id="text16">D</text>
     <text
-       x="45.252628"
-       y="13.138985"
+       x="38.567039"
+       y="17.265913"
        id="text18">E</text>
     <text
        x="65.836243"
