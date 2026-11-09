@@ -1,5 +1,5 @@
 % theme: midpoint_theorem
-% 叩き台。解答は未生成。表は穴埋め証明、裏は記述証明。
+% 解答生成済み。表は穴埋め証明、裏は記述証明。
 \MajorQuestionLesson{中点連結定理}
 \SetRowSpace{3mm}
 
@@ -19,7 +19,9 @@
 \ProofIndent{$\Tri{ADE}\Similar\Tri{ABC}$}
 したがって、$\Ang{ADE}=$\Blank{オ}であり、
 \ProofIndent{\Blank{カ}が等しいので、$\Lseg{DE}\Parallel\Lseg{BC}$}
-}{}
+}{ア：$15$　イ：$10$　ウ：$2:5$\par
+エ：2組の辺の比とその間の角がそれぞれ等しい\par
+オ：$\Ang{ABC}$　カ：同位角}
 }{}
 
 \Needspace{92mm}
@@ -39,9 +41,11 @@ $\Tri{ADC}$ で中点連結定理より、
 \ProofIndent{\Blank{エ}}
 
 したがって、四角形 $\mathrm{EFGH}$ は\Blank{オ}である。
-}{}
+}{ア：$\dfrac12$　イ：$\dfrac12$\par
+ウ：$\Lseg{EF}\Parallel\Lseg{HG}$　エ：$\Lseg{EF}=\Lseg{HG}$\par
+オ：平行四辺形}
 }{
-\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
+\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{$32\mathrm{cm}$}
 }
 
 \AnswerColumnBreak
@@ -50,22 +54,37 @@ $\Tri{ADC}$ で中点連結定理より、
 \Needspace{72mm}
 \TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ を、それぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ とする。}{converse_segment_ratio_write}
 \FigProblemBlock{42mm}{fig/lesson_09_proof_write}{
-\QQ{$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{BC}=12\mathrm{cm}$ のとき、$\Tri{ADE}$ の周の長さを求めなさい。}{}
+\QQ{$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{{\small\ProofHeading
+$\Lseg{AB}:\Lseg{AD}=\Lseg{AC}:\Lseg{AE}=2:3$　\CondTag{1}\par
+$\Ang{BAC}=\Ang{DAE}$　\CondTag{2}\par
+\CondNo{1}、\CondNo{2}より、2組の辺の比とその間の角がそれぞれ等しいので、$\Tri{ABC}\Similar\Tri{ADE}$\par
+よって、$\Ang{ABC}=\Ang{ADE}$ であり、同位角が等しいので、$\Lseg{BC}\Parallel\Lseg{DE}$}}
+\QQ{$\Lseg{BC}=12\mathrm{cm}$ のとき、$\Tri{ADE}$ の周の長さを求めなさい。}{$45\mathrm{cm}$}
 }
 
 \Needspace{82mm}
 \TypeQuestion{凸四角形 $\mathrm{ABCD}$ で、辺 $\Lseg{AB},\Lseg{CD}$ の中点をそれぞれ $\mathrm{E},\mathrm{G}$、対角線 $\Lseg{AC},\Lseg{BD}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。}{midpoint_theorem_diagonal_midpoints}
 \FigProblemBlock{53mm}{fig/lesson_10_diagonal_midpoints}{
-\QQ{$\Lseg{EM}\Parallel\Lseg{BC}$、$\Lseg{EM}=\dfrac12\Lseg{BC}$ となることを証明しなさい。}{}
-\QQ{四角形 $\mathrm{EMGN}$ が平行四辺形であることを証明しなさい。}{}
-\QQ{$\Lseg{BC}=10\mathrm{cm},\ \Lseg{AD}=16\mathrm{cm}$ のとき、四角形 $\mathrm{EMGN}$ の周の長さを求めなさい。}{}
+\QQ{$\Lseg{EM}\Parallel\Lseg{BC}$、$\Lseg{EM}=\dfrac12\Lseg{BC}$ となることを証明しなさい。}{{\small\ProofHeading
+$\Tri{ABC}$ で中点連結定理より、$\Lseg{EM}\Parallel\Lseg{BC}$、$\Lseg{EM}=\dfrac12\Lseg{BC}$}}
+\QQ{四角形 $\mathrm{EMGN}$ が平行四辺形であることを証明しなさい。}{{\small\ProofHeading
+中点連結定理より、\par
+$\Lseg{EM}\Parallel\Lseg{BC}\Parallel\Lseg{GN}$　\CondTag{1}\par
+$\Lseg{MG}\Parallel\Lseg{AD}\Parallel\Lseg{EN}$　\CondTag{2}\par
+\CondNo{1}、\CondNo{2}より、2組の対辺がそれぞれ平行であるので、四角形 $\mathrm{EMGN}$ は平行四辺形である}}
+\QQ{$\Lseg{BC}=10\mathrm{cm},\ \Lseg{AD}=16\mathrm{cm}$ のとき、四角形 $\mathrm{EMGN}$ の周の長さを求めなさい。}{$26\mathrm{cm}$}
 }{}
 
 \Needspace{82mm}
 \TypeQuestion{$\Lseg{AB}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、辺 $\Lseg{AD},\Lseg{BC}$ の中点をそれぞれ $\mathrm{E},\mathrm{F}$ とする。$\Lseg{AB}=12\mathrm{cm},\ \Lseg{CD}=20\mathrm{cm}$ とする。}{midpoint_theorem_trapezoid}
 \FigProblemBlock{50mm}{fig/lesson_09_trapezoid}{
-\QQ{$\Lseg{EF}\Parallel\Lseg{AB}$ となることを、中点連結定理を用いて証明しなさい。}{}
-\QQ{$\Lseg{EF}=\dfrac{\Lseg{AB}+\Lseg{CD}}{2}$ となることを証明しなさい。}{}
-\QQ{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
+\QQ{$\Lseg{EF}\Parallel\Lseg{AB}$ となることを、中点連結定理を用いて証明しなさい。}{{\footnotesize\ProofHeading
+対角線 $\Lseg{AC}$ の中点を $\mathrm{M}$ とする。\par
+$\Tri{ADC},\Tri{ABC}$ で中点連結定理より、$\Lseg{EM}\Parallel\Lseg{CD}\Parallel\Lseg{AB}$、$\Lseg{MF}\Parallel\Lseg{AB}$\par
+よって、点 $\mathrm{E},\mathrm{M},\mathrm{F}$ は一直線上にあり、$\Lseg{EF}\Parallel\Lseg{AB}$}}
+\QQ{$\Lseg{EF}=\dfrac{\Lseg{AB}+\Lseg{CD}}{2}$ となることを証明しなさい。}{{\footnotesize\ProofHeading
+対角線 $\Lseg{AC}$ の中点を $\mathrm{M}$ とすると、中点連結定理より、\par
+$\Lseg{EM}=\dfrac12\Lseg{CD}$、$\Lseg{MF}=\dfrac12\Lseg{AB}$。\par
+よって、$\Lseg{EF}=\Lseg{EM}+\Lseg{MF}=\dfrac{\Lseg{AB}+\Lseg{CD}}{2}$}}
+\QQ{線分 $\Lseg{EF}$ の長さを求めなさい。}{$16\mathrm{cm}$}
 }{}
