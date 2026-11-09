@@ -13,27 +13,27 @@
     </style>
   </defs>
 
-  <!-- P=E。完全な O-AXD の下側が直方体の側面で少し欠ける。 -->
-  <polygon class="solid" points="5,50 29,55 29,43 21,29.33 5,26"/>
-  <polygon class="solid" points="5,50 5,26 19,19.5 33,37"/>
+  <!-- EO=4。完全な O-AXD の下側が直方体の側面で少し欠ける。 -->
+  <polygon class="solid" points="5,50 29,55 29,47 13,27.67 5,26"/>
+  <polygon class="solid" points="5,50 5,26 12,22.75 33,37"/>
   <polygon class="solid" points="5,50 29,55 36,51.75 33,37"/>
-  <polygon class="top" points="5,26 21,29.33 19,19.5"/>
-  <polygon class="cut" points="21,29.33 19,19.5 33,37 36,51.75 29,43"/>
-  <polygon class="missing" points="29,55 37,56.67 36,51.75 29,43"/>
+  <polygon class="top" points="5,26 13,27.67 12,22.75"/>
+  <polygon class="cut" points="13,27.67 12,22.75 33,37 36,51.75 29,47"/>
+  <polygon class="missing" points="29,55 37,56.67 36,51.75 29,47"/>
 
   <!-- 直方体 ABCD-EFGH -->
   <path class="box" d="M5 50 L29 55 L57 42 L33 37 Z M5 26 L29 31 L57 18 L33 13 Z M5 50 L5 26 M29 55 L29 31 M57 42 L57 18 M33 37 L33 13"/>
 
   <!-- 補助となる三角錐 O-AXD と、実際の切断面 QRDMS -->
-  <path class="main" d="M5 2 L5 50 M5 2 L37 56.67 M5 2 L33 37 M5 50 L37 56.67 L33 37 Z"/>
-  <path class="main" d="M21 29.33 L19 19.5 L33 37 L36 51.75 L29 43 Z"/>
-  <path class="main" d="M5 26 L21 29.33 L19 19.5 Z"/>
-  <path class="guide" d="M29 55 L37 56.67 L36 51.75 L29 43 M36 51.75 L33 37 M5 2 L5 26"/>
+  <path class="main" d="M5 18 L5 50 M5 18 L37 56.67 M5 18 L33 37 M5 50 L37 56.67 L33 37 Z"/>
+  <path class="main" d="M13 27.67 L12 22.75 L33 37 L36 51.75 L29 47 Z"/>
+  <path class="main" d="M5 26 L13 27.67 L12 22.75 Z"/>
+  <path class="guide" d="M29 55 L37 56.67 L36 51.75 L29 47 M36 51.75 L33 37 M5 18 L5 26"/>
 
   <g class="label" text-anchor="middle">
     <text x="2" y="53">A</text><text x="28" y="59">B</text><text x="61" y="44">C</text><text x="35" y="39">D</text>
     <text x="1" y="25">E</text><text x="32" y="32">F</text><text x="61" y="18">G</text><text x="35" y="12">H</text>
-    <text x="8" y="29">P</text><text x="23" y="30">Q</text><text x="20" y="18">R</text><text x="5" y="0">O</text>
-    <text x="38" y="52">M</text><text x="31" y="44">S</text><text x="40" y="59">X</text>
+    <text x="15" y="29">Q</text><text x="13" y="21.5">R</text><text x="5" y="16">O</text>
+    <text x="38" y="52">M</text><text x="31" y="48">S</text><text x="40" y="59">X</text>
   </g>
 </svg>

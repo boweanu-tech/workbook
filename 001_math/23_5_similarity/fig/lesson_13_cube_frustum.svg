@@ -12,7 +12,7 @@
     </style>
   </defs>
 
-  <!-- P=E, Q は EF 上、R は EH 上。平面 OBD による1回の切断。 -->
+  <!-- Q は EF 上、R は EH 上。平面 OBD による1回の切断。 -->
   <polygon class="solid" points="8,50 34,55 21,28.5 8,26"/>
   <polygon class="solid" points="8,50 8,26 19.5,19.5 31,37"/>
   <polygon class="solid" points="8,50 34,55 31,37"/>
@@ -31,6 +31,6 @@
   <g class="label" text-anchor="middle">
     <text x="5" y="53">A</text><text x="34" y="59">B</text><text x="61" y="44">C</text><text x="33" y="39">D</text>
     <text x="4" y="25">E</text><text x="37" y="33">F</text><text x="61" y="18">G</text><text x="33" y="12">H</text>
-    <text x="10.5" y="29">P</text><text x="23" y="29">Q</text><text x="21" y="18.5">R</text><text x="8" y="0">O</text>
+    <text x="23" y="29">Q</text><text x="21" y="18.5">R</text><text x="8" y="0">O</text>
   </g>
 </svg>
