@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="55mm" viewBox="0 -2 50 55">
+<defs><style>.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round}.thin{stroke:black;stroke-width:.32;fill:none}.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}.shade{fill:#e6e6e6;stroke:none}</style></defs>
+<path class="main" d="M25 1 L4 44 M25 1 L46 44"/><path class="main" d="M4 44 A21 6 0 0 0 46 44"/><path class="dash" d="M4 44 A21 6 0 0 1 46 44"/>
+<path class="thin" d="M18 15.3 A7 2 0 0 0 32 15.3"/><path class="dash" d="M18 15.3 A7 2 0 0 1 32 15.3"/>
+<path class="main" d="M11 29.7 A14 4 0 0 0 39 29.7"/><path class="dash" d="M11 29.7 A14 4 0 0 1 39 29.7"/>
+<line class="dash" x1="25" y1="1" x2="25" y2="44"/>
+</svg>

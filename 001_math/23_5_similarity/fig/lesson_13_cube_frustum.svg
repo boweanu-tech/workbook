@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="58mm" viewBox="-3 -3 62 58">
+<defs><style>.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:black;stroke-width:.32;fill:none}.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:3.8px;fill:black}</style></defs>
+<path class="main" d="M12 38 L32 44 L46 36 L26 30 Z M12 16 L32 22 L46 14 L26 8 Z M12 38 L12 16 M32 44 L32 22 M46 36 L46 14 M26 30 L26 8"/>
+<line class="thin" x1="29" y1="0" x2="12" y2="38"/><line class="thin" x1="29" y1="0" x2="32" y2="44"/><line class="thin" x1="29" y1="0" x2="46" y2="36"/><line class="dash" x1="29" y1="0" x2="26" y2="30"/>
+<path class="main" d="M23.3 12.7 L30 14.7 L34.7 12 L28 10 Z"/>
+<g class="label" text-anchor="middle" dominant-baseline="central"><text x="29" y="-2">O</text><text x="9" y="40">A</text><text x="31" y="49">B</text><text x="50" y="38">C</text><text x="25" y="34">D</text><text x="9" y="14">E</text><text x="33" y="25">F</text><text x="50" y="13">G</text><text x="25" y="4">H</text><text x="20" y="11">P</text><text x="31" y="18">Q</text><text x="38" y="11">R</text><text x="27" y="7">S</text></g></svg>

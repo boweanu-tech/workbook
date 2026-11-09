@@ -1,18 +1,58 @@
-% theme: similarity_ratios_and_area_ratios
-% 叩き台。解答は未生成。レビュー用図を挿入済み。
-% 表3大問：底辺・高さと面積の比例だけ。相似比の2乗は使わない。
-% 裏4大問：相似比と面積比の順算・逆算、および図形内での利用。
+% theme: triangle_area_ratios
+% 叩き台。解答は未生成。相似比の2乗は使わず、底辺比・高さ比を中心に扱う。
 \MajorQuestionLesson{三角形の面積比}
-\SetRowSpace{3mm}
-%表：送った図のような感じ。
-%横３つ並びで詰めてください。
-%大問１つで６問、表に大問２つ
-%三角形の周の長さの比を聞くのもいいですね。
+\SetRowSpace{2mm}
 
+\Needspace{102mm}
+\TypeQuestion{各図で、点 $\mathrm{D}$ は辺 $\Lseg{BC}$ 上にある。与えられた条件を用いて答えなさい。}{triangle_area_ratio_same_height}
+\noindent
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_base_01}{$\Lseg{BD}=4\mathrm{cm},\ \Lseg{DC}=7\mathrm{cm}$。$\Tri{ABD}$ と $\Tri{ADC}$ の面積比を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_base_02}{$\Lseg{BD}:\Lseg{DC}=5:3$、$\Tri{ABC}$ の面積は $64\mathrm{cm}^2$ である。$\Tri{ABD}$ の面積を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_base_03}{$\Lseg{BD}=6\mathrm{cm},\ \Lseg{BC}=15\mathrm{cm}$、$\Tri{ADC}$ の面積は $27\mathrm{cm}^2$ である。$\Tri{ABD}$ の面積を求めなさい。}{}
+\QQFigTextRowThreeEnd
+\noindent
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_base_04}{$\Tri{ABD},\Tri{ADC}$ の面積がそれぞれ $18\mathrm{cm}^2,30\mathrm{cm}^2$ である。$\Lseg{BD}:\Lseg{DC}$ を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_base_05}{$\Lseg{BD}:\Lseg{DE}:\Lseg{EC}=2:3:5$ である。$\Tri{ABD},\Tri{ADE},\Tri{AEC}$ の面積比を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_base_06}{$\Tri{ABD}:\Tri{ADC}=7:4$、$\Lseg{BC}=22\mathrm{cm}$ である。線分 $\Lseg{BD}$ の長さを求めなさい。}{}
+\QQFigTextRowThreeEnd
 
+\Needspace{102mm}
+\TypeQuestion{各図で、$\mathrm{PH},\mathrm{QK}$ は直線 $\mathrm{AB}$ に垂直である。与えられた条件を用いて答えなさい。}{triangle_area_ratio_same_base}
+\noindent
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_height_01}{$\Lseg{PH}=7\mathrm{cm},\ \Lseg{QK}=12\mathrm{cm}$ である。$\Tri{PAB}$ と $\Tri{QAB}$ の面積比を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_height_02}{$\Tri{PAB},\Tri{QAB}$ の面積がそれぞれ $28\mathrm{cm}^2,44\mathrm{cm}^2$ である。$\Lseg{PH}:\Lseg{QK}$ を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_height_03}{$\Lseg{PH}:\Lseg{QK}=3:7$、$\Tri{PAB}$ の面積は $18\mathrm{cm}^2$ である。$\Tri{QAB}$ の面積を求めなさい。}{}
+\QQFigTextRowThreeEnd
+\noindent
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_height_04}{$\Lseg{PH}=8\mathrm{cm},\ \Lseg{QK}=5\mathrm{cm}$、$\Tri{PAB}$ の面積は $48\mathrm{cm}^2$ である。$\Tri{QAB}$ の面積を求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_height_05}{$\Tri{PAB}:\Tri{QAB}=5:2$、$\Lseg{QK}=6\mathrm{cm}$ である。線分 $\Lseg{PH}$ の長さを求めなさい。}{}\hfill
+\QQFigTextRowThreeCell[29mm]{fig/lesson_10_height_06}{$\Lseg{PH}:\Lseg{QK}=3:4$ で、2つの三角形の面積の和は $84\mathrm{cm}^2$ である。それぞれの面積を求めなさい。}{}
+\QQFigTextRowThreeEnd
 
+\AnswerColumnBreak
+\LessonQuestionBreak
 
-%裏：送った図のような感じ。
-%大問＋小問構成
-%面積の情報が与えられていて、辺の比を聞く(どっちかというとこっちメインに)か、
-%辺の比がわかっていて面積比を聞くのもあり。
+\Needspace{78mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{BC},\Lseg{CA}$ の中点をそれぞれ $\mathrm{D},\mathrm{E},\mathrm{F}$ とする。}{triangle_area_ratio_midpoints}
+\FigProblemBlock{50mm}{fig/lesson_10_midpoint_area}{}{
+\QQ{$\Tri{ADF},\Tri{BDE},\Tri{CEF}$ の面積比を求めなさい。}{}
+\QQ{$\Tri{ABC}$ の面積が $80\mathrm{cm}^2$ のとき、$\Tri{DEF}$ の面積を求めなさい。}{}
+\QQ{図の灰色部分の面積を求めなさい。}{}
+}
+
+\Needspace{78mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{BC}$ 上に点 $\mathrm{D},\mathrm{E},\mathrm{F}$ をこの順にとる。$\Tri{ABD},\Tri{ADE},\Tri{AEF},\Tri{AFC}$ の面積は、それぞれ $8\mathrm{cm}^2,12\mathrm{cm}^2,18\mathrm{cm}^2,10\mathrm{cm}^2$ である。}{triangle_area_ratio_partition}
+\FigProblemBlock{52mm}{fig/lesson_11_base_partition}{}{
+\QQ{$\Lseg{BD}:\Lseg{DE}:\Lseg{EF}:\Lseg{FC}$ を求めなさい。}{}
+\QQ{$\Lseg{BC}=72\mathrm{cm}$ のとき、4つの線分 $\Lseg{BD},\Lseg{DE},\Lseg{EF},\Lseg{FC}$ の長さをそれぞれ求めなさい。}{}
+\QQ{$\Tri{ABC}$ の面積を求めなさい。}{}
+}
+
+\Needspace{78mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{BC}$ 上に点 $\mathrm{D}$、線分 $\Lseg{AD}$ 上に点 $\mathrm{E}$ をとり、$\Lseg{EB},\Lseg{EC}$ を結ぶ。$\Tri{ABE},\Tri{BDE},\Tri{AEC}$ の面積は、それぞれ $12\mathrm{cm}^2,8\mathrm{cm}^2,18\mathrm{cm}^2$ である。}{triangle_area_ratio_inside_point}
+\FigProblemBlock{50mm}{fig/lesson_10_subdivision}{}{
+\QQ{$\Lseg{AE}:\Lseg{ED}$ を求めなさい。}{}
+\QQ{$\Tri{CDE}$ の面積を求めなさい。}{}
+\QQ{$\Lseg{BD}:\Lseg{DC}$ を求めなさい。}{}
+\QQ{$\Tri{ABC}$ の面積を求めなさい。}{}
+}

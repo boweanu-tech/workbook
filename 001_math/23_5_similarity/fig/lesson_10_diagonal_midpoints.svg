@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="43mm" viewBox="-5 -5 58 43">
+<defs><style>
+.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:black;stroke-width:.32;fill:none;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:black}
+</style></defs>
+<path class="main" d="M2 4 L39 1 L47 31 L0 28 Z"/>
+<line class="thin" x1="2" y1="4" x2="47" y2="31"/><line class="thin" x1="39" y1="1" x2="0" y2="28"/>
+<path class="main" d="M20.5 2.5 L24.5 17.5 L23.5 29.5 L19.5 14.5 Z"/>
+<g class="label" text-anchor="middle" dominant-baseline="central">
+<text x="0" y="0">A</text><text x="41" y="-2">B</text><text x="50" y="33">C</text><text x="-3" y="31">D</text>
+<text x="20" y="-1">E</text><text x="27" y="17">M</text><text x="25" y="33">G</text><text x="16" y="15">N</text>
+</g></svg>

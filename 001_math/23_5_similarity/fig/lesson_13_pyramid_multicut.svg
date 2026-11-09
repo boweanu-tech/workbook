@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="52mm" height="55mm" viewBox="-3 -3 52 55">
+<defs><style>.main{stroke:black;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:black;stroke-width:.32;fill:none}.dash{stroke:black;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}.shade{fill:#e6e6e6;stroke:none}</style></defs>
+<path class="shade" d="M11.7 32 L29 35.3 L36.3 31.3 L19 28 Z"/>
+<path class="main" d="M2 43 L28 48 L43 40"/><path class="dash" d="M43 40 L17 35 L2 43"/>
+<line class="main" x1="23" y1="2" x2="2" y2="43"/><line class="main" x1="23" y1="2" x2="28" y2="48"/><line class="main" x1="23" y1="2" x2="43" y2="40"/><line class="dash" x1="23" y1="2" x2="17" y2="35"/>
+<path class="thin" d="M16 15.7 L24.7 17.3 L29.7 14.7"/><path class="dash" d="M29.7 14.7 L21 13 L16 15.7"/>
+<path class="main" d="M9 29.3 L26.3 32.7 L36.3 28"/><path class="dash" d="M36.3 28 L19 24.7 L9 29.3"/>
+<line class="dash" x1="23" y1="2" x2="23" y2="42"/>
+</svg>

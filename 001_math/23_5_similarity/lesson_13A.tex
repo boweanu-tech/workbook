@@ -1,46 +1,48 @@
 % theme: similarity_ratios_and_volume_ratios
-% 叩き台。解答は未生成。レビュー用図を挿入済み。表3大問、裏4大問。
-% 体積の比の逆算は既知の整数比の3乗で処理できる数値に限定する。
+% 叩き台。解答は未生成。表は錐体の多段切断、裏は柱体内にできる角錐台。
 \MajorQuestionLesson{相似比と体積比}
 \SetRowSpace{3mm}
 
-%表面は錐体を底面に平行に切る問題
-
-
-\TypeQuestion{}{similarity_volume_ratio_pyramid_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_pyramid_cut}{
-\Text{高さが $12\mathrm{cm}$、底面積が $81\mathrm{cm}^2$ の正四角錐を、底面に平行な平面で切る。頂点から切断面までの距離は $8\mathrm{cm}$ である。}
-}{
-\QQ{切断面の面積を求めなさい。}{}
-\QQ{頂点を含む小さい正四角錐の体積を求めなさい。}{}
-\QQ{切断後の2つの立体のうち、頂点を含まない方の体積を求めなさい。}{}
+\Needspace{100mm}
+\TypeQuestion{高さが $18\mathrm{cm}$、底面積が $324\mathrm{cm}^2$ の正四角錐を、底面に平行な2つの平面で切る。頂点から2つの切断面までの距離は、それぞれ $6\mathrm{cm},12\mathrm{cm}$ である。}{similarity_volume_ratio_pyramid_multicut}
+\FigProblemBlock{58mm}{fig/lesson_13_pyramid_multicut}{}{
+\QQ{頂点に近い切断面の面積を求めなさい。}{}
+\QQ{もう一方の切断面の面積を求めなさい。}{}
+\QQ{もとの正四角錐の体積を求めなさい。}{}
+\QQ{切断してできる3つの立体の体積を、頂点に近い方から順に求めなさい。}{}
 }
 
-%１度切断ではなく、２〜３回切断にしてください。
-\TypeQuestion{}{similarity_volume_ratio_inverse_cut}
-\FigProblemBlock{48mm}{fig/lesson_11_inverse_cut}{
-\Text{高さが $18\mathrm{cm}$、体積が $648\mathrm{cm}^3$ の正四角錐を、底面に平行な平面で切った。頂点を含まない方の立体の体積は $456\mathrm{cm}^3$ であった。}
-}{
-\QQ{頂点を含む小さい正四角錐の体積を求めなさい。}{}
-\QQ{頂点から切断面までの距離を求めなさい。}{}
-\QQ{切断面からもとの底面までの距離を求めなさい。}{}
-
-
-\TypeQuestion{}{similarity_volume_ratio_water_depth}
-\FigProblemBlock{48mm}{fig/lesson_11_water}{
-\Text{頂点を下にして置いた円錐形の容器がある。容器の深さは $12\mathrm{cm}$、満水のときの水の体積は $960\mathrm{cm}^3$ である。水面は容器の上端の面と平行である。容器の厚さは考えないものとする。}
-}{
-\QQ{水深が $6\mathrm{cm}$ のとき、水の体積を求めなさい。}{}
-\QQ{$405\mathrm{cm}^3$ の水を入れたとき、水深を求めなさい。}{}
-\QQ{深さが $12\mathrm{cm}$、満水のときの水の体積が $960\mathrm{cm}^3$ の円柱形の容器を、底面が水平になるように置く。2つの容器の水深がともに $6\mathrm{cm}$ のとき、円柱形の容器に入る水の体積は、円錐形の容器に入る水の体積の何倍か求めなさい。}{}
+\Needspace{100mm}
+\TypeQuestion{高さが $15\mathrm{cm}$、体積が $3375\mathrm{cm}^3$ の円錐を、底面に平行な2つの平面で切る。頂点から2つの切断面までの距離は、それぞれ $5\mathrm{cm},10\mathrm{cm}$ である。}{similarity_volume_ratio_cone_multicut}
+\FigProblemBlock{58mm}{fig/lesson_13_cone_multicut}{}{
+\QQ{頂点から $5\mathrm{cm}$ のところで切ったとき、頂点を含む小さい円錐の体積を求めなさい。}{}
+\QQ{頂点から $10\mathrm{cm}$ のところで切ったとき、頂点を含む円錐の体積を求めなさい。}{}
+\QQ{切断してできる3つの立体の体積を、頂点に近い方から順に求めなさい。}{}
+\QQ{3つの立体の体積比を、頂点に近い方から順に求めなさい。}{}
 }
-}
+
 \AnswerColumnBreak
 \LessonQuestionBreak
 
+\Needspace{108mm}
+\TypeQuestion{一辺が $12\mathrm{cm}$ の立方体 $\mathrm{ABCD-EFGH}$ がある。点 $\mathrm{O}$ は上面 $\mathrm{EFGH}$ の中心の真上にあり、点 $\mathrm{O}$ と底面 $\mathrm{ABCD}$ との距離は $18\mathrm{cm}$ である。}{similarity_volume_ratio_cube_frustum}
+\FigProblemBlock{64mm}{fig/lesson_13_cube_frustum}{
+\Text{線分 $\Lseg{OA},\Lseg{OB},\Lseg{OC},\Lseg{OD}$ と上面との交点を、それぞれ $\mathrm{P},\mathrm{Q},\mathrm{R},\mathrm{S}$ とする。}
+}{
+\QQ{正四角錐 $\mathrm{OPQRS}$ と正四角錐 $\mathrm{OABCD}$ の相似比を求めなさい。}{}
+\QQ{正方形 $\mathrm{PQRS}$ の一辺の長さと面積を求めなさい。}{}
+\QQ{立方体の中にある角錐台 $\mathrm{ABCD-PQRS}$ の体積を求めなさい。}{}
+\QQ{立方体のうち、角錐台に含まれない部分の体積を求めなさい。}{}
+\QQ{角錐台と立方体の体積比を、この順に求めなさい。}{}
+}
 
-%裏：送った図のような感じ。
-%大問＋小問構成
-%立方体や直方体を切断し、角錐台を作る問題
-
-
+\Needspace{110mm}
+\TypeQuestion{底面が縦 $9\mathrm{cm}$、横 $12\mathrm{cm}$、高さが $12\mathrm{cm}$ の直方体がある。点 $\mathrm{O}$ は上面の中心を通り上面に垂直な直線上にあり、直方体の外部にある。}{similarity_volume_ratio_cuboid_frustum}
+\FigProblemBlock{64mm}{fig/lesson_13_cuboid_frustum}{
+\Text{点 $\mathrm{O}$ と底面の4頂点を結んだ線分は上面と交わり、上面に面積 $27\mathrm{cm}^2$ の長方形をつくる。}
+}{
+\QQ{上面にできる長方形と底面の長方形の相似比を求めなさい。}{}
+\QQ{点 $\mathrm{O}$ と上面との距離を求めなさい。}{}
+\QQ{直方体の中にある角錐台の体積を求めなさい。}{}
+\QQ{直方体のうち、角錐台に含まれない部分の体積を求めなさい。}{}
+}

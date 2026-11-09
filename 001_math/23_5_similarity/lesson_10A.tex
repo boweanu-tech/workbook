@@ -1,71 +1,59 @@
-% theme: converse_segment_ratios_and_midpoint_theorem
-% 叩き台。解答は未生成。レビュー用図を挿入済み。表3大問、裏4大問。
+% theme: midpoint_theorem
+% 叩き台。解答は未生成。表は穴埋め証明、裏は記述証明。
 \MajorQuestionLesson{中点連結定理}
 \SetRowSpace{3mm}
 
-%平行線の逆はあまり出ない(大概わかる)ので、中点連結定理の証明問題に絞ります。
-%長さ求める系も、普通に相似でいいと思う。
-%表面を穴埋め、ウラ面を完全記述に。
-
-%問題の案として、有名なものをいくつか載せます。converse_segment_ratio_proofなものも冒頭にあっていいですが、ページ最後の問題は、この程度の難易度に揃えてください。
-%四角形の対角線の中点と、向かい合う辺の中点を結ぶと平行四辺形になることを示す
-%四角形の各辺の中点を結ぶと平行四辺形になることを示す
-%上下平行の台形があり、左右の中点を結ぶ線の長さは、上底と下底の平均になる
-
-
-\Needspace{90mm}
-\TypeQuestion{次の問いに答えなさい。}{converse_segment_ratio_proof}
-\QQSideFig{42mm}{fig/lesson_09_proof_fill}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に点 $\mathrm{D},\mathrm{E}$ をとり、$\Lseg{AD}=6\mathrm{cm},\ \Lseg{DB}=9\mathrm{cm},\ \Lseg{AE}=4\mathrm{cm},\ \Lseg{EC}=6\mathrm{cm}$ とする。$\Lseg{DE}\Parallel\Lseg{BC}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
+\Needspace{76mm}
+\TypeQuestion{次の証明の空欄をうめなさい。}{converse_segment_ratio_proof}
+\QQSideFig{42mm}{fig/lesson_09_proof_fill}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に点 $\mathrm{D},\mathrm{E}$ をとり、$\Lseg{AD}=6\mathrm{cm},\ \Lseg{DB}=9\mathrm{cm},\ \Lseg{AE}=4\mathrm{cm},\ \Lseg{EC}=6\mathrm{cm}$ とする。$\Lseg{DE}\Parallel\Lseg{BC}$ となることを示す。
 \ProofHeading
-$\Tri{ADE}$ と $\Tri{ABC}$ において、\par
-$\Lseg{AB}=$\Blank{ア}$\mathrm{cm}$、$\Lseg{AC}=$\Blank{イ}$\mathrm{cm}$\par\smallskip
-$\Lseg{AD}:\Lseg{AB}=\Lseg{AE}:\Lseg{AC}=$\Blank{ウ}\quad\CondTag{1}\par\smallskip
-共通な角であるから、$\Ang{DAE}=\Ang{BAC}$\quad\CondTag{2}\par\smallskip
-\CondNo{1}、\CondNo{2}より、\Blank{エ}ので、\par
-$\Tri{ADE}\Similar\Tri{ABC}$\par\smallskip
-したがって、$\Ang{ADE}=$\Blank{オ}\par\smallskip
-\Blank{カ}が等しいので、$\Lseg{DE}\Parallel\Lseg{BC}$
-}{}
-\QQSideFig{42mm}{fig/lesson_09_proof_write}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ をそれぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ のとき、$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
+$\Lseg{AB}=$\Blank{ア}$\mathrm{cm}$、$\Lseg{AC}=$\Blank{イ}$\mathrm{cm}$ であるから、
+$\Lseg{AD}:\Lseg{AB}=\Lseg{AE}:\Lseg{AC}=$\Blank{ウ}\quad\CondTag{1}
+また、共通な角であるから、$\Ang{DAE}=\Ang{BAC}$\quad\CondTag{2}
+\CondNo{1}、\CondNo{2}より、\Blank{エ}ので、$\Tri{ADE}\Similar\Tri{ABC}$
+したがって、$\Ang{ADE}=$\Blank{オ}。\Blank{カ}が等しいので、$\Lseg{DE}\Parallel\Lseg{BC}$}{}
 
+\Needspace{78mm}
+\TypeQuestion{中点連結定理を示す次の証明の空欄をうめなさい。}{midpoint_theorem_fill}
+\QQSideFig{42mm}{fig/lesson_09_midpoint_01}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。
+\ProofHeading
+$\mathrm{M},\mathrm{N}$ はそれぞれ $\Lseg{AB},\Lseg{AC}$ の中点であるから、
+$\Lseg{AM}:\Lseg{AB}=\Lseg{AN}:\Lseg{AC}=$\Blank{ア}\quad\CondTag{1}
+また、$\Ang{MAN}=\Ang{BAC}$\quad\CondTag{2}
+\CondNo{1}、\CondNo{2}より、\Blank{イ}ので、$\Tri{AMN}\Similar\Tri{ABC}$
+よって、$\Ang{AMN}=$\Blank{ウ} であるから、$\Lseg{MN}\Parallel\Lseg{BC}$
+また、$\Lseg{MN}:\Lseg{BC}=$\Blank{エ} であるから、$\Lseg{MN}=$\Blank{オ}$\Lseg{BC}$}{}
+
+\Needspace{82mm}
+\TypeQuestion{次の証明の空欄をうめ、最後の問いに答えなさい。}{midpoint_theorem_quadrilateral_fill}
+\FigProblemBlock{50mm}{fig/lesson_09_quadrilateral}{
+\Text{凸四角形 $\mathrm{ABCD}$ の辺 $\Lseg{AB},\Lseg{BC},\Lseg{CD},\Lseg{DA}$ の中点をそれぞれ $\mathrm{E},\mathrm{F},\mathrm{G},\mathrm{H}$ とする。$\Lseg{AC}=14\mathrm{cm},\ \Lseg{BD}=18\mathrm{cm}$ とする。}
+}{
+\Text{$\Tri{ABC}$ で中点連結定理より、$\Lseg{EF}\Parallel\Lseg{AC}$、$\Lseg{EF}=$\Blank{ア}$\Lseg{AC}$\quad\CondTag{1}\par
+$\Tri{ADC}$ で中点連結定理より、$\Lseg{HG}\Parallel\Lseg{AC}$、$\Lseg{HG}=$\Blank{イ}$\Lseg{AC}$\quad\CondTag{2}\par
+\CondNo{1}、\CondNo{2}より、$\Lseg{EF}\Parallel\Lseg{HG}$ かつ $\Lseg{EF}=$\Blank{ウ}。したがって、四角形 $\mathrm{EFGH}$ は\Blank{エ}である。}
+\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
+}
 
 \AnswerColumnBreak
 \LessonQuestionBreak
 
+\Needspace{62mm}
+\TypeQuestion{次のことを証明しなさい。}{converse_segment_ratio_write}
+\QQSideFig{42mm}{fig/lesson_09_proof_write}{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ をそれぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ のとき、$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
 
-%証明をまぜつつ、多少辺や周の長さなどを聞く問題があってもいいですね。
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_quadrilateral}
-\FigProblemBlock{48mm}{fig/lesson_09_quadrilateral}{
-\Text{凸四角形 $\mathrm{ABCD}$ の辺 $\Lseg{AB},\Lseg{BC},\Lseg{CD},\Lseg{DA}$ の中点をそれぞれ $\mathrm{E},\mathrm{F},\mathrm{G},\mathrm{H}$ とする。対角線の長さは $\Lseg{AC}=12\mathrm{cm},\ \Lseg{BD}=16\mathrm{cm}$ である。}
-}{
-\QQ{線分 $\Lseg{EF}$ と対角線 $\Lseg{AC}$ の位置関係を答え、線分 $\Lseg{EF}$ の長さを求めなさい。}{}
-\QQ{四角形 $\mathrm{EFGH}$ が平行四辺形であることを証明しなさい。}{}
-\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
+\Needspace{82mm}
+\TypeQuestion{凸四角形 $\mathrm{ABCD}$ で、辺 $\Lseg{AB},\Lseg{CD}$ の中点をそれぞれ $\mathrm{E},\mathrm{G}$、対角線 $\Lseg{AC},\Lseg{BD}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。}{midpoint_theorem_diagonal_midpoints}
+\FigProblemBlock{53mm}{fig/lesson_10_diagonal_midpoints}{}{
+\QQ{$\Lseg{EM}\Parallel\Lseg{BC}$、$\Lseg{EM}=\dfrac12\Lseg{BC}$ となることを証明しなさい。}{}
+\QQ{四角形 $\mathrm{EMGN}$ が平行四辺形であることを証明しなさい。}{}
+\QQ{$\Lseg{BC}=10\mathrm{cm},\ \Lseg{AD}=16\mathrm{cm}$ のとき、四角形 $\mathrm{EMGN}$ の周の長さを求めなさい。}{}
 }
 
-
-%一直線上に並ぶことを示す、などは避けて。高校っぽい？
-%平行四辺形の成立条件を使ったり、二等辺三角形であることを示す、程度はアリです(こういうのと中点連結定理がつながるかは別として、無理に使わなくていいですよ)。
-
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_trapezoid}
-\FigProblemBlock{48mm}{fig/lesson_09_trapezoid}{
-\Text{$\Lseg{AB}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、$\Lseg{AB}=10\mathrm{cm},\ \Lseg{CD}=22\mathrm{cm}$ とする。辺 $\Lseg{AD},\Lseg{BC}$ の中点をそれぞれ $\mathrm{E},\mathrm{F}$ とし、対角線 $\Lseg{AC}$ の中点を $\mathrm{M}$ とする。}
-}{
-\QQ{3点 $\mathrm{E},\mathrm{M},\mathrm{F}$ が一直線上にあることを示し、線分 $\Lseg{EM}$ の長さを求めなさい。}{}
-\QQ{線分 $\Lseg{MF}$ の長さを求めなさい。}{}
+\Needspace{82mm}
+\TypeQuestion{$\Lseg{AB}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、辺 $\Lseg{AD},\Lseg{BC}$ の中点をそれぞれ $\mathrm{E},\mathrm{F}$ とする。$\Lseg{AB}=12\mathrm{cm},\ \Lseg{CD}=20\mathrm{cm}$ とする。}{midpoint_theorem_trapezoid}
+\FigProblemBlock{50mm}{fig/lesson_09_trapezoid}{}{
+\QQ{$\Lseg{EF}\Parallel\Lseg{AB}$ となることを、中点連結定理を用いて証明しなさい。}{}
+\QQ{$\Lseg{EF}=\dfrac{\Lseg{AB}+\Lseg{CD}}{2}$ となることを証明しなさい。}{}
 \QQ{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
-}
-
-
-\Needspace{90mm}
-\TypeQuestion{}{midpoint_theorem_medians}
-\FigProblemBlock{48mm}{fig/lesson_09_medians}{
-\Text{$\Tri{ABC}$ の辺 $\Lseg{BC},\Lseg{CA}$ の中点をそれぞれ $\mathrm{D},\mathrm{E}$ とし、線分 $\Lseg{AD},\Lseg{BE}$ の交点を $\mathrm{G}$ とする。点 $\mathrm{E}$ を通り線分 $\Lseg{AD}$ に平行な直線と、辺 $\Lseg{BC}$ との交点を $\mathrm{F}$ とする。}
-}{
-\QQ{点 $\mathrm{F}$ が線分 $\Lseg{DC}$ の中点であることを証明しなさい。}{}
-\QQ{$\Lseg{EF}:\Lseg{AD}$ を求めなさい。}{}
-\QQ{$\Tri{BDG}$ と $\Tri{BFE}$ に注目して、$\Lseg{BG}:\Lseg{GE}$ を求めなさい。}{}
-\QQ{$\Lseg{AG}:\Lseg{GD}$ を求めなさい。}{}
 }

@@ -43,6 +43,33 @@
   \fi
 }
 
+% 1セルごとに短い条件文を添え、図を3列で並べるための部品。
+% 3セルを \noindent と \hfill で並べ、行末に \QQFigTextRowThreeEnd を置く。
+% #1: 図の最大高さ, #2: 図パス, #3: 条件文, #4: 解答
+\newcommand{\QQFigTextRowThreeCell}[4][32mm]{%
+  \begin{minipage}[t]{0.32\linewidth}%
+    \vspace{0pt}%
+    \stepcounter{LMsubq}%
+    \ifLMAnswerMode
+      \noindent\makebox[9mm][l]{\textbf{(\theLMsubq)}}%
+      \LMPrintAnswerBox{\dimexpr\linewidth-9mm\relax}{#4}%
+    \else
+      \noindent\textbf{(\theLMsubq)}\parbox[t]{\dimexpr\linewidth-9mm\relax}{#3}%
+      \par\nobreak\vspace{0.8mm}%
+      {\centering
+        \includegraphics[width=\linewidth,height=#1,keepaspectratio]{#2}\par}%
+    \fi
+  \end{minipage}%
+}
+\newcommand{\QQFigTextRowThreeEnd}{%
+  \par
+  \ifLMAnswerMode
+    \vspace{\LMAnswerRowSpace}%
+  \else
+    \vspace{\LMRowSpace}%
+  \fi
+}
+
 % wrapfig は、説明文だけを図に回り込ませたいときに使う。
 % 小問番号つきの \QQ は入れず、\Text などの地の文だけを入れる。
 \newcommand{\WrapTextFig}{\@ifnextchar[{\LMWrapTextFigRows}{\LMWrapTextFigAuto}}
