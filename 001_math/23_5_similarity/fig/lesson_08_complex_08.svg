@@ -1,9 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="42mm" viewBox="0 0 60 42">
-<!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4.1px;font-style:normal}.var{font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:4px;font-style:italic}</style></defs>
-<path class="main" d="M6 37 H54 L30 3 Z M25.2 37 L15.6 23.4 M25.2 37 L39.6 16.6 M15.6 23.4 L54 37"/>
-<path class="thin" d="M19 16.5 L20.6 16.2 L20.3 17.4 M32 25.5 L33.6 25.2 L33.3 26.4 M46 23.5 L44.4 23.2 L44.7 24.4 M44.8 21.8 L43.2 21.5 L43.5 22.7 M21 29.1 L19.4 28.8 L19.7 30 M19.8 27.4 L18.2 27.1 L18.5 28.3"/>
-<path class="length-arc" d="M40.5 14.5 Q35 8 30.5 4"/><text class="var" x="35" y="8">x</text>
-<g class="label"><text x="2" y="40">A</text><text x="55" y="40">B</text><text x="29" y="3">C</text><text x="11" y="24">E</text><text x="41" y="17">F</text></g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="60mm"
+   height="42mm"
+   viewBox="0 0 60 42"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="lesson_08_complex_08.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.5591392"
+     inkscape:cx="93.000015"
+     inkscape:cy="84.992461"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26" />
+  <!-- Based on 999_GPTbox/template.svg. Numerical lengths are given in TeX. -->
+  <defs
+     id="defs4">
+    <style
+       id="style2">.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.length-arc{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:.45 1.05;stroke-linecap:round}.label{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:4.1px;font-style:normal}.var{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:4px;font-style:italic}</style>
+  </defs>
+  <path
+     class="main"
+     d="M6 37 H54 L30 3 Z M25.2 37 L15.6 23.4 M25.2 37 L39.6 16.6 M15.6 23.4 L54 37"
+     id="path6" />
+  <path
+     class="length-arc"
+     d="M 39.6,16.6 C 37.937196,8.7885006 33.144761,5.1601057 30,3"
+     id="path10"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="var"
+     x="37.01577"
+     y="8.2355194"
+     id="text12">x</text>
+  <g
+     class="label"
+     id="g24">
+    <text
+       x="2"
+       y="40"
+       id="text14">A</text>
+    <text
+       x="55"
+       y="40"
+       id="text16">B</text>
+    <text
+       x="25.379538"
+       y="4.2012086"
+       id="text18">C</text>
+    <text
+       x="11"
+       y="24"
+       id="text20">E</text>
+    <text
+       x="41"
+       y="17"
+       id="text22">F</text>
+  </g>
+  <path
+     class="thin"
+     d="m 17.358729,19.224794 1.962019,-1.072605 -0.319128,2.213178 m -0.787461,-2.372742 1.962019,-1.072604 -0.319127,2.213178"
+     id="path8-3"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round"
+     sodipodi:nodetypes="cccccc" />
+  <path
+     class="thin"
+     d="m 31.977442,25.702059 1.962019,-1.072605 -0.319128,2.213178 m -0.787461,-2.372742 1.962019,-1.072604 -0.319127,2.213178"
+     id="path8-3-6"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round"
+     sodipodi:nodetypes="cccccc" />
+  <path
+     class="thin"
+     d="m 19.566494,27.476897 0.586572,2.157763 -2.078152,-0.825401"
+     id="path8-3-6-7"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round"
+     sodipodi:nodetypes="ccc" />
+  <path
+     class="thin"
+     d="M 35.493301,9.3161976 36.079873,11.473961 34.001721,10.64856"
+     id="path8-3-6-7-5"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-linejoin:round"
+     sodipodi:nodetypes="ccc" />
 </svg>
