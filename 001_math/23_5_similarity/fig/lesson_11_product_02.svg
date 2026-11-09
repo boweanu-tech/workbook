@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-4 -4 64 50">
-<!-- P,QはそれぞれB,Cの先の延長上。斜線部APQはABCを含む。 -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.shade{fill:#ddd;stroke:none}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}</style></defs>
-<polygon class="shade" points="28,4 4,42 52,42"/>
-<path class="main" d="M28 4 L4 42 L52 42 Z"/><path class="thin" d="M12 29.3 L44 29.3"/>
-<g class="label" text-anchor="middle" dominant-baseline="central"><text x="28" y="1">A</text><text x="10" y="27">B</text><text x="46" y="27">C</text><text x="1" y="44">P</text><text x="55" y="44">Q</text></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-5 -5 66 53"><defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:"CMU Serif","Computer Modern Serif",serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style></defs>
+<polygon class="shade" points="28,4 4,42 52,42"/><path class="main" d="M28 4 L4 42 L52 42 Z M12 29.3 L44 29.3"/>
+<path class="dim" d="M25 3 Q18 14 11 27 M10 30 Q7 35 3 40 M31 3 Q38 14 45 27 M46 30 Q49 35 53 40"/>
+<g class="num" text-anchor="middle"><text x="18" y="15">6</text><text x="6" y="36">3</text><text x="39" y="15">8</text><text x="50" y="36">4</text></g>
+<g class="label" text-anchor="middle"><text x="28" y="1">A</text><text x="10" y="28">B</text><text x="46" y="28">C</text></g></svg>

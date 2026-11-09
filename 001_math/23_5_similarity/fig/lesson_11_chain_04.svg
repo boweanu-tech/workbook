@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-5 -5 67 51"><defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linejoin:round}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:"CMU Serif","Computer Modern Serif",serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style></defs>
+<polygon class="shade" points="26,2 24.1,38 37.6,16.4"/><path class="main" d="M26 2 L2 38 L55 38 Z M26 2 L24.1 38 L37.6 16.4"/>
+<path class="dim" d="M2 41 Q13 39 24 41 M25 41 Q40 39 55 41 M29 1 Q34 8 38 14 M40 17 Q48 27 57 36"/>
+<g class="num" text-anchor="middle"><text x="13" y="40">5</text><text x="40" y="40">7</text><text x="34" y="8">4</text><text x="50" y="29">6</text></g>
+<g class="label" text-anchor="middle"><text x="26" y="0">A</text><text x="-1" y="44">B</text><text x="59" y="44">C</text></g></svg>

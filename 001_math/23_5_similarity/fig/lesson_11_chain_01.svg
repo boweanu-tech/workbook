@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-4 -4 62 48">
-<!-- BとAC上のPを結び、BP上のQとAを結ぶ。長さはTeX本文で指定する。 -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.shade{fill:#ddd;stroke:none}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}</style></defs>
-<polygon class="shade" points="28,2 44.2,23.6 28.75,29"/>
-<path class="main" d="M28 2 L3 38 L55 38 Z"/>
-<line class="main" x1="3" y1="38" x2="44.2" y2="23.6"/><line class="thin" x1="28" y1="2" x2="28.75" y2="29"/>
-<g class="label" text-anchor="middle" dominant-baseline="central"><text x="28" y="-1">A</text><text x="0" y="40">B</text><text x="58" y="40">C</text><text x="48" y="22">P</text><text x="26" y="33">Q</text></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-5 -5 66 51"><defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:"CMU Serif","Computer Modern Serif",serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style></defs>
+<polygon class="shade" points="28,2 44.2,23.6 28.75,29"/><path class="main" d="M28 2 L3 38 L55 38 Z M3 38 L44.2 23.6 M28 2 L28.75 29"/>
+<path class="dim" d="M31 1 Q39 10 46 21 M47 24 Q52 30 57 36 M3 41 Q16 36 28 32 M30 31 Q37 28 44 26"/>
+<g class="num" text-anchor="middle"><text x="39" y="9">6</text><text x="53" y="31">4</text><text x="16" y="37">5</text><text x="37" y="27">3</text></g>
+<g class="label" text-anchor="middle"><text x="28" y="0">A</text><text x="0" y="42">B</text><text x="59" y="42">C</text></g></svg>

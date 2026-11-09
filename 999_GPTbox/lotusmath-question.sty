@@ -67,6 +67,11 @@
   \par\noindent\textbf{【証明】}\par\nobreak\smallskip
 }
 
+% 証明中の条件・式を、本文より一段字下げして独立した行に置く。
+\newcommand{\ProofIndent}[1]{%
+  \par\nobreak\noindent\hspace*{1.5em}#1\par\nobreak
+}
+
 % 小問番号を付けず、大問全体の問題本体と解答を切り替える。
 % \TypeQuestion{指示}{タグ} の直後に置く。小問カウンタは変更しない。
 \newcommand{\WholeQuestion}[2]{%

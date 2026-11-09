@@ -1,29 +1,42 @@
 % theme: triangle_area_ratios
-% 叩き台。解答は未生成。表面のみ生成し、裏面は今後の指示待ち。
+% 叩き台。解答は未生成。
 \MajorQuestionLesson{三角形の面積比}
 \SetRowSpace{3mm}
 
 % 1本目の分割で三角形を絞り、2本目の分割でもう一度絞る。
 % 分割線の引き方を変え、単純な同底・同高の反復にしない。
-\Needspace{78mm}
+
+\Needspace{96mm}
 \TypeQuestion{次の各図で、斜線部の面積は、$\Tri{ABC}$ の面積の何倍かを求めなさい。}{triangle_area_ratio_chained}
-\noindent
-\QQFigTextRowThreeCell[35mm]{fig/lesson_11_chain_01}{$\Lseg{AP}=6\mathrm{cm},\ \Lseg{PC}=4\mathrm{cm},\ \Lseg{BQ}=5\mathrm{cm},\ \Lseg{QP}=3\mathrm{cm}$}{}\hfill
-\QQFigTextRowThreeCell[35mm]{fig/lesson_11_chain_02}{$\Lseg{BP}=4\mathrm{cm},\ \Lseg{PC}=6\mathrm{cm},\ \Lseg{AQ}=3\mathrm{cm},\ \Lseg{QP}=5\mathrm{cm}$}{}\hfill
-\QQFigTextRowThreeCell[35mm]{fig/lesson_11_chain_03}{$\Lseg{AP}=5\mathrm{cm},\ \Lseg{PB}=7\mathrm{cm},\ \Lseg{CQ}=6\mathrm{cm},\ \Lseg{QP}=3\mathrm{cm}$}{}
-\QQFigTextRowThreeEnd
+\QQFigRowThree[32mm]{fig/lesson_11_chain_01}{}{fig/lesson_11_chain_02}{}{fig/lesson_11_chain_03}{}
+\QQFigRowThree[32mm]{fig/lesson_11_chain_04}{}{fig/lesson_11_chain_05}{}{fig/lesson_11_chain_06}{}
 
 % 共通頂点から出る2方向の辺の比を掛けて面積比を求める。
-% 内分だけでなく、両側延長・片側延長も混ぜる。
-\Needspace{78mm}
+% 内分・延長、三角形・四角形の斜線部を混ぜる。
+\Needspace{96mm}
 \TypeQuestion{次の各図で、斜線部の面積は、$\Tri{ABC}$ の面積の何倍かを求めなさい。}{triangle_area_ratio_products}
-\noindent
-\QQFigTextRowThreeCell[35mm]{fig/lesson_11_product_01}{$\Lseg{AP}=4\mathrm{cm},\ \Lseg{PB}=6\mathrm{cm},\ \Lseg{AQ}=5\mathrm{cm},\ \Lseg{QC}=3\mathrm{cm}$}{}\hfill
-\QQFigTextRowThreeCell[35mm]{fig/lesson_11_product_02}{$\Lseg{AB}=6\mathrm{cm},\ \Lseg{BP}=3\mathrm{cm},\ \Lseg{AC}=8\mathrm{cm},\ \Lseg{CQ}=4\mathrm{cm}$}{}\hfill
-\QQFigTextRowThreeCell[35mm]{fig/lesson_11_product_03}{$\Lseg{AP}=6\mathrm{cm},\ \Lseg{AB}=9\mathrm{cm},\ \Lseg{AQ}=8\mathrm{cm},\ \Lseg{QC}=4\mathrm{cm}$}{}
-\QQFigTextRowThreeEnd
+\QQFigRowThree[32mm]{fig/lesson_11_product_01}{}{fig/lesson_11_product_02}{}{fig/lesson_11_product_03}{}
+\QQFigRowThree[32mm]{fig/lesson_11_product_04}{}{fig/lesson_11_product_05}{}{fig/lesson_11_product_06}{}
 
 \AnswerColumnBreak
 \LessonQuestionBreak
 
-% 裏面は別途指示予定。ここから下は、指示があるまで生成しない。
+\Needspace{98mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB}$ 上に点 $\mathrm{P},\mathrm{Q}$、辺 $\Lseg{AC}$ 上に点 $\mathrm{R},\mathrm{S}$ をとる。図の5つの部分の面積はすべて等しく、$\Lseg{AB}=16\mathrm{cm},\ \Lseg{AC}=30\mathrm{cm}$ である。}{triangle_area_ratio_equal_zigzag}
+\FigProblemBlock{58mm}{fig/lesson_11_zigzag_equal}{}{
+\QQ{$\Lseg{AP}:\Lseg{PQ}$ を求めなさい。}{}
+\QQ{$\Lseg{AQ}:\Lseg{QB}$ を求めなさい。}{}
+\QQ{$\Lseg{AP}:\Lseg{PQ}:\Lseg{QB}$ を求めなさい。}{}
+\QQ{$\Lseg{AR}:\Lseg{RS}:\Lseg{SC}$ を求めなさい。}{}
+\QQ{6つの線分 $\Lseg{AP},\Lseg{PQ},\Lseg{QB},\Lseg{AR},\Lseg{RS},\Lseg{SC}$ の長さをそれぞれ求めなさい。}{}
+}
+
+\Needspace{98mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB}$ 上に点 $\mathrm{P}$、辺 $\Lseg{AC}$ 上に点 $\mathrm{Q},\mathrm{R}$ をとる。図の4つの部分の面積は、それぞれ図に示した通りである。}{triangle_area_ratio_unequal_zigzag}
+\FigProblemBlock{58mm}{fig/lesson_11_zigzag_areas}{}{
+\QQ{$\Tri{APR}$ と $\Tri{ABR}$ の面積をそれぞれ求めなさい。}{}
+\QQ{$\Lseg{AP}:\Lseg{PB}$ を求めなさい。}{}
+\QQ{$\Lseg{AQ}:\Lseg{QR}$ と $\Lseg{AR}:\Lseg{RC}$ をそれぞれ求めなさい。}{}
+\QQ{$\Lseg{AQ}:\Lseg{QR}:\Lseg{RC}$ を求めなさい。}{}
+\QQ{$\Lseg{AB}=24\mathrm{cm},\ \Lseg{AC}=42\mathrm{cm}$ のとき、$\Lseg{AP},\Lseg{PB},\Lseg{AQ},\Lseg{QR},\Lseg{RC}$ の長さを求めなさい。}{}
+}

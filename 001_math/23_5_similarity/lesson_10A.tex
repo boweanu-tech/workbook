@@ -3,54 +3,64 @@
 \MajorQuestionLesson{中点連結定理}
 \SetRowSpace{3mm}
 
-\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に点 $\mathrm{D},\mathrm{E}$ をとり、$\Lseg{AD}=6\mathrm{cm},\ \Lseg{DB}=9\mathrm{cm},\ \Lseg{AE}=4\mathrm{cm},\ \Lseg{EC}=6\mathrm{cm}$ とする。$\Lseg{DE}\Parallel\Lseg{BC}$ となることを示す。次の証明の空欄をうめなさい。}{converse_segment_ratio_proof}
-\QQSideFig{55mm}{fig/lesson_09_proof_fill}{
-%(1)と表示されているので、これをナシに。答えも大問に直接、ア・イ・・・が並ぶように。
+\Needspace{88mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ 上に点 $\mathrm{D},\mathrm{E}$ をとり、$\Lseg{AD}=6\mathrm{cm},\ \Lseg{DB}=9\mathrm{cm},\ \Lseg{AE}=4\mathrm{cm},\ \Lseg{EC}=6\mathrm{cm}$ とする。$\Lseg{DE}\Parallel\Lseg{BC}$ となることを示す次の証明の空欄をうめなさい。}{converse_segment_ratio_proof}
+\FigProblemBlock{55mm}{fig/lesson_09_proof_fill}{
+\WholeQuestion{
 \ProofHeading
-仮定より\\
-\hspace{10pt}$\Lseg{AB}=$\Blank{ア}$\mathrm{cm}$\\%こんな感じで、条件ごとに改行＋字下げしてください。%hspaceでその場しのぎしてますが、コマンドを１つ用意すれば楽だと思います。
-$\Lseg{AC}=$\Blank{イ}$\mathrm{cm}$\\
-であるから、\\
-$\Lseg{AD}:\Lseg{AB}=\Lseg{AE}:\Lseg{AC}=$\Blank{ウ}\quad\CondTag{1}\\
-また、共通な角であるから、\\
-$\Ang{DAE}=\Ang{BAC}$\quad\CondTag{2}\\
-\CondNo{1}、\CondNo{2}より、\Blank{エ}ので、\\
-$\Tri{ADE}\Similar\Tri{ABC}$\\
-したがって、$\Ang{ADE}=$\Blank{オ}であり、\\
-\Blank{カ}が等しいので、\\
-$\Lseg{DE}\Parallel\Lseg{BC}$}{}
+仮定より
+\ProofIndent{$\Lseg{AB}=$\Blank{ア}$\mathrm{cm}$}
+\ProofIndent{$\Lseg{AC}=$\Blank{イ}$\mathrm{cm}$}
+であるから、
+\ProofIndent{$\Lseg{AD}:\Lseg{AB}=\Lseg{AE}:\Lseg{AC}=$\Blank{ウ}\quad\CondTag{1}}
+また、共通な角であるから、
+\ProofIndent{$\Ang{DAE}=\Ang{BAC}$\quad\CondTag{2}}
+\CondNo{1}、\CondNo{2}より、\Blank{エ}ので、
+\ProofIndent{$\Tri{ADE}\Similar\Tri{ABC}$}
+したがって、$\Ang{ADE}=$\Blank{オ}であり、
+\ProofIndent{\Blank{カ}が等しいので、$\Lseg{DE}\Parallel\Lseg{BC}$}
+}{}
+}{}
 
-%上記のように、こっちも改行・字下げをお願い。
-\Needspace{82mm}
+\Needspace{92mm}
 \TypeQuestion{凸四角形 $\mathrm{ABCD}$ の辺 $\Lseg{AB},\Lseg{BC},\Lseg{CD},\Lseg{DA}$ の中点をそれぞれ $\mathrm{E},\mathrm{F},\mathrm{G},\mathrm{H}$ とする。$\Lseg{AC}=14\mathrm{cm},\ \Lseg{BD}=18\mathrm{cm}$ とする。次の証明の空欄をうめ、最後の問いに答えなさい。}{midpoint_theorem_quadrilateral_fill}
 \FigProblemBlock{55mm}{fig/lesson_09_quadrilateral}{
+\WholeQuestion{
 \ProofHeading
-\Text{$\Tri{ABC}$ で中点連結定理より、$\Lseg{EF}\Parallel\Lseg{AC}$、$\Lseg{EF}=$\Blank{ア}$\Lseg{AC}$\quad\CondTag{1}\par
-$\Tri{ADC}$ で中点連結定理より、$\Lseg{HG}\Parallel\Lseg{AC}$、$\Lseg{HG}=$\Blank{イ}$\Lseg{AC}$\quad\CondTag{2}\par
-\CondNo{1}、\CondNo{2}より、$\Lseg{EF}\Parallel\Lseg{HG}$ かつ $\Lseg{EF}=$\Blank{ウ}。したがって、四角形 $\mathrm{EFGH}$ は\Blank{エ}である。}
-\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
+$\Tri{ABC}$ で中点連結定理より、
+\ProofIndent{$\Lseg{EF}\Parallel\Lseg{AC}$}
+\ProofIndent{$\Lseg{EF}=$\Blank{ア}$\Lseg{AC}$\quad\CondTag{1}}
+$\Tri{ADC}$ で中点連結定理より、
+\ProofIndent{$\Lseg{HG}\Parallel\Lseg{AC}$}
+\ProofIndent{$\Lseg{HG}=$\Blank{イ}$\Lseg{AC}$\quad\CondTag{2}}
+\CondNo{1}、\CondNo{2}より、
+\ProofIndent{$\Lseg{EF}\Parallel\Lseg{HG}$ かつ $\Lseg{EF}=$\Blank{ウ}}
+したがって、四角形 $\mathrm{EFGH}$ は\Blank{エ}である。
+}{}
 }{
+\QQ{四角形 $\mathrm{EFGH}$ の周の長さを求めなさい。}{}
 }
 
 \AnswerColumnBreak
 \LessonQuestionBreak
 
-\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ をそれぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。次の問に答えなさい。}{converse_segment_ratio_write}
-\QQSideFig{42mm}{fig/lesson_09_proof_write}{$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ のとき、$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
-%BCの長さをあたえ、ADEの周の長さを求めさせる小問を追加
+\Needspace{72mm}
+\TypeQuestion{$\Tri{ABC}$ の辺 $\Lseg{AB},\Lseg{AC}$ を、それぞれ点 $\mathrm{B},\mathrm{C}$ の側に延長した直線上に点 $\mathrm{D},\mathrm{E}$ をとる。$\Lseg{AB}=8\mathrm{cm},\ \Lseg{BD}=4\mathrm{cm},\ \Lseg{AC}=10\mathrm{cm},\ \Lseg{CE}=5\mathrm{cm}$ とする。}{converse_segment_ratio_write}
+\QQSideFig{42mm}{fig/lesson_09_proof_write}{$\Lseg{BC}\Parallel\Lseg{DE}$ となることを証明しなさい。}{}
+\QQ{$\Lseg{BC}=12\mathrm{cm}$ のとき、$\Tri{ADE}$ の周の長さを求めなさい。}{}
 
+\Needspace{82mm}
 \TypeQuestion{凸四角形 $\mathrm{ABCD}$ で、辺 $\Lseg{AB},\Lseg{CD}$ の中点をそれぞれ $\mathrm{E},\mathrm{G}$、対角線 $\Lseg{AC},\Lseg{BD}$ の中点をそれぞれ $\mathrm{M},\mathrm{N}$ とする。}{midpoint_theorem_diagonal_midpoints}
 \FigProblemBlock{53mm}{fig/lesson_10_diagonal_midpoints}{
 \QQ{$\Lseg{EM}\Parallel\Lseg{BC}$、$\Lseg{EM}=\dfrac12\Lseg{BC}$ となることを証明しなさい。}{}
 \QQ{四角形 $\mathrm{EMGN}$ が平行四辺形であることを証明しなさい。}{}
 \QQ{$\Lseg{BC}=10\mathrm{cm},\ \Lseg{AD}=16\mathrm{cm}$ のとき、四角形 $\mathrm{EMGN}$ の周の長さを求めなさい。}{}
-}{
-}
+}{}
 
+\Needspace{82mm}
 \TypeQuestion{$\Lseg{AB}\Parallel\Lseg{CD}$ である台形 $\mathrm{ABCD}$ で、辺 $\Lseg{AD},\Lseg{BC}$ の中点をそれぞれ $\mathrm{E},\mathrm{F}$ とする。$\Lseg{AB}=12\mathrm{cm},\ \Lseg{CD}=20\mathrm{cm}$ とする。}{midpoint_theorem_trapezoid}
 \FigProblemBlock{50mm}{fig/lesson_09_trapezoid}{
 \QQ{$\Lseg{EF}\Parallel\Lseg{AB}$ となることを、中点連結定理を用いて証明しなさい。}{}
 \QQ{$\Lseg{EF}=\dfrac{\Lseg{AB}+\Lseg{CD}}{2}$ となることを証明しなさい。}{}
 \QQ{線分 $\Lseg{EF}$ の長さを求めなさい。}{}
-}{
-}
+}{}

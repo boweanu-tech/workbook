@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-4 -4 64 50">
-<!-- PはAをはさんでBと反対側、QはAC上。片側延長を含む配置。 -->
-<defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.shade{fill:#ddd;stroke:none}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}</style></defs>
-<polygon class="shade" points="25,20 38.3,5.3 45,34.7"/>
-<path class="main" d="M25 20 L5 42 L55 42 Z"/><line class="main" x1="38.3" y1="5.3" x2="25" y2="20"/><line class="main" x1="38.3" y1="5.3" x2="45" y2="34.7"/>
-<g class="label" text-anchor="middle" dominant-baseline="central"><text x="22" y="18">A</text><text x="2" y="44">B</text><text x="58" y="44">C</text><text x="40" y="2">P</text><text x="48" y="34">Q</text></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="44mm" viewBox="-5 -5 67 53"><defs><style>.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.dim{stroke:#000;stroke-width:.3;fill:none;stroke-dasharray:1 1}.shade{fill:#ddd}.label,.num{font-family:"CMU Serif","Computer Modern Serif",serif;fill:#000}.label{font-size:4.1px}.num{font-size:3.7px}</style></defs>
+<polygon class="shade" points="25,20 38.3,5.3 45,34.7"/><path class="main" d="M25 20 L5 42 L55 42 Z M38.3 5.3 L25 20 M38.3 5.3 L45 34.7"/>
+<path class="dim" d="M39 3 Q32 10 26 17 M23 19 Q14 29 5 39 M28 18 Q37 25 44 33 M46 35 Q50 38 55 40"/>
+<g class="num" text-anchor="middle"><text x="33" y="10">6</text><text x="14" y="30">9</text><text x="37" y="25">8</text><text x="51" y="38">4</text></g>
+<g class="label" text-anchor="middle"><text x="22" y="18">A</text><text x="2" y="45">B</text><text x="59" y="45">C</text></g></svg>
