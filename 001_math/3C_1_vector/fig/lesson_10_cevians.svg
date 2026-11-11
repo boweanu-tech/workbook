@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="56mm" height="42mm" viewBox="0 0 56 42">
+  <defs><style><![CDATA[.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.point{fill:#000}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}]]></style></defs>
+  <path class="main" d="M28 4 L5 36 L51 36 Z"/><path class="thin" d="M28 4 L35.667 36 M5 36 L37.2 16.8 M51 36 L22.25 12"/>
+  <g class="point"><circle cx="28" cy="4" r=".45"/><circle cx="5" cy="36" r=".45"/><circle cx="51" cy="36" r=".45"/><circle cx="35.667" cy="36" r=".45"/><circle cx="37.2" cy="16.8" r=".45"/><circle cx="22.25" cy="12" r=".45"/><circle cx="31.833" cy="20" r=".55"/></g>
+  <g class="label"><text x="26" y="3.5">A</text><text x="1" y="40.5">B</text><text x="51.5" y="40.5">C</text><text x="34" y="40.5">D</text><text x="38.5" y="16.5">E</text><text x="18.5" y="11">F</text><text x="33" y="21">P</text></g>
+</svg>

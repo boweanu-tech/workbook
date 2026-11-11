@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="58mm" height="42mm" viewBox="0 0 58 42">
+  <defs><style><![CDATA[.main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000;stroke-width:.32;fill:none}.dash{stroke:#000;stroke-width:.32;fill:none;stroke-dasharray:1.2 1.4}.point{fill:#000}.label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}]]></style></defs>
+  <path class="main" d="M6 35 L44 35 L52 7 L14 7 Z"/><path class="thin" d="M14 7 L31.333 35 M44 35 L11.333 16.333"/><path class="dash" d="M6 35 L52 7"/>
+  <g class="point"><circle cx="6" cy="35" r=".45"/><circle cx="44" cy="35" r=".45"/><circle cx="52" cy="7" r=".45"/><circle cx="14" cy="7" r=".45"/><circle cx="31.333" cy="35" r=".45"/><circle cx="11.333" cy="16.333" r=".45"/><circle cx="24.4" cy="23.8" r=".55"/></g>
+  <g class="label"><text x="2" y="39.5">A</text><text x="44.5" y="39.5">B</text><text x="53" y="8">C</text><text x="10" y="5.5">D</text><text x="29.5" y="39.5">P</text><text x="7" y="16">Q</text><text x="25.5" y="23">R</text></g>
+</svg>
