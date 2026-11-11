@@ -1,23 +1,95 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="62mm" height="52mm" viewBox="-5 -5 68 53">
-  <defs>
-    <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="60mm"
+   height="45mm"
+   viewBox="-5 -5 65.806452 45.865385"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="lesson_11_trisected_zigzag.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0327123"
+     inkscape:cx="142.66652"
+     inkscape:cy="162.09869"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
       .main{stroke:#000;stroke-width:.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
       .shade{fill:#e3e3e3;stroke:none}
-      .label{font-family:"CMU Serif","Computer Modern Serif",serif;font-size:4.1px;fill:#000}
+      .label{font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,serif;font-size:4.1px;fill:#000}
     </style>
   </defs>
-  <polygon class="shade" points="3,40 7.25,30.5 16.75,40"/>
-  <polygon class="shade" points="15.75,11.5 16.75,40 44.25,40"/>
-  <polygon class="shade" points="20,2 44.25,40 58,40"/>
-  <path class="main" d="M3 40 L20 2 L58 40 Z M7.25 30.5 L16.75 40 L15.75 11.5 L44.25 40 L20 2"/>
-  <g class="label" text-anchor="middle">
-    <text x="0" y="43">A</text>
-    <text x="20" y="0">B</text>
-    <text x="62" y="43">C</text>
-    <text x="5.2" y="30">P</text>
-    <text x="13.5" y="10.5">Q</text>
-    <text x="16.75" y="44">R</text>
-    <text x="44.25" y="44">S</text>
+  <polygon
+     class="shade"
+     points="3,40 7.25,30.5 16.75,40 "
+     id="polygon6"
+     transform="translate(-2.7179994,-4.717742)" />
+  <polygon
+     class="shade"
+     points="15.75,11.5 16.75,40 44.25,40 "
+     id="polygon8"
+     transform="translate(-2.7179994,-4.717742)" />
+  <polygon
+     class="shade"
+     points="20,2 44.25,40 58,40 "
+     id="polygon10"
+     transform="translate(-2.7179994,-4.717742)" />
+  <path
+     class="main"
+     d="m 0.28200063,35.282258 17.00000037,-38 38,38 z m 4.24999997,-9.5 9.5000004,9.5 -1,-28.5 28.5,28.5 -24.25,-38"
+     id="path12" />
+  <g
+     class="label"
+     text-anchor="middle"
+     id="g28"
+     transform="translate(-2.7179994,-4.717742)">
+    <text
+       x="0"
+       y="43"
+       id="text14">A</text>
+    <text
+       x="20.139692"
+       y="1.1150266"
+       id="text16">B</text>
+    <text
+       x="59.931107"
+       y="43.253731"
+       id="text18">C</text>
+    <text
+       x="5.1999998"
+       y="30"
+       id="text20">P</text>
+    <text
+       x="13.5"
+       y="10.5"
+       id="text22">Q</text>
+    <text
+       x="16.75"
+       y="44"
+       id="text24">R</text>
+    <text
+       x="44.25"
+       y="44"
+       id="text26">S</text>
   </g>
 </svg>

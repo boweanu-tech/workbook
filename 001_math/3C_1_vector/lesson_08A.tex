@@ -1,0 +1,60 @@
+% theme: position_vectors_intersections_and_area_ratios
+% 叩き台。交点の位置ベクトル、係数付きベクトル条件、面積比を扱う。
+\MajorQuestionLesson{位置ベクトルと交点・面積比}
+\SetRowSpace{4mm}
+
+% figure: 三角形 ABC、P は AB 上、Q は AC 上、R=CP∩BQ
+\TypeQuestion{$\Tri{ABC}$ で $\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とする。辺 $\mathrm{AB}$ を $2:1$ に内分する点を $\mathrm{P}$、辺 $\mathrm{AC}$ を $1:2$ に内分する点を $\mathrm{Q}$ とし、線分 $\mathrm{CP}$ と線分 $\mathrm{BQ}$ の交点を $\mathrm{R}$ とする。}{intersection_of_cevians_basic}
+\QQ{$\overrightarrow{\mathrm{AP}},\overrightarrow{\mathrm{AQ}}$ を $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{R}$ が線分 $\mathrm{CP}$ 上にあることを用いて、$\overrightarrow{\mathrm{AR}}$ を実数 $s$ と $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{R}$ が線分 $\mathrm{BQ}$ 上にあることを用いて、$\overrightarrow{\mathrm{AR}}$ を実数 $t$ と $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{実数 $s,t$ と $\overrightarrow{\mathrm{AR}}$ を求めなさい。}{}
+\QQ{$\Lseg{CR}:\Lseg{RP}$ と $\Lseg{BR}:\Lseg{RQ}$ をそれぞれ求めなさい。}{}
+
+% figure: Q は AC の C 側の延長上、R=AP∩BQ
+\TypeQuestion{$\Tri{ABC}$ で $\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とする。辺 $\mathrm{BC}$ を $1:2$ に内分する点を $\mathrm{P}$、線分 $\mathrm{AC}$ を $3:1$ に外分する点を $\mathrm{Q}$ とし、直線 $\mathrm{AP}$ と直線 $\mathrm{BQ}$ の交点を $\mathrm{R}$ とする。}{intersection_with_external_division_point}
+\QQ{$\overrightarrow{\mathrm{AP}},\overrightarrow{\mathrm{AQ}}$ を $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{R}$ が直線 $\mathrm{AP}$ 上にあることを用いて、$\overrightarrow{\mathrm{AR}}$ を実数 $s$ と $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{R}$ が直線 $\mathrm{BQ}$ 上にあることを用いて、$\overrightarrow{\mathrm{AR}}$ を実数 $t$ と $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{実数 $s,t$ と $\overrightarrow{\mathrm{AR}}$ を求めなさい。}{}
+\QQ{点 $\mathrm{A},\mathrm{P},\mathrm{R}$ と点 $\mathrm{B},\mathrm{R},\mathrm{Q}$ の位置関係をそれぞれ答え、$\Lseg{AP}:\Lseg{PR}$ と $\Lseg{BR}:\Lseg{RQ}$ を求めなさい。}{}
+
+% figure: 平行四辺形 ABCD、E は BC 上、F は CD 上、P=AE∩BF
+\TypeQuestion{平行四辺形 $\mathrm{ABCD}$ で、$\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AD}}=\vec{b}$ とする。辺 $\mathrm{BC}$ を $2:1$ に内分する点を $\mathrm{E}$、辺 $\mathrm{CD}$ を $1:2$ に内分する点を $\mathrm{F}$ とし、線分 $\mathrm{AE}$ と線分 $\mathrm{BF}$ の交点を $\mathrm{P}$ とする。}{intersection_in_parallelogram}
+\QQ{$\overrightarrow{\mathrm{AE}},\overrightarrow{\mathrm{AF}}$ を $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{P}$ が線分 $\mathrm{AE}$ 上にあることと、線分 $\mathrm{BF}$ 上にあることから、$\overrightarrow{\mathrm{AP}}$ を2通りに表しなさい。}{}
+\QQ{$\overrightarrow{\mathrm{AP}}$ を $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{$\Lseg{AP}:\Lseg{PE}$ と $\Lseg{BP}:\Lseg{PF}$ を求めなさい。}{}
+
+\TypeQuestion{$\vec{a},\vec{b}$ は一次独立なベクトルである。4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ の位置ベクトルが $\vec{a},3\vec{b},2\vec{a}+\vec{b},-\vec{a}+2\vec{b}$ であるとき、直線 $\mathrm{AB}$ と直線 $\mathrm{CD}$ の交点を $\mathrm{P}$ とする。}{intersection_from_two_parameter_forms}
+\QQ{点 $\mathrm{P}$ が直線 $\mathrm{AB}$ 上にあることを用いて、$\vec{p}$ を実数 $s$ と $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{P}$ が直線 $\mathrm{CD}$ 上にあることを用いて、$\vec{p}$ を実数 $t$ と $\vec{a},\vec{b}$ を用いて表しなさい。}{}
+\QQ{実数 $s,t$ と $\vec{p}$ を求めなさい。}{}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB},\mathrm{CD}$ の内部にあるか、延長上にあるかをそれぞれ答えなさい。}{}
+
+\LessonPageBreak
+\SetRowSpace{4mm}
+
+% figure: P は三角形 ABC の内部
+\TypeQuestion{$\Tri{ABC}$ の面積は $72$ であり、点 $\mathrm{P}$ は $\overrightarrow{\mathrm{PA}}+2\overrightarrow{\mathrm{PB}}+3\overrightarrow{\mathrm{PC}}=\vec{0}$ を満たす。点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。}{weighted_point_inside_triangle}
+\QQ{点 $\mathrm{P}$ の位置ベクトル $\vec{p}$ を $\vec{a},\vec{b},\vec{c}$ を用いて表しなさい。}{}
+\QQ{面積比 $\Tri{PBC}:\Tri{PCA}:\Tri{PAB}$ を求めなさい。}{}
+\QQ{$\Tri{PBC},\Tri{PCA},\Tri{PAB}$ の面積をそれぞれ求めなさい。}{}
+
+% figure: P は辺 AC に関して B と反対側。必要なら生徒に概形を描かせる。
+\TypeQuestion{$\Tri{ABC}$ の面積は $60$ であり、点 $\mathrm{P}$ は $2\overrightarrow{\mathrm{PA}}-\overrightarrow{\mathrm{PB}}+3\overrightarrow{\mathrm{PC}}=\vec{0}$ を満たす。点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。}{weighted_point_outside_triangle}
+\QQ{点 $\mathrm{P}$ の位置ベクトル $\vec{p}$ を $\vec{a},\vec{b},\vec{c}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{P}$ は直線 $\mathrm{AB},\mathrm{BC},\mathrm{CA}$ のそれぞれについて、三角形の内部と同じ側、反対側のどちらにあるかを答え、点 $\mathrm{P}$ の位置を図示しなさい。}{}
+\QQ{$\Tri{PBC},\Tri{PCA},\Tri{PAB}$ の面積をそれぞれ求めなさい。ただし、面積は正の値で答えなさい。}{}
+
+\TypeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。面積と点 $\mathrm{P}$ の位置に関する条件から、点 $\mathrm{P}$ の位置ベクトルを表しなさい。}{position_vector_from_area_ratios}
+\QQ{$\Tri{ABC}$ の内部に点 $\mathrm{P}$ があり、$\Tri{PBC}:\Tri{PCA}:\Tri{PAB}=3:5:7$ である。}{}
+\QQ{$\Tri{ABC}$ の内部に点 $\mathrm{P}$ があり、$\Tri{PAB}$ の面積は $\Tri{ABC}$ の面積の $\dfrac25$、$\Tri{PBC}$ の面積は $\Tri{ABC}$ の面積の $\dfrac14$ である。}{}
+\QQ{点 $\mathrm{P}$ は直線 $\mathrm{AC}$ に関して点 $\mathrm{B}$ と反対側にあり、他の2辺の直線については $\Tri{ABC}$ の内部と同じ側にある。また、$\Tri{PBC}:\Tri{PCA}:\Tri{PAB}=2:1:3$ である。}{}
+\QQ{点 $\mathrm{P}$ は直線 $\mathrm{BC}$ に関して点 $\mathrm{A}$ と反対側にあり、他の2辺の直線については $\Tri{ABC}$ の内部と同じ側にある。また、$\Tri{PBC}:\Tri{PCA}:\Tri{PAB}=1:4:2$ である。}{}
+
+% figure: 座標平面上で P は三角形 ABC の外部
+\TypeQuestion{$\mathrm{A}(0,0),\mathrm{B}(4,0),\mathrm{C}(0,6)$ とし、点 $\mathrm{P}$ は $-\overrightarrow{\mathrm{PA}}+3\overrightarrow{\mathrm{PB}}+2\overrightarrow{\mathrm{PC}}=\vec{0}$ を満たす。}{weighted_point_area_with_components}
+\QQ{点 $\mathrm{P}$ の座標を求めなさい。}{}
+\QQ{点 $\mathrm{P}$ の位置を座標平面上に図示しなさい。}{}
+\QQ{$\Tri{PBC},\Tri{PCA},\Tri{PAB}$ の面積を、成分を用いて求めなさい。}{}

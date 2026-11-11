@@ -1,0 +1,61 @@
+% theme: triangle_centers_with_vectors
+% 叩き台。重心・外心・垂心を標準、内心を誘導付き発展として扱う。
+\MajorQuestionLesson{重心・外心・垂心}
+\SetRowSpace{4mm}
+
+\TypeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$、$\Tri{ABC}$ の重心を $\mathrm{G}$ とする。次の問いに答えなさい。}{centroid_position_vector_basics}
+\QQ{$\vec{g}$ を $\vec{a},\vec{b},\vec{c}$ を用いて表しなさい。}{}
+\QQ{辺 $\mathrm{BC}$ の中点を $\mathrm{M}$ とする。$\overrightarrow{\mathrm{AG}}$ を $\overrightarrow{\mathrm{AM}}$ を用いて表しなさい。}{}
+\QQ{$\vec{a}=2\vec{p}-\vec{q}$、$\vec{b}=-\vec{p}+3\vec{q}$、$\vec{c}=5\vec{p}+\vec{q}$ のとき、$\vec{g}$ を $\vec{p},\vec{q}$ を用いて表しなさい。}{}
+\QQ{$\vec{a},\vec{b},\vec{g}$ が与えられているとき、$\vec{c}$ をこれらのベクトルで表しなさい。}{}
+
+\TypeQuestion{次の3点を頂点とする三角形の重心の座標、または未知の頂点の座標を求めなさい。}{centroid_coordinates}
+\QQRow{$\mathrm{A}(2,-1),\ \mathrm{B}(-4,5),\ \mathrm{C}(8,2)$ の重心}{}{$\mathrm{A}(-3,4),\ \mathrm{B}(6,-2),\ \mathrm{C}(0,7)$ の重心}{}
+\QQRow{$\mathrm{A}(1,3),\ \mathrm{B}(5,-2)$、重心 $\mathrm{G}(2,4)$ のとき点 $\mathrm{C}$}{}{$\mathrm{A}(-2,1),\ \mathrm{C}(4,6)$、重心 $\mathrm{G}(3,2)$ のとき点 $\mathrm{B}$}{}
+
+% figure: 三角形 ABC の3本の中線と交点 G
+\TypeQuestion{$\Tri{ABC}$ の辺 $\mathrm{BC},\mathrm{CA},\mathrm{AB}$ の中点をそれぞれ $\mathrm{D},\mathrm{E},\mathrm{F}$ とする。中線 $\mathrm{AD}$ と中線 $\mathrm{BE}$ の交点を $\mathrm{G}$ とする。点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。}{centroid_from_intersection_of_medians}
+\QQ{$\vec{d},\vec{e},\vec{f}$ を $\vec{a},\vec{b},\vec{c}$ を用いて表しなさい。}{}
+\QQ{点 $\mathrm{G}$ が直線 $\mathrm{AD}$ 上にあることと直線 $\mathrm{BE}$ 上にあることを用いて、$\vec{g}$ を求めなさい。}{}
+\QQ{点 $\mathrm{G}$ が中線 $\mathrm{CF}$ 上にもあることを示しなさい。}{}
+\QQ{3本の中線を点 $\mathrm{G}$ が分ける比を求めなさい。}{}
+
+\TypeQuestion{次の3点を頂点とする三角形の外心の座標を、各頂点までの距離が等しいことを用いて求めなさい。}{circumcenter_from_equal_distances}
+\QQ{$\mathrm{A}(0,0),\ \mathrm{B}(4,0),\ \mathrm{C}(1,3)$}{}
+\QQ{$\mathrm{A}(-2,1),\ \mathrm{B}(4,1),\ \mathrm{C}(0,5)$}{}
+\QQ{$\mathrm{A}(3,4),\ \mathrm{B}(-3,4),\ \mathrm{C}(-4,-3)$}{}
+\QQ{$\mathrm{A}(6,2),\ \mathrm{B}(5,-5),\ \mathrm{C}(-1,-5)$}{}
+
+\LessonPageBreak
+\SetRowSpace{4mm}
+
+\TypeQuestion{次の3点を頂点とする三角形の垂心の座標を、垂直条件と内積を用いて求めなさい。}{orthocenter_from_coordinates}
+\QQ{$\mathrm{A}(0,0),\ \mathrm{B}(6,0),\ \mathrm{C}(1,5)$}{}
+\QQ{$\mathrm{A}(-1,0),\ \mathrm{B}(5,0),\ \mathrm{C}(1,4)$}{}
+\QQ{$\mathrm{A}(4,2),\ \mathrm{B}(-2,2),\ \mathrm{C}(5,-5)$}{}
+\QQ{$\mathrm{A}(5,5),\ \mathrm{B}(-1,5),\ \mathrm{C}(-2,-2)$}{}
+
+% figure: A を原点とし、H は三角形 ABC の垂心
+\TypeQuestion{$\Tri{ABC}$ で $\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とし、垂心を $\mathrm{H}$ とする。$\overrightarrow{\mathrm{AH}}=x\vec{a}+y\vec{b}$ とおいて、$x,y$ と $\overrightarrow{\mathrm{AH}}$ を求めなさい。}{orthocenter_from_dot_product_data}
+\QQ{$|\vec{a}|^2=9$、$|\vec{b}|^2=12$、$\vec{a}\cdot\vec{b}=6$}{}
+\QQ{$|\vec{a}|^2=9$、$|\vec{b}|^2=8$、$\vec{a}\cdot\vec{b}=6$}{}
+\QQ{$|\vec{a}|^2=16$、$|\vec{b}|^2=12$、$\vec{a}\cdot\vec{b}=8$}{}
+
+% figure: O は外心、H は a+b+c で定める点
+\TypeQuestion{正三角形ではない $\Tri{ABC}$ の外心を原点 $\mathrm{O}$ とし、$\overrightarrow{\mathrm{OA}}=\vec{a}$、$\overrightarrow{\mathrm{OB}}=\vec{b}$、$\overrightarrow{\mathrm{OC}}=\vec{c}$ とする。$\overrightarrow{\mathrm{OH}}=\vec{a}+\vec{b}+\vec{c}$ となる点 $\mathrm{H}$ をとる。}{orthocenter_with_circumcenter_origin}
+\QQ{$|\vec{a}|=|\vec{b}|=|\vec{c}|$ であることを用いて、$\overrightarrow{\mathrm{AH}}\perp\overrightarrow{\mathrm{BC}}$ を示しなさい。}{}
+\QQ{$\overrightarrow{\mathrm{BH}}\perp\overrightarrow{\mathrm{CA}}$、$\overrightarrow{\mathrm{CH}}\perp\overrightarrow{\mathrm{AB}}$ を示し、点 $\mathrm{H}$ が $\Tri{ABC}$ の垂心であることを説明しなさい。}{}
+\QQ{$\Tri{ABC}$ の重心を $\mathrm{G}$ とするとき、$\overrightarrow{\mathrm{OG}}$ を $\overrightarrow{\mathrm{OH}}$ を用いて表しなさい。}{}
+\QQ{3点 $\mathrm{O},\mathrm{G},\mathrm{H}$ の位置関係と、$\Lseg{OG}:\Lseg{GH}$ を答えなさい。}{}
+
+% figure: 直角三角形 ABC、I は内心、D は A の角の二等分線と BC の交点
+\TypeQuestion{$\Tri{ABC}$ の内心を $\mathrm{I}$ とする。$\Lseg{BC}=a,\ \Lseg{CA}=b,\ \Lseg{AB}=c$ とし、点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{p},\vec{q},\vec{r}$ とする。}{incenter_position_vector_guided}
+\QQ{点 $\mathrm{I}$ から3辺に下ろした垂線の長さが等しいことを用いて、面積比 $\Tri{IBC}:\Tri{ICA}:\Tri{IAB}$ を $a,b,c$ で表しなさい。}{}
+\QQ{点 $\mathrm{I}$ の位置ベクトルを $a,b,c,\vec{p},\vec{q},\vec{r}$ を用いて表しなさい。}{}
+\QQ{$\mathrm{A}(0,0),\ \mathrm{B}(6,0),\ \mathrm{C}(0,8)$ のとき、点 $\mathrm{I}$ の座標を求めなさい。}{}
+\QQ{頂点 $\mathrm{A}$ の内角の二等分線と辺 $\mathrm{BC}$ の交点を $\mathrm{D}$ とする。角の二等分線の定理から $\vec{d}$ を求め、点 $\mathrm{A},\mathrm{I},\mathrm{D}$ が同一直線上にあることを確かめなさい。}{}
+
+\TypeQuestion{$\mathrm{A}(0,0),\mathrm{B}(6,0),\mathrm{C}(2,4)$ とする。$\Tri{ABC}$ の重心を $\mathrm{G}$、外心を $\mathrm{O}$、垂心を $\mathrm{H}$ とする。}{triangle_centers_combined}
+\QQ{点 $\mathrm{G},\mathrm{O},\mathrm{H}$ の座標をそれぞれ求めなさい。}{}
+\QQ{3点 $\mathrm{O},\mathrm{G},\mathrm{H}$ が同一直線上にあることを確かめなさい。}{}
+\QQ{$\Lseg{OG}:\Lseg{GH}$ を求めなさい。}{}
