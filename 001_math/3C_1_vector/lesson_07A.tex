@@ -17,7 +17,7 @@
 % figure: 三角形 ABC と、各辺または延長上の内分点・外分点
 \TypeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。このとき以下の$\overrightarrow{\mathrm{PQ}}$を $\vec{a},\vec{b},\vec{c}$ で表しなさい。}{vectors_between_division_points}
 \QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $2:1$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{AC}$ を $1:2$ に内分する。}{$\dfrac{\vec{a}-2\vec{b}+\vec{c}}{3}$}
-\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $3:1$ に外分し、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ の中点である。}{$\dfrac{\vec{a}-2\vec{b}+\vec{c}}{2}$}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $4:1$ に外分し、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ の中点である。}{$\dfrac{2\vec{a}-5\vec{b}+3\vec{c}}{6}$}
 \QQ{点 $\mathrm{P}$ は線分 $\mathrm{BC}$ を $3:2$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{CA}$ を $4:1$ に外分する。}{$\dfrac{20\vec{a}-6\vec{b}-14\vec{c}}{15}$}
 \QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ の中点であり、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ を $2:3$ に外分する。}{$\dfrac{-\vec{a}+5\vec{b}-4\vec{c}}{2}$}
 \QQ{点 $\mathrm{P}$ は線分 $\mathrm{CA}$ を $5:2$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{AB}$ を $2:5$ に外分する。}{$\dfrac{20\vec{a}-14\vec{b}-6\vec{c}}{21}$}
@@ -32,15 +32,15 @@
 
 \TypeQuestion{$\Tri{ABC}$ において $\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とし、$\vec{a},\vec{b}$ は一次独立である。指定された2直線が平行になるように、実数 $k$ を求めなさい。}{parallel_condition_position_vectors}
 \QQ{$\overrightarrow{\mathrm{AP}}=\dfrac25\vec{a},\ \overrightarrow{\mathrm{AQ}}=k\vec{b}$ のとき、$\Lseg{PQ}\Parallel\Lseg{BC}$。}{$k=\dfrac25$}
-\QQ{$\overrightarrow{\mathrm{AR}}=\dfrac13\vec{a}+\dfrac25\vec{b},\ \overrightarrow{\mathrm{AS}}=k\vec{a}-\dfrac15\vec{b}$ のとき、$\Lseg{RS}\Parallel\Lseg{BC}$。}{$k=\dfrac{14}{15}$}
 \QQ{$\overrightarrow{\mathrm{AT}}=k\vec{a}+\dfrac12\vec{b},\ \overrightarrow{\mathrm{AU}}=-\dfrac14\vec{a}+2\vec{b}$ のとき、$\Lseg{TU}\Parallel\Lseg{AC}$。}{$k=-\dfrac14$}
 \QQ{$\overrightarrow{\mathrm{AV}}=\dfrac23\vec{a}-\vec{b},\ \overrightarrow{\mathrm{AW}}=2\vec{a}+k\vec{b}$ のとき、$\Lseg{VW}\Parallel\Lseg{AB}$。}{$k=-1$}
+\QQ{$\overrightarrow{\mathrm{AR}}=\dfrac13\vec{a}+\dfrac25\vec{b},\ \overrightarrow{\mathrm{AS}}=k\vec{a}-\dfrac15\vec{b}$ のとき、$\Lseg{RS}\Parallel\Lseg{BC}$。}{$k=\dfrac{14}{15}$}
 
 
 \TypeQuestion{次の点が同一直線上にある、または指定された2直線が平行になるように、実数 $k$ を求めなさい。}{collinear_parallel_condition_components}
 \QQRow{$\mathrm{A}(1,2),\ \mathrm{B}(5,-1),\ \mathrm{P}(k,5)$ が同一直線上}{$k=-3$}{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{P}(1,k)$ が同一直線上}{$k=1$}
-\QQRow{$\mathrm{A}(2,-3),\ \mathrm{B}(-1,6),\ \mathrm{P}(k,0)$ が同一直線上}{$k=1$}{$\mathrm{A}(-4,-1),\ \mathrm{B}(2,5),\ \mathrm{P}(3,k)$ が同一直線上}{$k=6$}
-\QQRow{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{C}(1,k),\ \mathrm{D}(7,2)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{$k=6$}{$\mathrm{A}(3,1),\ \mathrm{B}(-1,7),\ \mathrm{C}(k,-2),\ \mathrm{D}(5,4)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{$k=9$}
+\QQRow{$\mathrm{A}(2,-3),\ \mathrm{B}(-1,6),\ \mathrm{P}(k,3)$ が同一直線上}{$k=0$}{$\mathrm{A}(-4,-1),\ \mathrm{B}(2,5),\ \mathrm{P}(3,k)$ が同一直線上}{$k=6$}
+\QQRow{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{C}(1,k),\ \mathrm{D}(7,1)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{$k=5$}{$\mathrm{A}(3,1),\ \mathrm{B}(-1,7),\ \mathrm{C}(k,-2),\ \mathrm{D}(5,4)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{$k=9$}
 
 \TypeQuestion{四角形 $\mathrm{ABCD}$ が平行四辺形となるように、点 $\mathrm{D}$ の位置ベクトルまたは座標を求めなさい。}{parallelogram_fourth_vertex}
 \QQRow{$\overrightarrow{\mathrm{OA}}=2\vec{p}-\vec{q},\ \overrightarrow{\mathrm{OB}}=\vec{p}+3\vec{q},\ \overrightarrow{\mathrm{OC}}=-\vec{p}+2\vec{q}$}{$\overrightarrow{\mathrm{OD}}=-2\vec{q}$}{$\overrightarrow{\mathrm{OA}}=-2\vec{p}+\vec{q},\ \overrightarrow{\mathrm{OB}}=3\vec{p}-\vec{q},\ \overrightarrow{\mathrm{OC}}=4\vec{p}+2\vec{q}$}{$\overrightarrow{\mathrm{OD}}=-\vec{p}+4\vec{q}$}
