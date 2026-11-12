@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 66">
+<style>
+.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
+.thick{fill:none;stroke:#000;stroke-width:1.25;stroke-linecap:round}
+.dash{fill:none;stroke:#000;stroke-width:.55;stroke-dasharray:2.2 1.8}
+.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}
+.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}
+.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.3px}
+</style><circle class="main" cx="45" cy="33" r="27"/><line class="thick" x1="30" y1="7" x2="60" y2="59"/><line class="main" x1="30" y1="7" x2="75" y2="22"/><line class="main" x1="60" y1="59" x2="75" y2="22"/><text class="small" x="34" y="15">48°</text><text class="math" x="58" y="50">x</text><text class="small" x="71" y="30">90°</text><circle class="point" cx="30" cy="7" r="1"/><circle class="point" cx="60" cy="59" r="1"/><circle class="point" cx="75" cy="22" r="1"/></svg>
