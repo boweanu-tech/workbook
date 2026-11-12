@@ -1,47 +1,47 @@
 % theme: position_vectors_division_and_parallel_conditions
-% 叩き台。内分・外分の基本操作から、共線・平行条件までを扱う。
+% 解答生成済み。内分・外分の基本操作から、共線・平行条件までを扱う。
 \MajorQuestionLesson{位置ベクトルと内分・外分・平行条件}
 \SetRowSpace{4mm}
 
 \TypeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。次のベクトルを表しなさい。}{position_vector_basics}
-\QQRow{$\overrightarrow{\mathrm{AB}}$}{}{$\overrightarrow{\mathrm{CA}}$}{}
-\QQRow{線分 $\mathrm{AB}$ の中点を $\mathrm{M}$ とするとき、$\overrightarrow{\mathrm{OM}}$}{}{点 $\mathrm{B}$ に関して点 $\mathrm{C}$ と対称な点を $\mathrm{P}$ とするとき、$\overrightarrow{\mathrm{OP}}$}{}
-\QQRow{四角形 $\mathrm{ABCD}$ が平行四辺形であるとき、$\overrightarrow{\mathrm{OD}}$}{}{線分 $\mathrm{AB}$ の中点を $\mathrm{M}$、線分 $\mathrm{BC}$ の中点を $\mathrm{N}$ とするとき、$\overrightarrow{\mathrm{MN}}$}{}
+\QQRow{$\overrightarrow{\mathrm{AB}}$}{$-\vec{a}+\vec{b}$}{$\overrightarrow{\mathrm{CA}}$}{$\vec{a}-\vec{c}$}
+\QQRow{線分 $\mathrm{AB}$ の中点を $\mathrm{M}$ とするとき、$\overrightarrow{\mathrm{OM}}$}{$\dfrac{\vec{a}+\vec{b}}{2}$}{点 $\mathrm{B}$ に関して点 $\mathrm{C}$ と対称な点を $\mathrm{P}$ とするとき、$\overrightarrow{\mathrm{OP}}$}{$2\vec{b}-\vec{c}$}
+\QQRow{四角形 $\mathrm{ABCD}$ が平行四辺形であるとき、$\overrightarrow{\mathrm{OD}}$}{$\vec{a}-\vec{b}+\vec{c}$}{線分 $\mathrm{AB}$ の中点を $\mathrm{M}$、線分 $\mathrm{BC}$ の中点を $\mathrm{N}$ とするとき、$\overrightarrow{\mathrm{MN}}$}{$\dfrac{-\vec{a}+\vec{c}}{2}$}
 
 \TypeQuestion{点 $\mathrm{A},\mathrm{B}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b}$ とする。次の点の位置ベクトルを表しなさい。}{internal_external_division_formula}
-\QQRow{線分 $\mathrm{AB}$ を $2:3$ に内分する点 $\mathrm{P}$}{}{線分 $\mathrm{AB}$ を $5:2$ に内分する点 $\mathrm{Q}$}{}
-\QQRow{線分 $\mathrm{AB}$ を $4:1$ に外分する点 $\mathrm{R}$}{}{線分 $\mathrm{AB}$ を $2:5$ に外分する点 $\mathrm{S}$}{}
-\QQRow{線分 $\mathrm{AB}$ を $7:3$ に外分する点 $\mathrm{T}$}{}{線分 $\mathrm{AB}$ を $3:8$ に外分する点 $\mathrm{U}$}{}
-\QQRow{線分 $\mathrm{BA}$ を $3:1$ に内分する点 $\mathrm{V}$}{}{線分 $\mathrm{BA}$ を $2:5$ に外分する点 $\mathrm{W}$}{}
+\QQRow{線分 $\mathrm{AB}$ を $2:3$ に内分する点 $\mathrm{P}$}{$\dfrac{3\vec{a}+2\vec{b}}{5}$}{線分 $\mathrm{AB}$ を $5:2$ に内分する点 $\mathrm{Q}$}{$\dfrac{2\vec{a}+5\vec{b}}{7}$}
+\QQRow{線分 $\mathrm{AB}$ を $4:1$ に外分する点 $\mathrm{R}$}{$\dfrac{-\vec{a}+4\vec{b}}{3}$}{線分 $\mathrm{AB}$ を $2:5$ に外分する点 $\mathrm{S}$}{$\dfrac{5\vec{a}-2\vec{b}}{3}$}
+\QQRow{線分 $\mathrm{AB}$ を $7:3$ に外分する点 $\mathrm{T}$}{$\dfrac{-3\vec{a}+7\vec{b}}{4}$}{線分 $\mathrm{AB}$ を $3:8$ に外分する点 $\mathrm{U}$}{$\dfrac{8\vec{a}-3\vec{b}}{5}$}
+\QQRow{線分 $\mathrm{BA}$ を $3:1$ に内分する点 $\mathrm{V}$}{$\dfrac{3\vec{a}+\vec{b}}{4}$}{線分 $\mathrm{BA}$ を $2:5$ に外分する点 $\mathrm{W}$}{$\dfrac{-2\vec{a}+5\vec{b}}{3}$}
 
 % figure: 三角形 ABC と、各辺または延長上の内分点・外分点
 \TypeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ の位置ベクトルをそれぞれ $\vec{a},\vec{b},\vec{c}$ とする。このとき以下の$\overrightarrow{\mathrm{PQ}}$を $\vec{a},\vec{b},\vec{c}$ で表しなさい。}{vectors_between_division_points}
-\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $2:1$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{AC}$ を $1:2$ に内分する。}{}
-\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $3:1$ に外分し、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ の中点である。}{}
-\QQ{点 $\mathrm{P}$ は線分 $\mathrm{BC}$ を $3:2$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{CA}$ を $4:1$ に外分する。}{}
-\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ の中点であり、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ を $2:3$ に外分する。}{}
-\QQ{点 $\mathrm{P}$ は線分 $\mathrm{CA}$ を $5:2$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{AB}$ を $2:5$ に外分する。}{}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $2:1$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{AC}$ を $1:2$ に内分する。}{$\dfrac{\vec{a}-2\vec{b}+\vec{c}}{3}$}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ を $3:1$ に外分し、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ の中点である。}{$\dfrac{\vec{a}-2\vec{b}+\vec{c}}{2}$}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{BC}$ を $3:2$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{CA}$ を $4:1$ に外分する。}{$\dfrac{20\vec{a}-6\vec{b}-14\vec{c}}{15}$}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{AB}$ の中点であり、点 $\mathrm{Q}$ は線分 $\mathrm{BC}$ を $2:3$ に外分する。}{$\dfrac{-\vec{a}+5\vec{b}-4\vec{c}}{2}$}
+\QQ{点 $\mathrm{P}$ は線分 $\mathrm{CA}$ を $5:2$ に内分し、点 $\mathrm{Q}$ は線分 $\mathrm{AB}$ を $2:5$ に外分する。}{$\dfrac{20\vec{a}-14\vec{b}-6\vec{c}}{21}$}
 
 \LessonPageBreak
 \SetRowSpace{4mm}
 
 \TypeQuestion{$\vec{a},\vec{b}$ は一次独立なベクトルである。位置ベクトルが次のように表される3点 $\mathrm{A},\mathrm{P},\mathrm{Q}$ が同一直線上にあるように、実数 $k$ の値を求めなさい。}{collinear_condition_abstract}
-\QQRow{$\overrightarrow{\mathrm{OA}}=\vec{a},\ \overrightarrow{\mathrm{OP}}=2\vec{a}+\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+3\vec{b}$}{}{$\overrightarrow{\mathrm{OA}}=\vec{b},\ \overrightarrow{\mathrm{OP}}=2\vec{a}-\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+3\vec{b}$}{}
-\QQRow{$\overrightarrow{\mathrm{OA}}=-\vec{a}+\vec{b},\ \overrightarrow{\mathrm{OP}}=2\vec{a}+3\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+7\vec{b}$}{}{$\overrightarrow{\mathrm{OA}}=2\vec{a}-\vec{b},\ \overrightarrow{\mathrm{OP}}=-\vec{a}+2\vec{b},\ \overrightarrow{\mathrm{OQ}}=5\vec{a}+k\vec{b}$}{}
-\QQRow{$\overrightarrow{\mathrm{OA}}=-\vec{a}+2\vec{b},\ \overrightarrow{\mathrm{OP}}=2\vec{a}+4\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+3\vec{b}$}{}{$\overrightarrow{\mathrm{OA}}=2\vec{a}-\vec{b},\ \overrightarrow{\mathrm{OP}}=-2\vec{a}+2\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}-3\vec{b}$}{}
+\QQRow{$\overrightarrow{\mathrm{OA}}=\vec{a},\ \overrightarrow{\mathrm{OP}}=2\vec{a}+\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+3\vec{b}$}{$k=4$}{$\overrightarrow{\mathrm{OA}}=\vec{b},\ \overrightarrow{\mathrm{OP}}=2\vec{a}-\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+3\vec{b}$}{$k=-2$}
+\QQRow{$\overrightarrow{\mathrm{OA}}=-\vec{a}+\vec{b},\ \overrightarrow{\mathrm{OP}}=2\vec{a}+3\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+7\vec{b}$}{$k=8$}{$\overrightarrow{\mathrm{OA}}=2\vec{a}-\vec{b},\ \overrightarrow{\mathrm{OP}}=-\vec{a}+2\vec{b},\ \overrightarrow{\mathrm{OQ}}=5\vec{a}+k\vec{b}$}{$k=-4$}
+\QQRow{$\overrightarrow{\mathrm{OA}}=-\vec{a}+2\vec{b},\ \overrightarrow{\mathrm{OP}}=2\vec{a}+4\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}+3\vec{b}$}{$k=\dfrac12$}{$\overrightarrow{\mathrm{OA}}=2\vec{a}-\vec{b},\ \overrightarrow{\mathrm{OP}}=-2\vec{a}+2\vec{b},\ \overrightarrow{\mathrm{OQ}}=k\vec{a}-3\vec{b}$}{$k=\dfrac{14}{3}$}
 
 \TypeQuestion{$\Tri{ABC}$ において $\overrightarrow{\mathrm{AB}}=\vec{a}$、$\overrightarrow{\mathrm{AC}}=\vec{b}$ とし、$\vec{a},\vec{b}$ は一次独立である。指定された2直線が平行になるように、実数 $k$ を求めなさい。}{parallel_condition_position_vectors}
-\QQ{$\overrightarrow{\mathrm{AP}}=\dfrac25\vec{a},\ \overrightarrow{\mathrm{AQ}}=k\vec{b}$ のとき、$\Lseg{PQ}\Parallel\Lseg{BC}$。}{}
-\QQ{$\overrightarrow{\mathrm{AR}}=\dfrac13\vec{a}+\dfrac25\vec{b},\ \overrightarrow{\mathrm{AS}}=k\vec{a}-\dfrac15\vec{b}$ のとき、$\Lseg{RS}\Parallel\Lseg{BC}$。}{}
-\QQ{$\overrightarrow{\mathrm{AT}}=k\vec{a}+\dfrac12\vec{b},\ \overrightarrow{\mathrm{AU}}=-\dfrac14\vec{a}+2\vec{b}$ のとき、$\Lseg{TU}\Parallel\Lseg{AC}$。}{}
-\QQ{$\overrightarrow{\mathrm{AV}}=\dfrac23\vec{a}-\vec{b},\ \overrightarrow{\mathrm{AW}}=2\vec{a}+k\vec{b}$ のとき、$\Lseg{VW}\Parallel\Lseg{AB}$。}{}
+\QQ{$\overrightarrow{\mathrm{AP}}=\dfrac25\vec{a},\ \overrightarrow{\mathrm{AQ}}=k\vec{b}$ のとき、$\Lseg{PQ}\Parallel\Lseg{BC}$。}{$k=\dfrac25$}
+\QQ{$\overrightarrow{\mathrm{AR}}=\dfrac13\vec{a}+\dfrac25\vec{b},\ \overrightarrow{\mathrm{AS}}=k\vec{a}-\dfrac15\vec{b}$ のとき、$\Lseg{RS}\Parallel\Lseg{BC}$。}{$k=\dfrac{14}{15}$}
+\QQ{$\overrightarrow{\mathrm{AT}}=k\vec{a}+\dfrac12\vec{b},\ \overrightarrow{\mathrm{AU}}=-\dfrac14\vec{a}+2\vec{b}$ のとき、$\Lseg{TU}\Parallel\Lseg{AC}$。}{$k=-\dfrac14$}
+\QQ{$\overrightarrow{\mathrm{AV}}=\dfrac23\vec{a}-\vec{b},\ \overrightarrow{\mathrm{AW}}=2\vec{a}+k\vec{b}$ のとき、$\Lseg{VW}\Parallel\Lseg{AB}$。}{$k=-1$}
 
 
 \TypeQuestion{次の点が同一直線上にある、または指定された2直線が平行になるように、実数 $k$ を求めなさい。}{collinear_parallel_condition_components}
-\QQRow{$\mathrm{A}(1,2),\ \mathrm{B}(5,-1),\ \mathrm{P}(k,5)$ が同一直線上}{}{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{P}(1,k)$ が同一直線上}{}
-\QQRow{$\mathrm{A}(2,-3),\ \mathrm{B}(-1,6),\ \mathrm{P}(k,0)$ が同一直線上}{}{$\mathrm{A}(-4,-1),\ \mathrm{B}(2,5),\ \mathrm{P}(3,k)$ が同一直線上}{}
-\QQRow{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{C}(1,k),\ \mathrm{D}(7,2)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{}{$\mathrm{A}(3,1),\ \mathrm{B}(-1,7),\ \mathrm{C}(k,-2),\ \mathrm{D}(5,4)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{}
+\QQRow{$\mathrm{A}(1,2),\ \mathrm{B}(5,-1),\ \mathrm{P}(k,5)$ が同一直線上}{$k=-3$}{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{P}(1,k)$ が同一直線上}{$k=1$}
+\QQRow{$\mathrm{A}(2,-3),\ \mathrm{B}(-1,6),\ \mathrm{P}(k,0)$ が同一直線上}{$k=1$}{$\mathrm{A}(-4,-1),\ \mathrm{B}(2,5),\ \mathrm{P}(3,k)$ が同一直線上}{$k=6$}
+\QQRow{$\mathrm{A}(-2,3),\ \mathrm{B}(4,-1),\ \mathrm{C}(1,k),\ \mathrm{D}(7,2)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{$k=6$}{$\mathrm{A}(3,1),\ \mathrm{B}(-1,7),\ \mathrm{C}(k,-2),\ \mathrm{D}(5,4)$ で $\Lseg{AB}\Parallel\Lseg{CD}$}{$k=9$}
 
 \TypeQuestion{四角形 $\mathrm{ABCD}$ が平行四辺形となるように、点 $\mathrm{D}$ の位置ベクトルまたは座標を求めなさい。}{parallelogram_fourth_vertex}
-\QQRow{$\overrightarrow{\mathrm{OA}}=2\vec{p}-\vec{q},\ \overrightarrow{\mathrm{OB}}=\vec{p}+3\vec{q},\ \overrightarrow{\mathrm{OC}}=-\vec{p}+2\vec{q}$}{}{$\overrightarrow{\mathrm{OA}}=-2\vec{p}+\vec{q},\ \overrightarrow{\mathrm{OB}}=3\vec{p}-\vec{q},\ \overrightarrow{\mathrm{OC}}=4\vec{p}+2\vec{q}$}{}
-\QQRow{$\mathrm{A}(1,-2),\ \mathrm{B}(5,1),\ \mathrm{C}(2,6)$}{}{$\mathrm{A}(-3,4),\ \mathrm{B}(2,-1),\ \mathrm{C}(7,3)$}{}
+\QQRow{$\overrightarrow{\mathrm{OA}}=2\vec{p}-\vec{q},\ \overrightarrow{\mathrm{OB}}=\vec{p}+3\vec{q},\ \overrightarrow{\mathrm{OC}}=-\vec{p}+2\vec{q}$}{$\overrightarrow{\mathrm{OD}}=-2\vec{q}$}{$\overrightarrow{\mathrm{OA}}=-2\vec{p}+\vec{q},\ \overrightarrow{\mathrm{OB}}=3\vec{p}-\vec{q},\ \overrightarrow{\mathrm{OC}}=4\vec{p}+2\vec{q}$}{$\overrightarrow{\mathrm{OD}}=-\vec{p}+4\vec{q}$}
+\QQRow{$\mathrm{A}(1,-2),\ \mathrm{B}(5,1),\ \mathrm{C}(2,6)$}{$\mathrm{D}(-2,3)$}{$\mathrm{A}(-3,4),\ \mathrm{B}(2,-1),\ \mathrm{C}(7,3)$}{$\mathrm{D}(2,8)$}
