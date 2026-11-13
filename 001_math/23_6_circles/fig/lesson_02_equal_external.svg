@@ -1,3 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 68"><style>.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
-<circle class="main" cx="42" cy="34" r="26"/><polyline class="main" points="42,8 64.5,21 64.5,47 42,60 19.5,47 19.5,21 42,8"/><line class="main" x1="42" y1="8" x2="87" y2="34"/><line class="main" x1="64.5" y1="47" x2="87" y2="34"/><line class="main" x1="64.5" y1="21" x2="19.5" y2="47"/>
-<circle class="point" cx="42" cy="8" r="1"/><text class="label" x="39" y="6">A</text><circle class="point" cx="64.5" cy="21" r="1"/><text class="label" x="67" y="20">B</text><circle class="point" cx="64.5" cy="47" r="1"/><text class="label" x="67" y="51">C</text><circle class="point" cx="42" cy="60" r="1"/><text class="label" x="39" y="67">D</text><circle class="point" cx="19.5" cy="47" r="1"/><text class="label" x="11" y="51">E</text><circle class="point" cx="19.5" cy="21" r="1"/><text class="label" x="11" y="20">F</text><circle class="point" cx="87" cy="34" r="1"/><text class="label" x="90" y="37">P</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="90mm" height="73mm" viewBox="-5 4 90 73">
+  <style>
+    .main{fill:none;stroke:#000;stroke-width:.6;stroke-linecap:round;stroke-linejoin:round}
+    .point{fill:#000}
+    .label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:5.4px}
+  </style>
+  <circle class="main" cx="48" cy="39" r="30"/>
+  <line class="main" x1="2.738" y1="61.018" x2="28.716" y2="16.019"/>
+  <line class="main" x1="2.738" y1="61.018" x2="77.544" y2="33.791"/>
+  <line class="main" x1="28.716" y1="16.019" x2="73.981" y2="54"/>
+  <line class="main" x1="28.716" y1="16.019" x2="22.019" y2="54"/>
+  <line class="main" x1="73.981" y1="54" x2="77.544" y2="33.791"/>
+  <circle class="point" cx="58.261" cy="40.809" r=".65"/>
+  <circle class="point" cx="2.738" cy="61.018" r=".65"/>
+  <text class="label" x="48" y="7" text-anchor="middle">A</text>
+  <text class="label" x="24" y="14" text-anchor="middle">B</text>
+  <text class="label" x="12" y="35" text-anchor="middle">C</text>
+  <text class="label" x="18" y="60" text-anchor="middle">D</text>
+  <text class="label" x="35" y="74" text-anchor="middle">E</text>
+  <text class="label" x="61" y="74" text-anchor="middle">F</text>
+  <text class="label" x="80" y="59" text-anchor="middle">G</text>
+  <text class="label" x="82" y="35" text-anchor="middle">H</text>
+  <text class="label" x="72" y="14" text-anchor="middle">I</text>
+  <text class="label" x="59" y="37" text-anchor="middle">J</text>
+  <text class="label" x="-2" y="68" text-anchor="middle">K</text>
+</svg>

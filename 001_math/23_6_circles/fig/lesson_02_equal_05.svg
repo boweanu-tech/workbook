@@ -1,9 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 66">
-<style>
-.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
-.thick{fill:none;stroke:#000;stroke-width:1.25;stroke-linecap:round}
-.dash{fill:none;stroke:#000;stroke-width:.55;stroke-dasharray:2.2 1.8}
-.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}
-.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}
-.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.3px}
-</style><circle class="main" cx="45" cy="33" r="27"/><circle class="point" cx="45" cy="33" r="1"/><text class="label" x="47" y="35">O</text><circle class="point" cx="45.0" cy="7.0" r="1"/><text class="label" x="47" y="5">A</text><circle class="point" cx="69.7" cy="25.0" r="1"/><text class="label" x="71.727469423674" y="22.965558146251368">B</text><circle class="point" cx="60.3" cy="54.0" r="1"/><text class="label" x="62.2824165596043" y="61.03444185374863">C</text><circle class="point" cx="29.7" cy="54.0" r="1"/><text class="label" x="21.7175834403957" y="61.03444185374863">D</text><circle class="point" cx="20.3" cy="25.0" r="1"/><text class="label" x="12.272530576326009" y="22.96555814625136">E</text><line class="main" x1="45" y1="7" x2="69.727469423674" y2="24.965558146251368"/><line class="main" x1="69.727469423674" y1="24.965558146251368" x2="60.2824165596043" y2="54.03444185374863"/><line class="main" x1="60.2824165596043" y1="54.03444185374863" x2="29.7175834403957" y2="54.03444185374863"/><line class="main" x1="29.7175834403957" y1="54.03444185374863" x2="20.27253057632601" y2="24.96555814625136"/><line class="main" x1="20.27253057632601" y1="24.96555814625136" x2="45" y2="7"/><line class="main" x1="45" y1="7" x2="60.2824165596043" y2="54.03444185374863"/><line class="main" x1="45" y1="7" x2="29.7175834403957" y2="54.03444185374863"/><line class="main" x1="69.727469423674" y1="24.965558146251368" x2="29.7175834403957" y2="54.03444185374863"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="70mm" viewBox="10 4 76 70">
+  <style>
+    .main{fill:none;stroke:#000;stroke-width:.6;stroke-linecap:round;stroke-linejoin:round}
+    .point{fill:#000}
+    .label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-size:5.4px}
+  </style>
+  <circle class="main" cx="48" cy="39" r="30"/>
+  <line class="main" x1="48" y1="39" x2="48" y2="9"/>
+  <line class="main" x1="48" y1="39" x2="30.366" y2="63.271"/>
+  <line class="main" x1="48" y1="9" x2="30.366" y2="63.271"/>
+  <line class="main" x1="19.468" y1="29.729" x2="65.634" y2="63.271"/>
+  <line class="main" x1="48" y1="9" x2="19.468" y2="29.729"/>
+  <line class="main" x1="48" y1="9" x2="76.532" y2="29.729"/>
+  <line class="main" x1="19.468" y1="29.729" x2="30.366" y2="63.271"/>
+  <circle class="point" cx="48" cy="39" r=".75"/>
+  <circle class="point" cx="37.102" cy="42.541" r=".65"/>
+  <text class="label" x="48" y="7" text-anchor="middle">A</text>
+  <text class="label" x="13" y="29" text-anchor="middle">B</text>
+  <text class="label" x="27" y="70" text-anchor="middle">C</text>
+  <text class="label" x="69" y="70" text-anchor="middle">D</text>
+  <text class="label" x="83" y="29" text-anchor="middle">E</text>
+  <text class="label" x="51" y="42" text-anchor="middle">O</text>
+  <text class="label" x="33" y="48" text-anchor="middle">F</text>
+</svg>
