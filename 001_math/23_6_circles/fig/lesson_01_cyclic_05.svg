@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="80mm" viewBox="8 -1 80 80">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="66mm" viewBox="15 6 66 66">
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
@@ -19,9 +19,5 @@
   <line class="main" x1="37.739" y1="10.809" x2="61.151" y2="65.964"/>
   <path class="angle-mark" d="M 33.724 16.543 A 7 7 0 0 0 40.474 17.253"/><text class="angle-label" x="36.171" y="27.227" text-anchor="middle">58°</text>
   <path class="angle-mark" d="M 23.936 42.709 A 7 7 0 0 0 25 39"/><text class="angle-label var" x="32.419" y="44.635" text-anchor="middle">x</text>
-  <circle class="point" cx="37.739" cy="10.809" r=".75"/><text class="label" x="35.345" y="6.031" text-anchor="middle">A</text>
-  <circle class="point" cx="18" cy="39" r=".75"/><text class="label" x="11" y="40.8" text-anchor="middle">B</text>
-  <circle class="point" cx="61.151" cy="65.964" r=".75"/><text class="label" x="64.22" y="74.055" text-anchor="middle">C</text>
-  <circle class="point" cx="78" cy="39" r=".75"/><text class="label" x="85" y="40.8" text-anchor="middle">D</text>
   <circle class="point" cx="48" cy="39" r=".75"/><text class="label" x="48" y="36" text-anchor="middle">O</text>
 </svg>

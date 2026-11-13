@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 66"><style>.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.thick{fill:none;stroke:#000;stroke-width:1.2}.dash{fill:none;stroke:#000;stroke-width:.5;stroke-dasharray:2 1.5}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style><circle class="main" cx="45" cy="33" r="27"/><polyline class="main" points="24,12 69,20 64,51 17,46 24,12"/><circle class="point" cx="24" cy="12" r="1"/><text class="label" x="16" y="10">A</text><circle class="point" cx="69" cy="20" r="1"/><text class="label" x="71" y="18">B</text><circle class="point" cx="64" cy="51" r="1"/><text class="label" x="66" y="58">C</text><circle class="point" cx="17" cy="46" r="1"/><text class="label" x="9" y="53">D</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="68mm" viewBox="14 5 68 68">
+  <style>
+    .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
+    .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
+    .angle-mark,.tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
+    .center{fill:#000}
+    .angle-label,.point-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
+    .angle-label{font-size:5px}
+    .point-label{font-size:4.6px}
+    .var{font-style:italic}
+  </style>
+  <circle class="main" cx="48" cy="39" r="30"/>
+  <line class="diameter" x1="18" y1="39" x2="78" y2="39"/>
+  <line class="main" x1="18" y1="39" x2="73.981" y2="24"/>
+  <line class="main" x1="78" y1="39" x2="25.019" y2="19.716"/>
+  <line class="main" x1="78" y1="39" x2="73.981" y2="24"/>
+  <path class="angle-mark" d="M 72.362 36.948 A 6 6 0 0 1 76.447 33.204"/>
+  <text class="angle-label" x="68" y="32" text-anchor="middle">55°</text>
+  <path class="angle-mark" d="M 45.798 31.552 A 7 7 0 0 0 59.137 32.134"/>
+  <text class="angle-label var" x="51.905" y="44.726" text-anchor="middle">x</text>
+</svg>

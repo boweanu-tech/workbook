@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="75mm" height="77mm" viewBox="10.5 0 75 77">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="66mm" viewBox="15 6 66 66">
   <!-- template.svg の線幅・ラベル方針に合わせた円周角の図。点の座標は円の中心・半径から生成。 -->
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
@@ -20,8 +20,5 @@
   <path class="angle-mark" d="M 42.096,65.239 A 7,7 0 0 1 53.904,65.239"/>
   <text class="angle-label" x="48" y="25" text-anchor="middle">230°</text>
   <text class="angle-label var" x="48" y="59" text-anchor="middle">x</text>
-  <circle class="point" cx="20.811" cy="51.679" r="0.9"/><text class="label" x="13.811" y="56.679" text-anchor="middle">A</text>
-  <circle class="point" cx="75.189" cy="51.679" r="0.9"/><text class="label" x="82.189" y="56.679" text-anchor="middle">B</text>
-  <circle class="point" cx="48" cy="69" r="0.9"/><text class="label" x="48" y="76" text-anchor="middle">P</text>
   <circle class="point" cx="48" cy="39" r="0.9"/><text class="label" x="48" y="35" text-anchor="middle">O</text>
 </svg>

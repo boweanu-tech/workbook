@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 66"><style>.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.thick{fill:none;stroke:#000;stroke-width:1.2}.dash{fill:none;stroke:#000;stroke-width:.5;stroke-dasharray:2 1.5}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style><circle class="main" cx="45" cy="33" r="27"/><line class="main" x1="45" y1="33" x2="18" y2="42"/><line class="main" x1="45" y1="33" x2="70" y2="45"/><line class="main" x1="18" y1="42" x2="40" y2="7"/><line class="main" x1="40" y1="7" x2="70" y2="45"/><line class="main" x1="18" y1="42" x2="70" y2="45"/><circle class="point" cx="18" cy="42" r="1"/><text class="label" x="10" y="49">A</text><circle class="point" cx="40" cy="7" r="1"/><text class="label" x="32" y="5">B</text><circle class="point" cx="70" cy="45" r="1"/><text class="label" x="72" y="52">D</text><circle class="point" cx="45" cy="33" r="1"/><text class="label" x="47" y="40">O</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="68mm" viewBox="14 5 68 68">
+  <style>
+    .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
+    .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
+    .angle-mark,.tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
+    .center{fill:#000}
+    .angle-label,.point-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
+    .angle-label{font-size:5px}
+    .point-label{font-size:4.6px}
+    .var{font-style:italic}
+  </style>
+  <circle class="main" cx="48" cy="39" r="30"/>
+  <line class="main" x1="28.716" y1="16.019" x2="63" y2="64.981"/>
+  <line class="main" x1="22.019" y1="54" x2="73.981" y2="24"/>
+  <line class="main" x1="63" y1="64.981" x2="73.981" y2="24"/>
+  <path class="angle-mark" d="M 68.785 27 A 6 6 0 0 0 72.428 29.796"/>
+  <text class="angle-label" x="64.85" y="35.9" text-anchor="middle">45°</text>
+  <path class="angle-mark" d="M 59.559 60.066 A 6 6 0 0 1 64.553 59.185"/>
+  <text class="angle-label" x="60.395" y="50.209" text-anchor="middle">50°</text>
+  <path class="angle-mark" d="M 42.285 35.397 A 6 6 0 0 0 40.531 43.312"/>
+  <text class="angle-label var" x="31.083" y="37.066" text-anchor="middle">x</text>
+</svg>

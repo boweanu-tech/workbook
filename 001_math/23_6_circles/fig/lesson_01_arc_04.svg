@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="78mm" viewBox="8 0 80 78">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="72mm" viewBox="15 0 66 72">
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .angle-mark,.arc-tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
@@ -14,7 +14,4 @@
   <line class="main" x1="48" y1="69" x2="65.207" y2="14.425"/>
   <text class="angle-label" x="48" y="5.5" text-anchor="middle">7 cm</text>
   <path class="angle-mark" d="M 45.895 62.324 A 7 7 0 0 1 50.105 62.324"/><text class="angle-label var" x="48" y="54.5" text-anchor="middle">x</text>
-  <circle class="point" cx="30.793" cy="14.425" r=".75"/><text class="label" x="26.778" y="10.491" text-anchor="middle">A</text>
-  <circle class="point" cx="65.207" cy="14.425" r=".75"/><text class="label" x="69.222" y="10.491" text-anchor="middle">B</text>
-  <circle class="point" cx="48" cy="69" r=".75"/><text class="label" x="48" y="77.8" text-anchor="middle">P</text>
 </svg>

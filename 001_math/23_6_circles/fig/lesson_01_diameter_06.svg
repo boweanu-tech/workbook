@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="76mm" viewBox="12 3 80 76">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="66mm" viewBox="15 6 66 66">
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
@@ -18,8 +18,4 @@
   <text class="angle-label" x="36.11" y="50.269" text-anchor="middle">59°</text>
   <path class="angle-mark" d="M 25 39 A 7 7 0 0 0 24 35.395"/>
   <text class="angle-label var" x="33.418" y="34.724" text-anchor="middle">x</text>
-  <circle class="point" cx="18" cy="39" r=".75"/>
-  <circle class="point" cx="78" cy="39" r=".75"/>
-  <circle class="point" cx="62.084" cy="12.512" r=".75"/>
-  <circle class="point" cx="37.739" cy="67.191" r=".75"/>
 </svg>

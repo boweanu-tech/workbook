@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="80mm" height="78mm" viewBox="8 0 80 78">
+<svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="66mm" viewBox="15 6 66 66">
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .angle-mark,.arc-tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
@@ -18,9 +18,4 @@
   <line class="arc-tick" x1="74.875" y1="29.218" x2="77.506" y2="28.261"/>
   <path class="angle-mark" d="M 44.768 62.791 A 7 7 0 0 1 47.695 62.007"/><text class="angle-label" x="44.118" y="56.011" text-anchor="middle">25°</text>
   <path class="angle-mark" d="M 50.679 62.533 A 7 7 0 0 1 53.161 64.271"/><text class="angle-label var" x="56.604" y="58.213" text-anchor="middle">x</text>
-  <circle class="point" cx="48" cy="69" r=".75"/><text class="label" x="48" y="77.8" text-anchor="middle">E</text>
-  <circle class="point" cx="23.425" cy="21.793" r=".75"/><text class="label" x="17.691" y="19.578" text-anchor="middle">A</text>
-  <circle class="point" cx="45.385" cy="9.114" r=".75"/><text class="label" x="44.775" y="3.941" text-anchor="middle">B</text>
-  <circle class="point" cx="69.213" cy="17.787" r=".75"/><text class="label" x="74.163" y="14.637" text-anchor="middle">C</text>
-  <circle class="point" cx="77.886" cy="41.615" r=".75"/><text class="label" x="84.859" y="44.025" text-anchor="middle">D</text>
 </svg>
