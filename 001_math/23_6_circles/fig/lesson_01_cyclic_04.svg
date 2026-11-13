@@ -1,9 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 66">
-<style>
-.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
-.thick{fill:none;stroke:#000;stroke-width:1.25;stroke-linecap:round}
-.dash{fill:none;stroke:#000;stroke-width:.55;stroke-dasharray:2.2 1.8}
-.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}
-.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}
-.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.3px}
-</style><circle class="main" cx="45" cy="33" r="27"/><polyline class="main" points="25,10 70,20 64,54 17,46 25,10"/><circle class="point" cx="25" cy="10" r="1"/><circle class="point" cx="70" cy="20" r="1"/><circle class="point" cx="64" cy="54" r="1"/><circle class="point" cx="17" cy="46" r="1"/><line class="main" x1="64" y1="54" x2="84" y2="58"/><text class="small" x="70" y="56">116°</text><text class="math" x="22" y="20">x</text></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="82mm" height="82mm" viewBox="8 -2 82 82">
+  <style>
+    .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
+    .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
+    .angle-mark{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
+    .point{fill:#000}
+    .label,.angle-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif}
+    .label{font-size:5.5px}
+    .angle-label{font-size:5px}
+  </style>
+  <circle class="main" cx="48" cy="39" r="30"/>
+  <line class="main" x1="28.716" y1="16.019" x2="25.706" y2="59.074"/>
+  <line class="main" x1="25.706" y1="59.074" x2="61.151" y2="65.964"/>
+  <line class="main" x1="61.151" y1="65.964" x2="72.575" y2="21.793"/>
+  <line class="main" x1="72.575" y1="21.793" x2="28.716" y2="16.019"/>
+  <line class="main" x1="28.716" y1="16.019" x2="61.151" y2="65.964"/>
+  <line class="main" x1="72.575" y1="21.793" x2="76.116" y2="8.1"/>
+  <path class="angle-mark" d="M 28.228 23.002 A 7 7 0 0 0 32.529 21.89"/><text class="angle-label" x="32.472" y="32.041" text-anchor="middle">37°</text>
+  <path class="angle-mark" d="M 54.28 64.628 A 7 7 0 0 1 57.338 60.093"/><text class="angle-label" x="48.715" y="59.076" text-anchor="middle">46°</text>
+  <path class="angle-mark" d="M 65.635 20.879 A 7 7 0 0 1 74.328 15.016"/><text class="angle-label" x="63.628" y="10.028" text-anchor="middle">x</text>
+  <circle class="point" cx="28.716" cy="16.019" r=".75"/><text class="label" x="24.217" y="12.456" text-anchor="middle">A</text>
+  <circle class="point" cx="25.706" cy="59.074" r=".75"/><text class="label" x="20.504" y="65.558" text-anchor="middle">B</text>
+  <circle class="point" cx="61.151" cy="65.964" r=".75"/><text class="label" x="64.22" y="74.055" text-anchor="middle">C</text>
+  <circle class="point" cx="72.575" cy="21.793" r=".75"/><text class="label" x="78.309" y="19.578" text-anchor="middle">D</text>
+</svg>
