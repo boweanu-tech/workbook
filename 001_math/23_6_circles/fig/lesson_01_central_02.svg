@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="96mm" height="78mm" viewBox="0 0 96 78">
+<svg xmlns="http://www.w3.org/2000/svg" width="76mm" height="71mm" viewBox="12 4 76 71">
   <!-- template.svg の線幅・ラベル方針に合わせた円周角の図。点の座標は円の中心・半径から生成。 -->
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
