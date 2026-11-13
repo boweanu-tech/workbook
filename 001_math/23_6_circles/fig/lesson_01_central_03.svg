@@ -1,9 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 66">
-<style>
-.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
-.thick{fill:none;stroke:#000;stroke-width:1.25;stroke-linecap:round}
-.dash{fill:none;stroke:#000;stroke-width:.55;stroke-dasharray:2.2 1.8}
-.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}
-.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}
-.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.3px}
-</style><circle class="main" cx="45" cy="33" r="27"/><line class="main" x1="45" y1="33" x2="28" y2="10"/><line class="main" x1="45" y1="33" x2="75" y2="35"/><line class="main" x1="28" y1="10" x2="14" y2="42"/><line class="main" x1="75" y1="35" x2="14" y2="42"/><line class="main" x1="28" y1="10" x2="55" y2="61"/><line class="main" x1="75" y1="35" x2="55" y2="61"/><text class="small" x="7" y="50">52°</text><text class="math" x="48" y="58">x</text><circle class="point" cx="28" cy="10" r="1"/><circle class="point" cx="75" cy="35" r="1"/><circle class="point" cx="14" cy="42" r="1"/><circle class="point" cx="45" cy="33" r="1"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="96mm" height="78mm" viewBox="0 0 96 78">
+  <!-- template.svg の線幅・ラベル方針に合わせた円周角の図。点の座標は円の中心・半径から生成。 -->
+  <style>
+    .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
+    .thin{fill:none;stroke:#000;stroke-width:.32;stroke-linecap:round;stroke-linejoin:round}
+    .angle-mark{fill:none;stroke:#000;stroke-width:.32;stroke-linecap:round}
+    .point{fill:#000}
+    .label,.angle-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
+    .label{font-size:5.5px}
+    .angle-label{font-size:5px}
+    .var{font-style:italic}
+  </style>
+  <circle class="main" cx="48" cy="39" r="30"/>
+  <line class="main" x1="22.019" y1="24" x2="70.981" y2="58.284"/>
+  <line class="main" x1="28.716" y1="61.981" x2="67.284" y2="16.019"/>
+  <line class="main" x1="22.019" y1="24" x2="67.284" y2="16.019"/>
+  <path class="angle-mark" d="M 62.784,21.381 A 7,7 0 0 1 60.39,17.234"/>
+  <path class="angle-mark" d="M 28.913,22.785 A 7,7 0 0 1 27.753,28.015"/>
+  <path class="angle-mark" d="M 42.456,45.607 A 6,6 0 0 1 41.398,37.57"/>
+  <text class="angle-label" x="61" y="26" text-anchor="middle">40°</text>
+  <text class="angle-label" x="36" y="24" text-anchor="middle">45°</text>
+  <text class="angle-label" x="39.313" y="43.011" text-anchor="middle">x</text>
+  <circle class="point" cx="22.019" cy="24" r="0.9"/><text class="label" x="15.019" y="21" text-anchor="middle">A</text>
+  <circle class="point" cx="28.716" cy="61.981" r="0.9"/><text class="label" x="22.716" y="68.981" text-anchor="middle">B</text>
+  <circle class="point" cx="70.981" cy="58.284" r="0.9"/><text class="label" x="77.981" y="63.284" text-anchor="middle">C</text>
+  <circle class="point" cx="67.284" cy="16.019" r="0.9"/><text class="label" x="74.284" y="14.019" text-anchor="middle">D</text>
+  <circle class="point" cx="46.313" cy="41.011" r="0.9"/>
+</svg>
