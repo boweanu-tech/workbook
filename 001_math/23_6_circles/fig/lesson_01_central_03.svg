@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="66mm" height="66mm" viewBox="15 6 66 66">
-  <!-- template.svg の線幅・ラベル方針に合わせた円周角の図。点の座標は円の中心・半径から生成。 -->
   <style>
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
-    .thin{fill:none;stroke:#000;stroke-width:.32;stroke-linecap:round;stroke-linejoin:round}
     .angle-mark{fill:none;stroke:#000;stroke-width:.32;stroke-linecap:round}
     .point{fill:#000}
     .label,.angle-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
@@ -12,14 +10,14 @@
     .var{font-style:italic}
   </style>
   <circle class="main" cx="48" cy="39" r="30"/>
-  <line class="main" x1="22.019" y1="24" x2="70.981" y2="58.284"/>
-  <line class="main" x1="28.716" y1="61.981" x2="67.284" y2="16.019"/>
-  <line class="main" x1="22.019" y1="24" x2="67.284" y2="16.019"/>
-  <path class="angle-mark" d="M 62.784,21.381 A 7,7 0 0 1 60.39,17.234"/>
-  <path class="angle-mark" d="M 28.913,22.785 A 7,7 0 0 1 27.753,28.015"/>
-  <path class="angle-mark" d="M 42.456,45.607 A 6,6 0 0 1 41.398,37.57"/>
-  <text class="angle-label" x="54" y="26" text-anchor="middle">40°</text>
-  <text class="angle-label" x="41" y="31" text-anchor="middle">45°</text>
-  <text class="angle-label var" x="39.313" y="43.011" text-anchor="middle">x</text>
-  <circle class="point" cx="46.313" cy="41.011" r="0.9"/>
+  <line class="main" x1="48" y1="39" x2="27.926" y2="61.294"/>
+  <line class="main" x1="48" y1="39" x2="58.261" y2="67.191"/>
+  <line class="main" x1="58.261" y1="10.809" x2="27.926" y2="61.294"/>
+  <line class="main" x1="58.261" y1="10.809" x2="58.261" y2="67.191"/>
+  <path class="angle-mark" d="M 50.736 46.518 A 8 8 0 0 1 42.647 44.945"/>
+  <path class="angle-mark" d="M 54.654 16.808 A 7 7 0 0 0 58.261 17.809"/>
+  <text class="angle-label" x="45.1" y="54" text-anchor="middle">62°</text>
+  <text class="angle-label var" x="54" y="27" text-anchor="middle">x</text>
+  <circle class="point" cx="48" cy="39" r="0.9"/>
+  <text class="label" x="48" y="35" text-anchor="middle">O</text>
 </svg>
