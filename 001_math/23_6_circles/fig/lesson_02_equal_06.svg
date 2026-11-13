@@ -11,6 +11,12 @@
   <line class="main" x1="48" y1="9" x2="22.019" y2="54"/>
   <line class="main" x1="22.019" y1="24" x2="48" y2="69"/>
   <line class="main" x1="48" y1="9" x2="22.019" y2="24"/>
+  <circle class="point" cx="48" cy="9" r=".7"/>
+  <circle class="point" cx="22.019" cy="24" r=".7"/>
+  <circle class="point" cx="22.019" cy="54" r=".7"/>
+  <circle class="point" cx="48" cy="69" r=".7"/>
+  <circle class="point" cx="73.981" cy="54" r=".7"/>
+  <circle class="point" cx="73.981" cy="24" r=".7"/>
   <circle class="point" cx="48" cy="39" r=".75"/>
   <circle class="point" cx="30.679" cy="39" r=".65"/>
   <text class="label" x="48" y="7" text-anchor="middle">A</text>
