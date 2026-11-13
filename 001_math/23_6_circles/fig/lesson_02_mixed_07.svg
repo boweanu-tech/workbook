@@ -11,14 +11,17 @@
     .var{font-style:italic}
   </style>
   <circle class="main" cx="48" cy="39" r="30"/>
-  <line class="main" x1="77.544" y1="44.209" x2="28.716" y2="16.019"/>
-  <line class="main" x1="77.544" y1="44.209" x2="73.981" y2="54"/>
-  <line class="main" x1="70.981" y1="19.716" x2="19.809" y2="49.261"/>
-  <line class="main" x1="70.981" y1="19.716" x2="42.791" y2="68.544"/>
-  <line class="tick" x1="20.954" y1="31.753" x2="17.09" y2="30.718"/>
-  <line class="tick" x1="59.833" y1="64.377" x2="61.524" y2="68.002"/>
-  <path class="angle-mark" d="M 71.482 40.709 A 7 7 0 0 0 75.15 50.787"/>
-  <text class="angle-label" x="62.509" y="49.682" text-anchor="middle">100°</text>
-  <path class="angle-mark" d="M 65.785 22.716 A 6 6 0 0 0 67.981 24.912"/>
-  <text class="angle-label var" x="61.082" y="29.616" text-anchor="middle">x</text>
+  <line class="diameter" x1="48" y1="9" x2="48" y2="69"/>
+  <line class="main" x1="48" y1="9" x2="75.815" y2="50.237"/>
+  <line class="main" x1="75.815" y1="50.237" x2="18.164" y2="35.864"/>
+  <line class="main" x1="75.815" y1="50.237" x2="48" y2="69"/>
+  <line class="main" x1="48" y1="69" x2="18.164" y2="35.864"/>
+  <path class="angle-mark" d="M 51.913 14.803 A 7 7 0 0 1 48 16"/>
+  <text class="angle-label" x="53" y="26" text-anchor="middle">34°</text>
+  <path class="angle-mark" d="M 69.023 48.543 A 7 7 0 0 1 71.902 44.434"/>
+  <text class="angle-label" x="61" y="42" text-anchor="middle">42°</text>
+  <path class="angle-mark" d="M 42.648 63.056 A 8 8 0 0 1 54.632 64.528"/>
+  <text class="angle-label var" x="56" y="56" text-anchor="middle">x</text>
+  <circle class="center" cx="48" cy="39" r=".75"/>
+  <text class="point-label" x="44" y="40" text-anchor="middle">O</text>
 </svg>

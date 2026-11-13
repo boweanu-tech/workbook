@@ -18,4 +18,6 @@
   <text class="angle-label" x="62.741" y="35.189" text-anchor="middle">35°</text>
   <path class="angle-mark" d="M 60.39 14.803 A 7 7 0 0 0 70.242 22.363"/>
   <text class="angle-label var" x="55.935" y="27.506" text-anchor="middle">x</text>
+  <circle class="point" cx="48" cy="39" r=".75"/>
+  <text class="angle-label" x="48" y="45" text-anchor="middle">O</text>
 </svg>
