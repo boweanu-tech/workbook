@@ -19,7 +19,7 @@
   <path class="angle-mark" d="M 38.031,43.649 A 11,11 0 1 1 57.969,43.649"/>
   <path class="angle-mark" d="M 42.096,65.239 A 7,7 0 0 1 53.904,65.239"/>
   <text class="angle-label" x="48" y="25" text-anchor="middle">230°</text>
-  <text class="angle-label" x="48" y="59" text-anchor="middle">x</text>
+  <text class="angle-label var" x="48" y="59" text-anchor="middle">x</text>
   <circle class="point" cx="20.811" cy="51.679" r="0.9"/><text class="label" x="13.811" y="56.679" text-anchor="middle">A</text>
   <circle class="point" cx="75.189" cy="51.679" r="0.9"/><text class="label" x="82.189" y="56.679" text-anchor="middle">B</text>
   <circle class="point" cx="48" cy="69" r="0.9"/><text class="label" x="48" y="76" text-anchor="middle">P</text>

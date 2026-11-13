@@ -8,6 +8,7 @@
     .label,.angle-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif}
     .label{font-size:5.5px}
     .angle-label{font-size:5px}
+    .var{font-style:italic}
   </style>
   <circle class="main" cx="48" cy="39" r="30"/>
   <line class="main" x1="25.019" y1="19.716" x2="45.907" y2="68.927"/>
@@ -17,7 +18,7 @@
   <line class="main" x1="25.019" y1="19.716" x2="72.271" y2="56.634"/>
   <path class="angle-mark" d="M 60.311 16.629 A 7 7 0 0 0 68.137 22.967"/><text class="angle-label" x="57.215" y="29.953" text-anchor="middle">92°</text>
   <path class="angle-mark" d="M 65.927 59.592 A 7 7 0 0 1 66.755 52.324"/><text class="angle-label" x="57.367" y="56.436" text-anchor="middle">63°</text>
-  <path class="angle-mark" d="M 27.754 26.16 A 7 7 0 0 0 30.535 24.026"/><text class="angle-label" x="33.542" y="32.323" text-anchor="middle">x</text>
+  <path class="angle-mark" d="M 27.754 26.16 A 7 7 0 0 0 30.535 24.026"/><text class="angle-label var" x="33.542" y="32.323" text-anchor="middle">x</text>
   <circle class="point" cx="25.019" cy="19.716" r=".75"/><text class="label" x="19.656" y="17.017" text-anchor="middle">A</text>
   <circle class="point" cx="45.907" cy="68.927" r=".75"/><text class="label" x="45.419" y="77.71" text-anchor="middle">B</text>
   <circle class="point" cx="72.271" cy="56.634" r=".75"/><text class="label" x="77.934" y="62.548" text-anchor="middle">C</text>
