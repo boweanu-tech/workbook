@@ -14,12 +14,12 @@
 <line class="main" x1="95" y1="60" x2="65" y2="20"/>
 <line class="main" x1="65" y1="20" x2="45" y2="20"/>
 <circle class="main" cx="55" cy="40" r="20"/>
-<path class="dim" d="M45 15 Q55 13 65 15"/>
+<path class="dim" d="M45 20 Q55 13 65 20"/>
 <text class="num" x="55" y="11" text-anchor="middle">6</text>
-<path class="dim" d="M41 17 Q24.4 35.8 11 57"/>
+<path class="dim" d="M45 20 Q24.4 35.8 15 60"/>
 <text class="num" x="21.2" y="35.4" text-anchor="middle">15</text>
-<path class="dim" d="M69 17 Q85.6 35.8 99 57"/>
+<path class="dim" d="M65 20 Q85.6 35.8 95 60"/>
 <text class="num" x="88.8" y="35.4" text-anchor="middle">15</text>
-<path class="dim" d="M15 65 Q55 67 95 65"/>
+<path class="dim" d="M15 60 Q55 67 95 60"/>
 <text class="unknown" x="55" y="73" text-anchor="middle">x</text>
 </svg>

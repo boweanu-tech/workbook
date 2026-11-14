@@ -19,12 +19,12 @@
 <circle class="point" cx="34.22" cy="40.88" r=".6"/>
 <circle class="point" cx="60.8" cy="39.4" r=".6"/>
 <circle class="point" cx="48" cy="65" r=".6"/>
-<path class="dim" d="M38.65 15.63 Q23.72 37.02 12.25 60.43"/>
+<path class="dim" d="M46.4 20.2 Q23.72 37.02 20 65"/>
 <text class="num" x="20.28" y="36.98" text-anchor="middle">13</text>
-<path class="dim" d="M20 74 Q50 76 80 74"/>
+<path class="dim" d="M20 65 Q50 76 80 65"/>
 <text class="num" x="50" y="82" text-anchor="middle">15</text>
-<path class="dim" d="M43.82 18.68 Q36 28 31.63 39.35"/>
+<path class="dim" d="M46.4 20.2 Q36 28 34.22 40.88"/>
 <text class="num" x="32.55" y="27.97" text-anchor="middle">6</text>
-<path class="dim" d="M48 68 Q64 70 80 68"/>
+<path class="dim" d="M48 65 Q64 70 80 65"/>
 <text class="unknown" x="64" y="76" text-anchor="middle">x</text>
 </svg>

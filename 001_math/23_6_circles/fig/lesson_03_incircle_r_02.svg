@@ -21,11 +21,11 @@
 <circle class="point" cx="40" cy="65" r=".6"/>
 <line class="dim" x1="40" y1="51.67" x2="40" y2="65"/>
 <text class="unknown" x="35" y="58.33" text-anchor="middle">r</text>
-<path class="dim" d="M29.67 28.79 Q20.68 45.16 15.38 63.08"/>
+<path class="dim" d="M34.29 30.71 Q20.68 45.16 20 65"/>
 <text class="num" x="16.99" y="45.63" text-anchor="middle">13</text>
-<path class="dim" d="M37.29 26.71 Q61.34 42.26 83 61"/>
+<path class="dim" d="M34.29 30.71 Q61.34 42.26 80 65"/>
 <text class="num" x="63.74" y="41.06" text-anchor="middle">20</text>
-<path class="dim" d="M20 70 Q50 72 80 70"/>
+<path class="dim" d="M20 65 Q50 72 80 65"/>
 <text class="num" x="50" y="78" text-anchor="middle">21</text>
 <text class="area" x="15" y="9" text-anchor="middle">面積 126</text>
 </svg>

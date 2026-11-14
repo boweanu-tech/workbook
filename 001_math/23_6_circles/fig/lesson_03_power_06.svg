@@ -24,8 +24,8 @@
 <circle class="point" cx="50" cy="40" r=".7"/>
 <text class="label" x="49" y="47" text-anchor="middle">O</text>
 <text class="number" x="86" y="60" text-anchor="middle">6</text>
-<path class="dim" d="M81 35 Q90 30 99 35"/>
+<path class="dim" d="M80 40 Q90 30 100 40"/>
 <text class="unknown" x="90" y="29" text-anchor="middle">x</text>
-<path class="dim" d="M22 34 Q50 26 78 34"/>
+<path class="dim" d="M20 40 Q50 26 80 40"/>
 <text class="number" x="50" y="27" text-anchor="middle">9</text>
 </svg>

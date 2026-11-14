@@ -21,11 +21,11 @@
 <circle class="point" cx="37.65" cy="65" r=".6"/>
 <line class="dim" x1="37.65" y1="54.41" x2="37.65" y2="65"/>
 <text class="unknown" x="32.65" y="59.71" text-anchor="middle">r</text>
-<path class="dim" d="M28.88 37.73 Q20.47 49.25 15.59 62.65"/>
+<path class="dim" d="M33.29 40.09 Q20.47 49.25 20 65"/>
 <text class="num" x="16.94" y="49.37" text-anchor="middle">8</text>
-<path class="dim" d="M35.64 35.67 Q59.94 46.37 82.35 60.59"/>
+<path class="dim" d="M33.29 40.09 Q59.94 46.37 80 65"/>
 <text class="num" x="61.82" y="44.84" text-anchor="middle">15</text>
-<path class="dim" d="M20 70 Q50 72 80 70"/>
+<path class="dim" d="M20 65 Q50 72 80 65"/>
 <text class="num" x="50" y="78" text-anchor="middle">17</text>
 <path class="right" d="M31.29 43.09 L34.29 45.09 L36.29 42.09"/>
 </svg>

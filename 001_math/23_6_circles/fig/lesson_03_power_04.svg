@@ -22,12 +22,12 @@
 <circle class="point" cx="80" cy="40" r=".7"/>
 <circle class="point" cx="50" cy="40" r=".7"/>
 <text class="label" x="51" y="46" text-anchor="middle">O</text>
-<path class="dim" d="M8 34 Q14 28 19 27"/>
+<path class="dim" d="M10 40 Q14 28 21.2 31.6"/>
 <text class="number" x="12" y="28" text-anchor="middle">14</text>
-<path class="dim" d="M24 28 Q35 15 47 12"/>
+<path class="dim" d="M21.2 31.6 Q35 15 50 10"/>
 <text class="number" x="35" y="17" text-anchor="middle">36</text>
-<path class="dim" d="M9 45 Q14 49 19 45"/>
+<path class="dim" d="M10 40 Q14 49 20 40"/>
 <text class="unknown" x="14" y="54" text-anchor="middle">x</text>
-<path class="dim" d="M22 46 Q50 54 78 46"/>
+<path class="dim" d="M20 40 Q50 54 80 40"/>
 <text class="number" x="52" y="54" text-anchor="middle">60</text>
 </svg>
