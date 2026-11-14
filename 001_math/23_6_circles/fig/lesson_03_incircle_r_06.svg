@@ -1,23 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="66mm" viewBox="19 9 70 66">
-<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="70mm"
+   height="66mm"
+   viewBox="19 9 70 66"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="lesson_03_incircle_r_06.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6015309"
+     inkscape:cx="60.567047"
+     inkscape:cy="130.81233"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26" />
+  <style
+     id="style2">
 .main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
 .dim{fill:none;stroke:#000;stroke-width:.32;stroke-dasharray:.45 1.05;stroke-linecap:round}
 .right{fill:none;stroke:#000;stroke-width:.5}
 .point{fill:#000}
 .num,.unknown,.area{fill:#000}
-.num,.unknown{font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif;font-size:6px}
+.num,.unknown{font-family:&quot;CMU Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:6px}
 .unknown{font-style:italic}
-.area{font-family:"Noto Sans CJK JP",sans-serif;font-size:6px}
+.area{font-family:&quot;Noto Sans CJK JP&quot;,sans-serif;font-size:6px}
 </style>
-<line class="main" x1="21.67" y1="17.96" x2="33.1" y2="49.37"/>
-<line class="main" x1="33.1" y1="49.37" x2="55.76" y2="65.14"/>
-<line class="main" x1="55.76" y1="65.14" x2="76.81" y2="20.48"/>
-<line class="main" x1="76.81" y1="20.48" x2="21.67" y2="17.96"/>
-<circle class="main" cx="48.4" cy="37.6" r="18.4"/>
-<line class="dim" x1="48.4" y1="37.6" x2="37.89" y2="52.7"/>
-<text class="unknown" x="48" y="50" text-anchor="middle">r</text>
-<path class="dim" d="M21.67 17.96 Q49 10 76.81 20.48"/>
-<text class="num" x="83" y="17" text-anchor="middle">24</text>
-<path class="dim" d="M33.1 49.37 Q36 69 55.76 65.14"/>
-<text class="num" x="48" y="72" text-anchor="middle">12</text>
+  <line
+     class="main"
+     x1="21.724548"
+     y1="19.074516"
+     x2="34.935974"
+     y2="55.379932"
+     id="line4" />
+  <line
+     class="main"
+     x1="34.935974"
+     y1="55.379932"
+     x2="61.127659"
+     y2="73.607773"
+     id="line6" />
+  <line
+     class="main"
+     x1="61.127659"
+     y1="73.607773"
+     x2="85.458412"
+     y2="21.987272"
+     id="line8" />
+  <line
+     class="main"
+     x1="85.458412"
+     y1="21.987272"
+     x2="21.724548"
+     y2="19.074516"
+     id="line10" />
+  <circle
+     class="main"
+     cx="52.620564"
+     cy="41.775517"
+     r="21.267738"
+     id="circle12" />
+  <path
+     class="dim"
+     d="m 21.724549,19.074517 c 23.667221,-4.176926 45.81378,-2.529154 63.733866,2.912755"
+     id="path18"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="num"
+     x="55.062565"
+     y="15.504114"
+     text-anchor="middle"
+     id="text20"
+     style="stroke-width:1">24</text>
+  <path
+     class="dim"
+     d="m 34.935976,55.379935 c 6.007024,7.7651 13.522528,16.212042 26.191683,18.22784"
+     id="path22"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="num"
+     x="44.176159"
+     y="74.802048"
+     text-anchor="middle"
+     id="text24"
+     style="stroke-width:1">12</text>
 </svg>
