@@ -1,27 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="78mm" height="70mm" viewBox="5 4 78 70">
-  <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="78mm"
+   height="70mm"
+   viewBox="5 4 78 70"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="lesson_02_mixed_13.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs36" />
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.0200298"
+     inkscape:cx="147.34954"
+     inkscape:cy="132.28346"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32" />
+  <style
+     id="style2">
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
     .angle-mark,.tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
     .center{fill:#000}
-    .angle-label,.point-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
+    .angle-label,.point-label{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-style:normal}
     .angle-label{font-size:5px}
     .point-label{font-size:4.6px}
     .var{font-style:italic}
   </style>
-  <circle class="main" cx="48" cy="39" r="30"/>
-  <line class="main" x1="76.191" y1="28.739" x2="25.019" y2="58.284"/>
-  <line class="main" x1="42.791" y1="9.456" x2="70.981" y2="58.284"/>
-  <line class="main" x1="76.191" y1="28.739" x2="70.981" y2="58.284"/>
-  <line class="main" x1="25.019" y1="58.284" x2="70.981" y2="58.284"/>
-  <line class="main" x1="42.791" y1="9.456" x2="25.019" y2="58.284"/>
-  <text class="angle-label" x="68" y="9" text-anchor="middle">2</text>
-  <text class="angle-label" x="10" y="28" text-anchor="middle">3</text>
-  <path class="angle-mark" d="M 72.197 51.39 A 7 7 0 0 0 63.981 58.284"/>
-  <text class="angle-label" x="59" y="53" text-anchor="middle">100°</text>
-  <path class="angle-mark" d="M 40.397 16.034 A 7 7 0 0 0 46.291 15.518"/>
-  <text class="angle-label" x="44.273" y="26.391" text-anchor="middle">50°</text>
-  <path class="angle-mark" d="M 65.553 34.881 A 7 7 0 0 0 55.991 32.319"/>
-  <text class="angle-label var" x="60" y="29" text-anchor="middle">x</text>
+  <circle
+     class="main"
+     cx="48"
+     cy="39"
+     r="30"
+     id="circle4" />
+  <line
+     class="main"
+     x1="76.191"
+     y1="28.739"
+     x2="25.019"
+     y2="58.284"
+     id="line6" />
+  <line
+     class="main"
+     x1="42.791"
+     y1="9.456"
+     x2="70.981"
+     y2="58.284"
+     id="line8" />
+  <line
+     class="main"
+     x1="76.191"
+     y1="28.739"
+     x2="70.981"
+     y2="58.284"
+     id="line10" />
+  <line
+     class="main"
+     x1="25.019"
+     y1="58.284"
+     x2="70.981"
+     y2="58.284"
+     id="line12" />
+  <line
+     class="main"
+     x1="42.791"
+     y1="9.456"
+     x2="25.019"
+     y2="58.284"
+     id="line14" />
+  <text
+     class="angle-label"
+     x="67.825806"
+     y="10.785386"
+     text-anchor="middle"
+     id="text16">2</text>
+  <text
+     class="angle-label"
+     x="14.569383"
+     y="28.263855"
+     text-anchor="middle"
+     id="text18">3</text>
+  <path
+     class="angle-mark"
+     d="M 72.197 51.39 A 7 7 0 0 0 63.981 58.284"
+     id="path20" />
+  <text
+     class="angle-label"
+     x="60.320301"
+     y="53.977737"
+     text-anchor="middle"
+     id="text22">100°</text>
+  <path
+     class="angle-mark"
+     d="M 40.397 16.034 A 7 7 0 0 0 46.291 15.518"
+     id="path24" />
+  <text
+     class="angle-label"
+     x="43.851036"
+     y="21.465019"
+     text-anchor="middle"
+     id="text26">50°</text>
+  <path
+     class="angle-mark"
+     d="M 65.553 34.881 A 7 7 0 0 0 55.991 32.319"
+     id="path28" />
+  <text
+     class="angle-label var"
+     x="61.447269"
+     y="30.352129"
+     text-anchor="middle"
+     id="text30">x</text>
+  <path
+     class="length-arc"
+     d="M 25.018999,58.284 C 5.8249876,45.155186 15.829761,8.0089159 42.791,9.4560003"
+     id="path41"
+     sodipodi:nodetypes="cc"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:0.45, 1.05" />
+  <path
+     class="length-arc"
+     d="M 42.791,9.4560003 C 54.101942,4.8213775 72.898037,10.501394 76.191002,28.739"
+     id="path41-3"
+     sodipodi:nodetypes="cc"
+     style="fill:none;stroke:#000000;stroke-width:0.32;stroke-linecap:round;stroke-dasharray:0.45, 1.05" />
 </svg>
