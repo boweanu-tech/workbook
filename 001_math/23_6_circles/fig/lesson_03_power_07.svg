@@ -1,31 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="65mm" height="58mm" viewBox="20 10 65 58">
-<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="62mm"
+   height="58mm"
+   viewBox="20 10 62 58"
+   version="1.1"
+   id="svg40"
+   sodipodi:docname="lesson_03_power_07.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs44" />
+  <sodipodi:namedview
+     id="namedview42"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.6448635"
+     inkscape:cx="122.9127"
+     inkscape:cy="109.6063"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg40" />
+  <style
+     id="style2">
 .main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}
 .tangent{fill:none;stroke:#000;stroke-width:1.1;stroke-linecap:round}
 .dim{fill:none;stroke:#000;stroke-width:.32;stroke-dasharray:.45 1.05;stroke-linecap:round}
 .right{fill:none;stroke:#000;stroke-width:.5}
 .point{fill:#000}
-.number,.unknown,.label{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif}
+.number,.unknown,.label{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif}
 .number,.unknown{font-size:6px}
 .unknown{font-style:italic}
 .label{font-size:5px}
 </style>
-<circle class="main" cx="50" cy="40" r="25"/>
-<line class="main" x1="25" y1="40" x2="75" y2="40"/>
-<line class="main" x1="43" y1="16" x2="25" y2="40"/>
-<line class="main" x1="43" y1="16" x2="75" y2="40"/>
-<line class="main" x1="43" y1="16" x2="43" y2="40"/>
-<path class="right" d="M43 36 L47 36 L47 40"/>
-<circle class="point" cx="25" cy="40" r=".7"/>
-<circle class="point" cx="75" cy="40" r=".7"/>
-<circle class="point" cx="43" cy="16" r=".7"/>
-<circle class="point" cx="43" cy="40" r=".7"/>
-<circle class="point" cx="50" cy="40" r=".7"/>
-<text class="label" x="51" y="46" text-anchor="middle">O</text>
-<path class="dim" d="M43 16 Q53 28 43 40"/>
-<text class="unknown" x="55" y="29" text-anchor="middle">x</text>
-<path class="dim" d="M25 40 Q34 50 43 40"/>
-<text class="number" x="34" y="53" text-anchor="middle">9</text>
-<path class="dim" d="M43 40 Q60 53 75 40"/>
-<text class="number" x="62" y="53" text-anchor="middle">16</text>
+  <circle
+     class="main"
+     cx="49.502106"
+     cy="38.061676"
+     r="27.288904"
+     id="circle4" />
+  <line
+     class="main"
+     x1="22.213202"
+     y1="38.061676"
+     x2="76.791008"
+     y2="38.061676"
+     id="line6" />
+  <line
+     class="main"
+     x1="41.861214"
+     y1="11.864327"
+     x2="22.213202"
+     y2="38.061676"
+     id="line8" />
+  <line
+     class="main"
+     x1="41.861214"
+     y1="11.864327"
+     x2="76.791008"
+     y2="38.061676"
+     id="line10" />
+  <line
+     class="main"
+     x1="41.861214"
+     y1="11.864327"
+     x2="41.861214"
+     y2="38.061676"
+     id="line12" />
+  <path
+     class="right"
+     d="m 41.861212,33.695451 h 4.366225 v 4.366224"
+     id="path14" />
+  <circle
+     class="point"
+     cx="22.213202"
+     cy="38.061676"
+     r="0.76408929"
+     id="circle16"
+     style="stroke-width:1" />
+  <circle
+     class="point"
+     cx="76.791008"
+     cy="38.061676"
+     r="0.76408929"
+     id="circle18"
+     style="stroke-width:1" />
+  <circle
+     class="point"
+     cx="41.861214"
+     cy="11.864327"
+     r="0.76408929"
+     id="circle20"
+     style="stroke-width:1" />
+  <circle
+     class="point"
+     cx="41.861214"
+     cy="38.061676"
+     r="0.76408929"
+     id="circle22"
+     style="stroke-width:1" />
+  <circle
+     class="point"
+     cx="49.502106"
+     cy="38.061676"
+     r="0.76408929"
+     id="circle24"
+     style="stroke-width:1" />
+  <text
+     class="label"
+     x="50.3895"
+     y="36.288033"
+     text-anchor="middle"
+     id="text26"
+     style="stroke-width:1">O</text>
+  <path
+     class="dim"
+     d="m 41.861212,11.864328 c -3.872137,10.92983 -2.277287,19.347952 0,26.197347"
+     id="path28"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="unknown"
+     x="36.926189"
+     y="25.896616"
+     text-anchor="middle"
+     id="text30"
+     style="stroke-width:1">x</text>
+  <path
+     class="dim"
+     d="m 22.213201,38.061675 c 6.917679,3.481408 13.545392,2.673771 19.648011,0"
+     id="path32"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="31.375385"
+     y="45.183666"
+     text-anchor="middle"
+     id="text34"
+     style="stroke-width:1">9</text>
+  <path
+     class="dim"
+     d="m 41.861212,38.061675 c 11.012689,3.388326 22.887804,4.424743 34.929797,0"
+     id="path36"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="60.503021"
+     y="46.398144"
+     text-anchor="middle"
+     id="text38"
+     style="stroke-width:1">16</text>
 </svg>

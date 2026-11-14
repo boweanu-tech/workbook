@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="17 14 67 73">
-<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px;font-style:normal}</style>
-<circle class="main" cx="49.5" cy="48.25" r="26.633"/>
-<path class="main" d="M27 34L72 34M45 22L45 74.5M27 34L45 74.5M45 22L72 34"/>
-<text class="label" x="19" y="35">A</text><text class="label" x="43" y="18">B</text>
-<text class="label" x="74" y="35">C</text><text class="label" x="43" y="84">D</text>
-<text class="label" x="47" y="31">P</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7 6 70 69">
+<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
+<circle class="main" cx="40" cy="40" r="27"/>
+<path class="main" d="M40 13L19.32 57.36L64.47 51.41L40 13M40 13L46.99 66.08L64.47 51.41M15.53 28.59L64.47 51.41"/>
+<text class="label" x="38" y="11">A</text><text class="label" x="8" y="27">B</text><text class="label" x="12" y="63">C</text><text class="label" x="44" y="74">D</text><text class="label" x="66" y="55">E</text><text class="label" x="45" y="41">F</text>
 </svg>

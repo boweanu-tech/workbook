@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="9 8 67 59">
-<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px;font-style:normal}</style>
-<path class="main" d="M20 35L30 55L60 55L60 15M20 35L60 55M60 15L30 55"/>
-<text class="label" x="23" y="63">A</text><text class="label" x="62" y="63">B</text>
-<text class="label" x="12" y="34">C</text><text class="label" x="62" y="13">D</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 95 69">
+<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
+<path class="main" d="M34 8L89 8L89 63L34 63Z M8 37L34 37M8 37L8 63L34 63M34 8L8 63M89 63L34 37"/>
+<text class="label" x="31" y="6">A</text><text class="label" x="35" y="69">B</text><text class="label" x="90" y="68">C</text><text class="label" x="90" y="9">D</text><text class="label" x="36" y="37">E</text><text class="label" x="2" y="36">F</text><text class="label" x="1" y="69">G</text><text class="label" x="16" y="28">P</text>
 </svg>

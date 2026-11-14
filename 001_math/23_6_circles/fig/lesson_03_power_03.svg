@@ -1,17 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="56mm" height="58mm" viewBox="42 7 56 58">
-<style>.main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}.dim{fill:none;stroke:#000;stroke-width:.32;stroke-dasharray:.45 1.05;stroke-linecap:round}.point{fill:#000}.number,.unknown{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif;font-size:6px}.unknown{font-style:italic}</style>
-<circle class="main" cx="66.17" cy="34.32" r="18.66"/>
-<line class="main" x1="90" y1="40" x2="62.81" y2="52.68"/>
-<line class="main" x1="90" y1="40" x2="51.94" y2="22.25"/>
-<line class="main" x1="82.39" y1="43.55" x2="84.56" y2="37.46"/>
-<line class="main" x1="62.81" y1="52.68" x2="51.94" y2="22.25"/>
-<circle class="point" cx="90" cy="40" r=".65"/>
-<circle class="point" cx="82.39" cy="43.55" r=".65"/>
-<circle class="point" cx="62.81" cy="52.68" r=".65"/>
-<circle class="point" cx="84.56" cy="37.46" r=".65"/>
-<circle class="point" cx="51.94" cy="22.25" r=".65"/>
-<path class="dim" d="M90 40 Q87 47 82.39 43.55"/><text class="number" x="92" y="50" text-anchor="middle">7</text>
-<path class="dim" d="M82.39 43.55 Q71 54 62.81 52.68"/><text class="unknown" x="70" y="60" text-anchor="middle">x</text>
-<path class="dim" d="M90 40 Q87 33 84.56 37.46"/><text class="number" x="92" y="33" text-anchor="middle">5</text>
-<path class="dim" d="M84.56 37.46 Q68 22 51.94 22.25"/><rect x="60.5" y="18.5" width="9" height="8" fill="#fff"/><text class="number" x="65" y="25" text-anchor="middle">30</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="56mm"
+   height="50mm"
+   viewBox="42 7 56 50"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="lesson_03_power_03.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs46" />
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.5773077"
+     inkscape:cx="77.212356"
+     inkscape:cy="111.55051"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg42" />
+  <style
+     id="style2">.main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}.dim{fill:none;stroke:#000;stroke-width:.32;stroke-dasharray:.45 1.05;stroke-linecap:round}.point{fill:#000}.number,.unknown{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:6px}.unknown{font-style:italic}</style>
+  <ellipse
+     class="main"
+     cx="67.186569"
+     cy="32.066811"
+     id="circle4"
+     rx="22.764301"
+     ry="22.768757" />
+  <line
+     class="main"
+     x1="96.258018"
+     y1="38.99749"
+     x2="63.087532"
+     y2="54.469509"
+     id="line6" />
+  <line
+     class="main"
+     x1="96.258018"
+     y1="38.99749"
+     x2="49.826653"
+     y2="17.339109"
+     id="line8" />
+  <line
+     class="main"
+     x1="86.974182"
+     y1="43.329166"
+     x2="89.621483"
+     y2="35.898205"
+     id="line10" />
+  <line
+     class="main"
+     x1="63.087532"
+     y1="54.469509"
+     x2="49.826653"
+     y2="17.339109"
+     id="line12" />
+  <ellipse
+     class="point"
+     cx="96.258018"
+     cy="38.99749"
+     id="circle14"
+     style="stroke-width:1"
+     rx="0.79296863"
+     ry="0.79312384" />
+  <ellipse
+     class="point"
+     cx="86.974182"
+     cy="43.329166"
+     id="circle16"
+     style="stroke-width:1"
+     rx="0.79296863"
+     ry="0.79312384" />
+  <ellipse
+     class="point"
+     cx="63.087532"
+     cy="54.469509"
+     id="circle18"
+     style="stroke-width:1"
+     rx="0.79296863"
+     ry="0.79312384" />
+  <ellipse
+     class="point"
+     cx="89.621483"
+     cy="35.898205"
+     id="circle20"
+     style="stroke-width:1"
+     rx="0.79296863"
+     ry="0.79312384" />
+  <ellipse
+     class="point"
+     cx="49.826653"
+     cy="17.339109"
+     id="circle22"
+     style="stroke-width:1"
+     rx="0.79296863"
+     ry="0.79312384" />
+  <path
+     class="dim"
+     d="m 96.25802,38.997491 c -0.0045,1.248472 -4.881863,5.946715 -9.283833,4.331676"
+     id="path24"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="92.431854"
+     y="49.392811"
+     text-anchor="middle"
+     id="text26"
+     transform="scale(0.99990211,1.0000979)"
+     style="stroke-width:1">7</text>
+  <path
+     class="dim"
+     d="M 86.974187,43.329167 C 76.502238,44.717814 69.113753,47.97588 63.087531,54.469508"
+     id="path28"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="unknown"
+     x="71.843185"
+     y="45.723785"
+     text-anchor="middle"
+     id="text30"
+     transform="scale(0.99990212,1.0000979)"
+     style="stroke-width:1">x</text>
+  <path
+     class="dim"
+     d="M 96.25802,38.997491 C 96.34537,37.68803 92.289175,33.455589 89.621482,35.898207"
+     id="path32"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="93.897202"
+     y="35.127369"
+     text-anchor="middle"
+     id="text34"
+     transform="scale(0.99990211,1.0000979)"
+     style="stroke-width:1">5</text>
+  <path
+     class="dim"
+     d="M 89.621482,35.898207 Q 69.41908,17.03406 49.826654,17.339108"
+     id="path36" />
+  <text
+     class="number"
+     x="74.170311"
+     y="20.590887"
+     text-anchor="middle"
+     id="text40"
+     transform="scale(0.99990212,1.0000979)"
+     style="stroke-width:1">30</text>
 </svg>
