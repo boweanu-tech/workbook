@@ -24,7 +24,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="3.1088542"
-     inkscape:cx="128.34311"
+     inkscape:cx="128.66477"
      inkscape:cy="128.50394"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
@@ -70,13 +70,6 @@
      x2="22.019"
      y2="54"
      id="line10" />
-  <line
-     class="main"
-     x1="28.716"
-     y1="16.019"
-     x2="58.261"
-     y2="67.191"
-     id="line12" />
   <line
      class="main"
      x1="28.716"
@@ -132,12 +125,12 @@
      id="text30">55°</text>
   <path
      class="angle-mark"
-     d="M 27.327 23.897 A 8 8 0 0 0 36.686 16.716"
+     d="M 27.795211,21.759314 A 5.4050014,5.7935704 0 0 0 34.118387,16.55886"
      id="path32" />
   <text
      class="angle-label var"
-     x="36.987831"
-     y="23.390091"
+     x="32.510769"
+     y="23.4865"
      text-anchor="middle"
      id="text34">x</text>
 </svg>

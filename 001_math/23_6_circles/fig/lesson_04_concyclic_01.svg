@@ -1,2 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 68"><style>
-.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.thick{fill:none;stroke:#000;stroke-width:1.15}.dash{fill:none;stroke:#000;stroke-width:.5;stroke-dasharray:2 1.6}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.2px}</style><circle class="main" cx="43" cy="33" r="27"/><polyline class="main" points="19,39 38,7 68,50"/><line class="main" x1="19" y1="39" x2="72" y2="20"/><line class="main" x1="38" y1="7" x2="72" y2="20"/><line class="main" x1="19" y1="39" x2="68" y2="50"/><line class="main" x1="38" y1="7" x2="68" y2="50"/><circle class="point" cx="19" cy="39" r="1"/><text class="label" x="11" y="46">A</text><circle class="point" cx="38" cy="7" r="1"/><text class="label" x="30" y="5">B</text><circle class="point" cx="72" cy="20" r="1"/><text class="label" x="74" y="18">C</text><circle class="point" cx="68" cy="50" r="1"/><text class="label" x="70" y="57">D</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 70">
+<style>.line{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
+<path class="line" d="M20 35L30 55L60 55L60 15M20 35L60 55M60 15L30 55"/>
+<text class="label" x="23" y="63">A</text><text class="label" x="62" y="63">B</text>
+<text class="label" x="12" y="34">C</text><text class="label" x="62" y="13">D</text>
+</svg>

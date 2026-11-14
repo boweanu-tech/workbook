@@ -1,2 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 70"><style>.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
-<circle class="main" cx="45" cy="30" r="25"/><polyline class="main" points="25.85,13.93 64.15,13.93 49.77,54.54 40.23,54.54 25.85,13.93"/><line class="main" x1="25.85" y1="13.93" x2="45" y2="68"/><line class="main" x1="64.15" y1="13.93" x2="45" y2="68"/><circle class="point" cx="25.85" cy="13.93" r="1"/><text class="label" x="18" y="12">A</text><circle class="point" cx="64.15" cy="13.93" r="1"/><text class="label" x="67" y="13">B</text><circle class="point" cx="49.77" cy="54.54" r="1"/><text class="label" x="52" y="57">C</text><circle class="point" cx="40.23" cy="54.54" r="1"/><text class="label" x="32" y="57">D</text><circle class="point" cx="45" cy="68" r="1"/><text class="label" x="47" y="69">E</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 96">
+<style>.line{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
+<circle class="line" cx="45" cy="28.833" r="24.318"/>
+<path class="line" d="M25 15L65 15L55 51L35 51L25 15M25 15L45 87L65 15"/>
+<text class="label" x="18" y="14">A</text><text class="label" x="67" y="14">B</text>
+<text class="label" x="57" y="53">C</text><text class="label" x="27" y="53">D</text>
+<text class="label" x="47" y="93">E</text>
+</svg>

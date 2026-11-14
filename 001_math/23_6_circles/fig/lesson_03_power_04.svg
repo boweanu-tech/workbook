@@ -1,33 +1,167 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="72mm" viewBox="5 4 100 72">
-<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100mm"
+   height="72mm"
+   viewBox="5 4 100 72"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="lesson_03_power_04.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs48" />
+  <sodipodi:namedview
+     id="namedview46"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.93614"
+     inkscape:cx="189.02368"
+     inkscape:cy="136.06299"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <style
+     id="style2">
 .main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}
 .tangent{fill:none;stroke:#000;stroke-width:1.1;stroke-linecap:round}
 .dim{fill:none;stroke:#666;stroke-width:.45;stroke-dasharray:1.7 1.3}
 .right{fill:none;stroke:#000;stroke-width:.5}
 .point{fill:#000}
-.number,.unknown,.label{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif}
+.number,.unknown,.label{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif}
 .number,.unknown{font-size:6px}
 .unknown{font-style:italic}
 .label{font-size:5px}
 </style>
-<circle class="main" cx="50" cy="40" r="30"/>
-<line class="main" x1="10" y1="40" x2="50" y2="10"/>
-<line class="main" x1="10" y1="40" x2="80" y2="40"/>
-<line class="main" x1="21.2" y1="31.6" x2="20" y2="40"/>
-<line class="main" x1="50" y1="10" x2="80" y2="40"/>
-<circle class="point" cx="10" cy="40" r=".7"/>
-<circle class="point" cx="50" cy="10" r=".7"/>
-<circle class="point" cx="21.2" cy="31.6" r=".7"/>
-<circle class="point" cx="20" cy="40" r=".7"/>
-<circle class="point" cx="80" cy="40" r=".7"/>
-<circle class="point" cx="50" cy="40" r=".7"/>
-<text class="label" x="51" y="46" text-anchor="middle">O</text>
-<path class="dim" d="M10 40 Q14 28 21.2 31.6"/>
-<text class="number" x="12" y="28" text-anchor="middle">14</text>
-<path class="dim" d="M21.2 31.6 Q35 15 50 10"/>
-<text class="number" x="35" y="17" text-anchor="middle">36</text>
-<path class="dim" d="M10 40 Q14 49 20 40"/>
-<text class="unknown" x="14" y="54" text-anchor="middle">x</text>
-<path class="dim" d="M20 40 Q50 54 80 40"/>
-<text class="number" x="52" y="54" text-anchor="middle">60</text>
+  <circle
+     class="main"
+     cx="50"
+     cy="40"
+     r="30"
+     id="circle4" />
+  <line
+     class="main"
+     x1="10"
+     y1="40"
+     x2="50"
+     y2="10"
+     id="line6" />
+  <line
+     class="main"
+     x1="10"
+     y1="40"
+     x2="80"
+     y2="40"
+     id="line8" />
+  <line
+     class="main"
+     x1="21.2"
+     y1="31.6"
+     x2="20"
+     y2="40"
+     id="line10" />
+  <line
+     class="main"
+     x1="50"
+     y1="10"
+     x2="80"
+     y2="40"
+     id="line12" />
+  <circle
+     class="point"
+     cx="10"
+     cy="40"
+     r=".7"
+     id="circle14" />
+  <circle
+     class="point"
+     cx="50"
+     cy="10"
+     r=".7"
+     id="circle16" />
+  <circle
+     class="point"
+     cx="21.2"
+     cy="31.6"
+     r=".7"
+     id="circle18" />
+  <circle
+     class="point"
+     cx="20"
+     cy="40"
+     r=".7"
+     id="circle20" />
+  <circle
+     class="point"
+     cx="80"
+     cy="40"
+     r=".7"
+     id="circle22" />
+  <circle
+     class="point"
+     cx="50"
+     cy="40"
+     r=".7"
+     id="circle24" />
+  <text
+     class="label"
+     x="50.058746"
+     y="37.914501"
+     text-anchor="middle"
+     id="text26">O</text>
+  <path
+     class="dim"
+     d="m 10,40 c 2.419272,-6.368995 5.892769,-7.455968 11.2,-8.4"
+     id="path28"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="14.443954"
+     y="31.427801"
+     text-anchor="middle"
+     id="text30">14</text>
+  <path
+     class="dim"
+     d="M 21.2,31.6 C 37.73463,25.759502 44.449477,16.503734 50,10"
+     id="path32"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="39.840034"
+     y="27.526634"
+     text-anchor="middle"
+     id="text34">36</text>
+  <path
+     class="dim"
+     d="m 10,40 c 3.867611,3.728015 8.491519,1.286465 10,0"
+     id="path36"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="unknown"
+     x="14.811366"
+     y="46.13908"
+     text-anchor="middle"
+     id="text38">x</text>
+  <path
+     class="dim"
+     d="m 20,40 c 23.92536,5.940092 46.69576,3.280985 60,0"
+     id="path40"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="49.99464"
+     y="48.878716"
+     text-anchor="middle"
+     id="text42">60</text>
 </svg>

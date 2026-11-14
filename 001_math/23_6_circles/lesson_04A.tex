@@ -1,45 +1,74 @@
 % theme: proofs_with_inscribed_angles
-% 表：代表的な穴埋め証明4題。裏：完全記述3題と、その証明を利用する計算。
+% 表：相似1題、同一円周上の証明2題（穴埋め）。
+% 裏：相似2題、同一円周上の証明1題（記述と利用）。
 \MajorQuestionLesson{円周角の定理の証明問題}
 \SetRowSpace{3mm}
 
-\TypeQuestion{図で、$\Ang{ACB}=\Ang{ADB}$ である。4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ が同一円周上にあることを示す証明の空欄をうめなさい。}{converse_concyclic_fill}
-\FigProblemBlock{39mm}{fig/lesson_04_concyclic_01}{
-\WholeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ を通る円をかく。この円において、弦 $\mathrm{AB}$ に対する円周角は $\Ang{ACB}$ である。仮定より、$\Ang{ADB}=\Blank{ア}$ であるから、円周角の定理の逆より、点 $\mathrm{D}$ はこの円の\Blank{イ}にある。したがって、4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ は同一円周上にある。}{}}
-{} 
-
-\TypeQuestion{図で、$\Ang{ABC}+\Ang{ADC}=180^\circ$ である。4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ が同一円周上にあることを示す証明の空欄をうめなさい。}{opposite_angles_concyclic_fill}
-\FigProblemBlock{39mm}{fig/lesson_04_concyclic_02}{
-\WholeQuestion{点 $\mathrm{A},\mathrm{B},\mathrm{C}$ を通る円と、直線 $\mathrm{CD}$ とのもう1つの交点を $\mathrm{D}'$ とする。円に内接する四角形の向かい合う角の和は $180^\circ$ だから、$\Ang{ABC}+\Ang{AD'C}=180^\circ$ である。仮定と比べると、$\Ang{ADC}=\Blank{ア}$ となるので、点 $\mathrm{D}$ と点 $\mathrm{D}'$ は一致する。よって、\Blank{イ}。}{}}
-{} 
-
-\TypeQuestion{図で、2本の弦 $\mathrm{AC},\mathrm{BD}$ は点 $\mathrm{P}$ で交わっている。$\Tri{APD}\Similar\Tri{BPC}$ を示す証明の空欄をうめなさい。}{crossing_chords_similarity_fill}
+\TypeQuestion{図の円で、弦 $\mathrm{AC},\mathrm{BD}$ は点 $\mathrm{P}$ で交わっている。}{crossing_chords_similarity_fill}
 \FigProblemBlock{39mm}{fig/lesson_04_similarity_01}{
-\WholeQuestion{$\Tri{APD}$ と $\Tri{BPC}$ において、同じ弧 $\mathrm{CD}$ に対する円周角は等しいから、$\Ang{CAD}=\Ang{CBD}$。したがって、$\Ang{PAD}=\Blank{ア}$。また、対頂角は等しいから、$\Ang{APD}=\Blank{イ}$。よって、\Blank{ウ}ので、$\Tri{APD}\Similar\Tri{BPC}$。}{}}
-{} 
+\WholeQuestion{$\Tri{APD}\Similar\Tri{BPC}$ となることを示す次の証明の空欄をうめなさい。\par\smallskip
+\ProofHeading
+$\Tri{APD}$ と $\Tri{BPC}$ において、同じ弧 $\mathrm{CD}$ に対する円周角は等しいから、\par
+$\Ang{PAD}=\Ang{CAD}=\Ang{CBD}=$\Blank{ア}\quad\CondTag{1}\par\smallskip
+また、対頂角は等しいから、\par
+$\Ang{APD}=$\Blank{イ}\quad\CondTag{2}\par\smallskip
+\CondNo{1}、\CondNo{2}より、\Blank{ウ}ので、\par
+$\Tri{APD}\Similar\Tri{BPC}$
+}{ア：$\Ang{PBC}$\par イ：$\Ang{BPC}$\par
+ウ：2組の角がそれぞれ等しい。}
+}{}
 
-\TypeQuestion{四角形 $\mathrm{ABCD}$ は円に内接し、辺 $\mathrm{AD},\mathrm{BC}$ の延長の交点を $\mathrm{E}$ とする。$\Tri{ABE}\Similar\Tri{CDE}$ を示す証明の空欄をうめなさい。}{cyclic_exterior_similarity_fill}
-\FigProblemBlock{39mm}{fig/lesson_04_similarity_02}{
-\WholeQuestion{$\Tri{ABE}$ と $\Tri{CDE}$ において、円に内接する四角形の外角は、その向かいの内角に等しいから、$\Ang{BAE}=\Blank{ア}$。また、$\Ang{AEB}=\Blank{イ}$。よって、\Blank{ウ}ので、$\Tri{ABE}\Similar\Tri{CDE}$。}{}}
-{} 
+\TypeQuestion{図で、点 $\mathrm{C},\mathrm{D}$ は直線 $\mathrm{AB}$ の同じ側にあり、$\Ang{ACB}=\Ang{ADB}$ である。}{converse_concyclic_fill}
+\FigProblemBlock{39mm}{fig/lesson_04_concyclic_01}{
+\WholeQuestion{4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ が同一円周上にあることを示す次の証明の空欄をうめなさい。\par\smallskip
+\ProofHeading
+点 $\mathrm{A},\mathrm{B},\mathrm{C}$ を通る円を考える。この円で、弦 $\mathrm{AB}$ に対する円周角は $\Ang{ACB}$ である。\par\smallskip
+仮定より、$\Ang{ADB}=$\Blank{ア} であり、点 $\mathrm{C},\mathrm{D}$ は直線 $\mathrm{AB}$ の同じ側にある。よって、\Blank{イ}より、点 $\mathrm{D}$ もこの円周上にある。\par\smallskip
+したがって、4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ は同一円周上にある。
+}{ア：$\Ang{ACB}$\par イ：円周角の定理の逆}
+}{}
 
-\AnswerColumnBreak
+\TypeQuestion{図で、$\Ang{ACB}=\Ang{ADB}=90^\circ$ である。}{diameter_concyclic_fill}
+\FigProblemBlock{39mm}{fig/lesson_04_concyclic_02}{
+\WholeQuestion{4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ が同一円周上にあることを示す次の証明の空欄をうめなさい。\par\smallskip
+\ProofHeading
+線分 $\mathrm{AB}$ を\Blank{ア}とする円を考える。$\Ang{ACB}=90^\circ$ だから、点 $\mathrm{C}$ はこの円周上にある。\par\smallskip
+同様に、$\Ang{ADB}=$\Blank{イ} だから、点 $\mathrm{D}$ もこの円周上にある。\par\smallskip
+したがって、4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ は同一円周上にある。
+}{ア：直径\par イ：$90^\circ$}
+}{}
+
 \LessonQuestionBreak
 
-\TypeQuestion{図で、$\Ang{ACB}=\Ang{ADB}$ である。}{converse_concyclic_proof}
-\FigProblemBlock{43mm}{fig/lesson_04_concyclic_03}{
-\QQ{4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ が同一円周上にあることを証明しなさい。}{}
-\QQ{$\Ang{BAC}=48^\circ$、$\Ang{BCD}=71^\circ$ のとき、$\Ang{CAD}$ の大きさを求めなさい。}{}
-}{}
-
-\TypeQuestion{図で、2本の弦 $\mathrm{AC},\mathrm{BD}$ は点 $\mathrm{P}$ で交わっている。}{crossing_chords_similarity_proof}
+\TypeQuestion{図の円で、弦 $\mathrm{AC},\mathrm{BD}$ は点 $\mathrm{P}$ で交わっている。}{crossing_chords_similarity_proof}
 \FigProblemBlock{43mm}{fig/lesson_04_similarity_03}{
-\QQ{$\Tri{APD}\Similar\Tri{BPC}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{AP}=6\mathrm{cm}$、$\Lseg{BP}=4\mathrm{cm}$、$\Lseg{CP}=9\mathrm{cm}$ のとき、$\Lseg{DP}$ の長さを求めなさい。}{}
+\QQ{$\Tri{APD}\Similar\Tri{BPC}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{APD}$ と $\Tri{BPC}$ において、同じ弧 $\mathrm{CD}$ に対する円周角は等しいから、\par
+$\Ang{PAD}=\Ang{CAD}=\Ang{CBD}=\Ang{PBC}$\quad\CondTag{1}\par\smallskip
+また、対頂角は等しいから、\par
+$\Ang{APD}=\Ang{BPC}$\quad\CondTag{2}\par\smallskip
+\CondNo{1}、\CondNo{2}より、2組の角がそれぞれ等しいので、\par
+$\Tri{APD}\Similar\Tri{BPC}$}
+\QQ{$\Lseg{AP}=6\mathrm{cm}$、$\Lseg{BP}=4\mathrm{cm}$、$\Lseg{CP}=9\mathrm{cm}$ のとき、$\Lseg{DP}$ の長さを求めなさい。}{$\dfrac{27}{2}\mathrm{cm}$}
 }{}
 
-\TypeQuestion{四角形 $\mathrm{ABCD}$ は円に内接し、辺 $\mathrm{AD},\mathrm{BC}$ の延長の交点を $\mathrm{E}$ とする。}{cyclic_exterior_similarity_proof}
+\TypeQuestion{図で、四角形 $\mathrm{ABCD}$ は円に内接し、直線 $\mathrm{AD},\mathrm{BC}$ は点 $\mathrm{E}$ で交わっている。}{cyclic_exterior_similarity_proof}
 \FigProblemBlock{43mm}{fig/lesson_04_similarity_04}{
-\QQ{$\Tri{ABE}\Similar\Tri{CDE}$ となることを証明しなさい。}{}
-\QQ{$\Lseg{AB}=8\mathrm{cm}$、$\Lseg{CD}=6\mathrm{cm}$、$\Lseg{DE}=9\mathrm{cm}$ のとき、$\Lseg{BE}$ の長さを求めなさい。}{}
+\QQ{$\Tri{ABE}\Similar\Tri{CDE}$ となることを証明しなさい。}{\ProofHeading
+$\Tri{ABE}$ と $\Tri{CDE}$ において、円に内接する四角形の外角は、その向かいの内角に等しいから、\par
+$\Ang{BAE}=\Ang{DCE}$\quad\CondTag{1}\par\smallskip
+また、共通な角であるから、\par
+$\Ang{AEB}=\Ang{CED}$\quad\CondTag{2}\par\smallskip
+\CondNo{1}、\CondNo{2}より、2組の角がそれぞれ等しいので、\par
+$\Tri{ABE}\Similar\Tri{CDE}$}
+\QQ{$\Lseg{AB}=8\mathrm{cm}$、$\Lseg{CD}=4\mathrm{cm}$、$\Lseg{DE}=9\mathrm{cm}$ のとき、$\Lseg{BE}$ の長さを求めなさい。}{$18\mathrm{cm}$}
+}{}
+
+\TypeQuestion{図で、点 $\mathrm{C},\mathrm{D}$ は直線 $\mathrm{AB}$ の同じ側にあり、$\Ang{ACB}=\Ang{ADB}$ である。}{converse_concyclic_proof}
+\FigProblemBlock{43mm}{fig/lesson_04_concyclic_03}{
+\QQ{4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ が同一円周上にあることを証明しなさい。}{\ProofHeading
+点 $\mathrm{A},\mathrm{B},\mathrm{C}$ を通る円を考える。この円で、弦 $\mathrm{AB}$ に対する円周角は $\Ang{ACB}$ である。\par\smallskip
+仮定より $\Ang{ADB}=\Ang{ACB}$ であり、点 $\mathrm{C},\mathrm{D}$ は直線 $\mathrm{AB}$ の同じ側にある。円周角の定理の逆より、点 $\mathrm{D}$ もこの円周上にある。\par\smallskip
+よって、4点 $\mathrm{A},\mathrm{B},\mathrm{C},\mathrm{D}$ は同一円周上にある。}
+\QQ{$\Ang{CAD}=63^\circ$ のとき、$\Ang{CBD}$ の大きさを求めなさい。}{$63^\circ$}
 }{}
