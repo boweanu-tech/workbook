@@ -1,23 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="68mm" viewBox="14 5 68 68">
-  <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="68mm"
+   height="68mm"
+   viewBox="14 5 68 68"
+   version="1.1"
+   id="svg24"
+   sodipodi:docname="lesson_02_mixed_04.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs28" />
+  <sodipodi:namedview
+     id="namedview26"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.1088542"
+     inkscape:cx="128.34311"
+     inkscape:cy="128.50394"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24" />
+  <style
+     id="style2">
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
     .angle-mark,.tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
     .center{fill:#000}
-    .angle-label,.point-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
+    .angle-label,.point-label{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-style:normal}
     .angle-label{font-size:5px}
     .point-label{font-size:4.6px}
     .var{font-style:italic}
   </style>
-  <circle class="main" cx="48" cy="39" r="30"/>
-  <line class="main" x1="25.019" y1="19.716" x2="63" y2="64.981"/>
-  <line class="main" x1="25.019" y1="58.284" x2="67.284" y2="16.019"/>
-  <line class="main" x1="25.019" y1="58.284" x2="63" y2="64.981"/>
-  <path class="angle-mark" d="M 59.143 60.385 A 6 6 0 0 0 57.091 63.939"/>
-  <text class="angle-label" x="50.01" y="57.481" text-anchor="middle">40°</text>
-  <path class="angle-mark" d="M 30.928 59.326 A 6 6 0 0 0 29.262 54.041"/>
-  <text class="angle-label" x="39.325" y="53.773" text-anchor="middle">55°</text>
-  <path class="angle-mark" d="M 38.116 35.325 A 7 7 0 0 0 37.666 45.637"/>
-  <text class="angle-label var" x="27.63" y="40.033" text-anchor="middle">x</text>
+  <circle
+     class="main"
+     cx="48"
+     cy="39"
+     r="30"
+     id="circle4" />
+  <line
+     class="main"
+     x1="25.019"
+     y1="19.716"
+     x2="63"
+     y2="64.981"
+     id="line6" />
+  <line
+     class="main"
+     x1="25.019"
+     y1="58.284"
+     x2="67.284"
+     y2="16.019"
+     id="line8" />
+  <line
+     class="main"
+     x1="25.019"
+     y1="58.284"
+     x2="63"
+     y2="64.981"
+     id="line10" />
+  <path
+     id="line10-3"
+     style="fill:none;stroke:#000000;stroke-width:0.55;stroke-linecap:round;stroke-linejoin:round"
+     class="main"
+     d="M 25.018999,19.716 67.283997,16.018999"
+     sodipodi:nodetypes="cc" />
+  <path
+     class="angle-mark"
+     d="m 61.098389,16.470259 a 6,6 45 0 0 1.568073,3.792462"
+     id="path12"
+     inkscape:transform-center-x="1.1604392"
+     inkscape:transform-center-y="-1.0844061" />
+  <text
+     class="angle-label"
+     x="58.016644"
+     y="21.680468"
+     text-anchor="middle"
+     id="text14">40°</text>
+  <path
+     class="angle-mark"
+     d="M 30.928 59.326 A 6 6 0 0 0 29.262 54.041"
+     id="path16" />
+  <text
+     class="angle-label"
+     x="35.671078"
+     y="57.436893"
+     text-anchor="middle"
+     id="text18">55°</text>
+  <path
+     class="angle-mark"
+     d="m 39.721572,37.627358 a 3.6529852,3.9870233 0 0 0 -0.234834,5.873455"
+     id="path20" />
+  <text
+     class="angle-label var"
+     x="35.983055"
+     y="41.691578"
+     text-anchor="middle"
+     id="text22">x</text>
 </svg>

@@ -1,25 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="68mm" height="68mm" viewBox="14 5 68 68">
-  <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="68mm"
+   height="68mm"
+   viewBox="14 5 68 68"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="lesson_02_mixed_01.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs32" />
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.1088542"
+     inkscape:cx="128.34311"
+     inkscape:cy="128.50394"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg28" />
+  <style
+     id="style2">
     .main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}
     .diameter{fill:none;stroke:#000;stroke-width:1.05;stroke-linecap:round}
     .angle-mark,.tick{fill:none;stroke:#000;stroke-width:.38;stroke-linecap:round}
     .center{fill:#000}
-    .angle-label,.point-label{fill:#000;font-family:"CMU Serif","Computer Modern Serif","Latin Modern Roman","Times New Roman",serif;font-style:normal}
+    .angle-label,.point-label{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Computer Modern Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-style:normal}
     .angle-label{font-size:5px}
     .point-label{font-size:4.6px}
     .var{font-style:italic}
   </style>
-  <circle class="main" cx="48" cy="39" r="30"/>
-  <line class="main" x1="33" y1="13.019" x2="18.456" y2="44.209"/>
-  <line class="main" x1="33" y1="13.019" x2="33" y2="64.981"/>
-  <line class="main" x1="63" y1="13.019" x2="18.456" y2="44.209"/>
-  <line class="main" x1="63" y1="13.019" x2="33" y2="64.981"/>
-  <line class="main" x1="63" y1="13.019" x2="68.074" y2="61.294"/>
-  <path class="angle-mark" d="M 30.464 18.457 A 6 6 0 0 0 33 19.019"/>
-  <text class="angle-label" x="29.753" y="27.663" text-anchor="middle">25°</text>
-  <path class="angle-mark" d="M 54.808 18.755 A 10 10 0 0 0 64.045 22.964"/>
-  <text class="angle-label" x="43" y="38" text-anchor="middle">61°</text>
-  <path class="angle-mark" d="M 60.5 17.349 A 5 5 0 0 0 63.523 17.992"/>
-  <text class="angle-label var" x="60.297" y="25.735" text-anchor="middle">x</text>
+  <circle
+     class="main"
+     cx="48"
+     cy="39"
+     r="30"
+     id="circle4" />
+  <line
+     class="main"
+     x1="33"
+     y1="13.019"
+     x2="18.456"
+     y2="44.209"
+     id="line6" />
+  <line
+     class="main"
+     x1="33"
+     y1="13.019"
+     x2="33"
+     y2="64.981"
+     id="line8" />
+  <line
+     class="main"
+     x1="63"
+     y1="13.019"
+     x2="18.456"
+     y2="44.209"
+     id="line10" />
+  <line
+     class="main"
+     x1="63"
+     y1="13.019"
+     x2="33"
+     y2="64.981"
+     id="line12" />
+  <line
+     class="main"
+     x1="63"
+     y1="13.019"
+     x2="68.074"
+     y2="61.294"
+     id="line14" />
+  <path
+     class="angle-mark"
+     d="M 30.464 18.457 A 6 6 0 0 0 33 19.019"
+     id="path16" />
+  <text
+     class="angle-label"
+     x="37.158253"
+     y="20.076231"
+     text-anchor="middle"
+     id="text18">25°</text>
+  <path
+     class="angle-mark"
+     d="M 54.808 18.755 A 10 10 0 0 0 64.045 22.964"
+     id="path20" />
+  <text
+     class="angle-label"
+     x="60.380318"
+     y="28.280252"
+     text-anchor="middle"
+     id="text22">61°</text>
+  <path
+     class="angle-mark"
+     d="M 60.5 17.349 A 5 5 0 0 0 63.523 17.992"
+     id="path24" />
+  <text
+     class="angle-label var"
+     x="61.398731"
+     y="20.828419"
+     text-anchor="middle"
+     id="text26">x</text>
 </svg>
