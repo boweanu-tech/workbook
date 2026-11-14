@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 70">
-<style>.line{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
-<circle class="line" cx="45" cy="35" r="25"/>
-<path class="line" d="M30 15L60 55M60 15L30 55M30 15L30 55M60 15L60 55"/>
-<text class="label" x="23" y="13">A</text><text class="label" x="62" y="13">B</text>
-<text class="label" x="62" y="62">C</text><text class="label" x="23" y="62">D</text>
-<text class="label" x="47" y="34">P</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="17 14 67 73">
+<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px;font-style:normal}</style>
+<circle class="main" cx="49.5" cy="48.25" r="26.633"/>
+<path class="main" d="M27 34L72 34M45 22L45 74.5M27 34L45 74.5M45 22L72 34"/>
+<text class="label" x="19" y="35">A</text><text class="label" x="43" y="18">B</text>
+<text class="label" x="74" y="35">C</text><text class="label" x="43" y="84">D</text>
+<text class="label" x="47" y="31">P</text>
 </svg>

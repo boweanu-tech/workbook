@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 80">
-<style>.line{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
-<path class="line" d="M20 40L45 15L70 40L45 65L20 40M20 40L70 40"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="9 7 72 70">
+<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px;font-style:normal}</style>
+<path class="main" d="M20 40L45 15L70 40L45 65L20 40M20 40L70 40"/>
 <text class="label" x="12" y="40">A</text><text class="label" x="72" y="40">B</text>
 <text class="label" x="43" y="11">C</text><text class="label" x="43" y="74">D</text>
 </svg>

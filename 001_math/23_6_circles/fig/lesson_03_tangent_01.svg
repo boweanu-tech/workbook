@@ -1,27 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="72mm" viewBox="5 4 100 72">
-<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100mm"
+   height="72mm"
+   viewBox="5 4 100 72"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="lesson_03_tangent_01.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs36" />
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0761645"
+     inkscape:cx="137.27236"
+     inkscape:cy="192.42213"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32"
+     inkscape:snap-global="false" />
+  <style
+     id="style2">
 .main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}
 .tangent{fill:none;stroke:#000;stroke-width:1.1;stroke-linecap:round}
 .mark{fill:none;stroke:#000;stroke-width:.5}
 .tick{stroke:#000;stroke-width:.6}
 .point{fill:#000}
-.number,.unknown,.label{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif}
+.number,.unknown,.label{fill:#000;font-family:&quot;CMU Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif}
 .number,.unknown{font-size:6px}
 .unknown{font-style:italic}
 .label{font-size:5px}
 </style>
-<circle class="main" cx="50" cy="40" r="30"/>
-<line class="tangent" x1="5" y1="70" x2="95" y2="70"/>
-<line class="main" x1="23.04" y1="26.85" x2="50" y2="70"/>
-<line class="main" x1="50" y1="70" x2="78.19" y2="29.74"/>
-<line class="main" x1="23.04" y1="26.85" x2="78.19" y2="29.74"/>
-<circle class="point" cx="23.04" cy="26.85" r=".7"/>
-<circle class="point" cx="50" cy="70" r=".7"/>
-<circle class="point" cx="78.19" cy="29.74" r=".7"/>
-<path class="mark" d="M43 62 Q50 59 57 62"/>
-<text class="number" x="50" y="58" text-anchor="middle">67°</text>
-<path class="mark" d="M69 32 Q70 38 73 42"/>
-<text class="number" x="66" y="39" text-anchor="middle">58°</text>
-<path class="mark" d="M61 70 Q61 65 65 62"/>
-<text class="unknown" x="69" y="67" text-anchor="middle">x</text>
+  <circle
+     class="main"
+     cx="50"
+     cy="40"
+     r="30"
+     id="circle4" />
+  <path
+     id="line6"
+     class="tangent"
+     style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:round"
+     d="m 16.84083,70 64.307698,0"
+     sodipodi:nodetypes="cc" />
+  <line
+     class="main"
+     x1="23.04"
+     y1="26.85"
+     x2="50"
+     y2="70"
+     id="line8" />
+  <line
+     class="main"
+     x1="50"
+     y1="70"
+     x2="78.19"
+     y2="29.74"
+     id="line10" />
+  <line
+     class="main"
+     x1="23.04"
+     y1="26.85"
+     x2="78.19"
+     y2="29.74"
+     id="line12" />
+  <circle
+     class="point"
+     cx="23.04"
+     cy="26.85"
+     r=".7"
+     id="circle14" />
+  <circle
+     class="point"
+     cx="50"
+     cy="70"
+     r=".7"
+     id="circle16" />
+  <circle
+     class="point"
+     cx="78.19"
+     cy="29.74"
+     r=".7"
+     id="circle18" />
+  <path
+     class="mark"
+     d="m 46.121493,63.838759 c 2.32243,-1.765871 5.796078,-1.604945 8.150143,0.0229"
+     id="path20"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="51.336201"
+     y="61.583385"
+     text-anchor="middle"
+     id="text22">67°</text>
+  <path
+     class="mark"
+     d="m 68.142657,29.31848 c -0.05425,4.39922 1.530524,7.110239 4.383652,8.588286"
+     id="path24"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="number"
+     x="63.944653"
+     y="38.611389"
+     text-anchor="middle"
+     id="text26">58°</text>
+  <path
+     class="mark"
+     d="m 56.212588,61.689241 c 2.290478,1.326865 4.740257,5.120397 4.480973,8.338252"
+     id="path28"
+     sodipodi:nodetypes="cc" />
+  <text
+     class="unknown"
+     x="61.538624"
+     y="64.739708"
+     text-anchor="middle"
+     id="text30">x</text>
 </svg>
