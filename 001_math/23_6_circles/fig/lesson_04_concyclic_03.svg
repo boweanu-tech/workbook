@@ -1,5 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 95 69">
-<style>.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}</style>
-<path class="main" d="M34 8L89 8L89 63L34 63Z M8 37L34 37M8 37L8 63L34 63M34 8L8 63M89 63L34 37"/>
-<text class="label" x="31" y="6">A</text><text class="label" x="35" y="69">B</text><text class="label" x="90" y="68">C</text><text class="label" x="90" y="9">D</text><text class="label" x="36" y="37">E</text><text class="label" x="2" y="36">F</text><text class="label" x="1" y="69">G</text><text class="label" x="16" y="28">P</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="1 1 70 55"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="lesson_04_concyclic_03.svg"
+   width="70"
+   height="55"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     id="namedview24"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="4.0940458"
+     inkscape:cx="-6.3506862"
+     inkscape:cy="33.096845"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg22" />
+  <style
+     id="style2">.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:&quot;CMU Serif&quot;,&quot;Times New Roman&quot;,serif;font-size:6px}</style>
+  <path
+     class="main"
+     d="M 26.454365,8.6010738 H 65.297427 V 47.444136 H 26.454365 Z M 8.0921902,29.08196 H 26.454365 m -18.3621748,0 V 47.444136 H 26.454365 m 0,-38.8430622 L 8.0921902,47.444136 m 57.2052368,0 L 26.454365,29.08196"
+     id="path4" />
+  <text
+     class="label"
+     x="24.335651"
+     y="7.1885982"
+     id="text6"
+     style="stroke-width:1">A</text>
+  <text
+     class="label"
+     x="25.68647"
+     y="52.354465"
+     id="text8"
+     style="stroke-width:1">B</text>
+  <text
+     class="label"
+     x="66.003662"
+     y="50.975327"
+     id="text10"
+     style="stroke-width:1">C</text>
+  <text
+     class="label"
+     x="66.003662"
+     y="9.3073111"
+     id="text12"
+     style="stroke-width:1">D</text>
+  <text
+     class="label"
+     x="27.86684"
+     y="29.081961"
+     id="text14"
+     style="stroke-width:1">E</text>
+  <text
+     class="label"
+     x="3.8547645"
+     y="28.375723"
+     id="text16"
+     style="stroke-width:1">F</text>
+  <text
+     class="label"
+     x="3.1485276"
+     y="51.681564"
+     id="text18"
+     style="stroke-width:1">G</text>
+  <text
+     class="label"
+     x="13.981576"
+     y="27.403919"
+     id="text20"
+     style="stroke-width:1">P</text>
 </svg>
