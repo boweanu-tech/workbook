@@ -67,30 +67,10 @@
      x2="26"
      y2="22"
      id="line12" />
-  <circle
-     class="point"
-     cx="100"
-     cy="40"
-     r=".7"
-     id="circle14" />
-  <circle
-     class="point"
-     cx="68"
-     cy="64"
-     r=".7"
-     id="circle16" />
-  <circle
-     class="point"
-     cx="79.59"
-     cy="35.03"
-     r=".7"
-     id="circle18" />
-  <circle
-     class="point"
-     cx="26"
-     cy="22"
-     r=".7"
-     id="circle20" />
+
+
+
+
   <path
      class="dim"
      d="M 100,40 C 94.464854,34.534355 87.717116,32.546827 79.59,35.03"

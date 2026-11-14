@@ -78,24 +78,9 @@
      x2="78.19"
      y2="29.74"
      id="line12" />
-  <circle
-     class="point"
-     cx="23.04"
-     cy="26.85"
-     r=".7"
-     id="circle14" />
-  <circle
-     class="point"
-     cx="50"
-     cy="70"
-     r=".7"
-     id="circle16" />
-  <circle
-     class="point"
-     cx="78.19"
-     cy="29.74"
-     r=".7"
-     id="circle18" />
+
+
+
   <path
      class="mark"
      d="m 46.121493,63.838759 c 2.32243,-1.765871 5.796078,-1.604945 8.150143,0.0229"

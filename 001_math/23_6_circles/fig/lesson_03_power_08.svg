@@ -83,30 +83,9 @@
      class="right"
      d="m 57.54018,42.934798 2.67594,3.601762 -3.601762,2.675939"
      id="path14" />
-  <circle
-     class="point"
-     cx="32.88335"
-     cy="-16.095705"
-     r="0.78522843"
-     id="circle16"
-     transform="rotate(53.389386)"
-     style="stroke-width:1" />
-  <circle
-     class="point"
-     cx="88.971085"
-     cy="-16.095705"
-     r="0.78522843"
-     id="circle18"
-     transform="rotate(53.389386)"
-     style="stroke-width:1" />
-  <circle
-     class="point"
-     cx="68.779495"
-     cy="-43.017826"
-     r="0.78522843"
-     id="circle20"
-     transform="rotate(53.389386)"
-     style="stroke-width:1" />
+
+
+
   <circle
      class="point"
      cx="60.927223"

@@ -68,41 +68,11 @@
      x2="52.424198"
      y2="63.84782"
      id="line12" />
-  <circle
-     class="point"
-     cx="29.496939"
-     cy="38.798698"
-     r="0.72589964"
-     id="circle14"
-     style="stroke-width:1" />
-  <circle
-     class="point"
-     cx="96.503059"
-     cy="38.798698"
-     r="0.72589964"
-     id="circle16"
-     style="stroke-width:1" />
-  <circle
-     class="point"
-     cx="33.372128"
-     cy="13.749576"
-     r="0.72589964"
-     id="circle18"
-     style="stroke-width:1" />
-  <circle
-     class="point"
-     cx="52.424198"
-     cy="63.84782"
-     r="0.72589964"
-     id="circle20"
-     style="stroke-width:1" />
-  <circle
-     class="point"
-     cx="42.898163"
-     cy="38.798698"
-     r="0.72589964"
-     id="circle22"
-     style="stroke-width:1" />
+
+
+
+
+
   <path
      class="dim"
      d="m 29.496939,38.798698 q 6.700613,4.467075 13.401225,0"

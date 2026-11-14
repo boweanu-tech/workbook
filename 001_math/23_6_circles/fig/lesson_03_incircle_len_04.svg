@@ -1,25 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="84mm" height="69mm" viewBox="13 5.5 84 69">
-<style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="84mm"
+   height="62mm"
+   viewBox="13 5.5 84 62"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="lesson_03_incircle_len_04.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs34" />
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5318992"
+     inkscape:cx="138.39031"
+     inkscape:cy="67.563194"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <style
+     id="style2">
 .main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}
 .dim{fill:none;stroke:#000;stroke-width:.32;stroke-dasharray:.45 1.05;stroke-linecap:round}
 .right{fill:none;stroke:#000;stroke-width:.5}
 .point{fill:#000}
 .num,.unknown,.area{fill:#000}
-.num,.unknown{font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif;font-size:6px}
+.num,.unknown{font-family:&quot;CMU Serif&quot;,&quot;Latin Modern Roman&quot;,&quot;Times New Roman&quot;,serif;font-size:6px}
 .unknown{font-style:italic}
-.area{font-family:"Noto Sans CJK JP",sans-serif;font-size:6px}
+.area{font-family:&quot;Noto Sans CJK JP&quot;,sans-serif;font-size:6px}
 </style>
-<line class="main" x1="45" y1="20" x2="15" y2="60"/>
-<line class="main" x1="15" y1="60" x2="95" y2="60"/>
-<line class="main" x1="95" y1="60" x2="65" y2="20"/>
-<line class="main" x1="65" y1="20" x2="45" y2="20"/>
-<circle class="main" cx="55" cy="40" r="20"/>
-<path class="dim" d="M45 20 Q55 13 65 20"/>
-<text class="num" x="55" y="11" text-anchor="middle">6</text>
-<path class="dim" d="M45 20 Q24.4 35.8 15 60"/>
-<text class="num" x="21.2" y="35.4" text-anchor="middle">15</text>
-<path class="dim" d="M65 20 Q85.6 35.8 95 60"/>
-<text class="num" x="88.8" y="35.4" text-anchor="middle">15</text>
-<path class="dim" d="M15 60 Q55 67 95 60"/>
-<text class="unknown" x="55" y="73" text-anchor="middle">x</text>
+  <line
+     class="main"
+     x1="44.46701"
+     y1="16.043726"
+     x2="14.46701"
+     y2="56.043728"
+     id="line4" />
+  <line
+     class="main"
+     x1="14.46701"
+     y1="56.043728"
+     x2="94.46701"
+     y2="56.043728"
+     id="line6" />
+  <line
+     class="main"
+     x1="94.46701"
+     y1="56.043728"
+     x2="64.46701"
+     y2="16.043726"
+     id="line8" />
+  <line
+     class="main"
+     x1="64.46701"
+     y1="16.043726"
+     x2="44.46701"
+     y2="16.043726"
+     id="line10" />
+  <circle
+     class="main"
+     cx="54.46701"
+     cy="36.043728"
+     r="20"
+     id="circle12" />
+  <path
+     class="dim"
+     d="m 44.46701,16.043727 q 10,-7.0000005 20,0"
+     id="path14" />
+  <text
+     class="num"
+     x="55.167656"
+     y="11.325192"
+     text-anchor="middle"
+     id="text16">6</text>
+  <path
+     class="dim"
+     d="m 44.46701,16.043727 q -20.6,15.8 -30,40"
+     id="path18" />
+  <text
+     class="num"
+     x="20.667009"
+     y="31.443727"
+     text-anchor="middle"
+     id="text20">15</text>
+  <path
+     class="dim"
+     d="m 64.46701,16.043727 q 20.6,15.8 30,40"
+     id="path22" />
+  <text
+     class="num"
+     x="88.267014"
+     y="31.443727"
+     text-anchor="middle"
+     id="text24">15</text>
+  <path
+     class="dim"
+     d="m 14.46701,56.043727 q 40,7 80,0"
+     id="path26" />
+  <text
+     class="unknown"
+     x="53.576107"
+     y="63.706402"
+     text-anchor="middle"
+     id="text28">x</text>
 </svg>

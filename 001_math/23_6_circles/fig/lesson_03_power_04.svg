@@ -70,51 +70,11 @@
      x2="89.834145"
      y2="16.442768"
      id="line12" />
-  <ellipse
-     class="point"
-     cx="48.759121"
-     cy="-59.889622"
-     id="circle14"
-     transform="matrix(-0.34668827,0.93798041,-0.93800265,-0.34662808,0,0)"
-     style="stroke-width:1"
-     rx="0.8257857"
-     ry="0.82584757" />
-  <ellipse
-     class="point"
-     cx="35.864155"
-     cy="-53.879997"
-     id="circle16"
-     transform="matrix(-0.34668827,0.93798041,-0.93800265,-0.34662808,0,0)"
-     style="stroke-width:1"
-     rx="0.8257857"
-     ry="0.82584757" />
-  <ellipse
-     class="point"
-     cx="2.7056847"
-     cy="-38.417583"
-     id="circle18"
-     transform="matrix(-0.34668827,0.93798041,-0.93800265,-0.34662808,0,0)"
-     style="stroke-width:1"
-     rx="0.8257857"
-     ry="0.82584757" />
-  <ellipse
-     class="point"
-     cx="39.548431"
-     cy="-64.184036"
-     id="circle20"
-     transform="matrix(-0.34668827,0.93798041,-0.93800265,-0.34662808,0,0)"
-     style="stroke-width:1"
-     rx="0.8257857"
-     ry="0.82584757" />
-  <ellipse
-     class="point"
-     cx="-15.715689"
-     cy="-89.963181"
-     id="circle22"
-     transform="matrix(-0.34668827,0.93798041,-0.93800265,-0.34662808,0,0)"
-     style="stroke-width:1"
-     rx="0.8257857"
-     ry="0.82584757" />
+
+
+
+
+
   <path
      class="dim"
      d="M 39.272406,66.494529 C 35.291412,61.82284 36.16481,57.147773 38.10589,52.316201"

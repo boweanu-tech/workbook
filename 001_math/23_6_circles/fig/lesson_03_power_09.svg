@@ -70,51 +70,11 @@
      x2="45.719913"
      y2="49.250031"
      id="line12" />
-  <ellipse
-     class="point"
-     cx="4.3846583"
-     cy="79.672005"
-     id="circle14"
-     style="stroke-width:1"
-     rx="0.82801753"
-     ry="0.82820421"
-     transform="rotate(-79.127731)" />
-  <ellipse
-     class="point"
-     cx="-4.4432759"
-     cy="84.768646"
-     id="circle16"
-     style="stroke-width:1"
-     rx="0.82801753"
-     ry="0.82820421"
-     transform="rotate(-79.127731)" />
-  <ellipse
-     class="point"
-     cx="-30.91436"
-     cy="100.05857"
-     id="circle18"
-     style="stroke-width:1"
-     rx="0.82801753"
-     ry="0.82820421"
-     transform="rotate(-79.127731)" />
-  <ellipse
-     class="point"
-     cx="-2.6726005"
-     cy="75.594688"
-     id="circle20"
-     style="stroke-width:1"
-     rx="0.82801753"
-     ry="0.82820421"
-     transform="rotate(-79.127731)" />
-  <ellipse
-     class="point"
-     cx="-39.742302"
-     cy="54.188793"
-     id="circle22"
-     style="stroke-width:1"
-     rx="0.82801753"
-     ry="0.82820421"
-     transform="rotate(-79.127731)" />
+
+
+
+
+
   <path
      class="dim"
      d="m 79.068935,10.721785 c 3.065607,1.259943 5.561596,5.895328 3.34003,9.630812"
