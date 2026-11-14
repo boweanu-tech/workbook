@@ -1,2 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 68"><style>
-.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.thick{fill:none;stroke:#000;stroke-width:1.15}.dash{fill:none;stroke:#000;stroke-width:.5;stroke-dasharray:2 1.6}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.2px}</style><circle class="main" cx="42" cy="32" r="25"/><line class="thick" x1="3" y1="52" x2="21" y2="44"/><line class="main" x1="21" y1="44" x2="48" y2="7"/><line class="main" x1="48" y1="7" x2="69" y2="43"/><line class="main" x1="69" y1="43" x2="21" y2="44"/><line class="main" x1="21" y1="44" x2="69" y2="43"/><text class="small" x="9" y="45">42°</text><text class="math" x="42" y="52">x</text><circle class="point" cx="21" cy="44" r="1"/><circle class="point" cx="48" cy="7" r="1"/><circle class="point" cx="69" cy="43" r="1"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="72mm" viewBox="5 4 100 72">
+<style>
+.main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}
+.tangent{fill:none;stroke:#000;stroke-width:1.1;stroke-linecap:round}
+.mark{fill:none;stroke:#000;stroke-width:.5}
+.tick{stroke:#000;stroke-width:.6}
+.point{fill:#000}
+.number,.unknown,.label{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif}
+.number,.unknown{font-size:6px}
+.unknown{font-style:italic}
+.label{font-size:5px}
+</style>
+<circle class="main" cx="50" cy="40" r="30"/>
+<line class="tangent" x1="5" y1="70" x2="95" y2="70"/>
+<line class="main" x1="23.04" y1="26.85" x2="50" y2="70"/>
+<line class="main" x1="50" y1="70" x2="78.19" y2="29.74"/>
+<line class="main" x1="23.04" y1="26.85" x2="78.19" y2="29.74"/>
+<circle class="point" cx="23.04" cy="26.85" r=".7"/>
+<circle class="point" cx="50" cy="70" r=".7"/>
+<circle class="point" cx="78.19" cy="29.74" r=".7"/>
+<path class="mark" d="M43 62 Q50 59 57 62"/>
+<text class="number" x="50" y="58" text-anchor="middle">67°</text>
+<path class="mark" d="M69 32 Q70 38 73 42"/>
+<text class="number" x="66" y="39" text-anchor="middle">58°</text>
+<path class="mark" d="M61 70 Q61 65 65 62"/>
+<text class="unknown" x="69" y="67" text-anchor="middle">x</text>
+</svg>

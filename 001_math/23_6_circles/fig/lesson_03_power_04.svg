@@ -1,2 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 68"><style>
-.main{fill:none;stroke:#000;stroke-width:.7;stroke-linecap:round;stroke-linejoin:round}.thick{fill:none;stroke:#000;stroke-width:1.15}.dash{fill:none;stroke:#000;stroke-width:.5;stroke-dasharray:2 1.6}.point{fill:#000}.label{font-family:"CMU Serif","Times New Roman",serif;font-size:6px}.math{font-family:"CMU Serif","Times New Roman",serif;font-size:6.5px;font-style:italic}.small{font-family:"CMU Serif","Times New Roman",serif;font-size:5.2px}</style><circle class="main" cx="42" cy="32" r="25"/><line class="main" x1="82" y1="34" x2="25" y2="6"/><line class="main" x1="82" y1="34" x2="20" y2="57"/><line class="main" x1="64" y1="25" x2="63" y2="43"/><line class="main" x1="25" y1="6" x2="20" y2="57"/><text class="small" x="69" y="26">3</text><text class="small" x="42" y="13">15</text><text class="small" x="68" y="46">5</text><text class="math" x="39" y="55">x</text><circle class="point" cx="82" cy="34" r="1"/><circle class="point" cx="64" cy="25" r="1"/><circle class="point" cx="25" cy="6" r="1"/><circle class="point" cx="63" cy="43" r="1"/><circle class="point" cx="20" cy="57" r="1"/><text class="label" x="82" y="31">P</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="72mm" viewBox="5 4 100 72">
+<style>
+.main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}
+.tangent{fill:none;stroke:#000;stroke-width:1.1;stroke-linecap:round}
+.dim{fill:none;stroke:#666;stroke-width:.45;stroke-dasharray:1.7 1.3}
+.right{fill:none;stroke:#000;stroke-width:.5}
+.point{fill:#000}
+.number,.unknown,.label{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif}
+.number,.unknown{font-size:6px}
+.unknown{font-style:italic}
+.label{font-size:5px}
+</style>
+<circle class="main" cx="50" cy="40" r="30"/>
+<line class="main" x1="10" y1="40" x2="50" y2="10"/>
+<line class="main" x1="10" y1="40" x2="80" y2="40"/>
+<line class="main" x1="21.2" y1="31.6" x2="20" y2="40"/>
+<line class="main" x1="50" y1="10" x2="80" y2="40"/>
+<circle class="point" cx="10" cy="40" r=".7"/>
+<circle class="point" cx="50" cy="10" r=".7"/>
+<circle class="point" cx="21.2" cy="31.6" r=".7"/>
+<circle class="point" cx="20" cy="40" r=".7"/>
+<circle class="point" cx="80" cy="40" r=".7"/>
+<circle class="point" cx="50" cy="40" r=".7"/>
+<text class="label" x="51" y="46" text-anchor="middle">O</text>
+<path class="dim" d="M8 34 Q14 28 19 27"/>
+<text class="number" x="12" y="28" text-anchor="middle">14</text>
+<path class="dim" d="M24 28 Q35 15 47 12"/>
+<text class="number" x="35" y="17" text-anchor="middle">36</text>
+<path class="dim" d="M9 45 Q14 49 19 45"/>
+<text class="unknown" x="14" y="54" text-anchor="middle">x</text>
+<path class="dim" d="M22 46 Q50 54 78 46"/>
+<text class="number" x="52" y="54" text-anchor="middle">60</text>
+</svg>

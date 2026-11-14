@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="72mm" viewBox="5 4 100 72">
+<style>
+.main{fill:none;stroke:#000;stroke-width:.65;stroke-linecap:round;stroke-linejoin:round}
+.tangent{fill:none;stroke:#000;stroke-width:1.1;stroke-linecap:round}
+.dim{fill:none;stroke:#666;stroke-width:.45;stroke-dasharray:1.7 1.3}
+.right{fill:none;stroke:#000;stroke-width:.5}
+.point{fill:#000}
+.number,.unknown,.label{fill:#000;font-family:"CMU Serif","Latin Modern Roman","Times New Roman",serif}
+.number,.unknown{font-size:6px}
+.unknown{font-style:italic}
+.label{font-size:5px}
+</style>
+<circle class="main" cx="50" cy="40" r="25"/>
+<line class="main" x1="25" y1="40" x2="75" y2="40"/>
+<line class="main" x1="43" y1="16" x2="25" y2="40"/>
+<line class="main" x1="43" y1="16" x2="75" y2="40"/>
+<line class="main" x1="43" y1="16" x2="43" y2="40"/>
+<path class="right" d="M43 36 L47 36 L47 40"/>
+<circle class="point" cx="25" cy="40" r=".7"/>
+<circle class="point" cx="75" cy="40" r=".7"/>
+<circle class="point" cx="43" cy="16" r=".7"/>
+<circle class="point" cx="43" cy="40" r=".7"/>
+<circle class="point" cx="50" cy="40" r=".7"/>
+<text class="label" x="51" y="46" text-anchor="middle">O</text>
+<path class="dim" d="M48 17 Q53 28 48 38"/>
+<text class="unknown" x="55" y="29" text-anchor="middle">x</text>
+<path class="dim" d="M25 45 Q34 50 43 45"/>
+<text class="number" x="34" y="53" text-anchor="middle">9</text>
+<path class="dim" d="M44 45 Q60 53 75 45"/>
+<text class="number" x="62" y="53" text-anchor="middle">16</text>
+</svg>
