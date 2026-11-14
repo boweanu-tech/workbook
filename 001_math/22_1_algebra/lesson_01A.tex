@@ -3,13 +3,15 @@
 % 叩き台のため、解答欄は空欄にしてある。
 \MajorQuestionLesson{単項式と多項式}
 \SetRowSpace{1mm}
-
+%2乗に比例、02Aの大問２のように、小さい番号は中央揃えに整列してください。
+%全て大問１のような形式にしてください。むしろ大問１の中で、「それぞれの式の次数を答えなさい」とか「それぞれの項と係数を答えなさい」などの質問してほしい。
+%表は全部で大問３つ構成にします。
 \TypeQuestion{次の\EqNo{1}～\EqNo{6}の式について、問いに答えなさい。}{monomials_polynomials_classification}
 \TextTall{\EqNo{1}\ $-5x$\qquad \EqNo{2}\ $3a-2b$\qquad \EqNo{3}\ $\dfrac{2}{3}xy$\qquad \EqNo{4}\ $7-y+y^2$\par
 \EqNo{5}\ $-4$\qquad \EqNo{6}\ $2m^2n-3mn+n$}
 \QQ{単項式をすべて選び、番号で答えなさい。}{}
 \QQ{多項式をすべて選び、番号で答えなさい。}{}
-\QQ{\EqNo{2}、\EqNo{4}、\EqNo{6}は、それぞれ何個の項からできているか答えなさい。}{}
+\QQ{\EqNo{1}から\EqNo{6}について、何個の項からできているかそれぞれ答えなさい。}{}
 \QQ{\EqNo{1}と\EqNo{3}の係数をそれぞれ答えなさい。}{}
 
 \TypeQuestion{次の\EqNo{1}～\EqNo{6}の単項式について、それぞれの次数を答えなさい。}{monomials_polynomials_monomial_degree}
@@ -25,34 +27,32 @@
 \QQRow{\EqNo{3}}{}{\EqNo{4}}{}
 \QQRow{\EqNo{5}}{}{\EqNo{6}}{}
 
-\TypeQuestion{次の\EqNo{1}～\EqNo{6}の多項式について、それぞれの次数を答えなさい。}{monomials_polynomials_polynomial_degree}
-\TextTall{\EqNo{1}\ $3x^2-4x+1$\qquad \EqNo{2}\ $2a-5b+8$\qquad \EqNo{3}\ $xy^2-3x^2+7$\par
-\EqNo{4}\ $-4m^2n^2+6mn-1$\qquad \EqNo{5}\ $5p^3-2p^2q+q^2$\qquad \EqNo{6}\ $9-2x-4y$}
-\QQRowThree{\EqNo{1}}{}{\EqNo{2}}{}{\EqNo{3}}{}
-\QQRowThree{\EqNo{4}}{}{\EqNo{5}}{}{\EqNo{6}}{}
-
-\LessonPageBreak
-\SetRowSpace{3mm}
-
 \TypeQuestion{次の式を簡単にしなさい。}{monomials_polynomials_collect_integer}
 \QQRow{$5x+3x-7x$}{}{$4a-3b+2a+5b$}{}
 \QQRow{$-6m+9-2m-4$}{}{$3x^2-5x+2x^2+7x$}{}
 \QQRow{$8p-4q-5p+2q$}{}{$-7y^2+4y+3y^2-9y$}{}
 \QQRow{$2a^2-3ab+5a^2+ab$}{}{$-4x+6y+9x-8y+3$}{}
 
+\LessonPageBreak
+\SetRowSpace{3mm}
+
 \TypeQuestion{次の式を簡単にしなさい。}{monomials_polynomials_collect_rational}
+%小数と分数タイプをランダムに並べ替えて。
+%また(小数と分数)・(整数と分数)などが混在するタイプも入れてください。
+%uとvは書きにくいのでナシでお願い。
 \QQRow{$\dfrac12x+\dfrac34x-\dfrac16x$}{}{$0.7a-1.2b+0.4a+0.3b$}{}
 \QQRow{$-\dfrac23m+\dfrac56n+\dfrac12m-\dfrac13n$}{}{$1.5x^2-0.8x+0.4x^2+1.3x$}{}
 \QQRow{$\dfrac35p-\dfrac14q+\dfrac1{10}p+\dfrac34q$}{}{$-0.6y^2+1.4y+0.9y^2-0.5y$}{}
 \QQRow{$\dfrac23ab-\dfrac54a+\dfrac16ab+\dfrac12a$}{}{$2.25u-0.75v-1.5u+1.25v$}{}
 
-\TypeQuestion{次のかっこをはずし、同類項をまとめなさい。}{monomials_polynomials_collect_parentheses}
+\TypeQuestion{次の式を簡単にしなさい。}{monomials_polynomials_collect_parentheses}
 \QQRow{$3x-(2x-5)$}{}{$2(a+3b)-5a+b$}{}
 \QQRow{$4(2m-n)-(3m+2n)$}{}{$-(5x-2y)+3(x+y)$}{}
 \QQRow{$3(2p-q)-2(p-4q)$}{}{$(7a-3b)-2(4a-b)$}{}
 \QQRow{$-2(x^2-3x)+5(x^2+x)$}{}{$6(y-2)-3(2y+1)$}{}
 
 \TypeQuestion{次の多項式の筆算をしなさい。}{monomials_polynomials_column_arithmetic}
+%２項の式を中心に。3項の(今のやつ)があってもいいですが少数派で・・・。
 \begingroup\setlength{\arraycolsep}{3pt}
 \QQRowThree{$\begin{array}{rrrr} &3x^2&-2x&+5\\ +)&x^2&+4x&-3\\ \hline\end{array}$}{}{$\begin{array}{rrrr} &5a^2&+3a&-7\\ -)&2a^2&-4a&+1\\ \hline\end{array}$}{}{$\begin{array}{rrrr} &-2y^2&+6y&+4\\ +)&4y^2&-3y&-9\\ \hline\end{array}$}{}
 \QQRowThree{$\begin{array}{rrrr} &7m^2&-5m&+2\\ -)&-3m^2&+2m&-6\\ \hline\end{array}$}{}{$\begin{array}{rrrr} &-4p^2&+p&+8\\ -)&2p^2&-3p&+5\\ \hline\end{array}$}{}{$\begin{array}{rrrr} &6u^2&-7u&-1\\ +)&-2u^2&+5u&+4\\ \hline\end{array}$}{}

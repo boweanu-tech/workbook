@@ -22,9 +22,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="4.0940458"
-     inkscape:cx="-6.3506862"
-     inkscape:cy="33.096845"
+     inkscape:zoom="8.1880916"
+     inkscape:cx="42.500746"
+     inkscape:cy="49.156753"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -35,8 +35,9 @@
      id="style2">.main{fill:none;stroke:#000;stroke-width:.55;stroke-linecap:round;stroke-linejoin:round}.label{font-family:&quot;CMU Serif&quot;,&quot;Times New Roman&quot;,serif;font-size:6px}</style>
   <path
      class="main"
-     d="M 26.454365,8.6010738 H 65.297427 V 47.444136 H 26.454365 Z M 8.0921902,29.08196 H 26.454365 m -18.3621748,0 V 47.444136 H 26.454365 m 0,-38.8430622 L 8.0921902,47.444136 m 57.2052368,0 L 26.454365,29.08196"
-     id="path4" />
+     d="M 26.454365,8.6010738 H 65.297427 V 47.444136 H 26.454365 Z M 8.0921902,29.08196 H 26.454365 m -18.3621748,0 V 47.444136 H 26.454365 m 0,-38.8430622 L 8.0921902,47.444136 m 57.2052368,0 -46.657078,-22.021608"
+     id="path4"
+     sodipodi:nodetypes="cccccccccccccc" />
   <text
      class="label"
      x="24.335651"
@@ -81,8 +82,8 @@
      style="stroke-width:1">G</text>
   <text
      class="label"
-     x="13.981576"
-     y="27.403919"
+     x="15.042533"
+     y="24.545753"
      id="text20"
      style="stroke-width:1">P</text>
 </svg>
