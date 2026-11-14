@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.93614"
-     inkscape:cx="189.02368"
-     inkscape:cy="136.06299"
+     inkscape:zoom="1.46807"
+     inkscape:cx="91.276301"
+     inkscape:cy="153.60303"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -50,13 +50,12 @@
      cy="40"
      r="30"
      id="circle4" />
-  <line
+  <path
+     id="line6"
      class="tangent"
-     x1="5"
-     y1="70"
-     x2="95"
-     y2="70"
-     id="line6" />
+     style="fill:none;stroke:#000000;stroke-width:1.1;stroke-linecap:round"
+     d="m 14.703653,70 67.446143,0"
+     sodipodi:nodetypes="cc" />
   <line
      class="main"
      x1="27.02"
